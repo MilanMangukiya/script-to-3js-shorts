@@ -1,0 +1,2238 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if the Moon were made entirely of ice?",
+    "title": "What If the Moon Were Made of Ice?",
+    "slug": "moon-made-of-ice",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 74,
+    "language": "en",
+    "audience": "Curious global general audiences age 13+, no science background",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If the Moon kept its size and orbit but were made entirely of water ice, what would change for our nights, tides, coasts, wildlife, the deep ocean and the Moon itself?",
+    "viewer_takeaway": "An ice Moon would shine about six times brighter but weigh only a third as much, so the Sun would take over the tides: smaller, clock-regular tides, shrinking mudflats, changed animal nights, possibly weaker deep-ocean mixing, and a Moon slowly turning to vapor, unlike our durable rocky one."
+  },
+  "scientific_model": {
+    "baseline_reality": "Today's Moon is a rocky body 1,737 km in radius with a mean density of 3,344 kg/m³, orbiting about 384,400 km from Earth and always showing the same face. Its surface reflects only about 12% of sunlight (geometric albedo 0.12), and its dark patches are ancient seas of cooled lava. Its gravity raises most of Earth's ocean tide; the Sun's tide-generating force is about half the Moon's.",
+    "counterfactual_change": "In an instant, the Moon is replaced by a body of exactly the same size, in exactly the same orbit and rotation, made entirely of water ice with only traces of dust. Earth, the Sun and the Moon's distance are unchanged. The film follows what the changed material does: its mass, its brightness, its pull on our oceans and its survival in sunlight.",
+    "assumptions": [
+      "Radius 1,737 km, mean distance 384,400 km, the same month and the same face toward Earth; the swap is gentle and instantaneous, with no impact or debris.",
+      "Composition is pure water ice. Pressure inside a Moon-sized ice ball (about 0.4 GPa at the centre) turns the deep interior into denser forms of ice, giving a mean density of roughly 1,000–1,100 kg/m³ (Saturn's nearly pure-ice moon Tethys has 985 kg/m³), so the mass is about 31% of today's (range 28–33%).",
+      "The surface is as reflective as Saturn's icy moons (geometric albedo about 0.7–0.8) instead of 0.12.",
+      "Tide figures are simple open-ocean (equilibrium) estimates: tide-raising force scales with mass divided by distance cubed. Real coastlines amplify or damp tides in their own ways.",
+      "Earth effects are shown for the first years to decades; the ice Moon's evaporation is a geological-timescale process. How such a Moon could form, and its very long-term orbital evolution, are not addressed."
+    ],
+    "causal_chain": [
+      "Swapping rock for ice at the same size lowers the mean density from 3,344 to about 1,040 kg/m³, so the Moon keeps only about 31% of its mass.",
+      "Fresh ice reflects about six times more sunlight than lunar rock, so the full Moon shines about six times brighter, and with no lava seas the familiar dark 'face' disappears.",
+      "Tide-raising force is proportional to mass, so at the same distance the ice Moon raises only about 31% of today's lunar tide, less than the Sun's 46%: the Sun becomes the main tide-maker.",
+      "Combined tides shrink to roughly half, and because the solar tide follows the solar day, high tide at each place arrives at nearly the same clock time every day.",
+      "Smaller tidal ranges expose less intertidal mudflat, shrinking feeding grounds for migratory shorebirds and changing the rhythm of harbors and fishers.",
+      "Brighter moonlit nights shift the behaviour of nocturnal animals: some hide more, while moonlight navigators such as dung beetles could find their way on more nights; fewer faint stars are visible.",
+      "Tidal energy scales roughly with tide height squared, so total tidal energy falls to about a quarter; since tides help power deep-ocean mixing, that mixing could weaken, with uncertain consequences.",
+      "Sunlit ice turns straight to vapor in a vacuum; some of it escapes each day, so the ice Moon would slowly shrink over the ages, unlike today's rocky Moon."
+    ],
+    "uncertainties": [
+      "The ice Moon's exact mass depends on its internal ice phases and temperature; 28–33% of today's mass is a reasonable range, and every tide figure scales with it.",
+      "Brightness depends on how space weathering, dust and fresh frost would change the surface over time; 'about six times' is an estimate, not a measurement.",
+      "Real tides depend strongly on each basin's shape and resonance; some bays would change by more or less than half, and the timing pattern would carry local delays.",
+      "Animal responses to brighter nights vary by species and habitat; the film shows possible behaviour changes, not predicted ecosystem outcomes.",
+      "How much weaker tidal mixing would alter deep-ocean circulation, nutrients and climate is genuinely uncertain and is not asserted.",
+      "The evaporation rate of an ice Moon is uncertain by roughly an order of magnitude; the vapor itself would be essentially invisible.",
+      "Weaker lunar tides would also slow the lengthening of Earth's day and the Moon's outward drift; these slow effects are not shown."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "The real Moon has a mean radius of 1,737.4 km, a mean density of 3,344 kg/m³, a mean distance of 384,400 km and a geometric albedo of 0.12.",
+        "confidence": "established",
+        "reasoning": "NASA NSSDC Moon Fact Sheet values.",
+        "presentation_guardrail": "Use rounded values; show the rocky Moon with its true dark maria in TODAY shots."
+      },
+      {
+        "id": "CL02",
+        "statement": "Icy moons are bright and light: Saturn's Tethys, made almost entirely of water ice, has a mean density of 985 kg/m³ and a geometric albedo of 0.8; Rhea (0.7) and Europa (0.68) are similarly reflective.",
+        "confidence": "established",
+        "reasoning": "NASA NSSDC Saturnian and Jovian satellite fact sheets.",
+        "presentation_guardrail": "Mention as the real-world analogue for the ice Moon's surface; do not claim the ice Moon would look exactly like Tethys."
+      },
+      {
+        "id": "CL03",
+        "statement": "A Moon-sized ball of pure water ice would have a mean density of about 1,000–1,100 kg/m³ and therefore about 31% (28–33%) of the real Moon's mass.",
+        "confidence": "derived",
+        "reasoning": "Same volume; mass scales with mean density. Central pressure of about 0.4 GPa turns roughly the inner 70% of the radius into denser ice II, giving a mean near 1,040 kg/m³; 1,040 / 3,344 ≈ 0.31.",
+        "presentation_guardrail": "Narrate 'a third of the mass'; show the cutaway as SCHEMATIC with ice layers simplified."
+      },
+      {
+        "id": "CL04",
+        "statement": "With an icy-moon albedo of about 0.7–0.8 instead of 0.12, the full ice Moon would appear about six times brighter (roughly 5.7–6.7 times).",
+        "confidence": "derived",
+        "reasoning": "Full-moon brightness is proportional to geometric albedo at the same size and distance: 0.68–0.8 divided by 0.12.",
+        "presentation_guardrail": "Say 'about six times brighter'; keep camera exposure fixed during the comparison and label the multiplier ESTIMATE."
+      },
+      {
+        "id": "CL05",
+        "statement": "The Moon's dark patches (maria) are seas of cooled lava that flooded vast impact basins; they make the familiar 'face' patterns. A Moon of pure ice would not have them.",
+        "confidence": "established",
+        "reasoning": "NASA describes maria as seas of cooled lava that flooded impact basins between 4.2 and 1.2 billion years ago; pure ice contains no lava plains.",
+        "presentation_guardrail": "Show the face fading on the ice Moon; do not invent ice-moon surface markings beyond craters and fractures."
+      },
+      {
+        "id": "CL06",
+        "statement": "Tide-generating force is proportional to a body's mass and inversely to the cube of its distance; the Sun's tide-generating force is about half (46%) of the Moon's.",
+        "confidence": "established",
+        "reasoning": "NOAA tides tutorial: tidal forces vary inversely as the cube of distance, and the Sun's tide-generating force is about half the Moon's; 46% follows from the masses and mean distances.",
+        "presentation_guardrail": "Distinguish tidal force from ordinary gravitational pull in on-screen labels ('TIDAL PULL')."
+      },
+      {
+        "id": "CL07",
+        "statement": "At the same distance, a Moon with 31% of the mass would raise 31% of today's lunar tide, smaller than the Sun's 46%, making the Sun the main tide-maker.",
+        "confidence": "derived",
+        "reasoning": "Tidal force is linear in mass at fixed distance; 0.31 < 0.46.",
+        "presentation_guardrail": "Show the tidal bulges as an exaggerated, labelled schematic with distances not to scale."
+      },
+      {
+        "id": "CL08",
+        "statement": "In a simple open-ocean estimate, spring tides would be about 53% and neap tides about 28% of today's, so tides would be roughly half as high overall.",
+        "confidence": "derived",
+        "reasoning": "Equilibrium tide amplitudes add and subtract: today spring 1 + 0.46 and neap 1 − 0.46; ice Moon spring 0.31 + 0.46 and neap 0.46 − 0.31.",
+        "presentation_guardrail": "Narrate 'about half as high'; label the tidal-flat comparison ILLUSTRATIVE and note that each coast responds differently."
+      },
+      {
+        "id": "CL09",
+        "statement": "With the solar tide dominant, high tide at any one place would come at nearly the same clock time every day, wobbling within about ±1.4 hours over two weeks, instead of arriving about 50 minutes later each day as it does now.",
+        "confidence": "derived",
+        "reasoning": "The solar semidiurnal tide repeats every 12.00 hours; the weaker lunar one (12.42 hours) only shifts the combined peak by up to arcsin(0.31/0.46) ≈ 42° of the 12-hour cycle ≈ 1.4 hours.",
+        "presentation_guardrail": "Present the tide clock as a schematic; local tides add fixed delays but keep the daily regularity."
+      },
+      {
+        "id": "CL10",
+        "statement": "Smaller tidal ranges would expose less intertidal mudflat at low tide, shrinking feeding grounds that millions of migratory shorebirds rely on; the Wadden Sea alone, the largest unbroken tidal-flat system, sees an average of 10–12 million birds pass through each year.",
+        "confidence": "plausible",
+        "reasoning": "Exposed intertidal area grows with tidal range; UNESCO describes the Wadden Sea's flats and their 10–12 million passing birds.",
+        "presentation_guardrail": "Say 'would shrink', not 'disappear'; show birds crowding a narrower strip, never harmed."
+      },
+      {
+        "id": "CL11",
+        "statement": "Moonlight already changes nocturnal animal behaviour: across 58 nocturnal mammal species, prey relying on smell or echolocation were generally less active on bright nights, visual prey more active, and some predators such as lions less active.",
+        "confidence": "established",
+        "reasoning": "Prugh and Golden (Journal of Animal Ecology), as reported by the University of Alaska Fairbanks.",
+        "presentation_guardrail": "Use 'some animals would hide'; show retreating eyeshine, not predation."
+      },
+      {
+        "id": "CL12",
+        "statement": "Dung beetles hold a straight course using polarized moonlight; they manage under a full moon but lose their way under weaker quarter or crescent moons, so a brighter Moon could let them navigate on more nights.",
+        "confidence": "plausible",
+        "reasoning": "Lund University: polarized light from a quarter moon is only one-third as strong as at full moon, and beetles are lost then; six-times brighter moonlight would strengthen the signal at every phase.",
+        "presentation_guardrail": "Label the sky polarization pattern SCHEMATIC; say 'would navigate better', not 'always'."
+      },
+      {
+        "id": "CL13",
+        "statement": "About 1 terawatt, 25–30% of all tidal energy dissipation, occurs in the deep ocean over rough seafloor, where it is thought to supply much of the mixing that drives large-scale ocean circulation.",
+        "confidence": "established",
+        "reasoning": "NASA Earth Observatory summary of Egbert and Ray (2000), based on TOPEX/Poseidon altimetry.",
+        "presentation_guardrail": "Show the mixing as a labelled cross-section schematic with vertical exaggeration."
+      },
+      {
+        "id": "CL14",
+        "statement": "Total tidal energy would fall to about a quarter of today's, so deep-ocean mixing could weaken, with consequences for currents and nutrients that cannot be predicted confidently.",
+        "confidence": "plausible",
+        "reasoning": "Tidal energy scales roughly with amplitude squared: (0.31² + 0.46²) / (1² + 0.46²) ≈ 0.25.",
+        "presentation_guardrail": "Narrate 'could slow'; label 'EFFECTS UNCERTAIN'; no climate-disaster imagery."
+      },
+      {
+        "id": "CL15",
+        "statement": "On the real Moon, water ice survives only in polar crater shadows that sunlight never reaches, where temperatures never rise above about −250 °F (−157 °C).",
+        "confidence": "established",
+        "reasoning": "NASA/JPL announcement of ice confirmed at the Moon's poles.",
+        "presentation_guardrail": "Use as the basis for the evaporation beat; do not show today's Moon losing ice."
+      },
+      {
+        "id": "CL16",
+        "statement": "Sunlit ice on an ice Moon would slowly turn straight to vapor; much would refreeze on the cold night side, but some would be lost to space, so the Moon would shrink over geological time, far too slowly to notice in a lifetime.",
+        "confidence": "plausible",
+        "reasoning": "Sublimation of exposed ice in sunlight at Earth's distance from the Sun (CL15) plus escape and photodissociation of a fraction of the vapor; the rate is uncertain by about an order of magnitude.",
+        "presentation_guardrail": "Label the vapor shimmer 'ILLUSTRATIVE · INVISIBLE TO THE EYE'; give no rate or lifetime on screen."
+      },
+      {
+        "id": "CL17",
+        "statement": "Six-times-brighter moonlight would brighten the night sky on moonlit nights, hiding more faint stars.",
+        "confidence": "plausible",
+        "reasoning": "Moonlight scattered by the atmosphere is the main natural brightener of the night sky; scattered light scales with the Moon's brightness.",
+        "presentation_guardrail": "Show a modest fading of faint stars only, with exposure fixed."
+      },
+      {
+        "id": "CL18",
+        "statement": "The real Moon has kept its rocky surface for about 4.5 billion years; rock does not evaporate in sunlight the way exposed ice does.",
+        "confidence": "established",
+        "reasoning": "The Moon formed about 4.5 billion years ago; silicate rock has negligible vapor pressure at lunar dayside temperatures (up to about 390 K).",
+        "presentation_guardrail": "Closing line only; no numbers on screen."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NASA NSSDC — Moon Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+        "supports_claim_ids": [
+          "CL01",
+          "CL03",
+          "CL04"
+        ]
+      },
+      {
+        "name": "NASA NSSDC — Saturnian Satellite Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html",
+        "supports_claim_ids": [
+          "CL02",
+          "CL03",
+          "CL04"
+        ]
+      },
+      {
+        "name": "NASA NSSDC — Jovian Satellite Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html",
+        "supports_claim_ids": [
+          "CL02",
+          "CL04"
+        ]
+      },
+      {
+        "name": "NASA Science — Moon Composition",
+        "url": "https://science.nasa.gov/moon/composition/",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      },
+      {
+        "name": "NOAA National Ocean Service — Tides tutorial: What causes tides?",
+        "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html",
+        "supports_claim_ids": [
+          "CL06",
+          "CL07"
+        ]
+      },
+      {
+        "name": "UNESCO World Heritage Centre — Wadden Sea",
+        "url": "https://whc.unesco.org/en/list/1314",
+        "supports_claim_ids": [
+          "CL10"
+        ]
+      },
+      {
+        "name": "University of Alaska Fairbanks — Death by moonlight? Not always, study says (Prugh and Golden)",
+        "url": "https://uaf.edu/news/archives/news-archives-2010-2021/death-moonlight.php",
+        "supports_claim_ids": [
+          "CL11"
+        ]
+      },
+      {
+        "name": "Lund University — Dung beetles navigate better under full moon",
+        "url": "https://www.lunduniversity.lu.se/article/dung-beetles-navigate-better-under-full-moon",
+        "supports_claim_ids": [
+          "CL12"
+        ]
+      },
+      {
+        "name": "NASA Earth Observatory — Dissipation of Tidal Energy",
+        "url": "https://science.nasa.gov/earth/earth-observatory/dissipation-of-tidal-energy-654/",
+        "supports_claim_ids": [
+          "CL13",
+          "CL14"
+        ]
+      },
+      {
+        "name": "NASA JPL — Ice Confirmed at the Moon's Poles",
+        "url": "https://www.jpl.nasa.gov/news/ice-confirmed-at-the-moons-poles",
+        "supports_claim_ids": [
+          "CL15",
+          "CL16"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "Our gray Moon frosts into a dazzling ball of ice, and we follow that one change from a moonlit sea to the tides, a shorebird mudflat, a beetle's night journey, the deep ocean and the Moon itself, before the real Moon rises again.",
+    "visual_identity": "Cool, luminous documentary realism: silver-blue moonlight, glassy blue-white ice, deep navy seas and warm human lights. Schematics are clean, labelled and calm, never cartoonish or apocalyptic.",
+    "palette": [
+      "midnight navy #0B1A2E",
+      "moonlight silver #DDE6F0",
+      "glacier blue #8FD0E6",
+      "lunar gray #8C8A85",
+      "tide teal #1F6F78",
+      "dusk amber #F2A65A",
+      "caption amber #FFB45C"
+    ],
+    "lighting": "Dusk sky light and true-angular-size moonlight over the sea; harsh unfiltered sunlight with deep black shadows in space; dim blue moonlight that brightens about sixfold with exposure locked; soft morning light over the tidal flat; warm practical windows at the harbor.",
+    "camera_language": "Telephoto moonrise, slow orbit of the Moon in space, straight-on 'face' view, eye-level moonlit jetty, schematic cutaways and tidal bulges, a tide clock, aerial tidal flat, harbor eye level, night meadow and a beetle macro, ocean cross-section push, sunlit-limb orbit, molecular macro, and the same telephoto moonrise to close the loop.",
+    "motion_language": "Slow, deliberate glides; the changed rule always reads as frost sweeping, light brightening or water staying higher; no restless cutting, one reveal every few seconds.",
+    "world_scale_policy": "Earth-surface shots use metres at true scale (person 1.75 m, sailboats 7 m, dung beetle 2.5 cm). The Moon in Earth's sky is always drawn at its true 0.52° angular diameter and enlarged only by telephoto framing. Space shots use 1 unit = 1,000 km with the Moon's true 1.737-unit radius; any compressed Earth–Moon distance, exaggerated tidal bulge or ocean cross-section exaggeration is labelled NOT TO SCALE.",
+    "emotional_arc": [
+      "wonder",
+      "delight",
+      "curiosity",
+      "surprise",
+      "tenderness for coasts and creatures",
+      "quiet unease",
+      "awe",
+      "gratitude"
+    ],
+    "opening_hook": "A real gray full Moon rising over a dusk sea frosts over into glittering blue-white ice in a second and a half, and its reflection path on the water flares brighter as the question is asked.",
+    "ending_payoff": "The ice Moon's sunlit limb breathes faint, labelled vapor; then we return to the dusk sea, where the real dusty gray Moon rises: 'built to last'.",
+    "loop_connection": "The final frame, the gray Moon rising in the same telephoto framing, is frame 0; the loop restarts as the Moon frosts over again.",
+    "asset_policy": "Reuse first: Earth globe and NASA textures, starfield, sky dome, ocean surface, terrain, bird flock, humanoid figure, sailboat, grass field, bokeh, snowfall, water molecules, dial gauge, captions, overlay labels, camera rig, film pipeline and audio kit. New components (configurable moon body, tidal flat, tidal bulge diagram, ocean cross-section diagram, dung beetle) are original, parameterised and promoted to the library on this render."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 140,
+    "music_direction": "Sparse original score in E minor: a soft glass-harmonica pad and celesta-like bells for the icy reveal, a slow two-swell tidal pulse under the mechanism, warm low strings for coasts and creatures, a held low drone for the deep ocean, a fragile high shimmer for the evaporating Moon, resolving to E major as the gray Moon returns.",
+    "music_level_db_below_voice": -22,
+    "sfx_direction": "Synthesized and restrained: a crystalline frost crackle as the Moon freezes, gentle surf, distant shorebird calls, harbor water lapping and a rope creak, night insects and a beetle's tiny scuff, a deep muffled ocean rumble, a faint airy hiss for sublimation. No loud impacts or constant whooshes.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Premium documentary subtitles: ivory semibold with a thin charcoal outline and soft shadow, restrained amber active word, phrase-by-phrase reveal with a 120 ms ease; a faint navy gradient behind text only over bright moonlit water.",
+    "font_stack": "Inter, Manrope, system-ui, sans-serif",
+    "font_size_px": 66,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 100,
+      "right_px": 180,
+      "top_px": 230,
+      "bottom_px": 330,
+      "caption_baseline_y_px": 1370
+    },
+    "active_word_treatment": "The spoken word turns amber without moving the baseline; emphasised phrases keep a soft accent colour, a 1.04 scale or a gentle glow.",
+    "highlights_policy": "Exact narration only. In-scene labels are limited to TODAY / ICE MOON state chips, SCHEMATIC / ILLUSTRATIVE / NOT TO SCALE tags and approximate numbers backed by the claim register; never more than one highlighted phrase at a time."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.2,
+      "narration": {
+        "text": "What if the Moon were made entirely of ice?",
+        "start_s": 0.3,
+        "end_s": 3.9,
+        "delivery_note": "Hushed, curious; a small lift on 'entirely of ice'."
+      },
+      "viewer_question": "What would an ice Moon look like and do?",
+      "visual_payoff": "The familiar gray full Moon frosts over into a blue-white ball of ice and its glade on the sea flares brighter.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.2,
+          "shot_type": "telephoto moonrise over the sea",
+          "world": "Open sea at dusk, metres, +Y up, sea level y = 0, looking east. The full Moon stands 1.5° above the horizon at its true 0.52° angular diameter: a sphere of radius 45.4 m centred at [0, 262, -10000]. Calm sea with a low swell; the sun has set behind the camera.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 3.2,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [0, 2.5, 0],
+                "look_at": [0, 200, -10000],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4.2,
+                "position": [0, 2.6, -40],
+                "look_at": [0, 225, -10000],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Very slow 40 m push toward the horizon with a slight tilt up onto the Moon.",
+            "lens_notes": "3.2° vertical FOV telephoto: the Moon's true 0.52° disc spans about 310 px; compression stacks the moon glade on the water."
+          },
+          "subjects": [
+            {
+              "id": "moon",
+              "kind": "moon",
+              "appearance": "Starts as today's gray full Moon with dark maria; a frost front sweeps across, leaving a bright blue-white sphere with faint crater rims and fine fractures.",
+              "geometry_and_material": "High-segment sphere; rock mode uses a lunar albedo map with maria (geometric albedo 0.12); ice mode uses procedural cracked ice with high albedo (0.75), slight blue subsurface tint and crater normal detail; Lommel–Seeliger lighting; iceAmount blends with a noisy moving front.",
+              "scale_and_accuracy": "True angular size (0.52°) and position; enlarged only by the telephoto lens.",
+              "movement": "Static in the sky; iceAmount 0 → 1 between 0.6 s and 2.1 s.",
+              "asset_hint": "candidate:moon-body-v1"
+            },
+            {
+              "id": "sea",
+              "kind": "water",
+              "appearance": "Dark blue-gray dusk sea with a narrow silver glade under the Moon that widens and brightens as the Moon turns to ice.",
+              "geometry_and_material": "Analytic multi-octave wave normals, Fresnel sky reflection and glitter aimed at the Moon direction.",
+              "scale_and_accuracy": "Wave height 0.4 m; glade brightness scales with the Moon's albedo (about six times) with exposure fixed.",
+              "movement": "Travelling swell from the east; glitter intensity ramps 1.0 → 6.0 between 1.0 s and 2.4 s.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            },
+            {
+              "id": "dusk_sky",
+              "kind": "atmosphere",
+              "appearance": "Indigo zenith fading to a pale violet horizon band, first faint stars high up.",
+              "geometry_and_material": "Camera-centred gradient dome with horizon haze; sparse star shell above 10° elevation.",
+              "scale_and_accuracy": "Sun 6° below the horizon behind the camera.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1, reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "0.0–0.6 s hold on the real gray Moon with its dark maria.",
+            "0.6–2.1 s a frost front with crystalline edge sweeps from the upper-left limb to the lower right; maria fade to white; tiny glints sparkle along the front.",
+            "1.0–2.4 s the moon glade on the sea widens and brightens about sixfold.",
+            "2.2 s state chip 'WHAT IF · MOON OF ICE' fades in top-left.",
+            "2.4–4.2 s gentle push continues; swell keeps rolling."
+          ],
+          "lighting": "Dusk sky ambient; moonlight as a directional light from the Moon's direction whose intensity follows the Moon's albedo; camera exposure locked.",
+          "effects": [
+            "Soft bloom on the ice Moon and glade only",
+            "Thin horizon haze",
+            "Label: TRUE SIZE · TELEPHOTO VIEW"
+          ],
+          "composition_notes": "Moon centred near y≈620 px, horizon near y≈1060 px, glade leading down toward the captions; chip within the top safe area."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "made entirely of ice",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0,
+          "duration_s": 4.2,
+          "kind": "ambience",
+          "description": "Gentle distant surf and soft wind at dusk.",
+          "relative_db": -26
+        },
+        {
+          "at_s": 0.6,
+          "duration_s": 1.6,
+          "kind": "texture",
+          "description": "Crystalline frost crackle following the freeze front, ending on a glassy bell.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "match_cut",
+        "duration_s": 0.4,
+        "motivation": "The telephoto disc of the ice Moon match-cuts to the same Moon filling the frame in space."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.2,
+      "end_s": 11.7,
+      "narration": {
+        "text": "Same size, same orbit, solid ice. And the dark lava seas that form its face? Gone.",
+        "start_s": 4.5,
+        "end_s": 11.3,
+        "delivery_note": "Measured; a short pause before 'Gone.'"
+      },
+      "viewer_question": "What stays the same, and what disappears?",
+      "visual_payoff": "A ghost outline of the rocky Moon fits the ice Moon exactly on its orbit, then the familiar dark 'face' dissolves into uniform ice.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.2,
+          "end_s": 7.9,
+          "shot_type": "space orbit with size comparison",
+          "world": "Space, 1 unit = 1,000 km, Moon-centred: the ice Moon (radius 1.737) at the origin, Sun direction from +X. A faint orbit arc runs along the X axis through the Moon; Earth lies far outside the frame toward -Z.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 24,
+            "keyframes": [
+              {
+                "t_s": 4.2,
+                "position": [-2.2, 0.8, 9.6],
+                "look_at": [0, 0, 0],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 7.9,
+                "position": [1.6, 0.5, 8.4],
+                "look_at": [0, 0, 0],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow orbit from left to right around the ice Moon.",
+            "lens_notes": "24° vertical FOV; the Moon fills about two thirds of the frame width."
+          },
+          "subjects": [
+            {
+              "id": "ice_moon",
+              "kind": "moon",
+              "appearance": "Blue-white icy sphere, softly cratered, with a crisp terminator on the left limb.",
+              "geometry_and_material": "Ice mode: high albedo, fracture lines, crater normals, faint subsurface blue in the shadowed rims.",
+              "scale_and_accuracy": "True 1,737 km radius in 1,000 km units.",
+              "movement": "Rotates 0.6° over the shot (illustrative), keeping the same face toward Earth.",
+              "asset_hint": "candidate:moon-body-v1"
+            },
+            {
+              "id": "size_ghost_and_orbit",
+              "kind": "diagram",
+              "appearance": "A thin dashed gray circle exactly matching the ice Moon's silhouette, and a faint silver orbit arc.",
+              "geometry_and_material": "Screen-space dashed outline and a line strip, additive, low opacity.",
+              "scale_and_accuracy": "Same radius as the ice Moon (equal size); orbit arc illustrative, distance unchanged.",
+              "movement": "Ghost outline draws on 4.6–5.6 s; label SAME SIZE · SAME ORBIT at 5.0 s.",
+              "asset_hint": "reuse:overlay-labels-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse, faint stars.",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "4.2–4.6 s match-cut in: the ice Moon fills the frame.",
+            "4.6–5.6 s dashed rocky-Moon outline draws around the limb and fits exactly.",
+            "5.0 s label 'SAME SIZE · SAME ORBIT' appears; 6.2 s small chip 'SOLID ICE'.",
+            "5.6–7.9 s orbit continues; the outline fades by 7.6 s."
+          ],
+          "lighting": "Harsh directional sunlight from +X, no ambient except faint starlight; deep black shadow side.",
+          "effects": [
+            "Very soft bloom on the bright limb",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Moon centred slightly above middle (y≈820 px); labels in the upper safe area, clear of captions."
+        },
+        {
+          "id": "SH02",
+          "start_s": 7.9,
+          "end_s": 11.7,
+          "shot_type": "straight-on face comparison",
+          "world": "Same space frame, viewing the near side exactly as seen from Earth, full illumination from behind the camera.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 24,
+            "keyframes": [
+              {
+                "t_s": 7.9,
+                "position": [0, 0, 7.4],
+                "look_at": [0, 0, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 11.7,
+                "position": [0, 0, 6.6],
+                "look_at": [0, 0, 0],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow straight push-in on the full disc.",
+            "lens_notes": "Flat, frontal framing that reads like looking up at the full Moon."
+          },
+          "subjects": [
+            {
+              "id": "near_side",
+              "kind": "moon",
+              "appearance": "First today's gray near side with the dark maria forming the familiar 'face'; the maria then dissolve and the disc becomes uniform bright ice with crater rims.",
+              "geometry_and_material": "Rock mode with maria mask, then iceAmount 0 → 1 via a soft radial dissolve; albedo 0.12 → 0.75 with exposure locked so the brightening is visible.",
+              "scale_and_accuracy": "True near-side maria layout in TODAY state.",
+              "movement": "Static; material transition only.",
+              "asset_hint": "candidate:moon-body-v1"
+            },
+            {
+              "id": "face_outline",
+              "kind": "diagram",
+              "appearance": "Soft dotted outline tracing the main maria (the 'face'), labelled 'DARK LAVA SEAS'.",
+              "geometry_and_material": "Screen-space dotted path following the maria mask edge.",
+              "scale_and_accuracy": "Traces real maria boundaries; schematic line weight.",
+              "movement": "Draws on 8.3–9.3 s, fades with the maria 9.9–10.9 s.",
+              "asset_hint": "reuse:overlay-labels-v1"
+            }
+          ],
+          "animation_plan": [
+            "7.9 s chip 'TODAY' (teal) top-left over the gray Moon.",
+            "8.3–9.3 s dotted outline traces the maria; label 'DARK LAVA SEAS'.",
+            "9.8 s chip switches to 'ICE MOON' (amber).",
+            "9.9–10.9 s the maria dissolve outward into uniform ice; outline fades; disc brightens.",
+            "10.9–11.7 s hold on the blank, glowing face."
+          ],
+          "lighting": "Full-phase sunlight from behind the camera; exposure locked across the change.",
+          "effects": [
+            "Gentle bloom after the change",
+            "Label: ILLUSTRATIVE TRANSFORMATION"
+          ],
+          "composition_notes": "Disc centred at y≈800 px, about 760 px wide; captions below the disc."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Same size, same orbit",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "dark lava seas",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 9.9,
+          "duration_s": 1.2,
+          "kind": "texture",
+          "description": "Soft shimmering sweep as the maria dissolve.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "light_wipe",
+        "duration_s": 0.6,
+        "motivation": "The glowing full disc becomes the moonlight falling on a night coast."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "premise",
+      "start_s": 11.7,
+      "end_s": 19.1,
+      "narration": {
+        "text": "Ice reflects sunlight like fresh snow. A full ice Moon would shine about six times brighter.",
+        "start_s": 12,
+        "end_s": 18.8,
+        "delivery_note": "Warm and quietly amazed on 'six times brighter'."
+      },
+      "viewer_question": "How bright would the nights get?",
+      "visual_payoff": "With exposure locked, a moonlit cove brightens about sixfold: crisp shadows, a dazzling glade and fewer faint stars.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.7,
+          "end_s": 15.2,
+          "shot_type": "eye-level night coast, TODAY",
+          "world": "Rocky cove at night, metres, +Y up, sea level y = 0. A wooden jetty runs from [0, 1.0, 0] out to sea along -Z; a person stands at its end; a low headland rises 300 m away on the left. Full Moon 35° high behind-left of the camera.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 11.7,
+                "position": [6, 1.6, 12],
+                "look_at": [0, 1.2, -6],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 15.2,
+                "position": [5, 1.65, 9.5],
+                "look_at": [0, 1.2, -6],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow dolly toward the figure on the jetty.",
+            "lens_notes": "38° vertical FOV, natural perspective; exposure locked for both states."
+          },
+          "subjects": [
+            {
+              "id": "person",
+              "kind": "human",
+              "appearance": "Adult in a long dark coat and scarf, looking out to sea, faint soft shadow on the boards.",
+              "geometry_and_material": "Capsule-and-sphere figure with fabric-like matte materials.",
+              "scale_and_accuracy": "1.75 m tall.",
+              "movement": "Slight breathing sway; turns head toward the Moon at 14.4 s.",
+              "asset_hint": "reuse:humanoid-figure-v1"
+            },
+            {
+              "id": "cove_sea",
+              "kind": "water",
+              "appearance": "Dark water with a dim silver glade.",
+              "geometry_and_material": "Wave normals with Fresnel reflection; glitter aimed at the Moon.",
+              "scale_and_accuracy": "Wave height 0.3 m.",
+              "movement": "Gentle swell.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            },
+            {
+              "id": "headland",
+              "kind": "terrain",
+              "appearance": "Dark grassy headland silhouette with rocky edges.",
+              "geometry_and_material": "Seeded ridged terrain falling to sea level, vertex-coloured.",
+              "scale_and_accuracy": "Peak 120 m, 300 m away.",
+              "movement": "Static.",
+              "asset_hint": "reuse:terrain-massif-v1"
+            },
+            {
+              "id": "night_sky",
+              "kind": "stars",
+              "appearance": "Deep navy sky with many faint stars.",
+              "geometry_and_material": "Gradient dome plus star shell.",
+              "scale_and_accuracy": "Today's full-moon sky brightness.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1, reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "11.7 s chip 'TODAY' (teal): dim blue moonlight, soft shadows, many faint stars.",
+            "12.0–15.2 s slow dolly; the swell glints faintly."
+          ],
+          "lighting": "Single directional moonlight (cool 4,100 K tint) at today's full-moon intensity with weak sky fill; no artificial lights.",
+          "effects": [
+            "Subtle film grain",
+            "Very light sea mist near the headland"
+          ],
+          "composition_notes": "Figure on the right third at y≈1000 px; glade on the left; captions in the lower safe band over dark water."
+        },
+        {
+          "id": "SH02",
+          "start_s": 15.2,
+          "end_s": 19.1,
+          "shot_type": "eye-level night coast, ICE MOON",
+          "world": "The same cove and framing continued, now lit by the ice Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 15.2,
+                "position": [5, 1.65, 9.5],
+                "look_at": [0, 1.2, -6],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 19.1,
+                "position": [4.2, 1.7, 7.4],
+                "look_at": [0, 1.3, -6],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "The dolly continues without a cut while the light changes.",
+            "lens_notes": "Exposure stays locked so the sixfold brightening is real on screen."
+          },
+          "subjects": [
+            {
+              "id": "person",
+              "kind": "human",
+              "appearance": "The same figure, now with a crisp shadow stretching across the boards.",
+              "geometry_and_material": "As before.",
+              "scale_and_accuracy": "1.75 m tall.",
+              "movement": "Lifts a hand to shade the eyes at 17.0 s.",
+              "asset_hint": "reuse:humanoid-figure-v1"
+            },
+            {
+              "id": "cove_sea",
+              "kind": "water",
+              "appearance": "Bright silver glade, visible wave texture far out.",
+              "geometry_and_material": "Same ocean with glitter intensity ×6.",
+              "scale_and_accuracy": "Brightness tied to the albedo ratio (about 6×).",
+              "movement": "Gentle swell.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            },
+            {
+              "id": "night_sky",
+              "kind": "stars",
+              "appearance": "Sky lifts to a deep blue; the faintest stars fade, the brightest remain.",
+              "geometry_and_material": "Sky scatter raised; star brightness threshold raised.",
+              "scale_and_accuracy": "Modest fading consistent with brighter scattered moonlight.",
+              "movement": "Faint stars fade 15.4–16.4 s.",
+              "asset_hint": "reuse:sky-dome-v1, reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "15.2 s chip switches to 'ICE MOON' (amber).",
+            "15.3–16.1 s moonlight intensity ramps ×6; shadows sharpen; glade flares; sky scatter rises; faint stars fade.",
+            "16.6 s label 'ABOUT 6× BRIGHTER · ESTIMATE' near the top.",
+            "17.0 s the person shades their eyes; dolly continues to 19.1 s."
+          ],
+          "lighting": "Same moonlight direction at six times the intensity with proportionally brighter sky fill; exposure unchanged.",
+          "effects": [
+            "Soft bloom on the glade",
+            "Label: ILLUSTRATIVE COMPARISON · EXPOSURE FIXED"
+          ],
+          "composition_notes": "Keep the brightened glade away from the caption band; label at y≈300 px."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "like fresh snow",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "about six times brighter",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 11.7,
+          "duration_s": 7.4,
+          "kind": "ambience",
+          "description": "Quiet waves against the jetty pilings and a faint night breeze.",
+          "relative_db": -26
+        },
+        {
+          "at_s": 15.3,
+          "duration_s": 1.2,
+          "kind": "music_swell",
+          "description": "Glassy pad swell as the light brightens.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL04",
+        "CL17"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The bright Moon above the cove dissolves into the same Moon shown cut open."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "mechanism",
+      "start_s": 19.1,
+      "end_s": 27.9,
+      "narration": {
+        "text": "But ice is light. With a third of the mass, it would tug our oceans a third as hard.",
+        "start_s": 19.4,
+        "end_s": 27.5,
+        "delivery_note": "Clear and explanatory; slow down on 'a third as hard'."
+      },
+      "viewer_question": "Why would a lighter Moon matter to the sea?",
+      "visual_payoff": "Cutaways show a dense rocky Moon beside a light icy one, then Earth's tidal bulge visibly shrinks to about a third.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 19.1,
+          "end_s": 23.3,
+          "shot_type": "schematic cutaway comparison",
+          "world": "Clean space backdrop, 1 unit = 1,000 km. Two Moons of true radius 1.737 side by side, centres at [-2.3, 0.4, 0] (TODAY) and [2.3, 0.4, 0] (ICE MOON), each with a quarter wedge cut away; mass bars below at y = -2.6.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 19.1,
+                "position": [0, 1.0, 12.5],
+                "look_at": [0, 0, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 23.3,
+                "position": [0.6, 0.6, 10.8],
+                "look_at": [0, 0, 0],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push with a slight drift to the right.",
+            "lens_notes": "30° vertical FOV; both cutaways and bars fit inside the safe area."
+          },
+          "subjects": [
+            {
+              "id": "rock_moon_cutaway",
+              "kind": "diagram",
+              "appearance": "Gray crust, brown-gray rocky mantle and a small dark iron core (about 20% of the radius).",
+              "geometry_and_material": "Sphere with a wedge removed; matte banded cut faces.",
+              "scale_and_accuracy": "Schematic layering; true outer radius.",
+              "movement": "Turns 10° to present the cut.",
+              "asset_hint": "candidate:moon-body-v1"
+            },
+            {
+              "id": "ice_moon_cutaway",
+              "kind": "diagram",
+              "appearance": "Bright crystalline ice shell over a slightly bluer, denser ice core (about 70% of the radius).",
+              "geometry_and_material": "Sphere with a wedge removed; translucent icy cut faces with a subtle boundary.",
+              "scale_and_accuracy": "Schematic; core boundary at roughly 0.7 R where pressure exceeds about 0.2 GPa.",
+              "movement": "Turns 10° in sync.",
+              "asset_hint": "candidate:moon-body-v1"
+            },
+            {
+              "id": "mass_bars",
+              "kind": "diagram",
+              "appearance": "Two horizontal bars: TODAY 100% and ICE MOON about 31%.",
+              "geometry_and_material": "Flat emissive bars with Inter labels.",
+              "scale_and_accuracy": "Bar lengths to scale (0.31).",
+              "movement": "Bars grow 20.6–21.8 s.",
+              "asset_hint": "reuse:overlay-labels-v1"
+            }
+          ],
+          "animation_plan": [
+            "19.1–20.0 s cutaways rotate into view; labels TODAY / ICE MOON.",
+            "20.6–21.8 s mass bars grow; the ice bar stops at about 31% with label 'MASS ≈ ⅓'.",
+            "22.0 s tag 'SCHEMATIC · LAYERS SIMPLIFIED'."
+          ],
+          "lighting": "Soft key from upper left and cool rim light so the cut faces read clearly.",
+          "effects": [
+            "Label: SCHEMATIC",
+            "Faint ambient occlusion on the cut faces"
+          ],
+          "composition_notes": "Moons at y≈700 px, bars at y≈1150 px, captions below."
+        },
+        {
+          "id": "SH02",
+          "start_s": 23.3,
+          "end_s": 27.9,
+          "shot_type": "tidal bulge schematic",
+          "world": "Space schematic, 1 unit = 1,000 km for sizes but with the Earth–Moon distance compressed: Earth (radius 6.371) at the origin, the Moon at [30, 0, 0] instead of 384 units. A translucent ocean bulge shell around Earth points toward the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 23.3,
+                "position": [-6, 9, 30],
+                "look_at": [8, 0, 0],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 27.9,
+                "position": [-4, 7, 25],
+                "look_at": [8, 0, 0],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow descending push toward the Earth–Moon line.",
+            "lens_notes": "34° vertical FOV; Earth left of centre, Moon right."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth in daylight with clouds, oceans visible.",
+              "geometry_and_material": "NASA day map, clouds and atmosphere shell.",
+              "scale_and_accuracy": "True radius in 1,000 km units.",
+              "movement": "Slow spin (illustrative).",
+              "asset_hint": "reuse:earth-globe-v1, reuse:earth-textures-nasa-v1"
+            },
+            {
+              "id": "tidal_bulge",
+              "kind": "diagram",
+              "appearance": "Translucent cyan ellipsoidal shell with two bulges, one toward the Moon and one on the far side.",
+              "geometry_and_material": "Additive Fresnel shell, prolate along the Earth–Moon axis.",
+              "scale_and_accuracy": "Bulge height exaggerated about 100,000×; amplitude 1.0 → 0.31 to scale relative to itself.",
+              "movement": "Amplitude drops from 1.0 to 0.31 between 24.6 s and 26.2 s.",
+              "asset_hint": "candidate:tidal-bulge-v1"
+            },
+            {
+              "id": "moon_icon",
+              "kind": "moon",
+              "appearance": "The ice Moon, small and bright on the right.",
+              "geometry_and_material": "Ice mode moon body.",
+              "scale_and_accuracy": "True radius; distance compressed and labelled.",
+              "movement": "Static.",
+              "asset_hint": "candidate:moon-body-v1"
+            }
+          ],
+          "animation_plan": [
+            "23.3–24.4 s shell and a 'TIDAL PULL' arrow from the Moon appear at today's size.",
+            "24.6–26.2 s the arrow and both bulges shrink to about a third; label 'TIDAL PULL ≈ ⅓'.",
+            "26.2–27.9 s hold; tag 'NOT TO SCALE · BULGE EXAGGERATED'."
+          ],
+          "lighting": "Sunlight from the upper left; cool rim on Earth's limb.",
+          "effects": [
+            "Label: NOT TO SCALE",
+            "Faint bloom on the bulge rim"
+          ],
+          "composition_notes": "Earth at x≈380 px, y≈820 px; Moon at x≈880 px; labels above; captions clear below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "a third of the mass",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 20.6,
+          "duration_s": 1.2,
+          "kind": "texture",
+          "description": "Soft tick as the mass bars settle.",
+          "relative_db": -26
+        },
+        {
+          "at_s": 24.6,
+          "duration_s": 1.8,
+          "kind": "texture",
+          "description": "Low, gentle downward water-like swell as the bulge shrinks.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL06",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "orbit_match",
+        "duration_s": 0.6,
+        "motivation": "The camera rises above the Earth–Moon line, revealing the Sun's direction for the next diagram."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "mechanism",
+      "start_s": 27.9,
+      "end_s": 37.5,
+      "narration": {
+        "text": "The Sun would take over the tides: about half as high, with high tide at nearly the same hour every day.",
+        "start_s": 28.2,
+        "end_s": 37.1,
+        "delivery_note": "A small reveal on 'The Sun would take over'; steady and clear through the rest."
+      },
+      "viewer_question": "Who controls the tides now, and how does that change daily life?",
+      "visual_payoff": "The Sun's golden tidal bulge outgrows the Moon's silver one; then two tide clocks show high tides wandering around the dial today but clustering at one hour with an ice Moon.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 27.9,
+          "end_s": 32.7,
+          "shot_type": "top-down tide components schematic",
+          "world": "Space schematic viewed from above the orbital plane, 1 unit = 1,000 km for sizes, distances compressed: Earth at the origin, the Sun's glow far off along -X, the ice Moon on a compressed orbit of radius 26. Two bulge shells around Earth: gold (solar) and silver (lunar).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 27.9,
+                "position": [0, 34, 16],
+                "look_at": [0, 0, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 32.7,
+                "position": [0, 29, 11],
+                "look_at": [0, 0, 0],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "High overhead view drifting slightly lower.",
+            "lens_notes": "34° vertical FOV; Earth centred, Sun direction indicated at the left edge."
+          },
+          "subjects": [
+            {
+              "id": "earth_top",
+              "kind": "planet",
+              "appearance": "Earth seen over the North Pole, day side facing the Sun.",
+              "geometry_and_material": "NASA textures, atmosphere rim.",
+              "scale_and_accuracy": "True radius.",
+              "movement": "Slow spin.",
+              "asset_hint": "reuse:earth-globe-v1"
+            },
+            {
+              "id": "solar_and_lunar_bulges",
+              "kind": "diagram",
+              "appearance": "Gold bulge aligned with the Sun and a smaller silver bulge aligned with the Moon; their sum drawn as a white outline.",
+              "geometry_and_material": "Two additive ellipsoid shells plus a summed outline curve.",
+              "scale_and_accuracy": "Relative amplitudes to scale: gold 0.46, silver 0.31 (today's Moon = 1.0, shown faintly as a ghost); heights exaggerated.",
+              "movement": "The Moon advances a quarter orbit (accelerated); the summed outline stays mostly Sun-aligned.",
+              "asset_hint": "candidate:tidal-bulge-v1"
+            },
+            {
+              "id": "ice_moon_orbiting",
+              "kind": "moon",
+              "appearance": "Small bright ice Moon.",
+              "geometry_and_material": "Ice mode moon body.",
+              "scale_and_accuracy": "Orbit radius compressed; labelled.",
+              "movement": "Moves 90° along the orbit between 28.4 s and 32.4 s (about 7 days per second).",
+              "asset_hint": "candidate:moon-body-v1"
+            }
+          ],
+          "animation_plan": [
+            "27.9–28.8 s faint ghost of today's large lunar bulge, then it fades.",
+            "28.8–29.8 s gold solar bulge and smaller silver lunar bulge fade in; label 'SUN'S TIDE > ICE MOON'S TIDE'.",
+            "29.8–32.4 s the Moon swings a quarter orbit; the white summed outline wobbles but stays mostly toward the Sun; tag 'TIME ACCELERATED'."
+          ],
+          "lighting": "Sunlight from -X; Earth's night side dark.",
+          "effects": [
+            "Label: SCHEMATIC · NOT TO SCALE",
+            "Gold and silver colour coding"
+          ],
+          "composition_notes": "Earth at y≈820 px; labels at y≈300 px; summed outline clearly visible against black."
+        },
+        {
+          "id": "SH02",
+          "start_s": 32.7,
+          "end_s": 37.5,
+          "shot_type": "tide clock comparison",
+          "world": "Dark navy studio space, metres: two 24-hour clock dials of radius 1.0 floating side by side at [-1.15, 0.35, 0] (TODAY) and [1.15, 0.35, 0] (ICE MOON), lit like brass instruments.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 32.7,
+                "position": [0, 0.5, 6.4],
+                "look_at": [0, 0.3, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 37.5,
+                "position": [0, 0.4, 5.6],
+                "look_at": [0, 0.3, 0],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push-in on both dials.",
+            "lens_notes": "36° vertical FOV; both dials fully inside the side margins."
+          },
+          "subjects": [
+            {
+              "id": "tide_clock_today",
+              "kind": "diagram",
+              "appearance": "24-hour dial labelled 'HIGH TIDE · TODAY', teal marks for 14 consecutive days, each about 50 minutes later than the last, spreading around the dial.",
+              "geometry_and_material": "Canvas-drawn dial face with brass bezel, teal marks.",
+              "scale_and_accuracy": "Marks computed from a 24.84-hour lunar-day cycle (schematic location).",
+              "movement": "Marks appear one per 0.2 s from 33.2 s.",
+              "asset_hint": "reuse:dial-gauge-v1"
+            },
+            {
+              "id": "tide_clock_ice",
+              "kind": "diagram",
+              "appearance": "Matching dial labelled 'HIGH TIDE · ICE MOON', amber marks clustering within about ±1.4 hours of one hour.",
+              "geometry_and_material": "Same dial component, amber marks.",
+              "scale_and_accuracy": "Marks computed from summed 12.00 h (0.46) and 12.42 h (0.31) tides.",
+              "movement": "Marks appear in sync with the left dial.",
+              "asset_hint": "reuse:dial-gauge-v1"
+            }
+          ],
+          "animation_plan": [
+            "32.7–33.2 s dials fade in with labels TODAY / ICE MOON.",
+            "33.2–36.0 s fourteen daily marks pop onto each dial: scattered all around on the left, tightly clustered on the right.",
+            "36.2 s label 'TIDES ≈ HALF AS HIGH · OPEN-OCEAN ESTIMATE' beneath."
+          ],
+          "lighting": "Soft overhead key with warm brass highlights on the bezels; dark backdrop.",
+          "effects": [
+            "Label: SCHEMATIC",
+            "Very light vignette"
+          ],
+          "composition_notes": "Dials at y≈760 px; label at y≈1150 px; captions below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "take over the tides",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "nearly the same hour",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 28.8,
+          "duration_s": 3.6,
+          "kind": "music_swell",
+          "description": "Two slow tidal swells in the pad.",
+          "relative_db": -22
+        },
+        {
+          "at_s": 33.2,
+          "duration_s": 2.8,
+          "kind": "texture",
+          "description": "Fourteen soft clock ticks, one per mark.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL06",
+        "CL07",
+        "CL08",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "match_cut",
+        "duration_s": 0.5,
+        "motivation": "The clustered amber marks become the waterline of a real tidal flat seen from above."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 37.5,
+      "end_s": 45,
+      "narration": {
+        "text": "Mudflats where millions of shorebirds feed would shrink, and coastal life would follow gentler, clockwork tides.",
+      "start_s": 37.76,
+      "end_s": 44.6,
+        "delivery_note": "Tender and unhurried; warmth on 'clockwork tides'."
+      },
+      "viewer_question": "What happens to the coasts and the people and birds who live by the tides?",
+      "visual_payoff": "At low tide the vast mudflat of today shrinks to a narrow strip where shorebirds crowd, then a small harbor rises and falls on a gentle, regular tide.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 37.5,
+          "end_s": 41.4,
+          "shot_type": "aerial tidal flat comparison",
+          "world": "Temperate estuary at morning low tide, metres, +Y up, mean sea level y = 0. A 2 km × 2 km tidal flat slopes gently seaward along -Z with branching channels; salt marsh at the landward edge; open water beyond.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 37.5,
+                "position": [0, 140, 260],
+                "look_at": [0, 0, -60],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 41.4,
+                "position": [0, 95, 190],
+                "look_at": [0, 0, -40],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow descending drone glide toward the waterline.",
+            "lens_notes": "40° vertical FOV; horizon kept just inside the top safe margin."
+          },
+          "subjects": [
+            {
+              "id": "tidal_flat",
+              "kind": "terrain",
+              "appearance": "Wet gray-brown mud with ripples, glinting channels and shallow pools; salt-marsh greens at the top edge.",
+              "geometry_and_material": "Heightfield with channel carving, wet-sheen roughness tied to water depth, small pools.",
+              "scale_and_accuracy": "Slope about 1:1,000; tide level drives how much flat is exposed.",
+              "movement": "tideLevel TODAY low tide -1.8 m (wide flat) → ICE MOON low tide -0.9 m (narrow strip) between 39.0 s and 40.4 s.",
+              "asset_hint": "candidate:tidal-flat-v1"
+            },
+            {
+              "id": "shorebirds",
+              "kind": "animal",
+              "appearance": "Several hundred small gray-and-white shorebirds feeding along the waterline, some lifting and resettling.",
+              "geometry_and_material": "Instanced birds with wing flapping; smaller wingspan and paler colours configured.",
+              "scale_and_accuracy": "Wingspan 0.4 m; flock density illustrative.",
+              "movement": "Flock centre follows the waterline as it moves; birds crowd into the narrower strip.",
+              "asset_hint": "reuse:bird-flock-v1"
+            },
+            {
+              "id": "estuary_water",
+              "kind": "water",
+              "appearance": "Calm gray-blue water with soft morning glitter.",
+              "geometry_and_material": "Ocean surface plane at the tide level.",
+              "scale_and_accuracy": "Small waves (0.15 m).",
+              "movement": "Plane rises with tideLevel.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            }
+          ],
+          "animation_plan": [
+            "37.5 s chip 'TODAY · LOW TIDE' over the wide exposed flat with feeding birds.",
+            "39.0–40.4 s chip switches to 'ICE MOON · LOW TIDE'; the waterline advances, the exposed flat shrinks to a narrow band; birds shift and crowd.",
+            "40.6 s tag 'ILLUSTRATIVE · EACH COAST DIFFERS'."
+          ],
+          "lighting": "Low morning sun from the east (left), soft blue sky fill, long mud ripple shadows.",
+          "effects": [
+            "Thin morning haze toward the horizon",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Waterline crosses the frame at y≈900 px; chip in the top safe area; captions over mud texture with a soft gradient."
+        },
+        {
+          "id": "SH02",
+          "start_s": 41.4,
+          "end_s": 45,
+          "shot_type": "harbor eye level",
+          "world": "Small fishing harbor at the edge of the estuary, metres, +Y up, water at y = 0.3. Timber jetty along X, three small sailboats moored, a tide board on a post beside the jetty.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 41.4,
+                "position": [12, 3, 16],
+                "look_at": [0, 1.2, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 45,
+                "position": [9, 2.6, 12],
+                "look_at": [0, 1.2, 0],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Gentle dolly along the jetty toward the fisher.",
+            "lens_notes": "38° vertical FOV; natural eye-level perspective."
+          },
+          "subjects": [
+            {
+              "id": "fisher",
+              "kind": "human",
+              "appearance": "Fisher in a yellow oilskin jacket and boots coiling a rope beside the tide board.",
+              "geometry_and_material": "Humanoid figure with coat, matte rubber and fabric materials.",
+              "scale_and_accuracy": "1.72 m tall.",
+              "movement": "Coils rope; glances at the tide board at 43.0 s.",
+              "asset_hint": "reuse:humanoid-figure-v1"
+            },
+            {
+              "id": "boats",
+              "kind": "architecture",
+              "appearance": "Three small sloops with furled sails and white hulls.",
+              "geometry_and_material": "Procedural sailboats with furled sails.",
+              "scale_and_accuracy": "7 m long.",
+              "movement": "Gentle bob and heel in small ripples.",
+              "asset_hint": "reuse:sailboat-v1"
+            },
+            {
+              "id": "tide_board",
+              "kind": "diagram",
+              "appearance": "Painted tide board with metre marks; a small plaque reads 'HIGH TIDE ≈ 9 AM DAILY'.",
+              "geometry_and_material": "Painted wood post and board with canvas-drawn text.",
+              "scale_and_accuracy": "Metre marks at true scale; plaque text illustrative.",
+              "movement": "Water level against the board rises 0.3 m over the shot (time-lapse).",
+              "asset_hint": "shot-specific:tide-board"
+            },
+            {
+              "id": "harbor_water",
+              "kind": "water",
+              "appearance": "Calm green-gray harbor water with soft reflections.",
+              "geometry_and_material": "Ocean surface plane.",
+              "scale_and_accuracy": "Ripples 0.05 m.",
+              "movement": "Level rises slowly with the time-lapse.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            }
+          ],
+          "animation_plan": [
+            "41.4–43.0 s the fisher coils rope; boats bob.",
+            "43.0 s fisher glances at the board; plaque readable; tag 'TIME-LAPSE · ILLUSTRATIVE'.",
+            "43.0–45.0 s gentle rise of the water against the board."
+          ],
+          "lighting": "Soft morning sun from the east with warm accents on the oilskin; cool reflected sky on the water.",
+          "effects": [
+            "Light lens haze",
+            "Label: TIME-LAPSE"
+          ],
+          "composition_notes": "Fisher on the left third at y≈1000 px; board on the right; captions below the jetty line."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "millions of shorebirds",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "clockwork tides",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 37.5,
+          "duration_s": 3.9,
+          "kind": "ambience",
+          "description": "Distant shorebird calls, light wind over the flat.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 41.4,
+          "duration_s": 3.6,
+          "kind": "ambience",
+          "description": "Harbor water lapping and a soft rope creak.",
+          "relative_db": -25
+        }
+      ],
+      "claim_ids": [
+        "CL08",
+        "CL09",
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.7,
+        "motivation": "The harbor fades to night as the bright ice Moon rises over a dark meadow."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "human_impact",
+      "start_s": 45,
+      "end_s": 52.5,
+      "narration": {
+        "text": "Nights would glow. Some animals would hide; dung beetles, which steer by moonlight, would navigate better.",
+        "start_s": 45.3,
+        "end_s": 52.1,
+        "delivery_note": "Soft and intimate; a smile on 'dung beetles'."
+      },
+      "viewer_question": "How would wildlife react to brighter nights?",
+      "visual_payoff": "In a moonlit meadow, pairs of eyeshine retreat into the grass; then a tiny dung beetle rolls its ball in a straight line under a schematic pattern of polarized moonlight.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 45,
+          "end_s": 48.4,
+          "shot_type": "night meadow wide",
+          "world": "Dry grassland at night, metres, +Y up, ground y = 0, a low ridge 2 km away. The bright ice Moon 40° high ahead-right. Low shrubs scattered.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 45,
+                "position": [0, 1.2, 8],
+                "look_at": [0, 0.7, -10],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 48.4,
+                "position": [0, 1.0, 5.5],
+                "look_at": [0, 0.6, -10],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow low glide forward through the grass tips.",
+            "lens_notes": "40° vertical FOV; grass in the foreground slightly soft."
+          },
+          "subjects": [
+            {
+              "id": "grass",
+              "kind": "vegetation",
+              "appearance": "Silver-lit dry grass with crisp moon shadows, swaying slightly.",
+              "geometry_and_material": "Instanced blades with wind bend, dry colouring.",
+              "scale_and_accuracy": "Blades 0.3–0.7 m.",
+              "movement": "Light breeze sway.",
+              "asset_hint": "reuse:grass-field-v1"
+            },
+            {
+              "id": "eyeshine",
+              "kind": "animal",
+              "appearance": "Five pairs of small glowing eyes low in the grass that blink and withdraw.",
+              "geometry_and_material": "Paired additive sprites with soft falloff.",
+              "scale_and_accuracy": "Small mammals implied, never shown harmed.",
+              "movement": "Pairs dim and slide back into cover between 46.4 s and 47.8 s.",
+              "asset_hint": "shot-specific:eyeshine-pairs"
+            },
+            {
+              "id": "ridge_and_sky",
+              "kind": "terrain",
+              "appearance": "Dark ridge silhouette under a deep blue, moonlit sky with only bright stars.",
+              "geometry_and_material": "Ridged terrain far away; sky dome with raised scatter; star shell.",
+              "scale_and_accuracy": "Ridge 150 m high, 2 km away.",
+              "movement": "Static.",
+              "asset_hint": "reuse:terrain-massif-v1, reuse:sky-dome-v1, reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "45.0–45.8 s chip 'ICE MOON · NIGHT'; bright silver light over the meadow.",
+            "46.4–47.8 s eyeshine pairs blink and retreat into the grass.",
+            "47.8–48.4 s glide continues toward the ground."
+          ],
+          "lighting": "Strong cool moonlight from ahead-right (six times today's), crisp shadows, weak blue sky fill.",
+          "effects": [
+            "Faint ground mist",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Horizon at y≈760 px; eyeshine in the middle band; captions over darker foreground grass."
+        },
+        {
+          "id": "SH02",
+          "start_s": 48.4,
+          "end_s": 52.5,
+          "shot_type": "macro dung beetle",
+          "world": "Ground level on bare sandy soil between grass tufts, metres, +Y up, beetle starting at the origin and rolling along -Z at 5 cm/s.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 28,
+            "keyframes": [
+              {
+                "t_s": 48.4,
+                "position": [0.3, 0.06, 0.3],
+                "look_at": [0, 0.015, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 52.5,
+                "position": [0.18, 0.05, -0.06],
+                "look_at": [0, 0.015, -0.2],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Low macro tracking shot beside the beetle as it rolls its ball.",
+            "lens_notes": "28° vertical FOV macro with shallow depth of field; background grass and stars become soft bokeh."
+          },
+          "subjects": [
+            {
+              "id": "dung_beetle",
+              "kind": "animal",
+              "appearance": "Glossy black scarab beetle pushing a dung ball backwards with its hind legs, head down.",
+              "geometry_and_material": "Procedural segmented body with six animated legs, glossy chitin with clearcoat sheen; ball with fibrous rough material.",
+              "scale_and_accuracy": "Beetle 2.5 cm long, ball 3 cm diameter.",
+              "movement": "Walks backward in a straight line at 5 cm/s with a periodic leg gait; ball rolls accordingly.",
+              "asset_hint": "candidate:dung-beetle-v1"
+            },
+            {
+              "id": "polarization_pattern",
+              "kind": "diagram",
+              "appearance": "Thin pale-blue bars arranged in rings around the Moon's direction across the sky, labelled 'POLARIZED MOONLIGHT'.",
+              "geometry_and_material": "Screen-space overlay of e-vector bars computed for a point source at the Moon's position.",
+              "scale_and_accuracy": "Schematic of the real sky polarization pattern.",
+              "movement": "Fades in 49.4–50.2 s.",
+              "asset_hint": "shot-specific:sky-polarization-overlay"
+            },
+            {
+              "id": "background_bokeh",
+              "kind": "particle_system",
+              "appearance": "Soft out-of-focus star and grass highlights.",
+              "geometry_and_material": "Edge-bright bokeh discs.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Slow parallax with the camera.",
+              "asset_hint": "reuse:bokeh-field-v1"
+            }
+          ],
+          "animation_plan": [
+            "48.4–49.4 s the beetle climbs onto its ball, turns once (orientation dance), then pushes off.",
+            "49.4–50.2 s schematic polarization pattern fades into the sky.",
+            "50.2–52.5 s straight-line roll along -Z; tag 'SCHEMATIC · NOT TO SCALE'."
+          ],
+          "lighting": "Bright cool moonlight key from upper right raking across the sand grains; dim blue fill.",
+          "effects": [
+            "Shallow depth of field",
+            "Label: SCHEMATIC"
+          ],
+          "composition_notes": "Beetle on the lower-middle third at y≈980 px; pattern in the upper sky; captions below the ground line."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Nights would glow",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "steer by moonlight",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 45,
+          "duration_s": 7.5,
+          "kind": "ambience",
+          "description": "Night insects and a faint warm breeze through dry grass.",
+          "relative_db": -25
+        },
+        {
+          "at_s": 48.6,
+          "duration_s": 3.6,
+          "kind": "texture",
+          "description": "Tiny granular scuffs of the rolling ball.",
+          "relative_db": -28
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL11",
+        "CL12"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.7,
+        "motivation": "The silver light on the sand dissolves into light rippling down into the deep ocean."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "second_order_effect",
+      "start_s": 52.5,
+      "end_s": 60.9,
+      "narration": {
+        "text": "The deepest change is hidden: tides help stir the deep ocean, and weaker tides could slow that mixing.",
+        "start_s": 52.8,
+        "end_s": 60.5,
+        "delivery_note": "Lower and slower; thoughtful, never alarmed."
+      },
+      "viewer_question": "Could weaker tides change the deep ocean?",
+      "visual_payoff": "A glowing cross-section shows tidal currents over a ridge lifting swirls of deep water; with the ice Moon the swirls slow and fade to about a quarter.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 52.5,
+          "end_s": 56.8,
+          "shot_type": "ocean cross-section schematic, TODAY",
+          "world": "Schematic ocean slice, units = kilometres, +Y up, sea surface at y = 0, seafloor at y = -5 with a mid-ocean ridge rising to y = -2.4 near x = 0; slice 40 km wide and 2 km thick; vertical exaggeration ×4.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 35,
+            "keyframes": [
+              {
+                "t_s": 52.5,
+                "position": [0, -1.4, 30],
+                "look_at": [0, -2.6, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 56.8,
+                "position": [3, -2.2, 24],
+                "look_at": [0, -2.8, 0],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push down and to the right toward the ridge.",
+            "lens_notes": "35° vertical FOV; the whole water column visible."
+          },
+          "subjects": [
+            {
+              "id": "ocean_section",
+              "kind": "diagram",
+              "appearance": "Layered blue water: light near the surface, deep navy below; rugged dark ridge; soft cyan tidal current arrows sloshing back and forth.",
+              "geometry_and_material": "Layered translucent volume slices, extruded seafloor profile, animated arrow ribbons.",
+              "scale_and_accuracy": "Depths true in km but vertically exaggerated ×4 and labelled.",
+              "movement": "Tidal arrows reverse every 1.2 s (illustrative 12.4 h cycle).",
+              "asset_hint": "candidate:ocean-cross-section-v1"
+            },
+            {
+              "id": "mixing_eddies",
+              "kind": "particle_system",
+              "appearance": "Faint internal-wave lines rising from the ridge and turbulent swirls lifting cold deep water.",
+              "geometry_and_material": "Curl-noise particles and line strips, additive cyan.",
+              "scale_and_accuracy": "Illustrative mixing intensity; today = 1.0.",
+              "movement": "Swirls drift upward above the ridge.",
+              "asset_hint": "candidate:ocean-cross-section-v1"
+            },
+            {
+              "id": "marine_snow",
+              "kind": "particle_system",
+              "appearance": "Sparse slow-falling pale particles.",
+              "geometry_and_material": "Wrapped particle fall, dim and additive.",
+              "scale_and_accuracy": "Illustrative.",
+              "movement": "Gentle sinking.",
+              "asset_hint": "reuse:snowfall-v1"
+            }
+          ],
+          "animation_plan": [
+            "52.5–53.5 s the light-ripple dissolve resolves into the section; chip 'TODAY'.",
+            "53.5–56.8 s arrows slosh over the ridge; internal waves and swirls lift deep water; label 'TIDES ≈ 1 TERAWATT TO THE DEEP OCEAN'."
+          ],
+          "lighting": "Soft emissive diagram lighting with a faint top-down glow from the surface.",
+          "effects": [
+            "Label: SCHEMATIC · VERTICAL EXAGGERATION ×4",
+            "Subtle depth fog"
+          ],
+          "composition_notes": "Ridge at y≈1000 px; labels at the top; captions over the dark lower water."
+        },
+        {
+          "id": "SH02",
+          "start_s": 56.8,
+          "end_s": 60.9,
+          "shot_type": "ocean cross-section schematic, ICE MOON",
+          "world": "The same ocean slice continued.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 35,
+            "keyframes": [
+              {
+                "t_s": 56.8,
+                "position": [3, -2.2, 24],
+                "look_at": [0, -2.8, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 60.9,
+                "position": [5, -3, 20],
+                "look_at": [0, -3, 0],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Push continues without a cut.",
+            "lens_notes": "Same lens; continuity with the previous shot."
+          },
+          "subjects": [
+            {
+              "id": "ocean_section",
+              "kind": "diagram",
+              "appearance": "The same slice with shorter current arrows.",
+              "geometry_and_material": "As before.",
+              "scale_and_accuracy": "Arrow length scaled to about half (tide amplitude).",
+              "movement": "Arrows shrink 57.0–58.0 s.",
+              "asset_hint": "candidate:ocean-cross-section-v1"
+            },
+            {
+              "id": "mixing_eddies",
+              "kind": "particle_system",
+              "appearance": "Swirls thin out, slow down and dim.",
+              "geometry_and_material": "Same particles with reduced count, speed and brightness.",
+              "scale_and_accuracy": "Mixing energy shown at about one quarter; outcome uncertain.",
+              "movement": "Intensity 1.0 → 0.25 between 57.0 s and 58.6 s.",
+              "asset_hint": "candidate:ocean-cross-section-v1"
+            }
+          ],
+          "animation_plan": [
+            "56.8 s chip switches to 'ICE MOON'.",
+            "57.0–58.6 s arrows shrink and swirls fade to a quarter; label '≈ ¼ TIDAL ENERGY'.",
+            "59.0 s tag 'EFFECTS UNCERTAIN'."
+          ],
+          "lighting": "Same diagram lighting, slightly dimmer and cooler.",
+          "effects": [
+            "Label: SCHEMATIC",
+            "Label: EFFECTS UNCERTAIN"
+          ],
+          "composition_notes": "Keep labels above the ridge; captions remain on dark water."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "The deepest change is hidden",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "slow that mixing",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 52.5,
+          "duration_s": 8.4,
+          "kind": "ambience",
+          "description": "Deep, muffled ocean rumble with slow low-frequency movement.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 57,
+          "duration_s": 1.6,
+          "kind": "music_swell",
+          "description": "The pad thins to a held low drone as the swirls fade.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL13",
+        "CL14"
+      ],
+      "transition_out": {
+        "type": "light_wipe",
+        "duration_s": 0.6,
+        "motivation": "A bright band of sunlight sweeps up out of the water and becomes the sunlit limb of the ice Moon."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "twist",
+      "start_s": 60.9,
+      "end_s": 68.8,
+      "narration": {
+        "text": "And the Moon itself? Sunlight would slowly turn its ice to vapor, shrinking it over the ages.",
+        "start_s": 61.2,
+        "end_s": 68.4,
+        "delivery_note": "Quiet wonder; a gentle pause after 'itself?'."
+      },
+      "viewer_question": "Could an ice Moon even last?",
+      "visual_payoff": "The ice Moon's sunlit limb shimmers with faint, labelled vapor while frost glints on the night side; up close, water molecules break free of the ice lattice.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 60.9,
+          "end_s": 64.9,
+          "shot_type": "orbital limb view",
+          "world": "Space, 1 unit = 1,000 km: the ice Moon (radius 1.737) at the origin, half-lit with the Sun along +X; viewed from slightly behind the terminator so the sunlit limb curves across the frame.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 60.9,
+                "position": [3.2, 0.6, 3.8],
+                "look_at": [1.2, 0.2, 0],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 64.9,
+                "position": [2.6, 0.5, 3],
+                "look_at": [1.3, 0.2, 0],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow drift in toward the bright limb.",
+            "lens_notes": "30° vertical FOV; the limb arcs diagonally across the frame."
+          },
+          "subjects": [
+            {
+              "id": "ice_moon_limb",
+              "kind": "moon",
+              "appearance": "Brilliant sunlit ice with crater rims and fractures, a sharp terminator and a dark night side faintly lit by earthshine with tiny frost glints.",
+              "geometry_and_material": "Ice mode moon body with high-detail normals near the limb; earthshine fill on the night side.",
+              "scale_and_accuracy": "True radius.",
+              "movement": "Static.",
+              "asset_hint": "candidate:moon-body-v1"
+            },
+            {
+              "id": "vapor_halo",
+              "kind": "particle_system",
+              "appearance": "A barely visible blue-white shimmer lifting off the sunlit limb.",
+              "geometry_and_material": "Thin additive shell with drifting noise, opacity under 10%.",
+              "scale_and_accuracy": "Illustrative: real vapor would be invisible to the eye.",
+              "movement": "Slow outward drift; fades in 61.6–62.8 s.",
+              "asset_hint": "candidate:moon-body-v1"
+            }
+          ],
+          "animation_plan": [
+            "60.9–61.6 s light-wipe resolves into the sunlit limb.",
+            "61.6–62.8 s the vapor shimmer fades in; label 'VAPOR SHOWN ILLUSTRATIVELY · INVISIBLE TO THE EYE'.",
+            "63.0–64.9 s faint frost glints twinkle on the night side (refreezing)."
+          ],
+          "lighting": "Harsh sunlight from +X, deep black space, weak earthshine on the night side.",
+          "effects": [
+            "Soft bloom on the limb",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Limb from lower left to upper right through the middle band; label at the top; captions on black space."
+        },
+        {
+          "id": "SH02",
+          "start_s": 64.9,
+          "end_s": 68.8,
+          "shot_type": "molecular macro of sublimation",
+          "world": "Abstract dark space, units = one oxygen–oxygen bond length: an open hexagonal ice lattice about 8 units across forms a flat surface at y = 0, lit by a warm sunlight key from the upper right.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 64.9,
+                "position": [6, 3, 18],
+                "look_at": [0, 1, 0],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 68.8,
+                "position": [4, 2.2, 14],
+                "look_at": [0, 1.2, 0],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the lattice surface.",
+            "lens_notes": "30° vertical FOV, mild depth of field."
+          },
+          "subjects": [
+            {
+              "id": "ice_lattice",
+              "kind": "diagram",
+              "appearance": "Red-and-white water molecules held in hexagonal rings by pale blue bonds; a few surface molecules break their bonds and drift upward into the dark.",
+              "geometry_and_material": "Instanced spheres and bond lines; escaping molecules leave a faint trail.",
+              "scale_and_accuracy": "Schematic and not to scale.",
+              "movement": "One to two surface molecules detach every 0.5 s from 65.4 s and drift up at a slow constant speed.",
+              "asset_hint": "reuse:water-molecules-v1"
+            }
+          ],
+          "animation_plan": [
+            "64.9–65.4 s the lattice resolves; label 'SCHEMATIC · SUBLIMATION'.",
+            "65.4–68.8 s surface molecules break free one by one and drift away; the lattice surface steps down very slightly by 68.4 s."
+          ],
+          "lighting": "Warm sunlight key from upper right with cool fill; gentle emissive lift on the molecules.",
+          "effects": [
+            "Label: SCHEMATIC",
+            "Soft bloom on drifting molecules"
+          ],
+          "composition_notes": "Lattice in the lower middle at y≈1000 px; escaping molecules rise into the upper frame; captions below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "turn its ice to vapor",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 61.6,
+          "duration_s": 3,
+          "kind": "texture",
+          "description": "Faint airy hiss for the vapor, very low in the mix.",
+          "relative_db": -28
+        },
+        {
+          "at_s": 65.4,
+          "duration_s": 3.2,
+          "kind": "music_swell",
+          "description": "Fragile high shimmer that thins as molecules drift away.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL15",
+        "CL16"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.8,
+        "motivation": "The last drifting molecule dissolves into the first star of the dusk sky over the sea."
+      }
+    },
+    {
+      "id": "S10",
+      "beat": "ending",
+      "start_s": 68.8,
+      "end_s": 74,
+      "narration": {
+        "text": "Our dusty gray Moon? It's built to last.",
+        "start_s": 69.1,
+        "end_s": 72.5,
+        "delivery_note": "Warm, settled, almost a smile; let the silence after it breathe."
+      },
+      "viewer_question": "Which Moon would we rather have?",
+      "visual_payoff": "The real gray Moon, dark maria and all, rises over the dusk sea in the exact framing of the opening frame.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 68.8,
+          "end_s": 74,
+          "shot_type": "telephoto moonrise, loop return",
+          "world": "The opening world: open sea at dusk, metres, Moon 1.5° above the horizon at its true 0.52° size (radius 45.4 m at [0, 262, -10000]), now today's rocky Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 3.2,
+            "keyframes": [
+              {
+                "t_s": 68.8,
+                "position": [0, 2.7, 50],
+                "look_at": [0, 210, -10000],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 72.6,
+                "position": [0, 2.55, 8],
+                "look_at": [0, 202, -10000],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 74,
+                "position": [0, 2.5, 0],
+                "look_at": [0, 200, -10000],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push that settles exactly on the frame-0 pose for a seamless loop.",
+            "lens_notes": "3.2° vertical FOV telephoto, identical to the opening shot."
+          },
+          "subjects": [
+            {
+              "id": "moon",
+              "kind": "moon",
+              "appearance": "Today's gray full Moon with its dark maria 'face', softly warm near the horizon.",
+              "geometry_and_material": "Rock mode moon body (iceAmount 0), albedo 0.12, lunar maria.",
+              "scale_and_accuracy": "True angular size and position; telephoto only.",
+              "movement": "Static.",
+              "asset_hint": "candidate:moon-body-v1"
+            },
+            {
+              "id": "sea",
+              "kind": "water",
+              "appearance": "Dusk sea with a modest silver glade.",
+              "geometry_and_material": "Ocean surface with glitter aimed at the Moon at today's intensity.",
+              "scale_and_accuracy": "Wave height 0.4 m.",
+              "movement": "Travelling swell, identical phase to frame 0 at 74.0 s.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            },
+            {
+              "id": "dusk_sky",
+              "kind": "atmosphere",
+              "appearance": "Indigo-to-violet dusk gradient with a few early stars.",
+              "geometry_and_material": "Sky dome and star shell.",
+              "scale_and_accuracy": "As in the opening.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1, reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "68.8–69.6 s dissolve completes onto the gray Moon rising.",
+            "69.1–72.5 s narration; chip 'TODAY' briefly at 69.8 s, gone by 71.8 s.",
+            "72.6–74.0 s settle on the exact frame-0 pose; music resolves; final frame equals frame 0."
+          ],
+          "lighting": "Dusk sky ambient and today's moonlight; exposure identical to the opening.",
+          "effects": [
+            "Soft bloom on the glade",
+            "Thin horizon haze"
+          ],
+          "composition_notes": "Moon at y≈620 px, horizon at y≈1060 px, matching frame 0 exactly; no labels in the final second."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "built to last",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 68.8,
+          "duration_s": 5.2,
+          "kind": "ambience",
+          "description": "The opening's gentle surf returns.",
+          "relative_db": -26
+        },
+        {
+          "at_s": 71.8,
+          "duration_s": 2.2,
+          "kind": "music_swell",
+          "description": "The score resolves to E major and fades toward silence.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL18"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "The last frame equals frame 0, so the video loops seamlessly into the Moon frosting over again."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json held 39 assets (from air-pressure-doubled, ice-sank-instead-of-floating and oxygen-gone-five-seconds) when this storyboard was written; it has no Moon component. Every reuse ID below was checked against the registry.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic rendering, post-processing, dissolves, light wipes and overlay compositing for every shot.",
+        "configuration": "Per-shot exposure (locked across the TODAY/ICE MOON brightness comparisons), bloom and grade."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Drives every camera from the storyboard keyframes.",
+        "configuration": "Keyframes as written per shot; telephoto 3.2° shots in S01 and S10."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in word-timed captions for all narration.",
+        "configuration": "66 px Inter, 24 characters per line, baseline 1370, amber active word."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "TODAY / ICE MOON chips, SCHEMATIC / ILLUSTRATIVE / NOT TO SCALE tags, ghost outlines, mass bars and numeric callouts.",
+        "configuration": "Teal for today, amber for the ice Moon."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Caption and label typeface.",
+        "configuration": "Weights 500, 600 and 700."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Noise and deterministic math for the new moon, tidal-flat, cross-section and beetle components.",
+        "configuration": "Seeded per component."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and all sound effects.",
+        "configuration": "E minor glass pad and bells resolving to E major; noise-based surf, frost, ocean rumble and vapor hiss."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Earth in the tidal bulge and tide-component schematics.",
+        "configuration": "Daylight view with clouds; setView over the Atlantic and over the North Pole."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Day, night and cloud maps for the Earth globe.",
+        "configuration": "Standard set."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Space backdrops, dusk and night skies.",
+        "configuration": "Low brightness in space, horizon cut-off for terrestrial skies; faint stars fade when moonlight brightens."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Dusk sky (S01, S10), moonlit night skies (S03, S07) and morning sky (S06).",
+        "configuration": "Sun below horizon for dusk; scatter scaled with moonlight intensity at night."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Dusk sea with moon glade, night cove, estuary water and harbor water.",
+        "configuration": "Glitter aimed at the Moon direction with intensity ×1 (today) or ×6 (ice Moon); water level driven by tide level."
+      },
+      {
+        "asset_id": "terrain-massif-v1",
+        "usage": "Headland at the night cove and the distant meadow ridge.",
+        "configuration": "Low peaks (120–150 m), no snow line, dark vertex colours."
+      },
+      {
+        "asset_id": "bird-flock-v1",
+        "usage": "Shorebirds feeding along the tidal-flat waterline.",
+        "configuration": "About 400 birds, wingspan 0.4 m, pale gray-white colours, centre following the waterline."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Person on the moonlit jetty and the fisher at the harbor.",
+        "configuration": "Long coat and scarf at night; yellow oilskin and boots at the harbor."
+      },
+      {
+        "asset_id": "sailboat-v1",
+        "usage": "Three small moored boats in the harbor.",
+        "configuration": "7 m length, furled sails, gentle bob."
+      },
+      {
+        "asset_id": "grass-field-v1",
+        "usage": "Moonlit dry meadow in the wildlife scene.",
+        "configuration": "Dry colours, light breeze, crisp moon shadows."
+      },
+      {
+        "asset_id": "bokeh-field-v1",
+        "usage": "Soft background highlights behind the dung beetle macro.",
+        "configuration": "Cool white discs, low gain."
+      },
+      {
+        "asset_id": "snowfall-v1",
+        "usage": "Marine snow drifting in the ocean cross-section.",
+        "configuration": "Sparse, slow, dim additive particles."
+      },
+      {
+        "asset_id": "water-molecules-v1",
+        "usage": "Ice lattice in the sublimation macro.",
+        "configuration": "freeze 1 (lattice); add a backwards-compatible 'sublimate' parameter that releases surface molecules upward."
+      },
+      {
+        "asset_id": "dial-gauge-v1",
+        "usage": "Two 24-hour tide clocks comparing high-tide times today and with an ice Moon.",
+        "configuration": "min 0, max 24, arcDegrees 360, labelStep 3, unit 'h', titles 'HIGH TIDE · TODAY' and 'HIGH TIDE · ICE MOON', marks as computed tide times."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "moon-body-v1",
+        "description": "Configurable Moon or small planetary body: rock mode with a lunar maria mask, ice mode with fractures and craters, a moving freeze front blending the two, albedo-correct Lommel–Seeliger lighting, earthshine, optional cutaway wedge with layer colours, and an optional faint illustrative vapor halo.",
+        "reusable_in": "Every Moon, icy-moon, orbit, eclipse and planetary-comparison story, including moon-half-distance.",
+        "parameters": [
+          "radius",
+          "iceAmount",
+          "freezeFrontDirection",
+          "albedoRock",
+          "albedoIce",
+          "mariaStrength",
+          "crackDensity",
+          "sunDirection",
+          "earthshine",
+          "cutaway",
+          "layers",
+          "haloStrength",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/planet/Moon.ts"
+      },
+      {
+        "proposed_id": "tidal-flat-v1",
+        "description": "Gently sloping intertidal mudflat heightfield with branching channels, ripples, pools, wet sheen and salt-marsh edge whose exposed area is driven by a tide level.",
+        "reusable_in": "Tides, sea-level rise, storm surge, estuary wildlife and coastal-life stories.",
+        "parameters": [
+          "size",
+          "slope",
+          "channelDensity",
+          "tideLevel",
+          "wetness",
+          "marshColor",
+          "mudColor",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/TidalFlat.ts"
+      },
+      {
+        "proposed_id": "tidal-bulge-v1",
+        "description": "Schematic translucent ocean bulge shells around a planet for one or more tide-raising bodies, with per-body direction and relative amplitude and an optional summed outline.",
+        "reusable_in": "Any tide, Moon-distance, Moon-mass or Sun–Moon alignment explainer.",
+        "parameters": [
+          "planetRadius",
+          "bodies",
+          "amplitudes",
+          "colors",
+          "exaggeration",
+          "showSum",
+          "time_s"
+        ],
+        "suggested_path": "src/library/diagram/TidalBulge.ts"
+      },
+      {
+        "proposed_id": "ocean-cross-section-v1",
+        "description": "Layered ocean slice with a seafloor profile, sloshing current arrows, internal-wave lines and turbulent mixing particles whose intensity is a parameter, with adjustable vertical exaggeration.",
+        "reusable_in": "Ocean circulation, mixing, upwelling, deep-sea life and climate explainers.",
+        "parameters": [
+          "width",
+          "depth",
+          "ridgeHeight",
+          "verticalExaggeration",
+          "currentStrength",
+          "mixingIntensity",
+          "period",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/diagram/OceanCrossSection.ts"
+      },
+      {
+        "proposed_id": "dung-beetle-v1",
+        "description": "Procedural scarab beetle with a six-legged walking gait pushing a rolling dung ball along a heading, with glossy chitin and a fibrous ball material.",
+        "reusable_in": "Insect, navigation, night-ecology and macro nature stories.",
+        "parameters": [
+          "length",
+          "ballRadius",
+          "speed",
+          "heading",
+          "gaitRate",
+          "shellColor",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/creatures/DungBeetle.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Retreating eyeshine pairs in the night meadow (S07 SH01)",
+      "Schematic sky polarization pattern around the Moon (S07 SH02)",
+      "Harbor tide board with 'HIGH TIDE ≈ 9 AM DAILY' plaque (S06 SH02)",
+      "Computed high-tide mark sets for the two tide clocks (S05 SH02)",
+      "Dashed size-comparison ghost of the rocky Moon (S02 SH01)",
+      "Dotted maria 'face' outline (S02 SH02)"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if the moon was made of ice",
+    "core_keywords": [
+      "moon made of ice",
+      "what if the moon was ice",
+      "ice moon",
+      "moon and tides",
+      "why do we have tides",
+      "sun tides",
+      "brighter full moon",
+      "moon science",
+      "space what if",
+      "tides explained",
+      "dung beetle moonlight",
+      "icy moons",
+      "science shorts"
+    ],
+    "distinctive_angle": "Same size, same orbit, but ice: the Moon would shine about six times brighter yet weigh a third as much, so the Sun takes over the tides, high tide keeps nearly the same hour every day, mudflats shrink, wildlife nights change, and the Moon itself slowly turns to vapor.",
+    "seo_integrity_note": "Mass, brightness and tide figures are estimates from stated assumptions (density about 1,040 kg/m³, icy-moon albedo, open-ocean tides); effects on wildlife and deep-ocean mixing are presented as possibilities; tidal bulges, the vapor halo and sky polarization are labelled illustrative or schematic. Titles and descriptions must not claim more than the film shows."
+  },
+  "delivery": {
+    "video_output": "output/moon-made-of-ice.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  }
+}

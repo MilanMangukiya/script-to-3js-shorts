@@ -6,12 +6,14 @@ import type * as THREE from 'three';
 import { createFilm as oxygenGoneFiveSeconds } from './stories/oxygen-gone-five-seconds/film';
 import { createFilm as iceSankInsteadOfFloating } from './stories/ice-sank-instead-of-floating/film';
 import { createFilm as airPressureDoubled } from './stories/air-pressure-doubled/film';
+import { createFilm as moonMadeOfIce } from './stories/moon-made-of-ice/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
   'oxygen-gone-five-seconds': oxygenGoneFiveSeconds,
   'ice-sank-instead-of-floating': iceSankInsteadOfFloating,
   'air-pressure-doubled': airPressureDoubled,
+  'moon-made-of-ice': moonMadeOfIce,
 };
 
 async function boot() {

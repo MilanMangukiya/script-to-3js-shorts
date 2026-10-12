@@ -39,6 +39,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_code; textures NASA public domain (see earth-textures-nasa-v1)",
@@ -64,6 +65,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "public_domain_nasa",
@@ -93,6 +95,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_procedural",
@@ -203,6 +206,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_procedural",
@@ -241,6 +245,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_procedural",
@@ -276,6 +281,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_procedural",
@@ -436,6 +442,7 @@
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_procedural",
@@ -476,6 +483,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_procedural",
@@ -549,6 +557,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_code",
@@ -589,6 +598,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_code",
@@ -616,6 +626,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_code",
@@ -650,6 +661,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_code",
@@ -685,6 +697,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_code",
@@ -714,6 +727,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "original_code",
@@ -736,6 +750,7 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
+        "moon-made-of-ice",
         "oxygen-gone-five-seconds"
       ],
       "license": "SIL Open Font License 1.1",
@@ -805,7 +820,8 @@
       ],
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
-        "ice-sank-instead-of-floating"
+        "ice-sank-instead-of-floating",
+        "moon-made-of-ice"
       ],
       "license": "original_procedural",
       "notes": "Always label as schematic and not to scale. halfSize gives the ice-state bounding box for outline boxes; view down +Z to reveal the hexagons."
@@ -1013,7 +1029,8 @@
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
         "air-pressure-doubled",
-        "ice-sank-instead-of-floating"
+        "ice-sank-instead-of-floating",
+        "moon-made-of-ice"
       ],
       "license": "original_procedural",
       "notes": "Additive; keep gain low over bright backdrops. Disc size is in pixels for 1080-wide output."
@@ -1111,7 +1128,8 @@
       ],
       "created_for": "air-pressure-doubled",
       "used_in": [
-        "air-pressure-doubled"
+        "air-pressure-doubled",
+        "moon-made-of-ice"
       ],
       "license": "original_procedural",
       "notes": "value is a plain setter, so drive it from a deterministic function of time. Clockwise = increasing, scale centred on 12 o'clock."
@@ -1267,7 +1285,8 @@
       ],
       "created_for": "air-pressure-doubled",
       "used_in": [
-        "air-pressure-doubled"
+        "air-pressure-doubled",
+        "moon-made-of-ice"
       ],
       "license": "original_procedural",
       "notes": "Doubling wind.bend shows a wind that pushes twice as hard (small-angle approximation). Grass does not receive shadows; the ground under it does."
@@ -1301,7 +1320,8 @@
       ],
       "created_for": "air-pressure-doubled",
       "used_in": [
-        "air-pressure-doubled"
+        "air-pressure-doubled",
+        "moon-made-of-ice"
       ],
       "license": "original_procedural",
       "notes": "Local frame: bow +X, mast +Y, waterline y = 0, sails eased toward -Z (wind from +Z); positive heel leans toward -Z. Built for mid and far distances."
@@ -1370,6 +1390,144 @@
       ],
       "license": "original_procedural",
       "notes": "surfacePressure is in atmospheres (1 = today, 2 = doubled air) and only affects the Boyle growth factor."
+    },
+    {
+      "id": "moon-body-v1",
+      "name": "Procedural rocky and icy Moon",
+      "type": "three_component",
+      "source_path": "src/library/planet/Moon.ts",
+      "description": "Seeded near-side lunar maria, cratered ice, moving frost front, albedo-controlled lighting and earthshine for Moon and icy-satellite stories.",
+      "tags": [
+        "moon",
+        "ice",
+        "planet",
+        "space",
+        "craters",
+        "maria"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "seed",
+        "sunDirection",
+        "albedoRock",
+        "albedoIce",
+        "iceAmount",
+        "earthshine",
+        "time_s"
+      ],
+      "created_for": "moon-made-of-ice",
+      "used_in": [
+        "moon-made-of-ice"
+      ],
+      "license": "original_procedural",
+      "notes": "Rock and ice maps are generated from seeded canvas textures; visual geography is illustrative. Use a label when showing a material transformation."
+    },
+    {
+      "id": "tidal-bulge-v1",
+      "name": "Schematic tidal-potential contours",
+      "type": "three_component",
+      "source_path": "src/library/diagram/TidalBulge.ts",
+      "description": "Colored contours around a planet for multiple tide-raising bodies, with amplitude and direction controls.",
+      "tags": [
+        "tides",
+        "moon",
+        "sun",
+        "ocean",
+        "schematic"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "colors",
+        "bodies",
+        "direction",
+        "amplitude",
+        "phase"
+      ],
+      "created_for": "moon-made-of-ice",
+      "used_in": [
+        "moon-made-of-ice"
+      ],
+      "license": "original_procedural",
+      "notes": "Diagram contours are exaggerated and distances are not to scale; label accordingly."
+    },
+    {
+      "id": "tidal-flat-v1",
+      "name": "Procedural intertidal estuary",
+      "type": "three_component",
+      "source_path": "src/library/environment/TidalFlat.ts",
+      "description": "Seeded mudflat heightfield with branching channels, marsh tufts, and a clipped water sheet controlled by tide level.",
+      "tags": [
+        "tides",
+        "estuary",
+        "mudflat",
+        "coast",
+        "water",
+        "habitat"
+      ],
+      "configurable_parameters": [
+        "size",
+        "seed",
+        "tideLevel"
+      ],
+      "created_for": "moon-made-of-ice",
+      "used_in": [
+        "moon-made-of-ice"
+      ],
+      "license": "original_procedural",
+      "notes": "Illustrative local topography; low tide is a smaller tideLevel value."
+    },
+    {
+      "id": "ocean-cross-section-v1",
+      "name": "Deep ocean cross-section",
+      "type": "three_component",
+      "source_path": "src/library/diagram/OceanCrossSection.ts",
+      "description": "Layered ocean slice with a ridge, directional current arrows, and seeded deterministic mixing particles.",
+      "tags": [
+        "ocean",
+        "deep-sea",
+        "mixing",
+        "tides",
+        "schematic"
+      ],
+      "configurable_parameters": [
+        "width",
+        "depth",
+        "seed",
+        "mixing",
+        "time_s"
+      ],
+      "created_for": "moon-made-of-ice",
+      "used_in": [
+        "moon-made-of-ice"
+      ],
+      "license": "original_procedural",
+      "notes": "Visual vertical scale is exaggerated; currents and particles represent mixing conceptually."
+    },
+    {
+      "id": "dung-beetle-v1",
+      "name": "Walking dung beetle",
+      "type": "three_component",
+      "source_path": "src/library/creatures/DungBeetle.ts",
+      "description": "Procedural scarab with articulated gait, glossy chitin, and a rolling fibrous ball.",
+      "tags": [
+        "insect",
+        "beetle",
+        "wildlife",
+        "night",
+        "navigation",
+        "macro"
+      ],
+      "configurable_parameters": [
+        "length",
+        "speed",
+        "time_s"
+      ],
+      "created_for": "moon-made-of-ice",
+      "used_in": [
+        "moon-made-of-ice"
+      ],
+      "license": "original_procedural",
+      "notes": "Designed for cinematic macro views; gait is illustrative."
     }
   ]
 }
