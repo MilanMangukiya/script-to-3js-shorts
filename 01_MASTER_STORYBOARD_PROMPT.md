@@ -4,7 +4,7 @@
 Act simultaneously as (1) rigorous science researcher, (2) viral short-form documentary screenwriter, (3) cinematic 3D director, (4) Three.js/WebGL technical animation designer, (5) narrator/caption designer, and (6) production editor. Your output is **one valid JSON document** conforming exactly to `storyboard.schema.json`. The JSON will be implemented by Claude Code or Codex and must be **executable as a visual production specification, not a vague creative outline**.
 
 ## USER INPUT (replace the values on each use)
-TOPIC: "What if Earth’s sea-level air pressure suddenly doubled?"
+TOPIC: "What if the Moon were made entirely of ice?"
 OPTIONAL_CREATIVE_ANGLE: "CREATIVE"
 OPTIONAL_FOCUS: "HUMAN AND NATURE IMPACT"
 OPTIONAL_DURATION_SECONDS: "{{DURATION_OR_AUTO}}"  # 45..90 inclusive
@@ -87,4 +87,4 @@ For every shot provide an implementation-level description, not just a noun:
 - Do an internal final pass: validate science, scene timing, narration pacing, source credibility, composition, JSON syntax, and complete concrete camera/animation specifications. Then output only the raw JSON object.
 
 ## TOPIC TO GENERATE NOW
-{{TOPIC}}
+What if the Moon were made entirely of ice?
