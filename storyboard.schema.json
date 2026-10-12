@@ -1,0 +1,967 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/whatif-shorts/storyboard.schema.json",
+  "title": "What-If Shorts — Film-Ready Three.js Storyboard v1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project",
+    "scientific_model",
+    "creative_direction",
+    "audio",
+    "captions",
+    "scenes",
+    "asset_plan",
+    "distribution",
+    "delivery"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.1.0"
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "topic",
+        "title",
+        "slug",
+        "format",
+        "width",
+        "height",
+        "fps",
+        "duration_s",
+        "language",
+        "audience",
+        "platforms",
+        "core_question"
+      ],
+      "properties": {
+        "topic": {
+          "type": "string",
+          "minLength": 8
+        },
+        "title": {
+          "type": "string",
+          "minLength": 8,
+          "maxLength": 90
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "format": {
+          "const": "9:16"
+        },
+        "width": {
+          "const": 1080
+        },
+        "height": {
+          "const": 1920
+        },
+        "fps": {
+          "const": 30
+        },
+        "duration_s": {
+          "type": "integer",
+          "minimum": 45,
+          "maximum": 90,
+          "description": "Video duration 45–90 seconds inclusive; 55–75 seconds typical."
+        },
+        "language": {
+          "const": "en"
+        },
+        "audience": {
+          "type": "string"
+        },
+        "platforms": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "youtube_shorts",
+              "tiktok",
+              "instagram_reels",
+              "facebook_reels",
+              "x_video"
+            ]
+          },
+          "minItems": 5
+        },
+        "core_question": {
+          "type": "string",
+          "minLength": 8
+        },
+        "viewer_takeaway": {
+          "type": "string",
+          "minLength": 12
+        }
+      }
+    },
+    "scientific_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "baseline_reality",
+        "counterfactual_change",
+        "assumptions",
+        "causal_chain",
+        "uncertainties",
+        "claims",
+        "sources"
+      ],
+      "properties": {
+        "baseline_reality": {
+          "type": "string",
+          "minLength": 15
+        },
+        "counterfactual_change": {
+          "type": "string",
+          "minLength": 15
+        },
+        "assumptions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "causal_chain": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "uncertainties": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claims": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "statement",
+              "confidence",
+              "reasoning",
+              "presentation_guardrail"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^CL[0-9]{2}$"
+              },
+              "statement": {
+                "type": "string",
+                "minLength": 8
+              },
+              "confidence": {
+                "enum": [
+                  "established",
+                  "derived",
+                  "plausible",
+                  "speculative"
+                ]
+              },
+              "reasoning": {
+                "type": "string",
+                "minLength": 12
+              },
+              "presentation_guardrail": {
+                "type": "string",
+                "minLength": 8
+              }
+            }
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "url",
+              "supports_claim_ids"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https?://"
+              },
+              "supports_claim_ids": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "pattern": "^CL[0-9]{2}$"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "creative_direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "logline",
+        "visual_identity",
+        "palette",
+        "lighting",
+        "camera_language",
+        "motion_language",
+        "world_scale_policy",
+        "emotional_arc",
+        "opening_hook",
+        "ending_payoff",
+        "loop_connection",
+        "asset_policy"
+      ],
+      "properties": {
+        "logline": {
+          "type": "string"
+        },
+        "visual_identity": {
+          "type": "string"
+        },
+        "palette": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 8,
+          "items": {
+            "type": "string"
+          }
+        },
+        "lighting": {
+          "type": "string"
+        },
+        "camera_language": {
+          "type": "string"
+        },
+        "motion_language": {
+          "type": "string"
+        },
+        "world_scale_policy": {
+          "type": "string"
+        },
+        "emotional_arc": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "opening_hook": {
+          "type": "string"
+        },
+        "ending_payoff": {
+          "type": "string"
+        },
+        "loop_connection": {
+          "type": "string"
+        },
+        "asset_policy": {
+          "type": "string"
+        }
+      }
+    },
+    "audio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "voice_style",
+        "voice_engine_preference",
+        "narration_target_wpm",
+        "music_direction",
+        "music_level_db_below_voice",
+        "sfx_direction",
+        "mix_target_lufs",
+        "true_peak_max_dbtp"
+      ],
+      "properties": {
+        "voice_style": {
+          "const": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting"
+        },
+        "voice_engine_preference": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "kokoro_local",
+              "piper_local",
+              "other_local_licensed"
+            ]
+          }
+        },
+        "narration_target_wpm": {
+          "type": "integer",
+          "minimum": 120,
+          "maximum": 160
+        },
+        "music_direction": {
+          "type": "string",
+          "minLength": 12
+        },
+        "music_level_db_below_voice": {
+          "type": "number",
+          "minimum": -30,
+          "maximum": -12
+        },
+        "sfx_direction": {
+          "type": "string"
+        },
+        "mix_target_lufs": {
+          "type": "number",
+          "minimum": -20,
+          "maximum": -12
+        },
+        "true_peak_max_dbtp": {
+          "type": "number",
+          "maximum": -1
+        }
+      }
+    },
+    "captions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "source",
+        "style",
+        "font_stack",
+        "font_size_px",
+        "max_lines",
+        "max_chars_per_line",
+        "safe_area",
+        "active_word_treatment",
+        "highlights_policy"
+      ],
+      "properties": {
+        "mode": {
+          "const": "burned_in_kinetic"
+        },
+        "source": {
+          "const": "exact_spoken_narration"
+        },
+        "style": {
+          "type": "string"
+        },
+        "font_stack": {
+          "type": "string"
+        },
+        "font_size_px": {
+          "type": "integer",
+          "minimum": 48,
+          "maximum": 92
+        },
+        "max_lines": {
+          "const": 2
+        },
+        "max_chars_per_line": {
+          "type": "integer",
+          "minimum": 12,
+          "maximum": 32
+        },
+        "safe_area": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "left_px",
+            "right_px",
+            "top_px",
+            "bottom_px",
+            "caption_baseline_y_px"
+          ],
+          "properties": {
+            "left_px": {
+              "type": "integer",
+              "minimum": 60
+            },
+            "right_px": {
+              "type": "integer",
+              "minimum": 60
+            },
+            "top_px": {
+              "type": "integer",
+              "minimum": 150
+            },
+            "bottom_px": {
+              "type": "integer",
+              "minimum": 200
+            },
+            "caption_baseline_y_px": {
+              "type": "integer",
+              "minimum": 950,
+              "maximum": 1560
+            }
+          }
+        },
+        "active_word_treatment": {
+          "type": "string"
+        },
+        "highlights_policy": {
+          "type": "string"
+        }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "beat",
+          "start_s",
+          "end_s",
+          "narration",
+          "viewer_question",
+          "visual_payoff",
+          "shots",
+          "caption_emphasis",
+          "audio_cues",
+          "claim_ids",
+          "transition_out"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^S[0-9]{2}$"
+          },
+          "beat": {
+            "enum": [
+              "hook",
+              "premise",
+              "mechanism",
+              "escalation",
+              "human_impact",
+              "second_order_effect",
+              "twist",
+              "ending"
+            ]
+          },
+          "start_s": {
+            "type": "number",
+            "minimum": 0
+          },
+          "end_s": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "viewer_question": {
+            "type": "string"
+          },
+          "visual_payoff": {
+            "type": "string",
+            "minLength": 15
+          },
+          "narration": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "text",
+              "start_s",
+              "end_s",
+              "delivery_note"
+            ],
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 20
+              },
+              "start_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "end_s": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "delivery_note": {
+                "type": "string"
+              }
+            }
+          },
+          "shots": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "start_s",
+                "end_s",
+                "shot_type",
+                "world",
+                "camera",
+                "subjects",
+                "animation_plan",
+                "lighting",
+                "effects",
+                "composition_notes"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^SH[0-9]{2}$"
+                },
+                "start_s": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "end_s": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "shot_type": {
+                  "type": "string"
+                },
+                "world": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "camera": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "projection",
+                    "fov_or_scale",
+                    "keyframes",
+                    "movement",
+                    "lens_notes"
+                  ],
+                  "properties": {
+                    "projection": {
+                      "enum": [
+                        "perspective",
+                        "orthographic"
+                      ]
+                    },
+                    "fov_or_scale": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "keyframes": {
+                      "type": "array",
+                      "minItems": 2,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "t_s",
+                          "position",
+                          "look_at",
+                          "ease"
+                        ],
+                        "properties": {
+                          "t_s": {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          "position": {
+                            "type": "array",
+                            "items": {
+                              "type": "number"
+                            },
+                            "minItems": 3,
+                            "maxItems": 3
+                          },
+                          "look_at": {
+                            "type": "array",
+                            "items": {
+                              "type": "number"
+                            },
+                            "minItems": 3,
+                            "maxItems": 3
+                          },
+                          "ease": {
+                            "enum": [
+                              "linear",
+                              "smoothstep",
+                              "ease_in_out_cubic",
+                              "hold"
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "movement": {
+                      "type": "string"
+                    },
+                    "lens_notes": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "subjects": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "id",
+                      "kind",
+                      "appearance",
+                      "geometry_and_material",
+                      "scale_and_accuracy",
+                      "movement"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "kind": {
+                        "enum": [
+                          "planet",
+                          "moon",
+                          "sun",
+                          "water",
+                          "atmosphere",
+                          "terrain",
+                          "vegetation",
+                          "architecture",
+                          "human",
+                          "animal",
+                          "particle_system",
+                          "diagram",
+                          "clouds",
+                          "stars",
+                          "other"
+                        ]
+                      },
+                      "appearance": {
+                        "type": "string"
+                      },
+                      "geometry_and_material": {
+                        "type": "string"
+                      },
+                      "scale_and_accuracy": {
+                        "type": "string"
+                      },
+                      "movement": {
+                        "type": "string"
+                      },
+                      "asset_hint": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "animation_plan": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "lighting": {
+                  "type": "string"
+                },
+                "effects": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "composition_notes": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "caption_emphasis": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "phrase",
+                "treatment"
+              ],
+              "properties": {
+                "phrase": {
+                  "type": "string",
+                  "minLength": 2
+                },
+                "treatment": {
+                  "enum": [
+                    "accent_color",
+                    "gentle_scale",
+                    "subtle_glow",
+                    "none"
+                  ]
+                }
+              }
+            }
+          },
+          "audio_cues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "at_s",
+                "duration_s",
+                "kind",
+                "description",
+                "relative_db"
+              ],
+              "properties": {
+                "at_s": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "duration_s": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "kind": {
+                  "enum": [
+                    "impact",
+                    "whoosh",
+                    "ambience",
+                    "texture",
+                    "music_swell",
+                    "silence"
+                  ]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "relative_db": {
+                  "type": "number",
+                  "maximum": 0
+                }
+              }
+            }
+          },
+          "claim_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^CL[0-9]{2}$"
+            }
+          },
+          "transition_out": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "duration_s",
+              "motivation"
+            ],
+            "properties": {
+              "type": {
+                "enum": [
+                  "cut",
+                  "match_cut",
+                  "cross_dissolve",
+                  "whip_pan",
+                  "light_wipe",
+                  "orbit_match",
+                  "none"
+                ]
+              },
+              "duration_s": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1.5
+              },
+              "motivation": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "video_output",
+        "video_codec",
+        "pixel_format",
+        "audio_codec",
+        "audio_sample_rate_hz",
+        "render_method",
+        "captions_burned_in",
+        "use_paid_apis",
+        "success_reply"
+      ],
+      "properties": {
+        "video_output": {
+          "type": "string",
+          "pattern": "^output/[a-z0-9-]+\\.mp4$"
+        },
+        "video_codec": {
+          "const": "h264"
+        },
+        "pixel_format": {
+          "const": "yuv420p"
+        },
+        "audio_codec": {
+          "const": "aac"
+        },
+        "audio_sample_rate_hz": {
+          "const": 48000
+        },
+        "render_method": {
+          "const": "deterministic_frame_by_frame"
+        },
+        "captions_burned_in": {
+          "const": true
+        },
+        "use_paid_apis": {
+          "const": false
+        },
+        "success_reply": {
+          "const": "absolute_mp4_path_only"
+        }
+      }
+    },
+    "asset_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "library_mode",
+        "library_snapshot_note",
+        "existing_assets_to_reuse",
+        "new_reusable_asset_candidates",
+        "shot_specific_assets"
+      ],
+      "properties": {
+        "library_mode": {
+          "const": "reuse_before_create"
+        },
+        "library_snapshot_note": {
+          "type": "string",
+          "minLength": 8
+        },
+        "existing_assets_to_reuse": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "asset_id",
+              "usage",
+              "configuration"
+            ],
+            "properties": {
+              "asset_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "usage": {
+                "type": "string",
+                "minLength": 8
+              },
+              "configuration": {
+                "type": "string",
+                "minLength": 4
+              }
+            }
+          }
+        },
+        "new_reusable_asset_candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "proposed_id",
+              "description",
+              "reusable_in",
+              "parameters",
+              "suggested_path"
+            ],
+            "properties": {
+              "proposed_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "description": {
+                "type": "string",
+                "minLength": 12
+              },
+              "reusable_in": {
+                "type": "string",
+                "minLength": 8
+              },
+              "parameters": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "suggested_path": {
+                "type": "string",
+                "pattern": "^(src/library/|assets/library/).+"
+              }
+            }
+          }
+        },
+        "shot_specific_assets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_search_intent",
+        "core_keywords",
+        "distinctive_angle",
+        "seo_integrity_note"
+      ],
+      "properties": {
+        "primary_search_intent": {
+          "type": "string",
+          "minLength": 12
+        },
+        "core_keywords": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 16,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "distinctive_angle": {
+          "type": "string",
+          "minLength": 12
+        },
+        "seo_integrity_note": {
+          "type": "string",
+          "minLength": 15
+        }
+      }
+    }
+  }
+}

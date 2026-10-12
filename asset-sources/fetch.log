@@ -1,0 +1,133 @@
+fetch bm2002-land-ocean-ice <- https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57730/land_ocean_ice_8192.png
+fetch gebco-topography <- https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73934/gebco_08_rev_elev_21600x10800.png
+ok    bmng-topo-bathy-200406 (27.9 MB, cached)
+fetch gebco-bathymetry <- https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73963/gebco_08_rev_bath_21600x10800.png
+  gebco-topography: 45%
+  bm2002-land-ocean-ice: 55%
+  gebco-bathymetry: 14%
+  bm2002-land-ocean-ice: 79%
+  gebco-topography: 69%
+  gebco-bathymetry: 26%
+  gebco-topography: 90%
+  bm2002-land-ocean-ice: 94%
+  gebco-bathymetry: 37%
+done  bm2002-land-ocean-ice (24.1 MB)
+fetch black-marble-2016 <- https://eoimages.gsfc.nasa.gov/images/imagerecords/144000/144898/BlackMarble_2016_3km.jpg
+done  gebco-topography (18.4 MB)
+fetch bm-clouds-west <- https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57747/cloud.W.2001210.21600x21600.png
+  gebco-bathymetry: 52%
+  black-marble-2016: 77%
+  bm-clouds-west: 3%
+done  black-marble-2016 (8.1 MB)
+fetch bm-clouds-east <- https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57747/cloud.E.2001210.21600x21600.png
+  gebco-bathymetry: 66%
+  bm-clouds-west: 5%
+  bm-clouds-east: 2%
+  gebco-bathymetry: 80%
+  bm-clouds-west: 7%
+  bm-clouds-east: 4%
+  gebco-bathymetry: 95%
+done  gebco-bathymetry (35.1 MB)
+ok    pb2002-boundaries (0.2 MB, cached)
+ok    pb2002-license (0.0 MB, cached)
+fetch font-rajdhani-semibold <- https://raw.githubusercontent.com/google/fonts/main/ofl/rajdhani/Rajdhani-SemiBold.ttf
+done  font-rajdhani-semibold (0.4 MB)
+fetch font-rajdhani-bold <- https://raw.githubusercontent.com/google/fonts/main/ofl/rajdhani/Rajdhani-Bold.ttf
+done  font-rajdhani-bold (0.4 MB)
+fetch font-rajdhani-license <- https://raw.githubusercontent.com/google/fonts/main/ofl/rajdhani/OFL.txt
+done  font-rajdhani-license (0.0 MB)
+fetch font-barlow-condensed-extrabold <- https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/BarlowCondensed-ExtraBold.ttf
+done  font-barlow-condensed-extrabold (0.1 MB)
+fetch font-barlow-condensed-license <- https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt
+done  font-barlow-condensed-license (0.0 MB)
+fetch font-share-tech-mono <- https://raw.githubusercontent.com/google/fonts/main/ofl/sharetechmono/ShareTechMono-Regular.ttf
+  bm-clouds-west: 10%
+done  font-share-tech-mono (0.0 MB)
+fetch font-share-tech-mono-license <- https://raw.githubusercontent.com/google/fonts/main/ofl/sharetechmono/OFL.txt
+done  font-share-tech-mono-license (0.0 MB)
+  bm-clouds-east: 7%
+  bm-clouds-west: 11%
+  bm-clouds-east: 8%
+  bm-clouds-west: 13%
+  bm-clouds-east: 10%
+  bm-clouds-west: 14%
+  bm-clouds-east: 11%
+  bm-clouds-west: 16%
+  bm-clouds-east: 14%
+  bm-clouds-west: 19%
+  bm-clouds-east: 16%
+  bm-clouds-west: 20%
+  bm-clouds-east: 18%
+  bm-clouds-west: 23%
+  bm-clouds-east: 20%
+  bm-clouds-west: 25%
+  bm-clouds-east: 22%
+  bm-clouds-west: 27%
+  bm-clouds-east: 24%
+  bm-clouds-west: 30%
+  bm-clouds-east: 26%
+  bm-clouds-west: 33%
+  bm-clouds-east: 29%
+  bm-clouds-west: 35%
+  bm-clouds-east: 31%
+  bm-clouds-west: 39%
+  bm-clouds-east: 33%
+  bm-clouds-west: 41%
+  bm-clouds-east: 36%
+  bm-clouds-west: 44%
+  bm-clouds-east: 39%
+  bm-clouds-west: 46%
+  bm-clouds-east: 42%
+  bm-clouds-west: 50%
+  bm-clouds-east: 45%
+  bm-clouds-west: 54%
+  bm-clouds-east: 48%
+  bm-clouds-west: 56%
+  bm-clouds-east: 49%
+  bm-clouds-west: 57%
+  bm-clouds-east: 51%
+  bm-clouds-west: 59%
+  bm-clouds-east: 53%
+  bm-clouds-west: 60%
+  bm-clouds-east: 56%
+  bm-clouds-west: 64%
+  bm-clouds-east: 60%
+  bm-clouds-west: 67%
+  bm-clouds-east: 63%
+  bm-clouds-west: 69%
+  bm-clouds-east: 65%
+  bm-clouds-west: 70%
+  bm-clouds-east: 67%
+  bm-clouds-west: 72%
+  bm-clouds-east: 69%
+  bm-clouds-west: 74%
+  bm-clouds-east: 71%
+  bm-clouds-west: 76%
+  bm-clouds-east: 74%
+  bm-clouds-west: 78%
+  bm-clouds-east: 75%
+  bm-clouds-west: 80%
+  bm-clouds-east: 78%
+  bm-clouds-west: 83%
+  bm-clouds-east: 81%
+  bm-clouds-west: 84%
+  bm-clouds-east: 82%
+  bm-clouds-west: 86%
+  bm-clouds-east: 84%
+  bm-clouds-west: 89%
+  bm-clouds-east: 86%
+  bm-clouds-west: 91%
+  bm-clouds-east: 88%
+  bm-clouds-west: 94%
+  bm-clouds-east: 91%
+  bm-clouds-west: 96%
+  bm-clouds-east: 93%
+  bm-clouds-west: 98%
+  bm-clouds-east: 95%
+done  bm-clouds-west (210.8 MB)
+  bm-clouds-east: 97%
+  bm-clouds-east: 99%
+done  bm-clouds-east (211.8 MB)
+
+All 16 sources present. Lock: asset-sources/sources.lock.json
+exit=0

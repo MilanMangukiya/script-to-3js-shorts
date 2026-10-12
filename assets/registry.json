@@ -1,0 +1,1375 @@
+{
+  "registry_version": "1.0.0",
+  "assets": [
+    {
+      "id": "earth-globe-v1",
+      "name": "Earth globe with atmosphere, clouds and city lights",
+      "type": "three_component",
+      "source_path": "src/library/planet/Earth.ts",
+      "description": "Earth sphere using the shared NASA texture set: Blue Marble day map, Black Marble night lights, drifting cloud layer with soft shadows, ocean sun glint from a land mask, warm terminator and an additive atmospheric rim shell. Supports regional night-light outages for illustrative blackout shots.",
+      "tags": [
+        "earth",
+        "planet",
+        "globe",
+        "space",
+        "orbit",
+        "atmosphere",
+        "clouds",
+        "night-lights",
+        "blackout"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "sunDirection",
+        "cloudOpacity",
+        "atmosphereStrength",
+        "atmosphereColor",
+        "nightLights",
+        "scatter",
+        "nightOutage",
+        "outageSeed",
+        "outageScale",
+        "spinRate",
+        "cloudDrift",
+        "setView(lon,lat)",
+        "time_s",
+        "seaIce"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_code; textures NASA public domain (see earth-textures-nasa-v1)",
+      "notes": "Radius 1 unit by default. Load textures once with loadEarthTextures(base). setView(lon, lat) turns a geographic point toward +Z; update(time_s) is linear in time. scatter scales the limb glow (1 = normal air). Added for ice-sank-instead-of-floating: optional seaIce texture (earth-seaice-mask-nasa-v1) and a seaIce 0..1 setter; default 0 leaves earlier videos unchanged."
+    },
+    {
+      "id": "earth-textures-nasa-v1",
+      "name": "NASA Earth texture set (day, night lights, clouds, land mask)",
+      "type": "texture_set",
+      "source_path": "assets/library/textures/earth/day_8k.jpg",
+      "description": "Equirectangular maps (longitude -180..180 left to right): day_8k.jpg (Blue Marble Next Generation, June 2004, topography + bathymetry), night_8k.jpg (Black Marble 2016), clouds_8k.jpg (Blue Marble clouds, grayscale), landmask_4k.png (land = white).",
+      "tags": [
+        "earth",
+        "texture",
+        "nasa",
+        "blue-marble",
+        "black-marble",
+        "clouds",
+        "land-mask"
+      ],
+      "configurable_parameters": [],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "public_domain_nasa",
+      "notes": "Built by scripts/build_earth_textures.py (py -3.14, numpy + Pillow) from asset-sources/raw. Credit requested by NASA: NASA Earth Observatory / NASA GSFC Blue Marble (R. Stockli), Black Marble 2016 (J. Stevens, M. Roman), land mask derived from GEBCO_08 via NASA EO. Provenance and hashes: asset-sources/sources.lock.json. A companion sea-ice mask now lives beside these files (see earth-seaice-mask-nasa-v1)."
+    },
+    {
+      "id": "starfield-v1",
+      "name": "Seeded starfield",
+      "type": "three_component",
+      "source_path": "src/library/space/Starfield.ts",
+      "description": "Point-sprite star shell with a power-law brightness distribution and blackbody-like tints; optional horizon cut-off for terrestrial night skies.",
+      "tags": [
+        "stars",
+        "space",
+        "night-sky",
+        "background"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "count",
+        "radius",
+        "brightness",
+        "maxSize",
+        "minY"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "Static by design; call follow(camera) each frame. Sprite sizes are authored in pixels for 1080-wide output."
+    },
+    {
+      "id": "flame-v1",
+      "name": "Procedural flame billboard",
+      "type": "three_component",
+      "source_path": "src/library/fx/Flame.ts",
+      "description": "Additive teardrop flame shader on a Y-axis billboard with blue base, hot core and noise-driven sway. An intensity parameter shortens and fades it, so flames can be extinguished and reignited deterministically.",
+      "tags": [
+        "fire",
+        "flame",
+        "candle",
+        "campfire",
+        "match",
+        "combustion",
+        "fx"
+      ],
+      "configurable_parameters": [
+        "width",
+        "height",
+        "turbulence",
+        "speed",
+        "brightness",
+        "blueBase",
+        "colorCore",
+        "colorMid",
+        "colorTip",
+        "colorBase",
+        "seed",
+        "intensity",
+        "time_s"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "turbulence 0.1 = candle, 0.9 = campfire. Layer several with different seeds for a large fire. Outputs HDR values intended for bloom. Also used inside gas-burner-v1 for blue gas jets."
+    },
+    {
+      "id": "smoke-wisp-v1",
+      "name": "Rising smoke ribbon",
+      "type": "three_component",
+      "source_path": "src/library/fx/SmokeWisp.ts",
+      "description": "Thin camera-facing smoke ribbon whose front climbs with age while noise curls it sideways; for snuffed candles, dying fires, chimneys and vents.",
+      "tags": [
+        "smoke",
+        "fx",
+        "candle",
+        "fire",
+        "wisp"
+      ],
+      "configurable_parameters": [
+        "height",
+        "baseWidth",
+        "topWidth",
+        "curl",
+        "riseSpeed",
+        "color",
+        "seed",
+        "age_s",
+        "opacity",
+        "time_s"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "update(time_s, age_s, opacity, camera): age_s <= 0 hides it."
+    },
+    {
+      "id": "sky-dome-v1",
+      "name": "Gradient sky dome with sun and haze",
+      "type": "three_component",
+      "source_path": "src/library/environment/SkyDome.ts",
+      "description": "Camera-centred gradient sky with sun disc, aureole and horizon haze. A scatter setter scales scattered skylight only, and toEnvironment() bakes a PMREM map so metals and clearcoat reflect the same sky.",
+      "tags": [
+        "sky",
+        "atmosphere",
+        "sun",
+        "dusk",
+        "night",
+        "environment",
+        "lighting"
+      ],
+      "configurable_parameters": [
+        "zenithColor",
+        "horizonColor",
+        "groundColor",
+        "sunDirection",
+        "sunColor",
+        "sunSize",
+        "sunGlow",
+        "sunIntensity",
+        "hazeColor",
+        "hazeAmount",
+        "curve",
+        "scatter"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "Set sunIntensity and sunGlow to 0 for night or blue-hour skies. Pair the sun direction with a DirectionalLight."
+    },
+    {
+      "id": "ocean-surface-v1",
+      "name": "Open-water ocean surface",
+      "type": "three_component",
+      "source_path": "src/library/environment/OceanSurface.ts",
+      "description": "Flat-plane ocean with analytic multi-octave travelling-wave normals, Fresnel sky reflection, sun glitter and distance haze. Suited to eye-level and aerial views of calm to moderate seas.",
+      "tags": [
+        "ocean",
+        "sea",
+        "water",
+        "coast",
+        "waves"
+      ],
+      "configurable_parameters": [
+        "size",
+        "level",
+        "deepColor",
+        "horizonColor",
+        "zenithColor",
+        "sunDirection",
+        "sunColor",
+        "waveHeight",
+        "waveScale",
+        "fogColor",
+        "fogDensity",
+        "glitter",
+        "skyScale",
+        "time_s"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "Keep horizon and zenith colours in step with the scene sky dome. No vertex displacement, so avoid extreme close-ups of the surface."
+    },
+    {
+      "id": "terrain-massif-v1",
+      "name": "Fractal mountain massif with altitude contour",
+      "type": "three_component",
+      "source_path": "src/library/environment/Terrain.ts",
+      "description": "Seeded ridged-multifractal mountain that falls to sea level at its edges, vertex-coloured by altitude and slope (forest, rock, snow). setContour() draws a glowing iso-altitude line measured in real scene metres.",
+      "tags": [
+        "mountain",
+        "terrain",
+        "island",
+        "altitude",
+        "contour",
+        "landscape"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "width",
+        "depth",
+        "segmentsX",
+        "segmentsZ",
+        "peakHeight",
+        "snowLine",
+        "treeLine",
+        "contourColor",
+        "setContour(altitude,strength,width)"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "mesh.position.y is the base (sea) level. terrain.peak gives the summit in mesh-local coordinates for framing. Uses scene fog for aerial perspective."
+    },
+    {
+      "id": "cloud-deck-v1",
+      "name": "Cloud-top layer seen from above",
+      "type": "three_component",
+      "source_path": "src/library/environment/CloudDeck.ts",
+      "description": "Large plane with domain-warped fractal cloud density, directional self-shadowing, gaps to a below colour and horizon haze; scroll offsets convey flight over the deck.",
+      "tags": [
+        "clouds",
+        "sky",
+        "aerial",
+        "weather",
+        "aircraft"
+      ],
+      "configurable_parameters": [
+        "size",
+        "level",
+        "scale",
+        "coverage",
+        "sunDirection",
+        "sunColor",
+        "shadowColor",
+        "belowColor",
+        "hazeColor",
+        "hazeDensity",
+        "scrollX",
+        "scrollZ",
+        "time_s"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "update(time_s, scrollX, scrollZ) in metres."
+    },
+    {
+      "id": "underwater-volume-v1",
+      "name": "Shallow underwater environment",
+      "type": "three_component",
+      "source_path": "src/library/environment/Underwater.ts",
+      "description": "Complete shallow-sea set seen from below the surface: rippling Snell-window surface, camera-aligned sun shafts, caustic-lit sand and rocks, swaying seagrass, drifting particles and an optional bubble burst.",
+      "tags": [
+        "underwater",
+        "ocean",
+        "reef",
+        "sea",
+        "caustics",
+        "light-shafts",
+        "seagrass",
+        "bubbles"
+      ],
+      "configurable_parameters": [
+        "depth",
+        "extent",
+        "waterColor",
+        "deepColor",
+        "surfaceColor",
+        "sunDirection",
+        "rayStrength",
+        "rayCount",
+        "causticScale",
+        "causticStrength",
+        "fogDensity",
+        "grassCount",
+        "particleCount",
+        "seed",
+        "setBubbleBurst(t0,origin)",
+        "time_s",
+        "backdrop.visible",
+        "surface.visible"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "Surface at local y = 0. Exposes fogColor and fogDensity so other objects (for example fish-school-v1) can match the water. backdrop and surface meshes are now public so a stage can hide them above water or under an ice sheet. air-pressure-doubled guarded NaN-prone pow() calls in the shaft and caustic shaders and the floor normal."
+    },
+    {
+      "id": "fish-school-v1",
+      "name": "Instanced fish school",
+      "type": "three_component",
+      "source_path": "src/library/creatures/FishSchool.ts",
+      "description": "Instanced silver fish with shader tail beat and countershading; each fish keeps a seeded offset around a moving school centre with slow wander.",
+      "tags": [
+        "fish",
+        "animal",
+        "ocean",
+        "underwater",
+        "school",
+        "marine-life"
+      ],
+      "configurable_parameters": [
+        "count",
+        "seed",
+        "length",
+        "spread",
+        "color",
+        "backColor",
+        "fogColor",
+        "fogDensity",
+        "lightDirection",
+        "center",
+        "heading",
+        "time_s",
+        "setSpread(spread)"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "update(time_s, center, heading): the caller supplies the school path, keeping this asset free of story timing. setSpread changes the school extents at runtime (for example to crowd the fish)."
+    },
+    {
+      "id": "bird-flock-v1",
+      "name": "Instanced flapping birds",
+      "type": "three_component",
+      "source_path": "src/library/creatures/BirdFlock.ts",
+      "description": "Gull-like instanced birds with two-segment wing flapping in the vertex shader, translucent wing lighting, and controllable sink and pitch for lift-loss or soaring shots.",
+      "tags": [
+        "birds",
+        "gulls",
+        "animal",
+        "sky",
+        "flock",
+        "flight"
+      ],
+      "configurable_parameters": [
+        "count",
+        "seed",
+        "spread",
+        "wingspan",
+        "bodyColor",
+        "wingColor",
+        "tipColor",
+        "sunDirection",
+        "sunColor",
+        "ambient",
+        "center",
+        "heading",
+        "sink",
+        "pitch",
+        "flapPhase",
+        "time_s",
+        "glide"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "Pass an analytic flap phase (integral of flap frequency) so rate changes stay smooth and deterministic. air-pressure-doubled added glide (0..1) to hold wings in a gliding pose; default 0 leaves earlier shots unchanged."
+    },
+    {
+      "id": "humanoid-figure-v1",
+      "name": "Procedural articulated human figure",
+      "type": "three_component",
+      "source_path": "src/library/characters/Humanoid.ts",
+      "description": "Adult figure built from capsules and spheres with a joint hierarchy, standing and seated base poses, pose interpolation and two-bone arm IK (reachArm). Intended for respectful mid-distance, back-view and silhouette shots.",
+      "tags": [
+        "human",
+        "person",
+        "character",
+        "figure",
+        "silhouette",
+        "people"
+      ],
+      "configurable_parameters": [
+        "height",
+        "coatColor",
+        "trouserColor",
+        "skinColor",
+        "hairColor",
+        "shoeColor",
+        "scarfColor",
+        "coat",
+        "hat",
+        "pose",
+        "reachArm(side,target,pole,weight)",
+        "backAnchor",
+        "waistAnchor",
+        "footL",
+        "footR"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "Faces +Z, origin at the feet. Stylised: avoid facial close-ups. Exposes head, chestAnchor and hand anchors for effects. air-pressure-doubled added empty gear anchors (back, waist, feet) and a guard in reachArm for a pole parallel to the reach direction (previously NaN)."
+    },
+    {
+      "id": "airliner-v1",
+      "name": "Unbranded twin-engine airliner with contrails",
+      "type": "three_component",
+      "source_path": "src/library/vehicles/Airliner.ts",
+      "description": "Procedural narrow-body airliner (lathe fuselage with window band, swept wings, winglets, tail, nacelles, exhaust glow, navigation lights). Contrail ribbons are gated by emission time so an engine cut leaves a physically consistent gap.",
+      "tags": [
+        "aircraft",
+        "airliner",
+        "plane",
+        "aviation",
+        "contrails",
+        "vehicle"
+      ],
+      "configurable_parameters": [
+        "length",
+        "paintColor",
+        "accentColor",
+        "contrailLength",
+        "contrails",
+        "sunColor",
+        "engineGlow",
+        "airspeed",
+        "cutStart",
+        "cutEnd",
+        "time_s"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_procedural",
+      "notes": "Flies toward local -Z. Add both group and contrailGroup to the scene; contrails stay level while the aircraft pitches or sinks. No real airline livery."
+    },
+    {
+      "id": "caption-kinetic-v1",
+      "name": "Kinetic burned-in captions",
+      "type": "caption_system",
+      "source_path": "src/library/captions/KineticCaptions.ts",
+      "description": "Word-timed caption renderer for a 2D canvas: clause-aware phrase splitting, two balanced lines, active-word accent and accent_color / gentle_scale / subtle_glow emphasis, outline, shadow and a soft backdrop band.",
+      "tags": [
+        "captions",
+        "subtitles",
+        "typography",
+        "overlay",
+        "accessibility"
+      ],
+      "configurable_parameters": [
+        "fontFamily",
+        "fontWeight",
+        "fontSize",
+        "lineHeight",
+        "maxCharsPerLine",
+        "baselineY",
+        "centerX",
+        "maxWidth",
+        "fill",
+        "accent",
+        "accentSoft",
+        "stroke",
+        "strokeWidth",
+        "backdrop",
+        "emphasis"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_code",
+      "notes": "Feed it word timings from tools/narrate.mjs (real synthesized audio aligned with local Whisper), never guessed timings."
+    },
+    {
+      "id": "film-pipeline-v1",
+      "name": "Deterministic film render pipeline",
+      "type": "render_helper",
+      "source_path": "src/library/render/FilmPipeline.ts",
+      "description": "Storyboard-driven frame renderer: shot lookup, keyframe cameras, HDR MSAA scene buffer, bloom, ACES grade, vignette, deterministic grain, cross-dissolves, 2D label overlay and caption compositing. renderFrame(i) depends only on i.",
+      "tags": [
+        "render",
+        "pipeline",
+        "post-processing",
+        "bloom",
+        "transition",
+        "deterministic"
+      ],
+      "configurable_parameters": [
+        "width",
+        "height",
+        "fps",
+        "duration_s",
+        "scale",
+        "exposure",
+        "bloomStrength",
+        "bloomRadius",
+        "bloomThreshold",
+        "vignette",
+        "grain",
+        "saturation",
+        "contrast",
+        "lift",
+        "tint"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_code",
+      "notes": "Workflow for a new story: add src/stories/<slug>/film.ts (createFilm) and register it in src/entry.ts; then run node tools/narrate.mjs stories/<slug>.json, node tools/soundtrack.mjs <slug>, node tools/render.mjs <slug> --frames a,b,c for smoke frames and --final for the MP4. ffmpeg and ffprobe come from the ffmpeg-static and ffprobe-static npm packages. air-pressure-doubled added a sanitize pass before bloom that zeroes NaN/Inf scene pixels so a single bad pixel cannot bloom into a black block; valid pixels are unchanged."
+    },
+    {
+      "id": "camera-keyframe-rig-v1",
+      "name": "Storyboard keyframe camera rig",
+      "type": "camera_rig",
+      "source_path": "src/library/camera/KeyframeRig.ts",
+      "description": "Applies storyboard camera keyframes (position, look_at, ease, FOV) to a perspective camera at any absolute time, clamping outside the span so shots can be evaluated early or late for dissolves.",
+      "tags": [
+        "camera",
+        "keyframes",
+        "animation",
+        "storyboard"
+      ],
+      "configurable_parameters": [
+        "keyframes",
+        "fov_or_scale",
+        "ease",
+        "time_s"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_code",
+      "notes": "For smooth pans between a near and a far subject, author look_at points at similar distances along the line of sight."
+    },
+    {
+      "id": "overlay-labels-v1",
+      "name": "Schematic label and callout helpers",
+      "type": "overlay_helper",
+      "source_path": "src/library/overlay/Labels.ts",
+      "description": "2D canvas helpers for SCHEMATIC / ILLUSTRATIVE tags, status chips, leader-line callouts that flip to stay inside the frame, and rich text with numeric subscripts (O_2 style).",
+      "tags": [
+        "labels",
+        "overlay",
+        "callout",
+        "schematic",
+        "typography"
+      ],
+      "configurable_parameters": [
+        "size",
+        "weight",
+        "color",
+        "alpha",
+        "tracking",
+        "align",
+        "accent",
+        "dot",
+        "valueColor",
+        "sub"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_code",
+      "notes": "Use projectToScreen() from film-pipeline-v1 to anchor labels to 3D points."
+    },
+    {
+      "id": "audio-synth-kit-v1",
+      "name": "Procedural audio synthesis kit",
+      "type": "audio_tool",
+      "source_path": "src/library/audio/synth.mjs",
+      "description": "Pure-JS deterministic audio toolkit: detuned additive pads, white/pink/brown noise, RBJ biquads with sweeps, Freeverb-style reverb, crackle generator, envelopes and stereo mix helpers for original music beds and sound effects.",
+      "tags": [
+        "audio",
+        "music",
+        "sfx",
+        "synthesis",
+        "soundtrack",
+        "reverb"
+      ],
+      "configurable_parameters": [
+        "sampleRate",
+        "seed",
+        "freqs",
+        "attack",
+        "release",
+        "bright",
+        "detune",
+        "decay",
+        "mix",
+        "rate"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_code",
+      "notes": "Story cues live in src/stories/<slug>/soundtrack.mjs (export buildSoundtrack(duration) returning {music, sfx}); tools/soundtrack.mjs mixes them under the narration and loudness-normalises to the storyboard target."
+    },
+    {
+      "id": "shader-noise-math-v1",
+      "name": "Shared shader noise and deterministic math",
+      "type": "utility",
+      "source_path": "src/library/util/glsl.ts",
+      "description": "GLSL value-noise and fbm chunks plus a fog helper (glsl.ts), with seeded RNG, value noise, fbm, ridged multifractal, easing and wobble helpers (math.ts) used by every library component.",
+      "tags": [
+        "noise",
+        "glsl",
+        "math",
+        "random",
+        "utility",
+        "shader"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "octaves",
+        "gain",
+        "lacunarity"
+      ],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "original_code",
+      "notes": "Companion file: src/library/util/math.ts."
+    },
+    {
+      "id": "font-inter-v1",
+      "name": "Inter typeface (Medium, SemiBold, Bold)",
+      "type": "font",
+      "source_path": "assets/library/fonts/Inter-SemiBold.woff2",
+      "description": "Latin subsets of Inter at weights 500, 600 and 700 for captions and labels.",
+      "tags": [
+        "font",
+        "typography",
+        "captions",
+        "inter"
+      ],
+      "configurable_parameters": [],
+      "created_for": "oxygen-gone-five-seconds",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating",
+        "oxygen-gone-five-seconds"
+      ],
+      "license": "SIL Open Font License 1.1",
+      "notes": "Inter by Rasmus Andersson, copied from the @fontsource/inter npm package; licence text in assets/library/fonts/Inter-OFL.txt. Glyphs outside the Latin subset fall back to the system font."
+    },
+    {
+      "id": "glass-of-water-v1",
+      "name": "Glass of water with ice cubes",
+      "type": "three_component",
+      "source_path": "src/library/props/GlassOfWater.ts",
+      "description": "Tumbler with a transmissive glass shell and water volume, a visible waterline, frosted ice cubes and small bubbles. A single sink value moves the cubes between floating (about a tenth above the waterline) and resting on the bottom, staggered per cube.",
+      "tags": [
+        "glass",
+        "water",
+        "ice",
+        "kitchen",
+        "macro",
+        "prop",
+        "density"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "baseRadius",
+        "height",
+        "waterLevel",
+        "cubes",
+        "cubeSize",
+        "waterTint",
+        "seed",
+        "sink",
+        "bubbleAge",
+        "time_s"
+      ],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "original_procedural",
+      "notes": "Units are metres. Needs scene.environment (for example sky-dome-v1 toEnvironment) for convincing reflections; glass and water use three.js physical transmission, so objects behind them must be opaque to appear refracted."
+    },
+    {
+      "id": "water-molecules-v1",
+      "name": "Schematic water molecules: liquid to ice lattice",
+      "type": "three_component",
+      "source_path": "src/library/diagram/WaterMolecules.ts",
+      "description": "Instanced H2O molecules that morph between a jostling liquid and an open hexagonal ice lattice with hydrogen-bond lines. The liquid arrangement occupies about 9% less volume, matching real water.",
+      "tags": [
+        "water",
+        "ice",
+        "molecules",
+        "chemistry",
+        "schematic",
+        "diagram",
+        "lattice"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "cells",
+        "layers",
+        "bond",
+        "oxygenColor",
+        "hydrogenColor",
+        "bondColor",
+        "liquidScale",
+        "freeze",
+        "time_s"
+      ],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "original_procedural",
+      "notes": "Always label as schematic and not to scale. halfSize gives the ice-state bounding box for outline boxes; view down +Z to reveal the hexagons."
+    },
+    {
+      "id": "ice-sheet-v1",
+      "name": "Floating ice sheet (top and underside)",
+      "type": "three_component",
+      "source_path": "src/library/environment/IceSheet.ts",
+      "description": "Lake or sea ice lid with a snow-dusted, cracked, reflective top surface and a softly glowing underside whose brightness follows snow cover, cracks and trapped bubbles. A moving soft shadow can be projected onto the underside.",
+      "tags": [
+        "ice",
+        "lake",
+        "winter",
+        "frozen",
+        "under-ice",
+        "polar",
+        "snow"
+      ],
+      "configurable_parameters": [
+        "size",
+        "thickness",
+        "snowAmount",
+        "seed",
+        "horizonColor",
+        "zenithColor",
+        "sunDirection",
+        "sunColor",
+        "fogColor",
+        "fogDensity",
+        "underFogColor",
+        "underFogDensity",
+        "transmission",
+        "setShadow(x,z,radius,strength)",
+        "time_s"
+      ],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "original_procedural",
+      "notes": "Top surface at local y = 0. The custom shader does not receive shadow maps; add a blob shadow mesh for figures standing on it. Pair the underside with underwater-volume-v1 (hide that asset's own surface)."
+    },
+    {
+      "id": "snowfall-v1",
+      "name": "Wrapped particle fall (snow or sinking crystals)",
+      "type": "three_component",
+      "source_path": "src/library/fx/Snowfall.ts",
+      "description": "Stateless wrapped particle fall for snow in air or ice crystals sinking through water, with optional tumbling glints and an amount control to start or stop the fall on cue.",
+      "tags": [
+        "snow",
+        "particles",
+        "weather",
+        "winter",
+        "crystals",
+        "fx"
+      ],
+      "configurable_parameters": [
+        "count",
+        "seed",
+        "box",
+        "fallSpeed",
+        "drift",
+        "size",
+        "minPx",
+        "maxPx",
+        "color",
+        "brightness",
+        "additive",
+        "glint",
+        "far",
+        "amount",
+        "time_s"
+      ],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "original_procedural",
+      "notes": "Move points.position to keep the volume around the camera. Sprite sizes are authored for 1080-wide output."
+    },
+    {
+      "id": "conifer-stand-v1",
+      "name": "Instanced conifers with snow load",
+      "type": "three_component",
+      "source_path": "src/library/environment/ConiferStand.ts",
+      "description": "Instanced stylised conifers (tiered cones on a trunk) with snow painted on upward-facing outer surfaces, plus a seeded scatter helper.",
+      "tags": [
+        "trees",
+        "forest",
+        "conifer",
+        "winter",
+        "snow",
+        "vegetation"
+      ],
+      "configurable_parameters": [
+        "positions",
+        "seed",
+        "minHeight",
+        "maxHeight",
+        "color",
+        "trunkColor",
+        "snow",
+        "snowColor",
+        "scatterTrees(count,seed,area,y,reject)"
+      ],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "original_procedural",
+      "notes": "Mid-ground and background use; tree shapes are simple, so keep them beyond about 30 m from the camera."
+    },
+    {
+      "id": "sea-ice-v1",
+      "name": "Sea-ice floes, fast-ice platform and tabular iceberg",
+      "type": "three_component",
+      "source_path": "src/library/environment/SeaIce.ts",
+      "description": "Irregular snow-topped floes with blue-green flanks, an optional flat fast-ice platform and an optional tabular iceberg, all authored around a waterline at y = 0 with about a tenth of the ice above it.",
+      "tags": [
+        "sea-ice",
+        "iceberg",
+        "polar",
+        "arctic",
+        "antarctic",
+        "ocean",
+        "floes"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "floeCount",
+        "area",
+        "minRadius",
+        "maxRadius",
+        "thickness",
+        "platformRadius",
+        "iceberg",
+        "avoid",
+        "sink",
+        "sinkSpan",
+        "time_s"
+      ],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "original_procedural",
+      "notes": "Use over ocean-surface-v1. update(time_s, sink) lowers pieces with staggered delays for melting or counterfactual shots."
+    },
+    {
+      "id": "penguin-colony-v1",
+      "name": "Emperor penguin colony",
+      "type": "three_component",
+      "source_path": "src/library/creatures/PenguinColony.ts",
+      "description": "Instanced vertex-coloured emperor penguins (adults with yellow ear patches, grey downy chicks beside them) with a gentle deterministic sway and shuffle.",
+      "tags": [
+        "penguin",
+        "animal",
+        "antarctic",
+        "wildlife",
+        "colony",
+        "birds"
+      ],
+      "configurable_parameters": [
+        "adults",
+        "chicks",
+        "seed",
+        "spread",
+        "height",
+        "time_s"
+      ],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "original_procedural",
+      "notes": "Stand the group on a flat surface at its local y = 0. Designed for mid-distance shots (birds about 100–250 px tall)."
+    },
+    {
+      "id": "bokeh-field-v1",
+      "name": "Soft bokeh light discs",
+      "type": "three_component",
+      "source_path": "src/library/fx/BokehField.ts",
+      "description": "Field of edge-bright out-of-focus discs for macro, interior and night-city backgrounds, with a dim control that switches discs off in seeded order.",
+      "tags": [
+        "bokeh",
+        "lights",
+        "background",
+        "macro",
+        "interior",
+        "fx"
+      ],
+      "configurable_parameters": [
+        "count",
+        "seed",
+        "center",
+        "extent",
+        "colors",
+        "size",
+        "gain",
+        "dim",
+        "time_s"
+      ],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "air-pressure-doubled",
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "original_procedural",
+      "notes": "Additive; keep gain low over bright backdrops. Disc size is in pixels for 1080-wide output."
+    },
+    {
+      "id": "earth-seaice-mask-nasa-v1",
+      "name": "NASA-derived floating sea-ice mask",
+      "type": "texture",
+      "source_path": "assets/library/textures/earth/seaice_4k.png",
+      "description": "Equirectangular 4096x2048 mask (white = sea ice floating on ocean, land masked out) derived from NASA Blue Marble 2002 land/ocean/ice imagery, for the seaIce parameter of earth-globe-v1.",
+      "tags": [
+        "earth",
+        "texture",
+        "nasa",
+        "sea-ice",
+        "arctic",
+        "antarctic",
+        "polar"
+      ],
+      "configurable_parameters": [],
+      "created_for": "ice-sank-instead-of-floating",
+      "used_in": [
+        "ice-sank-instead-of-floating"
+      ],
+      "license": "public_domain_nasa",
+      "notes": "Built by py -3.14 scripts/build_earth_textures.py --only seaice. Credit: NASA Goddard Space Flight Center, Blue Marble 2002 (R. Stockli). Load with loadEarthTextures(base, anisotropy, { seaIce: true })."
+    },
+    {
+      "id": "plastic-bottle-v1",
+      "name": "Crumpling plastic bottle",
+      "type": "three_component",
+      "source_path": "src/library/props/PlasticBottle.ts",
+      "description": "Clear PET bottle (ribbed lathe shell with physical transmission, ribbed screw cap, optional label band). A crumple value caves the walls in along seeded concave faces, crossing folds and wrinkles until the inside volume is roughly halved, as a sealed bottle would under one extra atmosphere; base, neck and cap stay rigid.",
+      "tags": [
+        "bottle",
+        "plastic",
+        "pressure",
+        "altitude",
+        "crumple",
+        "prop",
+        "macro",
+        "kitchen"
+      ],
+      "configurable_parameters": [
+        "height",
+        "radius",
+        "seed",
+        "tint",
+        "labelColor",
+        "capColor",
+        "crumple"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "Deformation and normals are computed in the vertex shader from the crumple value alone (values slightly above 1 give an overshoot). Negative crumple values are not supported; to show a bottle swelling at altitude, add a separate parameter rather than reusing crumple."
+    },
+    {
+      "id": "dial-gauge-v1",
+      "name": "Analog dial gauge",
+      "type": "three_component",
+      "source_path": "src/library/props/DialGauge.ts",
+      "description": "Barometer / thermometer / pressure gauge with a canvas-drawn face (ticks, labels, unit, title, coloured marks), brass, steel or black bezel, glass cover, tapered needle and an optional probe stem. Face points along +Z.",
+      "tags": [
+        "gauge",
+        "dial",
+        "barometer",
+        "thermometer",
+        "pressure",
+        "instrument",
+        "prop"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "min",
+        "max",
+        "arcDegrees",
+        "majorStep",
+        "minorStep",
+        "labelStep",
+        "unit",
+        "title",
+        "marks",
+        "bezel",
+        "faceColor",
+        "inkColor",
+        "needleColor",
+        "depth",
+        "stemLength",
+        "stemRadius",
+        "value",
+        "angleDeg(value)"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "value is a plain setter, so drive it from a deterministic function of time. Clockwise = increasing, scale centred on 12 o'clock."
+    },
+    {
+      "id": "air-molecules-v1",
+      "name": "Schematic air molecules",
+      "type": "three_component",
+      "source_path": "src/library/diagram/AirMolecules.ts",
+      "description": "Instanced schematic gas sample: N2 and O2 dumbbells, argon atoms and O=C=O molecules filling a box from seeded stratified slots, with thermal jitter and spin. A density control shows density x count molecules, popping extra molecules in at empty slots so a doubling reads as the same space holding twice as many.",
+      "tags": [
+        "molecules",
+        "air",
+        "atmosphere",
+        "nitrogen",
+        "oxygen",
+        "co2",
+        "argon",
+        "schematic",
+        "diagram",
+        "density",
+        "pressure"
+      ],
+      "configurable_parameters": [
+        "size",
+        "count",
+        "maxDensity",
+        "composition",
+        "scale",
+        "jitter",
+        "speed",
+        "seed",
+        "colors",
+        "topFade",
+        "setGlow(species,amount)",
+        "density",
+        "fade",
+        "time_s"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "Always label as schematic: molecules are enlarged and far sparser than real air. Composition defaults to real dry-air number fractions."
+    },
+    {
+      "id": "cooking-pot-v1",
+      "name": "Cooking pot with boiling water",
+      "type": "three_component",
+      "source_path": "src/library/props/CookingPot.ts",
+      "description": "Brushed stainless pot with riveted handles and water: transmissive surface with ripples and boiling bumps, and a stateless bubble pool (small nucleation streams, then large rolling-boil bubbles) controlled by a boil value.",
+      "tags": [
+        "pot",
+        "kitchen",
+        "cooking",
+        "water",
+        "boiling",
+        "bubbles",
+        "prop"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "height",
+        "waterLevel",
+        "seed",
+        "bubbles",
+        "metalColor",
+        "boil",
+        "time_s"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "boil: 0 still, ~0.2 a few bubbles, 1 rolling boil. Pair with smoke-wisp-v1 for steam and gas-burner-v1 underneath. Needs a reasonably bright environment map for the steel to read as stainless."
+    },
+    {
+      "id": "gas-burner-v1",
+      "name": "Gas hob burner",
+      "type": "three_component",
+      "source_path": "src/library/props/GasBurner.ts",
+      "description": "Domestic gas burner: enamel cap, aluminium head, four-arm cast-iron grate and a ring of small blue flame jets built on flame-v1, each billboarding about its own jet axis toward the camera, plus a soft blue point light.",
+      "tags": [
+        "gas",
+        "burner",
+        "stove",
+        "hob",
+        "kitchen",
+        "flame",
+        "fire",
+        "combustion"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "jets",
+        "flameHeight",
+        "grate",
+        "brightness",
+        "seed",
+        "intensity",
+        "time_s"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "Origin at the hob surface; grateTop gives the height a pot sits at. intensity 0 shows a cold burner."
+    },
+    {
+      "id": "grass-field-v1",
+      "name": "Wind-bent grass field",
+      "type": "three_component",
+      "source_path": "src/library/environment/GrassField.ts",
+      "description": "Instanced grass blades over any ground function with a rejection test, bent along a circular arc by a force-proportional wind bend, travelling gusts and flutter; wrap and back-light shading, flower-tipped blades, distance fog and a relight setter for other times of day.",
+      "tags": [
+        "grass",
+        "meadow",
+        "turf",
+        "vegetation",
+        "wind",
+        "field",
+        "cliff",
+        "nature"
+      ],
+      "configurable_parameters": [
+        "area",
+        "count",
+        "ground",
+        "reject",
+        "minHeight",
+        "maxHeight",
+        "width",
+        "baseColor",
+        "tipColor",
+        "dryColor",
+        "flowerFraction",
+        "flowerColor",
+        "sunDirection",
+        "sunColor",
+        "skyColor",
+        "fogColor",
+        "fogDensity",
+        "seed",
+        "wind.bend",
+        "wind.direction",
+        "wind.gust",
+        "wind.gustSpeed",
+        "setLight()",
+        "time_s"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "Doubling wind.bend shows a wind that pushes twice as hard (small-angle approximation). Grass does not receive shadows; the ground under it does."
+    },
+    {
+      "id": "sailboat-v1",
+      "name": "Sailboat (sloop)",
+      "type": "three_component",
+      "source_path": "src/library/vehicles/Sailboat.ts",
+      "description": "Small sloop: vertex-coloured hull with boot stripe and antifouling, deck and cabin, mast, boom, cambered mainsail and jib (or furled with a sail cover for moored boats), stays, heel and a seeded bob.",
+      "tags": [
+        "sailboat",
+        "boat",
+        "yacht",
+        "sailing",
+        "harbor",
+        "ocean",
+        "wind",
+        "vehicle"
+      ],
+      "configurable_parameters": [
+        "length",
+        "hullColor",
+        "sailColor",
+        "deckColor",
+        "sails",
+        "seed",
+        "heel",
+        "bob",
+        "time_s"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "Local frame: bow +X, mast +Y, waterline y = 0, sails eased toward -Z (wind from +Z); positive heel leans toward -Z. Built for mid and far distances."
+    },
+    {
+      "id": "scuba-gear-v1",
+      "name": "Scuba gear for the humanoid",
+      "type": "three_component",
+      "source_path": "src/library/characters/ScubaGear.ts",
+      "description": "Diving kit that attaches to humanoid-figure-v1 anchors: aluminium tank with valve, buoyancy jacket and straps, weight belt, mask with glass, regulator with hose, and fins with foot pockets that continue the shin line (the figure's shoes are hidden).",
+      "tags": [
+        "scuba",
+        "diver",
+        "diving",
+        "underwater",
+        "gear",
+        "human",
+        "ocean"
+      ],
+      "configurable_parameters": [
+        "tankColor",
+        "jacketColor",
+        "finColor",
+        "hoseColor",
+        "maskColor",
+        "regulatorWorld()"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "Rotate the figure root horizontal (e.g. Euler YXZ (pi/2, yaw, 0)) for swimming; regulatorWorld() feeds bubble-stream-v1. The hose is approximate for small head turns."
+    },
+    {
+      "id": "bubble-stream-v1",
+      "name": "Exhalation bubble stream",
+      "type": "three_component",
+      "source_path": "src/library/fx/BubbleStream.ts",
+      "description": "Periodic bursts of bubbles from an emitter that wobble, spread, accelerate gently and swell by Boyle's law as the water pressure falls toward the surface; placed statelessly from the burst schedule.",
+      "tags": [
+        "bubbles",
+        "underwater",
+        "diver",
+        "fx",
+        "particles",
+        "boyle"
+      ],
+      "configurable_parameters": [
+        "period",
+        "perBurst",
+        "bursts",
+        "spread",
+        "riseSpeed",
+        "size",
+        "surfaceY",
+        "surfacePressure",
+        "seed",
+        "emitter",
+        "t0",
+        "time_s"
+      ],
+      "created_for": "air-pressure-doubled",
+      "used_in": [
+        "air-pressure-doubled"
+      ],
+      "license": "original_procedural",
+      "notes": "surfacePressure is in atmospheres (1 = today, 2 = doubled air) and only affects the Boyle growth factor."
+    }
+  ]
+}

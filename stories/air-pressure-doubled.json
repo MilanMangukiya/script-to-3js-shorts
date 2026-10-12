@@ -1,0 +1,1938 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if Earth's sea-level air pressure suddenly doubled?",
+    "title": "What If Earth's Air Pressure Suddenly Doubled?",
+    "slug": "air-pressure-doubled",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 74,
+    "language": "en",
+    "audience": "Curious general audiences on short-video platforms, teens to adults, no science background needed.",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "Would twice the air crush us, and if not, what would it change?",
+    "viewer_takeaway": "We would barely feel twice the air ourselves, but it would change bottles, breathing on mountains, cooking, wind, the climate's carbon dioxide and the colour of sunsets."
+  },
+  "scientific_model": {
+    "baseline_reality": "Earth's average sea-level air pressure is about 1013 hPa, the weight of roughly 10 tonnes of air above every square metre. Dry air is about 78% nitrogen, 21% oxygen, 0.9% argon and 0.04% carbon dioxide (about 420 ppm); pressure falls with height, so Everest's summit has about a third of sea-level pressure.",
+    "counterfactual_change": "In under a minute, Earth's atmosphere gains a second atmosphere's worth of identical dry air, so sea-level pressure becomes about 2026 hPa and the pressure at every altitude doubles. The film follows the first hours and outlines slower consequences over decades.",
+    "assumptions": [
+      "The dry-air mass doubles uniformly in under a minute; composition fractions (78% N2, 21% O2, 0.9% Ar, about 420 ppm CO2) stay the same.",
+      "Temperatures, sunlight, gravity, oceans, land and the amount of water vapour are held at their present values at the moment of change; the addition causes no compression heating or pressure wave.",
+      "Sealed containers keep their old air; people equalize through breathing, swallowing and yawning.",
+      "Wind-force comparisons use the same wind speed; sunset colours ignore changes in aerosols and clouds.",
+      "Timescale: immediate effects in the first hours; climate effects over decades."
+    ],
+    "causal_chain": [
+      "Twice the air of the same composition arrives in under a minute, so pressure doubles at every altitude (about 2026 hPa at sea level).",
+      "Water-filled bodies barely compress, so people are not crushed; only air spaces such as ears, sinuses and sealed bottles feel the difference.",
+      "Partial pressures double: each breath holds twice the oxygen and mountain air becomes far easier to breathe.",
+      "Water needs a higher vapour pressure to boil, so it boils near 120 C at sea level, like a pressure cooker.",
+      "Denser air gives twice the aerodynamic force at the same speed: stronger pushes from breezes and more lift for wings.",
+      "Twice the CO2 column plus stronger line broadening would likely warm the climate over decades.",
+      "Twice the air along sunlight's path scatters away more blue, deepening sunset reds."
+    ],
+    "uncertainties": [
+      "How the extra air could arrive is not physical; we assume it appears at present temperatures without heating or a blast.",
+      "Winds afterwards: if the new air arrived still, mixing would slow winds at first, and heavier atmospheres may settle into weaker winds, so only same-speed comparisons are shown.",
+      "The size and pace of warming, and how clouds, water vapour and the oceans would respond, are uncertain.",
+      "Long-term effects of higher oxygen partial pressure on ecosystems, wildfires and human health are not modelled.",
+      "The oceans would slowly absorb more oxygen and carbon dioxide over months to centuries (including more acidity); this is not shown."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Standard sea-level air pressure is 1013.25 hPa, the weight of roughly 10 tonnes of air above every square metre (101,325 Pa / 9.81 m/s2 is about 10,300 kg).",
+        "confidence": "established",
+        "reasoning": "NOAA JetStream gives 1013.25 hPa; dividing pressure by gravity gives the mass of the air column per square metre; NASA lists a total atmosphere of 5.1 x 10^18 kg.",
+        "presentation_guardrail": "Say 'about ten tonnes'; the column graphic is schematic and its visible height is truncated."
+      },
+      {
+        "id": "CL02",
+        "statement": "If the atmosphere held twice as much air of the same composition and temperature, sea-level pressure would be about 2026 hPa (about 20 tonnes per square metre) and the pressure at every altitude would double.",
+        "confidence": "derived",
+        "reasoning": "Hydrostatic balance: pressure at a level equals the weight of air above it. Doubling the mass at an unchanged temperature profile doubles density and pressure at every height without changing the scale height (about 8.5 km).",
+        "presentation_guardrail": "This is the story-world premise (a sudden addition over about a minute); never show the atmosphere as visibly taller."
+      },
+      {
+        "id": "CL03",
+        "statement": "In seawater, pressure rises by about one atmosphere every 10 metres, so a diver at 10 m breathes air at about twice sea-level pressure.",
+        "confidence": "established",
+        "reasoning": "NOAA: every 33 feet (10.06 m) of seawater adds one atmosphere; scuba regulators deliver air at the surrounding pressure.",
+        "presentation_guardrail": "Show a calm diver at the 10 m tag; imply nothing about deeper effects such as narcosis."
+      },
+      {
+        "id": "CL04",
+        "statement": "Bodies are mostly water and tissue, which barely compress, and pressure acts equally inside and out, so a uniform rise to two atmospheres does not crush a person; only air spaces such as ears and sinuses must equalize.",
+        "confidence": "established",
+        "reasoning": "USGS: up to 60% of an adult body is water; liquids are nearly incompressible; divers and hyperbaric patients routinely experience 2 atmospheres.",
+        "presentation_guardrail": "Say 'wouldn't be crushed', never 'nothing would happen'."
+      },
+      {
+        "id": "CL05",
+        "statement": "A rise of one atmosphere within about a minute is like a quick 10 m dive: most people would feel strong ear pressure and need to swallow or yawn to equalize; people with blocked ears or sinuses could suffer pain or injury.",
+        "confidence": "plausible",
+        "reasoning": "Diving and aviation experience with rapid pressure changes; this change is several times larger than an airliner descent.",
+        "presentation_guardrail": "Not narrated; shown only as the diver equalizing. Never depict eardrums bursting."
+      },
+      {
+        "id": "CL06",
+        "statement": "With the oxygen fraction unchanged at about 21%, its partial pressure would double from about 21 kPa to about 42 kPa at sea level, so each breath of the same volume would hold about twice as many oxygen molecules.",
+        "confidence": "derived",
+        "reasoning": "Partial pressure equals mole fraction times total pressure (NASA composition data).",
+        "presentation_guardrail": "Do not claim the body absorbs twice the oxygen at sea level (blood is already nearly saturated) or that the change is healthier."
+      },
+      {
+        "id": "CL07",
+        "statement": "Everest's summit (8,849 m) has about 31-34 kPa of air pressure today; doubled, it would have about 63-67 kPa, which today occurs around 3,300-3,800 m, the altitude of Andean cities such as La Paz or Cusco.",
+        "confidence": "derived",
+        "reasoning": "NASA Glenn's standard-atmosphere model gives about 31.5 kPa at 8,849 m and places 63-67 kPa at 3,300-3,800 m; measured summit pressures run a little higher (about 33-34 kPa).",
+        "presentation_guardrail": "Say 'feel like a city high in the Andes' about air pressure only; the cold, wind and terrain stay extreme. The terrain is labelled illustrative."
+      },
+      {
+        "id": "CL08",
+        "statement": "Water boils when its vapour pressure matches the surrounding pressure: 100 C at 1 atmosphere and about 120 C at about 2 atmospheres (1489 mmHg).",
+        "confidence": "established",
+        "reasoning": "HyperPhysics saturated vapour pressure table; USDA FSIS explains that the boiling point falls with elevation because air pressure falls.",
+        "presentation_guardrail": "Say 'about 120 degrees Celsius'; show the heating as a labelled time-lapse."
+      },
+      {
+        "id": "CL09",
+        "statement": "Stovetop pressure cookers raise the pressure inside by up to about one atmosphere to cook at roughly 115-121 C, so an open pot under doubled air would cook much like one.",
+        "confidence": "derived",
+        "reasoning": "Penn State Extension: about 10 lb of gauge pressure gives 240 F (116 C) at sea level; about 15 lb (one atmosphere) gives about 120 C, the open-pot boiling point at 2 atmospheres.",
+        "presentation_guardrail": "Compare cooking temperature only; open pots still lose steam and need more energy to reach the boil."
+      },
+      {
+        "id": "CL10",
+        "statement": "Drag and lift scale directly with air density (D = Cd x rho x V^2 x A / 2; L = Cl x A x 0.5 x rho x V^2), so at the same wind speed doubled air pushes about twice as hard on sails, grass and people, and a wing at the same speed makes about twice the lift.",
+        "confidence": "derived",
+        "reasoning": "NASA Glenn drag and lift equations; density doubles at an unchanged temperature.",
+        "presentation_guardrail": "Compare at the same wind speed only; how fast winds would really blow afterwards is uncertain. Label the grass and boat change a comparison."
+      },
+      {
+        "id": "CL11",
+        "statement": "Twice the air means twice the carbon dioxide: at about 420 ppm the atmosphere holds roughly 3.3 trillion tonnes of CO2, so doubling would add about 3.3 trillion tonnes, more than the roughly 2.5 trillion tonnes humans emitted from 1850 to 2021 (about 2.7 trillion by 2025).",
+        "confidence": "derived",
+        "reasoning": "NASA's fact sheet gives 420 ppm and 5.1 x 10^18 kg of air (about 1.8 x 10^20 mol, so about 7.8 Gt of CO2 per ppm); Carbon Brief totals 2,504 GtCO2 for 1850-2021 including land use, and roughly 40 Gt more have been added each year since.",
+        "presentation_guardrail": "Say 'more than humanity has ever emitted'; bars are schematic and rounded."
+      },
+      {
+        "id": "CL12",
+        "statement": "With twice the CO2 overhead and stronger pressure broadening of infrared absorption lines in denser air, the greenhouse effect would strengthen; somewhat more sunlight would be scattered back to space, but the net result would most likely be warming over decades, by an uncertain amount.",
+        "confidence": "plausible",
+        "reasoning": "Radiative forcing grows with the amount of absorber and with line broadening; the extra Rayleigh scattering raises reflectivity only modestly.",
+        "presentation_guardrail": "Use 'likely'; give no temperature number and show no catastrophe imagery."
+      },
+      {
+        "id": "CL13",
+        "statement": "Air molecules scatter blue light most; at sunset sunlight crosses a long path through the air, and doubling the air along that path removes even more blue and green, so the low Sun and sunset sky would look a deeper red and dimmer.",
+        "confidence": "derived",
+        "reasoning": "NASA Space Place explains red sunsets by the longer path through air; Rayleigh optical depth scales with the mass of air along the path, so at about 20 air masses doubling it cuts the red-to-blue ratio much further.",
+        "presentation_guardrail": "Label the colour shift illustrative; real sunsets also depend on dust, smoke and clouds."
+      },
+      {
+        "id": "CL14",
+        "statement": "A sealed, empty plastic bottle filled at today's pressure would face about one extra atmosphere outside; being flexible, it would crumple until the trapped air is squeezed to about half its volume.",
+        "confidence": "derived",
+        "reasoning": "Boyle's law (pressure times volume is constant at fixed temperature, NASA Glenn); thin PET walls offer little resistance.",
+        "presentation_guardrail": "Only sealed, flexible containers crumple; rigid jars and pressurized soda cans would hold."
+      },
+      {
+        "id": "CL15",
+        "statement": "In a 1644 letter to Michelangelo Ricci, Evangelista Torricelli wrote that we live at the bottom of a sea of elemental air that has weight.",
+        "confidence": "established",
+        "reasoning": "Translation of the 11 June 1644 letter (Le Moyne College classic chemistry texts).",
+        "presentation_guardrail": "Paraphrase as 'an ocean of air' and attribute it to Torricelli."
+      },
+      {
+        "id": "CL16",
+        "statement": "Once their ears equalize, people at two atmospheres feel little different: divers stay at 10 m for long periods, nitrogen narcosis typically appears only around 30 m (about 4 atmospheres) or deeper, and denser air takes only slightly more effort to breathe during hard exercise.",
+        "confidence": "plausible",
+        "reasoning": "Recreational and commercial diving experience at 10 m (2 atmospheres).",
+        "presentation_guardrail": "Say 'barely feel the weight', never 'feel nothing'; make no medical promises."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NOAA JetStream - Air Pressure",
+        "url": "https://www.noaa.gov/jetstream/atmosphere/air-pressure",
+        "supports_claim_ids": [
+          "CL01"
+        ]
+      },
+      {
+        "name": "NASA NSSDCA - Earth Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "supports_claim_ids": [
+          "CL01",
+          "CL02",
+          "CL06",
+          "CL11"
+        ]
+      },
+      {
+        "name": "NOAA National Ocean Service - How does pressure change with ocean depth?",
+        "url": "https://oceanservice.noaa.gov/facts/pressure.html",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "USGS Water Science School - The Water in You: Water and the Human Body",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body",
+        "supports_claim_ids": [
+          "CL04"
+        ]
+      },
+      {
+        "name": "NASA Glenn Research Center - Earth Atmosphere Model (metric units)",
+        "url": "https://www.grc.nasa.gov/www/k-12/airplane/atmosmet.html",
+        "supports_claim_ids": [
+          "CL02",
+          "CL07"
+        ]
+      },
+      {
+        "name": "HyperPhysics (Georgia State University) - Saturated Vapor Pressure of Water",
+        "url": "https://hyperphysics.gsu.edu/hbase/Kinetic/watvap.html",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      },
+      {
+        "name": "USDA FSIS - High Altitude Cooking",
+        "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/high-altitude-cooking",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      },
+      {
+        "name": "Penn State Extension - Time, Temperature, and Pressure in Canning Foods",
+        "url": "https://extension.psu.edu/time-temperature-and-pressure-in-canning-foods",
+        "supports_claim_ids": [
+          "CL09"
+        ]
+      },
+      {
+        "name": "NASA Glenn Research Center - The Drag Equation",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-equation/",
+        "supports_claim_ids": [
+          "CL10"
+        ]
+      },
+      {
+        "name": "NASA Glenn Research Center - The Lift Equation",
+        "url": "https://www.grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/lifteq.html",
+        "supports_claim_ids": [
+          "CL10"
+        ]
+      },
+      {
+        "name": "Carbon Brief - Which countries are historically responsible for climate change?",
+        "url": "https://www.carbonbrief.org/analysis-which-countries-are-historically-responsible-for-climate-change/",
+        "supports_claim_ids": [
+          "CL11"
+        ]
+      },
+      {
+        "name": "NASA Space Place - Why Is the Sky Blue?",
+        "url": "https://spaceplace.nasa.gov/blue-sky/",
+        "supports_claim_ids": [
+          "CL13"
+        ]
+      },
+      {
+        "name": "NASA Glenn Research Center - Boyle's Law",
+        "url": "https://www.grc.nasa.gov/www/k-12/airplane/aboyle.html",
+        "supports_claim_ids": [
+          "CL14"
+        ]
+      },
+      {
+        "name": "Le Moyne College classic chemistry texts - Torricelli, letter to Michelangelo Ricci (1644)",
+        "url": "https://web.lemoyne.edu/Giunta/torr.html",
+        "supports_claim_ids": [
+          "CL15"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "A capped plastic bottle crumples on a harbor cafe table as the weight of the sky doubles, and one changed number travels from a diver at 10 m to the top of Everest, a boiling pot, a windy cliff, orbit and a deepening sunset.",
+    "visual_identity": "Clear, sunlit documentary realism with a sense of weight: crisp harbor morning light, aquamarine water, thin cold Himalayan blue, warm kitchen steel, wind-combed cliff grass and a crimson sunset. Schematics are minimal, luminous and always labelled.",
+    "palette": [
+      "harbor morning blue #3E7CB8",
+      "sea-glass aquamarine #5FC4C0",
+      "high-altitude navy #0F2A6B",
+      "steel and steam #D9DEE3",
+      "meadow green #6F8F45",
+      "crimson sunset #C8402A",
+      "caption amber #FFB45C",
+      "ivory #F4EDE1"
+    ],
+    "lighting": "Motivated sunlight in every exterior (a low morning sun behind the bottle, sunrise on the summit, afternoon cliff light, a deep red sunset); filtered blue-green shafts underwater; a window key and blue gas flame in the kitchen.",
+    "camera_language": "Macro bottle, human-scale reveal and tilt up an air column, underwater arc around a diver, low-angle summit crane, close kitchen push-in, grass-level cliff glide and telephoto gulls, orbital push to the limb, wide sunset, and a return glide into the bottle.",
+    "motion_language": "Slow, weighted moves. The only sudden motion is the bottle's crumple; everything that feels the extra weight bends, leans or glows a little more.",
+    "world_scale_policy": "Real-world shots use metres at true scale (bottle 21 cm, people about 1.7 m, diver at 10 m depth, Everest summit at 8,849 m with clouds 2.1 km below, pot 21 cm wide, sea cliff 38 m high). The orbital shot uses Earth radius = 1 with NASA imagery. Molecules, CO2 bars and same-speed comparisons are labelled schematics.",
+    "emotional_arc": [
+      "playful jolt",
+      "curious unease",
+      "reassurance",
+      "wonder",
+      "homely surprise",
+      "exhilaration",
+      "sober second thought",
+      "awe",
+      "quiet resolution"
+    ],
+    "opening_hook": "An empty, capped water bottle on a sunny harbor cafe table caves in with a crackle as the question is asked and a pressure chip counts from 1013 to 2026 hPa.",
+    "ending_payoff": "At sunset the camera glides back to the same table and the crumpled bottle glows red while the narrator answers: we would barely feel the weight; everything else would.",
+    "loop_connection": "The final glide ends on the crumpled bottle in exactly the framing of frame 0, where the intact bottle stands in morning light just before it crumples.",
+    "asset_policy": "Reuse the studio's pipeline, captions, labels, sky, ocean, terrain, clouds, underwater set, fish, birds, humanoid, Earth, stars, flame, smoke, bokeh and snowfall; build and promote a crumpling bottle, dial gauge, air-molecule volume, cooking pot, gas burner, grass field, sailboat, scuba gear and a bubble stream."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Sparse original pad moving between D major and B minor with airy high harmonics; one deep, soft swell when the air doubles; it hushes under water, opens wide on the summit, thins in orbit and resolves to a warm low chord at sunset.",
+    "music_level_db_below_voice": -22,
+    "sfx_direction": "Synthesized and restrained: harbor waves and distant gulls, a crisp plastic crumple, muffled underwater calm with regulator bubbles, thin summit wind and one deep breath, gas hiss and a rising boil, cliff wind gusts, near-silence in orbit, gentle evening waves. No loud impacts.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Premium documentary subtitles: ivory semibold, thin charcoal outline and soft shadow, restrained amber active word, phrase-by-phrase with a 120 ms ease.",
+    "font_stack": "Inter, Manrope, system-ui, sans-serif",
+    "font_size_px": 66,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 100,
+      "right_px": 180,
+      "top_px": 230,
+      "bottom_px": 330,
+      "caption_baseline_y_px": 1360
+    },
+    "active_word_treatment": "The spoken word turns amber with no change of baseline; emphasised phrases keep a soft accent, a 1.04 scale or a gentle glow.",
+    "highlights_policy": "Exact narration only; in-scene labels are limited to TODAY / 2x AIR state chips, schematic, illustrative and time-lapse tags, and rounded numbers backed by the claim register."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0.0,
+      "end_s": 3.83,
+      "narration": {
+        "text": "What if the air pressing on you suddenly doubled?",
+        "start_s": 0.3,
+        "end_s": 3.08,
+        "delivery_note": "Curious and intimate, a slight lift on \"suddenly doubled\"."
+      },
+      "viewer_question": "What happens to us, and to our world, if the air's weight suddenly doubles?",
+      "visual_payoff": "A capped, empty plastic water bottle on a sunny harbor cafe table caves in with a crackle while a pressure chip counts from 1013 to 2026 hPa.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0.0,
+          "end_s": 3.83,
+          "shot_type": "macro still life with slow push-in",
+          "world": "Harbor cafe terrace on a clear spring morning, units in metres. Round teak-topped cafe table (radius 0.32 m, top at y = 0.74) at the origin on a paved promenade; a low granite parapet (0.62 m high) from z = -0.62 to -1.02 and a seawall dropping to the sea at y = -2.4; moored sloops 60-420 m out; a green headland 2.6 km across the bay.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 0.0,
+                "position": [
+                  0.36,
+                  0.86,
+                  0.66
+                ],
+                "look_at": [
+                  0.02,
+                  0.8,
+                  -0.04
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 3.83,
+                "position": [
+                  0.29,
+                  0.845,
+                  0.55
+                ],
+                "look_at": [
+                  0.02,
+                  0.8,
+                  -0.04
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow 12 cm push-in toward the bottle at table height; no rotation.",
+            "lens_notes": "30 degree vertical FOV (about 45 mm full-frame equivalent); the bright sea behind is softened by haze."
+          },
+          "subjects": [
+            {
+              "id": "bottle",
+              "kind": "other",
+              "appearance": "Clear 500 mL PET water bottle, empty and capped, faint blue tint, ribbed waist, pale blue label band, crisp sun highlights.",
+              "geometry_and_material": "Lathe-profile shell with ribs and a physical transmission material (IOR 1.57, low roughness); opaque ribbed cap; vertex-shader crumple with seeded vertical creases and inward flats.",
+              "scale_and_accuracy": "21 cm tall, 6.6 cm wide; crumples to about half its internal volume, as Boyle's law predicts for the trapped air at doubled outside pressure.",
+              "movement": "Intact until 1.03 s; first dents on \"pressing\"; walls cave in on \"suddenly doubled\" and settle by 2.91 s with a small rebound.",
+              "asset_hint": "proposed:plastic-bottle-v1"
+            },
+            {
+              "id": "cafe_props",
+              "kind": "architecture",
+              "appearance": "Weathered teak-slat cafe table top, white espresso cup on a saucer.",
+              "geometry_and_material": "Cylinder top with a canvas wood-grain texture; lathe cup and saucer; PBR.",
+              "scale_and_accuracy": "Table 64 cm across, cup 6 cm tall.",
+              "movement": "Static.",
+              "asset_hint": "bespoke harbor cafe props"
+            },
+            {
+              "id": "harbor",
+              "kind": "water",
+              "appearance": "Sunlit bay with soft glitter, moored white sloops and a green headland.",
+              "geometry_and_material": "Ocean shader, sky dome, sailboat components and a terrain headland.",
+              "scale_and_accuracy": "Boats 9-11 m long at 60-420 m; headland about 220 m high at 2.6 km.",
+              "movement": "Slow swell; boats bob a few centimetres.",
+              "asset_hint": "ocean-surface-v1, sky-dome-v1, terrain-massif-v1, proposed:sailboat-v1"
+            }
+          ],
+          "animation_plan": [
+            "0 - 1.03 s: intact bottle; chip AIR PRESSURE 1013 hPa fades in at 0.4 s.",
+            "1.03 s (\"pressing\"): first soft dents appear below the shoulder.",
+            "1.94 s - 2.91 s (\"suddenly doubled\"): the walls cave in along seeded creases while the chip counts to 2026 hPa; cap and neck stay rigid.",
+            "2.91 s - end: tiny elastic rebound, then the bottle holds its crumpled shape."
+          ],
+          "lighting": "Low morning sun ahead-left behind the bottle (rim light and specular streaks), cool skylight fill, warm bounce from the stone top.",
+          "effects": [
+            "Chip: AIR PRESSURE 1013 -> 2026 hPa",
+            "Bloom on bottle highlights only"
+          ],
+          "composition_notes": "Bottle in the upper-middle of frame (about 30-62% of height) with the table beneath; captions sit over the table edge, clear of the bottle."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "suddenly doubled",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0.0,
+          "duration_s": 3.83,
+          "kind": "ambience",
+          "description": "Soft harbor ambience: small waves against the quay, distant gulls.",
+          "relative_db": -30
+        },
+        {
+          "at_s": 1.03,
+          "duration_s": 1.9,
+          "kind": "texture",
+          "description": "Crisp, close plastic crumple crackle; restrained, no hit.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02",
+        "CL14"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut from the crumpled bottle to a wider view of the same promenade and the person standing at the parapet."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 3.83,
+      "end_s": 11.83,
+      "narration": {
+        "text": "Right now, the air above every square meter weighs about ten tonnes. Now double it, in under a minute.",
+        "start_s": 4.13,
+        "end_s": 10.93,
+        "delivery_note": "Measured and concrete; a short pause before \"Now double it\"."
+      },
+      "viewer_question": "How much air is pressing on us, and what would doubling it mean?",
+      "visual_payoff": "A glowing one-metre square around a person at the parapet rises into a column of air reaching into the sky; schematic molecules inside double in number as the label changes from about 10 to about 20 tonnes.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 3.83,
+          "end_s": 11.83,
+          "shot_type": "human-scale reveal and tilt up an air column",
+          "world": "Harbor cafe terrace on a clear spring morning, units in metres. Round teak-topped cafe table (radius 0.32 m, top at y = 0.74) at the origin on a paved promenade; a low granite parapet (0.62 m high) from z = -0.62 to -1.02 and a seawall dropping to the sea at y = -2.4; moored sloops 60-420 m out; a green headland 2.6 km across the bay. A person stands at the parapet at (1.3, 0, -0.15) facing the sea; a schematic 1 m x 1 m column of air rises from the paving around them.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 3.83,
+                "position": [
+                  3.6,
+                  1.1,
+                  3.6
+                ],
+                "look_at": [
+                  1.3,
+                  1.25,
+                  -0.15
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 7.03,
+                "position": [
+                  3.45,
+                  1.05,
+                  3.5
+                ],
+                "look_at": [
+                  1.3,
+                  1.55,
+                  -0.15
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 11.83,
+                "position": [
+                  2.45,
+                  0.72,
+                  2.5
+                ],
+                "look_at": [
+                  1.3,
+                  9.5,
+                  -0.15
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Hold on the person, then tilt up and dolly in slightly, following the column into the sky.",
+            "lens_notes": "38 degree vertical FOV (about 35 mm); low eye height."
+          },
+          "subjects": [
+            {
+              "id": "person",
+              "kind": "human",
+              "appearance": "Adult in a navy jacket and grey trousers at the parapet, looking out to sea, breathing calmly.",
+              "geometry_and_material": "humanoid-figure-v1 with jacket; standing pose with slow breathing.",
+              "scale_and_accuracy": "1.72 m tall.",
+              "movement": "Gentle breathing; glances up at the sky as the molecules double.",
+              "asset_hint": "humanoid-figure-v1"
+            },
+            {
+              "id": "air_column",
+              "kind": "diagram",
+              "appearance": "A softly glowing 1 m x 1 m square on the paving and a faint column with thin bright edges rising into the sky.",
+              "geometry_and_material": "Additive edge lines and translucent faces with a vertical fade; emissive floor outline.",
+              "scale_and_accuracy": "True 1 m2 footprint; drawn to about 400 m and fading (the real column is the whole atmosphere).",
+              "movement": "Fades in from the ground up; brightens on the doubling.",
+              "asset_hint": "bespoke"
+            },
+            {
+              "id": "molecules",
+              "kind": "particle_system",
+              "appearance": "Pale blue N2 and coral O2 dumbbells with the occasional violet argon atom drifting in the column.",
+              "geometry_and_material": "Instanced schematic molecules with seeded thermal jitter; density doubles by filling seeded empty slots.",
+              "scale_and_accuracy": "Enlarged by about 10^8 and far sparser than real air; only the doubling is quantitative.",
+              "movement": "Drift; a second set pops in on \"double it\".",
+              "asset_hint": "proposed:air-molecules-v1"
+            }
+          ],
+          "animation_plan": [
+            "3.83 s: column fades in from the ground up; chip TODAY - AIR ABOVE 1 m2 about 10 t.",
+            "7.03 s (\"ten tonnes\"): the camera begins its tilt up the column.",
+            "9.09 s - 10.19 s (\"double it\"): a second set of molecules pops in between the first (count x2), the column edges brighten and the chip turns WHAT IF - about 20 t; the person glances up.",
+            "11.83 s: the camera looks up the column into clear blue sky."
+          ],
+          "lighting": "Morning sun from front-left, soft skylight; the column is self-lit (additive) and casts no light.",
+          "effects": [
+            "Chip: TODAY / WHAT IF - AIR ABOVE 1 m2 about 10 t -> about 20 t",
+            "Tag: SCHEMATIC - MOLECULES NOT TO SCALE",
+            "Floor callout: 1 m2"
+          ],
+          "composition_notes": "Person in the lower-middle third at the start with the column above; captions over the paving and sea; the tilt ends with the column converging upward in the top half."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "about ten tonnes",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "double it",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 3.83,
+          "duration_s": 8.0,
+          "kind": "ambience",
+          "description": "Harbor ambience continues, slightly softer.",
+          "relative_db": -31
+        },
+        {
+          "at_s": 8.99,
+          "duration_s": 2.2,
+          "kind": "music_swell",
+          "description": "Deep, soft low swell as the air doubles (no hit).",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The sky at the top of the column dissolves into the bright blue light of the sea surface seen from 10 m below."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 11.83,
+      "end_s": 21.03,
+      "narration": {
+        "text": "You wouldn't be crushed. Your body is mostly water, which barely squeezes. Divers feel this pressure just ten meters down.",
+        "start_s": 12.18,
+        "end_s": 20.38,
+        "delivery_note": "Reassuring and unhurried; a slight smile on \"barely squeezes\"."
+      },
+      "viewer_question": "Why wouldn't twice the pressure crush us?",
+      "visual_payoff": "A relaxed scuba diver hovers at the 10 m tag of a descent line, pinches their nose to equalize and exhales a silver cloud of bubbles toward the light.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.83,
+          "end_s": 21.03,
+          "shot_type": "underwater arc around a hovering diver",
+          "world": "Clear coastal sea, units in metres: surface at y = 0, sandy floor with seagrass and rocks at y = -14; vertical descent line at (1.4, y, -3.6) with yellow depth tags at -5 m and -10 m; diver hovering horizontally at y = -10.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 11.83,
+                "position": [
+                  3.1,
+                  -10.9,
+                  1.9
+                ],
+                "look_at": [
+                  0.2,
+                  -9.7,
+                  -3.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 21.03,
+                "position": [
+                  -1.5,
+                  -10.75,
+                  2.7
+                ],
+                "look_at": [
+                  0.2,
+                  -9.6,
+                  -3.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow lateral arc from the diver's right side to their left, slightly below, keeping the diver centred.",
+            "lens_notes": "42 degree vertical FOV underwater; haze limits visibility to about 25 m."
+          },
+          "subjects": [
+            {
+              "id": "diver",
+              "kind": "human",
+              "appearance": "Adult diver in a black-and-teal wetsuit with an aluminium tank, grey jacket, mask, yellow regulator hose and black fins, calm and horizontal.",
+              "geometry_and_material": "humanoid-figure-v1 rotated horizontal with proposed scuba-gear-v1 attachments (tank, jacket, mask, regulator, fins).",
+              "scale_and_accuracy": "1.72 m tall diver at 10 m depth.",
+              "movement": "Slow alternating fin kicks; the right hand rises to the mask to pinch the nose, then lowers; exhales every 3.6 s.",
+              "asset_hint": "humanoid-figure-v1 + proposed:scuba-gear-v1"
+            },
+            {
+              "id": "bubbles",
+              "kind": "particle_system",
+              "appearance": "Silver exhalation bubbles that wobble and swell as they rise.",
+              "geometry_and_material": "Point sprites with bright rims and deterministic wobble.",
+              "scale_and_accuracy": "Bubbles 0.5-3 cm; rise speed about 0.3-0.6 m/s.",
+              "movement": "A burst from the regulator every 3.6 s.",
+              "asset_hint": "proposed:bubble-stream-v1"
+            },
+            {
+              "id": "sea",
+              "kind": "water",
+              "appearance": "Blue-green water, sun shafts, caustics on sand, swaying seagrass and a passing fish school.",
+              "geometry_and_material": "underwater-volume-v1 with fish-school-v1.",
+              "scale_and_accuracy": "14 m deep.",
+              "movement": "Shafts drift and fish cross far behind.",
+              "asset_hint": "underwater-volume-v1, fish-school-v1"
+            }
+          ],
+          "animation_plan": [
+            "11.83 s: the diver hovers; chip DEPTH 10 m - about 2 atm; a fish school crosses far behind.",
+            "12.08 s and 17.32 s: exhalation bursts rise from the regulator.",
+            "15.6 s - 17.1 s (\"barely squeezes\"): the right hand goes to the mask and pinches the nose to equalize.",
+            "19.04 s (\"ten meters down\"): tag SAME PRESSURE AS THE DOUBLED AIR; the arc reveals the 10 m tag on the line."
+          ],
+          "lighting": "Sunlight from above, attenuated to cyan; caustic flicker on the sand; soft blue fog.",
+          "effects": [
+            "Chip: DEPTH 10 m - PRESSURE about 2 atm",
+            "Tag: SAME PRESSURE AS THE DOUBLED AIR",
+            "Light shafts and marine snow"
+          ],
+          "composition_notes": "Diver centred slightly above the middle; brighter water above; captions over the darker water below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "wouldn't be crushed",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "ten meters down",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 11.83,
+          "duration_s": 9.2,
+          "kind": "ambience",
+          "description": "Muffled underwater calm with a low hush.",
+          "relative_db": -28
+        },
+        {
+          "at_s": 17.32,
+          "duration_s": 1.4,
+          "kind": "texture",
+          "description": "Soft regulator exhale and bubble burble, close.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "Rising bubbles brighten into the dawn glare of a Himalayan sky."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "human_impact",
+      "start_s": 21.03,
+      "end_s": 30.04,
+      "narration": {
+        "text": "Every breath would hold twice the oxygen. Even atop Everest, the air would feel like a city high in the Andes.",
+        "start_s": 21.33,
+        "end_s": 29.14,
+        "delivery_note": "Wonder; slow down on \"a city high in the Andes\"."
+      },
+      "viewer_question": "What would twice the air mean for every breath, especially up high?",
+      "visual_payoff": "At dawn on a snow summit far above a sea of clouds, a climber lifts away their oxygen mask and takes an easy breath; the label shows Everest's summit air would match about 3,500 m today.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 21.03,
+          "end_s": 30.04,
+          "shot_type": "low-angle summit portrait to crane reveal",
+          "world": "Himalayan summit at sunrise, units in metres with the summit at local (0, 0, 0) = 8,849 m; a three-ridged snow pyramid falls away 2 km to a cloud sea at y = -2,100; distant peaks 8-35 km away; clear deep-blue sky.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 21.03,
+                "position": [
+                  0.32,
+                  -1.15,
+                  4.6
+                ],
+                "look_at": [
+                  0.0,
+                  1.1,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 24.39,
+                "position": [
+                  0.1,
+                  -0.9,
+                  5.4
+                ],
+                "look_at": [
+                  0.0,
+                  1.05,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 30.04,
+                "position": [
+                  -8.5,
+                  4.5,
+                  19.0
+                ],
+                "look_at": [
+                  0.4,
+                  -1.5,
+                  -3.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Low on the snow ridge 0.5 m above the surface looking up at the climber, then crane up and back to reveal the summit pyramid, the cloud sea and the range.",
+            "lens_notes": "40 degree vertical FOV; slight wide-angle feel from the low position."
+          },
+          "subjects": [
+            {
+              "id": "climber",
+              "kind": "human",
+              "appearance": "Mountaineer in a red down suit and hood, black boots, goggles pushed up, small pack; oxygen mask with hose.",
+              "geometry_and_material": "humanoid-figure-v1 (jacket, hat) with bespoke mask, goggles, pack and hose.",
+              "scale_and_accuracy": "1.75 m tall.",
+              "movement": "Faces the sunrise; on \"twice the oxygen\" lifts the mask away (arm IK) and takes a slow, deep breath; breath vapour on the exhale.",
+              "asset_hint": "humanoid-figure-v1, smoke-wisp-v1"
+            },
+            {
+              "id": "summit",
+              "kind": "terrain",
+              "appearance": "Wind-sculpted snow ridges with dark rock bands meeting at a pointed top.",
+              "geometry_and_material": "Bespoke radial heightfield, 0.3 m resolution at the top grading to 60 m at 3 km; slope-based snow and rock vertex colours; light spindrift.",
+              "scale_and_accuracy": "Summit at 8,849 m; the shape is illustrative, not a survey of Everest.",
+              "movement": "Static; faint drifting snow.",
+              "asset_hint": "bespoke summit mesh, snowfall-v1"
+            },
+            {
+              "id": "range_and_clouds",
+              "kind": "terrain",
+              "appearance": "Distant snow peaks rising through a sunlit cloud sea.",
+              "geometry_and_material": "terrain-massif-v1 instances and cloud-deck-v1.",
+              "scale_and_accuracy": "Peaks of about 7,500-8,500 m at 8-35 km; cloud tops near 6,750 m.",
+              "movement": "Clouds drift slowly.",
+              "asset_hint": "terrain-massif-v1, cloud-deck-v1"
+            }
+          ],
+          "animation_plan": [
+            "21.03 s: chip EVEREST SUMMIT - 8,849 m; the climber breathes through the mask.",
+            "22.47 s - 23.47 s (\"twice the oxygen\"): the climber lifts the mask off; chip O2 PER BREATH x2.",
+            "23.57 s: one slow, deep breath (chest expands).",
+            "24.39 s (\"Everest\"): the crane begins, revealing the range.",
+            "27.29 s (\"city high in the Andes\"): callout AIR LIKE ABOUT 3,500 m TODAY; tag ILLUSTRATIVE TERRAIN.",
+            "28.84 s: a frosty exhale drifts from the climber."
+          ],
+          "lighting": "Low golden sunrise from the right (about 5 degrees high), crisp shadows, cold blue skylight; cloud tops lit pink-gold.",
+          "effects": [
+            "Chip: EVEREST SUMMIT 8,849 m",
+            "Chip: O2 PER BREATH x2",
+            "Callout: AIR LIKE ABOUT 3,500 m TODAY",
+            "Tag: ILLUSTRATIVE TERRAIN",
+            "Light spindrift"
+          ],
+          "composition_notes": "Climber in the upper-middle of frame against the sky, the sun just out of frame; captions over the snow slope below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "twice the oxygen",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "a city high in the Andes",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 21.03,
+          "duration_s": 9.01,
+          "kind": "ambience",
+          "description": "Thin, high-altitude wind.",
+          "relative_db": -28
+        },
+        {
+          "at_s": 23.57,
+          "duration_s": 1.8,
+          "kind": "texture",
+          "description": "One deep, satisfied breath in, soft and close.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL06",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "match_cut",
+        "duration_s": 0,
+        "motivation": "The climber's frosty exhale matches the first wisps of steam rising from a pot."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "human_impact",
+      "start_s": 30.04,
+      "end_s": 39.66,
+      "narration": {
+        "text": "In the kitchen, water wouldn't boil until about 120 degrees Celsius. Every open pot would become a pressure cooker.",
+        "start_s": 30.34,
+        "end_s": 38.96,
+        "delivery_note": "Light and domestic; a hint of amusement on \"pressure cooker\"."
+      },
+      "viewer_question": "What happens to everyday cooking?",
+      "visual_payoff": "A dial thermometer clipped to a steel pot sweeps past 100 degrees C while the water only shimmers; at 120 degrees C the pot breaks into a rolling boil.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 30.04,
+          "end_s": 39.66,
+          "shot_type": "close kitchen push-in on pot and thermometer",
+          "world": "Home kitchen beside a bright window, units in metres: gas hob at y = 0.9 with one lit burner; stainless pot (21 cm wide, 13 cm tall) of water on the grate at the origin; analog dial thermometer clipped to the rim facing the camera; tiled backsplash 0.6 m behind.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 30.04,
+                "position": [
+                  0.42,
+                  1.38,
+                  0.62
+                ],
+                "look_at": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 39.66,
+                "position": [
+                  0.36,
+                  1.32,
+                  0.53
+                ],
+                "look_at": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow push-in from a three-quarter high angle toward the pot.",
+            "lens_notes": "34 degree vertical FOV (about 40 mm)."
+          },
+          "subjects": [
+            {
+              "id": "pot",
+              "kind": "other",
+              "appearance": "Brushed stainless pot with riveted handles, half full of clear water.",
+              "geometry_and_material": "Lathe pot body with brushed PBR metal; rippling water disc; instanced nucleation and boiling bubbles; steam from smoke-wisp-v1.",
+              "scale_and_accuracy": "21 cm across; water 8 cm deep.",
+              "movement": "Shimmer and a few small bubbles until the boil cue, then a rolling boil with steam.",
+              "asset_hint": "proposed:cooking-pot-v1, smoke-wisp-v1"
+            },
+            {
+              "id": "thermometer",
+              "kind": "other",
+              "appearance": "Classic cooking thermometer with a 5 cm cream dial (0-150 degrees C) and marks at 100 and 120.",
+              "geometry_and_material": "Dial-gauge component: canvas-texture face, steel bezel, glass, needle; probe stem into the water.",
+              "scale_and_accuracy": "5 cm dial.",
+              "movement": "Needle sweeps from 92 to 120 degrees C over the shot (time-lapse).",
+              "asset_hint": "proposed:dial-gauge-v1"
+            },
+            {
+              "id": "burner",
+              "kind": "other",
+              "appearance": "Ring of small blue gas flames under the pot on a cast-iron grate.",
+              "geometry_and_material": "Ring of flame-v1 billboards with blue-dominant colours on a burner cap.",
+              "scale_and_accuracy": "Burner 9 cm across.",
+              "movement": "Steady flicker.",
+              "asset_hint": "proposed:gas-burner-v1, flame-v1"
+            }
+          ],
+          "animation_plan": [
+            "30.04 s: needle near 92 degrees C, water calm with a faint shimmer; tag TIME-LAPSE.",
+            "32.16 s (\"boil\"): the needle passes 100 degrees C (TODAY'S BOILING POINT mark) with only a few tiny bubbles.",
+            "33.42 s - 35.72 s (\"120 degrees Celsius\"): the needle reaches 120; the water breaks into a rolling boil and steam rises; chip WATER BOILS AT ABOUT 120 C (248 F).",
+            "38.1 s (\"pressure cooker\"): steam thickens as the camera settles."
+          ],
+          "lighting": "Soft window key from back-left, warm practical fill and the blue glow of the gas flame under the pot.",
+          "effects": [
+            "Tag: TIME-LAPSE",
+            "Chip: WATER BOILS AT ABOUT 120 C (248 F)",
+            "Steam wisps"
+          ],
+          "composition_notes": "Thermometer dial in the upper-middle with the pot interior visible; captions over the hob front."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "120 degrees Celsius",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "pressure cooker",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 30.04,
+          "duration_s": 9.62,
+          "kind": "texture",
+          "description": "Gas burner hiss, soft.",
+          "relative_db": -30
+        },
+        {
+          "at_s": 33.42,
+          "duration_s": 6.24,
+          "kind": "texture",
+          "description": "Bubbling rising to a rolling boil.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL08",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "Steam drifting sideways dissolves into wind combing the grass on a sea cliff."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "escalation",
+      "start_s": 39.66,
+      "end_s": 47.26,
+      "narration": {
+        "text": "Outside, the same breeze would push twice as hard, and every wingbeat would grip twice the air.",
+        "start_s": 39.96,
+        "end_s": 46.36,
+        "delivery_note": "Open and bright; let \"twice the air\" lift."
+      },
+      "viewer_question": "What happens to wind and to flight?",
+      "visual_payoff": "On a grassy sea cliff the same breeze suddenly bends the grass twice as far and heels the distant sailboats harder, then gulls hang effortlessly in the updraft.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 39.66,
+          "end_s": 43.77,
+          "shot_type": "low glide over cliff-top turf",
+          "world": "Sea-cliff top on a breezy afternoon, units in metres: grassy plateau at y = 0, an irregular edge near z = -6 dropping 38 m to the sea (y = -38); onshore breeze from -z; three sloops 600-1,300 m out; gulls riding the updraft 6-25 m beyond the edge.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 39.66,
+                "position": [
+                  3.6,
+                  1.15,
+                  4.2
+                ],
+                "look_at": [
+                  -2.0,
+                  1.6,
+                  -14.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 43.77,
+                "position": [
+                  2.6,
+                  1.25,
+                  3.2
+                ],
+                "look_at": [
+                  -2.6,
+                  2.4,
+                  -14.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Low, slow glide over the turf toward the edge with a gentle tilt up.",
+            "lens_notes": "40 degree vertical FOV; camera 1.15-1.25 m above the turf so the sea band shows beyond the edge."
+          },
+          "subjects": [
+            {
+              "id": "grass",
+              "kind": "vegetation",
+              "appearance": "Wind-combed coastal turf with pink sea-thrift flowers.",
+              "geometry_and_material": "Instanced tapered blades with vertex-shader bending (bend proportional to wind force), gust noise and colour variation.",
+              "scale_and_accuracy": "Blades 6-32 cm.",
+              "movement": "Bends about 14 degrees today, about 28 degrees once the push doubles.",
+              "asset_hint": "proposed:grass-field-v1"
+            },
+            {
+              "id": "sailboats",
+              "kind": "other",
+              "appearance": "Three white sloops heeling on a blue sea.",
+              "geometry_and_material": "Sailboat component: hull, mast, cambered main and jib, heel parameter.",
+              "scale_and_accuracy": "9.5-11 m boats at 600-1,300 m.",
+              "movement": "Heel about 11 degrees, then about 22 degrees.",
+              "asset_hint": "proposed:sailboat-v1"
+            },
+            {
+              "id": "hiker",
+              "kind": "human",
+              "appearance": "A walker in a green jacket near the edge, leaning slightly into the wind.",
+              "geometry_and_material": "humanoid-figure-v1.",
+              "scale_and_accuracy": "1.7 m tall.",
+              "movement": "Leans a little more as the push doubles.",
+              "asset_hint": "humanoid-figure-v1"
+            }
+          ],
+          "animation_plan": [
+            "39.66 s: chip SAME BREEZE - TODAY; grass bends gently; boats heel about 11 degrees.",
+            "42.12 s (\"twice as hard\"): the chip flips to SAME BREEZE - 2x AIR; grass bend and boat heel double over 0.8 s; the hiker leans into it."
+          ],
+          "lighting": "Afternoon sun from the left (about 32 degrees high), bright sky, sea glitter.",
+          "effects": [
+            "Chip: SAME BREEZE - TODAY -> 2x AIR",
+            "Tag: COMPARISON - SAME WIND SPEED"
+          ],
+          "composition_notes": "Turf in the lower foreground under the captions, cliff edge on a diagonal, sea and boats in the middle band."
+        },
+        {
+          "id": "SH02",
+          "start_s": 43.77,
+          "end_s": 47.26,
+          "shot_type": "telephoto gulls hanging in the updraft",
+          "world": "Sea-cliff top on a breezy afternoon, units in metres: grassy plateau at y = 0, an irregular edge near z = -6 dropping 38 m to the sea (y = -38); onshore breeze from -z; three sloops 600-1,300 m out; gulls riding the updraft 6-25 m beyond the edge.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 24,
+            "keyframes": [
+              {
+                "t_s": 43.77,
+                "position": [
+                  0.8,
+                  1.7,
+                  -4.4
+                ],
+                "look_at": [
+                  -2.0,
+                  7.6,
+                  -26.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 47.26,
+                "position": [
+                  0.6,
+                  1.75,
+                  -4.6
+                ],
+                "look_at": [
+                  -1.7,
+                  8.8,
+                  -26.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Locked-off telephoto with a slow tilt up as the gulls rise.",
+            "lens_notes": "24 degree vertical FOV (about 85 mm)."
+          },
+          "subjects": [
+            {
+              "id": "gulls",
+              "kind": "animal",
+              "appearance": "Five gulls hanging in the wind above the cliff edge, wings set.",
+              "geometry_and_material": "bird-flock-v1 with a glide pose.",
+              "scale_and_accuracy": "1.36 m wingspan, about 22 m from the camera over the sea.",
+              "movement": "Flap, then glide and rise about 1.5 m as the lift per wingbeat doubles.",
+              "asset_hint": "bird-flock-v1"
+            }
+          ],
+          "animation_plan": [
+            "43.77 s: gulls flapping gently in the updraft.",
+            "44.22 s (\"wingbeat\"): the gulls set their wings and rise; callout LIFT x2 AT THE SAME SPEED."
+          ],
+          "lighting": "Backlit afternoon sky; wing edges glow.",
+          "effects": [
+            "Callout: LIFT x2 AT THE SAME SPEED"
+          ],
+          "composition_notes": "Gulls in the upper-middle against the sky; captions over the darker sea below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "twice as hard",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "twice the air",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 39.66,
+          "duration_s": 7.6,
+          "kind": "ambience",
+          "description": "Cliff-top wind with gust swells and distant surf.",
+          "relative_db": -27
+        },
+        {
+          "at_s": 44.22,
+          "duration_s": 1.2,
+          "kind": "texture",
+          "description": "Two distant gull calls.",
+          "relative_db": -30
+        }
+      ],
+      "claim_ids": [
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.7,
+        "motivation": "The gulls rise into open sky, which dissolves into the dark of orbit above the sunlit limb."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "second_order_effect",
+      "start_s": 47.26,
+      "end_s": 57.65,
+      "narration": {
+        "text": "But twice the air also doubles the carbon dioxide, adding more than humanity has ever emitted. The planet would likely warm.",
+        "start_s": 47.61,
+        "end_s": 56.8,
+        "delivery_note": "Sober and slower; a small pause before \"The planet would likely warm\"."
+      },
+      "viewer_question": "Is there a hidden cost to more air?",
+      "visual_payoff": "From orbit the sunlit limb glows a little brighter as two bars compare the CO2 added by doubling (about 3.3 trillion t) with all human emissions since 1850 (about 2.7 trillion t).",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 47.26,
+          "end_s": 57.65,
+          "shot_type": "orbital push toward the limb",
+          "world": "Earth orbit with Earth radius = 1 unit and real NASA day, cloud and night textures; sun from the right; the dusk terminator crossing the Atlantic.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 47.26,
+                "position": [
+                  0.95,
+                  0.55,
+                  3.7
+                ],
+                "look_at": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 57.65,
+                "position": [
+                  0.72,
+                  0.44,
+                  2.95
+                ],
+                "look_at": [
+                  0.12,
+                  0.98,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow push toward the sunlit limb and the dusk terminator.",
+            "lens_notes": "30 degree vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Blue Marble Earth with drifting clouds and city lights on the night side.",
+              "geometry_and_material": "earth-globe-v1 with earth-textures-nasa-v1.",
+              "scale_and_accuracy": "Radius 1; the atmosphere is not drawn taller, only its scattering glow is raised for the doubled column.",
+              "movement": "Slow spin and cloud drift.",
+              "asset_hint": "earth-globe-v1, earth-textures-nasa-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars.",
+              "geometry_and_material": "starfield-v1.",
+              "scale_and_accuracy": "Background.",
+              "movement": "Static.",
+              "asset_hint": "starfield-v1"
+            },
+            {
+              "id": "co2_bars",
+              "kind": "diagram",
+              "appearance": "Two slim horizontal bars with labels.",
+              "geometry_and_material": "2D overlay bars drawn in the overlay layer.",
+              "scale_and_accuracy": "Lengths proportional to about 3.3 and about 2.7 trillion tonnes.",
+              "movement": "Grow one after the other.",
+              "asset_hint": "overlay-labels-v1"
+            }
+          ],
+          "animation_plan": [
+            "47.26 s: limb glow at today's strength.",
+            "49.89 s (\"carbon dioxide\"): limb scattering brightens; bar 1 grows: CO2 ADDED BY DOUBLING - about 3.3 TRILLION t.",
+            "52.55 s (\"humanity\"): bar 2 grows: ALL HUMAN EMISSIONS SINCE 1850 - about 2.7 TRILLION t.",
+            "55.65 s (\"likely warm\"): tag WARMING LIKELY - AMOUNT UNCERTAIN."
+          ],
+          "lighting": "Sun from camera right, real terminator, faint star field.",
+          "effects": [
+            "CO2 bar comparison (schematic, rounded)",
+            "Tag: WARMING LIKELY - AMOUNT UNCERTAIN"
+          ],
+          "composition_notes": "Earth fills the lower half with the limb arcing across the middle; bars in the upper third, clear of captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "doubles the carbon dioxide",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "likely warm",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 47.26,
+          "duration_s": 10.39,
+          "kind": "music_swell",
+          "description": "Music thins to a sustained low chord in the quiet of orbit.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL11",
+        "CL12"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.7,
+        "motivation": "The dusk terminator dissolves into a real sunset seen from the same sea cliff."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "twist",
+      "start_s": 57.65,
+      "end_s": 63.97,
+      "narration": {
+        "text": "And sunsets would burn a deeper red, their light crossing twice as much air.",
+        "start_s": 58.0,
+        "end_s": 63.02,
+        "delivery_note": "Soft, almost hushed."
+      },
+      "viewer_question": "Would the sky itself look different?",
+      "visual_payoff": "From the cliff, a familiar orange sunset deepens to crimson and the sun dims toward the horizon while a person on a bench watches in silhouette.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 57.65,
+          "end_s": 63.97,
+          "shot_type": "wide sunset over the sea",
+          "world": "Sea-cliff top at sunset, units in metres: grassy plateau at y = 0, an irregular edge near z = -6 dropping 38 m to the sea (y = -38); onshore breeze from -z; three sloops 600-1,300 m out; gulls riding the updraft 6-25 m beyond the edge. Sun 1.5 degrees above the sea horizon to the west (-z); a wooden bench near the edge at (4.8, 0, -2.4) with a seated person.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 57.65,
+                "position": [
+                  6.5,
+                  1.7,
+                  9.5
+                ],
+                "look_at": [
+                  4.4,
+                  3.5,
+                  -40.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 63.97,
+                "position": [
+                  5.0,
+                  1.45,
+                  7.4
+                ],
+                "look_at": [
+                  4.0,
+                  3.0,
+                  -40.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow drift forward and down toward the bench.",
+            "lens_notes": "36 degree vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "sun_and_sky",
+              "kind": "sun",
+              "appearance": "Low sun and sky gradient shifting from today's orange-gold to a deeper crimson.",
+              "geometry_and_material": "sky-dome-v1 and ocean-surface-v1 colours computed from Rayleigh extinction along a path of about 20 air masses, doubled.",
+              "scale_and_accuracy": "Sun disc at its true 0.53 degree size.",
+              "movement": "Colour shift over 2 s on \"deeper red\".",
+              "asset_hint": "sky-dome-v1, ocean-surface-v1"
+            },
+            {
+              "id": "person",
+              "kind": "human",
+              "appearance": "Silhouetted adult seated on a bench.",
+              "geometry_and_material": "humanoid-figure-v1 seated pose on a bespoke bench.",
+              "scale_and_accuracy": "1.7 m tall.",
+              "movement": "Still, slight breathing.",
+              "asset_hint": "humanoid-figure-v1"
+            },
+            {
+              "id": "gulls",
+              "kind": "animal",
+              "appearance": "Two gull silhouettes gliding across the low sun.",
+              "geometry_and_material": "bird-flock-v1 with glide pose.",
+              "scale_and_accuracy": "1.36 m wingspan.",
+              "movement": "Slow glide left to right.",
+              "asset_hint": "bird-flock-v1"
+            },
+            {
+              "id": "grass",
+              "kind": "vegetation",
+              "appearance": "Calm, rim-lit grass.",
+              "geometry_and_material": "grass-field-v1 with light wind.",
+              "scale_and_accuracy": "Blades 6-32 cm.",
+              "movement": "Slight sway.",
+              "asset_hint": "proposed:grass-field-v1"
+            }
+          ],
+          "animation_plan": [
+            "57.65 s: chip SUNSET - TODAY; orange sun and gold sky.",
+            "59.5 s (\"deeper red\"): chip SUNSET - 2x AIR; sky and sun shift to crimson and the sun dims about 2.5x; tag ILLUSTRATIVE COLOUR.",
+            "Gulls glide across the sun."
+          ],
+          "lighting": "Sun as the only key, red rim light on the person and grass; deep blue-violet zenith.",
+          "effects": [
+            "Chip: SUNSET - TODAY -> 2x AIR",
+            "Tag: ILLUSTRATIVE COLOUR - AEROSOLS IGNORED"
+          ],
+          "composition_notes": "Horizon at about 58% height, sun right of centre; captions over the darkening sea below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "a deeper red",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 57.65,
+          "duration_s": 6.32,
+          "kind": "ambience",
+          "description": "Evening waves below the cliff; the wind dropping.",
+          "relative_db": -29
+        }
+      ],
+      "claim_ids": [
+        "CL13"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut back to the harbor cafe at the same sunset."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 63.97,
+      "end_s": 74.0,
+      "narration": {
+        "text": "Torricelli wrote that we live at the bottom of an ocean of air. Double it, and we would barely feel the weight. Everything else would.",
+        "start_s": 64.32,
+        "end_s": 72.82,
+        "delivery_note": "Warm and conclusive; a pause before \"Everything else would.\""
+      },
+      "viewer_question": "So would we feel it?",
+      "visual_payoff": "At sunset the camera glides from a person silhouetted against the sun at the harbor parapet to the cafe table, ending on the crumpled bottle in the same framing as the first frame.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 63.97,
+          "end_s": 74.0,
+          "shot_type": "return push-in to the bottle at sunset",
+          "world": "Harbor cafe terrace at sunset, units in metres. Round teak-topped cafe table (radius 0.32 m, top at y = 0.74) at the origin on a paved promenade; a low granite parapet (0.62 m high) from z = -0.62 to -1.02 and a seawall dropping to the sea at y = -2.4; moored sloops 60-420 m out; a darkening headland 2.6 km across the bay. Sun 1 degree above the sea horizon straight ahead (-z).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 63.97,
+                "position": [
+                  0.66,
+                  1.5,
+                  6.3
+                ],
+                "look_at": [
+                  1.3,
+                  1.35,
+                  -0.15
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 69.46,
+                "position": [
+                  0.62,
+                  1.05,
+                  2.0
+                ],
+                "look_at": [
+                  0.12,
+                  0.84,
+                  -0.3
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 74.0,
+                "position": [
+                  0.36,
+                  0.86,
+                  0.66
+                ],
+                "look_at": [
+                  0.02,
+                  0.8,
+                  -0.04
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Starts behind the person, silhouetted against the setting sun at the parapet, then glides down and in to the bottle, ending in the exact framing of frame 0.",
+            "lens_notes": "30 degree vertical FOV, matched to the opening shot."
+          },
+          "subjects": [
+            {
+              "id": "person",
+              "kind": "human",
+              "appearance": "The same adult at the parapet, now in red-gold silhouette.",
+              "geometry_and_material": "humanoid-figure-v1.",
+              "scale_and_accuracy": "1.72 m tall.",
+              "movement": "Breathes slowly, looking at the sunset.",
+              "asset_hint": "humanoid-figure-v1"
+            },
+            {
+              "id": "bottle",
+              "kind": "other",
+              "appearance": "The crumpled bottle, glowing red-gold in the low sun.",
+              "geometry_and_material": "plastic-bottle component with crumple held at its final state.",
+              "scale_and_accuracy": "21 cm tall.",
+              "movement": "Static.",
+              "asset_hint": "proposed:plastic-bottle-v1"
+            },
+            {
+              "id": "harbor_dusk",
+              "kind": "water",
+              "appearance": "Calm sea with a red sun path and boat silhouettes.",
+              "geometry_and_material": "ocean-surface-v1 and sky-dome-v1 at sunset colours.",
+              "scale_and_accuracy": "As in S01.",
+              "movement": "Slow swell.",
+              "asset_hint": "ocean-surface-v1, sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "63.97 s: the person at the parapet is silhouetted against the low sun; chip AIR PRESSURE 2026 hPa fades in faintly.",
+            "66.92 s (\"ocean of air\"): the camera glides down toward the table.",
+            "71.5 s (\"Everything else would\"): the crumpled bottle settles into the frame-0 composition."
+          ],
+          "lighting": "Sun 1 degree above the sea ahead, deep red; violet skylight fill; warm rim on the bottle.",
+          "effects": [
+            "Faint chip: AIR PRESSURE 2026 hPa"
+          ],
+          "composition_notes": "The final composition matches frame 0 exactly (bottle upper-middle, table below the captions)."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "an ocean of air",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "Everything else would.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 63.97,
+          "duration_s": 10.03,
+          "kind": "ambience",
+          "description": "Evening harbor: slow waves, a distant halyard tapping.",
+          "relative_db": -31
+        },
+        {
+          "at_s": 71.3,
+          "duration_s": 2.7,
+          "kind": "music_swell",
+          "description": "Warm resolving chord under the last line.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL15",
+        "CL16"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "The last frame matches frame 0's framing for a seamless loop."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Registry held 30 assets from oxygen-gone-five-seconds and ice-sank-instead-of-floating when this storyboard was written; every reuse ID below was checked against assets/registry.json.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic rendering, post-processing, dissolves and overlay compositing for every shot.",
+        "configuration": "Per-shot exposure, bloom and grade."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Drives every camera from the storyboard keyframes.",
+        "configuration": "Keyframes exactly as written per shot."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in word-timed captions for all narration.",
+        "configuration": "66 px, 24 characters per line, baseline 1360."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Pressure chips, schematic and illustrative tags, callouts and the CO2 bar labels.",
+        "configuration": "Teal for today, amber for the doubled world."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Caption and label typeface.",
+        "configuration": "Weights 500, 600, 700."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Noise and deterministic math in all new shaders and stages.",
+        "configuration": "Seeded per component."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original music bed and all sound effects.",
+        "configuration": "D major / B minor pad, airy noise textures, plastic crackle, bubbles, boil and wind."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Harbor morning and sunset skies, Himalayan dawn, kitchen window light, cliff afternoon and sunset.",
+        "configuration": "Colours per stage; sunset colours from doubled Rayleigh extinction."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Harbor bay and the sea below the cliff.",
+        "configuration": "Calm harbor waves; breezier cliff sea; sunset reflections."
+      },
+      {
+        "asset_id": "terrain-massif-v1",
+        "usage": "Harbor headland and distant Himalayan peaks.",
+        "configuration": "Peak 220 m headland; 1.2-1.8 km relief for far peaks above the clouds."
+      },
+      {
+        "asset_id": "cloud-deck-v1",
+        "usage": "Sea of clouds below the summit.",
+        "configuration": "Level 2,100 m below the summit, coverage about 0.8, dawn colours."
+      },
+      {
+        "asset_id": "underwater-volume-v1",
+        "usage": "Sea interior around the diver.",
+        "configuration": "Depth 14 m, blue-green water, strong shafts."
+      },
+      {
+        "asset_id": "fish-school-v1",
+        "usage": "Fish crossing behind the diver.",
+        "configuration": "About 90 fish, far background."
+      },
+      {
+        "asset_id": "bird-flock-v1",
+        "usage": "Gulls over the harbor, riding the cliff updraft and crossing the sunset.",
+        "configuration": "Adds a backwards-compatible glide control."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Person at the railing, diver, climber, hiker and the seated sunset watcher.",
+        "configuration": "Jacket and coat variants, horizontal diver pose, mask-lift arm IK, seated pose."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Orbital limb for the carbon dioxide beat.",
+        "configuration": "Sun from the right, scatter raised for the doubled column."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Day, night and cloud imagery for the orbital shot.",
+        "configuration": "Default maps."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Faint stars in orbit.",
+        "configuration": "Low brightness."
+      },
+      {
+        "asset_id": "flame-v1",
+        "usage": "Blue gas-burner flames under the pot.",
+        "configuration": "Small, laminar, blue-dominant colours."
+      },
+      {
+        "asset_id": "smoke-wisp-v1",
+        "usage": "Kitchen steam and the climber's frosty breath.",
+        "configuration": "White, faster rise, low opacity."
+      },
+      {
+        "asset_id": "bokeh-field-v1",
+        "usage": "Out-of-focus kitchen window and harbor highlights.",
+        "configuration": "Warm and cool discs."
+      },
+      {
+        "asset_id": "snowfall-v1",
+        "usage": "Light spindrift on the summit.",
+        "configuration": "Small sparse flakes with sideways drift."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "plastic-bottle-v1",
+        "description": "Clear PET bottle with cap, ribs and label band whose walls crumple deterministically under a crumple parameter.",
+        "reusable_in": "Altitude, pressure, deep-sea, flight-cabin and recycling stories.",
+        "parameters": [
+          "height",
+          "radius",
+          "crumple",
+          "seed",
+          "tint",
+          "labelColor",
+          "capColor"
+        ],
+        "suggested_path": "src/library/props/PlasticBottle.ts"
+      },
+      {
+        "proposed_id": "dial-gauge-v1",
+        "description": "Analog dial gauge (barometer, thermometer, pressure gauge) with configurable range, ticks, labels, marks, bezel and needle.",
+        "reusable_in": "Any story that reads a pressure, temperature, speed or altitude.",
+        "parameters": [
+          "radius",
+          "min",
+          "max",
+          "arcDegrees",
+          "majorStep",
+          "minorStep",
+          "labelStep",
+          "unit",
+          "title",
+          "marks",
+          "bezel",
+          "value"
+        ],
+        "suggested_path": "src/library/props/DialGauge.ts"
+      },
+      {
+        "proposed_id": "air-molecules-v1",
+        "description": "Instanced schematic gas molecules (N2, O2, Ar, CO2) filling a box with seeded jitter and a density control that adds molecules in seeded order.",
+        "reusable_in": "Atmosphere composition, pressure, altitude and greenhouse explainers.",
+        "parameters": [
+          "size",
+          "count",
+          "composition",
+          "scale",
+          "density",
+          "seed",
+          "highlight",
+          "time_s"
+        ],
+        "suggested_path": "src/library/diagram/AirMolecules.ts"
+      },
+      {
+        "proposed_id": "cooking-pot-v1",
+        "description": "Stainless pot of water with ripples, nucleation and rolling-boil bubbles controlled by a boil parameter.",
+        "reusable_in": "Kitchen, boiling-point, altitude-cooking and energy stories.",
+        "parameters": [
+          "radius",
+          "height",
+          "waterLevel",
+          "boil",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/props/CookingPot.ts"
+      },
+      {
+        "proposed_id": "gas-burner-v1",
+        "description": "Gas hob burner: cap, cast-iron grate and a ring of small blue flames built on flame-v1.",
+        "reusable_in": "Kitchens, labs and combustion explainers.",
+        "parameters": [
+          "radius",
+          "jets",
+          "flameHeight",
+          "intensity",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/props/GasBurner.ts"
+      },
+      {
+        "proposed_id": "grass-field-v1",
+        "description": "Instanced wind-bent grass blades with gusts, flower tips and a force-proportional bend control.",
+        "reusable_in": "Meadows, cliffs, savannas, wind and weather stories.",
+        "parameters": [
+          "area",
+          "count",
+          "height",
+          "colors",
+          "flowerColor",
+          "wind",
+          "windDirection",
+          "gust",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/GrassField.ts"
+      },
+      {
+        "proposed_id": "sailboat-v1",
+        "description": "Small sloop with hull, mast, cambered mainsail and jib and a heel angle control.",
+        "reusable_in": "Coastal, wind, ocean and harbor scenes.",
+        "parameters": [
+          "length",
+          "hullColor",
+          "sailColor",
+          "heel",
+          "bob",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/vehicles/Sailboat.ts"
+      },
+      {
+        "proposed_id": "scuba-gear-v1",
+        "description": "Scuba tank, jacket, mask, regulator and fins that attach to humanoid-figure-v1.",
+        "reusable_in": "Diving, ocean pressure and marine-life stories.",
+        "parameters": [
+          "tankColor",
+          "jacketColor",
+          "finColor",
+          "hoseColor"
+        ],
+        "suggested_path": "src/library/characters/ScubaGear.ts"
+      },
+      {
+        "proposed_id": "bubble-stream-v1",
+        "description": "Periodic exhalation bubble clouds rising from an emitter with wobble and growth.",
+        "reusable_in": "Divers, underwater vents and aquarium shots.",
+        "parameters": [
+          "period",
+          "perBurst",
+          "riseSpeed",
+          "size",
+          "surfaceY",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/fx/BubbleStream.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Harbor cafe table, espresso cup, granite parapet and seawall",
+      "Schematic one-square-metre air column",
+      "Descent line with depth tags",
+      "Summit pyramid heightfield, climber oxygen mask, goggles and pack",
+      "Kitchen hob, tiles and window",
+      "Sea-cliff heightfield, bench",
+      "CO2 bar comparison overlay"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "What would happen if Earth's air pressure doubled?",
+    "core_keywords": [
+      "what if air pressure doubled",
+      "double atmospheric pressure",
+      "what if earth had twice as much air",
+      "why are we not crushed by air pressure",
+      "air pressure explained",
+      "boiling point and pressure",
+      "everest air pressure",
+      "why are sunsets red",
+      "science what if"
+    ],
+    "distinctive_angle": "Instead of a crushing catastrophe, a careful look at what twice the air would really change: people barely feel it, but bottles crumple, Everest becomes breathable, pots boil at 120 C, breezes push twice as hard, carbon dioxide doubles and sunsets deepen.",
+    "seo_integrity_note": "Do not claim people would be crushed, the sky would turn red at noon or the oceans would rise; keep 'likely' for warming and present wind and sunset changes as same-speed or illustrative comparisons."
+  },
+  "delivery": {
+    "video_output": "output/air-pressure-doubled.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  }
+}

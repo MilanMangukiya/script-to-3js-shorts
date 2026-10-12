@@ -1,0 +1,8 @@
+node_modules/
+build/
+output/*.mp4
+asset-sources/raw/
+asset-sources/work/
+asset-sources/models/
+asset-sources/previews/
+*.npy

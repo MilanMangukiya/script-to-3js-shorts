@@ -1,0 +1,1827 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if ice sank instead of floating?",
+    "title": "What If Ice Sank Instead of Floating?",
+    "slug": "ice-sank-instead-of-floating",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 74,
+    "language": "en",
+    "audience": "Curious global general audiences age 13+, no science background",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "What would lakes, polar seas, wildlife and everyday winter life look like if solid water were denser than liquid water?",
+    "viewer_takeaway": "Floating ice is a rare quirk of water that puts a protective lid on cold lakes and seas; if ice sank, that lid would be gone and cold water could freeze from the bottom up."
+  },
+  "scientific_model": {
+    "baseline_reality": "Liquid water is densest at about 4 °C, and ordinary ice is about 9% less dense than the liquid because its molecules lock into an open hexagonal lattice. Ice therefore floats: lakes and seas freeze from the top, and the floating layer insulates the liquid water and life beneath it.",
+    "counterfactual_change": "From one moment on, water freezes into a solid that is denser than the liquid, so it shrinks instead of expanding as it freezes and every piece of ice sinks. Melting point, heat capacity, latent heat and the behaviour of liquid water are left unchanged.",
+    "assumptions": [
+      "Only the density of solid water changes; ice still forms at 0 °C (about -1.8 °C for sea water) where water loses heat, which is mainly at the surface.",
+      "Climate, sunlight and geography start exactly as today; the film follows the first consequences in cold lakes and polar seas rather than claiming a final global climate state.",
+      "Bottom-up freezing is shown as an accelerated, labelled illustration; how many winters it would take depends on each lake's depth and climate.",
+      "Ice that already rests on land, such as the Greenland and Antarctic ice sheets, stays where it is."
+    ],
+    "causal_chain": [
+      "Today the open crystal structure of ice makes it lighter than water, so it floats and forms an insulating lid over cold water.",
+      "With denser ice, crystals that form at a cold surface would sink, leaving the surface uncovered and still losing heat.",
+      "Ice would collect on lake beds and sea floors where summer warmth reaches slowly, so cold lakes could freeze from the bottom up over repeated winters.",
+      "Aquatic life that overwinters under today's ice would be confined to a shrinking liquid layer, and shallow cold lakes could freeze solid.",
+      "People would lose every use of a frozen surface, and polar animals would lose floating sea ice and icebergs.",
+      "Because water would no longer expand on freezing, the pressure that bursts frozen pipes would not arise."
+    ],
+    "uncertainties": [
+      "How quickly and how completely a given lake would fill with bottom ice is not established; it depends on depth, climate, snowfall, inflow and summer heating.",
+      "The long-term effect on ocean circulation and global climate is genuinely uncertain and is deliberately not asserted.",
+      "Species responses would vary; the film shows loss of habitat, not a specific extinction outcome."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Water expands by about 9% as it freezes, so ice is about 9% less dense than liquid water, which is densest near 4 °C.",
+        "confidence": "established",
+        "reasoning": "USGS Water Science School density data; ice about 917 kg/m³ versus about 1,000 kg/m³ for liquid water.",
+        "presentation_guardrail": "Say 'about nine percent'; molecule visuals are labelled schematic and not to scale."
+      },
+      {
+        "id": "CL02",
+        "statement": "Ice is lighter because its molecules lock into an open hexagonal hydrogen-bonded lattice that takes more room than the liquid.",
+        "confidence": "established",
+        "reasoning": "Standard structure of ordinary ice (ice Ih): each molecule bonds to four neighbours in an open tetrahedral network with hexagonal channels.",
+        "presentation_guardrail": "Show a simplified lattice with a SCHEMATIC label; do not present it as a molecular simulation."
+      },
+      {
+        "id": "CL03",
+        "statement": "Because ice floats, lakes freeze from the top and the ice cover insulates the water below, which stays liquid through winter in lakes that are deep enough.",
+        "confidence": "established",
+        "reasoning": "Top-down freezing follows from ice's low density and the 4 °C density maximum; ice and snow conduct heat poorly, limiting further freezing.",
+        "presentation_guardrail": "Use 'lakes stay liquid' for an illustrative deep-enough lake; very shallow ponds can already freeze through."
+      },
+      {
+        "id": "CL04",
+        "statement": "If ice were denser than water, ice forming at the surface would sink and the uncovered surface would keep losing heat and freezing.",
+        "confidence": "derived",
+        "reasoning": "A denser solid sinks by buoyancy; without a floating insulating layer the air-water interface stays exposed to cold air.",
+        "presentation_guardrail": "Show as a labelled, accelerated illustration."
+      },
+      {
+        "id": "CL05",
+        "statement": "Cold lakes could then freeze from the bottom up over repeated winters, and shallow ones could freeze solid.",
+        "confidence": "plausible",
+        "reasoning": "Sunken ice is shielded from summer heating by the water above, so it can persist and accumulate; USGS describes bottom-up freezing as the consequence of denser cold water or ice.",
+        "presentation_guardrail": "Say 'could'; label the time-lapse illustrative and do not state a number of years."
+      },
+      {
+        "id": "CL06",
+        "statement": "Fish and other life that overwinter under ice would be squeezed into a shrinking layer of liquid water.",
+        "confidence": "plausible",
+        "reasoning": "Habitat volume falls as bottom ice grows, and bottom-dwelling refuges are lost first.",
+        "presentation_guardrail": "Show crowding and loss of habitat, not mass death."
+      },
+      {
+        "id": "CL07",
+        "statement": "A walkable frozen surface would never form, ending skating, ice roads and ice fishing.",
+        "confidence": "derived",
+        "reasoning": "Those activities need a floating ice sheet strong enough to bear weight; sinking ice cannot form one.",
+        "presentation_guardrail": "Show open winter water and a person on shore; no danger imagery."
+      },
+      {
+        "id": "CL08",
+        "statement": "There would be no floating sea ice and no icebergs.",
+        "confidence": "derived",
+        "reasoning": "Sea ice and icebergs are by definition ice floating on the ocean; denser ice would sink.",
+        "presentation_guardrail": "The orbital view of vanishing Arctic sea ice is labelled illustrative; land ice sheets remain."
+      },
+      {
+        "id": "CL09",
+        "statement": "Emperor penguins, most of whose colonies breed on sea ice, would lose the ice where they raise their chicks.",
+        "confidence": "plausible",
+        "reasoning": "Australian Antarctic Program: most emperor colonies are on fast ice; without floating ice that platform would not exist.",
+        "presentation_guardrail": "Show the colony today, then the same view without ice; never show animals harmed."
+      },
+      {
+        "id": "CL10",
+        "statement": "Water would shrink as it froze, so freezing would no longer burst pipes.",
+        "confidence": "derived",
+        "reasoning": "Pipes burst because confined water expands about 9% on freezing; a contracting solid creates no such pressure.",
+        "presentation_guardrail": "Limit the upside to pipes; do not extend the claim to roads or rock, where other frost processes act."
+      }
+    ],
+    "sources": [
+      {
+        "name": "USGS Water Science School — Water Density",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-density",
+        "supports_claim_ids": [
+          "CL01",
+          "CL03",
+          "CL05"
+        ]
+      },
+      {
+        "name": "National Snow and Ice Data Center — Sea Ice",
+        "url": "https://nsidc.org/learn/parts-cryosphere/sea-ice",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      },
+      {
+        "name": "NOAA National Ocean Service — What is an iceberg?",
+        "url": "https://oceanservice.noaa.gov/facts/iceberg.html",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      },
+      {
+        "name": "Australian Antarctic Program — Emperor penguin",
+        "url": "https://www.antarctica.gov.au/about-antarctica/animals/penguins/emperor-penguin/",
+        "supports_claim_ids": [
+          "CL09"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "Ice cubes drop to the bottom of a glass, and we follow that one changed rule under a frozen lake, across the poles and into a winter basement, to discover the quiet lid that keeps cold water alive.",
+    "visual_identity": "Cool, crystalline documentary realism: pale winter light, blue-green water, luminous ice, with warm accents only on people and wood. Labelled schematics, never apocalyptic.",
+    "palette": [
+      "deep lake teal #0E3A44",
+      "glacier blue #8FD0DF",
+      "snow white #F4F7FB",
+      "winter sky #4A78B8",
+      "low-sun gold #FFD9A8",
+      "caption amber #FFB45C"
+    ],
+    "lighting": "Low golden winter sun and soft blue skylight above water; green-blue transmitted light below it; a single cool work light in the pipe scene.",
+    "camera_language": "Macro glass, schematic orbit, eye-level skater, a descent through the ice, underwater time-lapse, shoreline human shot, orbital pole, colony match cut, macro pipes, back to the glass.",
+    "motion_language": "Slow glides and one vertical descent; the changed rule always shows as things sinking.",
+    "world_scale_policy": "All real-world shots use metres at true scale (glass 10.5 cm tall, people about 1.7 m, lake 9 m deep, emperor penguins about 1.15 m, tabular iceberg 28 m above water). The orbital shot uses Earth radius = 1 with NASA imagery. Molecules are an enlarged labelled schematic whose only quantitative feature is the 9% volume difference.",
+    "emotional_arc": [
+      "playful surprise",
+      "quiet fascination",
+      "comfort",
+      "unease",
+      "concern for living things",
+      "wry relief",
+      "gratitude"
+    ],
+    "opening_hook": "Ice cubes floating in a glass of water suddenly sink and settle on the bottom as the question is asked.",
+    "ending_payoff": "Back at the glass, the sunken cubes drift up and float again, restoring the real world on the final line.",
+    "loop_connection": "The last frame matches the first: cubes floating at the surface, ready to sink again as the question restarts.",
+    "asset_policy": "Reuse the studio library first (Earth and NASA textures, sky, ocean, terrain, underwater set, fish, human figure, captions, pipeline, audio kit). New ice, snow, forest, penguin, molecule and glass components are original procedural work promoted to the library. The sea-ice mask is derived from NASA Blue Marble imagery already in asset-sources."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Sparse original pad in A minor with glassy bell tones, thinning to a held high note underwater and warming to C major when the cubes float again.",
+    "music_level_db_below_voice": -22,
+    "sfx_direction": "Synthesized and restrained: ice tinks in glass, skate glide, muffled under-ice calm with a distant ice groan, soft crystal ticks, cold wind, one dull pipe crack. No loud impacts.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Premium documentary subtitles: ivory semibold, thin charcoal outline and soft shadow, restrained amber active word, phrase-by-phrase with a 120 ms ease.",
+    "font_stack": "Inter, Manrope, system-ui, sans-serif",
+    "font_size_px": 66,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 100,
+      "right_px": 180,
+      "top_px": 230,
+      "bottom_px": 330,
+      "caption_baseline_y_px": 1360
+    },
+    "active_word_treatment": "The spoken word turns amber with no change of baseline; emphasised phrases keep a soft accent, scale 1.04 or glow.",
+    "highlights_policy": "Exact narration only; in-scene labels are limited to TODAY / WHAT IF state markers, schematic or illustrative tags and approximate numbers backed by the claim register."
+  },
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Registry held 21 assets from oxygen-gone-five-seconds when this storyboard was written; every reuse ID below was checked against assets/registry.json.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic rendering, post-processing, dissolves and overlay compositing for every shot.",
+        "configuration": "Per-shot exposure, bloom and grade."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Drives every camera from the storyboard keyframes.",
+        "configuration": "Keyframes as written per shot."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in word-timed captions for all narration.",
+        "configuration": "66 px, 24 characters per line, baseline 1360."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "TODAY / WHAT IF chip, schematic and illustrative tags, numeric callouts.",
+        "configuration": "Teal for today, amber for the counterfactual."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Caption and label typeface.",
+        "configuration": "Weights 500, 600, 700."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Noise and deterministic math in new shaders and stages.",
+        "configuration": "Seeded per component."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original music bed and all sound effects.",
+        "configuration": "A minor pad, bell tones, noise-based ice and water textures."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Winter lake sky, polar sky, soft interior backdrops and environment reflections.",
+        "configuration": "Low golden sun for the lake, bright overcast for the pole, sun off for interiors."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Open lake water in the counterfactual shore shot and the polar sea.",
+        "configuration": "Small waves, dark cold water colours."
+      },
+      {
+        "asset_id": "terrain-massif-v1",
+        "usage": "Snow-covered mountains behind the lake.",
+        "configuration": "Peak 1,700 m, low snow line, no contour."
+      },
+      {
+        "asset_id": "underwater-volume-v1",
+        "usage": "Lake interior for the under-ice and bottom-up freezing shots.",
+        "configuration": "Depth 9 m, dim green water, backdrop and surface toggled by the stage."
+      },
+      {
+        "asset_id": "fish-school-v1",
+        "usage": "Fish overwintering under the ice and later crowded into a thin layer.",
+        "configuration": "About 120 fish, vertical spread reduced over time."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Skater on the frozen lake and the person on the jetty.",
+        "configuration": "Long coat, skating and standing poses."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Orbital view of the Arctic with and without floating sea ice.",
+        "configuration": "New optional seaIce parameter, setView toward the pole."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Day, cloud and land-mask maps for the orbital shot.",
+        "configuration": "Loaded together with the new sea-ice mask."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Faint stars behind the orbital shot.",
+        "configuration": "Low brightness."
+      },
+      {
+        "asset_id": "smoke-wisp-v1",
+        "usage": "Sea smoke drifting off open winter water.",
+        "configuration": "Wide, pale, low opacity wisps."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "glass-of-water-v1",
+        "description": "Tumbler of water with ice cubes that can float or rest on the bottom, using physical transmission.",
+        "reusable_in": "Kitchen-scale physics, chemistry and everyday-science hooks.",
+        "parameters": [
+          "radius",
+          "height",
+          "waterLevel",
+          "cubes",
+          "sink",
+          "time_s"
+        ],
+        "suggested_path": "src/library/props/GlassOfWater.ts"
+      },
+      {
+        "proposed_id": "water-molecules-v1",
+        "description": "Schematic H2O molecules that morph between a disordered liquid and an open hexagonal ice lattice with a true 9% volume difference.",
+        "reusable_in": "Water, ice, chemistry and climate explainers.",
+        "parameters": [
+          "cells",
+          "layers",
+          "bond",
+          "liquidScale",
+          "freeze",
+          "time_s"
+        ],
+        "suggested_path": "src/library/diagram/WaterMolecules.ts"
+      },
+      {
+        "proposed_id": "ice-sheet-v1",
+        "description": "Floating lake or sea ice sheet with a snow-dusted top and a softly glowing underside that can carry a moving shadow.",
+        "reusable_in": "Winter lakes, polar seas, climate and wildlife scenes.",
+        "parameters": [
+          "size",
+          "thickness",
+          "snowAmount",
+          "seed",
+          "transmission",
+          "shadow",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/IceSheet.ts"
+      },
+      {
+        "proposed_id": "snowfall-v1",
+        "description": "Wrapped particle fall for snow in air or sinking ice crystals under water.",
+        "reusable_in": "Weather, winter, deep-sea and dust or ash scenes.",
+        "parameters": [
+          "count",
+          "box",
+          "fallSpeed",
+          "drift",
+          "size",
+          "glint",
+          "amount",
+          "time_s"
+        ],
+        "suggested_path": "src/library/fx/Snowfall.ts"
+      },
+      {
+        "proposed_id": "conifer-stand-v1",
+        "description": "Instanced stylised conifers with optional snow load.",
+        "reusable_in": "Forest, mountain, winter and night exteriors.",
+        "parameters": [
+          "positions",
+          "minHeight",
+          "maxHeight",
+          "snow",
+          "color",
+          "seed"
+        ],
+        "suggested_path": "src/library/environment/ConiferStand.ts"
+      },
+      {
+        "proposed_id": "sea-ice-v1",
+        "description": "Floating sea-ice floes, a fast-ice platform and a tabular iceberg with a sink parameter.",
+        "reusable_in": "Polar, climate, ocean and wildlife scenes.",
+        "parameters": [
+          "floeCount",
+          "area",
+          "minRadius",
+          "maxRadius",
+          "thickness",
+          "platformRadius",
+          "iceberg",
+          "sink",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/SeaIce.ts"
+      },
+      {
+        "proposed_id": "penguin-colony-v1",
+        "description": "Instanced emperor-penguin adults and chicks with a gentle deterministic waddle.",
+        "reusable_in": "Antarctic, wildlife and climate scenes.",
+        "parameters": [
+          "adults",
+          "chicks",
+          "spread",
+          "height",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/creatures/PenguinColony.ts"
+      },
+      {
+        "proposed_id": "bokeh-field-v1",
+        "description": "Field of soft out-of-focus light discs for macro and interior backgrounds.",
+        "reusable_in": "Macro, interior and night-city backgrounds.",
+        "parameters": [
+          "count",
+          "center",
+          "extent",
+          "colors",
+          "size",
+          "gain",
+          "dim"
+        ],
+        "suggested_path": "src/library/fx/BokehField.ts"
+      },
+      {
+        "proposed_id": "earth-seaice-mask-nasa-v1",
+        "description": "Equirectangular mask of floating sea ice derived from NASA Blue Marble 2002 for the Earth globe's seaIce parameter.",
+        "reusable_in": "Polar, climate and sea-ice explainers.",
+        "parameters": [],
+        "suggested_path": "assets/library/textures/earth/seaice_4k.png"
+      }
+    ],
+    "shot_specific_assets": [
+      "Kitchen table set, skater and jetty staging, bottom-ice growth mesh, sea-smoke placement, the pair of copper pipes with the burst animation and the TODAY / WHAT IF chip remain story-specific compositions."
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "What would happen if ice sank instead of floating on water?",
+    "core_keywords": [
+      "what if ice sank instead of floating",
+      "why does ice float",
+      "what if ice was denser than water",
+      "lakes freeze from the top",
+      "water density anomaly",
+      "life under frozen lakes",
+      "sea ice explained",
+      "science what if"
+    ],
+    "distinctive_angle": "A careful version of a classic chemistry-class thought experiment that follows one changed rule from a kitchen glass to a lake bed and the poles, including the unexpected upside for frozen pipes.",
+    "seo_integrity_note": "Keep 'could' for bottom-up freezing and wildlife outcomes, do not claim Earth would become a frozen planet or that life could not exist, and present the pipe benefit as limited to pipes."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4,
+      "narration": {
+        "text": "What if ice didn't float, and sank instead?",
+        "start_s": 0.35,
+        "end_s": 2.99,
+        "delivery_note": "Light, curious; the cubes drop on 'sank'."
+      },
+      "viewer_question": "Why did the ice just sink?",
+      "visual_payoff": "Ice cubes floating in a glass of water suddenly drop and settle on the bottom with a trail of tiny bubbles.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4,
+          "shot_type": "macro glass of water on a kitchen table",
+          "world": "Kitchen table in soft morning window light, units in metres. Table top at y=0; a clear tumbler (rim radius 0.038, height 0.105) at the origin filled to 0.084 with water and four ice cubes about 2.1 cm across; out-of-focus window light behind.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 24,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0.03,
+                  0.12,
+                  0.52
+                ],
+                "look_at": [
+                  0,
+                  0.035,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4,
+                "position": [
+                  -0.01,
+                  0.1,
+                  0.47
+                ],
+                "look_at": [
+                  0,
+                  0.033,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow 5 cm push-in with a slight drift left.",
+            "lens_notes": "24° vertical FOV macro; the whole glass stays in frame with the waterline in the upper third."
+          },
+          "subjects": [
+            {
+              "id": "glass",
+              "kind": "water",
+              "appearance": "Clear tumbler with a thick base, still water and a bright meniscus",
+              "geometry_and_material": "Lathe glass shell and water volume with physical transmission and environment reflections.",
+              "scale_and_accuracy": "True scale drinking glass.",
+              "movement": "Static; tiny bubbles rise after the cubes drop.",
+              "asset_hint": "candidate:glass-of-water-v1"
+            },
+            {
+              "id": "ice_cubes",
+              "kind": "other",
+              "appearance": "Four frosted ice cubes, first riding at the surface with about a tenth showing above the waterline",
+              "geometry_and_material": "Rounded boxes with frosted clearcoat material.",
+              "scale_and_accuracy": "Floating height follows real ice density; the sunk state is the counterfactual.",
+              "movement": "Bob gently until 1.97 s, then sink over about 0.9 s with a small stagger and settle on the bottom.",
+              "asset_hint": "candidate:glass-of-water-v1"
+            },
+            {
+              "id": "kitchen",
+              "kind": "architecture",
+              "appearance": "Warm wooden table and soft discs of window light",
+              "geometry_and_material": "Textured wood plane, gradient backdrop and bokeh discs.",
+              "scale_and_accuracy": "Background is deliberately out of focus.",
+              "movement": "Faint shimmer only.",
+              "asset_hint": "reuse:sky-dome-v1, candidate:bokeh-field-v1"
+            }
+          ],
+          "animation_plan": [
+            "0.0–1.9 s cubes float and bob; chip reads TODAY · ICE FLOATS.",
+            "1.97 s ('sank') the rule flips: cubes sink in staggered order, bubbles rise; chip reads WHAT IF · ICE SINKS.",
+            "3.0–4.0 s cubes rest on the bottom of the glass."
+          ],
+          "lighting": "Soft key from a window at camera left, warm bounce from the table, sky environment for reflections.",
+          "effects": [
+            "Subtle bloom on highlights",
+            "Fine film grain"
+          ],
+          "composition_notes": "Glass centred; waterline near y≈450 px, glass base just above the caption band."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "sank instead",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 1.95,
+          "duration_s": 1.4,
+          "kind": "texture",
+          "description": "Soft glassy tinks and a muted settle as the cubes reach the bottom.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.4,
+        "motivation": "Push into an ice cube becomes the molecules inside it."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4,
+      "end_s": 14.7,
+      "narration": {
+        "text": "Ice floats because water does something rare. As it freezes, it expands by about nine percent, into an open crystal lighter than the liquid.",
+        "start_s": 4.3,
+        "end_s": 14.36,
+        "delivery_note": "Unhurried; slight wonder on 'something rare'."
+      },
+      "viewer_question": "Why does real ice float at all?",
+      "visual_payoff": "Jostling water molecules lock into an open hexagonal lattice that visibly needs more room than the liquid did.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4,
+          "end_s": 14.7,
+          "shot_type": "molecular schematic orbit",
+          "world": "Abstract deep-blue space, units = one oxygen–oxygen bond length. About 100 water molecules (red oxygen, two white hydrogens) fill a volume about 7.6 units across, centred 2.1 units above the origin.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 4,
+                "position": [
+                  10,
+                  7,
+                  30
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 9.5,
+                "position": [
+                  5,
+                  3.5,
+                  32
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 14.7,
+                "position": [
+                  0,
+                  0,
+                  33
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow orbit from an oblique view to straight down the crystal's axis, where the hexagons line up.",
+            "lens_notes": "30° vertical FOV; the final face-on view reveals the open hexagonal channels."
+          },
+          "subjects": [
+            {
+              "id": "water_molecules",
+              "kind": "diagram",
+              "appearance": "Red-and-white molecules, first tumbling close together, then held apart in rings of six by pale blue bonds",
+              "geometry_and_material": "Instanced spheres with soft shading; line segments for hydrogen bonds; thin box outlines for the liquid and ice volumes.",
+              "scale_and_accuracy": "Schematic and not to scale; the outlined volume grows by the real 9% (about 3% in each direction).",
+              "movement": "Liquid jostling until 7.7 s, then molecules lock into the lattice in a spreading wave, finished by 12.3 s.",
+              "asset_hint": "candidate:water-molecules-v1"
+            },
+            {
+              "id": "backdrop",
+              "kind": "atmosphere",
+              "appearance": "Deep blue gradient with a few faint discs of light",
+              "geometry_and_material": "Gradient dome and sparse bokeh.",
+              "scale_and_accuracy": "Abstract.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1, candidate:bokeh-field-v1"
+            }
+          ],
+          "animation_plan": [
+            "4.0–7.6 s liquid: molecules tumble inside a dashed outline labelled LIQUID WATER.",
+            "7.7–12.3 s ('As it freezes') molecules lock into hexagonal rings; bonds fade in; the solid outline grows past the dashed one.",
+            "10.4 s ('nine percent') callout +9% VOLUME appears.",
+            "12.3–14.7 s face-on view of open hexagons labelled ICE."
+          ],
+          "lighting": "Soft key from upper left with cool fill; gentle emissive lift on the molecules.",
+          "effects": [
+            "Label: SCHEMATIC • WATER MOLECULES • NOT TO SCALE",
+            "Soft bloom"
+          ],
+          "composition_notes": "Lattice occupies y≈320–1140 px; callout just below it; captions beneath."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "something rare",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "about nine percent",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 7.7,
+          "duration_s": 4.5,
+          "kind": "texture",
+          "description": "Quiet crystalline ticks as molecules lock into place, ending in a soft bell tone.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "The pale lattice dissolves into the white surface of a frozen lake."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 14.7,
+      "end_s": 23.3,
+      "narration": {
+        "text": "That floating lid works like a blanket. Beneath it, lakes stay liquid all winter, and life waits out the cold.",
+        "start_s": 15,
+        "end_s": 22.94,
+        "delivery_note": "Warm and reassuring; drop the voice slightly on 'Beneath it'."
+      },
+      "viewer_question": "What does floating ice actually do for a lake?",
+      "visual_payoff": "A skater glides over a frozen lake, then the camera sinks through the ice to find fish drifting in dim green water under a glowing ceiling.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 14.7,
+          "end_s": 17.8,
+          "shot_type": "eye-level tracking shot of a skater",
+          "world": "Frozen mountain lake on a clear winter afternoon, units in metres. Ice surface at y=0, snow-dusted with dark clear patches; snowy conifer shore about 300 m away and a 1,700 m snow-covered massif beyond. One adult skates left to right about 8 m from camera.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 14.7,
+                "position": [
+                  -1.5,
+                  1.5,
+                  3.5
+                ],
+                "look_at": [
+                  -5,
+                  1,
+                  -7
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 17.8,
+                "position": [
+                  1,
+                  1.3,
+                  2.5
+                ],
+                "look_at": [
+                  1.5,
+                  0.9,
+                  -7
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Pan right with the skater while drifting 2.5 m.",
+            "lens_notes": "36° vertical FOV at standing eye level."
+          },
+          "subjects": [
+            {
+              "id": "skater",
+              "kind": "human",
+              "appearance": "Adult in a long coat and scarf gliding on one leg, arms relaxed",
+              "geometry_and_material": "Procedural articulated figure in a skating pose with alternating strides.",
+              "scale_and_accuracy": "1.72 m tall, about 3.2 m/s.",
+              "movement": "Glides from x=-7 to x=3 at z≈-7 with a slow stride cycle.",
+              "asset_hint": "reuse:humanoid-figure-v1"
+            },
+            {
+              "id": "lake_ice",
+              "kind": "water",
+              "appearance": "Wind-swept snow over dark clear ice with pale cracks and low-sun glints",
+              "geometry_and_material": "Ice-sheet shader plane with snow mask, cracks and sky reflection.",
+              "scale_and_accuracy": "Ice 0.45 m thick, a normal mid-winter lake cover.",
+              "movement": "Static.",
+              "asset_hint": "candidate:ice-sheet-v1"
+            },
+            {
+              "id": "winter_valley",
+              "kind": "terrain",
+              "appearance": "Snow-laden conifers along the far shore under snowy peaks, a few snowflakes in the air",
+              "geometry_and_material": "Instanced conifers, fractal massif with low snow line, gradient sky, sparse snowfall.",
+              "scale_and_accuracy": "Trees 8–16 m, peak 1,700 m about 5 km away.",
+              "movement": "Light snowfall drifts.",
+              "asset_hint": "reuse:terrain-massif-v1, reuse:sky-dome-v1, candidate:conifer-stand-v1, candidate:snowfall-v1"
+            }
+          ],
+          "animation_plan": [
+            "14.7–17.8 s skater crosses frame left to right over the frozen lake; chip reads TODAY · ICE FLOATS."
+          ],
+          "lighting": "Low golden sun from the left, long blue shadows, cool sky fill.",
+          "effects": [
+            "Light atmospheric haze",
+            "Sparse snowfall"
+          ],
+          "composition_notes": "Skater in the middle third, mountains in the upper third, captions over the ice."
+        },
+        {
+          "id": "SH02",
+          "start_s": 17.8,
+          "end_s": 23.3,
+          "shot_type": "descent through the ice into the lake",
+          "world": "Same lake. The camera drops from just above the ice, through its 0.45 m thickness, into water 9 m deep: a softly glowing ice ceiling overhead, dim green water, sand and winter-dormant plants below, about 120 small fish.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 17.8,
+                "position": [
+                  1.5,
+                  1.2,
+                  -1
+                ],
+                "look_at": [
+                  2.5,
+                  0.2,
+                  -7
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 18.9,
+                "position": [
+                  1.5,
+                  -1.4,
+                  -1
+                ],
+                "look_at": [
+                  2.2,
+                  -0.6,
+                  -6
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 23.3,
+                "position": [
+                  1,
+                  -3.2,
+                  0.5
+                ],
+                "look_at": [
+                  3.5,
+                  -1.6,
+                  -6
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Vertical drop through the ice in about one second, then a slow sink and tilt up toward the ceiling.",
+            "lens_notes": "44° vertical FOV; a brief white-blue frame as the lens passes through the ice."
+          },
+          "subjects": [
+            {
+              "id": "ice_ceiling",
+              "kind": "water",
+              "appearance": "Luminous blue-white underside with darker snow-shadowed patches, bright cracks and trapped bubbles",
+              "geometry_and_material": "Ice-sheet underside shader with transmitted light and a soft moving shadow.",
+              "scale_and_accuracy": "Seen from 1.4–3.2 m below.",
+              "movement": "The skater's shadow glides across it between 20.0 and 22.5 s.",
+              "asset_hint": "candidate:ice-sheet-v1"
+            },
+            {
+              "id": "fish",
+              "kind": "animal",
+              "appearance": "Small silver fish holding almost still in the cold",
+              "geometry_and_material": "Instanced fish with slow tail beat.",
+              "scale_and_accuracy": "About 18 cm long; slow winter cruising.",
+              "movement": "Drift slowly left to right 1–3 m below the ice.",
+              "asset_hint": "reuse:fish-school-v1"
+            },
+            {
+              "id": "lake_interior",
+              "kind": "water",
+              "appearance": "Dim green water with soft light shafts through clear ice patches, sandy bed with dormant grass",
+              "geometry_and_material": "Shared underwater set with its surface hidden under the ice sheet.",
+              "scale_and_accuracy": "9 m deep; deep water near 4 °C.",
+              "movement": "Slow particle drift.",
+              "asset_hint": "reuse:underwater-volume-v1"
+            }
+          ],
+          "animation_plan": [
+            "17.8–18.9 s camera drops through the ice ('Beneath it').",
+            "18.9–23.3 s under-ice calm: fish drift, the skater's shadow crosses the ceiling; callout LIQUID ALL WINTER • ABOUT 4 °C AT DEPTH."
+          ],
+          "lighting": "Daylight transmitted through ice and snow, blue-green falloff with depth.",
+          "effects": [
+            "White-blue pass-through frame inside the ice",
+            "Marine-snow particles",
+            "Soft light shafts"
+          ],
+          "composition_notes": "Ice ceiling in the upper half, fish across the middle, captions over darker water."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "like a blanket",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "life waits out the cold",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 14.8,
+          "duration_s": 2.8,
+          "kind": "texture",
+          "description": "Rhythmic skate glides on ice.",
+          "relative_db": -22
+        },
+        {
+          "at_s": 18.3,
+          "duration_s": 4.8,
+          "kind": "ambience",
+          "description": "Muffled under-ice hush with one distant, soft ice groan.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "The same water, now with the rule changed and no lid above."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 23.3,
+      "end_s": 32.3,
+      "narration": {
+        "text": "Now let ice sink. Every crystal that forms at the surface drops to the bottom, and the bare water above keeps on freezing.",
+        "start_s": 23.6,
+        "end_s": 32.03,
+        "delivery_note": "A quiet turn; steady, slightly ominous without drama."
+      },
+      "viewer_question": "Where does the ice go if it sinks?",
+      "visual_payoff": "Under an open, lidless surface, glinting ice crystals rain down past the camera and pile into a white layer on the lake bed.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 23.3,
+          "end_s": 32.3,
+          "shot_type": "underwater follow of sinking crystals",
+          "world": "The same lake with the counterfactual rule, metres. No ice cover: the rippling open surface is at y=0 under a cold sky; water 9 m deep. Ice platelets form at the surface and sink; ice accumulates on the bed.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 23.3,
+                "position": [
+                  0.5,
+                  -1.8,
+                  2
+                ],
+                "look_at": [
+                  0.7,
+                  0.5,
+                  -0.4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 27.5,
+                "position": [
+                  0.5,
+                  -3,
+                  2.2
+                ],
+                "look_at": [
+                  0.8,
+                  -3.6,
+                  -4
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 32.3,
+                "position": [
+                  0.6,
+                  -6.6,
+                  2.6
+                ],
+                "look_at": [
+                  0.8,
+                  -8.4,
+                  -3.5
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Start looking steeply up at the bright open surface, then tilt down and sink with the crystals to the lake bed.",
+            "lens_notes": "46° vertical FOV underwater."
+          },
+          "subjects": [
+            {
+              "id": "sinking_crystals",
+              "kind": "particle_system",
+              "appearance": "Thousands of small glinting ice platelets drifting downward like slow snow",
+              "geometry_and_material": "Wrapped additive particle fall with tumbling glints.",
+              "scale_and_accuracy": "Illustrative size and rate; direction of motion is the point.",
+              "movement": "Begin at 24.2 s and thicken until 27 s; fall at about 0.9 m/s.",
+              "asset_hint": "candidate:snowfall-v1"
+            },
+            {
+              "id": "bottom_ice",
+              "kind": "terrain",
+              "appearance": "Lumpy white-blue ice spreading over sand and plants",
+              "geometry_and_material": "Displaced heightfield with a translucent-looking ice shader and water fog.",
+              "scale_and_accuracy": "Grows from nothing to about 1 m thick during the shot in labelled accelerated time.",
+              "movement": "Thickens from 26.0 s onward."
+            },
+            {
+              "id": "open_lake",
+              "kind": "water",
+              "appearance": "Rippling bright surface seen from below, green water, a few uneasy fish",
+              "geometry_and_material": "Shared underwater set with its own surface visible; shared fish school.",
+              "scale_and_accuracy": "Same lake as S03.",
+              "movement": "Fish drift upward away from the bed.",
+              "asset_hint": "reuse:underwater-volume-v1, reuse:fish-school-v1"
+            }
+          ],
+          "animation_plan": [
+            "23.3–24.1 s open surface above; chip switches to WHAT IF · ICE SINKS.",
+            "24.2–28.9 s crystals appear at the surface and fall past the lens as the camera tilts down ('drops to the bottom').",
+            "26.0–32.3 s white ice builds on the bed while more crystals keep arriving ('keeps on freezing')."
+          ],
+          "lighting": "Cold daylight through the open surface, blue-green falloff.",
+          "effects": [
+            "Label: ILLUSTRATIVE • TIME-LAPSE",
+            "Glinting crystal particles"
+          ],
+          "composition_notes": "Surface glow at the top early on; growing ice in the lower third at the end; captions over mid-water."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "let ice sink",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "keeps on freezing",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 24.2,
+          "duration_s": 7.5,
+          "kind": "texture",
+          "description": "Sparse, delicate crystalline ticks falling in pitch over muffled water.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Time jumps forward over many winters."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "human_impact",
+      "start_s": 32.3,
+      "end_s": 41,
+      "narration": {
+        "text": "Winter after winter, cold lakes could freeze from the bottom up. Fish would be squeezed into a shrinking layer of water.",
+        "start_s": 32.6,
+        "end_s": 40.74,
+        "delivery_note": "Measured; stress 'could'. Gentle concern on the second sentence."
+      },
+      "viewer_question": "What happens to everything living in the lake?",
+      "visual_payoff": "In a wide underwater view the white ice floor climbs toward the surface while the fish school is pressed into a thin band of open water.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 32.3,
+          "end_s": 41,
+          "shot_type": "wide underwater time-lapse",
+          "world": "Same lake cross-section seen from within the water, metres. Bed at y=-9, open surface at y=0. The ice floor rises from 1 m to about 6.4 m thick; about 120 fish.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 32.3,
+                "position": [
+                  0,
+                  -6.8,
+                  7
+                ],
+                "look_at": [
+                  0,
+                  -7.4,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 41,
+                "position": [
+                  0,
+                  -1.9,
+                  7.5
+                ],
+                "look_at": [
+                  0,
+                  -2.2,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Rise with the ice front, keeping it in the lower third of frame.",
+            "lens_notes": "46° vertical FOV; level horizon."
+          },
+          "subjects": [
+            {
+              "id": "bottom_ice",
+              "kind": "terrain",
+              "appearance": "A broad, bumpy white-blue ice floor glowing faintly from the light above",
+              "geometry_and_material": "Same heightfield as S04, raised by a thickness parameter.",
+              "scale_and_accuracy": "Thickness 1 m to 6.4 m in a 9 m lake; rate is illustrative, not a prediction.",
+              "movement": "Rises steadily between 33.0 and 40.5 s."
+            },
+            {
+              "id": "fish",
+              "kind": "animal",
+              "appearance": "The silver school packed ever closer under the surface",
+              "geometry_and_material": "Shared instanced school with shrinking vertical spread.",
+              "scale_and_accuracy": "Crowding is shown, not mortality.",
+              "movement": "School centre rises from -4.5 m to -1.4 m; vertical spread falls from 1.3 m to 0.4 m.",
+              "asset_hint": "reuse:fish-school-v1"
+            },
+            {
+              "id": "lake_water",
+              "kind": "water",
+              "appearance": "Open rippling surface, light shafts, a thin remaining band of water",
+              "geometry_and_material": "Shared underwater set.",
+              "scale_and_accuracy": "Same lake.",
+              "movement": "Crystals continue to drift down.",
+              "asset_hint": "reuse:underwater-volume-v1, candidate:snowfall-v1"
+            }
+          ],
+          "animation_plan": [
+            "32.3–33.0 s wide view of the first metre of bottom ice.",
+            "33.0–40.5 s ice floor climbs ('from the bottom up'); from 37.4 s the school is visibly squeezed ('squeezed').",
+            "40.5–41.0 s hold: a thin layer of water under the surface."
+          ],
+          "lighting": "Daylight from the open surface, bright near the top, bouncing off the white ice.",
+          "effects": [
+            "Label: ILLUSTRATIVE • MANY WINTERS",
+            "Light shafts"
+          ],
+          "composition_notes": "Ice front in the lower third, fish band in the middle, surface glow at the top."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "from the bottom up",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "shrinking layer of water",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 33,
+          "duration_s": 7,
+          "kind": "music_swell",
+          "description": "Slow low swell with a deep, soft ice creak as the floor rises.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL05",
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Rise out of the lake to the people on its shore."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 41,
+      "end_s": 49.9,
+      "narration": {
+        "text": "No skating. No ice roads. No ice fishing. The frozen surface people have always crossed would never form.",
+        "start_s": 41.3,
+        "end_s": 49.57,
+        "delivery_note": "Three short, even beats, then a slower final sentence."
+      },
+      "viewer_question": "What would winter by the water be like for us?",
+      "visual_payoff": "The skater stands at the end of a snowy jetty, skates in hand, looking out over dark open water that steams in the cold where the ice used to be.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 41,
+          "end_s": 49.9,
+          "shot_type": "human-scale shoreline shot",
+          "world": "The same lake and afternoon with the counterfactual rule, metres. A snow-covered wooden jetty runs from the near shore (z=6) to z=-2 at y=0.5; one adult stands at its end facing the lake; dark open water with small waves and drifting sea smoke; snowy shore and massif beyond.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 41,
+                "position": [
+                  2.4,
+                  2,
+                  5.5
+                ],
+                "look_at": [
+                  0,
+                  1.3,
+                  -3
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 49.9,
+                "position": [
+                  1.6,
+                  1.9,
+                  3.6
+                ],
+                "look_at": [
+                  0.1,
+                  1.4,
+                  -4
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow push along the jetty toward the figure.",
+            "lens_notes": "34° vertical FOV, three-quarter view from behind."
+          },
+          "subjects": [
+            {
+              "id": "person",
+              "kind": "human",
+              "appearance": "The skater from S03, standing still with a pair of skates hanging from one hand",
+              "geometry_and_material": "Shared procedural figure in a standing pose; simple skate props.",
+              "scale_and_accuracy": "1.72 m tall; quiet, not distressed.",
+              "movement": "Small breath and a slow turn of the head across the water.",
+              "asset_hint": "reuse:humanoid-figure-v1"
+            },
+            {
+              "id": "open_lake",
+              "kind": "water",
+              "appearance": "Dark steel-blue water with small wind waves and low wisps of sea smoke",
+              "geometry_and_material": "Shared ocean surface shader and pale smoke ribbons.",
+              "scale_and_accuracy": "No ice anywhere on the surface.",
+              "movement": "Waves travel; wisps drift and curl.",
+              "asset_hint": "reuse:ocean-surface-v1, reuse:smoke-wisp-v1"
+            },
+            {
+              "id": "winter_valley",
+              "kind": "terrain",
+              "appearance": "Snowy conifers, peaks and gentle snowfall",
+              "geometry_and_material": "Shared winter valley set.",
+              "scale_and_accuracy": "Same as S03.",
+              "movement": "Snow falls.",
+              "asset_hint": "reuse:terrain-massif-v1, candidate:conifer-stand-v1, candidate:snowfall-v1"
+            }
+          ],
+          "animation_plan": [
+            "41.0–45.5 s the figure stands with skates in hand as sea smoke drifts over open water.",
+            "45.6–49.9 s slow push-in; the head turns across the empty lake."
+          ],
+          "lighting": "Low golden sun from the left, cool blue shadows, bright haze over the water.",
+          "effects": [
+            "Sea smoke",
+            "Snowfall",
+            "Light haze"
+          ],
+          "composition_notes": "Figure right of centre in the middle third, open water to the left, captions over the jetty planks."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "No skating.",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "would never form",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 41.1,
+          "duration_s": 8.6,
+          "kind": "ambience",
+          "description": "Cold wind and small waves lapping at the jetty.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "From one lake up to the top of the planet."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "second_order_effect",
+      "start_s": 49.9,
+      "end_s": 59.2,
+      "narration": {
+        "text": "At the poles, there would be no floating sea ice, and no icebergs. Emperor penguins would lose the ice where they raise their chicks.",
+        "start_s": 50.2,
+        "end_s": 58.91,
+        "delivery_note": "Wider, slower; tenderness on the penguin line."
+      },
+      "viewer_question": "What about the frozen oceans?",
+      "visual_payoff": "From orbit the white Arctic sea-ice cap fades to open ocean; then an emperor penguin colony on sea ice is replaced, in a matched cut, by empty water.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 49.9,
+          "end_s": 55.3,
+          "shot_type": "orbital view of the Arctic",
+          "world": "Earth radius = 1 unit, viewed from above the North Pole in northern summer light with NASA imagery; floating sea ice drawn from a NASA-derived mask.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 49.9,
+                "position": [
+                  0,
+                  0.25,
+                  3.5
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 55.3,
+                "position": [
+                  0.12,
+                  0.15,
+                  3.1
+                ],
+                "look_at": [
+                  0,
+                  0.03,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow approach toward the pole.",
+            "lens_notes": "30° vertical FOV; the Arctic fills the frame."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Arctic Ocean ringed by continents, Greenland's ice sheet, drifting clouds, a white cap of sea ice",
+              "geometry_and_material": "Shared Earth with the new sea-ice layer.",
+              "scale_and_accuracy": "Real geography; the instant disappearance of sea ice is illustrative. Greenland's land ice stays.",
+              "movement": "Sea-ice amount falls from 1 to 0 between 51.6 and 53.4 s.",
+              "asset_hint": "reuse:earth-globe-v1 with reuse:earth-textures-nasa-v1 and candidate:earth-seaice-mask-nasa-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Faint stars at the frame edges",
+              "geometry_and_material": "Shared starfield.",
+              "scale_and_accuracy": "Qualitative.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "49.9–51.5 s the Arctic with its sea-ice cap; chip reads TODAY · ICE FLOATS.",
+            "51.6–53.4 s ('no floating sea ice') the cap fades to dark ocean; chip switches to WHAT IF · ICE SINKS.",
+            "53.4–55.3 s open polar ocean; Greenland remains white."
+          ],
+          "lighting": "Low-angle summer sun across the pole.",
+          "effects": [
+            "Label: ILLUSTRATIVE • FLOATING ICE ONLY"
+          ],
+          "composition_notes": "Pole slightly above centre; captions over the lower ocean."
+        },
+        {
+          "id": "SH02",
+          "start_s": 55.3,
+          "end_s": 57.3,
+          "shot_type": "emperor penguin colony on sea ice (today)",
+          "world": "Antarctic fast ice at the edge of open water, metres. A flat snow-covered ice platform about 28 m across carries about 36 emperor penguins and 12 chicks; drifting floes and a tabular iceberg (28 m above water) about 400 m away under a bright overcast sky.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 55.3,
+                "position": [
+                  7,
+                  2.4,
+                  17
+                ],
+                "look_at": [
+                  0,
+                  0.9,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 57.3,
+                "position": [
+                  6.4,
+                  2.3,
+                  15.6
+                ],
+                "look_at": [
+                  0,
+                  0.9,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push toward the colony.",
+            "lens_notes": "34° vertical FOV from a low standing height."
+          },
+          "subjects": [
+            {
+              "id": "colony",
+              "kind": "animal",
+              "appearance": "Black-and-white adults with yellow ear patches, grey downy chicks at their feet",
+              "geometry_and_material": "Instanced vertex-coloured penguin meshes with a gentle waddle.",
+              "scale_and_accuracy": "Adults about 1.15 m tall; most emperor colonies breed on fast ice.",
+              "movement": "Sway and shuffle in place.",
+              "asset_hint": "candidate:penguin-colony-v1"
+            },
+            {
+              "id": "sea_ice",
+              "kind": "water",
+              "appearance": "Snow-topped floes with blue-green edges, a distant flat-topped iceberg, dark water between",
+              "geometry_and_material": "Extruded irregular floes and berg over the shared ocean shader.",
+              "scale_and_accuracy": "About one tenth of each floe rides above the waterline.",
+              "movement": "Floes bob slightly.",
+              "asset_hint": "candidate:sea-ice-v1, reuse:ocean-surface-v1, reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "55.3–57.3 s the living colony on its ice ('Emperor penguins'); chip reads TODAY · ICE FLOATS."
+          ],
+          "lighting": "Bright overcast with a low pale sun; soft shadows on snow.",
+          "effects": [
+            "Light snowfall"
+          ],
+          "composition_notes": "Colony across the middle, iceberg on the upper-left horizon, captions over foreground snow."
+        },
+        {
+          "id": "SH03",
+          "start_s": 57.3,
+          "end_s": 59.2,
+          "shot_type": "matched view with no floating ice (what if)",
+          "world": "Exactly the same place and camera path with the counterfactual rule: no platform, no floes, no iceberg, only open dark water to the horizon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 57.3,
+                "position": [
+                  6.4,
+                  2.3,
+                  15.6
+                ],
+                "look_at": [
+                  0,
+                  0.9,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 59.2,
+                "position": [
+                  5.8,
+                  2.2,
+                  14.3
+                ],
+                "look_at": [
+                  0,
+                  0.9,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "The push continues without a break across the cut.",
+            "lens_notes": "Identical lens for a clean before/after match cut."
+          },
+          "subjects": [
+            {
+              "id": "empty_sea",
+              "kind": "water",
+              "appearance": "Open grey-blue polar water under the same sky",
+              "geometry_and_material": "Shared ocean shader and sky; ice and colony hidden.",
+              "scale_and_accuracy": "Absence of floating ice is the derived outcome; nothing is shown happening to the animals.",
+              "movement": "Waves only.",
+              "asset_hint": "reuse:ocean-surface-v1, reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "57.3–59.2 s ('lose the ice') the same framing holds on empty water; chip reads WHAT IF · ICE SINKS."
+          ],
+          "lighting": "Same bright overcast.",
+          "effects": [
+            "Light snowfall"
+          ],
+          "composition_notes": "Horizon at the same height as SH02 so the cut reads as before/after."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "no floating sea ice",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "raise their chicks",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 55.3,
+          "duration_s": 3.8,
+          "kind": "ambience",
+          "description": "Polar wind; soft colony murmur that is absent after the cut.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL08",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "From the polar sea to a small human-scale consequence."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "twist",
+      "start_s": 59.2,
+      "end_s": 65.8,
+      "narration": {
+        "text": "There is one upside. Water would shrink as it froze, so frozen pipes would never burst.",
+        "start_s": 59.5,
+        "end_s": 65.49,
+        "delivery_note": "A wry half-smile, lighter than the scenes before."
+      },
+      "viewer_question": "Would anything be better?",
+      "visual_payoff": "Two frosted copper pipes side by side: the one labelled TODAY splits open as its ice expands, the one labelled WHAT IF stays whole.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 59.2,
+          "end_s": 65.8,
+          "shot_type": "macro of two copper water pipes",
+          "world": "Unheated basement wall in winter, units in metres. Two horizontal 28 mm copper pipes 9 cm apart run across a rough grey wall at y=1.30 and y=1.21; frost creeps along both.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 26,
+            "keyframes": [
+              {
+                "t_s": 59.2,
+                "position": [
+                  0.05,
+                  1.24,
+                  0.9
+                ],
+                "look_at": [
+                  0,
+                  1.229,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 65.8,
+                "position": [
+                  -0.03,
+                  1.235,
+                  0.82
+                ],
+                "look_at": [
+                  0,
+                  1.229,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow 8 cm push-in.",
+            "lens_notes": "26° vertical FOV macro, pipes at about 33% and 55% of frame height."
+          },
+          "subjects": [
+            {
+              "id": "pipe_today",
+              "kind": "other",
+              "appearance": "Copper pipe that bulges and splits along a seam with white ice pushing out",
+              "geometry_and_material": "Copper PBR cylinder with a shader-driven seam opening and an ice core mesh.",
+              "scale_and_accuracy": "Real pipes split because water expands about 9%; the opening is slightly exaggerated and labelled.",
+              "movement": "Frost spreads from 59.6 s; the seam opens between 62.4 and 63.0 s."
+            },
+            {
+              "id": "pipe_what_if",
+              "kind": "other",
+              "appearance": "Identical copper pipe that frosts over and stays intact",
+              "geometry_and_material": "Same pipe without the seam opening.",
+              "scale_and_accuracy": "Derived: a contracting solid exerts no bursting pressure.",
+              "movement": "Frost spreads; nothing else happens."
+            },
+            {
+              "id": "wall",
+              "kind": "architecture",
+              "appearance": "Rough grey masonry with pipe clips and a dusting of frost",
+              "geometry_and_material": "Noise-textured plane with small bracket meshes.",
+              "scale_and_accuracy": "Human-scale utility space.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1 for reflections"
+            }
+          ],
+          "animation_plan": [
+            "59.2–62.3 s both pipes frost over; labels TODAY and WHAT IF fade in.",
+            "62.4–63.0 s ('as it froze') the TODAY pipe splits and ice bulges out.",
+            "63.2–65.8 s ('never burst') the WHAT IF pipe glints, whole."
+          ],
+          "lighting": "One cool work light from the upper left, soft sky reflections on the copper.",
+          "effects": [
+            "Label: ILLUSTRATIVE",
+            "Small frost glints"
+          ],
+          "composition_notes": "Pipes in the upper two thirds, labels above each pipe, captions below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "one upside",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "never burst",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 62.4,
+          "duration_s": 1,
+          "kind": "impact",
+          "description": "One dull metallic crack with a short ring, kept soft.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Back to the kitchen glass where the question began."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 65.8,
+      "end_s": 74,
+      "narration": {
+        "text": "One odd habit of one small molecule turns out to be the lid that keeps winter water alive.",
+        "start_s": 66.2,
+        "end_s": 72.75,
+        "delivery_note": "Slow and warm; let the last three words settle."
+      },
+      "viewer_question": "So how much does floating ice really matter?",
+      "visual_payoff": "In the kitchen glass the sunken cubes lift off the bottom and float again, back to the world we actually have.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 65.8,
+          "end_s": 74,
+          "shot_type": "return to the glass",
+          "world": "Same kitchen table and glass as S01, metres. The cubes rest on the bottom at first.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 24,
+            "keyframes": [
+              {
+                "t_s": 65.8,
+                "position": [
+                  -0.02,
+                  0.095,
+                  0.46
+                ],
+                "look_at": [
+                  0,
+                  0.033,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 74,
+                "position": [
+                  0.03,
+                  0.12,
+                  0.52
+                ],
+                "look_at": [
+                  0,
+                  0.035,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow pull-back ending exactly on the opening camera position.",
+            "lens_notes": "Same 24° macro framing as the hook."
+          },
+          "subjects": [
+            {
+              "id": "glass",
+              "kind": "water",
+              "appearance": "The same tumbler with four cubes on the bottom, then floating",
+              "geometry_and_material": "Shared glass set.",
+              "scale_and_accuracy": "Ends in the real state: about a tenth of each cube above the waterline.",
+              "movement": "Cubes rise from 70.2 s and are floating by 71.8 s.",
+              "asset_hint": "candidate:glass-of-water-v1"
+            },
+            {
+              "id": "kitchen",
+              "kind": "architecture",
+              "appearance": "Warm table and soft window light",
+              "geometry_and_material": "Shared kitchen set.",
+              "scale_and_accuracy": "Unchanged.",
+              "movement": "Faint shimmer.",
+              "asset_hint": "reuse:sky-dome-v1, candidate:bokeh-field-v1"
+            }
+          ],
+          "animation_plan": [
+            "65.8–70.1 s cubes rest on the bottom; chip reads WHAT IF · ICE SINKS.",
+            "70.2–71.8 s ('the lid') cubes rise and float; chip returns to TODAY · ICE FLOATS.",
+            "71.8–74.0 s hold on floating cubes at the opening framing."
+          ],
+          "lighting": "Same soft window key and warm table bounce.",
+          "effects": [
+            "Subtle bloom",
+            "Fine film grain"
+          ],
+          "composition_notes": "Final frame matches frame 0."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "one small molecule",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "keeps winter water alive",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 70.2,
+          "duration_s": 1.6,
+          "kind": "texture",
+          "description": "Light ice tinks as the cubes return to the surface; the pad resolves to major.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Hard loop to the opening frame."
+      }
+    }
+  ],
+  "delivery": {
+    "video_output": "output/ice-sank-instead-of-floating.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  }
+}

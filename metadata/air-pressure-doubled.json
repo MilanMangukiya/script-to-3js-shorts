@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "air-pressure-doubled",
+  "topic": "What if Earth's sea-level air pressure suddenly doubled?",
+  "duration_s": 74,
+  "video_file": "output/air-pressure-doubled.mp4",
+  "scientific_scope_note": "Thought experiment: Earth suddenly holds twice as much dry air of today's composition, added in under a minute at today's temperatures. Pressure, boiling-point, oxygen, Everest and CO2 figures are derived from standard physics; wind and sunset changes are labelled same-speed or illustrative comparisons, and warming is presented as likely but of uncertain size.",
+  "created_asset_ids": [
+    "plastic-bottle-v1",
+    "dial-gauge-v1",
+    "air-molecules-v1",
+    "cooking-pot-v1",
+    "gas-burner-v1",
+    "grass-field-v1",
+    "sailboat-v1",
+    "scuba-gear-v1",
+    "bubble-stream-v1"
+  ],
+  "reused_asset_ids": [
+    "film-pipeline-v1",
+    "camera-keyframe-rig-v1",
+    "caption-kinetic-v1",
+    "overlay-labels-v1",
+    "font-inter-v1",
+    "shader-noise-math-v1",
+    "audio-synth-kit-v1",
+    "sky-dome-v1",
+    "ocean-surface-v1",
+    "terrain-massif-v1",
+    "cloud-deck-v1",
+    "underwater-volume-v1",
+    "fish-school-v1",
+    "bird-flock-v1",
+    "humanoid-figure-v1",
+    "earth-globe-v1",
+    "earth-textures-nasa-v1",
+    "starfield-v1",
+    "flame-v1",
+    "smoke-wisp-v1",
+    "bokeh-field-v1",
+    "snowfall-v1"
+  ],
+  "published_urls": {},
+  "narration": {
+    "engine": "Kokoro-82M v1.0 (ONNX, local, Apache-2.0)",
+    "voice": "am_michael",
+    "speed": 0.92,
+    "caption_alignment": "whisper-small.en word timestamps on the synthesized audio (local)",
+    "script": [
+      "What if the air pressing on you suddenly doubled?",
+      "Right now, the air above every square meter weighs about ten tonnes. Now double it, in under a minute.",
+      "You wouldn't be crushed. Your body is mostly water, which barely squeezes. Divers feel this pressure just ten meters down.",
+      "Every breath would hold twice the oxygen. Even atop Everest, the air would feel like a city high in the Andes.",
+      "In the kitchen, water wouldn't boil until about 120 degrees Celsius. Every open pot would become a pressure cooker.",
+      "Outside, the same breeze would push twice as hard, and every wingbeat would grip twice the air.",
+      "But twice the air also doubles the carbon dioxide, adding more than humanity has ever emitted. The planet would likely warm.",
+      "And sunsets would burn a deeper red, their light crossing twice as much air.",
+      "Torricelli wrote that we live at the bottom of an ocean of air. Double it, and we would barely feel the weight. Everything else would."
+    ]
+  },
+  "credits": [
+    "Earth imagery: NASA Blue Marble Next Generation, Black Marble 2016 and Blue Marble clouds (public domain; credit NASA Earth Observatory / NASA GSFC).",
+    "Typeface: Inter (SIL Open Font License 1.1).",
+    "All other visuals are original procedural Three.js; music and sound effects are original synthesis; narration is locally synthesized speech."
+  ],
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What If Earth's Air Pressure Suddenly Doubled?",
+      "description": "What if the air pressing on you suddenly doubled? This 3D science short follows twice as much air from a harbor cafe table to a diver, the top of Everest, a kitchen stove, a windy sea cliff, orbit and the sunset.\n\n- Right now, the air above every square meter weighs about 10 tonnes (about 1013 hPa). Double it and a sealed, empty plastic bottle crumples.\n- You wouldn't be crushed: your body is mostly water, which barely squeezes. Divers feel this pressure just 10 meters down.\n- Every breath would hold twice the oxygen. Even on Everest's summit, the air pressure would match a city high in the Andes (about 3,500 m today).\n- Water wouldn't boil until about 120 °C (248 °F), so every open pot would cook like a pressure cooker.\n- The same breeze would push twice as hard, and a wing at the same speed would get twice the lift.\n- Twice the air also doubles the carbon dioxide: about 3.3 trillion tonnes added, more than humanity has ever emitted. The planet would likely warm, by an amount nobody can pin down.\n- Sunsets would burn a deeper red, because sunlight would cross twice as much air.\n\nScope: a thought experiment. The extra air has today's composition and arrives in under a minute at today's temperatures. The wind and sunset changes are shown as labelled comparisons, and the size of any warming is uncertain.\n\nSources: NOAA (air pressure, ocean pressure), NASA (Earth fact sheet, atmosphere model, drag and lift equations, Boyle's law, why the sky is blue), USGS (water in the human body), HyperPhysics (vapor pressure of water), USDA FSIS and Penn State Extension (boiling and pressure cooking), Carbon Brief (historical CO2 emissions), Torricelli's 1644 letter. Earth imagery: NASA Blue Marble and Black Marble. Narration, music and sound are synthesized.",
+      "tags": [
+        "what if air pressure doubled",
+        "double atmospheric pressure",
+        "what if earth had twice as much air",
+        "why are we not crushed by air pressure",
+        "air pressure explained",
+        "boiling point and pressure",
+        "everest air pressure",
+        "pressure cooker science",
+        "why are sunsets red",
+        "what if science"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Science",
+        "#AirPressure"
+      ],
+      "keywords": [
+        "what if air pressure doubled",
+        "twice as much air on earth",
+        "why don't we get crushed by air pressure",
+        "boiling point at higher pressure",
+        "air pressure on everest"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "A sealed, empty bottle crumples on a cafe table. That is what twice the air would do. You wouldn't be crushed (divers feel this pressure 10 m down), but the air on Everest's summit would feel like a city high in the Andes, pots would not boil until about 120 °C, the same breeze would push twice as hard and sunsets would burn a deeper red. The catch: twice the carbon dioxide too.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#AirPressure",
+        "#Physics",
+        "#Everest"
+      ],
+      "keywords": [
+        "twice as much air",
+        "air pressure science",
+        "what if the atmosphere doubled",
+        "3d science visualization",
+        "pressure cooker physics"
+      ]
+    },
+    "facebook_reels": {
+      "title": "If Earth's Air Pressure Doubled, Would We Be Crushed?",
+      "description": "We live at the bottom of an ocean of air, as Torricelli put it in 1644. This 3D short doubles that air and follows what changes: a crumpled bottle, a diver 10 meters down, an easy breath on Everest, a pot that won't boil until about 120 degrees Celsius, a breeze that pushes twice as hard, twice the carbon dioxide overhead and a deeper red sunset. Our bodies would barely notice; almost everything else would. Uncertain effects such as warming are labelled as such.",
+      "hashtags": [
+        "#WhatIf",
+        "#Science",
+        "#AirPressure"
+      ],
+      "keywords": [
+        "what if air pressure doubled",
+        "would more air pressure crush us",
+        "boiling point at 2 atmospheres",
+        "everest summit air pressure",
+        "red sunset science"
+      ]
+    },
+    "tiktok": {
+      "caption": "Double the air on Earth. Are we crushed? Nope. But sealed bottles crumple, Everest's summit air feels like a city high in the Andes, water won't boil until 120 °C and sunsets turn deeper red. Stay for the carbon dioxide part.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Physics",
+        "#LearnOnTikTok"
+      ],
+      "keywords": [
+        "what if air pressure doubled",
+        "air pressure science",
+        "why we dont get crushed by air",
+        "boiling point and pressure"
+      ]
+    },
+    "x_video": {
+      "post": "What if Earth's air pressure suddenly doubled? We wouldn't be crushed (divers feel it 10 m down), but water would boil at about 120 °C, Everest's air would match an Andean city, and the extra air would add more CO2 than humanity has ever emitted.",
+      "hashtags": [
+        "#WhatIf",
+        "#Science"
+      ],
+      "keywords": [
+        "air pressure doubled",
+        "atmospheric pressure",
+        "boiling point",
+        "Everest air pressure"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-12T04:10:13Z",
+  "publishing_status": "rendered_not_published"
+}

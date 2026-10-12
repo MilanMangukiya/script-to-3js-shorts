@@ -1,0 +1,24 @@
+{
+  "name": "what-if-shorts-studio",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Deterministic Three.js documentary shorts renderer with a persistent reusable asset library",
+  "scripts": {
+    "validate": "python scripts/validate_storyboard.py",
+    "narrate": "node tools/narrate.mjs",
+    "soundtrack": "node tools/soundtrack.mjs",
+    "render": "node tools/render.mjs",
+    "finalize": "python scripts/finalize_video.py"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@huggingface/transformers": "^4.3.1",
+    "esbuild": "^0.28.2",
+    "ffmpeg-static": "^5.3.0",
+    "ffprobe-static": "^3.1.0",
+    "kokoro-js": "^1.2.1",
+    "playwright-core": "^1.64.0",
+    "three": "^0.180.0"
+  }
+}

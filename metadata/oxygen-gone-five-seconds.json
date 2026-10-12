@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "oxygen-gone-five-seconds",
+  "topic": "What if all the oxygen in Earth's air vanished for five seconds?",
+  "duration_s": 72,
+  "video_file": "output/oxygen-gone-five-seconds.mp4",
+  "scientific_scope_note": "Only the oxygen gas in the air disappears for five seconds; oxygen bound in water, rock, ozone and living tissue stays. The one-fifth pressure drop and 2 km altitude equivalence are derived approximations; ear discomfort, aircraft behaviour and power-grid disruption are illustrative possibilities, not forecasts.",
+  "created_asset_ids": [
+    "earth-globe-v1",
+    "earth-textures-nasa-v1",
+    "starfield-v1",
+    "flame-v1",
+    "smoke-wisp-v1",
+    "sky-dome-v1",
+    "ocean-surface-v1",
+    "terrain-massif-v1",
+    "cloud-deck-v1",
+    "underwater-volume-v1",
+    "fish-school-v1",
+    "bird-flock-v1",
+    "humanoid-figure-v1",
+    "airliner-v1",
+    "caption-kinetic-v1",
+    "film-pipeline-v1",
+    "camera-keyframe-rig-v1",
+    "overlay-labels-v1",
+    "audio-synth-kit-v1",
+    "shader-noise-math-v1",
+    "font-inter-v1"
+  ],
+  "reused_asset_ids": [],
+  "published_urls": {},
+  "narration": {
+    "engine": "Kokoro-82M v1.0 (ONNX, local, Apache-2.0)",
+    "voice": "am_michael",
+    "speed": 0.92,
+    "caption_alignment": "whisper-small.en word timestamps on the synthesized audio (local)",
+    "script": [
+      "What if all the oxygen in the air vanished, for just five seconds?",
+      "Oxygen makes up about a fifth of the air. Take it away, and the whole atmosphere instantly thins.",
+      "Air pressure would plunge by about a fifth. Sea level would suddenly feel like a mountain, two kilometers high.",
+      "Your ears would pop, hard. But you wouldn't suffocate. Your blood already carries enough oxygen to ride out those seconds.",
+      "Fire is another story. Every flame that feeds on air would go out at once.",
+      "Jet engines would flame out. Airliners would sag in the thinner air, gliding until those engines could relight.",
+      "Birds would dip mid-flight. But underwater, fish would hardly notice. The oxygen dissolved in the sea stays put.",
+      "Then the oxygen rushes back. Hot embers flare to life again. But power plants that lost their flames could stay dark for hours.",
+      "Five seconds without oxygen wouldn't end the world. It would show us how much of it still runs on fire."
+    ]
+  },
+  "credits": [
+    "Earth imagery: NASA Blue Marble Next Generation, Blue Marble clouds and Black Marble 2016 (public domain; credit NASA Earth Observatory / NASA GSFC).",
+    "Typeface: Inter (SIL Open Font License 1.1).",
+    "All other visuals are original procedural Three.js; music and sound effects are original synthesis; narration is locally synthesized speech."
+  ],
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What If Earth's Air Lost Its Oxygen for 5 Seconds?",
+      "description": "What would really happen if all the oxygen in the air vanished for five seconds, then came back? This 3D thought experiment follows the missing oxygen from a candle flame to orbit and home again.\n\n• Oxygen is about a fifth of the air, so air pressure would drop by about a fifth. Sea level would feel like roughly 2 km of altitude.\n• Your ears would pop, but you wouldn't suffocate: your blood already carries enough oxygen for a few seconds.\n• Every flame that feeds on air would go out. Jet engines would flame out and airliners would sag in the thinner air.\n• Fish would hardly notice, because the oxygen dissolved in the sea stays put.\n• When the oxygen returns, hot embers can flare back to life, but power plants that lost their flames could stay dark for hours.\n\nScope: only the oxygen gas in the air is removed. Aircraft and blackout outcomes are labelled illustrative in the film; they are possibilities, not predictions.\n\nSources: NASA Earth Fact Sheet, NOAA JetStream (air pressure), USGS Water Science School (dissolved oxygen), NASA Glenn (lift equation). Earth imagery: NASA Blue Marble and Black Marble. Narration, music and sound are synthesized.",
+      "tags": [
+        "what if earth lost oxygen for 5 seconds",
+        "no oxygen for 5 seconds",
+        "what if oxygen disappeared",
+        "oxygen thought experiment",
+        "air pressure explained",
+        "why fire needs oxygen",
+        "would we survive without oxygen",
+        "atmosphere explained",
+        "what if science",
+        "earth science shorts"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Oxygen",
+        "#EarthScience"
+      ],
+      "keywords": [
+        "what if earth lost oxygen for 5 seconds",
+        "what happens without oxygen for five seconds",
+        "how much of the air is oxygen",
+        "air pressure drop without oxygen",
+        "fire needs oxygen"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "A candle goes dark, and for five seconds there is no oxygen in the air. Your ears would pop. Sea level would feel like a mountain two kilometers high. But you wouldn't suffocate, and fish would hardly notice. The real trouble is everything that burns: campfires, jet engines, the power plants behind the lights. Uncertain outcomes are marked illustrative.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#Oxygen",
+        "#Atmosphere",
+        "#EarthScience"
+      ],
+      "keywords": [
+        "oxygen gone for five seconds",
+        "what if there was no oxygen",
+        "air is one fifth oxygen",
+        "3d science visualization",
+        "why flames need oxygen"
+      ]
+    },
+    "facebook_reels": {
+      "title": "Five Seconds Without Oxygen: What Would Actually Happen?",
+      "description": "If the oxygen in Earth's air blinked out for five seconds, people would cope better than you might expect, and fire would not. This 3D short walks through the sudden pressure drop, a campfire that falls silent, an airliner sagging in thinner air, fish that carry on untroubled, and power plants that could take hours to restart. Outcomes that are uncertain are labelled as illustrative.",
+      "hashtags": [
+        "#WhatIf",
+        "#Science",
+        "#Oxygen"
+      ],
+      "keywords": [
+        "what if oxygen vanished",
+        "five seconds without oxygen explained",
+        "would humans survive without oxygen",
+        "oxygen and air pressure",
+        "power plants and oxygen"
+      ]
+    },
+    "tiktok": {
+      "caption": "No oxygen in the air for 5 seconds. Would you suffocate? No. Would your ears pop? Hard. Would every flame and jet engine go out? Yes. The part that could last for hours is the one nobody expects.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Oxygen",
+        "#LearnOnTikTok"
+      ],
+      "keywords": [
+        "no oxygen for 5 seconds",
+        "what if oxygen disappeared for 5 seconds",
+        "oxygen science explained",
+        "what if earth"
+      ]
+    },
+    "x_video": {
+      "post": "What if all the oxygen in the air vanished for 5 seconds? Air pressure drops by a fifth, ears pop, every flame and jet engine goes out, fish hardly notice. You wouldn't suffocate, but power plants that lost their flames could stay dark for hours.",
+      "hashtags": [
+        "#WhatIf",
+        "#Science"
+      ],
+      "keywords": [
+        "oxygen vanished five seconds",
+        "what if no oxygen",
+        "air pressure",
+        "power grid"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-12T00:15:05Z",
+  "publishing_status": "rendered_not_published"
+}

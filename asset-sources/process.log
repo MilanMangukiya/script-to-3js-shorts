@@ -1,0 +1,25 @@
+[run-python] using py -3.14 (numpy/Pillow 2.4.6 12.2.0)
+[15:05:13] plates: PB2002 boundaries
+[15:05:13]   wrote 241 boundary lines, 6292 points
+[15:05:13] plates done in 0.0s
+[15:05:13] data: land mask, height, coast distances
+[15:07:15]   wrote data (2048^2 png)
+[15:07:16] data done in 123.1s
+[15:07:16] normal: relief from GEBCO elevation
+[15:08:32]   wrote normal (2048^2 png)
+[15:08:32] normal done in 75.8s
+[15:08:32] night: Black Marble 2016
+[15:09:34]   wrote night (2048^2 jpg)
+[15:09:35] night done in 63.4s
+[15:09:35] clouds: combining W/E hemispheres at half resolution
+[15:09:44] clouds: cube 4096
+[15:11:07]   wrote clouds (4096^2 jpg)
+[15:11:08] clouds done in 93.0s
+[15:11:08] day: loading BMNG 21600x10800
+[15:11:10] day: polar prefilter
+[15:11:17] day: cube 4096 (2x2 supersampled)
+[15:13:45] day: sea ice from Blue Marble 2002
+[15:15:08]   wrote day (4096^2 jpg)
+[15:15:10] day done in 241.7s
+[15:15:10] manifest: 30 files
+exit=0

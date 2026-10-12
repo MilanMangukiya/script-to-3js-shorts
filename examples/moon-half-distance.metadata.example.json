@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "moon-half-distance",
+  "topic": "What if the Moon orbited at half its current distance?",
+  "duration_s": 50,
+  "video_file": "output/moon-half-distance.mp4",
+  "scientific_scope_note": "Approx. 8× lunar tidal-generating forcing is not a prediction of 8× tide heights at every shoreline; coastal response varies.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What If the Moon Were Twice as Close to Earth?",
+      "description": "What would happen if the Moon suddenly orbited at half its current distance? Follow a cinematic 3D thought experiment through brighter night skies, the physics of tides, and surprising effects for coastal life.\n\nA closer Moon would exert much stronger tidal-generating forces—but that does NOT mean all ocean tides would rise by the same fixed factor. Local tides depend on coastlines and ocean dynamics.\n\nExplore the science behind this what-if scenario.\nSources: NASA Moon facts; NOAA tides resources.",
+      "tags": [
+        "what if the moon were closer",
+        "moon closer to earth",
+        "earth moon",
+        "what if moon half distance",
+        "lunar tides",
+        "space science",
+        "earth what if",
+        "moon orbit explained",
+        "astronomy shorts"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#Moon",
+        "#SpaceScience"
+      ],
+      "keywords": [
+        "moon closer to earth",
+        "what if moon was twice as close",
+        "tidal forces explained",
+        "lunar orbit earth"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "Imagine looking up and seeing the Moon twice as wide in our night sky. Its pull on Earth would change much more than you might expect. Here’s the science behind a world with a much closer Moon—and why coastlines would not all respond the same way.",
+      "hashtags": [
+        "#WhatIf",
+        "#MoonFacts",
+        "#ScienceReels",
+        "#Space"
+      ],
+      "keywords": [
+        "closer moon visualized",
+        "moon effects on Earth",
+        "science what if",
+        "tidal forces"
+      ]
+    },
+    "facebook_reels": {
+      "title": "If the Moon Were Twice as Close, What Would Change?",
+      "description": "The Moon would look larger—but the biggest consequences could be down here on Earth. This 3D scenario explores stronger tidal forces, coastal effects, and what science can (and cannot) confidently predict.",
+      "hashtags": [
+        "#EarthScience",
+        "#Moon",
+        "#WhatIf"
+      ],
+      "keywords": [
+        "what if moon closer",
+        "earth moon tides",
+        "moon gravity explained",
+        "moon simulation"
+      ]
+    },
+    "tiktok": {
+      "caption": "The Moon gets twice as close. Would the tides become eight times higher? Not so fast. Watch what changes in the sky—and what the ocean physics really says.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Moon",
+        "#Earth"
+      ],
+      "keywords": [
+        "moon twice as close",
+        "moon ocean tides",
+        "space what if",
+        "moon science"
+      ]
+    },
+    "x_video": {
+      "post": "What if the Moon orbited at half its current distance? It would look twice as wide, while lunar tide-generating forces would grow about 8×—not the same as 8× tide heights. Here’s the 3D science.",
+      "hashtags": [
+        "#Moon",
+        "#SpaceScience"
+      ],
+      "keywords": [
+        "closer Moon",
+        "tidal forces",
+        "Earth ocean",
+        "lunar orbit"
+      ]
+    }
+  }
+}

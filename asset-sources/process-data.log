@@ -1,0 +1,6 @@
+[run-python] using py -3.14 (numpy/Pillow 2.4.6 12.2.0)
+[15:18:25] data: land mask, height, coast distances
+[15:19:47]   wrote data (2048^2 png)
+[15:19:49] data done in 84.0s
+[15:19:49] manifest: 30 files
+exit=0

@@ -1,0 +1,1792 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if all the oxygen in Earth's air vanished for five seconds?",
+    "title": "What If Earth's Air Lost Its Oxygen for 5 Seconds?",
+    "slug": "oxygen-gone-five-seconds",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 72,
+    "language": "en",
+    "audience": "Curious global general audiences age 13+, no science background",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "What would people and nature actually experience if the breathable oxygen in the air blinked out for five seconds and then came back?",
+    "viewer_takeaway": "Lungs and oceans would ride out five oxygen-free seconds; the real shock lands on everything that burns, flies or keeps the lights on with fire."
+  },
+  "scientific_model": {
+    "baseline_reality": "Dry air is about 78.08% nitrogen and 20.95% molecular oxygen (O2) by volume; standard sea-level pressure is 1013.25 hPa. Flames, piston and jet engines, and most power stations use that atmospheric O2 as their oxidizer, while people and animals carry a short-term oxygen reserve in blood and tissue.",
+    "counterfactual_change": "At one instant every free O2 molecule in the atmosphere (including air inside rooms, lungs, engines and aircraft cabins) disappears without a push or a flash, stays absent for exactly five seconds, and then reappears where it was. Nothing else is altered.",
+    "assumptions": [
+      "Only gaseous molecular oxygen in air is removed. Oxygen bound in water, rock, concrete, carbon dioxide, ozone and living tissue, and oxygen dissolved in seas, rivers and blood, is untouched, so viral claims about crumbling buildings or vanishing oceans do not apply.",
+      "Nitrogen, argon, water vapour and temperature are unchanged at the instant of removal, so pressure falls by oxygen's partial pressure (about 21%) and air density by oxygen's mass share (about 23%).",
+      "The film replays the same five seconds from several vantage points; it is not one continuous real-time take.",
+      "Blackouts, aircraft and injury outcomes are illustrative possibilities, not forecasts."
+    ],
+    "causal_chain": [
+      "Removing about one fifth of all air molecules instantly lowers pressure everywhere by about a fifth: roughly 1013 hPa to 800 hPa at sea level, the pressure normally found near 2 km altitude.",
+      "The sudden pressure step, down and then back up five seconds later, stresses ears and sinuses, but five seconds is too short to exhaust the oxygen already carried in blood.",
+      "Combustion that feeds on air stops at once: candles, campfires, engines and furnace flames go out.",
+      "Air about 23% less dense gives wings about 23% less lift at the same speed, so aircraft and birds sink while air-breathing engines produce no thrust.",
+      "Oxygen dissolved in water is not part of the air and exchanges with it slowly, so aquatic life is essentially unaffected for five seconds.",
+      "When oxygen returns, fuel that is still hot enough reignites, but large furnaces and turbines that tripped on flame loss need controlled restarts, so electricity supply could stay disrupted far longer than five seconds."
+    ],
+    "uncertainties": [
+      "How many people would suffer ear or sinus barotrauma from two abrupt 200 hPa steps is not established; pain is likely, widespread serious injury is not assumed.",
+      "Whether a given jet engine relights, and what happens to aircraft close to the ground, depends on type, phase of flight and crew response.",
+      "The scale and duration of any power-grid disruption is highly uncertain and system-specific.",
+      "Brief light-headedness after breathing oxygen-free air is possible for some people; loss of consciousness in five seconds is not expected for healthy adults."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Dry air is about 78% nitrogen and 20.95% oxygen by volume, and standard sea-level pressure is about 1013 hPa.",
+        "confidence": "established",
+        "reasoning": "NASA Earth fact sheet composition and NOAA standard sea-level pressure.",
+        "presentation_guardrail": "Say 'about a fifth'; molecule visuals are labelled schematic and not to scale."
+      },
+      {
+        "id": "CL02",
+        "statement": "Removing the O2 lowers air pressure by about 21% (roughly 1013 to 800 hPa at sea level) and air density by about 23%.",
+        "confidence": "derived",
+        "reasoning": "Dalton's law: total pressure is the sum of partial pressures; O2 is 20.95% of molecules and about 23% of air's mass.",
+        "presentation_guardrail": "Use 'about a fifth' in voice; show approximate numbers with the ≈ sign."
+      },
+      {
+        "id": "CL03",
+        "statement": "About 800 hPa is the pressure normally found near 2,000 m altitude.",
+        "confidence": "derived",
+        "reasoning": "Standard-atmosphere pressure is about 795 hPa at 2,000 m; pressure falls with altitude because fewer molecules lie overhead.",
+        "presentation_guardrail": "Present as a pressure equivalence on a labelled schematic contour, never as the ground physically rising."
+      },
+      {
+        "id": "CL04",
+        "statement": "Two abrupt pressure steps of about 200 hPa would make ears pop painfully.",
+        "confidence": "plausible",
+        "reasoning": "The change equals a 2 km altitude jump in an instant; middle-ear pressure cannot equalise that fast. Typical eardrum rupture thresholds are higher, so universal injury is not implied.",
+        "presentation_guardrail": "Show discomfort, not gore; never claim eardrums explode."
+      },
+      {
+        "id": "CL05",
+        "statement": "People would not suffocate in five seconds because blood already carries far more oxygen than the body uses in that time.",
+        "confidence": "derived",
+        "reasoning": "Blood holds roughly 0.8–1 litre of O2 bound to haemoglobin; resting use is about 0.25 litre per minute, about 20 ml in five seconds. One oxygen-free breath can still cause brief dizziness.",
+        "presentation_guardrail": "Label the bloodstream glow schematic; do not promise that nobody feels faint."
+      },
+      {
+        "id": "CL06",
+        "statement": "Every flame that uses atmospheric oxygen as its oxidizer would go out.",
+        "confidence": "established",
+        "reasoning": "Combustion needs fuel, heat and an oxidizer; removing the oxidizer stops flaming combustion immediately.",
+        "presentation_guardrail": "Say flames that feed on air; rockets and fireworks carry their own oxidizer."
+      },
+      {
+        "id": "CL07",
+        "statement": "Air-breathing jet engines would flame out and wings would generate about 23% less lift, so airliners would sink until density and thrust return; relight is likely at altitude but not guaranteed.",
+        "confidence": "plausible",
+        "reasoning": "Lift is proportional to air density; combustors cannot burn fuel without O2. Windmilling engines at cruise speed commonly relight, but not always.",
+        "presentation_guardrail": "Show a controlled sag at cruise altitude with an ILLUSTRATIVE label; no crash imagery, say 'could relight'."
+      },
+      {
+        "id": "CL08",
+        "statement": "Birds in flight would lose lift in the thinner air and dip.",
+        "confidence": "plausible",
+        "reasoning": "Aerodynamic force scales with air density for the same wing motion and speed.",
+        "presentation_guardrail": "Show a brief dip and harder flapping, not birds falling from the sky."
+      },
+      {
+        "id": "CL09",
+        "statement": "Fish would hardly notice, because oxygen dissolved in water is not removed and exchanges with air far more slowly than five seconds.",
+        "confidence": "derived",
+        "reasoning": "Aquatic animals breathe dissolved oxygen; by the stated counterfactual it remains, and surface gas exchange acts over hours to days.",
+        "presentation_guardrail": "Say 'hardly notice'; label dissolved oxygen as unchanged."
+      },
+      {
+        "id": "CL10",
+        "statement": "When oxygen returns, fuel still above its ignition temperature, such as glowing campfire embers, can burst back into flame.",
+        "confidence": "plausible",
+        "reasoning": "Large embers stay far hotter than wood-gas ignition temperature for many seconds; a small candle wick cools quickly and may stay out.",
+        "presentation_guardrail": "Show embers reigniting; keep the candle out until a match relights it."
+      },
+      {
+        "id": "CL11",
+        "statement": "Combustion power plants that lost their flames could stay offline for hours, so blackouts could outlast the five seconds.",
+        "confidence": "plausible",
+        "reasoning": "Furnace and gas-turbine flame-loss protection trips fuel supply and requires purge and restart sequences; losing much combustion generation at once can destabilise grids.",
+        "presentation_guardrail": "Say 'could'; city-light dimming from orbit is labelled illustrative and uncertain."
+      },
+      {
+        "id": "CL12",
+        "statement": "With a fifth fewer molecules to scatter sunlight the daytime sky would be slightly dimmer but still blue.",
+        "confidence": "derived",
+        "reasoning": "Rayleigh scattering scales with the number of air molecules; O2 contributes roughly a fifth.",
+        "presentation_guardrail": "Visual only: a subtle dimming, never a black daytime sky."
+      },
+      {
+        "id": "CL13",
+        "statement": "Most of the world's energy still comes from burning fuels.",
+        "confidence": "established",
+        "reasoning": "Fossil fuels plus biomass combustion supply roughly four fifths of global primary energy in recent international energy statistics.",
+        "presentation_guardrail": "Keep it qualitative: 'how much of it still runs on fire'."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NASA NSSDCA — Earth Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "supports_claim_ids": [
+          "CL01",
+          "CL02"
+        ]
+      },
+      {
+        "name": "NOAA JetStream — Air Pressure",
+        "url": "https://www.noaa.gov/jetstream/atmosphere/air-pressure",
+        "supports_claim_ids": [
+          "CL01",
+          "CL03"
+        ]
+      },
+      {
+        "name": "USGS Water Science School — Dissolved Oxygen and Water",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/science/dissolved-oxygen-and-water",
+        "supports_claim_ids": [
+          "CL09"
+        ]
+      },
+      {
+        "name": "NASA Glenn Research Center — The Lift Equation",
+        "url": "https://www.grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/lifteq.html",
+        "supports_claim_ids": [
+          "CL07",
+          "CL08"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "A candle on a windowsill goes dark, and for five seconds we follow the missing oxygen around the planet: through thinning air, a silent campfire, a sagging airliner and an untroubled reef, to the lights that may not come back.",
+    "visual_identity": "Intimate, tactile documentary realism: warm flame light against cool blue-hour air, real NASA Earth imagery from orbit, restrained luminous schematics that are always labelled. Quiet, never apocalyptic.",
+    "palette": [
+      "night navy #0B1326",
+      "blue-hour indigo #27305E",
+      "flame amber #FFB45C",
+      "ember red #E0533A",
+      "sea-glass teal #66C7C1",
+      "ivory #F4EDE1"
+    ],
+    "lighting": "Motivated practical light: candle and campfire as warm key sources that really switch off, cool sky and moon fill, low sun rim light on the coast and aircraft.",
+    "camera_language": "Macro flame, orbital limb, human eye-level coast, intimate campfire, long-lens air-to-air, drifting underwater, back to the macro flame. One slow, deliberate move per shot.",
+    "motion_language": "Slow push-ins and drifts; the only abrupt motion in the film is oxygen leaving and returning.",
+    "world_scale_policy": "Orbital shots use Earth radius = 1 unit with real NASA textures. All other shots use metres at true human scale (candle 9 cm, people 1.7 m, airliner about 38 m, mountain about 2.6 km high at 9 km range). Molecule and bloodstream visuals are enlarged schematics and labelled as such.",
+    "emotional_arc": [
+      "quiet intimacy",
+      "intellectual surprise",
+      "bodily unease",
+      "relief",
+      "eerie silence",
+      "calm wonder",
+      "lingering consequence"
+    ],
+    "opening_hook": "A lit candle before a blue-hour city snaps dark mid-question, a thread of smoke curling up while every electric light beyond the glass keeps shining.",
+    "ending_payoff": "Back at the same windowsill, part of the city is dark, the candle is still out, and a struck match brings the flame back as the last word, 'fire', lands.",
+    "loop_connection": "The relit candle and returning camera position match frame 0, so the opening question restarts on the same flame.",
+    "asset_policy": "Reuse the repository's NASA Blue Marble / Black Marble / cloud imagery (public domain, credited) and local Kokoro and Whisper models from asset-sources. Everything else is original procedural Three.js geometry, shaders and synthesized audio. No paid or unlicensed assets."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Sparse original warm synth pad in D minor with slow swells and a soft low pulse; it thins to a single held note whenever oxygen is gone and resolves gently as the flame returns.",
+    "music_level_db_below_voice": -22,
+    "sfx_direction": "Synthesized, restrained: candle hush, a soft low pressure thump with a faint ear-ring, campfire crackle that cuts to silence, a jet whine winding down, muffled underwater calm, a match strike. No loud impacts.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Premium documentary subtitles: ivory semibold, thin charcoal outline and soft shadow, restrained flame-amber active word, phrase-by-phrase with a 120 ms ease.",
+    "font_stack": "Inter, Manrope, system-ui, sans-serif",
+    "font_size_px": 66,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 100,
+      "right_px": 180,
+      "top_px": 230,
+      "bottom_px": 330,
+      "caption_baseline_y_px": 1360
+    },
+    "active_word_treatment": "The spoken word turns flame amber with no change of baseline; emphasised phrases keep a soft accent, scale 1.04 or glow.",
+    "highlights_policy": "Exact narration only; in-scene labels are limited to schematic/illustrative markers and approximate numbers backed by the claim register."
+  },
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json was empty when this storyboard was written, so nothing is listed for reuse; every candidate below is a proposal until it is built, rendered and registered.",
+    "existing_assets_to_reuse": [],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "earth-globe-v1",
+        "description": "Earth with NASA day map, night city lights, cloud layer, ocean glint and atmospheric rim; supports regional night-light dimming.",
+        "reusable_in": "Any orbital, planetary, climate or astronomy scenario.",
+        "parameters": [
+          "radius",
+          "sunDirection",
+          "cloudOpacity",
+          "atmosphereStrength",
+          "nightLights",
+          "nightOutage",
+          "time_s"
+        ],
+        "suggested_path": "src/library/planet/Earth.ts"
+      },
+      {
+        "proposed_id": "earth-textures-nasa-v1",
+        "description": "8K equirectangular day, night-lights and cloud maps plus a land mask derived from NASA Blue Marble, Black Marble and GEBCO data.",
+        "reusable_in": "Every Earth-from-space shot in future videos.",
+        "parameters": [],
+        "suggested_path": "assets/library/textures/earth/day_8k.jpg"
+      },
+      {
+        "proposed_id": "starfield-v1",
+        "description": "Seeded point starfield with a realistic brightness distribution and colour temperatures.",
+        "reusable_in": "Orbital, night-sky and deep-space sequences.",
+        "parameters": [
+          "seed",
+          "count",
+          "radius",
+          "brightness"
+        ],
+        "suggested_path": "src/library/space/Starfield.ts"
+      },
+      {
+        "proposed_id": "flame-v1",
+        "description": "Procedural billboard flame shader that can be extinguished and reignited deterministically.",
+        "reusable_in": "Candles, campfires, torches, stoves, engines and wildfire explainers.",
+        "parameters": [
+          "width",
+          "height",
+          "turbulence",
+          "colors",
+          "intensity",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/fx/Flame.ts"
+      },
+      {
+        "proposed_id": "smoke-wisp-v1",
+        "description": "Thin rising smoke ribbon with noise-driven curl.",
+        "reusable_in": "Extinguished flames, chimneys, incense, volcanic vents.",
+        "parameters": [
+          "height",
+          "width",
+          "curl",
+          "opacity",
+          "age_s",
+          "time_s"
+        ],
+        "suggested_path": "src/library/fx/SmokeWisp.ts"
+      },
+      {
+        "proposed_id": "sky-dome-v1",
+        "description": "Gradient sky with sun disc, horizon haze and an adjustable scattering strength.",
+        "reusable_in": "Any exterior terrestrial shot at day, dusk or night.",
+        "parameters": [
+          "zenithColor",
+          "horizonColor",
+          "sunDirection",
+          "sunColor",
+          "scatter",
+          "starAmount"
+        ],
+        "suggested_path": "src/library/environment/SkyDome.ts"
+      },
+      {
+        "proposed_id": "ocean-surface-v1",
+        "description": "Deterministic wave-normal ocean surface with Fresnel sky reflection and sun glitter.",
+        "reusable_in": "Coasts, tides, storms, sea-level and open-ocean scenes.",
+        "parameters": [
+          "waveScale",
+          "waveHeight",
+          "deepColor",
+          "skyColor",
+          "sunDirection",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/OceanSurface.ts"
+      },
+      {
+        "proposed_id": "terrain-massif-v1",
+        "description": "Seeded fractal mountain terrain with altitude-based rock, forest and snow colouring and an optional glowing altitude contour.",
+        "reusable_in": "Mountains, islands, altitude and geology explainers.",
+        "parameters": [
+          "seed",
+          "size",
+          "peakHeight",
+          "snowLine",
+          "contourAltitude"
+        ],
+        "suggested_path": "src/library/environment/Terrain.ts"
+      },
+      {
+        "proposed_id": "cloud-deck-v1",
+        "description": "Scrolling fractal cloud-top layer seen from above with sun-side lighting.",
+        "reusable_in": "Aircraft, weather, high-altitude and atmospheric scenes.",
+        "parameters": [
+          "scale",
+          "coverage",
+          "sunDirection",
+          "scroll",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/CloudDeck.ts"
+      },
+      {
+        "proposed_id": "underwater-volume-v1",
+        "description": "Underwater environment: surface from below, light shafts, caustic sea floor, drifting particles and swaying seagrass.",
+        "reusable_in": "Ocean life, reef, tide and deep-sea topics.",
+        "parameters": [
+          "depth",
+          "waterColor",
+          "rayStrength",
+          "causticScale",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/Underwater.ts"
+      },
+      {
+        "proposed_id": "fish-school-v1",
+        "description": "Instanced fish school with shader tail motion on deterministic paths.",
+        "reusable_in": "Marine ecology scenes.",
+        "parameters": [
+          "count",
+          "seed",
+          "spread",
+          "speed",
+          "color",
+          "time_s"
+        ],
+        "suggested_path": "src/library/creatures/FishSchool.ts"
+      },
+      {
+        "proposed_id": "bird-flock-v1",
+        "description": "Instanced flapping birds with a controllable altitude offset and flap rate.",
+        "reusable_in": "Sky, migration and ecology scenes.",
+        "parameters": [
+          "count",
+          "seed",
+          "spread",
+          "flapRate",
+          "sink",
+          "time_s"
+        ],
+        "suggested_path": "src/library/creatures/BirdFlock.ts"
+      },
+      {
+        "proposed_id": "humanoid-figure-v1",
+        "description": "Procedural articulated human figure for respectful mid-distance and silhouette shots with joint-angle poses.",
+        "reusable_in": "Any human-scale impact shot.",
+        "parameters": [
+          "height",
+          "coatColor",
+          "skinColor",
+          "pose"
+        ],
+        "suggested_path": "src/library/characters/Humanoid.ts"
+      },
+      {
+        "proposed_id": "airliner-v1",
+        "description": "Procedural unbranded twin-engine airliner with engine glow and time-gated contrails.",
+        "reusable_in": "Aviation, atmosphere, weather and travel topics.",
+        "parameters": [
+          "length",
+          "accentColor",
+          "engineGlow",
+          "contrailWindow",
+          "time_s"
+        ],
+        "suggested_path": "src/library/vehicles/Airliner.ts"
+      },
+      {
+        "proposed_id": "caption-kinetic-v1",
+        "description": "Word-timed burned-in caption renderer with safe-area layout and emphasis treatments.",
+        "reusable_in": "Every video in the studio.",
+        "parameters": [
+          "fontSize",
+          "maxCharsPerLine",
+          "safeArea",
+          "accentColor",
+          "emphasis"
+        ],
+        "suggested_path": "src/library/captions/KineticCaptions.ts"
+      },
+      {
+        "proposed_id": "film-pipeline-v1",
+        "description": "Deterministic frame renderer: storyboard keyframe camera rig, bloom, grade, grain, dissolves and 2D overlay compositing.",
+        "reusable_in": "Every video in the studio.",
+        "parameters": [
+          "bloom",
+          "exposure",
+          "grain",
+          "vignette",
+          "transition"
+        ],
+        "suggested_path": "src/library/render/FilmPipeline.ts"
+      },
+      {
+        "proposed_id": "audio-synth-kit-v1",
+        "description": "Procedural pad, noise, filter and reverb toolkit for original music beds and sound effects.",
+        "reusable_in": "Every video's soundtrack.",
+        "parameters": [
+          "sampleRate",
+          "seed",
+          "chords",
+          "cueTimes"
+        ],
+        "suggested_path": "src/library/audio/synth.mjs"
+      }
+    ],
+    "shot_specific_assets": [
+      "Windowsill candle set with bokeh city, brass barometer, molecule sample box, bloodstream schematic, campfire set and the oxygen status chip remain story-specific compositions."
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "What would really happen if the world lost its oxygen for five seconds?",
+    "core_keywords": [
+      "what if earth lost oxygen for 5 seconds",
+      "no oxygen for five seconds",
+      "what if oxygen disappeared",
+      "oxygen in the air explained",
+      "air pressure drop",
+      "would we survive without oxygen",
+      "fire needs oxygen",
+      "science what if"
+    ],
+    "distinctive_angle": "A physically careful version of a famous thought experiment: only the oxygen gas in the air vanishes, so people and fish cope, while flames, engines, wings and power grids take the hit.",
+    "seo_integrity_note": "Do not repeat viral claims that buildings crumble, oceans vanish or eardrums explode; keep 'could' for aircraft and blackouts and state that only oxygen gas in the air is removed."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 5.2,
+      "narration": {
+        "text": "What if all the oxygen in the air vanished, for just five seconds?",
+        "start_s": 0.3,
+        "end_s": 4.67,
+        "delivery_note": "Quiet curiosity; the flame dies on 'vanished'."
+      },
+      "viewer_question": "What just happened to that flame?",
+      "visual_payoff": "A candle flame snaps out mid-sentence while every electric light in the city behind it keeps glowing.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 5.2,
+          "shot_type": "macro candle on a windowsill at blue hour",
+          "world": "Interior windowsill, units in metres. Sill top at y=0; ivory pillar candle (radius 0.035, height 0.09) at the origin; window glass at z=-0.25; out-of-focus city lights 80–300 m beyond under a blue-hour sky.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 22,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0.1,
+                  0.19,
+                  0.86
+                ],
+                "look_at": [
+                  0,
+                  0.1,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 5.2,
+                "position": [
+                  0.04,
+                  0.165,
+                  0.72
+                ],
+                "look_at": [
+                  0,
+                  0.105,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow 14 cm push-in with a slight drift left; flame stays in the upper-middle of frame.",
+            "lens_notes": "22° vertical FOV macro-portrait; city lights render as soft bokeh discs."
+          },
+          "subjects": [
+            {
+              "id": "candle",
+              "kind": "other",
+              "appearance": "Ivory pillar candle with a softly translucent glowing rim, dark curved wick and a small melt pool",
+              "geometry_and_material": "Lathe/cylinder wax body with physical material and a flame-driven emissive gradient; tube wick with emissive ember tip.",
+              "scale_and_accuracy": "True scale: 7 cm wide, 9 cm tall.",
+              "movement": "Wax glow follows flame intensity; ember tip fades over about 2.5 s after extinction."
+            },
+            {
+              "id": "flame",
+              "kind": "particle_system",
+              "appearance": "Calm teardrop flame, blue base, pale yellow core, amber tip",
+              "geometry_and_material": "Billboard flame shader with gentle noise sway plus a shadow-casting warm point light.",
+              "scale_and_accuracy": "About 4.5 cm tall.",
+              "movement": "Steady flicker until 2.30 s, then collapses in about 0.15 s; a smoke ribbon rises from the wick afterwards.",
+              "asset_hint": "candidate:flame-v1 and candidate:smoke-wisp-v1"
+            },
+            {
+              "id": "city_bokeh",
+              "kind": "architecture",
+              "appearance": "Warm and cool window lights of distant towers as overlapping soft discs",
+              "geometry_and_material": "Seeded additive point sprites laid out as tower window grids; gradient sky dome.",
+              "scale_and_accuracy": "Towers 80–300 m away; lights stay on because electricity already in the wires does not need oxygen.",
+              "movement": "Very slight shimmer only.",
+              "asset_hint": "candidate:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "0.0–2.3 s flame burns steadily, warm light on sill, matchbox and window frame.",
+            "2.30 s oxygen vanishes: flame collapses within 0.15 s, warm light dies, ember tip glows, status chip switches to O₂ 0%.",
+            "2.5–5.2 s a thin smoke ribbon rises and curls; the city bokeh is unchanged."
+          ],
+          "lighting": "Flame point light as key (warm, flickering), cool blue-hour skylight through the window as fill.",
+          "effects": [
+            "Subtle bloom on the flame",
+            "Fine film grain",
+            "Faint flame reflection in the window glass"
+          ],
+          "composition_notes": "Flame at about 42% from the top; captions sit over the candle body with a soft gradient; status chip near y≈300."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "vanished",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "five seconds",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 2.25,
+          "duration_s": 1.4,
+          "kind": "whoosh",
+          "description": "Soft inward breath of air as the flame dies; the pad thins to one note.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.4,
+        "motivation": "Rising smoke dissolves into the thin glowing line of Earth's atmosphere."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 5.2,
+      "end_s": 12.5,
+      "narration": {
+        "text": "Oxygen makes up about a fifth of the air. Take it away, and the whole atmosphere instantly thins.",
+        "start_s": 5.5,
+        "end_s": 12.3,
+        "delivery_note": "Measured and clear; slight pause before 'Take it away'."
+      },
+      "viewer_question": "How much of the air is actually oxygen?",
+      "visual_payoff": "Above the real curve of the Earth, a sample of 100 air molecules loses its 21 oxygen molecules in a blink and the atmospheric glow dims.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 5.2,
+          "end_s": 12.5,
+          "shot_type": "orbital limb view with molecular schematic",
+          "world": "Low-orbit style view; Earth radius = 1 unit with NASA Blue Marble day map, clouds and atmospheric rim; sunlit limb crossing the lower half of frame. A schematic sample box (0.56 × 0.56 × 0.3 units) floats above the limb.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 5.2,
+                "position": [
+                  -0.25,
+                  0,
+                  4.3
+                ],
+                "look_at": [
+                  0,
+                  1.2,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 12.5,
+                "position": [
+                  0.25,
+                  0.08,
+                  4
+                ],
+                "look_at": [
+                  0,
+                  1.26,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow lateral drift and gentle approach; the horizon stays near 58% of frame height.",
+            "lens_notes": "30° vertical FOV; Earth larger than the frame so the limb reads as a gently curved horizon."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Sunlit oceans, continents and real cloud systems with a thin blue atmospheric rim",
+              "geometry_and_material": "Sphere with NASA day/cloud textures, ocean glint from a land mask and a Fresnel atmosphere shell.",
+              "scale_and_accuracy": "Radius 1 unit; atmosphere rim thickness visually exaggerated only by glow.",
+              "movement": "Slow rotation; clouds drift slightly faster.",
+              "asset_hint": "candidate:earth-globe-v1 with candidate:earth-textures-nasa-v1"
+            },
+            {
+              "id": "air_sample",
+              "kind": "diagram",
+              "appearance": "100 drifting molecules: 78 slate-blue N₂ pairs, 21 coral O₂ pairs, 1 pale argon atom, inside a faint glass frame",
+              "geometry_and_material": "Instanced dumbbell and sphere meshes with soft emissive shading; thin frame lines.",
+              "scale_and_accuracy": "Counts follow real mole fractions; sizes and spacing are schematic and labelled NOT TO SCALE.",
+              "movement": "Gentle deterministic drift; at 8.7 s the 21 O₂ pairs shrink to nothing in 0.2 s."
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse, faint stars above the limb",
+              "geometry_and_material": "Seeded point starfield.",
+              "scale_and_accuracy": "Dimmed because the sunlit Earth dominates exposure.",
+              "movement": "Static.",
+              "asset_hint": "candidate:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "5.2–8.6 s molecules drift; label reads N₂ 78 · O₂ 21 · Ar 1.",
+            "8.7 s ('away') all O₂ pairs vanish; label switches to O₂ 0; atmospheric rim glow drops about 20%.",
+            "9–12.5 s the remaining 79 molecules keep drifting in a visibly emptier box."
+          ],
+          "lighting": "Single sun key from camera right; night side falls to deep navy.",
+          "effects": [
+            "Label: SCHEMATIC • 100 AIR MOLECULES • NOT TO SCALE",
+            "Soft bloom on the limb"
+          ],
+          "composition_notes": "Sample box in the upper-middle; limb and captions share the lower half with captions over dark ocean."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "a fifth of the air",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "instantly thins",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 8.65,
+          "duration_s": 1.2,
+          "kind": "texture",
+          "description": "Soft glassy shimmer as the oxygen molecules disappear.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02",
+        "CL12"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.4,
+        "motivation": "From the whole atmosphere down to one instrument at sea level."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 12.5,
+      "end_s": 20.7,
+      "narration": {
+        "text": "Air pressure would plunge by about a fifth. Sea level would suddenly feel like a mountain, two kilometers high.",
+        "start_s": 12.85,
+        "end_s": 20.37,
+        "delivery_note": "Gentle confidence; let 'two kilometers high' land slowly."
+      },
+      "viewer_question": "What does losing a fifth of the air do?",
+      "visual_payoff": "A brass barometer needle drops from 1013 to about 800 hPa, then a glowing contour climbs a distant mountain to the 2,000 m line where that pressure normally lives.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 12.5,
+          "end_s": 20.7,
+          "shot_type": "seaside barometer to mountain tilt",
+          "world": "Seaside promenade at low golden sun, units in metres. Stone promenade and railing along the x axis at z≈1.5, open sea beyond (z<0), a 2.6 km-high massif across the bay about 9 km away. Brass aneroid barometer on a post at (-0.45, 1.45, 1.6).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 12.5,
+                "position": [
+                  -0.2,
+                  1.5,
+                  3
+                ],
+                "look_at": [
+                  -7.2,
+                  0.4,
+                  -36.3
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 16,
+                "position": [
+                  -0.12,
+                  1.55,
+                  3.15
+                ],
+                "look_at": [
+                  -7.7,
+                  0.8,
+                  -36
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 20.7,
+                "position": [
+                  0.6,
+                  1.75,
+                  3.4
+                ],
+                "look_at": [
+                  0,
+                  9.5,
+                  -40
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Hold on the barometer (look-at points are far targets along the line of sight to the dial), then pan right and tilt up to follow the contour climbing the mountain.",
+            "lens_notes": "40° vertical FOV at human eye level."
+          },
+          "subjects": [
+            {
+              "id": "barometer",
+              "kind": "other",
+              "appearance": "Weathered brass aneroid barometer with a cream dial marked 780–1040 hPa and a dark needle",
+              "geometry_and_material": "Torus bezel and cylinder body in brass PBR, canvas-textured dial, thin needle, glass disc.",
+              "scale_and_accuracy": "32 cm dial; needle moves from 1013 hPa to about 800 hPa, the derived pressure after oxygen removal.",
+              "movement": "Needle swings down over 0.5 s at 13.7 s with a small damped overshoot."
+            },
+            {
+              "id": "sea_and_sky",
+              "kind": "water",
+              "appearance": "Calm sea with low-sun glitter under a clear sky that dims slightly",
+              "geometry_and_material": "Wave-normal ocean shader and gradient sky dome with adjustable scattering.",
+              "scale_and_accuracy": "Sky brightness falls about 20% at 13.7 s (derived Rayleigh estimate); stays blue.",
+              "movement": "Slow swell; sky dimming is a single subtle step.",
+              "asset_hint": "candidate:ocean-surface-v1 and candidate:sky-dome-v1"
+            },
+            {
+              "id": "massif",
+              "kind": "terrain",
+              "appearance": "Forested lower slopes, bare rock and a snow-dusted summit in warm side light",
+              "geometry_and_material": "Seeded fractal heightfield with altitude/slope colouring and distance haze; emissive altitude contour in the shader.",
+              "scale_and_accuracy": "Summit about 2,600 m, 9 km away; contour altitude is physically measured in scene metres.",
+              "movement": "Glowing contour rises from 0 m at 16.2 s to about 1,950 m at 19.6 s.",
+              "asset_hint": "candidate:terrain-massif-v1"
+            }
+          ],
+          "animation_plan": [
+            "12.5–13.6 s barometer rests at 1013 hPa.",
+            "13.7 s ('plunge') needle drops to about 800 hPa; sky dims slightly; chip shows O₂ 0%.",
+            "16.2–19.6 s camera tilts up as an amber contour climbs the massif and stops at the 2,000 m line.",
+            "19.6–20.7 s label holds: ≈ 2,000 m • SAME AIR PRESSURE."
+          ],
+          "lighting": "Low warm sun from camera left, cool sky fill, soft haze toward the mountain.",
+          "effects": [
+            "Label: PRESSURE EQUIVALENT • SCHEMATIC CONTOUR",
+            "Numeric callouts 1013 hPa → ≈800 hPa"
+          ],
+          "composition_notes": "Barometer fills the middle of frame first; mountain and contour end in the upper half, captions over sea."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "plunge by about a fifth",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "two kilometers high",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 13.65,
+          "duration_s": 1.5,
+          "kind": "impact",
+          "description": "Soft, low pressure thump with a faint airy drop; not a loud hit.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL03",
+        "CL12"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut along the same promenade to the person standing beside the barometer."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "human_impact",
+      "start_s": 20.7,
+      "end_s": 29.9,
+      "narration": {
+        "text": "Your ears would pop, hard. But you wouldn't suffocate. Your blood already carries enough oxygen to ride out those seconds.",
+        "start_s": 21.05,
+        "end_s": 29.5,
+        "delivery_note": "Wince gently on 'hard', then reassure."
+      },
+      "viewer_question": "Would five seconds without oxygen kill us?",
+      "visual_payoff": "A person on the promenade flinches and reaches for an ear, then stands steady as a schematic glow shows oxygen still circulating in the blood.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 20.7,
+          "end_s": 29.9,
+          "shot_type": "human-scale three-quarter back view",
+          "world": "Same promenade, metres. One adult (1.72 m) stands at (0.9, 0, 2.2) by the railing, seen three-quarters from behind against the sea, mountain and low sun.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 20.7,
+                "position": [
+                  2.6,
+                  1.5,
+                  6.6
+                ],
+                "look_at": [
+                  0.55,
+                  1.3,
+                  2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 29.9,
+                "position": [
+                  1.9,
+                  1.52,
+                  5.4
+                ],
+                "look_at": [
+                  0.6,
+                  1.32,
+                  2
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow push-in of about 1.4 m toward the figure.",
+            "lens_notes": "30° vertical FOV portrait; no facial close-up."
+          },
+          "subjects": [
+            {
+              "id": "resident",
+              "kind": "human",
+              "appearance": "Adult in a long coat, rim-lit by the low sun, face turned to the sea",
+              "geometry_and_material": "Procedural articulated figure with matte cloth and skin materials.",
+              "scale_and_accuracy": "1.72 m tall; reaction is discomfort, not injury.",
+              "movement": "21.9 s shoulders flinch and right hand rises to the ear; 23.4 s hand lowers; 24–29.9 s calm breathing.",
+              "asset_hint": "candidate:humanoid-figure-v1"
+            },
+            {
+              "id": "bloodstream",
+              "kind": "diagram",
+              "appearance": "Warm coral points flowing from the chest through head, arms and legs inside the silhouette",
+              "geometry_and_material": "Additive particles advected along body-fitted spline loops.",
+              "scale_and_accuracy": "Schematic, not anatomy; represents roughly one litre of O₂ already bound in blood.",
+              "movement": "Fades in at 25.3 s and circulates continuously."
+            },
+            {
+              "id": "coast",
+              "kind": "water",
+              "appearance": "Sea, railing, promenade stone and the hazy massif",
+              "geometry_and_material": "Shared coast set.",
+              "scale_and_accuracy": "Same environment as S03 with the slightly dimmer sky.",
+              "movement": "Slow swell.",
+              "asset_hint": "candidate:ocean-surface-v1, candidate:terrain-massif-v1"
+            }
+          ],
+          "animation_plan": [
+            "20.7–21.8 s the figure stands relaxed.",
+            "21.9–23.3 s flinch, hand to ear ('pop, hard').",
+            "23.4–25.2 s hand lowers, a steadying breath ('wouldn't suffocate').",
+            "25.3–29.9 s bloodstream schematic glows inside the silhouette with callout ≈ 1 L O₂ IN YOUR BLOOD."
+          ],
+          "lighting": "Low sun rim light from behind-left, cool fill from the sky.",
+          "effects": [
+            "Label: SCHEMATIC • OXYGEN ALREADY IN THE BLOOD",
+            "Gentle bloom on the schematic"
+          ],
+          "composition_notes": "Figure right of centre, sea and mountain to the left; captions over the promenade stone."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "pop, hard",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "wouldn't suffocate",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 21.9,
+          "duration_s": 1.6,
+          "kind": "texture",
+          "description": "Dull ear-pop thud followed by a faint, brief high ringing.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "The warm glow in the body dissolves into the glow of a campfire."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 29.9,
+      "end_s": 36.2,
+      "narration": {
+        "text": "Fire is another story. Every flame that feeds on air would go out at once.",
+        "start_s": 30.35,
+        "end_s": 35.69,
+        "delivery_note": "Lower and slower; a beat of silence after 'at once'."
+      },
+      "viewer_question": "What happens to fire?",
+      "visual_payoff": "A crackling campfire between two friends vanishes in a blink, leaving only red embers, moonlight and a rising puff of smoke.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 29.9,
+          "end_s": 36.2,
+          "shot_type": "night campfire with two seated figures",
+          "world": "Lakeside clearing at night, metres. Stone-ringed campfire at the origin, two adults seated on log stumps in the foreground at (-0.48, 0, 1.6) and (0.5, 0, 1.6) with backs toward camera, dark conifers and a starry sky behind.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 29.9,
+                "position": [
+                  0.4,
+                  1.35,
+                  5.2
+                ],
+                "look_at": [
+                  0,
+                  0.8,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 36.2,
+                "position": [
+                  0.15,
+                  1.28,
+                  4.7
+                ],
+                "look_at": [
+                  0,
+                  0.7,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow 50 cm push-in between the two silhouettes.",
+            "lens_notes": "34° vertical FOV; figures frame the fire as partial silhouettes."
+          },
+          "subjects": [
+            {
+              "id": "campfire",
+              "kind": "particle_system",
+              "appearance": "Layered orange flames about 0.9 m high over crossed logs with glowing ember cracks and rising sparks",
+              "geometry_and_material": "Several flame billboards with different seeds, spark points, ember-shader logs, stone ring, flickering shadow-casting point light.",
+              "scale_and_accuracy": "True scale small campfire.",
+              "movement": "Burns until 34.6 s, collapses within 0.25 s; embers keep a dim red glow; a smoke puff rises.",
+              "asset_hint": "candidate:flame-v1 and candidate:smoke-wisp-v1"
+            },
+            {
+              "id": "campers",
+              "kind": "human",
+              "appearance": "Two seated adults in jackets, warm fire light on their edges, then cool moonlit silhouettes",
+              "geometry_and_material": "Procedural articulated figures in seated poses.",
+              "scale_and_accuracy": "Human scale; calm surprise only.",
+              "movement": "One leans back slightly and both lift their heads after the flames vanish.",
+              "asset_hint": "candidate:humanoid-figure-v1"
+            },
+            {
+              "id": "night_setting",
+              "kind": "vegetation",
+              "appearance": "Conifer silhouettes, sandy ground, faint stars",
+              "geometry_and_material": "Instanced cone trees, noise-shaded ground plane, starfield and night sky dome.",
+              "scale_and_accuracy": "Trees 8–14 m tall, 12–30 m away.",
+              "movement": "Static apart from light flicker.",
+              "asset_hint": "candidate:starfield-v1, candidate:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "29.9–34.5 s fire crackles, sparks rise, light flickers on ground and figures.",
+            "34.6 s ('go out') flames collapse; warm light drops to a faint ember glow; chip shows O₂ 0%.",
+            "34.9–36.2 s smoke rises in moonlight; campers react quietly."
+          ],
+          "lighting": "Fire point light as key, cool moonlight directional fill that remains after the flames die.",
+          "effects": [
+            "Bloom on flames and embers",
+            "Sparks",
+            "Smoke puff"
+          ],
+          "composition_notes": "Fire in the centre-upper area, silhouettes in lower corners, captions over the ground between them."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Every flame",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "at once",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 30,
+          "duration_s": 4.5,
+          "kind": "ambience",
+          "description": "Campfire crackle that stops dead when the flames vanish.",
+          "relative_db": -20
+        },
+        {
+          "at_s": 34.6,
+          "duration_s": 1.5,
+          "kind": "silence",
+          "description": "Sudden hush: crackle gone, only a faint night breeze.",
+          "relative_db": -30
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "From a dead campfire to the engines that are fires too."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "escalation",
+      "start_s": 36.2,
+      "end_s": 44.6,
+      "narration": {
+        "text": "Jet engines would flame out. Airliners would sag in the thinner air, gliding until those engines could relight.",
+        "start_s": 36.55,
+        "end_s": 44.28,
+        "delivery_note": "Even and factual; stress 'could'."
+      },
+      "viewer_question": "What about everything that flies?",
+      "visual_payoff": "An airliner's twin contrails stop dead behind it, leaving a growing gap, as the aircraft settles lower in the thinner air.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 36.2,
+          "end_s": 44.6,
+          "shot_type": "air-to-air long-lens rear quarter view",
+          "world": "Cruise altitude above a broken cloud deck at golden hour, metres. Reference frame moves with the aircraft: a 38 m twin-engine airliner near the origin heading -z, cloud tops about 1,500 m below scrolling past.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 36.2,
+                "position": [
+                  -60,
+                  26,
+                  112
+                ],
+                "look_at": [
+                  0,
+                  -2,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 44.6,
+                "position": [
+                  -52,
+                  20,
+                  100
+                ],
+                "look_at": [
+                  0,
+                  -6,
+                  -4
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Formation drift slightly closer and lower; the camera does not fully follow the aircraft's sink.",
+            "lens_notes": "30° vertical FOV from about 130 m; contrails run toward the lower-left of frame."
+          },
+          "subjects": [
+            {
+              "id": "airliner",
+              "kind": "other",
+              "appearance": "Unbranded white twin-engine airliner with a teal tail, low sun glinting on fuselage and wings",
+              "geometry_and_material": "Procedural lathe fuselage, extruded swept wings and tail, lathe nacelles, clearcoat paint, emissive exhaust discs.",
+              "scale_and_accuracy": "About 38 m long, 36 m span; sink of roughly 12 m over 3.5 s is consistent with about 23% less lift.",
+              "movement": "Level until 37.9 s; then exhaust glow dies; from 39.8 s it settles about 12 m with a slight nose-down pitch.",
+              "asset_hint": "candidate:airliner-v1"
+            },
+            {
+              "id": "contrails",
+              "kind": "particle_system",
+              "appearance": "Two white condensation trails that end abruptly where the engines stopped burning",
+              "geometry_and_material": "Ribbon meshes whose opacity is gated by each point's emission time.",
+              "scale_and_accuracy": "Illustrative; the gap grows at a slowed scene airspeed so it stays readable in frame.",
+              "movement": "Trail stops forming at 37.9 s; the gap behind the engines widens for the rest of the shot."
+            },
+            {
+              "id": "cloud_deck",
+              "kind": "clouds",
+              "appearance": "Sunlit cloud tops with warm highlights and blue shadows to the horizon",
+              "geometry_and_material": "Fractal cloud-top shader plane with scrolling coordinates and a sky dome.",
+              "scale_and_accuracy": "About 1,500 m below the aircraft.",
+              "movement": "Scrolls backward to convey forward flight.",
+              "asset_hint": "candidate:cloud-deck-v1, candidate:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "36.2–37.8 s steady cruise with two full contrails.",
+            "37.9 s ('flame out') exhaust glow dies and contrails stop forming.",
+            "39.8–43.3 s ('sag') the aircraft sinks about 12 m; label AIR ≈ 23% THINNER appears.",
+            "43.3–44.6 s silent glide continues."
+          ],
+          "lighting": "Low golden sun ahead-right as key, blue sky fill, warm bounce from cloud tops.",
+          "effects": [
+            "Label: ILLUSTRATIVE • RELIGHT NOT GUARANTEED",
+            "Light atmospheric haze"
+          ],
+          "composition_notes": "Aircraft in the upper-middle, contrails leading to the lower-left, captions over cloud deck."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "flame out",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "could relight",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 36.3,
+          "duration_s": 4,
+          "kind": "ambience",
+          "description": "Distant jet whine that winds down to wind noise after the flame-out.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "From metal wings to living ones."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "second_order_effect",
+      "start_s": 44.6,
+      "end_s": 53.4,
+      "narration": {
+        "text": "Birds would dip mid-flight. But underwater, fish would hardly notice. The oxygen dissolved in the sea stays put.",
+        "start_s": 44.95,
+        "end_s": 53.08,
+        "delivery_note": "Light, almost amused relief on 'hardly notice'."
+      },
+      "viewer_question": "Does anything escape the five seconds?",
+      "visual_payoff": "Gulls sink in suddenly thin air, then the camera drops beneath the waves where a fish school glides through sunbeams, completely undisturbed.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 44.6,
+          "end_s": 47.4,
+          "shot_type": "telephoto gulls over the bay",
+          "world": "Same coast, metres. Nine gulls fly away to the right 60–85 m from camera at 14–18 m altitude over the sea with the hazy massif behind.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 24,
+            "keyframes": [
+              {
+                "t_s": 44.6,
+                "position": [
+                  -2,
+                  1.7,
+                  5
+                ],
+                "look_at": [
+                  3,
+                  16,
+                  -60
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 47.4,
+                "position": [
+                  -2,
+                  1.7,
+                  5
+                ],
+                "look_at": [
+                  4,
+                  6,
+                  -60
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Tilt down with the dipping flock toward the water.",
+            "lens_notes": "24° vertical FOV long lens."
+          },
+          "subjects": [
+            {
+              "id": "gulls",
+              "kind": "animal",
+              "appearance": "White-grey gulls with dark wingtips, backlit by low sun",
+              "geometry_and_material": "Instanced bird meshes with shader wing flapping.",
+              "scale_and_accuracy": "Wingspan about 1.3 m; dip of 4–5 m is illustrative of about 23% less lift.",
+              "movement": "Glide and flap; from 45.6 s they sink about 5 m and flap faster.",
+              "asset_hint": "candidate:bird-flock-v1"
+            },
+            {
+              "id": "bay",
+              "kind": "water",
+              "appearance": "Glittering sea and distant mountain",
+              "geometry_and_material": "Shared coast set.",
+              "scale_and_accuracy": "Same environment as S03.",
+              "movement": "Slow swell.",
+              "asset_hint": "candidate:ocean-surface-v1"
+            }
+          ],
+          "animation_plan": [
+            "44.6–45.5 s flock cruises level.",
+            "45.6–47.4 s ('dip') birds sink and flap harder while the camera tilts down toward the sea surface."
+          ],
+          "lighting": "Low warm sun, backlit wings.",
+          "effects": [
+            "Light haze"
+          ],
+          "composition_notes": "Flock in the upper-middle, descending toward centre; captions over sea."
+        },
+        {
+          "id": "SH02",
+          "start_s": 47.4,
+          "end_s": 53.4,
+          "shot_type": "underwater reef drift",
+          "world": "Shallow coastal water, metres. Surface at y=0 seen from below, rocky and sandy floor at about y=-9 with seagrass, sun shafts slanting through blue-green water, a school of about 180 small silver fish.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 47.4,
+                "position": [
+                  0,
+                  -2,
+                  6
+                ],
+                "look_at": [
+                  0,
+                  -2.6,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 53.4,
+                "position": [
+                  0.8,
+                  -4.6,
+                  3.5
+                ],
+                "look_at": [
+                  0,
+                  -4.3,
+                  -3
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Sink and glide forward into the school.",
+            "lens_notes": "46° vertical FOV, wide underwater feel."
+          },
+          "subjects": [
+            {
+              "id": "fish_school",
+              "kind": "animal",
+              "appearance": "Small silver fish flashing as they turn together",
+              "geometry_and_material": "Instanced fish with shader tail motion on deterministic school paths.",
+              "scale_and_accuracy": "Fish about 21 cm long; behaviour unchanged by the event.",
+              "movement": "Calm continuous schooling from right to left.",
+              "asset_hint": "candidate:fish-school-v1"
+            },
+            {
+              "id": "underwater_volume",
+              "kind": "water",
+              "appearance": "Rippling silver surface overhead, soft sun shafts, caustic light on sand, drifting particles, swaying seagrass",
+              "geometry_and_material": "Surface shader from below, additive ray cones, caustic floor shader, point particles, instanced grass blades.",
+              "scale_and_accuracy": "About 9 m deep; no change during the event because dissolved oxygen remains.",
+              "movement": "Slow sway and shimmer.",
+              "asset_hint": "candidate:underwater-volume-v1"
+            }
+          ],
+          "animation_plan": [
+            "47.4–48.2 s bubbles from the plunge clear.",
+            "48.2–53.4 s the school crosses frame through the light shafts; label DISSOLVED OXYGEN • UNCHANGED fades in at 50.1 s."
+          ],
+          "lighting": "Sunlight refracted from above, blue-green volumetric falloff.",
+          "effects": [
+            "Light shafts",
+            "Caustics",
+            "Marine snow particles"
+          ],
+          "composition_notes": "School across the middle; captions over darker lower water."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "hardly notice",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "stays put",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 47.35,
+          "duration_s": 5.5,
+          "kind": "ambience",
+          "description": "Muffled underwater calm with soft bubbles after a gentle plunge.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL08",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Blue water darkens into the night around the dead campfire."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "twist",
+      "start_s": 53.4,
+      "end_s": 63.3,
+      "narration": {
+        "text": "Then the oxygen rushes back. Hot embers flare to life again. But power plants that lost their flames could stay dark for hours.",
+        "start_s": 53.75,
+        "end_s": 63.02,
+        "delivery_note": "Relief first, then a quieter, serious turn on 'But'."
+      },
+      "viewer_question": "Does everything simply restart?",
+      "visual_payoff": "Embers roar back into flame on their own, but from orbit patches of city lights fade out across the night side of the Earth.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 53.4,
+          "end_s": 58.4,
+          "shot_type": "low campfire reignition",
+          "world": "Same campfire clearing, metres, seen lower and closer from between the two campers: glowing embers in the stone ring, the campers' shoulders framing the shot.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 53.4,
+                "position": [
+                  0.1,
+                  0.85,
+                  4.4
+                ],
+                "look_at": [
+                  0,
+                  0.45,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 58.4,
+                "position": [
+                  0.05,
+                  0.8,
+                  3.6
+                ],
+                "look_at": [
+                  0,
+                  0.6,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow low push toward the embers.",
+            "lens_notes": "30° vertical FOV near ground level."
+          },
+          "subjects": [
+            {
+              "id": "embers_and_flames",
+              "kind": "particle_system",
+              "appearance": "Red embers that brighten to orange and erupt into full flames with a burst of sparks",
+              "geometry_and_material": "Shared campfire set; ember emissive and flame intensity driven by the oxygen state.",
+              "scale_and_accuracy": "Reignition of hot embers is plausible; timing is illustrative.",
+              "movement": "Embers brighten at 55.2 s, flames return between 56.3 and 57.0 s.",
+              "asset_hint": "candidate:flame-v1"
+            },
+            {
+              "id": "campers",
+              "kind": "human",
+              "appearance": "Two seated figures re-lit by the returning fire",
+              "geometry_and_material": "Shared procedural figures.",
+              "scale_and_accuracy": "Human scale.",
+              "movement": "Small relieved shift of posture.",
+              "asset_hint": "candidate:humanoid-figure-v1"
+            }
+          ],
+          "animation_plan": [
+            "53.4–55.1 s dim red embers under moonlight.",
+            "55.2 s ('back') chip returns to O₂ 21%; embers brighten.",
+            "56.3–57.0 s ('flare') flames erupt with sparks; warm light returns to the campers."
+          ],
+          "lighting": "Moonlight fill, ember glow, then full fire key.",
+          "effects": [
+            "Bloom",
+            "Spark burst"
+          ],
+          "composition_notes": "Embers centre-upper; captions over foreground ground."
+        },
+        {
+          "id": "SH02",
+          "start_s": 58.4,
+          "end_s": 63.3,
+          "shot_type": "orbital night side with dimming city lights",
+          "world": "Earth radius = 1 unit, night side over Europe and North Africa with NASA Black Marble city lights, faint clouds and a thin dawn limb at the top of frame.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 58.4,
+                "position": [
+                  0,
+                  0.6,
+                  2.6
+                ],
+                "look_at": [
+                  0,
+                  0.45,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 63.3,
+                "position": [
+                  0.2,
+                  0.75,
+                  2.35
+                ],
+                "look_at": [
+                  0,
+                  0.5,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow drift closer over the night side.",
+            "lens_notes": "30° vertical FOV; curved limb near the top of frame."
+          },
+          "subjects": [
+            {
+              "id": "night_earth",
+              "kind": "planet",
+              "appearance": "Dark continents traced by golden city lights; patches fade out region by region",
+              "geometry_and_material": "Shared Earth with night-light texture and a noise-masked outage parameter.",
+              "scale_and_accuracy": "Real light distribution; the outage pattern is illustrative and labelled.",
+              "movement": "Outage fraction rises from 0 to about 0.6 between 59.2 and 62.6 s.",
+              "asset_hint": "candidate:earth-globe-v1 with candidate:earth-textures-nasa-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Clear stars above the limb",
+              "geometry_and_material": "Shared starfield.",
+              "scale_and_accuracy": "Qualitative.",
+              "movement": "Static.",
+              "asset_hint": "candidate:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "58.4–59.1 s full city lights.",
+            "59.2–62.6 s lights fade patch by patch ('could stay dark').",
+            "62.6–63.3 s hold on the darker continent."
+          ],
+          "lighting": "Night side with a thin cold dawn rim.",
+          "effects": [
+            "Label: ILLUSTRATIVE • GRID IMPACT UNCERTAIN",
+            "Soft bloom on city lights"
+          ],
+          "composition_notes": "Limb in the top quarter, city lights across the middle, captions over dark sea."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "rushes back",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "dark for hours",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 55.1,
+          "duration_s": 2.4,
+          "kind": "whoosh",
+          "description": "Soft inrush of air, then the fire's crackle returns.",
+          "relative_db": -20
+        },
+        {
+          "at_s": 59,
+          "duration_s": 3.5,
+          "kind": "music_swell",
+          "description": "Low pad swell that sinks as the lights fade.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL10",
+        "CL11"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "The darkened continent dissolves into the darkened city behind the candle."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 63.3,
+      "end_s": 72,
+      "narration": {
+        "text": "Five seconds without oxygen wouldn't end the world. It would show us how much of it still runs on fire.",
+        "start_s": 63.75,
+        "end_s": 71.06,
+        "delivery_note": "Unhurried and warm; let 'fire' land with the match."
+      },
+      "viewer_question": "So what would five seconds really cost us?",
+      "visual_payoff": "At the same windowsill the candle is still out and half the city is dark; a struck match brings the flame back on the word 'fire'.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 63.3,
+          "end_s": 72,
+          "shot_type": "return to the candle and relight",
+          "world": "Same windowsill as S01, metres. Candle unlit, cool blue-hour light, roughly a third of the city bokeh lights now dark.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 22,
+            "keyframes": [
+              {
+                "t_s": 63.3,
+                "position": [
+                  0,
+                  0.16,
+                  0.7
+                ],
+                "look_at": [
+                  0,
+                  0.105,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 72,
+                "position": [
+                  0.1,
+                  0.19,
+                  0.86
+                ],
+                "look_at": [
+                  0,
+                  0.1,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow pull-back that ends exactly on the opening camera position.",
+            "lens_notes": "Same 22° macro framing as the hook for a seamless loop."
+          },
+          "subjects": [
+            {
+              "id": "candle",
+              "kind": "other",
+              "appearance": "Unlit ivory candle, cold wick",
+              "geometry_and_material": "Shared candle set.",
+              "scale_and_accuracy": "True scale; a small wick is assumed too cool to reignite on its own.",
+              "movement": "Still until relit."
+            },
+            {
+              "id": "match",
+              "kind": "other",
+              "appearance": "Long wooden match with a small bright flame entering from the right",
+              "geometry_and_material": "Thin wooden stick, charred head, small flame billboard and light.",
+              "scale_and_accuracy": "About 17 cm long match; the hand stays out of frame.",
+              "movement": "Enters at 68.9 s, touches the wick at 70.4 s, withdraws by 71.3 s.",
+              "asset_hint": "candidate:flame-v1"
+            },
+            {
+              "id": "city_bokeh",
+              "kind": "architecture",
+              "appearance": "The same bokeh city with dark gaps where lights have gone out",
+              "geometry_and_material": "Shared seeded sprites with an outage fraction.",
+              "scale_and_accuracy": "Illustrative echo of the grid disruption.",
+              "movement": "Static."
+            }
+          ],
+          "animation_plan": [
+            "63.3–68.8 s cold candle before the partly dark city.",
+            "68.9–70.3 s a lit match glides in from the right.",
+            "70.4 s ('fire') the wick catches; the candle flame grows to full height by 71.0 s; warm light returns.",
+            "71.0–72.0 s hold on the lit candle at the opening framing."
+          ],
+          "lighting": "Cool window light, then match and candle as warm key.",
+          "effects": [
+            "Subtle bloom",
+            "Fine film grain"
+          ],
+          "composition_notes": "Flame returns at the same screen position as frame 0; captions over the candle body."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "wouldn't end the world",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "runs on fire",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 68.9,
+          "duration_s": 1.6,
+          "kind": "texture",
+          "description": "Match strike and soft flare as the candle catches.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL10",
+        "CL11",
+        "CL13"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Hard loop to the opening frame on the relit flame."
+      }
+    }
+  ],
+  "delivery": {
+    "video_output": "output/oxygen-gone-five-seconds.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  }
+}
