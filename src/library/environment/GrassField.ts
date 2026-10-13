@@ -51,7 +51,7 @@ export class GrassField {
     blade.setAttribute('aOff', new THREE.InstancedBufferAttribute(offs, 4));
     blade.setAttribute('aMisc', new THREE.InstancedBufferAttribute(misc, 4));
     this.u = {
-      uTime: { value: 0 }, uBend: { value: 0.25 }, uDir: { value: new THREE.Vector2(0, 1) }, uGust: { value: 0.35 }, uGustSpeed: { value: 4 },
+      uTime: { value: 0 }, uGrow: { value: 1 }, uBend: { value: 0.25 }, uDir: { value: new THREE.Vector2(0, 1) }, uGust: { value: 0.35 }, uGustSpeed: { value: 4 },
       uBase: { value: new THREE.Color(o.baseColor ?? 0x2d3f1c) }, uTip: { value: new THREE.Color(o.tipColor ?? 0x8fa556) }, uDry: { value: new THREE.Color(o.dryColor ?? 0xb3a06a) },
       uFlower: { value: new THREE.Color(o.flowerColor ?? 0xe58fb4) },
       uSunDir: { value: (o.sunDirection ?? new THREE.Vector3(0.4, 0.6, -0.5)).clone().normalize() }, uSunColor: { value: new THREE.Color(o.sunColor ?? 0xfff0d8) },
@@ -61,11 +61,11 @@ export class GrassField {
       side: THREE.DoubleSide, fog: false, uniforms: this.u,
       vertexShader: /* glsl */ `
         attribute vec4 aOff; attribute vec4 aMisc;
-        uniform float uTime, uBend, uGust, uGustSpeed; uniform vec2 uDir;
+        uniform float uTime, uGrow, uBend, uGust, uGustSpeed; uniform vec2 uDir;
         varying float vV; varying float vSeed; varying float vFlower; varying vec3 vP; varying vec3 vN;
         ${GLSL_NOISE}
         void main(){
-          float v = position.y, h = aOff.w, yaw = aMisc.x;
+          float v = position.y, h = aOff.w*clamp(uGrow*1.5 - aMisc.y*0.5, 0.0, 1.0), yaw = aMisc.x;
           vV = v; vSeed = aMisc.y; vFlower = aMisc.z;
           float w = aMisc.w * (1.0 - pow(v, 1.6)) * (1.0 + aMisc.z*0.6*smoothstep(0.8, 1.0, v));
           vec2 base = aOff.xz;
@@ -111,6 +111,9 @@ export class GrassField {
     this.u.uSunDir.value.copy(sunDirection).normalize(); this.u.uSunColor.value.set(sunColor); this.u.uSky.value.set(skyColor);
     if (fogColor !== undefined) this.u.uFogColor.value.set(fogColor);
   }
+
+  /** Growth 0..1 for sprouting time-lapses: blades rise from the ground in a staggered order (1 = full height, default). */
+  set growth(v: number) { this.u.uGrow.value = v; this.mesh.visible = v > 0.001; }
 
   update(time_s: number, wind: GrassWind) {
     this.u.uTime.value = time_s; this.u.uBend.value = wind.bend; this.u.uDir.value.copy(wind.direction).normalize();

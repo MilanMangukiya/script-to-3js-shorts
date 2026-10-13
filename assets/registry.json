@@ -40,7 +40,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_code; textures NASA public domain (see earth-textures-nasa-v1)",
       "notes": "Radius 1 unit by default. Load textures once with loadEarthTextures(base). setView(lon, lat) turns a geographic point toward +Z; update(time_s) is linear in time. scatter scales the limb glow (1 = normal air). Added for ice-sank-instead-of-floating: optional seaIce texture (earth-seaice-mask-nasa-v1) and a seaIce 0..1 setter; default 0 leaves earlier videos unchanged."
@@ -66,7 +67,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "public_domain_nasa",
       "notes": "Built by scripts/build_earth_textures.py (py -3.14, numpy + Pillow) from asset-sources/raw. Credit requested by NASA: NASA Earth Observatory / NASA GSFC Blue Marble (R. Stockli), Black Marble 2016 (J. Stevens, M. Roman), land mask derived from GEBCO_08 via NASA EO. Provenance and hashes: asset-sources/sources.lock.json. A companion sea-ice mask now lives beside these files (see earth-seaice-mask-nasa-v1)."
@@ -96,7 +98,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
       "notes": "Static by design; call follow(camera) each frame. Sprite sizes are authored in pixels for 1080-wide output."
@@ -207,7 +210,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
       "notes": "Set sunIntensity and sunGlow to 0 for night or blue-hour skies. Pair the sun direction with a DirectionalLight."
@@ -246,7 +250,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
       "notes": "Keep horizon and zenith colours in step with the scene sky dome. No vertex displacement, so avoid extreme close-ups of the surface."
@@ -282,7 +287,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
       "notes": "mesh.position.y is the base (sea) level. terrain.peak gives the summit in mesh-local coordinates for framing. Uses scene fog for aerial perspective."
@@ -484,7 +490,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
       "notes": "Faces +Z, origin at the feet. Stylised: avoid facial close-ups. Exposes head, chestAnchor and hand anchors for effects. air-pressure-doubled added empty gear anchors (back, waist, feet) and a guard in reachArm for a pole parallel to the reach direction (previously NaN)."
@@ -551,17 +558,19 @@
         "stroke",
         "strokeWidth",
         "backdrop",
-        "emphasis"
+        "emphasis",
+        "cues()"
       ],
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_code",
-      "notes": "Feed it word timings from tools/narrate.mjs (real synthesized audio aligned with local Whisper), never guessed timings."
+      "notes": "Feed it word timings from tools/narrate.mjs (real synthesized audio aligned with local Whisper), never guessed timings. cues() returns the displayed phrases and their times; tools/transcript.mjs uses it so output SRT/TXT files match the burned-in captions."
     },
     {
       "id": "film-pipeline-v1",
@@ -599,7 +608,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_code",
       "notes": "Workflow for a new story: add src/stories/<slug>/film.ts (createFilm) and register it in src/entry.ts; then run node tools/narrate.mjs stories/<slug>.json, node tools/soundtrack.mjs <slug>, node tools/render.mjs <slug> --frames a,b,c for smoke frames and --final for the MP4. ffmpeg and ffprobe come from the ffmpeg-static and ffprobe-static npm packages. air-pressure-doubled added a sanitize pass before bloom that zeroes NaN/Inf scene pixels so a single bad pixel cannot bloom into a black block; valid pixels are unchanged."
@@ -627,7 +637,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_code",
       "notes": "For smooth pans between a near and a far subject, author look_at points at similar distances along the line of sight."
@@ -662,7 +673,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_code",
       "notes": "Use projectToScreen() from film-pipeline-v1 to anchor labels to 3D points."
@@ -698,7 +710,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_code",
       "notes": "Story cues live in src/stories/<slug>/soundtrack.mjs (export buildSoundtrack(duration) returning {music, sfx}); tools/soundtrack.mjs mixes them under the narration and loudness-normalises to the storyboard target."
@@ -728,7 +741,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_code",
       "notes": "Companion file: src/library/util/math.ts."
@@ -751,7 +765,8 @@
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
-        "oxygen-gone-five-seconds"
+        "oxygen-gone-five-seconds",
+        "rain-nonstop-everywhere"
       ],
       "license": "SIL Open Font License 1.1",
       "notes": "Inter by Rasmus Andersson, copied from the @fontsource/inter npm package; licence text in assets/library/fonts/Inter-OFL.txt. Glyphs outside the Latin subset fall back to the system font."
@@ -782,14 +797,16 @@
         "seed",
         "sink",
         "bubbleAge",
-        "time_s"
+        "time_s",
+        "setWaterLevel(level)"
       ],
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
-        "ice-sank-instead-of-floating"
+        "ice-sank-instead-of-floating",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
-      "notes": "Units are metres. Needs scene.environment (for example sky-dome-v1 toEnvironment) for convincing reflections; glass and water use three.js physical transmission, so objects behind them must be opaque to appear refracted."
+      "notes": "Units are metres. Needs scene.environment (for example sky-dome-v1 toEnvironment) for convincing reflections; glass and water use three.js physical transmission, so objects behind them must be opaque to appear refracted. setWaterLevel(level), added for rain-nonstop-everywhere, rebuilds the water to the glass taper for filling or draining shots; radius = baseRadius gives a straight measuring cylinder."
     },
     {
       "id": "water-molecules-v1",
@@ -899,10 +916,11 @@
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
         "air-pressure-doubled",
-        "ice-sank-instead-of-floating"
+        "ice-sank-instead-of-floating",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
-      "notes": "Move points.position to keep the volume around the camera. Sprite sizes are authored for 1080-wide output."
+      "notes": "Move points.position to keep the volume around the camera. Sprite sizes are authored for 1080-wide output. A negative fallSpeed makes particles rise (used as illustrative evaporation over the sea in rain-nonstop-everywhere)."
     },
     {
       "id": "conifer-stand-v1",
@@ -1030,7 +1048,8 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
-        "moon-made-of-ice"
+        "moon-made-of-ice",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
       "notes": "Additive; keep gain low over bright backdrops. Disc size is in pixels for 1080-wide output."
@@ -1129,7 +1148,8 @@
       "created_for": "air-pressure-doubled",
       "used_in": [
         "air-pressure-doubled",
-        "moon-made-of-ice"
+        "moon-made-of-ice",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
       "notes": "value is a plain setter, so drive it from a deterministic function of time. Clockwise = increasing, scale centred on 12 o'clock."
@@ -1281,15 +1301,17 @@
         "wind.gust",
         "wind.gustSpeed",
         "setLight()",
-        "time_s"
+        "time_s",
+        "growth"
       ],
       "created_for": "air-pressure-doubled",
       "used_in": [
         "air-pressure-doubled",
-        "moon-made-of-ice"
+        "moon-made-of-ice",
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
-      "notes": "Doubling wind.bend shows a wind that pushes twice as hard (small-angle approximation). Grass does not receive shadows; the ground under it does."
+      "notes": "Doubling wind.bend shows a wind that pushes twice as hard (small-angle approximation). Grass does not receive shadows; the ground under it does. growth 0..1 (default 1), added for rain-nonstop-everywhere, raises blades in a staggered order for sprouting time-lapses; a noise-based reject gives sparse tufts."
     },
     {
       "id": "sailboat-v1",
@@ -1528,6 +1550,191 @@
       ],
       "license": "original_procedural",
       "notes": "Designed for cinematic macro views; gait is illustrative."
+    },
+    {
+      "id": "rain-v1",
+      "name": "Rain streaks, splash rings and rain shafts",
+      "type": "three_component",
+      "created_for": "rain-nonstop-everywhere",
+      "used_in": [
+        "rain-nonstop-everywhere"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/fx/Rain.ts",
+      "description": "Deterministic rain kit. Rain: instanced camera-facing streaks stretched along each drop's velocity, fixed in world space and recycled in a box around the camera; intensity reveals anything from a few drops to a steady fall. RainSplashes: expanding splash rings on puddles, a glass of water or a wet table. RainShaft: soft distant rain curtains hanging from a cloud base.",
+      "tags": [
+        "rain",
+        "weather",
+        "drizzle",
+        "storm",
+        "splash",
+        "particles",
+        "fx"
+      ],
+      "configurable_parameters": [
+        "count",
+        "seed",
+        "box",
+        "fallSpeed",
+        "wind",
+        "streakLength",
+        "width",
+        "minPx",
+        "heightPx",
+        "color",
+        "brightness",
+        "opacity",
+        "groundY",
+        "near",
+        "far",
+        "intensity",
+        "time_s",
+        "RainSplashes: size|radius, cell, period, life, ringScale, lineWidth, color, opacity, seed, intensity",
+        "RainShaft: width, height, color, opacity, fallSpeed, seed"
+      ],
+      "notes": "Call update(time_s, camera) every frame; positions are a pure function of time. The streak material is double-sided because the quad's screen winding flips with the fall direction. For readable drizzle at 1080×1920 use width ≈ 2 mm, opacity ≈ 0.45, fallSpeed ≈ 4 m/s, streakLength ≈ 0.25 m; heavier rain: more drops, longer streaks."
+    },
+    {
+      "id": "dune-field-v1",
+      "name": "Procedural sand dune sea",
+      "type": "three_component",
+      "created_for": "rain-nonstop-everywhere",
+      "used_in": [
+        "rain-nonstop-everywhere"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/environment/DuneField.ts",
+      "description": "Seeded heightfield of asymmetric transverse dunes (gentle windward slopes, steep slip faces) with shader wind ripples and close-up sand grains. wetness turns on raindrop spots that merge into dark, glossy soaked sand; greening spreads patchy vegetation tint from the interdune hollows. heightAt(x, z) returns the mesh height for cameras and props.",
+      "tags": [
+        "desert",
+        "sand",
+        "dunes",
+        "sahara",
+        "terrain",
+        "rain",
+        "greening"
+      ],
+      "configurable_parameters": [
+        "size",
+        "segments",
+        "seed",
+        "height",
+        "wavelength",
+        "windDeg",
+        "flatRadius",
+        "floor",
+        "sandColor",
+        "greenColor",
+        "rippleWavelength",
+        "wetness",
+        "greening",
+        "heightAt(x, z)"
+      ],
+      "notes": "flatRadius keeps a flat y = 0 area around the origin for macro shots; dunes reach full height beyond about 2.6 × flatRadius. Built on MeshStandardMaterial (onBeforeCompile), so scene lights and fog apply. On Intel/ANGLE, grazing macro shots have poor depth precision: keep camera near ≥ 1 cm and draw decals on the sand in the opaque pass without a depth test."
+    },
+    {
+      "id": "cloud-ceiling-v1",
+      "name": "Overcast cloud base seen from below",
+      "type": "three_component",
+      "created_for": "rain-nonstop-everywhere",
+      "used_in": [
+        "rain-nonstop-everywhere"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/environment/CloudCeiling.ts",
+      "description": "Large horizontal plane at the cloud-base altitude with warped fractal density: dark where thick, bright where thin, a silver lining toward the sun and haze toward the horizon. coverage opens gaps onto the sky dome; setGap clears a soft, sunlit break at a world position.",
+      "tags": [
+        "clouds",
+        "overcast",
+        "sky",
+        "weather",
+        "rain",
+        "storm"
+      ],
+      "configurable_parameters": [
+        "size",
+        "altitude",
+        "scale",
+        "coverage",
+        "darkColor",
+        "lightColor",
+        "hazeColor",
+        "hazeDensity",
+        "sunDirection",
+        "sunColor",
+        "sunGlow",
+        "seed",
+        "setGap(x, z, r, strength)",
+        "time_s",
+        "scrollX",
+        "scrollZ"
+      ],
+      "notes": "Pair with sky-dome-v1: gaps and the far haze reveal the dome. Transparent with renderOrder -50; give the camera a far plane that covers the cloud distance you want to see."
+    },
+    {
+      "id": "overcast-shell-v1",
+      "name": "Planet-wide cloud shell",
+      "type": "three_component",
+      "created_for": "rain-nonstop-everywhere",
+      "used_in": [
+        "rain-nonstop-everywhere"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/planet/OvercastShell.ts",
+      "description": "Sphere of slowly drifting fractal cloud for planets: coverage grows from scattered patches to one unbroken overcast deck, sunlit with billow shading on the day side and dark at night.",
+      "tags": [
+        "clouds",
+        "planet",
+        "earth",
+        "venus",
+        "overcast",
+        "atmosphere",
+        "space"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "scale",
+        "coverage",
+        "color",
+        "shadowColor",
+        "sunDirection",
+        "seed",
+        "time_s"
+      ],
+      "notes": "Add to the planet group at about 1.006–1.01 × the planet radius. With earth-globe-v1, raise Earth.scatter as coverage grows so the blue limb still reads as Earth."
+    },
+    {
+      "id": "solar-panel-array-v1",
+      "name": "Ground-mounted solar panel array",
+      "type": "three_component",
+      "created_for": "rain-nonstop-everywhere",
+      "used_in": [
+        "rain-nonstop-everywhere"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/props/SolarPanelArray.ts",
+      "description": "Rows of tilted photovoltaic panels with a canvas-drawn cell grid (silver busbars on dark blue cells), clearcoat glass, aluminium frames, rails and steel posts. wetness makes the glass glossier so it mirrors the sky.",
+      "tags": [
+        "solar",
+        "energy",
+        "panels",
+        "electricity",
+        "infrastructure",
+        "prop"
+      ],
+      "configurable_parameters": [
+        "rows",
+        "cols",
+        "panelSize",
+        "tilt",
+        "rowSpacing",
+        "gap",
+        "clearance",
+        "cellColor",
+        "frameColor",
+        "wetness"
+      ],
+      "notes": "The group origin is the centre of the array on the ground and panels face +Z. Give the scene an environment map (for example SkyDome.toEnvironment) for convincing reflections."
     }
   ]
 }

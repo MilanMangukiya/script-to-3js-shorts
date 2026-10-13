@@ -10,7 +10,7 @@ Act simultaneously as (1) rigorous science researcher, (2) viral short-form docu
 Do not stop after the JSON and do not ask for permission between parts: go straight from Part A to Part C. Follow `CLAUDE.md` (Claude Code) or `AGENTS.md` (Codex); they are binding. **Where to run:** Claude Code or Codex inside this repository (it needs file access, Node.js, the local Kokoro/Whisper models and the bundled FFmpeg). If you are running without repository access, you can only do Part A: output the raw JSON and state in one line that Parts B–C need Claude Code or Codex.
 
 ## USER INPUT (replace the values on each use)
-TOPIC: "What if the Moon were made entirely of ice?"
+TOPIC: "What if it rained nonstop everywhere on Earth for a year?"
 OPTIONAL_CREATIVE_ANGLE: "CREATIVE"
 OPTIONAL_FOCUS: "HUMAN AND NATURE IMPACT"
 OPTIONAL_DURATION_SECONDS: "{{DURATION_OR_AUTO}}"  # 45..90 inclusive
@@ -127,4 +127,4 @@ Use the repository's existing pipeline and library; `CLAUDE.md` / `AGENTS.md` an
 Only after the MP4 passes its checks and the finalizer succeeds, reply with **one line: the absolute path to `output/<slug>.mp4`** (the `.srt` and `.txt` sit next to it). Nothing else. If a required step fails, reply with only the one real blocker; never claim a video that was not rendered.
 
 ## TOPIC TO GENERATE NOW
-What if the Moon were made entirely of ice?
+What if it rained nonstop everywhere on Earth for a year?

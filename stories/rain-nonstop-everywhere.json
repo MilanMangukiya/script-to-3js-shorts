@@ -1,0 +1,2200 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if it rained nonstop everywhere on Earth for a year?",
+    "title": "What If It Rained Nonstop Everywhere for a Year?",
+    "slug": "rain-nonstop-everywhere",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 75,
+    "language": "en",
+    "audience": "Curious global general audiences age 13+, no science background",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If gentle rain fell everywhere on Earth without a break for a whole year, which places would win, which would lose, and could the rain keep itself going?",
+    "viewer_takeaway": "Rain is recycled water lifted by sunlight, so nonstop rain everywhere would be a gentle drizzle of about a meter a year: deserts could green, rainforests would get less, farms and solar panels would suffer, and the clouds would block the very sunlight that powers the rain."
+  },
+  "scientific_model": {
+    "baseline_reality": "Today rain is patchy in space and time: about two thirds of Earth is under cloud at any moment, deserts such as the central Sahara get only millimetres to a few centimetres a year, and rainforests get two to ten metres. The atmosphere holds only about 12,900 km³ of water, enough for 2.5 cm of rain over the whole globe, so rain must be constantly recycled by evaporation, which uses about a quarter of the sunlight reaching Earth.",
+    "counterfactual_change": "From one day on and for one year, every place on Earth is under a continuous rain-bearing cloud deck and gentle rain falls without a break. Physics is unchanged: the total amount of rain is still limited by the energy available to evaporate water, so the global yearly total stays about the same (about a metre) but is spread evenly in space and time. At the poles and high mountains it falls as snow.",
+    "assumptions": [
+      "The water cycle keeps its present strength at first: evaporation uses about 25% of incoming sunlight (NASA), which corresponds to roughly 1.1 m of water per year averaged over the globe; spread evenly this is about 3 mm a day, or about 0.12 mm an hour.",
+      "Rain falls everywhere at the same gentle rate; where temperatures are below freezing it falls as snow (Antarctica, Greenland, high mountains).",
+      "Geography, oceans and the composition of the air are unchanged; the film follows first-year consequences and does not claim a final climate state.",
+      "How such a planet-wide cloud deck could arise is not addressed; it is the thought experiment."
+    ],
+    "causal_chain": [
+      "The atmosphere holds only about 2.5 cm of rain, so year-long rain must be recycled by evaporation from the oceans and land.",
+      "Evaporation is powered by sunlight and uses about a quarter of it, which limits global rainfall to roughly a metre a year.",
+      "Spread evenly, every place gets about 3 mm a day: a gentle drizzle rather than a flood.",
+      "Deserts such as the Sahara get dozens of times their usual rain and could begin to green, as the Sahara did during the African Humid Period about 11,000–5,000 years ago.",
+      "Rainforests, which normally get 2–10 m a year, would get less rain than now.",
+      "Farms lose dry days for ripening and harvest, so grain can mould or sprout; solar panels produce less under constant cloud.",
+      "A cloud deck everywhere reflects more sunlight, so less energy reaches the surface to evaporate water and the rain would likely weaken over time."
+    ],
+    "uncertainties": [
+      "Whether an unbroken global cloud deck could exist at all is not established; the film treats it as a premise.",
+      "The net effect of total cloud cover on temperature depends on cloud height and thickness (clouds reflect sunlight but also trap heat at night); the direction of the rain weakening is plausible but its size is not quantified.",
+      "How fast desert vegetation would respond in a single year is uncertain; the film says the Sahara could start to green, not that it would become a savanna.",
+      "Regional responses (soils, rivers, ecosystems) would vary widely and are shown only as examples."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "The atmosphere holds about 12,900 km³ of water at any one time; if it all fell at once it would cover the globe only about 2.5 cm deep.",
+        "confidence": "established",
+        "reasoning": "USGS Water Science School, The Atmosphere and the Water Cycle.",
+        "presentation_guardrail": "Say \"two and a half centimeters\"; the air column is labelled schematic and not to scale."
+      },
+      {
+        "id": "CL02",
+        "statement": "About 67 percent of Earth's surface is typically covered by clouds.",
+        "confidence": "established",
+        "reasoning": "NASA Earth Observatory (Cloudy Earth), from about a decade of MODIS satellite data.",
+        "presentation_guardrail": "Show as an approximate chip on the TODAY view."
+      },
+      {
+        "id": "CL03",
+        "statement": "Rainfall is very unevenly spread: much of the Sahara gets almost no rain; Egypt, for example, received only 18 mm in all of 2017, against 3,240 mm in Colombia.",
+        "confidence": "established",
+        "reasoning": "USGS Water Science School, Precipitation and the Water Cycle.",
+        "presentation_guardrail": "Use \"bone dry\" and \"dozens of times\" rather than a single exact multiplier."
+      },
+      {
+        "id": "CL04",
+        "statement": "Spread evenly, Earth's yearly rain would be roughly 1.1 m everywhere, about 3 mm a day or about 0.12 mm an hour, a gentle drizzle.",
+        "confidence": "derived",
+        "reasoning": "NASA: about 25% of incoming solar energy (340 W/m² average) leaves the surface through evaporation, about 85 W/m²; divided by the latent heat of vaporisation (2.45 MJ/kg) this is about 1,100 kg/m² of water a year; 1.1 m / 365 ≈ 3 mm per day.",
+        "presentation_guardrail": "Narrate \"about a meter\" and \"about three millimeters a day\"; label as a global average."
+      },
+      {
+        "id": "CL05",
+        "statement": "Rain is powered by sunlight: evaporation takes about a quarter of incoming solar energy, and the latent heat is released when the vapour condenses back into rain.",
+        "confidence": "established",
+        "reasoning": "NASA Earth Observatory, Climate and Earth's Energy Budget.",
+        "presentation_guardrail": "Show vapour as labelled illustrative rising specks."
+      },
+      {
+        "id": "CL06",
+        "statement": "Roughly 11,000 to 5,000 years ago, during the African Humid Period, the Sahara was much wetter and greener, with vegetation, wetlands and perhaps large lakes.",
+        "confidence": "established",
+        "reasoning": "NASA Earth Observatory, Water for a Desert Lake in Algeria.",
+        "presentation_guardrail": "Narrate \"some eight thousand years ago\" (inside that period); show the period range on screen."
+      },
+      {
+        "id": "CL07",
+        "statement": "With about a metre of rain in a year, much of the Sahara could begin to green, starting with grasses and annual plants in hollows.",
+        "confidence": "plausible",
+        "reasoning": "Desert annuals and grasses germinate quickly after rain; sustained rain far above today's totals favours vegetation, as during the African Humid Period.",
+        "presentation_guardrail": "Say \"could turn green\"; label the greening time-lapse illustrative and partial."
+      },
+      {
+        "id": "CL08",
+        "statement": "Rainforests typically receive 2,000 to 10,000 mm of rain a year, so an even metre would mean less rain for them.",
+        "confidence": "derived",
+        "reasoning": "The NASA rainforest biome page gives 2,000–10,000 mm a year; an even 1.1 m is less than every value in that range.",
+        "presentation_guardrail": "Narrate \"two meters or more\"; the gauge comparison is a schematic."
+      },
+      {
+        "id": "CL09",
+        "statement": "Excessive rain and delayed harvest give mould more time to grow on grain, raise mycotoxins and can make grain sprout before harvest.",
+        "confidence": "established",
+        "reasoning": "Ohio State University Extension, Wet Weather, Potential Wheat Harvest Delays, and Grain Quality (2023).",
+        "presentation_guardrail": "Say \"can rot\"; show soaked wheat, not spoiled food close-ups."
+      },
+      {
+        "id": "CL10",
+        "statement": "Clouds hamper solar panels' ability to produce electricity.",
+        "confidence": "established",
+        "reasoning": "U.S. Department of Energy, Office of Science.",
+        "presentation_guardrail": "Use an illustrative gauge without a percentage."
+      },
+      {
+        "id": "CL11",
+        "statement": "A cloud deck covering the whole planet would reflect more sunlight, leaving less energy at the surface to evaporate water, so the rain would likely weaken over time.",
+        "confidence": "plausible",
+        "reasoning": "Clouds reflect a large share of sunlight (NASA) and evaporation depends on absorbed surface energy (CL05); the size of the effect depends on cloud type and is not modelled.",
+        "presentation_guardrail": "Narrate \"would slowly weaken\"; label LIKELY · EXACT EFFECT UNCERTAIN."
+      },
+      {
+        "id": "CL12",
+        "statement": "Where temperatures stay below freezing, such as Antarctica and high mountains, the precipitation would fall as snow, not rain.",
+        "confidence": "derived",
+        "reasoning": "Precipitation below 0 °C falls as snow.",
+        "presentation_guardrail": "On-screen tag only."
+      }
+    ],
+    "sources": [
+      {
+        "name": "USGS Water Science School — The Atmosphere and the Water Cycle",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/science/atmosphere-and-water-cycle",
+        "supports_claim_ids": [
+          "CL01"
+        ]
+      },
+      {
+        "name": "USGS Water Science School — Precipitation and the Water Cycle",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/science/precipitation-and-water-cycle",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "NASA Earth Observatory — Cloudy Earth",
+        "url": "https://science.nasa.gov/earth/earth-observatory/cloudy-earth-85843",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "NASA Earth Observatory — Climate and Earth's Energy Budget",
+        "url": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget",
+        "supports_claim_ids": [
+          "CL04",
+          "CL05",
+          "CL11"
+        ]
+      },
+      {
+        "name": "NASA Earth Observatory — Water for a Desert Lake in Algeria",
+        "url": "https://science.nasa.gov/?p=1079671",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "name": "NASA Science — Rainforest biome",
+        "url": "https://science.nasa.gov/kids/earth/mission-biomes/biorainforest",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      },
+      {
+        "name": "Ohio State University Extension — Wet Weather, Potential Wheat Harvest Delays, and Grain Quality",
+        "url": "https://agcrops.osu.edu/newsletter/corn-newsletter/2023-21/wet-weather-potential-wheat-harvest-delays-and-grain-quality",
+        "supports_claim_ids": [
+          "CL09"
+        ]
+      },
+      {
+        "name": "U.S. Department of Energy — 5 Ways to Get Sunshine on a Cloudy Day",
+        "url": "https://www.energy.gov/science/articles/5-ways-get-sunshine-cloudy-day",
+        "supports_claim_ids": [
+          "CL10"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "One raindrop hits the driest sand on Earth, and we follow a planet of nonstop drizzle from the Sahara to the sea, a rain gauge, a wheat field and a solar farm, until the clouds starve the rain of the sunlight that drives it.",
+    "visual_identity": "Soft, silvery documentary realism: wet sand, pewter skies, glassy water and muted greens, with warm amber only for sunlight and the final sunrise. Schematics are clean and calm.",
+    "palette": [
+      "pewter sky #8C96A3",
+      "wet sand #8A6F4E",
+      "dry sand #D9BF8C",
+      "sea slate #2F4A5C",
+      "new-grass green #7FA857",
+      "sunlight amber #FFC37A",
+      "caption amber #FFB45C"
+    ],
+    "lighting": "Flat, even overcast for most shots; a single gap of sunlight over the sea; harsh space sunlight for orbital views; low warm sunrise for the ending.",
+    "camera_language": "Macro raindrop to wide dunes, slow orbits from space, schematic push-downs, low glides over the sea, macro glass, low ground-level shoots, eye-level farm and solar shots, and the reverse of the opening move to close the loop.",
+    "motion_language": "Slow, deliberate moves; rain is constant but gentle; changes read as darkening, filling, greening or thinning.",
+    "world_scale_policy": "Earth-surface shots use metres at true scale (dunes up to about 15 m, wheat 0.9 m, person 1.75 m, glass 10.5 cm). Orbital shots use 1 unit = 1 Earth radius with NASA imagery. The air column and rain gauges are labelled schematics; drop sizes and vapour specks are enlarged for visibility and labelled.",
+    "emotional_arc": [
+      "curiosity",
+      "wonder",
+      "surprise",
+      "delight",
+      "unease",
+      "reflection",
+      "warm resolution"
+    ],
+    "opening_hook": "Macro of bone-dry Saharan sand: a single raindrop lands, then rain spreads across the whole dune sea as the question is asked.",
+    "ending_payoff": "Sunlight breaks through over the dunes, the rain stops, and the camera settles back on the dry sand of the first frame.",
+    "loop_connection": "The final frame is the frame-0 macro of dry sand, ready for the first drop again.",
+    "asset_policy": "Reuse the studio library first (Earth and NASA textures, starfield, sky dome, ocean surface, terrain, grass field, humanoid, glass, dial gauge, particle fall (as rising vapour), bokeh, captions, labels, camera rig, pipeline and audio kit). New rain, dune, cloud-ceiling, overcast-shell and solar-panel components are original procedural work promoted to the library."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 140,
+    "music_direction": "Sparse original pad in D minor with soft felt-piano notes like falling drops; a warm major lift for the greening Sahara; a hollow, thinning texture for the twist; resolving to D major as the sun returns.",
+    "music_level_db_below_voice": -22,
+    "sfx_direction": "Synthesized and gentle: a single drop tap, steady soft rain hiss, drizzle ticking on glass and wood, sea ambience, rain on wheat and panel glass, liquid fill sounds for the gauges, a reversed swell for the twist. No thunder or loud impacts.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Premium documentary subtitles: ivory semibold with a thin charcoal outline and soft shadow, restrained amber active word, phrase-by-phrase with a 120 ms ease; a soft dark band behind text over bright skies.",
+    "font_stack": "Inter, Manrope, system-ui, sans-serif",
+    "font_size_px": 66,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 100,
+      "right_px": 180,
+      "top_px": 230,
+      "bottom_px": 330,
+      "caption_baseline_y_px": 1370
+    },
+    "active_word_treatment": "The spoken word turns amber without moving the baseline; emphasised phrases keep a soft accent, a 1.04 scale or a gentle glow.",
+    "highlights_policy": "Exact narration only. In-scene labels are limited to TODAY / WHAT IF chips, schematic or illustrative tags and approximate numbers backed by the claim register."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.51,
+      "narration": {
+        "text": "What if it rained nonstop, everywhere on Earth, for a year?",
+        "start_s": 0.35,
+        "end_s": 4.21,
+        "delivery_note": "Hushed and curious; a small lift on \"everywhere\"."
+      },
+      "viewer_question": "What would a whole planet of nonstop rain do?",
+      "visual_payoff": "A single raindrop craters dry Saharan sand, then the camera rises to reveal rain falling across the whole dune sea.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.51,
+          "shot_type": "macro raindrop to wide dune reveal",
+          "world": "Central Sahara at dawn as heavy cloud closes in, metres, +Y up, ground y = 0 at the impact point. Dune field 400 m across with crests up to about 15 m.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0,
+                  0.12,
+                  0.16
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 1.1,
+                "position": [
+                  0,
+                  0.115,
+                  0.15
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 2.34,
+                "position": [
+                  0.3,
+                  0.4,
+                  1.2
+                ],
+                "look_at": [
+                  0.4,
+                  0.1,
+                  -0.5
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 4.51,
+                "position": [
+                  3,
+                  2.2,
+                  7
+                ],
+                "look_at": [
+                  4.5,
+                  1.2,
+                  -9.9
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Macro hold on dry rippled sand with the impact point centred; a drop lands at 0.6 s; from 1.1 s the camera rises and pulls back to a wide view of rain over the dunes.",
+            "lens_notes": "34° vertical FOV; macro start with shallow focus, ending as a natural wide."
+          },
+          "subjects": [
+            {
+              "id": "dunes",
+              "kind": "terrain",
+              "appearance": "Saharan sand dunes, dry, pale gold, darkening as the rain soaks in",
+              "geometry_and_material": "Seeded heightfield of transverse dunes with ripples; sand vertex colour, wetness darkening and lower roughness, greening blended into dune hollows.",
+              "scale_and_accuracy": "Dunes up to about 15 m high across 400 m; true scale.",
+              "movement": "Static geometry; wetness and greening animate.",
+              "asset_hint": "candidate:dune-field-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, starting with one drop",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0 → 1.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            },
+            {
+              "id": "overcast_sky",
+              "kind": "atmosphere",
+              "appearance": "Even, heavy grey overcast with a slightly brighter band near the horizon",
+              "geometry_and_material": "Camera-centred gradient dome, sun hidden, haze raised.",
+              "scale_and_accuracy": "Sky only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1"
+            },
+            {
+              "id": "first_drop",
+              "kind": "water",
+              "appearance": "One large raindrop that hits the sand and leaves a small crater with a dark wet ring",
+              "geometry_and_material": "Single sphere-to-splash mesh with a decal ring darkening the sand.",
+              "scale_and_accuracy": "Drop about 3 mm; shown in slow motion for the impact only (labelled).",
+              "movement": "Falls 0.2–0.6 s, splash 0.6–1.1 s.",
+              "asset_hint": "candidate:rain-v1"
+            }
+          ],
+          "animation_plan": [
+            "0–0.6 s dry sand ripples in soft warm dawn light under thickening cloud.",
+            "0.6 s the first drop hits at the centre; a dark ring spreads.",
+            "0.9–2.34 s more drops start falling around it; rain intensity ramps 0 → 1.",
+            "1.1–4.51 s camera rises; the dunes darken with wet sand; chip WHAT IF · NONSTOP RAIN at 1.98 s."
+          ],
+          "lighting": "Soft warm dawn light through thin cloud that turns flat and grey as the rain sets in; no direct sun disc.",
+          "effects": [
+            "Subtle depth of field in the macro",
+            "Light rain haze in the distance",
+            "Label: SLOW MOTION · FIRST DROP"
+          ],
+          "composition_notes": "Impact point centred at y≈900 px; horizon ends near y≈760 px; captions over the darker foreground sand."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "everywhere on Earth",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0,
+          "duration_s": 0.6,
+          "kind": "silence",
+          "description": "Near silence: faint dry wind.",
+          "relative_db": -32
+        },
+        {
+          "at_s": 0.6,
+          "duration_s": 0.5,
+          "kind": "impact",
+          "description": "Tiny soft tap of the first drop on sand.",
+          "relative_db": -20
+        },
+        {
+          "at_s": 1,
+          "duration_s": 3.51,
+          "kind": "ambience",
+          "description": "Rain hiss builds gently.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the widening rain from the dunes to the whole planet seen from space."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.51,
+      "end_s": 12.6,
+      "narration": {
+        "text": "Today, rain is patchy: storms come and go, and most of the Sahara stays bone dry.",
+        "start_s": 4.81,
+        "end_s": 11.01,
+        "delivery_note": "Even and observational."
+      },
+      "viewer_question": "How is rain spread around the planet today?",
+      "visual_payoff": "Earth's real, patchy clouds give way to a single grey shell wrapping the whole planet.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.51,
+          "end_s": 10.2,
+          "shot_type": "orbital view, today",
+          "world": "Space, 1 unit = 1 Earth radius (6,371 km), Earth at the origin with NASA day, night and cloud maps; sun from the right.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 4.51,
+                "position": [
+                  0,
+                  1.4,
+                  8.6
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 10.2,
+                "position": [
+                  1.9,
+                  1.2,
+                  7.9
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow orbit from left to right over Africa and the Atlantic.",
+            "lens_notes": "32° vertical FOV; the globe fills about 70% of the frame width."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Today's Earth with real patchy clouds over Africa and the Atlantic; the Sahara clear and tan",
+              "geometry_and_material": "NASA Blue Marble day map, Black Marble night lights, cloud layer, atmosphere rim.",
+              "scale_and_accuracy": "True relative proportions.",
+              "movement": "Slow spin.",
+              "asset_hint": "reuse:earth-globe-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "4.51–5.36 s chip TODAY · ≈67% CLOUD COVER.",
+            "5.36–10.2 s clouds drift; the Sahara stays clear."
+          ],
+          "lighting": "Sunlight from the right with a soft terminator on the left limb.",
+          "effects": [
+            "Atmosphere rim glow",
+            "Label: NASA IMAGERY"
+          ],
+          "composition_notes": "Earth centred at y≈820 px; chip in the top safe area; captions below the globe."
+        },
+        {
+          "id": "SH02",
+          "start_s": 10.2,
+          "end_s": 12.6,
+          "shot_type": "orbital view, everywhere overcast",
+          "world": "Same space frame; a continuous rain-cloud shell grows over the whole globe.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 10.2,
+                "position": [
+                  1.9,
+                  1.2,
+                  7.9
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 12.6,
+                "position": [
+                  3,
+                  1,
+                  7.4
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "The orbit continues while the shell closes.",
+            "lens_notes": "Same lens."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth disappearing under an even grey shell",
+              "geometry_and_material": "Same globe; clouds at full opacity.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Slow spin.",
+              "asset_hint": "reuse:earth-globe-v1"
+            },
+            {
+              "id": "overcast_shell",
+              "kind": "clouds",
+              "appearance": "Continuous grey-white cloud shell with soft billows, slightly above the surface",
+              "geometry_and_material": "Translucent sphere at 1.006 radii with animated fractal density and coverage that grows from 0 to 1.",
+              "scale_and_accuracy": "Cloud tops about 6–10 km; thickness exaggerated for visibility.",
+              "movement": "Coverage 0 → 1 during the shot.",
+              "asset_hint": "candidate:overcast-shell-v1"
+            }
+          ],
+          "animation_plan": [
+            "10.2 s chip WHAT IF · RAIN EVERYWHERE.",
+            "10.31–11.91 s the cloud shell grows from the existing clouds until it hides every coastline.",
+            "11.91–12.6 s hold on the grey planet; tag POLES: SNOW INSTEAD OF RAIN."
+          ],
+          "lighting": "Same sunlight; the grey shell is brightest on the day side.",
+          "effects": [
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Keep the globe clear of the caption band."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "rain is patchy",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "bone dry",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.51,
+          "duration_s": 8.09,
+          "kind": "music_swell",
+          "description": "Soft pad enters, cool and wide.",
+          "relative_db": -22
+        },
+        {
+          "at_s": 10.31,
+          "duration_s": 1.6,
+          "kind": "texture",
+          "description": "Low airy swell as the shell closes.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL03",
+        "CL12"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The grey planet dissolves into a schematic column of air above the ground."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 12.6,
+      "end_s": 20.85,
+      "narration": {
+        "text": "The sky holds surprisingly little water. All of it would cover Earth just two and a half centimeters deep.",
+        "start_s": 12.9,
+        "end_s": 20.25,
+        "delivery_note": "Quietly surprised on \"surprisingly little\"."
+      },
+      "viewer_question": "Where would a year of rain even come from?",
+      "visual_payoff": "A towering column of moist air condenses into a water layer only 2.5 cm deep beside a ruler.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 12.6,
+          "end_s": 20.85,
+          "shot_type": "schematic air column",
+          "world": "Schematic studio, metres, ground disc radius 3 at y = 0; a translucent air column 6 m tall stands for the whole atmosphere (about 10 km of weather); a ruler stands beside it.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 12.6,
+                "position": [
+                  0,
+                  3.4,
+                  15
+                ],
+                "look_at": [
+                  0,
+                  3,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 15.9,
+                "position": [
+                  0.5,
+                  1.5,
+                  6
+                ],
+                "look_at": [
+                  0,
+                  1,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 18.3,
+                "position": [
+                  0.3,
+                  0.13,
+                  1.45
+                ],
+                "look_at": [
+                  -0.05,
+                  0.035,
+                  0.55
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 20.85,
+                "position": [
+                  0.24,
+                  0.12,
+                  1.3
+                ],
+                "look_at": [
+                  -0.05,
+                  0.035,
+                  0.55
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Starts on the full column, then tilts and pushes down to the thin water layer at its base.",
+            "lens_notes": "30° vertical FOV; ends close on the ruler marking."
+          },
+          "subjects": [
+            {
+              "id": "air_column",
+              "kind": "diagram",
+              "appearance": "Tall translucent blue-grey column filled with faint drifting vapour specks",
+              "geometry_and_material": "Additive cylinder shell with fresnel edge and instanced vapour points.",
+              "scale_and_accuracy": "Schematic: 6 m stands for about 10 km; NOT TO SCALE.",
+              "movement": "Vapour specks sink and the column empties 15.9–18.09 s.",
+              "asset_hint": "shot-specific:air-column"
+            },
+            {
+              "id": "water_layer",
+              "kind": "water",
+              "appearance": "Thin sheet of clear water filling the base",
+              "geometry_and_material": "Transmissive disc that rises from 0 to the 2.5 cm mark.",
+              "scale_and_accuracy": "Layer drawn at true 2.5 cm against the ruler.",
+              "movement": "Rises 15.9–18.4 s.",
+              "asset_hint": "shot-specific:water-layer"
+            },
+            {
+              "id": "ruler",
+              "kind": "diagram",
+              "appearance": "Engineer ruler with a bright 2.5 cm mark",
+              "geometry_and_material": "Thin box with canvas-drawn centimetre scale.",
+              "scale_and_accuracy": "True centimetres.",
+              "movement": "Static.",
+              "asset_hint": "shot-specific:ruler"
+            }
+          ],
+          "animation_plan": [
+            "12.6–15.9 s column glows; chip ALL THE WATER IN THE SKY.",
+            "15.9–18.09 s specks rain down inside the column and the water layer rises.",
+            "18.4 s callout ≈ 2.5 CM labels the layer.",
+            "19.12–20.85 s hold close on the ruler."
+          ],
+          "lighting": "Soft studio key from the upper left, cool rim light on the column edges.",
+          "effects": [
+            "Label: SCHEMATIC · NOT TO SCALE",
+            "Faint bloom on the column rim"
+          ],
+          "composition_notes": "Column centred; the final close-up keeps the ruler mark at y≈900 px, above the captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "surprisingly little water",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "two and a half centimeters",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 15.9,
+          "duration_s": 2.5,
+          "kind": "texture",
+          "description": "Soft pattering as the column empties.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The water layer dissolves into the surface of the sea."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "mechanism",
+      "start_s": 20.85,
+      "end_s": 34.41,
+      "narration": {
+        "text": "So rain must be recycled. Sunlight lifts water from the sea, about a meter's worth every year. Spread evenly, that's a gentle drizzle: about three millimeters a day.",
+        "start_s": 21.15,
+        "end_s": 34.02,
+        "delivery_note": "Clear and explanatory; soften on \"gentle drizzle\"."
+      },
+      "viewer_question": "How much rain could actually fall?",
+      "visual_payoff": "Vapour rises from a sunlit sea into clouds that rain back down; then a glass left outside fills over a month of drizzle.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 20.85,
+          "end_s": 28.95,
+          "shot_type": "water cycle at sea",
+          "world": "Open sea, metres, +Y up, sea level y = 0; illustrative vapour specks rise from the surface, a grey cloud ceiling at about 800 m rains back down in the distance; sunlight breaks through a gap.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 20.85,
+                "position": [
+                  0,
+                  6,
+                  40
+                ],
+                "look_at": [
+                  0,
+                  12,
+                  -120
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 28.95,
+                "position": [
+                  0,
+                  11,
+                  24
+                ],
+                "look_at": [
+                  0,
+                  42,
+                  -120
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Low glide over the water while tilting up from the vapour to the clouds.",
+            "lens_notes": "36° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "sea",
+              "kind": "water",
+              "appearance": "Blue-grey sea with sun glitter under a gap in the clouds",
+              "geometry_and_material": "Analytic multi-octave wave normals with Fresnel sky reflection.",
+              "scale_and_accuracy": "Waves about 0.6 m.",
+              "movement": "Travelling swell.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            },
+            {
+              "id": "vapour",
+              "kind": "particle_system",
+              "appearance": "Faint luminous specks drifting up off the sea surface",
+              "geometry_and_material": "Additive point sprites in a box over the water, rising and drifting.",
+              "scale_and_accuracy": "Illustrative: real vapour is invisible; specks stand for it and are labelled.",
+              "movement": "Rise continuously.",
+              "asset_hint": "reuse:snowfall-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, falling from the distant cloud ceiling",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0.6.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            },
+            {
+              "id": "overcast_sky",
+              "kind": "atmosphere",
+              "appearance": "Even, heavy grey overcast with a slightly brighter band near the horizon",
+              "geometry_and_material": "Camera-centred gradient dome, sun hidden, haze raised.",
+              "scale_and_accuracy": "Sky only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "20.85 s chip SUNLIGHT POWERS EVAPORATION.",
+            "21.86–28.19 s vapour specks rise; sun glitter brightens through the gap.",
+            "25.91 s callout ≈ 1 M OF WATER A YEAR (GLOBAL AVERAGE)."
+          ],
+          "lighting": "Sun from ahead-left through a cloud gap, otherwise soft overcast.",
+          "effects": [
+            "Label: VAPOUR SHOWN ILLUSTRATIVELY",
+            "Light sea haze"
+          ],
+          "composition_notes": "Horizon starts near y≈1050 px and sinks low as the camera tilts up; rising specks lead the eye to the clouds."
+        },
+        {
+          "id": "SH02",
+          "start_s": 28.95,
+          "end_s": 34.41,
+          "shot_type": "macro glass in drizzle",
+          "world": "Garden patio, metres: a wooden table with a straight drinking glass at the origin collecting rain; drizzle falls; a hedge blurred behind.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 28.95,
+                "position": [
+                  0.25,
+                  0.1,
+                  0.38
+                ],
+                "look_at": [
+                  0,
+                  0.037,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 34.41,
+                "position": [
+                  0.2,
+                  0.09,
+                  0.31
+                ],
+                "look_at": [
+                  0,
+                  0.04,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow macro push toward the glass.",
+            "lens_notes": "30° vertical FOV, shallow depth of field."
+          },
+          "subjects": [
+            {
+              "id": "glass",
+              "kind": "other",
+              "appearance": "Clear tumbler on wet wood, water level climbing in a time-lapse",
+              "geometry_and_material": "Transmissive glass shell and water volume with a bright meniscus.",
+              "scale_and_accuracy": "Real tumbler 10.5 cm tall; collects about 3 mm of rain per day.",
+              "movement": "Water level 0 → 9 cm over the shot (time-lapse of about 30 days).",
+              "asset_hint": "reuse:glass-of-water-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, a fine drizzle",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0.35.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            },
+            {
+              "id": "table",
+              "kind": "architecture",
+              "appearance": "Weathered wooden table beaded with water",
+              "geometry_and_material": "Box planks with wet, low-roughness material.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Static.",
+              "asset_hint": "shot-specific:patio-table"
+            }
+          ],
+          "animation_plan": [
+            "28.95 s chip EVEN RAIN · ≈3 MM A DAY.",
+            "29.86–33.9 s day counter DAY 1 → DAY 30 while the water rises to about 9 cm.",
+            "33.2 s tag TIME-LAPSE."
+          ],
+          "lighting": "Soft overcast daylight from above, cool reflections on the glass.",
+          "effects": [
+            "Shallow depth of field",
+            "Label: TIME-LAPSE"
+          ],
+          "composition_notes": "Whole glass between y≈420 and y≈1250 px; the water line climbs from near its base to near the rim; counter top-left."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "recycled",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "a meter's worth every year",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "three millimeters a day",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 20.85,
+          "duration_s": 8.1,
+          "kind": "ambience",
+          "description": "Gentle sea and distant rain.",
+          "relative_db": -25
+        },
+        {
+          "at_s": 28.95,
+          "duration_s": 5.46,
+          "kind": "texture",
+          "description": "Soft drizzle ticking on glass and wood.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut from the full glass to soaked desert sand."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "human_impact",
+      "start_s": 34.41,
+      "end_s": 44.43,
+      "narration": {
+        "text": "Much of the Sahara would get dozens of times its usual rain. It could turn green again, as it was eight thousand years ago.",
+        "start_s": 34.71,
+        "end_s": 43.84,
+        "delivery_note": "Warm and wondering on \"turn green again\"."
+      },
+      "viewer_question": "What would the driest places become?",
+      "visual_payoff": "Wet dark dunes sprout a haze of green in their hollows as the rain keeps falling.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 34.41,
+          "end_s": 39.3,
+          "shot_type": "wide wet dunes",
+          "world": "Same Saharan dune field, metres, months into the rain: sand dark and wet, shallow pools in hollows.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 34.41,
+                "position": [
+                  0,
+                  6,
+                  22
+                ],
+                "look_at": [
+                  0,
+                  1,
+                  -20
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 39.3,
+                "position": [
+                  4,
+                  5,
+                  15
+                ],
+                "look_at": [
+                  0,
+                  1,
+                  -20
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow lateral drift over the dunes.",
+            "lens_notes": "38° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "dunes",
+              "kind": "terrain",
+              "appearance": "Saharan sand dunes, dark and wet, faint green in the hollows",
+              "geometry_and_material": "Seeded heightfield of transverse dunes with ripples; sand vertex colour, wetness darkening and lower roughness, greening blended into dune hollows.",
+              "scale_and_accuracy": "Dunes up to about 15 m high across 400 m; true scale.",
+              "movement": "Static geometry; wetness and greening animate.",
+              "asset_hint": "candidate:dune-field-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, steady drizzle",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0.45.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            },
+            {
+              "id": "overcast_sky",
+              "kind": "atmosphere",
+              "appearance": "Even, heavy grey overcast with a slightly brighter band near the horizon",
+              "geometry_and_material": "Camera-centred gradient dome, sun hidden, haze raised.",
+              "scale_and_accuracy": "Sky only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "34.41 s chip SAHARA · DOZENS × USUAL RAIN.",
+            "34.41–39.3 s greening spreads through the hollows (0 → 0.5)."
+          ],
+          "lighting": "Even overcast, slightly brighter than dawn.",
+          "effects": [
+            "Distant rain haze"
+          ],
+          "composition_notes": "Dune crests lead into the frame; chip top-left."
+        },
+        {
+          "id": "SH02",
+          "start_s": 39.3,
+          "end_s": 44.43,
+          "shot_type": "low macro of sprouting grass",
+          "world": "Ground level on a dune flank, metres; grass shoots sprouting between sand ripples.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 39.3,
+                "position": [
+                  2,
+                  0.6,
+                  4
+                ],
+                "look_at": [
+                  0,
+                  0.2,
+                  -3
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 44.43,
+                "position": [
+                  1,
+                  0.45,
+                  2
+                ],
+                "look_at": [
+                  0,
+                  0.2,
+                  -3
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Low push along the ground through the new shoots.",
+            "lens_notes": "32° vertical FOV, shallow focus."
+          },
+          "subjects": [
+            {
+              "id": "dunes",
+              "kind": "terrain",
+              "appearance": "Saharan sand dunes, wet with green shoots",
+              "geometry_and_material": "Seeded heightfield of transverse dunes with ripples; sand vertex colour, wetness darkening and lower roughness, greening blended into dune hollows.",
+              "scale_and_accuracy": "Dunes up to about 15 m high across 400 m; true scale.",
+              "movement": "Static geometry; wetness and greening animate.",
+              "asset_hint": "candidate:dune-field-v1"
+            },
+            {
+              "id": "grass",
+              "kind": "vegetation",
+              "appearance": "Young green grass blades rising from wet sand",
+              "geometry_and_material": "Instanced blades whose height grows from 0 to full; rain drops bend them slightly.",
+              "scale_and_accuracy": "Blades up to 15 cm; growth time-lapsed.",
+              "movement": "Grow 39.51–43.92 s.",
+              "asset_hint": "reuse:grass-field-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, drizzle",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0.45.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            }
+          ],
+          "animation_plan": [
+            "39.3 s blades begin to rise.",
+            "41.56 s overlay GREEN SAHARA · ~11,000–5,000 YEARS AGO.",
+            "42.89 s tag COULD · PARTIAL GREENING IN A YEAR."
+          ],
+          "lighting": "Soft overcast with gentle green bounce.",
+          "effects": [
+            "Shallow depth of field",
+            "Label: ILLUSTRATIVE TIME-LAPSE"
+          ],
+          "composition_notes": "Shoots fill the lower half; overlay above them."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "dozens of times",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "turn green again",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 34.41,
+          "duration_s": 10.02,
+          "kind": "ambience",
+          "description": "Soft rain on wet sand, a faint far bird call at 41 s.",
+          "relative_db": -25
+        },
+        {
+          "at_s": 39.3,
+          "duration_s": 4.1,
+          "kind": "music_swell",
+          "description": "Warm major lift in the pad.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL04",
+        "CL06",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The green shoots dissolve into the rain-gauge comparison."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 44.43,
+      "end_s": 50.91,
+      "narration": {
+        "text": "Yet rainforests, used to two meters or more a year, would actually get less.",
+        "start_s": 44.73,
+        "end_s": 50.41,
+        "delivery_note": "A gentle turn on \"Yet\"."
+      },
+      "viewer_question": "Does everywhere win from more rain?",
+      "visual_payoff": "Two rain gauges trade places: the desert's fills up while the rainforest's drains down to the same even level.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 44.43,
+          "end_s": 50.91,
+          "shot_type": "rain-gauge comparison",
+          "world": "Clean dark studio, metres: two tall measuring cylinders on a wet slate base, labelled SAHARA and RAINFOREST, each scaled so 1 m of yearly rain = 0.35 m of cylinder.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 44.43,
+                "position": [
+                  0,
+                  0.45,
+                  4.7
+                ],
+                "look_at": [
+                  0,
+                  0.21,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 50.91,
+                "position": [
+                  0.25,
+                  0.4,
+                  3.9
+                ],
+                "look_at": [
+                  0,
+                  0.18,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push with a slight drift right.",
+            "lens_notes": "30° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "gauge_sahara",
+              "kind": "diagram",
+              "appearance": "Tall clear cylinder, water rising from almost empty to the 1 m line",
+              "geometry_and_material": "Glass tumbler component stretched into a measuring cylinder; canvas scale marks.",
+              "scale_and_accuracy": "Today about 2 cm (Egypt received 18 mm in 2017) → about 1.1 m (even rain).",
+              "movement": "Fills 45.28–48.27 s.",
+              "asset_hint": "reuse:glass-of-water-v1"
+            },
+            {
+              "id": "gauge_forest",
+              "kind": "diagram",
+              "appearance": "Tall clear cylinder, water dropping from about 2.3 m to the 1 m line",
+              "geometry_and_material": "Same component.",
+              "scale_and_accuracy": "Today 2 m or more (NASA: 2–10 m a year; drawn at about 2.3 m) → about 1.1 m.",
+              "movement": "Drains 46.14–49.12 s.",
+              "asset_hint": "reuse:glass-of-water-v1"
+            },
+            {
+              "id": "even_line",
+              "kind": "diagram",
+              "appearance": "A dashed amber line across both at the even-rain level",
+              "geometry_and_material": "Line mesh with label.",
+              "scale_and_accuracy": "About 1.1 m per year.",
+              "movement": "Draws on at 48.27 s.",
+              "asset_hint": "shot-specific:even-line"
+            }
+          ],
+          "animation_plan": [
+            "44.43 s labels SAHARA (teal, TODAY ≈ 2 CM) and RAINFOREST (green, TODAY 2 M+) fade in under each cylinder.",
+            "45.28–49.12 s the desert gauge fills and the forest gauge drains to the same dashed line.",
+            "49.2 s callout SAME ≈1 M FOR EVERYONE."
+          ],
+          "lighting": "Soft top light with cool rim light on the glass.",
+          "effects": [
+            "Label: SCHEMATIC · YEARLY RAIN"
+          ],
+          "composition_notes": "Cylinders at x ≈ 390 and 690 px with their bases near y≈1120 px and labels just below; the even line sits near y≈820 px, clear of the captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "two meters or more",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "actually get less",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 45.28,
+          "duration_s": 3.84,
+          "kind": "texture",
+          "description": "Soft liquid fill and drain sounds, mirrored left and right.",
+          "relative_db": -25
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The even water line dissolves into the horizon of a rain-soaked wheat field."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "human_impact",
+      "start_s": 50.91,
+      "end_s": 61.11,
+      "narration": {
+        "text": "Farmers would lose their dry days. Grain can rot before harvest, and solar panels would dim under a sky that never clears.",
+        "start_s": 51.21,
+        "end_s": 60.61,
+        "delivery_note": "Serious but calm."
+      },
+      "viewer_question": "How would daily life change under endless rain?",
+      "visual_payoff": "A farmer stands in a drooping, rain-soaked wheat field; rows of wet solar panels sit under a grey sky while their output gauge sinks.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 50.91,
+          "end_s": 56.5,
+          "shot_type": "farmer in wet wheat",
+          "world": "Farmland, metres, +Y up: a ripe wheat field from x −30 to 30 m, a farmer at [0, 0, −2] in a jacket and hat, low hills 600 m away; drizzle.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 50.91,
+                "position": [
+                  6,
+                  1.6,
+                  8
+                ],
+                "look_at": [
+                  -1.4,
+                  1,
+                  -3.2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 56.5,
+                "position": [
+                  4,
+                  1.5,
+                  5
+                ],
+                "look_at": [
+                  -1.2,
+                  1.1,
+                  -3
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the farmer through the wheat heads.",
+            "lens_notes": "36° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "wheat",
+              "kind": "vegetation",
+              "appearance": "Golden-grey ripe wheat, heads bent and dark with water",
+              "geometry_and_material": "Instanced blades with golden tip colour and strong bend.",
+              "scale_and_accuracy": "Wheat about 0.9 m tall.",
+              "movement": "Heavy, slow sway.",
+              "asset_hint": "reuse:grass-field-v1"
+            },
+            {
+              "id": "farmer",
+              "kind": "human",
+              "appearance": "Farmer in a green waxed jacket and cap, looking up at the sky",
+              "geometry_and_material": "Capsule-and-sphere figure with matte fabric materials.",
+              "scale_and_accuracy": "1.75 m tall.",
+              "movement": "Head tilts up 51.92–53.59 s, then looks down at the wheat.",
+              "asset_hint": "reuse:humanoid-figure-v1"
+            },
+            {
+              "id": "hills",
+              "kind": "terrain",
+              "appearance": "Low green hills fading into rain haze",
+              "geometry_and_material": "Seeded terrain, no snow.",
+              "scale_and_accuracy": "About 80 m high, 600 m away.",
+              "movement": "Static.",
+              "asset_hint": "reuse:terrain-massif-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, steady",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0.5.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            },
+            {
+              "id": "overcast_sky",
+              "kind": "atmosphere",
+              "appearance": "Even, heavy grey overcast with a slightly brighter band near the horizon",
+              "geometry_and_material": "Camera-centred gradient dome, sun hidden, haze raised.",
+              "scale_and_accuracy": "Sky only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "50.91 s chip FARMS · NO DRY DAYS.",
+            "51.92–53.59 s the farmer looks up at the sky.",
+            "54.15 s tag GRAIN CAN MOULD OR SPROUT IN WET FIELDS."
+          ],
+          "lighting": "Flat grey light, no shadows, cool tint.",
+          "effects": [
+            "Rain haze",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Farmer on the right third at y≈1000 px; captions over the wheat."
+        },
+        {
+          "id": "SH02",
+          "start_s": 56.5,
+          "end_s": 61.11,
+          "shot_type": "wet solar array and output gauge",
+          "world": "Solar farm, metres: three rows of tilted panels on frames over wet grass, a weatherproof output dial on a post in the foreground.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 56.5,
+                "position": [
+                  5,
+                  2,
+                  6
+                ],
+                "look_at": [
+                  0,
+                  0.9,
+                  -2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 61.11,
+                "position": [
+                  3.5,
+                  1.6,
+                  4
+                ],
+                "look_at": [
+                  0,
+                  0.8,
+                  -2
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push along the panel rows toward the dial.",
+            "lens_notes": "34° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "panels",
+              "kind": "architecture",
+              "appearance": "Dark blue solar panels beaded with rain, grey sky reflected in the glass",
+              "geometry_and_material": "Instanced panels with a cell-grid texture, glossy wet glass and aluminium frames.",
+              "scale_and_accuracy": "Panels 1.7 × 1.0 m tilted 30°.",
+              "movement": "Static; rain droplets run down.",
+              "asset_hint": "candidate:solar-panel-array-v1"
+            },
+            {
+              "id": "output_dial",
+              "kind": "diagram",
+              "appearance": "Round dial labelled SOLAR OUTPUT with the needle sinking toward LOW",
+              "geometry_and_material": "Dial component with a steel bezel on a post.",
+              "scale_and_accuracy": "Illustrative: no exact percentage shown.",
+              "movement": "Needle drops 56.92–59.54 s.",
+              "asset_hint": "reuse:dial-gauge-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, steady",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0.5.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            },
+            {
+              "id": "overcast_sky",
+              "kind": "atmosphere",
+              "appearance": "Even, heavy grey overcast with a slightly brighter band near the horizon",
+              "geometry_and_material": "Camera-centred gradient dome, sun hidden, haze raised.",
+              "scale_and_accuracy": "Sky only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "56.5 s chip SOLAR · CLOUDS CUT OUTPUT.",
+            "56.92–59.54 s the needle sinks.",
+            "59.64 s tag ILLUSTRATIVE GAUGE."
+          ],
+          "lighting": "Flat overcast light.",
+          "effects": [
+            "Rain haze"
+          ],
+          "composition_notes": "Dial in the lower right foreground at y≈1000 px; panels behind."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "lose their dry days",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "never clears",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 50.91,
+          "duration_s": 10.2,
+          "kind": "ambience",
+          "description": "Rain on wheat and on panel glass.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL09",
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The grey sky over the panels dissolves into the grey cloud shell seen from space."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "second_order_effect",
+      "start_s": 61.11,
+      "end_s": 70.79,
+      "narration": {
+        "text": "Here's the twist: those clouds would block the sunlight that drives evaporation, so the rain itself would slowly weaken.",
+        "start_s": 61.41,
+        "end_s": 70.2,
+        "delivery_note": "A quiet reveal on \"Here's the twist\"."
+      },
+      "viewer_question": "Could endless rain keep going forever?",
+      "visual_payoff": "Sunbeams bounce off the cloud-wrapped planet back to space; at sea the rising vapour fades and the rain thins.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 61.11,
+          "end_s": 67.2,
+          "shot_type": "reflected sunlight from orbit",
+          "world": "Space, 1 unit = 1 Earth radius: the cloud-wrapped Earth at the origin, sunlight arriving from +X as schematic golden beams.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 61.11,
+                "position": [
+                  -2.6,
+                  1.2,
+                  8.2
+                ],
+                "look_at": [
+                  0.35,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 67.2,
+                "position": [
+                  -1.2,
+                  1,
+                  7.6
+                ],
+                "look_at": [
+                  0.35,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push across the night side toward the bright limb.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth under the full grey shell",
+              "geometry_and_material": "Globe plus overcast shell at full coverage.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Slow spin.",
+              "asset_hint": "reuse:earth-globe-v1"
+            },
+            {
+              "id": "overcast_shell",
+              "kind": "clouds",
+              "appearance": "Bright grey cloud tops on the day side",
+              "geometry_and_material": "Overcast shell at coverage 1.",
+              "scale_and_accuracy": "Thickness exaggerated.",
+              "movement": "Slow billowing.",
+              "asset_hint": "candidate:overcast-shell-v1"
+            },
+            {
+              "id": "sun_beams",
+              "kind": "diagram",
+              "appearance": "Golden beams that strike the cloud tops; most bounce back out",
+              "geometry_and_material": "Line ribbons with arrowheads, additive.",
+              "scale_and_accuracy": "Schematic; not literal light paths.",
+              "movement": "Beams travel in 62.4–65.07 s; reflected beams leave 64–66.67 s.",
+              "asset_hint": "shot-specific:sun-beams"
+            }
+          ],
+          "animation_plan": [
+            "61.11 s chip TWIST · CLOUDS REFLECT SUNLIGHT.",
+            "62.4–66.67 s beams arrive and bounce back to space.",
+            "65.6 s tag LESS SUNLIGHT REACHES THE SURFACE."
+          ],
+          "lighting": "Sunlight from +X; deep space black.",
+          "effects": [
+            "Label: SCHEMATIC"
+          ],
+          "composition_notes": "Globe centred-left; beams enter from the right edge above the caption band."
+        },
+        {
+          "id": "SH02",
+          "start_s": 67.2,
+          "end_s": 70.79,
+          "shot_type": "fading water cycle at sea",
+          "world": "The open-sea stage again, metres, now under unbroken overcast.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 67.2,
+                "position": [
+                  0,
+                  9,
+                  26
+                ],
+                "look_at": [
+                  0,
+                  30,
+                  -120
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 70.79,
+                "position": [
+                  0,
+                  6,
+                  34
+                ],
+                "look_at": [
+                  0,
+                  14,
+                  -120
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift back and down.",
+            "lens_notes": "36° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "sea",
+              "kind": "water",
+              "appearance": "Darker, flatter grey sea",
+              "geometry_and_material": "Ocean surface with lower glitter.",
+              "scale_and_accuracy": "Waves about 0.5 m.",
+              "movement": "Calmer swell.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            },
+            {
+              "id": "vapour",
+              "kind": "particle_system",
+              "appearance": "Fewer, fainter rising vapour specks",
+              "geometry_and_material": "Same rising point sprites, fewer and dimmer.",
+              "scale_and_accuracy": "Illustrative.",
+              "movement": "Fade 67.55–70.31 s.",
+              "asset_hint": "reuse:snowfall-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, thinning",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0.6 → 0.25.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            },
+            {
+              "id": "overcast_sky",
+              "kind": "atmosphere",
+              "appearance": "Even, heavy grey overcast with a slightly brighter band near the horizon",
+              "geometry_and_material": "Camera-centred gradient dome, sun hidden, haze raised.",
+              "scale_and_accuracy": "Sky only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "67.2 s chip LESS SUN → LESS EVAPORATION.",
+            "67.55–70.31 s the rising specks fade and the rain thins.",
+            "69.62 s tag LIKELY · EXACT EFFECT UNCERTAIN."
+          ],
+          "lighting": "Dim, even overcast; no sun.",
+          "effects": [
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Horizon rises from y≈1390 px to y≈1120 px as the camera settles; chip top-left."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Here's the twist",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "block the sunlight",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "slowly weaken",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 61.11,
+          "duration_s": 2.04,
+          "kind": "music_swell",
+          "description": "Reversed swell into the reveal.",
+          "relative_db": -20
+        },
+        {
+          "at_s": 67.2,
+          "duration_s": 3.59,
+          "kind": "ambience",
+          "description": "Rain thinning to a sparse patter.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL05",
+        "CL11"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The thinning rain over the sea dissolves into the desert as the sun breaks through."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 70.79,
+      "end_s": 75,
+      "narration": {
+        "text": "Even endless rain needs the Sun.",
+        "start_s": 71.09,
+        "end_s": 73.48,
+        "delivery_note": "Warm, settled; let the line breathe."
+      },
+      "viewer_question": "So what keeps the rain going?",
+      "visual_payoff": "Sunlight breaks through over the dunes, the last drops fall, and the camera returns to the dry sand of the very first frame.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 70.79,
+          "end_s": 75,
+          "shot_type": "sun breaks through, return to frame 0",
+          "world": "The Saharan dune field again, metres; clouds part and low warm sunlight returns.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 70.79,
+                "position": [
+                  3,
+                  2.2,
+                  7
+                ],
+                "look_at": [
+                  4.5,
+                  1.2,
+                  -9.9
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 72.09,
+                "position": [
+                  2.4,
+                  1.8,
+                  5.6
+                ],
+                "look_at": [
+                  3.9,
+                  1.2,
+                  -10
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 74.02,
+                "position": [
+                  0.3,
+                  0.35,
+                  1.2
+                ],
+                "look_at": [
+                  0.4,
+                  0.1,
+                  -0.5
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 75,
+                "position": [
+                  0,
+                  0.12,
+                  0.16
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Reverse of the opening move: from the wide dunes down to the macro of sand, ending exactly on the frame-0 pose.",
+            "lens_notes": "34° vertical FOV, ending in the opening macro framing."
+          },
+          "subjects": [
+            {
+              "id": "dunes",
+              "kind": "terrain",
+              "appearance": "Saharan sand dunes, drying back to pale gold in sunlight",
+              "geometry_and_material": "Seeded heightfield of transverse dunes with ripples; sand vertex colour, wetness darkening and lower roughness, greening blended into dune hollows.",
+              "scale_and_accuracy": "Dunes up to about 15 m high across 400 m; true scale.",
+              "movement": "Static geometry; wetness and greening animate.",
+              "asset_hint": "candidate:dune-field-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Fine rain streaks, last drops",
+              "geometry_and_material": "Instanced camera-facing streak quads stretched along the fall velocity, wrapped in a box around the camera; small expanding splash rings on the ground plane.",
+              "scale_and_accuracy": "Drizzle drops about 0.5 mm falling at about 2–4 m/s (streak length scaled for visibility). Intensity 0.3 → 0.",
+              "movement": "Deterministic fall from absolute time; slight wind slant.",
+              "asset_hint": "candidate:rain-v1"
+            },
+            {
+              "id": "sky",
+              "kind": "atmosphere",
+              "appearance": "Clouds parting into warm low sunlight",
+              "geometry_and_material": "Sky dome with the sun disc fading in and haze lowering.",
+              "scale_and_accuracy": "Sky only.",
+              "movement": "Sun intensity 0 → 1 between 70.9 and 72.6 s.",
+              "asset_hint": "reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "70.9–72.6 s the sun breaks through over the dunes; rain stops by 72.8 s.",
+            "72.09–75 s camera descends to the macro framing of frame 0; the sand dries back to pale gold.",
+            "75 s final frame equals frame 0 for a seamless loop."
+          ],
+          "lighting": "Low warm sun from the left with long dune shadows; fading grey.",
+          "effects": [
+            "Soft sun glow"
+          ],
+          "composition_notes": "No labels in the final 1.5 s; the final frame matches frame 0."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "needs the Sun",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 70.79,
+          "duration_s": 4.21,
+          "kind": "music_swell",
+          "description": "The pad resolves warmly as the rain hiss fades out.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "The last frame equals frame 0, so the video loops."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json held 44 assets (four earlier films plus moon-made-of-ice) when this storyboard was written; every reuse ID below was checked against it. It has no rain, dune, cloud-ceiling, overcast-shell or solar-panel component.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic rendering, post-processing, cross-dissolves and overlay compositing for every shot.",
+        "configuration": "Per-shot exposure and bloom; cooler grade for overcast shots."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Drives every camera from the storyboard keyframes.",
+        "configuration": "Keyframes as written per shot."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in word-timed captions for all narration.",
+        "configuration": "66 px Inter, 24 characters per line, baseline 1370."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "TODAY / WHAT IF chips, schematic and illustrative tags, callouts and the day counter.",
+        "configuration": "Teal for today, amber for the counterfactual."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Caption and label typeface.",
+        "configuration": "Weights 500, 600 and 700."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Noise and deterministic maths in the new components and stages.",
+        "configuration": "Seeded per component."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and all sound effects.",
+        "configuration": "D minor pad and felt-piano drops; noise-based rain textures."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Orbital views of today's clouds and the cloud-wrapped planet.",
+        "configuration": "setView over Africa; cloud opacity 0.85 → 1."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Day, night, cloud and land maps for the globe.",
+        "configuration": "Standard set."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Space backdrop for orbital shots.",
+        "configuration": "Low brightness."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Overcast skies for the desert, sea, farm and solar shots, and the final sunrise.",
+        "configuration": "Sun hidden and haze raised for overcast; sun intensity animated for the ending."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Open sea for the water-cycle shots.",
+        "configuration": "Glitter high under the cloud gap, low under full overcast."
+      },
+      {
+        "asset_id": "terrain-massif-v1",
+        "usage": "Low hills behind the wheat field.",
+        "configuration": "Peak 80 m, no snow line."
+      },
+      {
+        "asset_id": "grass-field-v1",
+        "usage": "Sprouting desert grass and the ripe wheat field.",
+        "configuration": "Short green blades with the new backwards-compatible growth control for sprouting; tall golden blades with heads and strong bend for wheat."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Farmer in the wheat field.",
+        "configuration": "Jacket, cap, standing pose with head tilt."
+      },
+      {
+        "asset_id": "glass-of-water-v1",
+        "usage": "Rain-collecting glass and the two measuring-cylinder gauges.",
+        "configuration": "No ice cubes, straight walls; new backwards-compatible setWaterLevel(level) drives the rising and falling water."
+      },
+      {
+        "asset_id": "dial-gauge-v1",
+        "usage": "Solar output dial.",
+        "configuration": "Dial titled SOLAR OUTPUT with LOW and HIGH marks and no numbers, steel bezel, on a post."
+      },
+      {
+        "asset_id": "bokeh-field-v1",
+        "usage": "Out-of-focus raindrop highlights on the hedge behind the rain glass.",
+        "configuration": "Cool white discs, low gain."
+      },
+      {
+        "asset_id": "snowfall-v1",
+        "usage": "Illustrative vapour: luminous specks rising off the sea (the particle fall run upward).",
+        "configuration": "Negative fall speed, additive cool white, fading out as evaporation weakens."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "rain-v1",
+        "description": "Deterministic rain: instanced streaks stretched along the fall velocity with wind slant, wrapped around the camera, plus ground splash rings; intensity reveals a fraction of drops for drizzle to downpour.",
+        "reusable_in": "Any weather, storm, flood, monsoon or climate story.",
+        "parameters": [
+          "count",
+          "box",
+          "fallSpeed",
+          "wind",
+          "streakLength",
+          "width",
+          "color",
+          "brightness",
+          "intensity",
+          "splashes",
+          "groundY",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/fx/Rain.ts"
+      },
+      {
+        "proposed_id": "dune-field-v1",
+        "description": "Procedural sand-dune heightfield with ripples, sand vertex colour, global wetness (darker, glossier) and greening blended into the hollows.",
+        "reusable_in": "Desert, drought, climate-history and planetary-surface stories.",
+        "parameters": [
+          "size",
+          "segments",
+          "height",
+          "wavelength",
+          "seed",
+          "wetness",
+          "greening",
+          "flatRadius"
+        ],
+        "suggested_path": "src/library/environment/DuneField.ts"
+      },
+      {
+        "proposed_id": "overcast-shell-v1",
+        "description": "Planet-wide cloud shell sphere with animated fractal density and a coverage control from scattered to fully overcast.",
+        "reusable_in": "Climate, weather, Venus-like and planetary-atmosphere stories.",
+        "parameters": [
+          "radius",
+          "coverage",
+          "color",
+          "shadowColor",
+          "sunDirection",
+          "time_s"
+        ],
+        "suggested_path": "src/library/planet/OvercastShell.ts"
+      },
+      {
+        "proposed_id": "cloud-ceiling-v1",
+        "description": "Overcast cloud base seen from below: warped fractal density, dark where thick and bright where thin, silver lining toward the sun, horizon haze, adjustable coverage and a soft sunlit gap.",
+        "reusable_in": "Any rainy, stormy or overcast landscape, sea or city shot.",
+        "parameters": [
+          "size",
+          "altitude",
+          "scale",
+          "coverage",
+          "darkColor",
+          "lightColor",
+          "hazeColor",
+          "hazeDensity",
+          "sunDirection",
+          "sunGlow",
+          "gap",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/CloudCeiling.ts"
+      },
+      {
+        "proposed_id": "solar-panel-array-v1",
+        "description": "Rows of tilted photovoltaic panels on aluminium frames with a cell-grid texture and a wetness control for glossy rain-soaked glass.",
+        "reusable_in": "Energy, solar storm, eclipse and climate stories.",
+        "parameters": [
+          "rows",
+          "cols",
+          "panelSize",
+          "tilt",
+          "spacing",
+          "frameColor",
+          "wetness"
+        ],
+        "suggested_path": "src/library/props/SolarPanelArray.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Schematic air column, water layer and ruler (S03)",
+      "Patio table (S04 SH02)",
+      "Even-rain dashed line and gauge labels (S06)",
+      "Schematic sun beams bouncing off cloud tops (S08 SH01)",
+      "First-drop splash decal (S01)"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if it rained forever everywhere on earth",
+    "core_keywords": [
+      "what if it rained forever",
+      "nonstop rain",
+      "rain everywhere",
+      "water cycle",
+      "where does rain come from",
+      "green sahara",
+      "sahara rain",
+      "rainforest rainfall",
+      "evaporation",
+      "clouds block sunlight",
+      "science what if",
+      "weather science",
+      "climate science shorts"
+    ],
+    "distinctive_angle": "Nonstop rain everywhere would not drown the world: the sky holds only 2.5 cm of water, so rain is recycled by sunlight into a gentle 3 mm-a-day drizzle that greens the Sahara, shortchanges rainforests, soaks harvests and dims solar panels, while the clouds slowly starve the rain of sunlight.",
+    "seo_integrity_note": "Figures are global averages from USGS and NASA (2.5 cm of water in the air, about a metre of rain a year from the energy budget); greening, harvest and solar effects are presented as possibilities, and the rain-weakening twist as likely with uncertain size. Titles must not promise floods or apocalypse."
+  },
+  "delivery": {
+    "video_output": "output/rain-nonstop-everywhere.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  }
+}

@@ -19,6 +19,9 @@ export class GlassOfWater {
   readonly group = new THREE.Group();
   private cubes: { mesh: THREE.Mesh; float: THREE.Vector3; rest: THREE.Vector3; rotF: THREE.Euler; rotR: THREE.Euler; delay: number; ph: number }[] = [];
   private bubbles: THREE.Points; private surface: THREE.Mesh;
+  private water!: THREE.Mesh; private tint!: THREE.Mesh; private sheet!: THREE.Mesh; private rAt!: (y: number) => number;
+  private floorY = 0; private topY = 0; private current = 0;
+  /** Water level given at construction (metres above the glass base). See `setWaterLevel` to change it. */
   readonly waterLevel: number;
 
   constructor(o: GlassOfWaterOptions = {}) {
@@ -30,16 +33,17 @@ export class GlassOfWater {
     glass.renderOrder = 3;
     const rAt = (y: number) => lerp(Rb, R, y / H) - wall - 0.0004;
     const waterGeo = new THREE.LatheGeometry([[0, floor + 0.0003], [rAt(floor), floor + 0.0003], [rAt(wl), wl], [0, wl]].map(([x, y]) => new THREE.Vector2(x, y)), 64);
-    const water = new THREE.Mesh(waterGeo, new THREE.MeshPhysicalMaterial({ color: o.waterTint ?? 0xdff3ff, roughness: 0.0, transmission: 1, thickness: 0.05, ior: 1.33, attenuationColor: new THREE.Color(0x7fc4e2), attenuationDistance: 0.09, envMapIntensity: 0.9, depthWrite: false }));
+    this.rAt = rAt; this.floorY = floor; this.topY = H - 0.002; this.current = wl;
+    const water = this.water = new THREE.Mesh(waterGeo, new THREE.MeshPhysicalMaterial({ color: o.waterTint ?? 0xdff3ff, roughness: 0.0, transmission: 1, thickness: 0.05, ior: 1.33, attenuationColor: new THREE.Color(0x7fc4e2), attenuationDistance: 0.09, envMapIntensity: 0.9, depthWrite: false }));
     water.renderOrder = 2;
     // Bright meniscus ring so the waterline reads clearly.
     this.surface = new THREE.Mesh(new THREE.RingGeometry(rAt(wl) * 0.9, rAt(wl), 64).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: 0xf2fbff, transparent: true, opacity: 0.85, depthWrite: false, side: THREE.DoubleSide }));
     this.surface.position.y = wl + 0.0002; this.surface.renderOrder = 5;
     // Faint sheet across the whole surface so the waterline reads from the side.
-    const sheet = new THREE.Mesh(new THREE.CircleGeometry(rAt(wl) * 0.9, 64).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: 0xbfe6f5, transparent: true, opacity: 0.28, depthWrite: false, side: THREE.DoubleSide }));
+    const sheet = this.sheet = new THREE.Mesh(new THREE.CircleGeometry(rAt(wl) * 0.9, 64).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: 0xbfe6f5, transparent: true, opacity: 0.28, depthWrite: false, side: THREE.DoubleSide }));
     sheet.position.y = wl + 0.0001; sheet.renderOrder = 5;
     // Transmission alone barely tints a small volume, so a faint blue body makes the water readable on any backdrop.
-    const tint = new THREE.Mesh(waterGeo, new THREE.MeshBasicMaterial({ color: 0x7fc6e6, transparent: true, opacity: 0.16, depthWrite: false })); tint.renderOrder = 4;
+    const tint = this.tint = new THREE.Mesh(waterGeo, new THREE.MeshBasicMaterial({ color: 0x7fc6e6, transparent: true, opacity: 0.16, depthWrite: false })); tint.renderOrder = 4;
     this.group.add(water, glass, tint, this.surface, sheet);
 
     const n = o.cubes ?? 4, s = o.cubeSize ?? 0.021;
@@ -69,6 +73,26 @@ export class GlassOfWater {
     }));
     this.bubbles.renderOrder = 4; this.bubbles.frustumCulled = false;
     this.group.add(this.bubbles);
+  }
+
+  /**
+   * Change the water level (metres above the glass base) for a filling or draining glass: the water body is rebuilt
+   * to the glass's taper and the meniscus follows. 0 (or anything at the floor) empties the glass.
+   */
+  setWaterLevel(level: number) {
+    const wl = clamp(level, 0, this.topY);
+    if (Math.abs(wl - this.current) < 1e-6) return;
+    this.current = wl;
+    const show = wl > this.floorY + 0.0008;
+    for (const m of [this.water, this.tint, this.surface, this.sheet]) m.visible = show;
+    (this.bubbles.material as THREE.ShaderMaterial).uniforms.uTop.value = wl;
+    if (!show) return;
+    const f = this.floorY, rAt = this.rAt;
+    const geo = new THREE.LatheGeometry([[0, f + 0.0003], [rAt(f), f + 0.0003], [rAt(wl), wl], [0, wl]].map(([x, y]) => new THREE.Vector2(x, y)), 64);
+    this.water.geometry.dispose(); this.water.geometry = geo; this.tint.geometry = geo;
+    const k = rAt(wl) / rAt(this.waterLevel);
+    this.surface.scale.set(k, 1, k); this.surface.position.y = wl + 0.0002;
+    this.sheet.scale.set(k, 1, k); this.sheet.position.y = wl + 0.0001;
   }
 
   /**

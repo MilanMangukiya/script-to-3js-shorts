@@ -7,6 +7,7 @@ import { createFilm as oxygenGoneFiveSeconds } from './stories/oxygen-gone-five-
 import { createFilm as iceSankInsteadOfFloating } from './stories/ice-sank-instead-of-floating/film';
 import { createFilm as airPressureDoubled } from './stories/air-pressure-doubled/film';
 import { createFilm as moonMadeOfIce } from './stories/moon-made-of-ice/film';
+import { createFilm as rainNonstopEverywhere } from './stories/rain-nonstop-everywhere/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -14,6 +15,7 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'ice-sank-instead-of-floating': iceSankInsteadOfFloating,
   'air-pressure-doubled': airPressureDoubled,
   'moon-made-of-ice': moonMadeOfIce,
+  'rain-nonstop-everywhere': rainNonstopEverywhere,
 };
 
 async function boot() {

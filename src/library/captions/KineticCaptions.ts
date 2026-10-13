@@ -95,6 +95,11 @@ export class KineticCaptions {
     return [ws.slice(0, best), ws.slice(best)];
   }
 
+  /** Caption phrases exactly as displayed (line text and on-screen times), for SRT / transcript export. */
+  cues(): { lines: string[]; start: number; end: number }[] {
+    return this.phrases.map((p) => ({ lines: p.lines.map((l) => l.map((w) => w.text).join(' ')), start: p.start, end: p.end }));
+  }
+
   draw(ctx: CanvasRenderingContext2D, t: number) {
     const s = this.style;
     const p = this.phrases.find((ph) => t >= ph.start && t < ph.end);
