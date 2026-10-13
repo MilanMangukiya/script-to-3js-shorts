@@ -38,6 +38,9 @@
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -67,6 +70,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -100,6 +106,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -176,6 +185,7 @@
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
+        "earth-ten-percent-closer",
         "ice-sank-instead-of-floating",
         "oxygen-gone-five-seconds",
         "what-if-every-man-disappeared"
@@ -216,6 +226,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -258,6 +271,8 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -383,6 +398,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
         "ice-sank-instead-of-floating",
         "oxygen-gone-five-seconds",
         "what-if-every-man-disappeared"
@@ -423,6 +439,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
         "ice-sank-instead-of-floating",
         "oxygen-gone-five-seconds",
         "what-if-every-man-disappeared"
@@ -466,6 +483,7 @@
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
+        "earth-core-solid",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
         "what-if-every-man-disappeared"
@@ -508,6 +526,8 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -580,12 +600,16 @@
         "strokeWidth",
         "backdrop",
         "emphasis",
-        "cues()"
+        "cues()",
+        "backdropStyle"
       ],
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -593,7 +617,7 @@
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
-      "notes": "Feed it word timings from tools/narrate.mjs (real synthesized audio aligned with local Whisper), never guessed timings. cues() returns the displayed phrases and their times; tools/transcript.mjs uses it so output SRT/TXT files match the burned-in captions."
+      "notes": "Feed it word timings from tools/narrate.mjs (real synthesized audio aligned with local Whisper), never guessed timings. cues() returns the displayed phrases and their times; tools/transcript.mjs uses it so output SRT/TXT files match the burned-in captions. Optional pill backdrop; default band behavior is preserved."
     },
     {
       "id": "film-pipeline-v1",
@@ -631,6 +655,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -662,6 +689,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -700,6 +730,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -739,6 +772,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -772,6 +808,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -798,6 +837,9 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
@@ -985,6 +1027,7 @@
       ],
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
+        "earth-core-solid",
         "ice-sank-instead-of-floating"
       ],
       "license": "original_procedural",
@@ -1021,6 +1064,7 @@
       ],
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
+        "earth-ten-percent-closer",
         "ice-sank-instead-of-floating"
       ],
       "license": "original_procedural",
@@ -1083,6 +1127,7 @@
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
         "air-pressure-doubled",
+        "earth-core-solid",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "rain-nonstop-everywhere",
@@ -1109,6 +1154,7 @@
       "configurable_parameters": [],
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
+        "earth-ten-percent-closer",
         "ice-sank-instead-of-floating"
       ],
       "license": "public_domain_nasa",
@@ -1186,6 +1232,8 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "moon-made-of-ice",
         "rain-nonstop-everywhere"
       ],
@@ -1346,6 +1394,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-ten-percent-closer",
         "moon-made-of-ice",
         "rain-nonstop-everywhere",
         "what-if-every-man-disappeared"
@@ -1643,6 +1692,7 @@
       "created_for": "rain-nonstop-everywhere",
       "used_in": [
         "continents-one-landmass",
+        "earth-ten-percent-closer",
         "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
@@ -1722,6 +1772,7 @@
       "created_for": "rain-nonstop-everywhere",
       "used_in": [
         "continents-one-landmass",
+        "earth-ten-percent-closer",
         "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
@@ -1754,6 +1805,7 @@
       "type": "three_component",
       "created_for": "rain-nonstop-everywhere",
       "used_in": [
+        "earth-ten-percent-closer",
         "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
@@ -1836,6 +1888,9 @@
       "created_for": "rain-nonstop-everywhere",
       "used_in": [
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "moon-made-of-ice",
         "rain-nonstop-everywhere"
       ],
@@ -1861,6 +1916,9 @@
       "created_for": "rain-nonstop-everywhere",
       "used_in": [
         "continents-one-landmass",
+        "earth-core-solid",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "moon-made-of-ice",
         "rain-nonstop-everywhere"
       ],
@@ -1898,6 +1956,8 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -1939,6 +1999,8 @@
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
         "continents-one-landmass",
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2058,14 +2120,16 @@
         "floorHeight",
         "windowSize",
         "occupancy",
-        "warmth"
+        "warmth",
+        "balconies"
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "earth-ten-percent-closer",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
-      "notes": "Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames."
+      "notes": "Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames. balconies=false omits foreground balcony rails; default true preserves existing films."
     },
     {
       "id": "clinic-interior-v1",
@@ -2086,6 +2150,7 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "every-human-jumped-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2136,6 +2201,7 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "earth-ten-percent-closer",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2221,6 +2287,7 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "every-human-jumped-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2249,6 +2316,7 @@
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
         "continents-one-landmass",
+        "earth-ten-percent-closer",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2327,6 +2395,7 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "every-human-jumped-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2376,6 +2445,8 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "earth-ten-percent-closer",
+        "every-human-jumped-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2516,6 +2587,464 @@
         "glow"
       ],
       "notes": "Yaw 0 faces +Z (−π/2 faces −X). Windows are unlit emissive quads that still take scene fog, so lit windows glow through rain haze; read best from 15–80 m. Pair with pedestrian-crowd-v1 for inhabited scenes."
+    },
+    {
+      "id": "planet-cutaway-v1",
+      "name": "Planet cutaway (layered interior)",
+      "type": "three_component",
+      "created_for": "earth-core-solid",
+      "used_in": [
+        "earth-core-solid"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/planet/PlanetCutaway.ts",
+      "description": "Planet with a quarter wedge (object-space x > 0, z > 0) cut to the centre: a lit textured surface shell with an atmosphere halo, plus two flat cut faces that draw the layers at true radii: thin crust, mantle (mottled, with optional animated convection loops), molten outer core (domain-warped flow) and a crystalline inner core. A freezing front can turn the outer core into dark crystalline metal still glowing red along the grain boundaries.",
+      "tags": [
+        "earth",
+        "planet",
+        "interior",
+        "core",
+        "mantle",
+        "cutaway",
+        "geology",
+        "magnetism",
+        "cross-section"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "surface texture or surfaceColor",
+        "layers (innerCore, outerCore, crust radii)",
+        "colors",
+        "sunDirection",
+        "atmosphereColor",
+        "atmosphereStrength",
+        "outerCoreSolid",
+        "freezeRadius",
+        "mantleFlow",
+        "innerEdgePulse",
+        "glow",
+        "spin",
+        "pointOn(local)",
+        "time_s"
+      ],
+      "notes": "Defaults are Earth's layer radii (inner core 1,221 km, core–mantle boundary 3,480 km, crust ~35 km). Rotate `group` to aim the wedge; place the camera in the removed quadrant (e.g. direction (1, 0.4, 1)) to see both faces. spin turns the surface map while the cut stays put. Use pointOn() with a point on a face (x = 0 or z = 0 in the cutaway frame) to anchor labels. Pair with magnetic-field-lines-v1 for dynamo stories."
+    },
+    {
+      "id": "magnetic-field-lines-v1",
+      "name": "Dipole magnetic field lines",
+      "type": "three_component",
+      "created_for": "earth-core-solid",
+      "used_in": [
+        "earth-core-solid"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/space/MagneticFieldLines.ts",
+      "description": "Schematic dipole magnetic field around a planet: lines r = L·R·sin²θ from pole to pole as thin additive tubes with pulses flowing along them. strength fades the field with the outer shells going first; loops seen edge-on fade so they never cut a straight streak across the planet.",
+      "tags": [
+        "magnetic-field",
+        "magnetosphere",
+        "dipole",
+        "space",
+        "earth",
+        "planet",
+        "schematic",
+        "dynamo"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "shells (L values)",
+        "linesPerShell",
+        "thickness",
+        "color",
+        "axis",
+        "seed",
+        "strength",
+        "time_s"
+      ],
+      "notes": "Add next to (not inside) the planet so it does not spin with the surface. 4 shells × 8 lines reads cleanly at 1080×1920; more becomes hairy. Label as schematic: real field lines are invisible and extend much farther."
+    },
+    {
+      "id": "solar-wind-stream-v1",
+      "name": "Solar-wind particle stream",
+      "type": "three_component",
+      "created_for": "earth-core-solid",
+      "used_in": [
+        "earth-core-solid"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/space/SolarWind.ts",
+      "description": "Schematic solar-wind streaks flowing along +X past a planet at the origin. shield = 1 bends the stream around a paraboloid magnetopause; shield = 0 lets it strike the upper atmosphere with a brief flash. escape grows a faint plume of ions leaving the night side.",
+      "tags": [
+        "solar-wind",
+        "space-weather",
+        "magnetosphere",
+        "atmosphere-loss",
+        "mars",
+        "particles",
+        "space",
+        "schematic"
+      ],
+      "configurable_parameters": [
+        "count",
+        "seed",
+        "radius",
+        "upstream",
+        "downstream",
+        "width",
+        "speed",
+        "atmosphere",
+        "standoff",
+        "color",
+        "plumeColor",
+        "plumeCount",
+        "shield",
+        "escape",
+        "amount",
+        "time_s"
+      ],
+      "notes": "Rotate or position `group` so +X points away from the Sun. Frame wide (planet ~45% of the width) so both the incoming stream and the plume show. Particles and plume are vastly exaggerated: label as schematic."
+    },
+    {
+      "id": "aurora-curtains-v1",
+      "name": "Aurora curtains",
+      "type": "three_component",
+      "created_for": "earth-core-solid",
+      "used_in": [
+        "earth-core-solid"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/environment/AuroraCurtains.ts",
+      "description": "Rippling aurora curtains for night skies: folded ribbons with a sharp, bright green lower edge, vertical rays and a pink upper fringe, additive and waving over time; intensity fades them.",
+      "tags": [
+        "aurora",
+        "northern-lights",
+        "night-sky",
+        "polar",
+        "space-weather",
+        "sky",
+        "fx"
+      ],
+      "configurable_parameters": [
+        "count",
+        "seed",
+        "center",
+        "span",
+        "height",
+        "altitude",
+        "depth",
+        "lowColor",
+        "highColor",
+        "intensity",
+        "time_s"
+      ],
+      "notes": "Place far away and large (kilometres) so parallax reads as sky-high; give the camera a far plane beyond the curtains. Pair with sky-dome-v1 night colours, starfield-v1 and conifer-stand-v1; tint a hemisphere light green with the intensity for light on snow."
+    },
+    {
+      "id": "compass-v1",
+      "name": "Brass pocket compass",
+      "type": "three_component",
+      "created_for": "earth-core-solid",
+      "used_in": [
+        "earth-core-solid"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/props/Compass.ts",
+      "description": "Brass pocket compass: lathe-turned case and bezel, bow ring, printed rose card (degree ticks, cardinal letters, eight-point star), glass cover and a two-tone diamond needle on a pivot. heading turns the needle.",
+      "tags": [
+        "compass",
+        "navigation",
+        "magnetism",
+        "north",
+        "prop",
+        "macro",
+        "exploration"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "caseColor",
+        "cardColor",
+        "inkColor",
+        "northColor",
+        "heading"
+      ],
+      "notes": "Card lies in the XZ plane facing +Y with north toward −Z; heading is clockwise seen from above. Give the scene an environment map (e.g. PMREM of RoomEnvironment, intensity ~0.3) or the brass renders black."
+    },
+    {
+      "id": "volcano-v1",
+      "name": "Erupting volcano",
+      "type": "three_component",
+      "created_for": "earth-core-solid",
+      "used_in": [
+        "earth-core-solid"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/environment/Volcano.ts",
+      "description": "Procedural volcanic cone: noise-carved basalt with radial gullies and a summit crater, emissive lava flows with pulses moving downhill, a glowing crater, ballistic lava fountains and a billowing ash plume lit orange from below.",
+      "tags": [
+        "volcano",
+        "lava",
+        "eruption",
+        "geology",
+        "mountain",
+        "ash",
+        "disaster",
+        "terrain"
+      ],
+      "configurable_parameters": [
+        "height",
+        "radius",
+        "crater",
+        "seed",
+        "segments",
+        "rockColor",
+        "lavaColor",
+        "plumeColor",
+        "sunDirection",
+        "sunColor",
+        "ambient",
+        "fogColor",
+        "fogDensity",
+        "ejecta",
+        "puffs",
+        "channels [angle, length]",
+        "eruption",
+        "lavaGlow",
+        "heightAt(x, z)",
+        "time_s"
+      ],
+      "notes": "Reads best at blue hour or night where the lava is the main light; aim a long channel at the camera (channels uses atan2(z, x) angles). Keep cameras above heightAt(x, z) + ~40 m. Units are metres (cone ~1.2 km by default)."
+    },
+    {
+      "id": "rocky-planet-v1",
+      "name": "Procedural rocky planet (Mars-like)",
+      "type": "three_component",
+      "created_for": "earth-core-solid",
+      "used_in": [
+        "earth-core-solid"
+      ],
+      "license": "original_procedural",
+      "source_path": "src/library/planet/RockyPlanet.ts",
+      "description": "Procedural rocky planet, Mars-like by default: seamless 3D-noise terrain colours, dark plains, crater bowls with bright rims, polar caps and a thin haze rim, lit by one sun; no textures needed.",
+      "tags": [
+        "mars",
+        "planet",
+        "rocky-planet",
+        "exoplanet",
+        "space",
+        "craters",
+        "procedural"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "seed",
+        "palette",
+        "craters",
+        "capSize",
+        "capColor",
+        "atmosphereColor",
+        "atmosphereStrength",
+        "sunDirection"
+      ],
+      "notes": "Spin via group.rotation. Change palette/capSize/atmosphere for other worlds (e.g. grey airless moons, icy exoplanets). Pair with solar-wind-stream-v1 for atmosphere-loss scenes."
+    },
+    {
+      "id": "solar-orbit-diagram-v1",
+      "name": "Solar orbital geometry and Kepler race",
+      "type": "three_component",
+      "source_path": "src/library/diagram/SolarOrbitDiagram.ts",
+      "description": "Configurable orbital tracks, comparison markers, reference annulus and procedural solar beacon. Marker periods follow Kepler’s third law. All lengths are diagram units.",
+      "tags": [
+        "orbit",
+        "sun",
+        "kepler",
+        "solar-system",
+        "schematic"
+      ],
+      "configurable_parameters": [
+        "baselineAu",
+        "targetAu",
+        "unitsPerAu",
+        "center",
+        "sunRadius",
+        "markerRadius",
+        "habitableInnerAu",
+        "habitableOuterAu",
+        "segments",
+        "time_s",
+        "orbitProgress"
+      ],
+      "created_for": "earth-ten-percent-closer",
+      "used_in": [
+        "earth-ten-percent-closer"
+      ],
+      "license": "original_procedural",
+      "notes": "Annulus is a user-defined reference band, not a computed habitable-zone boundary. Label schematic and not to scale."
+    },
+    {
+      "id": "water-photolysis-v1",
+      "name": "Water photolysis and hydrogen escape diagram",
+      "type": "three_component",
+      "source_path": "src/library/diagram/WaterPhotolysis.ts",
+      "description": "Bent water molecules dissociate into hydroxyl and hydrogen; a UV ray and deterministic escape trajectory explain net upper-atmosphere chemistry.",
+      "tags": [
+        "water",
+        "photolysis",
+        "hydrogen",
+        "uv",
+        "atmosphere",
+        "schematic"
+      ],
+      "configurable_parameters": [
+        "count",
+        "spacing",
+        "scale",
+        "escapeHeight",
+        "time_s",
+        "progress"
+      ],
+      "created_for": "earth-ten-percent-closer",
+      "used_in": [
+        "earth-ten-percent-closer"
+      ],
+      "license": "original_procedural",
+      "notes": "Simplified H2O + photon -> OH + H schematic. Trajectories are explanatory, not a molecular dynamics or escape-rate simulation."
+    },
+    {
+      "id": "dry-soil-v1",
+      "name": "PBR desiccating soil",
+      "type": "three_component",
+      "source_path": "src/library/environment/DrySoil.ts",
+      "description": "Procedural Voronoi soil polygons with desiccation cracks, fine grain and reversible moisture-to-dry color control.",
+      "tags": [
+        "soil",
+        "drought",
+        "climate",
+        "cracks",
+        "terrain"
+      ],
+      "configurable_parameters": [
+        "size",
+        "cellSize",
+        "color",
+        "dryColor",
+        "dryness"
+      ],
+      "created_for": "earth-ten-percent-closer",
+      "used_in": [
+        "earth-ten-percent-closer"
+      ],
+      "license": "original_procedural",
+      "notes": "Deterministic original procedural material on a metre-scale ground plane; editable resolution-independent shader detail."
+    },
+    {
+      "id": "synchronized-jump-motion-v1",
+      "name": "Synchronized Jump Motion",
+      "type": "three_component",
+      "source_path": "src/library/characters/SynchronizedJump.ts",
+      "description": "Analytic crouch, ballistic leap and landing driver for existing humanoid rigs.",
+      "tags": [
+        "human",
+        "jump",
+        "ballistic",
+        "motion",
+        "physics"
+      ],
+      "configurable_parameters": [
+        "height",
+        "gravity",
+        "start_s",
+        "crouch_s",
+        "settle_s",
+        "time_s"
+      ],
+      "created_for": "every-human-jumped-at-once",
+      "used_in": [
+        "every-human-jumped-at-once"
+      ],
+      "license": "original_procedural",
+      "notes": "Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation."
+    },
+    {
+      "id": "center-of-mass-recoil-diagram-v1",
+      "name": "Center Of Mass Recoil Diagram",
+      "type": "three_component",
+      "source_path": "src/library/diagram/CenterOfMassRecoil.ts",
+      "description": "Parameterised two-body recoil apparatus with a fixed center-of-mass crosshair.",
+      "tags": [
+        "momentum",
+        "recoil",
+        "center-of-mass",
+        "schematic"
+      ],
+      "configurable_parameters": [
+        "massRatio",
+        "jumpHeight",
+        "visualRecoil",
+        "progress",
+        "landingProgress"
+      ],
+      "created_for": "every-human-jumped-at-once",
+      "used_in": [
+        "every-human-jumped-at-once"
+      ],
+      "license": "original_procedural",
+      "notes": "Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation."
+    },
+    {
+      "id": "crowd-field-v1",
+      "name": "Crowd Field",
+      "type": "three_component",
+      "source_path": "src/library/characters/CrowdField.ts",
+      "description": "Seeded instanced clothed human silhouettes for dense mid-distance and aerial crowds.",
+      "tags": [
+        "crowd",
+        "people",
+        "instanced",
+        "aerial",
+        "city"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "width",
+        "depth",
+        "spacing",
+        "height",
+        "density",
+        "jumpHeight",
+        "time_s"
+      ],
+      "created_for": "every-human-jumped-at-once",
+      "used_in": [
+        "every-human-jumped-at-once"
+      ],
+      "license": "original_procedural",
+      "notes": "Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation."
+    },
+    {
+      "id": "water-service-station-v1",
+      "name": "Water Service Station",
+      "type": "three_component",
+      "source_path": "src/library/props/WaterServiceStation.ts",
+      "description": "Generic storage tank, manifold and metal tap for public water-service scenes.",
+      "tags": [
+        "water",
+        "infrastructure",
+        "tank",
+        "plumbing"
+      ],
+      "configurable_parameters": [
+        "tankRadius",
+        "tankHeight",
+        "pipeRadius",
+        "color",
+        "flow"
+      ],
+      "created_for": "every-human-jumped-at-once",
+      "used_in": [
+        "every-human-jumped-at-once"
+      ],
+      "license": "original_procedural",
+      "notes": "Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation."
     }
   ]
 }

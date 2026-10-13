@@ -7,76 +7,90 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 |---|---|---|---|---|---|
 | `air-molecules-v1` | Schematic air molecules | `src/library/diagram/AirMolecules.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `airliner-v1` | Unbranded twin-engine airliner with contrails | `src/library/vehicles/Airliner.ts` | `oxygen-gone-five-seconds` | `oxygen-gone-five-seconds` | original_procedural |
-| `apartment-facade-v1` | Apartment facade | `src/library/environment/ApartmentFacade.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
-| `audio-synth-kit-v1` | Procedural audio synthesis kit | `src/library/audio/synth.mjs` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
-| `bird-flock-v1` | Instanced flapping birds | `src/library/creatures/BirdFlock.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
-| `bokeh-field-v1` | Soft bokeh light discs | `src/library/fx/BokehField.ts` | `ice-sank-instead-of-floating` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
-| `broadleaf-tree-v1` | Broadleaf street tree | `src/library/environment/BroadleafTree.ts` | `what-if-every-man-disappeared` | `continents-one-landmass`, `what-if-every-man-disappeared` | original_procedural |
+| `apartment-facade-v1` | Apartment facade | `src/library/environment/ApartmentFacade.ts` | `what-if-every-man-disappeared` | `earth-ten-percent-closer`, `what-if-every-man-disappeared` | original_procedural |
+| `audio-synth-kit-v1` | Procedural audio synthesis kit | `src/library/audio/synth.mjs` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `aurora-curtains-v1` | Aurora curtains | `src/library/environment/AuroraCurtains.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
+| `bird-flock-v1` | Instanced flapping birds | `src/library/creatures/BirdFlock.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `earth-core-solid`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
+| `bokeh-field-v1` | Soft bokeh light discs | `src/library/fx/BokehField.ts` | `ice-sank-instead-of-floating` | `air-pressure-doubled`, `earth-core-solid`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `broadleaf-tree-v1` | Broadleaf street tree | `src/library/environment/BroadleafTree.ts` | `what-if-every-man-disappeared` | `continents-one-landmass`, `earth-ten-percent-closer`, `what-if-every-man-disappeared` | original_procedural |
 | `bubble-stream-v1` | Exhalation bubble stream | `src/library/fx/BubbleStream.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
-| `camera-keyframe-rig-v1` | Storyboard keyframe camera rig | `src/library/camera/KeyframeRig.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
-| `caption-kinetic-v1` | Kinetic burned-in captions | `src/library/captions/KineticCaptions.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
-| `city-street-block-v1` | Detailed city street and aerial district | `src/library/environment/CityStreet.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
-| `clinic-interior-v1` | Clinic interior | `src/library/environment/ClinicInterior.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `camera-keyframe-rig-v1` | Storyboard keyframe camera rig | `src/library/camera/KeyframeRig.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `caption-kinetic-v1` | Kinetic burned-in captions | `src/library/captions/KineticCaptions.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `center-of-mass-recoil-diagram-v1` | Center Of Mass Recoil Diagram | `src/library/diagram/CenterOfMassRecoil.ts` | `every-human-jumped-at-once` | `every-human-jumped-at-once` | original_procedural |
+| `city-street-block-v1` | Detailed city street and aerial district | `src/library/environment/CityStreet.ts` | `what-if-every-man-disappeared` | `earth-ten-percent-closer`, `every-human-jumped-at-once`, `what-if-every-man-disappeared` | original_procedural |
+| `clinic-interior-v1` | Clinic interior | `src/library/environment/ClinicInterior.ts` | `what-if-every-man-disappeared` | `every-human-jumped-at-once`, `what-if-every-man-disappeared` | original_procedural |
 | `cloud-ceiling-v1` | Overcast cloud base seen from below | `src/library/environment/CloudCeiling.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `rain-nonstop-everywhere` | original_procedural |
 | `cloud-deck-v1` | Cloud-top layer seen from above | `src/library/environment/CloudDeck.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
-| `conifer-stand-v1` | Instanced conifers with snow load | `src/library/environment/ConiferStand.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
+| `compass-v1` | Brass pocket compass | `src/library/props/Compass.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
+| `conifer-stand-v1` | Instanced conifers with snow load | `src/library/environment/ConiferStand.ts` | `ice-sank-instead-of-floating` | `earth-core-solid`, `ice-sank-instead-of-floating` | original_procedural |
 | `container-ship-v1` | Container ship | `src/library/vehicles/ContainerShip.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `cooking-pot-v1` | Cooking pot with boiling water | `src/library/props/CookingPot.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `coral-mounds-v1` | Procedural coral heads | `src/library/environment/CoralMounds.ts` | `continents-one-landmass` | `continents-one-landmass` | original_procedural |
-| `dial-gauge-v1` | Analog dial gauge | `src/library/props/DialGauge.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `continents-one-landmass`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
-| `dune-field-v1` | Procedural sand dune sea | `src/library/environment/DuneField.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `rain-nonstop-everywhere` | original_procedural |
+| `crowd-field-v1` | Crowd Field | `src/library/characters/CrowdField.ts` | `every-human-jumped-at-once` | `every-human-jumped-at-once` | original_procedural |
+| `dial-gauge-v1` | Analog dial gauge | `src/library/props/DialGauge.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `continents-one-landmass`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
+| `dry-soil-v1` | PBR desiccating soil | `src/library/environment/DrySoil.ts` | `earth-ten-percent-closer` | `earth-ten-percent-closer` | original_procedural |
+| `dune-field-v1` | Procedural sand dune sea | `src/library/environment/DuneField.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `earth-ten-percent-closer`, `rain-nonstop-everywhere` | original_procedural |
 | `dung-beetle-v1` | Walking dung beetle | `src/library/creatures/DungBeetle.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
-| `earth-globe-v1` | Earth globe with atmosphere, clouds and city lights | `src/library/planet/Earth.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code; textures NASA public domain (see earth-textures-nasa-v1) |
-| `earth-seaice-mask-nasa-v1` | NASA-derived floating sea-ice mask | `assets/library/textures/earth/seaice_4k.png` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | public_domain_nasa |
-| `earth-textures-nasa-v1` | NASA Earth texture set (day, night lights, clouds, land mask) | `assets/library/textures/earth/day_8k.jpg` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | public_domain_nasa |
-| `film-pipeline-v1` | Deterministic film render pipeline | `src/library/render/FilmPipeline.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
-| `fish-school-v1` | Instanced fish school | `src/library/creatures/FishSchool.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
+| `earth-globe-v1` | Earth globe with atmosphere, clouds and city lights | `src/library/planet/Earth.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code; textures NASA public domain (see earth-textures-nasa-v1) |
+| `earth-seaice-mask-nasa-v1` | NASA-derived floating sea-ice mask | `assets/library/textures/earth/seaice_4k.png` | `ice-sank-instead-of-floating` | `earth-ten-percent-closer`, `ice-sank-instead-of-floating` | public_domain_nasa |
+| `earth-textures-nasa-v1` | NASA Earth texture set (day, night lights, clouds, land mask) | `assets/library/textures/earth/day_8k.jpg` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | public_domain_nasa |
+| `film-pipeline-v1` | Deterministic film render pipeline | `src/library/render/FilmPipeline.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `fish-school-v1` | Instanced fish school | `src/library/creatures/FishSchool.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
 | `flame-v1` | Procedural flame billboard | `src/library/fx/Flame.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
-| `font-display-set-v1` | Display fonts for thumbnails | `assets/library/fonts/display/FONTS.md` | `rain-nonstop-everywhere` | `continents-one-landmass`, `moon-made-of-ice`, `rain-nonstop-everywhere` | SIL Open Font License 1.1 |
-| `font-inter-v1` | Inter typeface (Medium, SemiBold, Bold) | `assets/library/fonts/Inter-SemiBold.woff2` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | SIL Open Font License 1.1 |
+| `font-display-set-v1` | Display fonts for thumbnails | `assets/library/fonts/display/FONTS.md` | `rain-nonstop-everywhere` | `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `moon-made-of-ice`, `rain-nonstop-everywhere` | SIL Open Font License 1.1 |
+| `font-inter-v1` | Inter typeface (Medium, SemiBold, Bold) | `assets/library/fonts/Inter-SemiBold.woff2` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | SIL Open Font License 1.1 |
 | `gas-burner-v1` | Gas hob burner | `src/library/props/GasBurner.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `glass-of-water-v1` | Glass of water with ice cubes | `src/library/props/GlassOfWater.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating`, `rain-nonstop-everywhere` | original_procedural |
-| `grass-field-v1` | Wind-bent grass field | `src/library/environment/GrassField.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `continents-one-landmass`, `moon-made-of-ice`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `grass-field-v1` | Wind-bent grass field | `src/library/environment/GrassField.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `continents-one-landmass`, `earth-ten-percent-closer`, `moon-made-of-ice`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
 | `history-ribbon-v1` | Historical data ribbon | `src/library/diagram/HistoryRibbon.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
-| `humanoid-figure-v1` | Procedural articulated human figure | `src/library/characters/Humanoid.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `humanoid-figure-v1` | Procedural articulated human figure | `src/library/characters/Humanoid.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
 | `ice-sheet-v1` | Floating ice sheet (top and underside) | `src/library/environment/IceSheet.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
-| `modeling-helpers-v1` | Procedural modeling helpers | `src/library/util/Modeling.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `magnetic-field-lines-v1` | Dipole magnetic field lines | `src/library/space/MagneticFieldLines.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
+| `modeling-helpers-v1` | Procedural modeling helpers | `src/library/util/Modeling.ts` | `what-if-every-man-disappeared` | `earth-ten-percent-closer`, `every-human-jumped-at-once`, `what-if-every-man-disappeared` | original_procedural |
 | `moon-body-v1` | Procedural rocky and icy Moon | `src/library/planet/Moon.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
 | `newborn-hand-v1` | Articulated newborn hand | `src/library/characters/NewbornHand.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `ocean-cross-section-v1` | Deep ocean cross-section | `src/library/diagram/OceanCrossSection.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
-| `ocean-surface-v1` | Open-water ocean surface | `src/library/environment/OceanSurface.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
-| `overcast-shell-v1` | Planet-wide cloud shell | `src/library/planet/OvercastShell.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `rain-nonstop-everywhere` | original_procedural |
-| `overlay-labels-v1` | Schematic label and callout helpers | `src/library/overlay/Labels.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
-| `pedestrian-crowd-v1` | Deterministic articulated pedestrian crossing | `src/library/characters/PedestrianCrowd.ts` | `what-if-every-man-disappeared` | `continents-one-landmass`, `what-if-every-man-disappeared` | original_procedural |
+| `ocean-surface-v1` | Open-water ocean surface | `src/library/environment/OceanSurface.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `overcast-shell-v1` | Planet-wide cloud shell | `src/library/planet/OvercastShell.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `earth-ten-percent-closer`, `rain-nonstop-everywhere` | original_procedural |
+| `overlay-labels-v1` | Schematic label and callout helpers | `src/library/overlay/Labels.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `pedestrian-crowd-v1` | Deterministic articulated pedestrian crossing | `src/library/characters/PedestrianCrowd.ts` | `what-if-every-man-disappeared` | `continents-one-landmass`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `what-if-every-man-disappeared` | original_procedural |
 | `penguin-colony-v1` | Emperor penguin colony | `src/library/creatures/PenguinColony.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
+| `planet-cutaway-v1` | Planet cutaway (layered interior) | `src/library/planet/PlanetCutaway.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
 | `plastic-bottle-v1` | Crumpling plastic bottle | `src/library/props/PlasticBottle.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `plate-drift-globe-v1` | Plate-drift Earth (continents as moving plates) | `src/library/planet/PlateDriftGlobe.ts` | `continents-one-landmass` | `continents-one-landmass` | original_procedural |
 | `population-pyramid-v1` | Population pyramid | `src/library/diagram/PopulationPyramid.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `port-diorama-kit-v1` | Port diorama kit | `src/library/environment/PortKit.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `rain-v1` | Rain streaks, splash rings and rain shafts | `src/library/fx/Rain.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `rain-nonstop-everywhere` | original_procedural |
 | `right-whale-v1` | North Atlantic right whale | `src/library/creatures/RightWhale.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
-| `room-box-v1` | Modular room kit | `src/library/environment/RoomBox.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `rocky-planet-v1` | Procedural rocky planet (Mars-like) | `src/library/planet/RockyPlanet.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
+| `room-box-v1` | Modular room kit | `src/library/environment/RoomBox.ts` | `what-if-every-man-disappeared` | `earth-ten-percent-closer`, `what-if-every-man-disappeared` | original_procedural |
 | `sailboat-v1` | Sailboat (sloop) | `src/library/vehicles/Sailboat.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `moon-made-of-ice`, `what-if-every-man-disappeared` | original_procedural |
 | `scuba-gear-v1` | Scuba gear for the humanoid | `src/library/characters/ScubaGear.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
-| `sea-ice-v1` | Sea-ice floes, fast-ice platform and tabular iceberg | `src/library/environment/SeaIce.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
-| `seismometer-v1` | Seismometer with schematic trace | `src/library/props/Seismometer.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
-| `shader-noise-math-v1` | Shared shader noise and deterministic math | `src/library/util/glsl.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `sea-ice-v1` | Sea-ice floes, fast-ice platform and tabular iceberg | `src/library/environment/SeaIce.ts` | `ice-sank-instead-of-floating` | `earth-ten-percent-closer`, `ice-sank-instead-of-floating` | original_procedural |
+| `seismometer-v1` | Seismometer with schematic trace | `src/library/props/Seismometer.ts` | `what-if-every-man-disappeared` | `every-human-jumped-at-once`, `what-if-every-man-disappeared` | original_procedural |
+| `shader-noise-math-v1` | Shared shader noise and deterministic math | `src/library/util/glsl.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
 | `ship-bridge-v1` | Ship bridge | `src/library/environment/ShipBridge.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
-| `sky-dome-v1` | Gradient sky dome with sun and haze | `src/library/environment/SkyDome.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
-| `smoke-wisp-v1` | Rising smoke ribbon | `src/library/fx/SmokeWisp.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
+| `sky-dome-v1` | Gradient sky dome with sun and haze | `src/library/environment/SkyDome.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `smoke-wisp-v1` | Rising smoke ribbon | `src/library/fx/SmokeWisp.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `earth-ten-percent-closer`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
 | `snowfall-v1` | Wrapped particle fall (snow or sinking crystals) | `src/library/fx/Snowfall.ts` | `ice-sank-instead-of-floating` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `rain-nonstop-everywhere` | original_procedural |
-| `solar-panel-array-v1` | Ground-mounted solar panel array | `src/library/props/SolarPanelArray.ts` | `rain-nonstop-everywhere` | `rain-nonstop-everywhere` | original_procedural |
+| `solar-orbit-diagram-v1` | Solar orbital geometry and Kepler race | `src/library/diagram/SolarOrbitDiagram.ts` | `earth-ten-percent-closer` | `earth-ten-percent-closer` | original_procedural |
+| `solar-panel-array-v1` | Ground-mounted solar panel array | `src/library/props/SolarPanelArray.ts` | `rain-nonstop-everywhere` | `earth-ten-percent-closer`, `rain-nonstop-everywhere` | original_procedural |
+| `solar-wind-stream-v1` | Solar-wind particle stream | `src/library/space/SolarWind.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
 | `songbird-v1` | White-crowned sparrow | `src/library/creatures/Songbird.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
-| `sound-rings-v1` | Schematic sound rings | `src/library/diagram/SoundRings.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
-| `starfield-v1` | Seeded starfield | `src/library/space/Starfield.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `sound-rings-v1` | Schematic sound rings | `src/library/diagram/SoundRings.ts` | `what-if-every-man-disappeared` | `every-human-jumped-at-once`, `what-if-every-man-disappeared` | original_procedural |
+| `starfield-v1` | Seeded starfield | `src/library/space/Starfield.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `synchronized-jump-motion-v1` | Synchronized Jump Motion | `src/library/characters/SynchronizedJump.ts` | `every-human-jumped-at-once` | `every-human-jumped-at-once` | original_procedural |
 | `terrain-massif-v1` | Fractal mountain massif with altitude contour | `src/library/environment/Terrain.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_procedural |
-| `thumbnail-title-card-v1` | Thumbnail cover composer (bold or clean) | `src/library/overlay/Thumbnail.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
+| `thumbnail-title-card-v1` | Thumbnail cover composer (bold or clean) | `src/library/overlay/Thumbnail.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
 | `tidal-bulge-v1` | Schematic tidal-potential contours | `src/library/diagram/TidalBulge.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
 | `tidal-flat-v1` | Procedural intertidal estuary | `src/library/environment/TidalFlat.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
-| `underwater-volume-v1` | Shallow underwater environment | `src/library/environment/Underwater.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
+| `underwater-volume-v1` | Shallow underwater environment | `src/library/environment/Underwater.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
 | `vanish-dissolve-v1` | Deterministic material erosion and sideways motes | `src/library/fx/VanishDissolve.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `village-houses-v1` | Village of small gabled houses | `src/library/environment/VillageHouses.ts` | `continents-one-landmass` | `continents-one-landmass` | original_procedural |
+| `volcano-v1` | Erupting volcano | `src/library/environment/Volcano.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
 | `water-molecules-v1` | Schematic water molecules: liquid to ice lattice | `src/library/diagram/WaterMolecules.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating`, `moon-made-of-ice` | original_procedural |
+| `water-photolysis-v1` | Water photolysis and hydrogen escape diagram | `src/library/diagram/WaterPhotolysis.ts` | `earth-ten-percent-closer` | `earth-ten-percent-closer` | original_procedural |
+| `water-service-station-v1` | Water Service Station | `src/library/props/WaterServiceStation.ts` | `every-human-jumped-at-once` | `every-human-jumped-at-once` | original_procedural |
 | `wpp2024-world-graphics-v1` | UN WPP 2024 world population graphics data | `assets/library/data/wpp2024/world-graphics.json` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | UN WPP 2024; CC BY 3.0 IGO; attribution required |
 
 ## Reuse instructions
@@ -102,8 +116,8 @@ Procedural narrow-body airliner (lathe fuselage with window band, swept wings, w
 Reusable cutaway apartment wall with lit furnished rooms for intimate human scenes.
 
 **Tags:** apartment, city, interior
-**Parameters:** seed, floors, columns, floorHeight, windowSize, occupancy, warmth
-**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+**Parameters:** seed, floors, columns, floorHeight, windowSize, occupancy, warmth, balconies
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames. balconies=false omits foreground balcony rails; default true preserves existing films.
 
 ### `audio-synth-kit-v1` — Procedural audio synthesis kit
 
@@ -112,6 +126,14 @@ Pure-JS deterministic audio toolkit: detuned additive pads, white/pink/brown noi
 **Tags:** audio, music, sfx, synthesis, soundtrack, reverb
 **Parameters:** sampleRate, seed, freqs, attack, release, bright, detune, decay, mix, rate
 **Notes:** Story cues live in src/stories/<slug>/soundtrack.mjs (export buildSoundtrack(duration) returning {music, sfx}); tools/soundtrack.mjs mixes them under the narration and loudness-normalises to the storyboard target.
+
+### `aurora-curtains-v1` — Aurora curtains
+
+Rippling aurora curtains for night skies: folded ribbons with a sharp, bright green lower edge, vertical rays and a pink upper fringe, additive and waving over time; intensity fades them.
+
+**Tags:** aurora, northern-lights, night-sky, polar, space-weather, sky, fx
+**Parameters:** count, seed, center, span, height, altitude, depth, lowColor, highColor, intensity, time_s
+**Notes:** Place far away and large (kilometres) so parallax reads as sky-high; give the camera a far plane beyond the curtains. Pair with sky-dome-v1 night colours, starfield-v1 and conifer-stand-v1; tint a hemisphere light green with the intensity for light on snow.
 
 ### `bird-flock-v1` — Instanced flapping birds
 
@@ -158,8 +180,16 @@ Applies storyboard camera keyframes (position, look_at, ease, FOV) to a perspect
 Word-timed caption renderer for a 2D canvas: clause-aware phrase splitting, two balanced lines, active-word accent and accent_color / gentle_scale / subtle_glow emphasis, outline, shadow and a soft backdrop band.
 
 **Tags:** captions, subtitles, typography, overlay, accessibility
-**Parameters:** fontFamily, fontWeight, fontSize, lineHeight, maxCharsPerLine, baselineY, centerX, maxWidth, fill, accent, accentSoft, stroke, strokeWidth, backdrop, emphasis, cues()
-**Notes:** Feed it word timings from tools/narrate.mjs (real synthesized audio aligned with local Whisper), never guessed timings. cues() returns the displayed phrases and their times; tools/transcript.mjs uses it so output SRT/TXT files match the burned-in captions.
+**Parameters:** fontFamily, fontWeight, fontSize, lineHeight, maxCharsPerLine, baselineY, centerX, maxWidth, fill, accent, accentSoft, stroke, strokeWidth, backdrop, emphasis, cues(), backdropStyle
+**Notes:** Feed it word timings from tools/narrate.mjs (real synthesized audio aligned with local Whisper), never guessed timings. cues() returns the displayed phrases and their times; tools/transcript.mjs uses it so output SRT/TXT files match the burned-in captions. Optional pill backdrop; default band behavior is preserved.
+
+### `center-of-mass-recoil-diagram-v1` — Center Of Mass Recoil Diagram
+
+Parameterised two-body recoil apparatus with a fixed center-of-mass crosshair.
+
+**Tags:** momentum, recoil, center-of-mass, schematic
+**Parameters:** massRatio, jumpHeight, visualRecoil, progress, landingProgress
+**Notes:** Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation.
 
 ### `city-street-block-v1` — Detailed city street and aerial district
 
@@ -193,6 +223,14 @@ Large plane with domain-warped fractal cloud density, directional self-shadowing
 **Parameters:** size, level, scale, coverage, sunDirection, sunColor, shadowColor, belowColor, hazeColor, hazeDensity, scrollX, scrollZ, time_s
 **Notes:** update(time_s, scrollX, scrollZ) in metres.
 
+### `compass-v1` — Brass pocket compass
+
+Brass pocket compass: lathe-turned case and bezel, bow ring, printed rose card (degree ticks, cardinal letters, eight-point star), glass cover and a two-tone diamond needle on a pivot. heading turns the needle.
+
+**Tags:** compass, navigation, magnetism, north, prop, macro, exploration
+**Parameters:** radius, caseColor, cardColor, inkColor, northColor, heading
+**Notes:** Card lies in the XZ plane facing +Y with north toward −Z; heading is clockwise seen from above. Give the scene an environment map (e.g. PMREM of RoomEnvironment, intensity ~0.3) or the brass renders black.
+
 ### `conifer-stand-v1` — Instanced conifers with snow load
 
 Instanced stylised conifers (tiered cones on a trunk) with snow painted on upward-facing outer surfaces, plus a seeded scatter helper.
@@ -225,6 +263,14 @@ Shallow-reef coral heads in three procedural forms (grooved brain coral, branchi
 **Parameters:** count (per form), area, ground(x, z), reject(x, z), minSize, maxSize, palette, seed
 **Notes:** Static; add group to the scene. With underwater-volume-v1 pass ground: (x, z) => sea.floorHeight(x, z) so every coral sits on the sand; use reject to keep sand channels open. MeshStandardMaterial with instance colours, so scene lights and FogExp2 apply.
 
+### `crowd-field-v1` — Crowd Field
+
+Seeded instanced clothed human silhouettes for dense mid-distance and aerial crowds.
+
+**Tags:** crowd, people, instanced, aerial, city
+**Parameters:** seed, width, depth, spacing, height, density, jumpHeight, time_s
+**Notes:** Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation.
+
 ### `dial-gauge-v1` — Analog dial gauge
 
 Barometer / thermometer / pressure gauge with a canvas-drawn face (ticks, labels, unit, title, coloured marks), brass, steel or black bezel, glass cover, tapered needle and an optional probe stem. Face points along +Z.
@@ -232,6 +278,14 @@ Barometer / thermometer / pressure gauge with a canvas-drawn face (ticks, labels
 **Tags:** gauge, dial, barometer, thermometer, pressure, instrument, prop
 **Parameters:** radius, min, max, arcDegrees, majorStep, minorStep, labelStep, unit, title, marks, bezel, faceColor, inkColor, needleColor, depth, stemLength, stemRadius, value, angleDeg(value)
 **Notes:** value is a plain setter, so drive it from a deterministic function of time. Clockwise = increasing, scale centred on 12 o'clock.
+
+### `dry-soil-v1` — PBR desiccating soil
+
+Procedural Voronoi soil polygons with desiccation cracks, fine grain and reversible moisture-to-dry color control.
+
+**Tags:** soil, drought, climate, cracks, terrain
+**Parameters:** size, cellSize, color, dryColor, dryness
+**Notes:** Deterministic original procedural material on a metre-scale ground plane; editable resolution-independent shader detail.
 
 ### `dune-field-v1` — Procedural sand dune sea
 
@@ -361,6 +415,14 @@ Lake or sea ice lid with a snow-dusted, cracked, reflective top surface and a so
 **Parameters:** size, thickness, snowAmount, seed, horizonColor, zenithColor, sunDirection, sunColor, fogColor, fogDensity, underFogColor, underFogDensity, transmission, setShadow(x,z,radius,strength), time_s
 **Notes:** Top surface at local y = 0. The custom shader does not receive shadow maps; add a blob shadow mesh for figures standing on it. Pair the underside with underwater-volume-v1 (hide that asset's own surface).
 
+### `magnetic-field-lines-v1` — Dipole magnetic field lines
+
+Schematic dipole magnetic field around a planet: lines r = L·R·sin²θ from pole to pole as thin additive tubes with pulses flowing along them. strength fades the field with the outer shells going first; loops seen edge-on fade so they never cut a straight streak across the planet.
+
+**Tags:** magnetic-field, magnetosphere, dipole, space, earth, planet, schematic, dynamo
+**Parameters:** radius, shells (L values), linesPerShell, thickness, color, axis, seed, strength, time_s
+**Notes:** Add next to (not inside) the planet so it does not spin with the surface. 4 shells × 8 lines reads cleanly at 1080×1920; more becomes hairy. Label as schematic: real field lines are invisible and extend much farther.
+
 ### `modeling-helpers-v1` — Procedural modeling helpers
 
 Reusable geometry, rod, material and CanvasTexture helpers for architecture and props.
@@ -433,6 +495,14 @@ Instanced vertex-coloured emperor penguins (adults with yellow ear patches, grey
 **Parameters:** adults, chicks, seed, spread, height, time_s
 **Notes:** Stand the group on a flat surface at its local y = 0. Designed for mid-distance shots (birds about 100–250 px tall).
 
+### `planet-cutaway-v1` — Planet cutaway (layered interior)
+
+Planet with a quarter wedge (object-space x > 0, z > 0) cut to the centre: a lit textured surface shell with an atmosphere halo, plus two flat cut faces that draw the layers at true radii: thin crust, mantle (mottled, with optional animated convection loops), molten outer core (domain-warped flow) and a crystalline inner core. A freezing front can turn the outer core into dark crystalline metal still glowing red along the grain boundaries.
+
+**Tags:** earth, planet, interior, core, mantle, cutaway, geology, magnetism, cross-section
+**Parameters:** radius, surface texture or surfaceColor, layers (innerCore, outerCore, crust radii), colors, sunDirection, atmosphereColor, atmosphereStrength, outerCoreSolid, freezeRadius, mantleFlow, innerEdgePulse, glow, spin, pointOn(local), time_s
+**Notes:** Defaults are Earth's layer radii (inner core 1,221 km, core–mantle boundary 3,480 km, crust ~35 km). Rotate `group` to aim the wedge; place the camera in the removed quadrant (e.g. direction (1, 0.4, 1)) to see both faces. spin turns the surface map while the cut stays put. Use pointOn() with a point on a face (x = 0 or z = 0 in the cutaway frame) to anchor labels. Pair with magnetic-field-lines-v1 for dynamo stories.
+
 ### `plastic-bottle-v1` — Crumpling plastic bottle
 
 Clear PET bottle (ribbed lathe shell with physical transmission, ribbed screw cap, optional label band). A crumple value caves the walls in along seeded concave faces, crossing folds and wrinkles until the inside volume is roughly halved, as a sealed bottle would under one extra atmosphere; base, neck and cap stay rigid.
@@ -480,6 +550,14 @@ Procedural right whale rig with caudal and pectoral motion and visible callosity
 **Tags:** whale, ocean, marine-life
 **Parameters:** length, preset, callositySeed, flukePeriod_s, skinColor, quality, time_s
 **Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
+### `rocky-planet-v1` — Procedural rocky planet (Mars-like)
+
+Procedural rocky planet, Mars-like by default: seamless 3D-noise terrain colours, dark plains, crater bowls with bright rims, polar caps and a thin haze rim, lit by one sun; no textures needed.
+
+**Tags:** mars, planet, rocky-planet, exoplanet, space, craters, procedural
+**Parameters:** radius, seed, palette, craters, capSize, capColor, atmosphereColor, atmosphereStrength, sunDirection
+**Notes:** Spin via group.rotation. Change palette/capSize/atmosphere for other worlds (e.g. grey airless moons, icy exoplanets). Pair with solar-wind-stream-v1 for atmosphere-loss scenes.
 
 ### `room-box-v1` — Modular room kit
 
@@ -561,6 +639,14 @@ Stateless wrapped particle fall for snow in air or ice crystals sinking through 
 **Parameters:** count, seed, box, fallSpeed, drift, size, minPx, maxPx, color, brightness, additive, glint, far, amount, time_s
 **Notes:** Move points.position to keep the volume around the camera. Sprite sizes are authored for 1080-wide output. A negative fallSpeed makes particles rise (used as illustrative evaporation over the sea in rain-nonstop-everywhere).
 
+### `solar-orbit-diagram-v1` — Solar orbital geometry and Kepler race
+
+Configurable orbital tracks, comparison markers, reference annulus and procedural solar beacon. Marker periods follow Kepler’s third law. All lengths are diagram units.
+
+**Tags:** orbit, sun, kepler, solar-system, schematic
+**Parameters:** baselineAu, targetAu, unitsPerAu, center, sunRadius, markerRadius, habitableInnerAu, habitableOuterAu, segments, time_s, orbitProgress
+**Notes:** Annulus is a user-defined reference band, not a computed habitable-zone boundary. Label schematic and not to scale.
+
 ### `solar-panel-array-v1` — Ground-mounted solar panel array
 
 Rows of tilted photovoltaic panels with a canvas-drawn cell grid (silver busbars on dark blue cells), clearcoat glass, aluminium frames, rails and steel posts. wetness makes the glass glossier so it mirrors the sky.
@@ -568,6 +654,14 @@ Rows of tilted photovoltaic panels with a canvas-drawn cell grid (silver busbars
 **Tags:** solar, energy, panels, electricity, infrastructure, prop
 **Parameters:** rows, cols, panelSize, tilt, rowSpacing, gap, clearance, cellColor, frameColor, wetness
 **Notes:** The group origin is the centre of the array on the ground and panels face +Z. Give the scene an environment map (for example SkyDome.toEnvironment) for convincing reflections.
+
+### `solar-wind-stream-v1` — Solar-wind particle stream
+
+Schematic solar-wind streaks flowing along +X past a planet at the origin. shield = 1 bends the stream around a paraboloid magnetopause; shield = 0 lets it strike the upper atmosphere with a brief flash. escape grows a faint plume of ions leaving the night side.
+
+**Tags:** solar-wind, space-weather, magnetosphere, atmosphere-loss, mars, particles, space, schematic
+**Parameters:** count, seed, radius, upstream, downstream, width, speed, atmosphere, standoff, color, plumeColor, plumeCount, shield, escape, amount, time_s
+**Notes:** Rotate or position `group` so +X points away from the Sun. Frame wide (planet ~45% of the width) so both the incoming stream and the plume show. Particles and plume are vastly exaggerated: label as schematic.
 
 ### `songbird-v1` — White-crowned sparrow
 
@@ -592,6 +686,14 @@ Point-sprite star shell with a power-law brightness distribution and blackbody-l
 **Tags:** stars, space, night-sky, background
 **Parameters:** seed, count, radius, brightness, maxSize, minY
 **Notes:** Static by design; call follow(camera) each frame. Sprite sizes are authored in pixels for 1080-wide output.
+
+### `synchronized-jump-motion-v1` — Synchronized Jump Motion
+
+Analytic crouch, ballistic leap and landing driver for existing humanoid rigs.
+
+**Tags:** human, jump, ballistic, motion, physics
+**Parameters:** height, gravity, start_s, crouch_s, settle_s, time_s
+**Notes:** Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation.
 
 ### `terrain-massif-v1` — Fractal mountain massif with altitude contour
 
@@ -649,6 +751,14 @@ Seeded houses at given sites and headings: walls in a pastel palette, overhangin
 **Parameters:** sites [x, z, yaw], ground(x, z), seed, width, depth, height, roofPitch, wallColors, roofColors, windowColor, litFraction, stilts, glow
 **Notes:** Yaw 0 faces +Z (−π/2 faces −X). Windows are unlit emissive quads that still take scene fog, so lit windows glow through rain haze; read best from 15–80 m. Pair with pedestrian-crowd-v1 for inhabited scenes.
 
+### `volcano-v1` — Erupting volcano
+
+Procedural volcanic cone: noise-carved basalt with radial gullies and a summit crater, emissive lava flows with pulses moving downhill, a glowing crater, ballistic lava fountains and a billowing ash plume lit orange from below.
+
+**Tags:** volcano, lava, eruption, geology, mountain, ash, disaster, terrain
+**Parameters:** height, radius, crater, seed, segments, rockColor, lavaColor, plumeColor, sunDirection, sunColor, ambient, fogColor, fogDensity, ejecta, puffs, channels [angle, length], eruption, lavaGlow, heightAt(x, z), time_s
+**Notes:** Reads best at blue hour or night where the lava is the main light; aim a long channel at the camera (channels uses atan2(z, x) angles). Keep cameras above heightAt(x, z) + ~40 m. Units are metres (cone ~1.2 km by default).
+
 ### `water-molecules-v1` — Schematic water molecules: liquid to ice lattice
 
 Instanced H2O molecules that morph between a jostling liquid and an open hexagonal ice lattice with hydrogen-bond lines. The liquid arrangement occupies about 9% less volume, matching real water.
@@ -656,6 +766,22 @@ Instanced H2O molecules that morph between a jostling liquid and an open hexagon
 **Tags:** water, ice, molecules, chemistry, schematic, diagram, lattice
 **Parameters:** seed, cells, layers, bond, oxygenColor, hydrogenColor, bondColor, liquidScale, freeze, time_s
 **Notes:** Always label as schematic and not to scale. halfSize gives the ice-state bounding box for outline boxes; view down +Z to reveal the hexagons.
+
+### `water-photolysis-v1` — Water photolysis and hydrogen escape diagram
+
+Bent water molecules dissociate into hydroxyl and hydrogen; a UV ray and deterministic escape trajectory explain net upper-atmosphere chemistry.
+
+**Tags:** water, photolysis, hydrogen, uv, atmosphere, schematic
+**Parameters:** count, spacing, scale, escapeHeight, time_s, progress
+**Notes:** Simplified H2O + photon -> OH + H schematic. Trajectories are explanatory, not a molecular dynamics or escape-rate simulation.
+
+### `water-service-station-v1` — Water Service Station
+
+Generic storage tank, manifold and metal tap for public water-service scenes.
+
+**Tags:** water, infrastructure, tank, plumbing
+**Parameters:** tankRadius, tankHeight, pipeRadius, color, flow
+**Notes:** Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation.
 
 ### `wpp2024-world-graphics-v1` — UN WPP 2024 world population graphics data
 

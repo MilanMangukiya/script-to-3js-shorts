@@ -1,0 +1,1778 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if Earth moved 10% closer to the Sun?",
+    "title": "What if Earth Moved 10% Closer to the Sun?",
+    "slug": "earth-ten-percent-closer",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 64,
+    "language": "en",
+    "audience": "International general audience; curious nontechnical science and documentary viewers",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "What would happen to Earth's climate, oceans, and human habitability if our planet's orbit shrank by 10% to 0.90 AU?",
+    "viewer_takeaway": "A circular orbit at 0.90 AU gives 23.5% more sunlight, an 11.1% wider Sun and a 312-day year; severe warming and long-term water loss are model-dependent climate risks."
+  },
+  "scientific_model": {
+    "baseline_reality": "Earth orbits the Sun at a mean semi-major axis of 1.000 AU (149.6 million km) with an orbital period of 365.25 days, receiving a top-of-atmosphere solar irradiance of about 1361 W/m2 and maintaining a stable troposphere with a cold stratospheric water trap.",
+    "counterfactual_change": "Earth is placed instantaneously into a stable, nearly circular orbit at 0.900 AU (134.6 million km from the Sun, 10% closer), while solar luminosity, Earth's mass, axial tilt (23.4 degrees), rotation period (24 hours), and initial atmospheric/oceanic inventory remain unchanged.",
+    "assumptions": [
+      "Earth's new orbit at 0.900 AU is circular and gravitationally stable over the analyzed timescales.",
+      "Initial atmospheric dry composition (78% N2, 21% O2, ~420 ppm CO2) and ocean mass match modern Earth.",
+      "Solar luminosity remains constant at present-day main-sequence output.",
+      "Timescales are explicitly separated into immediate orbital geometry (days to 1 year), decadal surface warming and hydrological intensification, and multi-century to geological moist-greenhouse evolution."
+    ],
+    "causal_chain": [
+      "Decreasing orbital radius by 10% (to 0.90 AU) increases solar irradiance by 1 / (0.90)^2 = 1.2346 (+23.5%, to ~1680 W/m2) and increases the Sun's angular diameter by 1 / 0.90 = 1.111 (+11.1%).",
+      "By Kepler's third law (T proportional to a^1.5), Earth's orbital period drops to 365.25 * (0.90)^1.5 = 311.9 days (~312 days, 53 days shorter).",
+      "Even before feedbacks, blackbody equilibrium temperature rises by ~14 C; with melting sea ice (ice-albedo feedback) and rising evaporation (7% more water vapor per 1 C via Clausius-Clapeyron), global amplification is far stronger.",
+      "Over years to decades, warm oceans and high humidity push tropical and subtropical wet-bulb temperatures above the ~35 C human thermoregulatory limit while mid-latitude interiors aridify.",
+      "At 1.235x modern solar flux, Earth exceeds the inner habitable-zone moist-greenhouse threshold (~1.05x to 1.21x S0 in 1D and 3D GCM studies): the stratosphere becomes wet, ultraviolet photolysis splits H2O, and hydrogen escapes to space over geological timescales."
+    ],
+    "uncertainties": [
+      "Cloud and convection responses differ across climate models. No precise equilibrium temperature or dated moist-greenhouse onset is predicted in this film.",
+      "The rate of continental drying versus extreme monsoon flooding depends on regional circulation shifts as the Hadley cell expands.",
+      "Climate shots illustrate possible responses, not a dated forecast. Moist-greenhouse thresholds, cloud cover, regional drying and ocean-loss timescales are model dependent; 31-35 C is not a universal safe exposure threshold."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "At 0.90 AU, the Sun's apparent angular diameter increases by 11.1% (from ~0.53 degrees to ~0.59 degrees) and the orbital year shortens by 53 days to 312 days.",
+        "confidence": "derived",
+        "reasoning": "Angular size scales as 1/r (1/0.9 = 1.111). By Kepler's third law, T = 365.25 * (0.9)^(3/2) = 311.86 days, a reduction of 53.4 days.",
+        "presentation_guardrail": "Do not render the Sun as a giant fireball filling the sky; show a realistic 11% wider solar disc and label schematic orbital rings clearly."
+      },
+      {
+        "id": "CL02",
+        "statement": "Moving 10% closer increases top-of-atmosphere solar irradiance by 23.5%, from about 1361 W/m2 to about 1680 W/m2.",
+        "confidence": "derived",
+        "reasoning": "By the inverse-square law of radiative flux, S = S0 / (0.9)^2 = S0 / 0.81 = 1.2346 * S0.",
+        "presentation_guardrail": "Present the 1 / (0.9)^2 = 1.235 relationship visually with an explicit schematic flux-cone diagram."
+      },
+      {
+        "id": "CL03",
+        "statement": "Increased absorbed solar radiation melts polar sea ice over years to decades and exponentially increases atmospheric water vapor via the Clausius-Clapeyron relation.",
+        "confidence": "established",
+        "reasoning": "Saturation vapor pressure rises by ~7% per degree Celsius of warming, and loss of reflective sea ice lowers planetary albedo, amplifying initial radiative forcing.",
+        "presentation_guardrail": "Frame sea-ice loss and atmospheric humidification as unfolding over years to decades rather than instantaneously on day one."
+      },
+      {
+        "id": "CL04",
+        "statement": "Water vapor greenhouse amplification and enhanced evaporative demand scorch subtropical grasslands and agricultural interiors into arid dust bowls.",
+        "confidence": "plausible",
+        "reasoning": "Potential evapotranspiration scales strongly with temperature, outpacing precipitation in subtropical subsidence zones under strong greenhouse forcing.",
+        "presentation_guardrail": "Depict regional soil desiccation and vegetation dieback as a multi-year climate response."
+      },
+      {
+        "id": "CL05",
+        "statement": "Across low latitudes and warm coastal cities, recurring wet-bulb temperatures surpass the ~31 to 35 C threshold for unassisted human outdoor survival.",
+        "confidence": "plausible",
+        "reasoning": "Climate modeling of warm-climate states shows that a multi-degree tropical ocean warming pushes humid heat extremes beyond mammalian evaporative cooling limits.",
+        "presentation_guardrail": "Show respectful mid-distance human figures seeking shade and retreating indoors; avoid sensationalized mass-casualty tropes."
+      },
+      {
+        "id": "CL06",
+        "statement": "At 1.235 times modern sunlight, Earth could enter a moist greenhouse or more severe hot climate; water reaching the upper atmosphere can be photolyzed and hydrogen can escape over long timescales.",
+        "confidence": "plausible",
+        "reasoning": "Both 1D radiative-convective models (Kasting 1993; Kopparapu et al. 2013) and 3D GCMs place the moist-greenhouse threshold below or near 1.235x modern insolation (~0.90 AU).",
+        "presentation_guardrail": "Model-dependent climate threshold and onset time; no fixed ocean-loss duration or instant ocean vaporization. Molecular views show simplified net chemistry."
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://doi.org/10.1002/2015JD023302",
+        "name": "Wolf and Toon (2015), The evolution of habitable climates under the brightening Sun",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8799385/",
+        "name": "Vecellio et al. (2022), Evaluating the 35 C wet-bulb temperature adaptability threshold",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "A 10% step toward the Sun barely changes how big the Sun looks in our sky—but the inverse-square law unleashes 23.5% more solar energy, tipping Earth across the moist-greenhouse edge.",
+    "visual_identity": "High-craft scientific realism blending NASA-textured orbital cinematography, clean physical-optics schematics, tactile macro environments, and atmospheric golden-to-amber thermal grading.",
+    "palette": [
+      "#070B14",
+      "#1B4F8C",
+      "#4FA3E3",
+      "#F6C453",
+      "#E86F2C",
+      "#C93B2B",
+      "#D9C3A5"
+    ],
+    "lighting": "Physically motivated solar key lighting that shifts across the film from crisp modern daylight (5800K) to high-glare humid haze and deep amber-gold thermal scatter, paired with subtle volumetric god-rays and restrained bloom.",
+    "camera_language": "Deliberate, tripod-steady documentary framing and smooth orbital tracking; telephoto compression used honestly for horizon sun comparison; zero erratic shake.",
+    "motion_language": "Deterministic, physics-driven motion: Keplerian orbital acceleration, inverse-square flux expansion, receding sea-ice masks, wilting grass fields, and rising molecular vapor plumes.",
+    "world_scale_policy": "Maintain strict angular accuracy in sky views (Sun disc only 1.11x wider at 0.90 AU) and explicitly tag orbital and molecular views with SCHEMATIC — NOT TO SCALE overlays.",
+    "emotional_arc": [
+      "Curiosity at a deceptively small 10% orbital shift",
+      "Surprise that the Sun looks almost normal while the year compresses",
+      "Clarity as the inverse-square geometry reveals +23.5% energy",
+      "Mounting tension as oceans warm, ice retreats, and humid heat closes in",
+      "Quiet awe at how narrow Earth's habitable sanctuary truly is"
+    ],
+    "opening_hook": "In the first 3 seconds, Earth glides inward from its blue 1.00 AU track onto a glowing amber 0.90 AU ring as the narrator asks what a 10% step toward the Sun really does.",
+    "ending_payoff": "Pull back from the hazier, steam-haloed 0.90 AU Earth to reveal our narrow blue 1.00 AU habitable band, seamlessly matching the opening orbital geometry.",
+    "loop_connection": "Scene S09 ends on the exact orbital camera framing and sunward vector where Scene S01 begins, allowing the inward step from 1.00 AU to 0.90 AU to replay seamlessly.",
+    "asset_policy": "Exact assets are resolved against the actual registry and listed in metadata; new shared solar-orbit, photolysis and soil components are stored in src/library."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 138,
+    "music_direction": "Warm, minimalist cinematic synth score built with audio-synth-kit-v1: a calm C-minor/Ab-major glass pad at the opening that introduces a steady 312-day pulse in Scene S02, deepens with a low thermal drone during the climate escalation, and resolves to an airy, suspended harmonic chord at the loop.",
+    "music_level_db_below_voice": -18,
+    "sfx_direction": "Restrained, tactile documentary sound design: a soft orbital Sub-bass shift, gentle coastal wind and ticking calendar pulse, subtle radiant shimmer for the flux cone, distant ice crackle, dry wind over parched grass, muted city heat hum, and high-altitude crystalline hiss.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Clean documentary two-line kinetic captions in Inter SemiBold/Bold with subtle dark backdrop pill, crisp optical stroke, and restrained active-word highlight.",
+    "font_stack": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_size_px": 64,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 300,
+      "caption_baseline_y_px": 1380
+    },
+    "active_word_treatment": "Warm solar-amber fill (#FFB830) on the currently spoken word with a 4% scale lift.",
+    "highlights_policy": "Highlight at most one short key phrase per clause using accent_color (#FFB830), gentle_scale, or subtle_glow matching scene caption_emphasis entries."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0.0,
+      "end_s": 4.5,
+      "viewer_question": "What happens if Earth's orbit shrinks by just 10% toward the Sun?",
+      "visual_payoff": "Earth detaches from its familiar blue 1.00 AU orbital ring and slides inward onto a warm amber 0.90 AU track as its sunlit limb brightens.",
+      "narration": {
+        "text": "What if Earth moved ten percent closer to the Sun?",
+        "start_s": 0.2,
+        "end_s": 4.3,
+        "delivery_note": "Immediate, quiet curiosity; gentle pause after 'Earth' and clear emphasis on 'ten percent closer'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0.0,
+          "end_s": 4.5,
+          "shot_type": "High-angle orbital establishing shot (schematic scale)",
+          "world": "Deep space orbital theater; local units where Earth radius = 1.0 unit and schematic orbital tracks curve through the frame against a seeded starfield.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 0.0,
+                "position": [
+                  0,
+                  2.6,
+                  6.6
+                ],
+                "look_at": [
+                  -0.3,
+                  0.1,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 4.5,
+                "position": [
+                  -0.2,
+                  2.1,
+                  5.6
+                ],
+                "look_at": [
+                  -0.6,
+                  0.1,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Smooth push-in and slight downward tilt following Earth as it shifts from the outer 1.00 AU arc to the inner 0.90 AU arc.",
+            "lens_notes": "38 deg FOV keeps Earth round and distortion-free while showing both orbital tracks and the off-axis solar glow in upper-left."
+          },
+          "subjects": [
+            {
+              "id": "earth_orbital",
+              "kind": "planet",
+              "appearance": "Photoreal NASA Blue Marble Earth with drifting cloud layer, ocean sun glint, and blue atmospheric limb warming slightly on the dayside.",
+              "geometry_and_material": "earth-globe-v1 sphere (radius 1.0) with earth-textures-nasa-v1 maps and additive atmosphere shell.",
+              "scale_and_accuracy": "Planet texture is true geography; orbital track spacing is schematic and labeled SCHEMATIC — NOT TO SCALE via overlay-labels-v1.",
+              "movement": "Translates smoothly along -X from x = 0.20 (1.00 AU track) to x = -0.55 (0.90 AU track) between t = 0.8s and t = 3.6s while spinning steadily.",
+              "asset_hint": "earth-globe-v1"
+            },
+            {
+              "id": "orbital_rings_diagram",
+              "kind": "diagram",
+              "appearance": "Two crisp luminous orbital arcs: a cool cyan ring marked '1.00 AU (150M km)' and an inner warm amber ring marked '0.90 AU (135M km, -10%)' with a radial measurement arrow.",
+              "geometry_and_material": "Custom tube/ribbon geometry with additive distance-faded shader and 2D leader callouts from overlay-labels-v1.",
+              "scale_and_accuracy": "Explicitly labeled schematic orbital diagram.",
+              "movement": "The 0.90 AU ring pulses softly in brightness as Earth locks onto it at t = 2.6s.",
+              "asset_hint": "solar-orbit-diagram-v1"
+            },
+            {
+              "id": "sun_beacon",
+              "kind": "sun",
+              "appearance": "Intense warm solar disc and soft coronal falloff in the upper-left background driving directional illumination across Earth.",
+              "geometry_and_material": "Emissive solar sphere with radial falloff billboard shader.",
+              "scale_and_accuracy": "Illustrative background beacon in schematic space view.",
+              "movement": "Stationary anchor at [-6.5, 2.2, -8.0] radiating warm light toward Earth.",
+              "asset_hint": "solar-orbit-diagram-v1"
+            },
+            {
+              "id": "background_stars",
+              "kind": "stars",
+              "appearance": "Crisp blackbody-tinted starfield across deep space.",
+              "geometry_and_material": "starfield-v1 point-sprite shell.",
+              "scale_and_accuracy": "Background sky shell.",
+              "movement": "Follows camera translation with zero parallax.",
+              "asset_hint": "starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 0.0..0.8s: Earth orbits along the cyan 1.00 AU arc with normal solar illumination.",
+            "t = 0.8..3.4s: A schematic radial arrow bridges 1.00 AU to 0.90 AU; Earth glides inward onto the amber 0.90 AU track while solar key light intensity increases by 23.5%.",
+            "t = 2.6..4.5s: Overlay callout '0.90 AU (-10% DISTANCE)' locks beside Earth inside the upper-middle safe area."
+          ],
+          "lighting": "Strong directional sunlight from [-6.5, 2.2, -8.0] increasing from intensity 2.2 to 2.72 as Earth steps inward; deep space ambient fill at 0.04.",
+          "effects": [
+            "Restrained HDR bloom on the sunlit atmospheric limb and orbital ring highlights",
+            "2D schematic label 'SCHEMATIC — NOT TO SCALE' at top-left safe zone"
+          ],
+          "composition_notes": "Earth sits slightly right of center at t = 0s and settles near frame center [0.48, 0.56] at t = 2.8s (the thumbnail still moment), keeping top and lower-middle caption zones unobstructed."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "ten percent closer",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0.0,
+          "duration_s": 4.5,
+          "kind": "ambience",
+          "description": "Deep, warm cosmic pad in C minor with soft glass harmonics.",
+          "relative_db": -18
+        },
+        {
+          "at_s": 0.9,
+          "duration_s": 2.4,
+          "kind": "whoosh",
+          "description": "Low, velvet sub-bass orbital shift as Earth glides inward to the 0.90 AU ring.",
+          "relative_db": -14
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "match_cut",
+        "duration_s": 0.4,
+        "motivation": "Cut from the sunlit horizon limb of Earth in space down to the coastal horizon looking toward the rising Sun."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.5,
+      "end_s": 11.5,
+      "viewer_question": "Would the Sun look huge in the sky, and what happens to our calendar year?",
+      "visual_payoff": "A physically honest sky comparison shows the Sun is only 11% wider across—not a giant fireball—while an orbital calendar counter compresses the year from 365 days down to 312 days.",
+      "narration": {
+        "text": "At first, the Sun looks only eleven percent wider, while our year loses fifty-three days.",
+        "start_s": 4.7,
+        "end_s": 11.3,
+        "delivery_note": "Measured and reassuring on 'only eleven percent wider', then brisk curiosity on 'loses fifty-three days'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.5,
+          "end_s": 8.2,
+          "shot_type": "Eye-level coastal horizon view with true-scale angular comparison overlay",
+          "world": "Calm ocean coast at golden morning; metre scale with ocean-surface-v1 at y = 0 and sky-dome-v1 overhead.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 4.5,
+                "position": [
+                  0.0,
+                  2.2,
+                  8.0
+                ],
+                "look_at": [
+                  0.0,
+                  2.6,
+                  -100.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 8.2,
+                "position": [
+                  0.0,
+                  2.0,
+                  4.0
+                ],
+                "look_at": [
+                  0.0,
+                  2.8,
+                  -100.0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow, serene push forward over the water toward the morning Sun disc.",
+            "lens_notes": "Moderate 32 deg telephoto framing; angular comparison rings show the exact 1.00x (0.53 deg) vs 1.11x (0.59 deg) diameter ratio honestly."
+          },
+          "subjects": [
+            {
+              "id": "morning_sky",
+              "kind": "atmosphere",
+              "appearance": "Warm golden-blue morning sky dome with a crisp solar disc above the horizon and a dotted concentric comparison ring expanding by exactly 11.1%.",
+              "geometry_and_material": "sky-dome-v1 with sunSize scaled from 1.00x to 1.111x and overlay-labels-v1 angular callout.",
+              "scale_and_accuracy": "True relative angular ratio (1 / 0.90 = 1.111x diameter); labeled 'ANGULAR SIZE: +11.1% (0.53° → 0.59°)'.",
+              "movement": "Solar disc radius smoothly expands by 11.1% between t = 5.2s and t = 7.4s while sunIntensity rises by 23.5%.",
+              "asset_hint": "sky-dome-v1"
+            },
+            {
+              "id": "calm_sea",
+              "kind": "water",
+              "appearance": "Reflective open ocean with realistic multi-octave wave normals and a brightening solar glitter path.",
+              "geometry_and_material": "ocean-surface-v1 plane at y = 0.",
+              "scale_and_accuracy": "Metre-scale ocean surface.",
+              "movement": "Waves travel gently toward camera; sun glitter path widens subtly as solar irradiance increases.",
+              "asset_hint": "ocean-surface-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 4.5..5.2s: Dashed white circle marks the baseline 1.00 AU solar diameter.",
+            "t = 5.2..7.6s: The solar disc expands by only 11.1% to fill the outer amber dashed ring, visually proving the Sun does not fill the sky.",
+            "t = 6.0..8.2s: Callout chip 'SUN WIDTH: +11% (NOT A GIANT FIREBALL)' fades in cleanly above the horizon."
+          ],
+          "lighting": "Low-angle directional sun [0.0, 0.18, -0.98] warming the ocean Fresnel reflection.",
+          "effects": [
+            "Clean 2D concentric measurement reticle around the Sun disc",
+            "Subtle horizon haze"
+          ],
+          "composition_notes": "Sun disc and comparison reticle sit in the upper-middle frame (y ~ 680 px), well clear of the lower caption zone."
+        },
+        {
+          "id": "SH02",
+          "start_s": 8.2,
+          "end_s": 11.5,
+          "shot_type": "Top-down orthographic orbital period comparison",
+          "world": "Clean dark-space orbital diagram plane comparing one full revolution at 1.00 AU versus 0.90 AU.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 8.2,
+                "position": [
+                  0.0,
+                  8.0,
+                  0.01
+                ],
+                "look_at": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 11.5,
+                "position": [
+                  0.0,
+                  7.4,
+                  0.01
+                ],
+                "look_at": [
+                  0.0,
+                  -0.1,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Subtle orthographic zoom-in centered on the nested orbital tracks.",
+            "lens_notes": "Orthographic projection guarantees true geometric circularity for the 1.00 AU and 0.90 AU orbits."
+          },
+          "subjects": [
+            {
+              "id": "kepler_orbit_race",
+              "kind": "diagram",
+              "appearance": "Central Sun emblem surrounded by two concentric rings (r = 1.80 units and r = 1.62 units, exact 10:9 ratio) with two Earth markers sweeping around and a day counter ticking from 365 down to 312 DAYS.",
+              "geometry_and_material": "Procedural ring meshes, miniature earth-globe-v1 marker spheres, and overlay-labels-v1 numeric readout.",
+              "scale_and_accuracy": "Ring radii are in exact 1.00 : 0.90 proportion; planet markers are enlarged for visibility and labeled 'SCHEMATIC ORBITAL PERIOD'.",
+              "movement": "Inner 0.90 AU marker completes a full 360-degree revolution at t = 11.0s while the outer 1.00 AU marker has only completed 312/365 (85.4%) of its orbit.",
+              "asset_hint": "solar-orbit-diagram-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 8.2..11.0s: Both orbital markers sweep counter-clockwise from 12 o'clock; the inner 0.90 AU Earth moves 5.4% faster along a 10% shorter path, finishing its year first.",
+            "t = 9.0..11.5s: Status counter highlights 'YEAR LENGTH: 365 → 312 DAYS (-53 DAYS)'."
+          ],
+          "lighting": "Central point light at [0, 0.5, 0] with crisp emissive ring arcs.",
+          "effects": [
+            "Arc-deficit sector shaded between 312 days and 365 days"
+          ],
+          "composition_notes": "Concentric rings occupy the upper-center square of the 9:16 frame, leaving the bottom third open for captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "eleven percent wider,",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "fifty-three days.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.6,
+          "duration_s": 3.5,
+          "kind": "ambience",
+          "description": "Gentle morning ocean wash and airy horizon breeze.",
+          "relative_db": -20
+        },
+        {
+          "at_s": 8.3,
+          "duration_s": 2.9,
+          "kind": "texture",
+          "description": "Soft, rhythmic marimba-like synth pulse accelerating slightly and locking at the 312-day mark.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Dissolve from the 2D orbital geometry into a 3D radiative flux cone explaining why energy jumps far more than 10%."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 11.5,
+      "end_s": 19.5,
+      "viewer_question": "Why does a 10% distance drop cause a much larger jump in heat?",
+      "visual_payoff": "A 3D inverse-square light cone and dual solar irradiance gauges prove that shrinking distance to 0.90 concentrates sunlight by 1 / (0.9)^2 = +23.5% (from 1361 to 1680 W/m2).",
+      "narration": {
+        "text": "The real danger is the inverse-square law. Ten percent closer delivers twenty-three percent more solar energy.",
+        "start_s": 11.8,
+        "end_s": 19.1,
+        "delivery_note": "Clear, insightful emphasis on 'inverse-square law', building weight on 'twenty-three percent more'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.5,
+          "end_s": 15.6,
+          "shot_type": "Three-quarter 3D schematic view of a solar radiation cone intersecting 0.90 AU vs 1.00 AU",
+          "world": "Dark optical-physics stage; a pyramid of golden light rays radiates from the Sun through two square cross-section grids at r = 0.90 and r = 1.00.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 11.5,
+                "position": [
+                  2.4,
+                  1.6,
+                  4.8
+                ],
+                "look_at": [
+                  0.0,
+                  0.1,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 15.6,
+                "position": [
+                  1.7,
+                  1.2,
+                  4.1
+                ],
+                "look_at": [
+                  -0.2,
+                  0.1,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow orbit inward toward the brighter, tighter 0.90 AU cross-section grid.",
+            "lens_notes": "36 deg perspective clearly separates the two intersecting area planes in depth."
+          },
+          "subjects": [
+            {
+              "id": "flux_cone_diagram",
+              "kind": "diagram",
+              "appearance": "Golden volumetric light pyramid with a 10x10 reference grid at 1.00 AU (area = 1.00) and a tighter, hotter 9x9 grid at 0.90 AU (area = 0.81, flux density = 1.235x).",
+              "geometry_and_material": "Additive translucent cone planes, wireframe grid frames, and instanced photon stream particles.",
+              "scale_and_accuracy": "Exact 0.90 vs 1.00 linear and 0.81 vs 1.00 area ratio; labeled 'SCHEMATIC — INVERSE-SQUARE LAW (1 / 0.9² = 1.235)'.",
+              "movement": "The capture plate slides from the 1.00 AU plane back to the 0.90 AU plane between t = 12.2s and t = 14.8s, concentrating the golden ray intersections by 23.5%.",
+              "asset_hint": "solar-orbit-diagram-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 11.5..12.5s: Light cone illuminates the 1.00 AU square grid (labeled 'AREA = 1.00 | 1,361 W/m²').",
+            "t = 12.5..15.0s: A second frame highlights the 0.90 AU cross-section ('AREA = 0.81 | 1,680 W/m² (+23.5%)') as the photon density visibly intensifies."
+          ],
+          "lighting": "Directional beam along the cone axis plus soft rim lighting on the grid frames.",
+          "effects": [
+            "Soft volumetric glow inside the 0.90 AU cross-section plane",
+            "Formula callout '1 / (0.90)² = +23.5% FLUX'"
+          ],
+          "composition_notes": "Cone runs diagonally from upper-left to center-right, keeping all math labels in the upper half of the screen."
+        },
+        {
+          "id": "SH02",
+          "start_s": 15.6,
+          "end_s": 19.5,
+          "shot_type": "Macro close-up of a precision solar irradiance dial gauge beside a sunlit solar panel array",
+          "world": "Sunlit test station; dial-gauge-v1 in foreground with solar-panel-array-v1 and sky-dome-v1 in background.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 15.6,
+                "position": [
+                  0.0,
+                  1.35,
+                  1.45
+                ],
+                "look_at": [
+                  0.0,
+                  1.3,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 19.5,
+                "position": [
+                  0.08,
+                  1.33,
+                  1.22
+                ],
+                "look_at": [
+                  0.0,
+                  1.31,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Tight push-in onto the brass-and-steel irradiance dial as the needle sweeps into the amber-red zone.",
+            "lens_notes": "Shallow visual separation with background solar panels reflecting the brighter sky."
+          },
+          "subjects": [
+            {
+              "id": "irradiance_gauge",
+              "kind": "other",
+              "appearance": "Precision analog solar irradiance gauge (range 1000 to 2000 W/m2, title 'SOLAR FLUX', green mark at 1361, red zone above 1600).",
+              "geometry_and_material": "dial-gauge-v1 with steel bezel, glass cover, and deterministic needle value.",
+              "scale_and_accuracy": "True top-of-atmosphere solar constant values: 1361 W/m2 baseline to 1680 W/m2 at 0.90 AU.",
+              "movement": "Needle sweeps smoothly from 1361 W/m2 at t = 15.8s to 1680 W/m2 at t = 18.6s.",
+              "asset_hint": "dial-gauge-v1"
+            },
+            {
+              "id": "test_solar_panels",
+              "kind": "architecture",
+              "appearance": "Rows of tilted photovoltaic panels catching intense golden-white sky glare behind the instrument.",
+              "geometry_and_material": "solar-panel-array-v1 with clearcoat glass reflecting sky-dome-v1.",
+              "scale_and_accuracy": "Metre-scale background array.",
+              "movement": "Static geometry; specular sun reflection brightens as sky dome sunIntensity increases.",
+              "asset_hint": "solar-panel-array-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 15.8..18.6s: Gauge needle climbs from 1361 to 1680 W/m2 while a digital status chip increments from '+0.0%' to '+23.5% SOLAR ENERGY'.",
+            "t = 17.0..19.5s: Sunlight intensity and warm haze in the background sky dome ramp up noticeably."
+          ],
+          "lighting": "Bright overhead-front solar key light with environment reflections from sky-dome-v1.",
+          "effects": [
+            "Specular bloom on the gauge bezel and solar panel busbars"
+          ],
+          "composition_notes": "The dial face sits centered at y ~ 760 px, leaving clean margin above and below."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "inverse-square law.",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "twenty-three percent more",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 12.2,
+          "duration_s": 3.2,
+          "kind": "texture",
+          "description": "Rising harmonic shimmer as the light cone compresses onto the 0.90 AU grid.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 15.9,
+          "duration_s": 2.7,
+          "kind": "music_swell",
+          "description": "Warm brassy synth swell accompanying the irradiance gauge sweep to 1680 W/m2.",
+          "relative_db": -15
+        }
+      ],
+      "claim_ids": [
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Dissolve from the bright solar glare on the gauge to polar sea ice melting under that extra energy."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 19.5,
+      "end_s": 27.0,
+      "viewer_question": "How do Earth's oceans and polar ice respond over the first years and decades?",
+      "visual_payoff": "Polar sea-ice floes fracture and sink away into dark heat-absorbing ocean water while rising evaporation mist fills the air.",
+      "narration": {
+        "text": "Our oceans absorb that extra sunlight, melting polar sea ice and filling the air with vapor.",
+        "start_s": 19.8,
+        "end_s": 26.6,
+        "delivery_note": "Calm, steady documentary pacing; let 'filling the air with vapor' carry a sense of gathering weight."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 19.5,
+          "end_s": 23.3,
+          "shot_type": "Orbital polar view of Earth's Arctic sea-ice cap retreating",
+          "world": "High-latitude space view of Earth tilted to show the northern polar cap and North Atlantic.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 19.5,
+                "position": [
+                  0.0,
+                  2.1,
+                  2.5
+                ],
+                "look_at": [
+                  0.0,
+                  0.55,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 23.3,
+                "position": [
+                  0.15,
+                  1.85,
+                  2.15
+                ],
+                "look_at": [
+                  0.0,
+                  0.6,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push-in toward the sunlit Arctic ocean as the reflective white sea-ice mask shrinks.",
+            "lens_notes": "Clean orbital perspective highlighting the contrast between bright ice and dark, heat-absorbing ocean water."
+          },
+          "subjects": [
+            {
+              "id": "arctic_earth",
+              "kind": "planet",
+              "appearance": "Earth globe oriented toward 72N latitude with the NASA sea-ice mask visibly receding and cloud bands thickening.",
+              "geometry_and_material": "earth-globe-v1 with earth-seaice-mask-nasa-v1 driven from seaIce = 1.0 down to 0.08, paired with overcast-shell-v1 growing in coverage.",
+              "scale_and_accuracy": "NASA Blue Marble and sea-ice mask geography; time-lapse labeled 'TIMESCALE: YEARS TO DECADES'.",
+              "movement": "Slow planetary rotation while seaIce parameter drops from 1.0 to 0.08 between t = 19.8s and t = 23.0s and overcast-shell-v1 coverage rises from 0.25 to 0.55.",
+              "asset_hint": "earth-globe-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 19.5..23.0s: White Arctic seaIce layer retreats rapidly across the polar basin, exposing dark blue ocean water.",
+            "t = 20.5..23.3s: Callout label 'ICE-ALBEDO FEEDBACK: DARK OCEAN ABSORBS MORE HEAT' appears in the upper safe zone."
+          ],
+          "lighting": "Warm solar key light illuminating the northern hemisphere with subtle amber limb scatter.",
+          "effects": [
+            "Time-lapse indicator badge 'DECADAL RESPONSE'"
+          ],
+          "composition_notes": "Earth's northern dome fills the middle-top frame so the receding white polar cap is immediately legible."
+        },
+        {
+          "id": "SH02",
+          "start_s": 23.3,
+          "end_s": 27.0,
+          "shot_type": "Low-angle ocean surface view of disintegrating sea-ice floes and rising evaporation mist",
+          "world": "High-latitude sea at metre scale: sea-ice-v1 floes over ocean-surface-v1 with upward-drifting vapor particles from snowfall-v1 (negative fallSpeed) and smoke-wisp-v1.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 23.3,
+                "position": [
+                  0.0,
+                  1.8,
+                  14.0
+                ],
+                "look_at": [
+                  0.0,
+                  0.6,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 27.0,
+                "position": [
+                  0.0,
+                  1.5,
+                  9.5
+                ],
+                "look_at": [
+                  0.0,
+                  1.1,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Low glide across the dark water as ice floes subside and backlit steam wisps rise into the warm air.",
+            "lens_notes": "40 deg lens captures both the shrinking surface floes and the vertical rise of water vapor."
+          },
+          "subjects": [
+            {
+              "id": "melting_floes",
+              "kind": "water",
+              "appearance": "Fractured snow-topped sea-ice floes thinning and subsiding into dark, sun-glinting swells.",
+              "geometry_and_material": "sea-ice-v1 over ocean-surface-v1.",
+              "scale_and_accuracy": "Metre-scale floes; time-lapse melt motion.",
+              "movement": "sea-ice-v1 sink parameter progresses from 0.0 to 0.78 between t = 23.5s and t = 26.8s.",
+              "asset_hint": "sea-ice-v1"
+            },
+            {
+              "id": "evaporation_mist",
+              "kind": "particle_system",
+              "appearance": "Sunlit translucent vapor wisps and fine rising moisture motes lifting off the sea surface.",
+              "geometry_and_material": "snowfall-v1 configured with negative fallSpeed (-0.8 m/s) and soft additive bokeh-like glints, plus smoke-wisp-v1 steam ribbons.",
+              "scale_and_accuracy": "Illustrative visualization of enhanced evaporation (+7% moisture capacity per +1 C).",
+              "movement": "Continuous upward drift from y = 0 toward the cloud base.",
+              "asset_hint": "snowfall-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 23.3..26.8s: Ice floes thin and slip beneath the chop while upward-drifting vapor motes and steam ribbons thicken in the backlit air.",
+            "t = 24.2..27.0s: Status label '+7% WATER VAPOR PER +1°C WARMING' anchors near the top-left."
+          ],
+          "lighting": "Strong golden-amber backlight creating bright rim highlights on the rising steam wisps.",
+          "effects": [
+            "Distance fog warming from cool slate to humid amber"
+          ],
+          "composition_notes": "Floes occupy the middle horizontal band while vapor rises into the upper half, keeping the lower caption zone dark and legible."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "melting polar sea ice",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "filling the air with vapor.",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 19.7,
+          "duration_s": 3.5,
+          "kind": "texture",
+          "description": "Distant crystalline ice fracture and low ocean swell.",
+          "relative_db": -17
+        },
+        {
+          "at_s": 23.5,
+          "duration_s": 3.4,
+          "kind": "ambience",
+          "description": "Soft, warm rising steam hiss layered over the low synth drone.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Dissolve from rising ocean water vapor to a dry subtropical landscape baking under the amplified greenhouse blanket."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 27.0,
+      "end_s": 34.5,
+      "viewer_question": "What does water-vapor greenhouse amplification do to continents and vegetation?",
+      "visual_payoff": "Lush green meadow grass and broadleaf trees wither into parched ochre stalks and encroaching sand dunes under a heavy, heat-shimmering sky.",
+      "narration": {
+        "text": "Because water vapor traps heat, warming accelerates itself. Subtropical grasslands bake into vast, cracked dust bowls.",
+        "start_s": 27.3,
+        "end_s": 34.1,
+        "delivery_note": "Firm causal connection on 'Because water vapor traps heat', then evocative and measured on 'vast, cracked dust bowls'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 27.0,
+          "end_s": 34.5,
+          "shot_type": "Wide environmental time-lapse across a subtropical valley and tree line",
+          "world": "Metre-scale valley floor combining dune-field-v1, grass-field-v1, and broadleaf-tree-v1 beneath sky-dome-v1 and thin cloud-ceiling-v1 haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 27.0,
+                "position": [
+                  -2.5,
+                  2.1,
+                  12.0
+                ],
+                "look_at": [
+                  0.0,
+                  1.4,
+                  -15.0
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 34.5,
+                "position": [
+                  1.2,
+                  1.7,
+                  7.5
+                ],
+                "look_at": [
+                  0.0,
+                  1.2,
+                  -15.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow lateral dolly and push-in across the field as green turf browns, thins out, and reveals wind-rippled ochre sand.",
+            "lens_notes": "38 deg lens gives natural depth from foreground grass blades to mid-ground trees and distant heat haze."
+          },
+          "subjects": [
+            {
+              "id": "withering_grassland",
+              "kind": "vegetation",
+              "appearance": "Instanced meadow grass transitioning from vibrant green to dry straw-ochre while shrinking into sparse tufts.",
+              "geometry_and_material": "grass-field-v1 with baseColor/tipColor lerping to dryColor, wind.bend increasing, and growth stepping down from 1.0 to 0.22.",
+              "scale_and_accuracy": "Metre-scale vegetation time-lapse over multi-year drought.",
+              "movement": "Strong hot wind gusts bend the blades while coverage recedes between t = 28.0s and t = 33.8s.",
+              "asset_hint": "grass-field-v1"
+            },
+            {
+              "id": "encroaching_dunes",
+              "kind": "terrain",
+              "appearance": "Sun-baked ochre sand and dry interdune hollows emerging beneath the receding grass.",
+              "geometry_and_material": "dune-field-v1 with greening dropping from 0.85 to 0.0 and wetness = 0.0.",
+              "scale_and_accuracy": "Metre-scale terrain.",
+              "movement": "Static geometry whose surface shader shifts from vegetated loam to dry, wind-rippled sand.",
+              "asset_hint": "dune-field-v1"
+            },
+            {
+              "id": "defoliating_trees",
+              "kind": "vegetation",
+              "appearance": "Three mid-ground broadleaf trees shedding their scorched amber canopy until mostly bare branches remain against the brassy sky.",
+              "geometry_and_material": "broadleaf-tree-v1 with leafColor shifting to russet-brown and leafFraction dropping from 1.0 to 0.12.",
+              "scale_and_accuracy": "Metre-scale trees (~7 m tall) at z = -12 to -22 m.",
+              "movement": "Canopy thins deterministically from t = 28.5s to t = 33.5s.",
+              "asset_hint": "broadleaf-tree-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 27.0..28.5s: Lush green subtropical grassland sways under a warm sun.",
+            "t = 28.5..33.8s: Sky haze deepens to brassy amber; grass colour shifts to dry straw, growth drops to 0.22, dune-field-v1 greening fades to 0, and broadleaf-tree-v1 leafFraction falls to 0.12.",
+            "t = 29.5..34.5s: Subtle refractive heat-shimmer ripples rise from the baked ground."
+          ],
+          "lighting": "Harsh, high-elevation amber sun [0.2, 0.86, -0.46] with strong ochre ground bounce and dense horizon haze.",
+          "effects": [
+            "Refractive vertical heat-shimmer distortion in the mid-ground",
+            "Drifting dry dust motes near the ground plane"
+          ],
+          "composition_notes": "Trees frame the upper-left and upper-right thirds while the receding grass leads the eye toward the horizon above the caption band."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "water vapor traps heat,",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "cracked dust bowls.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 27.2,
+          "duration_s": 7.0,
+          "kind": "ambience",
+          "description": "Dry, parched wind sweeping through brittle grass stalks with a low thermal drone.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "motivation": "Direct cut from the uninhabited parched interior to the human reality inside a sweltering, humid city street."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 34.5,
+      "end_s": 42.5,
+      "viewer_question": "What would daily life feel like for people in tropical and coastal cities?",
+      "visual_payoff": "Under oppressive, steam-hazy sunlight, pedestrians retreat from an open city street as a wet-bulb thermometer crosses the 35 C human survivability threshold.",
+      "narration": {
+        "text": "Across the tropics, extreme humidity pushes wet-bulb heat past what the human body can survive outdoors.",
+        "start_s": 34.8,
+        "end_s": 42.1,
+        "delivery_note": "Empathetic, grounded, and serious without melodrama; clear stress on 'wet-bulb heat' and 'survive outdoors'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 34.5,
+          "end_s": 38.6,
+          "shot_type": "Medium-wide street-level view of a humid, heat-hazy city avenue",
+          "world": "Metre-scale urban avenue using city-street-block-v1 and pedestrian-crowd-v1 under an oppressive, pale-amber overcast sky (sky-dome-v1 + cloud-ceiling-v1).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 34.5,
+                "position": [
+                  8.4,
+                  2.2,
+                  13.5
+                ],
+                "look_at": [
+                  8.5,
+                  1.4,
+                  -10
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 38.6,
+                "position": [
+                  8.8,
+                  2.1,
+                  10.5
+                ],
+                "look_at": [
+                  9.3,
+                  1.4,
+                  -10
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow, observant push down the avenue as heat haze thickens and visible foot traffic thins out toward shaded arcades.",
+            "lens_notes": "Respectful mid-distance 35 deg framing; figures read as silhouettes and back/mid views in heavy golden-white humidity."
+          },
+          "subjects": [
+            {
+              "id": "humid_city_avenue",
+              "kind": "architecture",
+              "appearance": "Masonry street facades, crosswalk, and shimmering damp asphalt steaming after a tropical downpour.",
+              "geometry_and_material": "city-street-block-v1 with wetness = 0.45 and warm amber fog.",
+              "scale_and_accuracy": "Metre-scale urban environment.",
+              "movement": "Static architecture; subtle steam wisps (smoke-wisp-v1) curl upward from the sun-heated pavement.",
+              "asset_hint": "city-street-block-v1"
+            },
+            {
+              "id": "retreating_pedestrians",
+              "kind": "human",
+              "appearance": "Articulated pedestrians carrying sun umbrellas, slowing and thinning out as the midday street becomes uninhabitable.",
+              "geometry_and_material": "pedestrian-crowd-v1 with sun umbrellas and respectful medium-distance styling.",
+              "scale_and_accuracy": "Metre-scale adult and child proportions.",
+              "movement": "Pedestrians walk slowly toward the building edges while visibleCount steps down deterministically from 14 to 3 to represent retreat indoors.",
+              "asset_hint": "pedestrian-crowd-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 34.5..38.6s: Humid steam rises from the damp road while pedestrians under sun umbrellas clear from the open crosswalk into building shade.",
+            "t = 35.2..38.6s: Overlay status chip 'TROPICAL HUMID HEAT: EXTREME OUTDOOR STRESS' appears at top-left."
+          ],
+          "lighting": "Diffused, blindingly bright pale-amber sky glare with soft shadows and dense humid scatter.",
+          "effects": [
+            "Pavement steam wisps",
+            "Warm atmospheric fog reducing far-block contrast"
+          ],
+          "composition_notes": "Street perspective converges in the upper-center third; pedestrians occupy the mid-ground above y = 1380 px captions."
+        },
+        {
+          "id": "SH02",
+          "start_s": 38.6,
+          "end_s": 42.5,
+          "shot_type": "Close-up of an outdoor wet-bulb thermometer dial beside a shaded window with a human silhouette inside",
+          "world": "Exterior masonry wall in foreground with dial-gauge-v1 mounted beside an apartment-facade-v1 window looking into a dimly cooled room.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 38.6,
+                "position": [
+                  -0.15,
+                  1.55,
+                  1.65
+                ],
+                "look_at": [
+                  0.0,
+                  1.52,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 42.5,
+                "position": [
+                  0.0,
+                  1.53,
+                  1.32
+                ],
+                "look_at": [
+                  0.02,
+                  1.52,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push-in connecting the wet-bulb thermometer needle crossing 35 C with the person sheltering behind glass.",
+            "lens_notes": "Balances foreground instrument clarity with the respectful mid-distance human silhouette inside the window."
+          },
+          "subjects": [
+            {
+              "id": "wet_bulb_thermometer",
+              "kind": "other",
+              "appearance": "Wall-mounted dial thermometer labeled 'WET-BULB °C' (scale 20 to 45 C, critical crimson threshold line at 35 C).",
+              "geometry_and_material": "dial-gauge-v1 with black bezel, white face, and crimson danger arc from 35 to 45 C.",
+              "scale_and_accuracy": "35 C wet-bulb is the established physiological limit where human sweat can no longer cool the body.",
+              "movement": "Needle climbs from 29 C at t = 38.6s past the 35 C red line to 37.5 C at t = 41.8s.",
+              "asset_hint": "dial-gauge-v1"
+            },
+            {
+              "id": "sheltering_resident",
+              "kind": "human",
+              "appearance": "Resident seen from behind in a shaded window, with a cool interior practical; no close-up facial detail.",
+              "geometry_and_material": "humanoid-figure-v1 framed inside apartment-facade-v1 window bay.",
+              "scale_and_accuracy": "True human scale in mid-shot silhouette.",
+              "movement": "Subtle breathing and slight head turn toward the window.",
+              "asset_hint": "humanoid-figure-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 38.6..41.8s: The wet-bulb gauge needle crosses the 35 C red mark while a callout tag reads '35°C WET-BULB LIMIT — SWEAT CANNOT COOL THE BODY'.",
+            "t = 40.0..42.5s: Several neighboring building windows in the facade flicker off to suggest power-grid strain under extreme cooling demand."
+          ],
+          "lighting": "Harsh amber sunlight raking across the exterior masonry wall contrasted with cool blue-slate interior shade.",
+          "effects": [
+            "Subtle red highlight pulse on the 35 C threshold mark"
+          ],
+          "composition_notes": "Thermometer sits on the left third at y ~ 720 px while the shaded window and human silhouette sit on the right third."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "wet-bulb heat",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "survive outdoors.",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 34.6,
+          "duration_s": 7.6,
+          "kind": "ambience",
+          "description": "Muted, oppressive city heat hum with distant air-conditioning drone and a quiet, tense heartbeat pulse as the thermometer crosses 35 C.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "Pull upward from the steaming city sky to the whole planet shrouding itself in a thick moist-greenhouse cloud deck."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "second_order_effect",
+      "start_s": 42.5,
+      "end_s": 50.0,
+      "viewer_question": "What happens to the entire planet over centuries as heat and moisture keep building?",
+      "visual_payoff": "From orbit, Earth's familiar scattered clouds thicken into an unbroken, swollen moist-greenhouse shroud as water vapor floods upward into the stratosphere.",
+      "narration": {
+        "text": "Eventually, Earth could enter a moist greenhouse, with water vapor reaching high into the upper atmosphere.",
+        "start_s": 42.8,
+        "end_s": 49.6,
+        "delivery_note": "Spacious, awe-filled delivery on 'Over centuries', emphasizing 'moist greenhouse limit'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 42.5,
+          "end_s": 50.0,
+          "shot_type": "Orbital macro view of Earth's atmospheric limb and thickening global cloud shell",
+          "world": "Near-Earth orbital space; earth-globe-v1 wrapped in overcast-shell-v1 with a glowing, swollen atmospheric limb.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 42.5,
+                "position": [
+                  0.0,
+                  0.4,
+                  3.1
+                ],
+                "look_at": [
+                  0.0,
+                  0.15,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 50.0,
+                "position": [
+                  0.25,
+                  0.65,
+                  2.35
+                ],
+                "look_at": [
+                  0.15,
+                  0.55,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow upward arc from the full globe toward the glowing sunlit atmospheric limb.",
+            "lens_notes": "34 deg FOV showcases the transition from patchy blue-and-white Earth to a dense, creamy-amber cloud-shrouded world."
+          },
+          "subjects": [
+            {
+              "id": "moist_greenhouse_earth",
+              "kind": "planet",
+              "appearance": "Earth globe whose blue oceans gradually disappear beneath a dense, planet-wide deck of towering creamy-gold clouds and a thickened, hazy turquoise-amber limb.",
+              "geometry_and_material": "earth-globe-v1 (scatter rising from 1.2 to 2.1, nightOutage rising to 0.85 on the night side) wrapped in overcast-shell-v1 (coverage ramping from 0.55 to 0.96).",
+              "scale_and_accuracy": "Illustrates the moist-greenhouse regime (S_eff = 1.235x S0) over multi-century timescales; labeled 'TIMESCALE: CENTURIES TO MILLENNIA'.",
+              "movement": "Planet rotates slowly while overcast-shell-v1 coverage closes nearly every gap and the outer atmospheric rim expands.",
+              "asset_hint": "overcast-shell-v1"
+            },
+            {
+              "id": "stratospheric_plume_arrows",
+              "kind": "diagram",
+              "appearance": "Subtle luminous vertical streamlines rising across the tropopause boundary line into the stratosphere along the sunlit limb.",
+              "geometry_and_material": "Additive curve ribbons and overlay-labels-v1 altitude marker ('STRATOSPHERE — H₂O SATURATED').",
+              "scale_and_accuracy": "Atmospheric layer height is exaggerated at the limb for clarity and labeled 'SCHEMATIC LIMB PROFILE'.",
+              "movement": "Streamlines climb steadily across the dashed tropopause line from t = 44.5s to t = 49.8s.",
+              "asset_hint": "overlay-labels-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 42.5..48.5s: overcast-shell-v1 coverage increases from 0.55 to 0.96, veiling the continents under a dense moist-greenhouse cloud deck.",
+            "t = 44.5..50.0s: Along the sunlit upper limb, a dashed 'COLD TRAP BREACHED' line lights up as luminous water-vapor streamlines rise into the upper atmosphere."
+          ],
+          "lighting": "Intense solar key light from upper-left creating a thick, luminous golden-cyan atmospheric rim.",
+          "effects": [
+            "Soft bloom along the swollen stratospheric limb",
+            "2D schematic callout 'MOIST GREENHOUSE STATE (1.235× SUNLIGHT)'"
+          ],
+          "composition_notes": "The curved planetary limb crosses the upper-middle frame, leaving the dark night-side lower hemisphere behind the captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "moist greenhouse,",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "upper atmosphere.",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 42.7,
+          "duration_s": 7.0,
+          "kind": "music_swell",
+          "description": "Deep, resonant cathedral-like synth chord swelling as the cloud deck seals around the globe.",
+          "relative_db": -15
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "match_cut",
+        "duration_s": 0.5,
+        "motivation": "Zoom into the glowing upper-atmosphere limb to reveal schematic H2O molecules being struck by ultraviolet sunlight."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "twist",
+      "start_s": 50.0,
+      "end_s": 57.5,
+      "viewer_question": "How can extra sunlight at the top of the atmosphere slowly drain Earth's oceans into space?",
+      "visual_payoff": "In a schematic upper-atmosphere view, violet UV rays split rising H2O molecules (red oxygen + two white hydrogens), sending lightweight hydrogen atoms drifting outward into space.",
+      "narration": {
+        "text": "High above, ultraviolet sunlight splits water molecules apart, letting hydrogen escape into space over geological ages.",
+        "start_s": 50.3,
+        "end_s": 57.1,
+        "delivery_note": "Quiet wonder on 'splits water molecules apart', and clear timescale honesty on 'over geological ages'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 50.0,
+          "end_s": 57.5,
+          "shot_type": "Schematic molecular close-up at the exobase above Earth's curved horizon",
+          "world": "Upper-atmosphere molecular diagram stage above the glowing curved limb of Earth against starfield-v1.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 50.0,
+                "position": [
+                  0.0,
+                  0.2,
+                  3.6
+                ],
+                "look_at": [
+                  0.0,
+                  0.1,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 57.5,
+                "position": [
+                  0.0,
+                  0.55,
+                  4.1
+                ],
+                "look_at": [
+                  0.0,
+                  0.35,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow vertical rise and pullback following the liberated hydrogen atoms drifting upward into space.",
+            "lens_notes": "Clean macro-diagram staging with Earth's hazy horizon curved across the bottom of the frame."
+          },
+          "subjects": [
+            {
+              "id": "photolysis_molecules",
+              "kind": "diagram",
+              "appearance": "Enlarged schematic H2O bent triatomic molecules (crimson oxygen sphere bonded to two bright white-cyan hydrogen spheres) struck by violet-white UV light pulses, dissociating so the small hydrogen spheres stream upward into space.",
+              "geometry_and_material": "water-molecules-v1 and air-molecules-v1 instanced spheres/bonds with custom dissociation offset driven deterministically by time_s.",
+              "scale_and_accuracy": "Schematic net photochemistry, not a literal single-photon reaction. Long-term ocean loss depends on climate and escape rates.",
+              "movement": "From t = 50.8s to t = 56.8s, incoming UV ray pulses flash on the H-O bonds; bonds dissolve and white H atoms accelerate upward (+Y) toward space while heavy red O atoms remain lower.",
+              "asset_hint": "water-molecules-v1"
+            },
+            {
+              "id": "limb_backdrop",
+              "kind": "planet",
+              "appearance": "Curved, cloud-shrouded Earth horizon glowing amber-cyan below the molecular stage.",
+              "geometry_and_material": "earth-globe-v1 + overcast-shell-v1 positioned below the camera frustum center.",
+              "scale_and_accuracy": "Background planetary horizon for spatial context.",
+              "movement": "Slow horizon rotation.",
+              "asset_hint": "earth-globe-v1"
+            },
+            {
+              "id": "exosphere_stars",
+              "kind": "stars",
+              "appearance": "Deep space starfield above the atmosphere.",
+              "geometry_and_material": "starfield-v1.",
+              "scale_and_accuracy": "Background star shell.",
+              "movement": "Static relative to camera orientation.",
+              "asset_hint": "starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 50.0..51.2s: H2O molecules drift upward from the wet stratosphere.",
+            "t = 51.2..56.5s: Violet-white UV shafts streak in from the top-left; upon contact, H2O bonds snap with a soft glow and lightweight hydrogen spheres stream upward into the starfield.",
+            "t = 52.5..57.5s: Overlay callout 'UV SPLITS H₂O → HYDROGEN ESCAPES TO SPACE (10⁷–10⁸ YEARS)' stays clearly visible."
+          ],
+          "lighting": "High-contrast directional sunlight plus violet-blue emissive accents on the UV photolysis flashes.",
+          "effects": [
+            "Subtle bloom on the dissociating molecular bonds and escaping hydrogen trails",
+            "Explicit geological timescale badge"
+          ],
+          "composition_notes": "Molecular dissociation occurs in the upper-center third (y = 500..950 px), while the curved Earth limb sits near the bottom behind the caption safe zone."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "splits water molecules",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "escape into space",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 51.2,
+          "duration_s": 5.5,
+          "kind": "texture",
+          "description": "Delicate, crystalline high-register chimes and airy whisper as hydrogen atoms drift into the vacuum.",
+          "relative_db": -17
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "orbit_match",
+        "duration_s": 0.6,
+        "motivation": "Pull smoothly back from the upper atmosphere into the full orbital view, returning Earth to its true blue 1.00 AU sanctuary."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 57.5,
+      "end_s": 64.0,
+      "viewer_question": "How narrow is the orbital margin that keeps Earth a living blue world?",
+      "visual_payoff": "The camera pulls back to reveal the green-blue habitable sanctuary band at 1.00 AU beside the scorching 0.90 AU inner boundary, restoring Earth to its home orbit in a seamless visual loop back to frame 0.",
+      "narration": {
+        "text": "Our blue world depends on a delicate energy balance. Even a small orbital shift could transform it.",
+        "start_s": 57.7,
+        "end_s": 63.6,
+        "delivery_note": "Warm, reflective, and peaceful resolution; let 'ten percent margin' linger into a brief final breath."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 57.5,
+          "end_s": 64.0,
+          "shot_type": "High-angle orbital pullback matching Scene S01 frame 0",
+          "world": "Deep space orbital theater identical in layout and lighting rig to Scene S01 SH01.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 57.5,
+                "position": [
+                  -0.2,
+                  2.1,
+                  5.6
+                ],
+                "look_at": [
+                  -0.6,
+                  0.1,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              },
+              {
+                "t_s": 64.0,
+                "position": [
+                  0,
+                  2.6,
+                  6.6
+                ],
+                "look_at": [
+                  -0.3,
+                  0.1,
+                  0.0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Exact reverse pullback of Scene S01 SH01, arriving at [0.0, 2.4, 5.8] looking at [-0.3, 0.1, 0.0] at t = 64.0s for a seamless frame-0 loop.",
+            "lens_notes": "38 deg FOV matching S01 SH01."
+          },
+          "subjects": [
+            {
+              "id": "restored_earth",
+              "kind": "planet",
+              "appearance": "Earth transitioning smoothly from its hazy, overcast 0.90 AU state back to the vibrant blue-and-white NASA Blue Marble globe on the 1.00 AU ring.",
+              "geometry_and_material": "earth-globe-v1 + overcast-shell-v1 (coverage fading from 0.96 back to 0.0 as Earth glides from x = -0.55 back to x = 0.20).",
+              "scale_and_accuracy": "True NASA Blue Marble appearance on schematic orbital tracks.",
+              "movement": "Translates smoothly from the amber 0.90 AU track back to the cyan-emerald 1.00 AU habitable track by t = 62.5s, matching the exact spin phase and position of S01 frame 0 at t = 64.0s.",
+              "asset_hint": "earth-globe-v1"
+            },
+            {
+              "id": "habitable_zone_band",
+              "kind": "diagram",
+              "appearance": "Luminous emerald-cyan habitable zone ribbon around 1.00 AU contrasted with the amber-red inner moist-greenhouse edge at 0.95–0.90 AU.",
+              "geometry_and_material": "Translucent orbital annulus shader with soft edge fade and overlay-labels-v1 callouts.",
+              "scale_and_accuracy": "Labeled 'HABITABLE SANCTUARY (1.00 AU)' and 'INNER MOIST-GREENHOUSE EDGE (~0.95–0.90 AU)'.",
+              "movement": "Habitable band glows softly from t = 58.2s to t = 63.0s, then settles to the exact baseline ring opacity of S01 frame 0 at t = 64.0s.",
+              "asset_hint": "solar-orbit-diagram-v1"
+            },
+            {
+              "id": "loop_stars_and_sun",
+              "kind": "stars",
+              "appearance": "Seeded starfield and upper-left solar beacon identical to S01 SH01.",
+              "geometry_and_material": "starfield-v1 and solar beacon.",
+              "scale_and_accuracy": "Matches S01 SH01 background state.",
+              "movement": "Locked to S01 seed and coordinates for a zero-jump loop.",
+              "asset_hint": "starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "t = 57.5..61.8s: Earth glides outward from the amber 0.90 AU track back onto the 1.00 AU habitable band as the dense overcast shell clears to reveal blue oceans and white polar caps.",
+            "t = 61.8..64.0s: Labels fade out cleanly and camera, lighting, and Earth spin phase converge to the exact initial values of t = 0.0s."
+          ],
+          "lighting": "Directional sunlight easing from intensity 2.72 back to 2.20 at [-6.5, 2.2, -8.0], matching S01 frame 0.",
+          "effects": [
+            "Smooth clearing of the overcast shell to reveal ocean glint"
+          ],
+          "composition_notes": "Ends in the exact composition of frame 0 so replay on Shorts, Reels, and TikTok loops invisibly."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "delicate energy balance.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 57.5,
+          "duration_s": 6.5,
+          "kind": "ambience",
+          "description": "Warm C-minor/Ab-major glass pad resolving cleanly back to the opening harmonic texture of S01.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02",
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0.0,
+        "motivation": "Final frame matches frame 0 of Scene S01 for a seamless loop."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Resolved against the actual studio registry; final exact reuse and creation recorded in metadata.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Earth globe with atmosphere, clouds and city lights",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "NASA Earth texture set (day, night lights, clouds, land mask)",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "earth-seaice-mask-nasa-v1",
+        "usage": "NASA-derived floating sea-ice mask",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "overcast-shell-v1",
+        "usage": "Planet-wide cloud shell",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Seeded starfield",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Gradient sky dome with sun and haze",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Open-water ocean surface",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "sea-ice-v1",
+        "usage": "Sea-ice floes, fast-ice platform and tabular iceberg",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "smoke-wisp-v1",
+        "usage": "Rising smoke ribbon",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "dune-field-v1",
+        "usage": "Procedural sand dune sea",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "grass-field-v1",
+        "usage": "Wind-bent grass field",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "broadleaf-tree-v1",
+        "usage": "Broadleaf street tree",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "Detailed city street and aerial district",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "pedestrian-crowd-v1",
+        "usage": "Deterministic articulated pedestrian crossing",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "apartment-facade-v1",
+        "usage": "Apartment facade",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "room-box-v1",
+        "usage": "Modular room kit",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Procedural modeling helpers",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Procedural articulated human figure",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "dial-gauge-v1",
+        "usage": "Analog dial gauge",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "solar-panel-array-v1",
+        "usage": "Ground-mounted solar panel array",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Schematic label and callout helpers",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Kinetic burned-in captions",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic film render pipeline",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Storyboard keyframe camera rig",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Procedural audio synthesis kit",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Thumbnail cover composer (bold or clean)",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Inter typeface (Medium, SemiBold, Bold)",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Display fonts for thumbnails",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Shared shader noise and deterministic math",
+        "configuration": "Configured in src/stories/earth-ten-percent-closer/film.ts, soundtrack.mjs and src/entry.ts."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "solar-orbit-diagram-v1",
+        "description": "Configurable 3D orbital ring, habitable-zone annulus, Kepler period race, and inverse-square radiative flux cone kit for planetary orbital counterfactuals.",
+        "reusable_in": "Future stories involving Venus, Mars, planetary migration, solar luminosity changes, orbital eccentricity, or habitable-zone shifts.",
+        "parameters": [
+          "baselineAu",
+          "targetAu",
+          "habitableInnerAu",
+          "habitableOuterAu",
+          "orbitProgress",
+          "showFluxCone",
+          "showHabitableBand",
+          "time_s"
+        ],
+        "suggested_path": "src/library/diagram/SolarOrbitDiagram.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "UV photolysis bond-dissociation wrapper in S08 SH01 driving upward hydrogen atom drift above the limb",
+      "Concentric solar angular-diameter reticle overlay (1.00x vs 1.111x) in S02 SH01"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if earth moved 10 percent closer to the sun",
+    "core_keywords": [
+      "what if earth was closer to the sun",
+      "earth 10 percent closer to the sun",
+      "habitable zone",
+      "moist greenhouse effect",
+      "inverse square law sunlight",
+      "wet bulb temperature limit",
+      "goldilocks zone earth",
+      "space science short",
+      "planetary climate physics"
+    ],
+    "distinctive_angle": "Debunks the myth that moving 10% closer makes the Sun fill the sky (it looks only 11% wider), then uses the inverse-square law (+23.5% solar energy) to trace the real chain reaction from a 312-day year and lethal wet-bulb humidity to stratospheric water loss.",
+    "seo_integrity_note": "All platform titles, descriptions, and thumbnail hooks strictly reflect the rendered 0.90 AU scenario (+23.5% flux, 312-day year, moist greenhouse threshold) without promising instant planetary incineration."
+  },
+  "delivery": {
+    "video_output": "output/earth-ten-percent-closer.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 2.8,
+    "headline": "10% CLOSER TO THE SUN?!",
+    "highlight": [
+      "10%",
+      "CLOSER"
+    ],
+    "position": "top",
+    "badge": "+23.5% SUNLIGHT",
+    "badge_at": [
+      0.66,
+      0.84
+    ],
+    "focus": [
+      0.48,
+      0.58
+    ],
+    "zoom": 1.18,
+    "anchor": [
+      0.5,
+      0.62
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "bebas-neue",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FFB830",
+      "badge": "#E03A1E",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FFB830"
+    },
+    "grade": "dramatic",
+    "tilt": -3
+  }
+}

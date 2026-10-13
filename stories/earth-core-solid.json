@@ -1,0 +1,1800 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if Earth's core cooled and became completely solid?",
+    "title": "What If Earth's Core Froze Solid?",
+    "slug": "earth-core-solid",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 54,
+    "language": "en",
+    "audience": "Curious global general audiences age 13+, no science background",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If the liquid iron in Earth's core froze solid, what would we lose, and what would keep going?",
+    "viewer_takeaway": "Earth's magnetic field comes from churning liquid iron in the outer core; freeze it and the field fades, taking compass north, animal navigation aids and the polar lights with it and exposing the air to the solar wind, while volcanoes and plates keep running on mantle heat. The core really is freezing, but over billions of years."
+  },
+  "scientific_model": {
+    "baseline_reality": "Earth's core is mostly iron. The inner core, about 1,220 km in radius, is solid; around it lies a liquid outer core about 2,200 km thick. Convection in that liquid iron, powered by the planet's cooling and the slow growth of the inner core, generates Earth's magnetic field (the geodynamo). The centre is roughly 6,000 °C, about as hot as the Sun's surface. The inner core grows by about 1 mm in radius a year as the outer core slowly freezes.",
+    "counterfactual_change": "The whole core, including the outer core, is assumed to become solid now (still extremely hot, but no longer liquid). Everything else (Earth's mass, orbit, atmosphere and mantle) is unchanged. Without moving liquid iron there is no dynamo, so the magnetic field slowly decays. Consequences are followed from the field to animals, aurora, the atmosphere, and the still-convecting mantle.",
+    "assumptions": [
+      "The freeze is a thought experiment applied instantly; in reality complete freezing would take billions of years.",
+      "A solid core is still thousands of degrees hot; only its ability to flow, and therefore the dynamo, is lost.",
+      "The residual field decays over a long time rather than switching off at once; the film shows the decay schematically.",
+      "Atmospheric loss to the solar wind would be slow (millions of years or more) and its size is uncertain; Venus keeps a thick atmosphere without a global field.",
+      "Mantle convection and plate tectonics are driven mainly by heat in the mantle (radioactive decay and leftover heat) and sinking slabs, so they continue."
+    ],
+    "causal_chain": [
+      "Liquid iron in the outer core convects as Earth cools and the inner core grows.",
+      "Moving conducting liquid in a rotating planet sustains a magnetic field (geodynamo).",
+      "A completely solid core cannot convect, so the dynamo stops and the field slowly fades.",
+      "Compasses lose their reference direction; animals that use the field for navigation lose one of their cues.",
+      "Aurora ovals form where the field guides charged particles toward the poles; without the field they fade.",
+      "Without a magnetosphere the solar wind interacts directly with the upper atmosphere and can remove gas over long times, as observed at Mars.",
+      "Volcanoes and drifting plates run on mantle heat and sinking slabs, so they keep going.",
+      "The real core is freezing at about 1 mm of inner-core radius per year, which would take billions of years to finish."
+    ],
+    "uncertainties": [
+      "How fast the field would decay after the dynamo stopped (likely thousands of years or more) is simplified to a fade.",
+      "How much atmosphere Earth would lose without a field is debated; Venus has no global field but a thick atmosphere.",
+      "Animals use several navigation cues (Sun, stars, smell); losing the magnetic one would hurt some species more than others.",
+      "Whether the core will ever fully freeze before the Sun changes Earth is uncertain; the growth rate is an average."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Earth's inner core is solid and its outer core is liquid, mostly iron.",
+        "confidence": "established",
+        "reasoning": "USGS, The Interior of the Earth: seismic waves show a liquid outer core (no shear waves) and a solid inner core.",
+        "presentation_guardrail": "Label layer sizes only as on-screen callouts; the cutaway is schematic."
+      },
+      {
+        "id": "CL02",
+        "statement": "Convection of liquid iron in the outer core generates Earth's magnetic field (the geodynamo).",
+        "confidence": "established",
+        "reasoning": "NASA Goddard geodynamo research page; University of Leeds: \"Convection in the outer core produces Earth's geomagnetic field.\"",
+        "presentation_guardrail": "Field lines labelled schematic."
+      },
+      {
+        "id": "CL03",
+        "statement": "Earth's centre is about 6,000 °C, about as hot as the surface of the Sun.",
+        "confidence": "established",
+        "reasoning": "ESRF (2013, Science): the centre is about 6,000 °C; the Sun's visible surface is about 5,500 °C.",
+        "presentation_guardrail": "Say \"as hot as\"; callout \"~6,000 °C at the centre\"."
+      },
+      {
+        "id": "CL04",
+        "statement": "Without a working dynamo, Earth's main magnetic field would fade and compasses would lose a reliable north.",
+        "confidence": "derived",
+        "reasoning": "Follows from CL02: no flow, no dynamo; the residual field decays, and a compass aligns with whatever weak local field remains.",
+        "presentation_guardrail": "Show a wandering needle; no timescale claimed."
+      },
+      {
+        "id": "CL05",
+        "statement": "Migratory animals including sea turtles, salmon and birds use Earth's magnetic field for navigation.",
+        "confidence": "established",
+        "reasoning": "UNC Lohmann Lab (magnetoreception): sea turtles and salmon use magnetic cues in long migrations; birds also use the field.",
+        "presentation_guardrail": "Narrate \"lose a guide\", not \"get lost\"."
+      },
+      {
+        "id": "CL06",
+        "statement": "Aurora ovals form where Earth's magnetic field guides energetic electrons into the upper atmosphere near the magnetic poles; without the field the polar lights would fade.",
+        "confidence": "derived",
+        "reasoning": "NOAA SWPC: electrons follow Earth's magnetic field down to the polar regions, forming two ovals around the magnetic poles; removing the field removes that guidance.",
+        "presentation_guardrail": "Narrate \"fade\"; illustrative scene."
+      },
+      {
+        "id": "CL07",
+        "statement": "Mars has no global magnetic field and the solar wind strips its upper atmosphere, about 100 grams every second today, which helped turn a warmer, wetter Mars into a cold, dry planet.",
+        "confidence": "established",
+        "reasoning": "NASA MAVEN results (2015).",
+        "presentation_guardrail": "Tag \"~100 g a second (MAVEN)\"; plume schematic."
+      },
+      {
+        "id": "CL08",
+        "statement": "Without a magnetic field, the solar wind could strip some of Earth's atmosphere over millions of years.",
+        "confidence": "plausible",
+        "reasoning": "By analogy with Mars (CL07); the amount is debated because Venus keeps a thick atmosphere without a global field.",
+        "presentation_guardrail": "Narrate \"could\", \"over millions of years\", \"some\"."
+      },
+      {
+        "id": "CL09",
+        "statement": "Volcanoes and plate tectonics are driven mainly by heat in the mantle (radioactive decay and leftover heat) and sinking slabs, so they would continue with a solid core.",
+        "confidence": "plausible",
+        "reasoning": "USGS This Dynamic Earth: Earth's heat comes from radioactive decay and residual heat, and the slow movement of hot mantle and slab pull drive the plates; neither requires a liquid outer core.",
+        "presentation_guardrail": "Narrate \"mainly\"; convection loops labelled schematic."
+      },
+      {
+        "id": "CL10",
+        "statement": "The inner core grows by about 1 mm in radius a year as the outer core freezes, so freezing the whole core would take billions of years.",
+        "confidence": "derived",
+        "reasoning": "UC Berkeley (2021): the inner core grows ~1 mm a year in radius; the remaining ~2,200 km of liquid at that average rate implies on the order of two billion years or more.",
+        "presentation_guardrail": "Say \"billions of years\"; tag \"~1 mm a year\"."
+      }
+    ],
+    "sources": [
+      {
+        "name": "USGS — The Interior of the Earth",
+        "url": "https://pubs.usgs.gov/gip/interior",
+        "supports_claim_ids": [
+          "CL01"
+        ]
+      },
+      {
+        "name": "NASA Goddard — Geodynamo and core dynamics research",
+        "url": "https://science.gsfc.nasa.gov/earth/geodesy/researchareas/136/",
+        "supports_claim_ids": [
+          "CL02",
+          "CL04"
+        ]
+      },
+      {
+        "name": "University of Leeds — Hidden chemistry of Earth's core revealed by how it froze",
+        "url": "https://environment.leeds.ac.uk/see/news/article/5991/hidden-chemistry-of-earth-s-core-revealed-by-how-it-froze",
+        "supports_claim_ids": [
+          "CL02",
+          "CL10"
+        ]
+      },
+      {
+        "name": "ESRF — Earth's centre is 1000 degrees hotter than previously thought",
+        "url": "https://www.esrf.fr/news/general/Earth-Center-Hotter",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "UNC Lohmann Lab — Magnetoreception",
+        "url": "https://lohmannlab.web.unc.edu/magnetoreception/",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      },
+      {
+        "name": "NOAA Space Weather Prediction Center — Aurora",
+        "url": "https://www.spaceweather.gov/phenomena/aurora",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "name": "NASA Astrobiology — NASA mission reveals speed of solar wind stripping Martian atmosphere",
+        "url": "https://astrobiology.nasa.gov/news/nasa-mission-reveals-speed-of-solar-wind-stripping-martian-atmosphere/",
+        "supports_claim_ids": [
+          "CL07",
+          "CL08"
+        ]
+      },
+      {
+        "name": "USGS — This Dynamic Earth: Some unanswered questions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/unanswered.html",
+        "supports_claim_ids": [
+          "CL09"
+        ]
+      },
+      {
+        "name": "UC Berkeley News — Is Earth's core lopsided? (2021)",
+        "url": "https://news.berkeley.edu/2021/06/03/is-earths-core-lopsided-strange-goings-on-in-our-planets-interior/",
+        "supports_claim_ids": [
+          "CL10"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "A cutaway Earth freezes at its heart; we follow the vanishing magnetic field to a lost compass, migrating animals, fading auroras and a planet open to the solar wind like Mars, find the volcanoes still alive, and return to the molten core that still shields us.",
+    "visual_identity": "Deep-space documentary with a molten heart: NASA-true Earth, a glowing orange-gold core in a clean cutaway, pale-cyan field lines, cool aurora greens and rust-red Mars; human-scale warmth in lamp light and dusk.",
+    "palette": [
+      "molten orange #FF7A1A",
+      "inner-core gold #FFD98A",
+      "frozen iron #4A4E56",
+      "field cyan #7FE3FF",
+      "aurora green #5CFFB0",
+      "mars rust #B5532B",
+      "caption amber #FFB45C"
+    ],
+    "lighting": "Hard space sunlight from the upper right with emissive core light; warm lamp light for the compass; dusk for birds and volcano; polar night for the aurora.",
+    "camera_language": "Slow push-ins and pull-backs on a planetary cutaway, macro on a compass, low dusk angles, underwater glide, upward look at the aurora, slow orbital drifts.",
+    "motion_language": "Slow and inevitable: molten iron churns, a freezing front creeps, field lines bloom and fade, lava arcs and falls.",
+    "world_scale_policy": "Orbital shots use 1 unit = 1 Earth radius with true layer radii; field lines and solar-wind particles are schematic. Ground and underwater scenes use metres at true scale. Mars is shown at a similar frame size to Earth and labelled.",
+    "emotional_arc": [
+      "curiosity",
+      "awe",
+      "insight",
+      "unease",
+      "loss",
+      "surprise",
+      "calm"
+    ],
+    "opening_hook": "A cutaway Earth: the glowing molten core goes dark and solid while the question is asked.",
+    "ending_payoff": "The camera pulls back to the molten core and its field, exactly as the film began.",
+    "loop_connection": "The last frame is the frame-0 cutaway with a liquid core and glowing field lines, just before the freeze starts.",
+    "asset_policy": "Reuse the studio library first (Earth globe and textures, starfield, sky dome, ocean, bird flock, fish school, underwater volume, conifers, bokeh, captions, labels, camera rig, pipeline, audio kit, thumbnail composer). New cutaway planet, magnetic field lines, solar wind, aurora, compass, volcano and rocky planet are original procedural work promoted to the library."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 140,
+    "music_direction": "Original slow pad in D minor with a deep molten drone; a cold glassy shimmer for the freeze and the field; sparse felt-piano notes; a warm resolve to D major for the return to the molten core.",
+    "music_level_db_below_voice": -22,
+    "sfx_direction": "Synthesized and restrained: low molten churn, crackling freeze, electrical shimmer for the field, a ticking compass needle, sea wind and wingbeats, underwater flow, cold night air, a soft rushing solar wind, and a deep volcanic rumble.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Premium documentary subtitles: ivory semibold with a thin charcoal outline and soft shadow, restrained amber active word, phrase-by-phrase with a 120 ms ease; a soft dark band behind text over bright scenes.",
+    "font_stack": "Inter, Manrope, system-ui, sans-serif",
+    "font_size_px": 66,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 100,
+      "right_px": 180,
+      "top_px": 230,
+      "bottom_px": 330,
+      "caption_baseline_y_px": 1370
+    },
+    "active_word_treatment": "The spoken word turns amber without moving the baseline; emphasised phrases keep a soft accent, a 1.04 scale or a gentle glow.",
+    "highlights_policy": "Exact narration only. In-scene labels are limited to chips, schematic/illustrative tags and numbers backed by the claim register."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.66,
+      "narration": {
+        "text": "What if Earth's core cooled until it was completely solid?",
+        "start_s": 0.35,
+        "end_s": 4.31,
+        "delivery_note": "Hushed and curious; slow on \"completely solid\"."
+      },
+      "viewer_question": "What happens if the molten heart of the planet freezes?",
+      "visual_payoff": "A cutaway Earth: the glowing liquid core goes dark and solid, and the faint magnetic field around it fades.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.66,
+          "shot_type": "orbital cutaway, the core freezes",
+          "world": "Space; Earth at the origin with a quarter wedge cut away toward the camera; sunlight from the upper right.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  5.38,
+                  2.26,
+                  5.38
+                ],
+                "look_at": [
+                  0,
+                  -0.1,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4.66,
+                "position": [
+                  3.76,
+                  1.58,
+                  3.76
+                ],
+                "look_at": [
+                  0.05,
+                  -0.05,
+                  0.05
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the cut faces.",
+            "lens_notes": "32° vertical FOV; the globe fills most of the frame width."
+          },
+          "subjects": [
+            {
+              "id": "earth-cutaway",
+              "kind": "planet",
+              "appearance": "Earth with a quarter wedge cut away to the centre, its liquid outer core cooling into dark solid metal",
+              "geometry_and_material": "Lit NASA day-map surface shell with the wedge discarded; the two flat cut faces show true-scale layers: thin crust, rust-red mantle with slow convection streaks, a molten outer core of swirling orange iron, and a pale-gold crystalline inner core. A \"solid\" control turns the outer core into dark, static crystalline metal still glowing deep red in the cracks.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius (6,371 km); layer radii true to scale (inner core 0.19, outer core 0.55); crust drawn at true thinness. Flow speed is schematic.",
+              "movement": "Surface texture turns slowly while the cut stays facing the camera; molten flow churns; freezing spreads as described per shot.",
+              "asset_hint": "candidate:planet-cutaway-v1"
+            },
+            {
+              "id": "field-lines",
+              "kind": "diagram",
+              "appearance": "Glowing pale-cyan magnetic field lines looping from pole to pole around the planet, fading as the core freezes",
+              "geometry_and_material": "Dipole field lines (r = L·sin²θ) as thin additive tubes with slow pulses flowing along them.",
+              "scale_and_accuracy": "Schematic: shape follows a dipole; real field lines are invisible and extend much farther.",
+              "movement": "Pulses flow; overall strength fades with the dynamo.",
+              "asset_hint": "candidate:magnetic-field-lines-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "0–1.4 s the molten outer core churns and the field lines glow.",
+            "1.4–4.43 s a freezing front sweeps outward from the inner core: the orange flow stops and turns to dark crystalline metal; the field lines fade.",
+            "1.86 s chip WHAT IF · THE WHOLE CORE FREEZES; tag HYPOTHETICAL · SCHEMATIC CUTAWAY."
+          ],
+          "lighting": "Hard sunlight from the upper right; the cut faces glow from within (emissive core).",
+          "effects": [
+            "Atmosphere rim",
+            "Core glow bloom",
+            "Label: HYPOTHETICAL · SCHEMATIC CUTAWAY"
+          ],
+          "composition_notes": "Globe centred around y≈820 px; the cut faces aimed at the camera; captions below the globe."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "completely solid",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0,
+          "duration_s": 1.86,
+          "kind": "ambience",
+          "description": "Deep space hum with a low molten churn.",
+          "relative_db": -30
+        },
+        {
+          "at_s": 2.56,
+          "duration_s": 2.1,
+          "kind": "texture",
+          "description": "Crackling, glassy freeze sweeping through metal.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The frozen core dissolves back to the real, molten core of today."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.66,
+      "end_s": 13.88,
+      "narration": {
+        "text": "Today, only the center is solid, as hot as the Sun's surface. Around it swirls an ocean of molten iron.",
+        "start_s": 4.96,
+        "end_s": 13.38,
+        "delivery_note": "Calm wonder; a small pause after \"Sun's surface\"."
+      },
+      "viewer_question": "What is the core like today?",
+      "visual_payoff": "A close look inside: a pale-gold solid inner core wrapped in a thick, swirling ocean of liquid iron.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.66,
+          "end_s": 13.88,
+          "shot_type": "close cutaway of the core today",
+          "world": "Same cutaway, close to the cut faces; today's core: solid inner core, liquid outer core.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 4.66,
+                "position": [
+                  2.28,
+                  1.01,
+                  2.28
+                ],
+                "look_at": [
+                  0.12,
+                  -0.05,
+                  0.12
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 13.88,
+                "position": [
+                  1.88,
+                  0.74,
+                  1.88
+                ],
+                "look_at": [
+                  0.1,
+                  -0.08,
+                  0.1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push in toward the centre.",
+            "lens_notes": "30° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth-cutaway",
+              "kind": "planet",
+              "appearance": "Earth with a quarter wedge cut away to the centre, today: solid inner core and molten swirling outer core",
+              "geometry_and_material": "Lit NASA day-map surface shell with the wedge discarded; the two flat cut faces show true-scale layers: thin crust, rust-red mantle with slow convection streaks, a molten outer core of swirling orange iron, and a pale-gold crystalline inner core. A \"solid\" control turns the outer core into dark, static crystalline metal still glowing deep red in the cracks.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius (6,371 km); layer radii true to scale (inner core 0.19, outer core 0.55); crust drawn at true thinness. Flow speed is schematic.",
+              "movement": "Surface texture turns slowly while the cut stays facing the camera; molten flow churns; freezing spreads as described per shot.",
+              "asset_hint": "candidate:planet-cutaway-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "4.66–13.88 s the molten outer core swirls in slow convection; the inner core glows pale gold.",
+            "5.4 s callout SOLID INNER CORE · ~6,000 °C AT THE CENTRE.",
+            "9.73 s callout LIQUID OUTER CORE · MOLTEN IRON; chip TODAY · THE CORE."
+          ],
+          "lighting": "Emissive core light; dim key from the upper right on the surface shell.",
+          "effects": [
+            "Core glow bloom",
+            "Label callouts"
+          ],
+          "composition_notes": "Cut faces fill the frame; core near y≈820 px; callouts in the upper half."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "as hot as the Sun's surface",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "ocean of molten iron",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.66,
+          "duration_s": 9.22,
+          "kind": "ambience",
+          "description": "Low, viscous churning roar of molten metal.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Continuous action: the camera keeps pulling back from the same cutaway."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 13.88,
+      "end_s": 21.93,
+      "narration": {
+        "text": "That churning iron is a dynamo. It makes Earth's magnetic field. Freeze it, and the field fades.",
+        "start_s": 14.18,
+        "end_s": 21.43,
+        "delivery_note": "Clear and explanatory; slower on \"the field fades\"."
+      },
+      "viewer_question": "Why does the liquid matter?",
+      "visual_payoff": "Field lines bloom out of the core around the whole planet, then fade away as the core turns solid.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 13.88,
+          "end_s": 21.93,
+          "shot_type": "orbital pull-back, field lines appear then fade",
+          "world": "Same cutaway Earth in space with dipole field lines.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 13.88,
+                "position": [
+                  2.82,
+                  1.18,
+                  2.82
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 21.93,
+                "position": [
+                  7.06,
+                  3.36,
+                  7.06
+                ],
+                "look_at": [
+                  0,
+                  0.1,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Pull back to reveal the field around the planet.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth-cutaway",
+              "kind": "planet",
+              "appearance": "Earth with a quarter wedge cut away to the centre, with its outer core turning solid after the halfway point",
+              "geometry_and_material": "Lit NASA day-map surface shell with the wedge discarded; the two flat cut faces show true-scale layers: thin crust, rust-red mantle with slow convection streaks, a molten outer core of swirling orange iron, and a pale-gold crystalline inner core. A \"solid\" control turns the outer core into dark, static crystalline metal still glowing deep red in the cracks.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius (6,371 km); layer radii true to scale (inner core 0.19, outer core 0.55); crust drawn at true thinness. Flow speed is schematic.",
+              "movement": "Surface texture turns slowly while the cut stays facing the camera; molten flow churns; freezing spreads as described per shot.",
+              "asset_hint": "candidate:planet-cutaway-v1"
+            },
+            {
+              "id": "field-lines",
+              "kind": "diagram",
+              "appearance": "Glowing pale-cyan magnetic field lines looping from pole to pole around the planet, growing out of the core, then fading",
+              "geometry_and_material": "Dipole field lines (r = L·sin²θ) as thin additive tubes with slow pulses flowing along them.",
+              "scale_and_accuracy": "Schematic: shape follows a dipole; real field lines are invisible and extend much farther.",
+              "movement": "Pulses flow; overall strength fades with the dynamo.",
+              "asset_hint": "candidate:magnetic-field-lines-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "13.88–17.1 s field lines grow outward from the poles and loop around the planet; pulses flow along them.",
+            "18.31–21.53 s the outer core freezes and the field lines fade to nothing.",
+            "14.69 s chip DYNAMO · MOVING LIQUID IRON; tag SCHEMATIC FIELD LINES."
+          ],
+          "lighting": "Hard sunlight from the upper right; field lines self-lit.",
+          "effects": [
+            "Additive field-line glow",
+            "Label: SCHEMATIC FIELD LINES"
+          ],
+          "composition_notes": "Planet centred around y≈860 px with loops above and below; captions under the loops."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "dynamo",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "the field fades",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 13.88,
+          "duration_s": 4.02,
+          "kind": "music_swell",
+          "description": "A soft electrical shimmer as the field appears.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 18.71,
+          "duration_s": 3.22,
+          "kind": "texture",
+          "description": "The shimmer thins and dies away.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The fading field lines dissolve into a compass needle losing its way."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "human_impact",
+      "start_s": 21.93,
+      "end_s": 27.62,
+      "narration": {
+        "text": "Compasses lose north. Migrating birds and salmon lose a guide.",
+        "start_s": 22.23,
+        "end_s": 27.12,
+        "delivery_note": "Quiet and plain."
+      },
+      "viewer_question": "What would we notice?",
+      "visual_payoff": "A compass needle drifts aimlessly; a flock of migrating birds and a salmon school travel on without their magnetic map.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 21.93,
+          "end_s": 24.55,
+          "shot_type": "macro: compass needle wandering",
+          "world": "A brass pocket compass on an old paper map on a wooden table, warm lamp light; metres.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 21.93,
+                "position": [
+                  0.11,
+                  0.13,
+                  0.15
+                ],
+                "look_at": [
+                  0,
+                  0.008,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 24.55,
+                "position": [
+                  0.085,
+                  0.105,
+                  0.115
+                ],
+                "look_at": [
+                  0,
+                  0.008,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow macro push.",
+            "lens_notes": "34° vertical FOV, shallow depth of field feel."
+          },
+          "subjects": [
+            {
+              "id": "compass",
+              "kind": "other",
+              "appearance": "Brass pocket compass with a cream rose card (N, E, S, W), red-and-white needle and a glass cover",
+              "geometry_and_material": "Lathe-turned brass case, printed rose card, glass dome with reflections, diamond needle on a pivot.",
+              "scale_and_accuracy": "7 cm across; true scale.",
+              "movement": "Needle swings off north and keeps drifting.",
+              "asset_hint": "candidate:compass-v1"
+            },
+            {
+              "id": "map",
+              "kind": "other",
+              "appearance": "Old paper map and wooden table",
+              "geometry_and_material": "Canvas map texture on a plane, wood plane.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Static.",
+              "asset_hint": "shot-specific:map-table"
+            }
+          ],
+          "animation_plan": [
+            "21.93–22.72 s the needle points north, then begins to swing.",
+            "22.72–24.55 s it drifts slowly with no preferred direction.",
+            "22.06 s chip COMPASS · NO NORTH."
+          ],
+          "lighting": "Warm lamp key from the left, soft bokeh lights behind.",
+          "effects": [
+            "Background bokeh",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Compass centred at y≈860 px."
+        },
+        {
+          "id": "SH02",
+          "start_s": 24.55,
+          "end_s": 26.2,
+          "shot_type": "migrating birds over the sea at dusk",
+          "world": "Open sea at dusk; a loose V of birds flying high; metres.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 24.55,
+                "position": [
+                  0,
+                  2.5,
+                  22
+                ],
+                "look_at": [
+                  0,
+                  16,
+                  -30
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 26.2,
+                "position": [
+                  3,
+                  2.8,
+                  18
+                ],
+                "look_at": [
+                  2,
+                  16,
+                  -30
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Low camera tilting up, drifting sideways.",
+            "lens_notes": "36° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "birds",
+              "kind": "animal",
+              "appearance": "A loose flock of migrating birds silhouetted against a pink dusk sky",
+              "geometry_and_material": "Instanced birds with flapping wings.",
+              "scale_and_accuracy": "Wingspan ~1.4 m.",
+              "movement": "Fly across the frame.",
+              "asset_hint": "reuse:bird-flock-v1"
+            },
+            {
+              "id": "sea",
+              "kind": "water",
+              "appearance": "Calm darkening sea",
+              "geometry_and_material": "Ocean surface shader.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Gentle swell.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            }
+          ],
+          "animation_plan": [
+            "24.55–26.2 s the flock crosses the sky from left to right.",
+            "24.72 s chip BIRDS · LOSE A MAGNETIC GUIDE."
+          ],
+          "lighting": "Low warm dusk sun, cool sky.",
+          "effects": [
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Flock in the upper third, horizon low."
+        },
+        {
+          "id": "SH03",
+          "start_s": 26.2,
+          "end_s": 27.62,
+          "shot_type": "underwater salmon school",
+          "world": "Open water near the surface; a school of silver salmon swimming; metres.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 26.2,
+                "position": [
+                  0,
+                  -2.6,
+                  6
+                ],
+                "look_at": [
+                  0,
+                  -3,
+                  -4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 27.62,
+                "position": [
+                  -0.6,
+                  -2.5,
+                  4.8
+                ],
+                "look_at": [
+                  0,
+                  -3,
+                  -4
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Gentle glide alongside the school.",
+            "lens_notes": "40° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "salmon",
+              "kind": "animal",
+              "appearance": "A school of silver-green salmon",
+              "geometry_and_material": "Instanced fish school.",
+              "scale_and_accuracy": "Fish ~0.6 m, school shape schematic.",
+              "movement": "Swims across.",
+              "asset_hint": "reuse:fish-school-v1"
+            },
+            {
+              "id": "water",
+              "kind": "water",
+              "appearance": "Blue-green open water with light shafts",
+              "geometry_and_material": "Underwater volume.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Drifting particles.",
+              "asset_hint": "reuse:underwater-volume-v1"
+            }
+          ],
+          "animation_plan": [
+            "26.2–27.62 s the school passes the camera.",
+            "26.34 chip SALMON · LOSE A MAGNETIC GUIDE."
+          ],
+          "lighting": "Sun shafts from above.",
+          "effects": [
+            "Light shafts",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "School across the middle."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "lose north",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 21.93,
+          "duration_s": 2.28,
+          "kind": "texture",
+          "description": "Tiny metallic tick of a wandering compass needle.",
+          "relative_db": -26
+        },
+        {
+          "at_s": 24.49,
+          "duration_s": 1.71,
+          "kind": "ambience",
+          "description": "Wind and distant wingbeats over the sea.",
+          "relative_db": -28
+        },
+        {
+          "at_s": 26.2,
+          "duration_s": 1.42,
+          "kind": "ambience",
+          "description": "Muffled underwater flow.",
+          "relative_db": -28
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "The underwater blue dissolves into the green glow of polar lights."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 27.62,
+      "end_s": 37.08,
+      "narration": {
+        "text": "The polar lights fade, and over millions of years the solar wind could strip some of our air away, as it did on Mars.",
+        "start_s": 27.92,
+        "end_s": 36.58,
+        "delivery_note": "Slower, weighty on \"as it did on Mars\"."
+      },
+      "viewer_question": "What does the field protect us from?",
+      "visual_payoff": "Aurora curtains dim over a snowy forest; then the solar wind slams into an unshielded Earth, and a thin Mars trails its escaping air.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 27.62,
+          "end_s": 31.03,
+          "shot_type": "aurora fading over a snowy forest",
+          "world": "Polar night: snow-covered ground and conifers under stars; aurora curtains overhead; metres.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 27.62,
+                "position": [
+                  0,
+                  1.6,
+                  8
+                ],
+                "look_at": [
+                  0,
+                  9,
+                  -40
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 31.03,
+                "position": [
+                  1.2,
+                  1.7,
+                  6
+                ],
+                "look_at": [
+                  0,
+                  10,
+                  -40
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift forward, looking up.",
+            "lens_notes": "40° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "aurora",
+              "kind": "atmosphere",
+              "appearance": "Green curtains of aurora with pink tops rippling across the sky",
+              "geometry_and_material": "Vertical ribbon meshes with a ray-textured gradient shader.",
+              "scale_and_accuracy": "Illustrative: real aurora is ~100–300 km up.",
+              "movement": "Ripple, then dim to nothing.",
+              "asset_hint": "candidate:aurora-curtains-v1"
+            },
+            {
+              "id": "forest",
+              "kind": "vegetation",
+              "appearance": "Snow-laden conifers",
+              "geometry_and_material": "Instanced conifers.",
+              "scale_and_accuracy": "Trees 6–12 m.",
+              "movement": "Static.",
+              "asset_hint": "reuse:conifer-stand-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "27.62–28.47 s the aurora ripples brightly.",
+            "28.47–30.69 s it fades away, leaving only stars.",
+            "27.79 s chip AURORA · NEEDS THE FIELD."
+          ],
+          "lighting": "Moonless night; green aurora light on the snow fading.",
+          "effects": [
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Tree line low; aurora fills the upper two thirds."
+        },
+        {
+          "id": "SH02",
+          "start_s": 31.03,
+          "end_s": 34.24,
+          "shot_type": "solar wind hitting an unshielded Earth",
+          "world": "Space; Earth with its atmosphere glow; a schematic stream of solar-wind particles from the left (the Sun).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 31.03,
+                "position": [
+                  0.5,
+                  2,
+                  14
+                ],
+                "look_at": [
+                  0.5,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 34.24,
+                "position": [
+                  0.3,
+                  1.7,
+                  12.6
+                ],
+                "look_at": [
+                  0.4,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift in; the stream enters from the left, the plume trails right.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth with a blue atmosphere rim",
+              "geometry_and_material": "NASA-textured globe with clouds and atmosphere.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius.",
+              "movement": "Slow rotation.",
+              "asset_hint": "reuse:earth-globe-v1"
+            },
+            {
+              "id": "solar-wind",
+              "kind": "particle_system",
+              "appearance": "Pale-gold streaks flowing from the left, striking the upper atmosphere; a faint blue plume of escaping gas trailing downwind",
+              "geometry_and_material": "Additive streak particles; deterministic flow.",
+              "scale_and_accuracy": "Schematic: particles and the plume are vastly exaggerated.",
+              "movement": "Stream continuously.",
+              "asset_hint": "candidate:solar-wind-stream-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "31.03–34.24 s the solar wind hits the dayside upper atmosphere directly; a faint escaping plume grows on the night side.",
+            "31.29 s chip SOLAR WIND · NO SHIELD; tag SCHEMATIC · MILLIONS OF YEARS."
+          ],
+          "lighting": "Sunlight from the left.",
+          "effects": [
+            "Additive particles",
+            "Label: SCHEMATIC"
+          ],
+          "composition_notes": "Earth slightly right of centre, stream entering from the left."
+        },
+        {
+          "id": "SH03",
+          "start_s": 34.24,
+          "end_s": 37.08,
+          "shot_type": "Mars losing its air",
+          "world": "Space; Mars with a thin hazy atmosphere; the solar wind stripping a plume of ions behind it.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 34.24,
+                "position": [
+                  400.6,
+                  1.8,
+                  13
+                ],
+                "look_at": [
+                  400.5,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 37.08,
+                "position": [
+                  400.4,
+                  1.5,
+                  11.5
+                ],
+                "look_at": [
+                  400.4,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "mars",
+              "kind": "planet",
+              "appearance": "Rust-red Mars with dark plains, craters and a small polar cap; a very thin haze rim",
+              "geometry_and_material": "Procedural rocky-planet shader with seeded noise, crater pattern, polar caps and a thin atmosphere rim.",
+              "scale_and_accuracy": "Shown at the same frame size as Earth; real Mars is about half Earth's width.",
+              "movement": "Slow rotation; ion plume streams away.",
+              "asset_hint": "candidate:rocky-planet-v1"
+            },
+            {
+              "id": "ion-plume",
+              "kind": "particle_system",
+              "appearance": "Faint blue plume of escaping ions trailing downwind",
+              "geometry_and_material": "Additive particles.",
+              "scale_and_accuracy": "Schematic.",
+              "movement": "Flows away.",
+              "asset_hint": "candidate:solar-wind-stream-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "34.24–37.08 s the solar wind strips a faint plume from Mars's thin atmosphere.",
+            "34.47 s chip MARS · NO GLOBAL MAGNETIC FIELD; tag ~100 G OF AIR LOST EVERY SECOND (MAVEN)."
+          ],
+          "lighting": "Sunlight from the left.",
+          "effects": [
+            "Additive particles",
+            "Label: SCHEMATIC"
+          ],
+          "composition_notes": "Mars centred around y≈860 px."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "polar lights fade",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "as it did on Mars",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 27.62,
+          "duration_s": 3.31,
+          "kind": "ambience",
+          "description": "Still, cold night air; a faint high shimmer that fades.",
+          "relative_db": -28
+        },
+        {
+          "at_s": 30.93,
+          "duration_s": 6.15,
+          "kind": "whoosh",
+          "description": "Soft, continuous rushing of the solar wind.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL06",
+        "CL07",
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The red planet dissolves into the red glow of an erupting volcano."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "twist",
+      "start_s": 37.08,
+      "end_s": 44.06,
+      "narration": {
+        "text": "Yet volcanoes and drifting plates keep going. They run mainly on the mantle's own heat.",
+        "start_s": 37.38,
+        "end_s": 43.56,
+        "delivery_note": "A small lift of surprise on \"keep going\"."
+      },
+      "viewer_question": "Does the planet go dead?",
+      "visual_payoff": "A volcano keeps erupting at dusk, and inside the cutaway the mantle still turns over in slow loops around the frozen core.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 37.08,
+          "end_s": 40.71,
+          "shot_type": "volcano erupting at dusk",
+          "world": "A cone volcano at blue hour with lava fountains, glowing flows and an ash plume; metres (cone ~1.2 km high).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 37.08,
+                "position": [
+                  0,
+                  430,
+                  2250
+                ],
+                "look_at": [
+                  0,
+                  930,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 40.71,
+                "position": [
+                  160,
+                  410,
+                  1980
+                ],
+                "look_at": [
+                  0,
+                  930,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the cone.",
+            "lens_notes": "36° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "volcano",
+              "kind": "terrain",
+              "appearance": "Dark basalt cone with a glowing crater, lava fountains and orange flows; dark ash plume lit from below",
+              "geometry_and_material": "Procedural cone with noise, emissive lava-channel shader, ballistic ejecta particles and soft plume sprites.",
+              "scale_and_accuracy": "Cone ~1.2 km high; eruption scale illustrative.",
+              "movement": "Lava fountains arc and fall; plume billows up.",
+              "asset_hint": "candidate:volcano-v1"
+            },
+            {
+              "id": "sky",
+              "kind": "atmosphere",
+              "appearance": "Deep dusk sky",
+              "geometry_and_material": "Sky dome.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "37.08–40.71 s lava fountains burst from the crater and fall on the slopes; the plume billows.",
+            "37.37 s chip VOLCANOES · STILL ACTIVE."
+          ],
+          "lighting": "Dusk sky with the orange glow of lava on the plume and slopes.",
+          "effects": [
+            "Lava glow bloom",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Cone in the lower middle, plume rising into the upper frame."
+        },
+        {
+          "id": "SH02",
+          "start_s": 40.71,
+          "end_s": 44.06,
+          "shot_type": "cutaway: mantle convection around a frozen core",
+          "world": "The cutaway Earth with a solid core; the mantle shows slow convection loops carrying heat up to the surface.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 40.71,
+                "position": [
+                  2.62,
+                  1.1,
+                  2.62
+                ],
+                "look_at": [
+                  0.05,
+                  0,
+                  0.05
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 44.06,
+                "position": [
+                  2.22,
+                  0.88,
+                  2.22
+                ],
+                "look_at": [
+                  0.05,
+                  -0.02,
+                  0.05
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the mantle band.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth-cutaway",
+              "kind": "planet",
+              "appearance": "Earth with a quarter wedge cut away to the centre, with a frozen core and slow mantle convection loops",
+              "geometry_and_material": "Lit NASA day-map surface shell with the wedge discarded; the two flat cut faces show true-scale layers: thin crust, rust-red mantle with slow convection streaks, a molten outer core of swirling orange iron, and a pale-gold crystalline inner core. A \"solid\" control turns the outer core into dark, static crystalline metal still glowing deep red in the cracks.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius (6,371 km); layer radii true to scale (inner core 0.19, outer core 0.55); crust drawn at true thinness. Flow speed is schematic.",
+              "movement": "Surface texture turns slowly while the cut stays facing the camera; molten flow churns; freezing spreads as described per shot.",
+              "asset_hint": "candidate:planet-cutaway-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "40.71–44.06 s dashed loops circulate through the mantle while the core stays dark and solid.",
+            "40.98 s chip MANTLE · STILL CONVECTING; tag HEAT FROM RADIOACTIVE DECAY + LEFTOVER HEAT."
+          ],
+          "lighting": "Mantle glow on the cut faces.",
+          "effects": [
+            "Label: SCHEMATIC"
+          ],
+          "composition_notes": "Mantle band across the middle."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "keep going",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "mantle's own heat",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 37.08,
+          "duration_s": 3.84,
+          "kind": "impact",
+          "description": "Deep volcanic rumble with soft lava bursts.",
+          "relative_db": -22
+        },
+        {
+          "at_s": 40.92,
+          "duration_s": 3.14,
+          "kind": "texture",
+          "description": "Slow, grinding churn.",
+          "relative_db": -27
+        }
+      ],
+      "claim_ids": [
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The frozen core dissolves back to today's molten core."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "ending",
+      "start_s": 44.06,
+      "end_s": 54,
+      "narration": {
+        "text": "Our core is freezing, but so slowly it'll take billions of years. Until then, liquid iron shields us.",
+        "start_s": 44.36,
+        "end_s": 52.24,
+        "delivery_note": "Warm and settled; gentle on \"shields us\"."
+      },
+      "viewer_question": "Will it really happen?",
+      "visual_payoff": "The inner core grows a hair's breadth, then the camera pulls back to the molten core and its glowing field, exactly as the film began.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 44.06,
+          "end_s": 54,
+          "shot_type": "cutaway pull-back to the opening frame",
+          "world": "Today's molten core; the inner core edge creeps outward schematically; field lines return.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 44.06,
+                "position": [
+                  2.08,
+                  0.87,
+                  2.08
+                ],
+                "look_at": [
+                  0.1,
+                  -0.05,
+                  0.1
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 54,
+                "position": [
+                  5.38,
+                  2.26,
+                  5.38
+                ],
+                "look_at": [
+                  0,
+                  -0.1,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow pull back ending exactly on frame 0's pose.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth-cutaway",
+              "kind": "planet",
+              "appearance": "Earth with a quarter wedge cut away to the centre, today: molten outer core, inner core edge creeping outward",
+              "geometry_and_material": "Lit NASA day-map surface shell with the wedge discarded; the two flat cut faces show true-scale layers: thin crust, rust-red mantle with slow convection streaks, a molten outer core of swirling orange iron, and a pale-gold crystalline inner core. A \"solid\" control turns the outer core into dark, static crystalline metal still glowing deep red in the cracks.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius (6,371 km); layer radii true to scale (inner core 0.19, outer core 0.55); crust drawn at true thinness. Flow speed is schematic.",
+              "movement": "Surface texture turns slowly while the cut stays facing the camera; molten flow churns; freezing spreads as described per shot.",
+              "asset_hint": "candidate:planet-cutaway-v1"
+            },
+            {
+              "id": "field-lines",
+              "kind": "diagram",
+              "appearance": "Glowing pale-cyan magnetic field lines looping from pole to pole around the planet, glowing steadily again",
+              "geometry_and_material": "Dipole field lines (r = L·sin²θ) as thin additive tubes with slow pulses flowing along them.",
+              "scale_and_accuracy": "Schematic: shape follows a dipole; real field lines are invisible and extend much farther.",
+              "movement": "Pulses flow; overall strength fades with the dynamo.",
+              "asset_hint": "candidate:magnetic-field-lines-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "44.06–48.53 s the inner core's edge creeps outward a little (schematic).",
+            "44.56 s chip INNER CORE · GROWS ~1 MM A YEAR; tag BILLIONS OF YEARS TO FREEZE.",
+            "48.04–54 s field lines return and the camera settles on the opening pose."
+          ],
+          "lighting": "Same sunlight; core glow.",
+          "effects": [
+            "Atmosphere rim",
+            "Core glow bloom"
+          ],
+          "composition_notes": "No labels in the final second; matches frame 0."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "billions of years",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "liquid iron shields us",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 44.06,
+          "duration_s": 9.94,
+          "kind": "music_swell",
+          "description": "The pad resolves warmly; the molten churn returns softly.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL10",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "The last frame matches frame 0, so the video loops."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json held 76 assets when this storyboard was written; every reuse ID below was checked against it. It has no planetary cutaway, magnetic field, solar wind, aurora, compass, volcano or Mars-like planet.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic rendering, post, dissolves and overlay compositing.",
+        "configuration": "Per-shot exposure and bloom."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Every camera from the storyboard keyframes.",
+        "configuration": "As written."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in word-timed captions.",
+        "configuration": "66 px Inter, 24 characters per line, baseline 1370."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Chips, tags and callouts.",
+        "configuration": "Cyan for the field, amber for heat."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Caption and label typeface.",
+        "configuration": "Weights 500–700."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Noise and maths in the new components.",
+        "configuration": "Seeded."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and all sound effects.",
+        "configuration": "D minor pads, drones and textures."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Surface of the cutaway Earth and the solar-wind Earth.",
+        "configuration": "Day map."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Earth hit by the solar wind (S05).",
+        "configuration": "Clouds on, atmosphere rim."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Space and polar-night skies.",
+        "configuration": "Low brightness."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Dusk skies over the sea and the volcano; night over the forest.",
+        "configuration": "Dusk and night colours."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Sea under the migrating birds.",
+        "configuration": "Calm dusk sea."
+      },
+      {
+        "asset_id": "bird-flock-v1",
+        "usage": "Migrating birds (S04).",
+        "configuration": "Dark silhouettes, steady flapping."
+      },
+      {
+        "asset_id": "fish-school-v1",
+        "usage": "Salmon school (S04).",
+        "configuration": "Silver-green, larger fish."
+      },
+      {
+        "asset_id": "underwater-volume-v1",
+        "usage": "Open water for the salmon.",
+        "configuration": "Blue-green, light shafts, no floor in view."
+      },
+      {
+        "asset_id": "conifer-stand-v1",
+        "usage": "Snowy forest under the aurora.",
+        "configuration": "Snow-laden."
+      },
+      {
+        "asset_id": "bokeh-field-v1",
+        "usage": "Warm background lights behind the compass.",
+        "configuration": "Warm, dim."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover thumbnail.",
+        "configuration": "Orbitron, ice-blue highlight, lava-orange sticker."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline face.",
+        "configuration": "orbitron."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "planet-cutaway-v1",
+        "description": "Planet with a quarter wedge cut to the centre: lit textured surface shell plus flat cut faces showing true-scale layers (crust, mantle with convection loops, molten outer core flow, crystalline inner core) with controls for freezing the outer core and growing the inner core.",
+        "reusable_in": "Earth interior, geology, magnetism, volcano and planetary science topics.",
+        "parameters": [
+          "radius",
+          "surface texture",
+          "layer radii",
+          "wedge",
+          "outerCoreSolid",
+          "freezeRadius",
+          "mantleFlow",
+          "spin",
+          "sunDirection",
+          "time_s"
+        ],
+        "suggested_path": "src/library/planet/PlanetCutaway.ts"
+      },
+      {
+        "proposed_id": "magnetic-field-lines-v1",
+        "description": "Dipole magnetic field lines around a planet as glowing tubes with flowing pulses and a strength fade.",
+        "reusable_in": "Magnetism, space weather, aurora and planetary topics.",
+        "parameters": [
+          "radius",
+          "shells",
+          "lines per shell",
+          "axis",
+          "color",
+          "strength",
+          "time_s"
+        ],
+        "suggested_path": "src/library/space/MagneticFieldLines.ts"
+      },
+      {
+        "proposed_id": "solar-wind-stream-v1",
+        "description": "Schematic solar-wind particle stream that either strikes a planet's atmosphere or bends around a magnetosphere, with an optional escaping-ion plume.",
+        "reusable_in": "Space weather, Mars, magnetosphere and atmosphere-loss topics.",
+        "parameters": [
+          "count",
+          "planet radius",
+          "direction",
+          "shield",
+          "escape",
+          "colors",
+          "time_s"
+        ],
+        "suggested_path": "src/library/space/SolarWind.ts"
+      },
+      {
+        "proposed_id": "aurora-curtains-v1",
+        "description": "Rippling aurora curtains (green with pink tops, ray texture) for night skies, with an intensity control.",
+        "reusable_in": "Polar, night-sky, space-weather topics.",
+        "parameters": [
+          "count",
+          "height",
+          "span",
+          "colors",
+          "intensity",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/AuroraCurtains.ts"
+      },
+      {
+        "proposed_id": "compass-v1",
+        "description": "Brass pocket compass with printed rose card, glass dome and a needle whose heading is set per frame.",
+        "reusable_in": "Navigation, magnetism, exploration topics.",
+        "parameters": [
+          "radius",
+          "heading",
+          "caseColor",
+          "cardColor"
+        ],
+        "suggested_path": "src/library/props/Compass.ts"
+      },
+      {
+        "proposed_id": "volcano-v1",
+        "description": "Procedural volcanic cone with a glowing crater, emissive lava flows, ballistic lava fountains and an ash plume.",
+        "reusable_in": "Volcanoes, geology, disasters, early-Earth topics.",
+        "parameters": [
+          "height",
+          "radius",
+          "seed",
+          "eruption",
+          "lavaGlow",
+          "plumeHeight",
+          "time_s"
+        ],
+        "suggested_path": "src/library/environment/Volcano.ts"
+      },
+      {
+        "proposed_id": "rocky-planet-v1",
+        "description": "Procedural rocky planet (Mars-like by default) with seeded terrain colours, craters, polar caps and a thin atmosphere rim.",
+        "reusable_in": "Mars, exoplanet and planetary comparison topics.",
+        "parameters": [
+          "radius",
+          "palette",
+          "craters",
+          "capSize",
+          "atmosphere",
+          "sunDirection",
+          "seed",
+          "time_s"
+        ],
+        "suggested_path": "src/library/planet/RockyPlanet.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Map and wooden table under the compass (S04)",
+      "Freezing-front timing and callouts (S01, S03, S07)",
+      "Polar-night snow ground (S05)"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if earth's core froze",
+    "core_keywords": [
+      "what if earth's core froze",
+      "earth core solid",
+      "earth magnetic field",
+      "geodynamo",
+      "liquid outer core",
+      "inner core",
+      "solar wind",
+      "mars atmosphere loss",
+      "aurora",
+      "compass north",
+      "earth science shorts"
+    ],
+    "distinctive_angle": "Freeze Earth's core and the planet does not stop: the magnetic field fades, compasses and migrating animals lose a guide, auroras fade and the air is exposed like Mars, but volcanoes keep erupting on mantle heat.",
+    "seo_integrity_note": "Core structure, the geodynamo, aurora guidance, animal magnetoreception and Mars atmosphere stripping are established; the instant freeze is hypothetical and atmosphere loss on Earth is uncertain. Titles must not claim the core will freeze soon."
+  },
+  "thumbnail": {
+    "time_s": 0.9,
+    "headline": "Earth's core freezes?!",
+    "highlight": [
+      "freezes?!"
+    ],
+    "position": "top",
+    "badge": "Shield fades",
+    "focus": [
+      0.53,
+      0.47
+    ],
+    "zoom": 1.25,
+    "anchor": [
+      0.53,
+      0.6
+    ],
+    "font": "orbitron",
+    "grade": "dramatic",
+    "tilt": 2,
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#7FE3FF",
+      "badge": "#FF5A1F",
+      "badge_text": "#FFFFFF",
+      "arrow": "#7FE3FF"
+    }
+  },
+  "delivery": {
+    "video_output": "output/earth-core-solid.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  }
+}

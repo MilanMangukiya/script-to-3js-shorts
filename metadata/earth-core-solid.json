@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "earth-core-solid",
+  "topic": "What if Earth's core cooled and became completely solid?",
+  "duration_s": 54,
+  "video_file": "output/earth-core-solid.mp4",
+  "scientific_scope_note": "A thought experiment: the whole core is assumed to freeze at once (still thousands of degrees hot, but no longer liquid); in reality the inner core grows by about 1 mm a year, so freezing would take billions of years. The solid inner core, liquid outer core, the geodynamo, a centre of about 6,000 °C, aurora guided by the field, animals that navigate with it, and Mars losing air to the solar wind (about 100 g a second, MAVEN) are established. How fast Earth's field would decay and how much air Earth would lose are uncertain (Venus keeps a thick atmosphere without a global field). Volcanoes and plates continuing on mantle heat is a reasoned inference. The cutaway, field lines and solar-wind particles are schematic.",
+  "created_asset_ids": [
+    "planet-cutaway-v1",
+    "magnetic-field-lines-v1",
+    "solar-wind-stream-v1",
+    "aurora-curtains-v1",
+    "compass-v1",
+    "volcano-v1",
+    "rocky-planet-v1"
+  ],
+  "reused_asset_ids": [
+    "film-pipeline-v1",
+    "camera-keyframe-rig-v1",
+    "caption-kinetic-v1",
+    "overlay-labels-v1",
+    "font-inter-v1",
+    "shader-noise-math-v1",
+    "audio-synth-kit-v1",
+    "earth-textures-nasa-v1",
+    "earth-globe-v1",
+    "starfield-v1",
+    "sky-dome-v1",
+    "ocean-surface-v1",
+    "bird-flock-v1",
+    "fish-school-v1",
+    "underwater-volume-v1",
+    "conifer-stand-v1",
+    "bokeh-field-v1",
+    "thumbnail-title-card-v1",
+    "font-display-set-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if Earth's core froze completely solid?",
+      "description": "What if Earth's core cooled until it was completely solid? Today only the very centre, the inner core, is solid, and it is about as hot as the Sun's surface. Around it swirls an ocean of molten iron, and that churning metal is a dynamo: it makes Earth's magnetic field.\n\nIn this 3D science what-if, the whole core freezes. The dynamo stops and the field fades. Compasses lose north, and migrating animals such as birds and salmon lose one of their guides. The polar lights fade, and over millions of years the solar wind could strip away some of our air, as it did on Mars, which lost its global magnetic field and now loses about 100 grams of air every second. The surprise: volcanoes and drifting plates keep going, because they run mainly on the mantle's own heat.\n\nOur core really is freezing, from the inside out, but the inner core grows only about 1 mm a year, so it would take billions of years. Until then, liquid iron shields us.\n\nA thought experiment: the cutaway, field lines and solar wind are schematic, and how much air Earth would lose is uncertain.\nSources: USGS (The Interior of the Earth; This Dynamic Earth); NASA Goddard geodynamo research; ESRF; University of Leeds; UC Berkeley; NOAA Space Weather Prediction Center; UNC Lohmann Lab; NASA MAVEN.",
+      "tags": [
+        "what if earths core froze",
+        "earth core solid",
+        "earths magnetic field",
+        "geodynamo",
+        "liquid outer core",
+        "inner core",
+        "magnetic field fades",
+        "solar wind",
+        "mars atmosphere loss",
+        "aurora",
+        "compass north",
+        "earth science"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#EarthScience",
+        "#MagneticField",
+        "#EarthsCore",
+        "#Space"
+      ],
+      "keywords": [
+        "what would happen if earth's core cooled down",
+        "what creates earth's magnetic field",
+        "is earth's core cooling",
+        "why did mars lose its atmosphere"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "What if Earth's core cooled until it was completely solid? 🌍 Today only the very centre is solid, and around it swirls an ocean of molten iron. That churning metal makes our magnetic field. Freeze it and the field fades: compasses lose north, migrating birds and salmon lose a guide, the polar lights fade, and over millions of years the solar wind could strip away some of our air, as it did on Mars. The surprise: volcanoes and drifting plates keep going on the mantle's own heat.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#EarthScience",
+        "#MagneticField",
+        "#Space"
+      ],
+      "keywords": [
+        "earth core thought experiment",
+        "how earth's magnetic field works",
+        "geodynamo explained",
+        "earth science reels"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if Earth's core froze? Our magnetic shield would fade",
+      "description": "Earth's magnetic field comes from liquid iron churning in the outer core. If the whole core froze solid, that dynamo would stop and the field would slowly fade: compasses would lose north, animals that navigate by the field would lose a guide, the polar lights would fade and, over millions of years, the solar wind could strip away some of the atmosphere, as it did on Mars. Volcanoes and moving plates would carry on, powered by the mantle's own heat. The real core is freezing too, but it would take billions of years.",
+      "hashtags": [
+        "#WhatIf",
+        "#EarthScience",
+        "#MagneticField",
+        "#Space",
+        "#Science"
+      ],
+      "keywords": [
+        "what if earth's core stopped spinning",
+        "earth magnetic field explained",
+        "solar wind and mars",
+        "will earth's core freeze"
+      ]
+    },
+    "tiktok": {
+      "caption": "What if Earth's core froze solid? The magnetic field fades, compasses lose north, the auroras fade… and the volcanoes keep erupting anyway. 🧲🌋",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#EarthScience",
+        "#MagneticField",
+        "#LearnOnTikTok"
+      ],
+      "keywords": [
+        "earth core frozen",
+        "what if earth had no magnetic field",
+        "magnetic field facts",
+        "earth science"
+      ]
+    },
+    "x_video": {
+      "post": "What if Earth's core froze solid? The dynamo stops and our magnetic field fades: no compass north, fading auroras, air exposed to the solar wind like Mars. Volcanoes keep going. The real core is freezing, over billions of years.",
+      "hashtags": [
+        "#WhatIf",
+        "#EarthScience",
+        "#MagneticField",
+        "#Space",
+        "#Mars"
+      ],
+      "keywords": [
+        "Earth's core",
+        "magnetic field",
+        "geodynamo",
+        "solar wind"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-13T20:55:22Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 7,
+    "path_in_repo": "videos/007-earth-core-solid.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/007-earth-core-solid.mp4",
+    "sha256": "f5399848f294babd4bf013cb611f7f3eb65f42e137d3bce4b73bb0ce912af249",
+    "size_bytes": 39143029,
+    "thumbnail_path_in_repo": "videos/007-earth-core-solid.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/007-earth-core-solid.jpg",
+    "thumbnail_sha256": "f91d93e49ee10ff7caac511f9df59162260612de20c08b15edd11420cca47a31",
+    "copy_path_in_repo": "videos/007-earth-core-solid.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/007-earth-core-solid.md",
+    "copy_sha256": "9276f16fc69a86a7f43de739049e512ea50d68a4d23263edeabe5413c41996d1",
+    "uploaded_at_utc": "2026-10-13T20:55:34Z"
+  }
+}

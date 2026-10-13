@@ -4,6 +4,9 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 | Rendered (UTC) | Video | Length | Publishing | Upload metadata |
 |---|---|---:|---|---|
+| 2026-10-13 | `every-human-jumped-at-once` | 63s | rendered_not_published | [Copy metadata](metadata/every-human-jumped-at-once.md) |
+| 2026-10-13 | `earth-ten-percent-closer` | 64s | rendered_not_published | [Copy metadata](metadata/earth-ten-percent-closer.md) |
+| 2026-10-13 | `earth-core-solid` | 54s | rendered_not_published | [Copy metadata](metadata/earth-core-solid.md) |
 | 2026-10-13 | `all-earth-continents-joined` | 85s | rendered_not_published | [Copy metadata](metadata/all-earth-continents-joined.md) |
 | 2026-10-13 | `moon-shrank` | 87s | rendered_not_published | [Copy metadata](metadata/moon-shrank.md) |
 | 2026-10-13 | `continents-one-landmass` | 75s | rendered_not_published | [Copy metadata](metadata/continents-one-landmass.md) |
@@ -13,6 +16,302 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 | 2026-10-12 | `air-pressure-doubled` | 74s | rendered_not_published | [Copy metadata](metadata/air-pressure-doubled.md) |
 | 2026-10-12 | `ice-sank-instead-of-floating` | 74s | rendered_not_published | [Copy metadata](metadata/ice-sank-instead-of-floating.md) |
 | 2026-10-12 | `oxygen-gone-five-seconds` | 72s | rendered_not_published | [Copy metadata](metadata/oxygen-gone-five-seconds.md) |
+
+---
+
+## What if every human on Earth jumped at the same time?
+**Video:** `output/every-human-jumped-at-once.mp4`  
+**Thumbnail:** `output/every-human-jumped-at-once.jpg`  
+**Publishing copy:** `output/every-human-jumped-at-once.md`  
+**Hugging Face:** [videos/009-every-human-jumped-at-once.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/009-every-human-jumped-at-once.mp4) · [videos/009-every-human-jumped-at-once.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/009-every-human-jumped-at-once.jpg) · [videos/009-every-human-jumped-at-once.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/009-every-human-jumped-at-once.md) (Whatif2203/whatif)  
+**Slug:** `every-human-jumped-at-once` | **Duration:** 63s | **Rendered (UTC):** 2026-10-13T21:46:23Z  
+**Publishing:** rendered_not_published  
+**Scientific accuracy note:** Illustrative 8.2 billion population (UN 2024 baseline), assumed mean mass 62 kg, ideal simultaneous 0.30 m center-of-mass jump. The isolated Earth-human center of mass gets no orbital boost. Peak Earth recoil ~2.55e-14 m is larger than a proton but ~4000 times smaller than a representative 1e-10 m atom. Total landing energy ~1.5e12 J does not imply a single earthquake magnitude or acoustic level; coupling and coherence are unknown. The 1640 km2 estimate assumes a dangerous 5 people/m2 and excludes roads, services and safe jumping space. Representative blocks, synthetic seismic trace and radial arrows are explanatory; real population distribution is uneven.
+**Assets reused:** earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, city-street-block-v1, pedestrian-crowd-v1, humanoid-figure-v1, sound-rings-v1, seismometer-v1, dial-gauge-v1, clinic-interior-v1, film-pipeline-v1, camera-keyframe-rig-v1, caption-kinetic-v1, overlay-labels-v1, audio-synth-kit-v1, font-inter-v1, thumbnail-title-card-v1, font-display-set-v1, modeling-helpers-v1, shader-noise-math-v1  
+**Assets created:** synchronized-jump-motion-v1, center-of-mass-recoil-diagram-v1, crowd-field-v1, water-service-station-v1
+
+### YouTube Shorts
+**Title — copy:**
+```text
+What if everyone on Earth jumped at once?
+```
+
+**Description + hashtags — copy:**
+```text
+What if 8.2 billion people jumped at the same moment? Follow a cinematic Three.js thought experiment from a synchronized street jump to Earth's tiny recoil, a collective landing, and a city overwhelmed by humanity.
+
+Earth is about twelve trillion times more massive than all of us. A 30 cm jump gives an ideal peak recoil of about 2.5 × 10⁻¹⁴ m, much smaller than an atom. Internal jumping cannot boost the orbit of the Earth-human system. The larger problem is gathering everyone in one place—and getting them home.
+
+Illustrative 8.2 billion population (UN 2024 baseline), assumed mean mass 62 kg, ideal simultaneous 0.30 m center-of-mass jump. The isolated Earth-human center of mass gets no orbital boost. Peak Earth recoil ~2.55e-14 m is larger than a proton but ~4000 times smaller than a representative 1e-10 m atom. Total landing energy ~1.5e12 J does not imply a single earthquake magnitude or acoustic level; coupling and coherence are unknown. The 1640 km2 estimate assumes a dangerous 5 people/m2 and excludes roads, services and safe jumping space. Representative blocks, synthetic seismic trace and radial arrows are explanatory; real population distribution is uneven.
+
+Sources and assumptions: NASA Earth Fact Sheet (https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html); UN WPP 2024, 8.2 billion baseline (https://population.un.org/wpp/); NIST CODATA proton radius (https://physics.nist.gov/cgi-bin/cuu/Value?rp); USGS earthquake magnitude, energy and shaking (https://www.usgs.gov/programs/earthquake-hazards/earthquake-magnitude-energy-release-and-shaking-intensity). Recoil and landing energy are elementary center-of-mass and mgh calculations under the stated assumptions.
+
+#WhatIf #Physics #Earth #Gravity #Momentum #ScienceExplained #WorldPopulation #ScienceShorts
+```
+
+**YouTube tags — comma-separated, copy:**
+```text
+what if everyone jumped at once, can humans move Earth, conservation of momentum explained, Earth recoil from human jump, simultaneous jump earthquake, crowd infrastructure logistics, everyone jumping at the same time, Earth human mass ratio, center of mass physics, jumping science short, human population thought experiment
+```
+
+**Target search keywords (research/reference):** what if everyone jumped at once, can humans move Earth, conservation of momentum explained, Earth recoil from human jump, simultaneous jump earthquake, crowd infrastructure logistics
+
+**Published URL:** Not published
+
+### Instagram Reels
+**Caption + hashtags — copy:**
+```text
+What if everyone on Earth jumped at once?
+A tiny planetary recoil. A collective landing. Then a very human problem: water, roads, and care for billions in one place.
+
+This 63-second 3D thought experiment uses an illustrative 8.2 billion people and a 30 cm jump. The recoil is far smaller than an atom; the system receives no orbital boost. Crowd-area diagrams exclude infrastructure and safe movement space. Ground vibration is illustrative, with no predicted earthquake magnitude.
+
+#WhatIf #Physics #Earth #Gravity #Momentum #ScienceExplained #ScienceReels #WorldPopulation
+```
+
+**Target search keywords (research/reference):** what if everyone jumped at once, can humans move Earth, conservation of momentum explained, Earth recoil from human jump, simultaneous jump earthquake
+
+**Published URL:** Not published
+
+### Facebook Reels
+**Title — copy:**
+```text
+What if everyone on Earth jumped at once? The surprising real problem
+```
+
+**Description + hashtags — copy:**
+```text
+Could a synchronized jump move our orbit or shake the whole world? This cinematic 3D explanation compares humanity with Earth, follows the tiny reversible recoil, and explores the supply problem of gathering billions in one city.
+
+The model assumes 8.2 billion people, a 62 kg average body mass and a 30 cm jump. Body-area and seismic scenes are illustrative; tightly packing everyone would not provide safe jumping room.
+
+Sources and assumptions: NASA Earth Fact Sheet (https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html); UN WPP 2024, 8.2 billion baseline (https://population.un.org/wpp/); NIST CODATA proton radius (https://physics.nist.gov/cgi-bin/cuu/Value?rp); USGS earthquake magnitude, energy and shaking (https://www.usgs.gov/programs/earthquake-hazards/earthquake-magnitude-energy-release-and-shaking-intensity). Recoil and landing energy are elementary center-of-mass and mgh calculations under the stated assumptions.
+
+#WhatIf #Physics #Earth #Gravity #Momentum #ScienceExplained #EarthScience
+```
+
+**Target search keywords (research/reference):** what if everyone jumped at once, can humans move Earth, conservation of momentum explained, Earth recoil from human jump, simultaneous jump earthquake
+
+**Published URL:** Not published
+
+### TikTok
+**Caption + hashtags — copy:**
+```text
+What if 8.2 billion people jumped at once?
+Earth barely recoils. Getting everyone home is the bigger problem.
+
+Watch the street jump, momentum diagram, collective landing and city logistics twist. The model uses a 30 cm jump and an illustrative 2024 population baseline. Recoil is smaller than an atom—not a proton. Earthquake strength depends on unknown ground coupling.
+
+#WhatIf #PhysicsTok #Earth #Gravity #Momentum #ScienceTok #WorldPopulation
+```
+
+**Target search keywords (research/reference):** what if everyone jumped at once, can humans move Earth, conservation of momentum explained, Earth recoil from human jump, simultaneous jump earthquake
+
+**Published URL:** Not published
+
+### X
+**Post + hashtags — copy:**
+```text
+What if everyone on Earth jumped at once? Earth barely recoils; the system gets no orbital boost. Gathering billions creates a much bigger supply problem. A 63-second 3D thought experiment.
+#WhatIf #Physics #Earth #Gravity #Momentum
+```
+
+**Target search keywords (research/reference):** what if everyone jumped at once, can humans move Earth, conservation of momentum explained, Earth recoil from human jump
+
+**Published URL:** Not published
+
+---
+
+## What if Earth moved 10% closer to the Sun?
+**Video:** `output/earth-ten-percent-closer.mp4`  
+**Thumbnail:** `output/earth-ten-percent-closer.jpg`  
+**Publishing copy:** `output/earth-ten-percent-closer.md`  
+**Hugging Face:** [videos/008-earth-ten-percent-closer.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/008-earth-ten-percent-closer.mp4) · [videos/008-earth-ten-percent-closer.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/008-earth-ten-percent-closer.jpg) · [videos/008-earth-ten-percent-closer.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/008-earth-ten-percent-closer.md) (Whatif2203/whatif)  
+**Slug:** `earth-ten-percent-closer` | **Duration:** 64s | **Rendered (UTC):** 2026-10-13T21:00:33Z  
+**Publishing:** rendered_not_published  
+**Scientific accuracy note:** Assumes Earth is placed into a stable circular 0.90 AU orbit with present solar luminosity and initial atmosphere/oceans. The 23.5% flux increase, 11.1% diameter increase and ~312-day year are derived. Climate, regional drying and heat stress are illustrative model-dependent responses; no dated transition or universal wet-bulb survival threshold is predicted. Cloud opacity is a visual illustration, not a climate-model output. UV chemistry and orbital sizes are labeled schematics; long-term ocean loss is geological, not immediate. The final outward move returns to present conditions for the visual loop.
+**Assets reused:** earth-globe-v1, earth-textures-nasa-v1, earth-seaice-mask-nasa-v1, overcast-shell-v1, starfield-v1, sky-dome-v1, ocean-surface-v1, sea-ice-v1, smoke-wisp-v1, dune-field-v1, grass-field-v1, broadleaf-tree-v1, city-street-block-v1, pedestrian-crowd-v1, apartment-facade-v1, room-box-v1, modeling-helpers-v1, humanoid-figure-v1, dial-gauge-v1, solar-panel-array-v1, overlay-labels-v1, caption-kinetic-v1, film-pipeline-v1, camera-keyframe-rig-v1, audio-synth-kit-v1, thumbnail-title-card-v1, font-inter-v1, font-display-set-v1, shader-noise-math-v1  
+**Assets created:** solar-orbit-diagram-v1, water-photolysis-v1, dry-soil-v1
+
+### YouTube Shorts
+**Title — copy:**
+```text
+What if Earth moved 10% closer to the Sun?
+```
+
+**Description + hashtags — copy:**
+```text
+A small orbital shift would deliver a much bigger energy shock. This 64-second Three.js film follows Earth to 0.90 AU: the Sun looks only 11.1% wider, the year shrinks to about 312 days, and incoming sunlight rises 23.5%.
+
+Watch polar ice retreat, grasslands dry, pedestrians seek shelter from humid heat, and a schematic show UV breaking water molecules so hydrogen can escape. Climate scenes illustrate possible responses; exact temperatures and timescales depend on cloud and circulation feedbacks. Long-term ocean loss would not happen overnight.
+
+Sources: Wolf & Toon (2015), https://doi.org/10.1002/2015JD023302; Vecellio et al. (2022), https://pmc.ncbi.nlm.nih.gov/articles/PMC8799385/. Earth imagery: NASA Earth Observatory / NASA GSFC Blue Marble (R. Stockli), Black Marble (J. Stevens, M. Roman).
+
+#WhatIf #Earth #Sun #Astronomy #PlanetaryScience #ClimateScience #InverseSquareLaw
+```
+
+**YouTube tags — comma-separated, copy:**
+```text
+earth 10 percent closer to sun, 0.9 AU orbit, inverse square law sunlight, 312 day year, moist greenhouse climate, wet bulb heat, what if Earth was closer to the Sun, solar irradiance explained, hydrogen escape atmosphere, habitable zone science, Three.js science animation
+```
+
+**Target search keywords (research/reference):** earth 10 percent closer to sun, 0.9 AU orbit, inverse square law sunlight, 312 day year, moist greenhouse climate, wet bulb heat
+
+**Published URL:** Not published
+
+### Instagram Reels
+**Caption + hashtags — copy:**
+```text
+What if Earth moved 10% closer to the Sun?
+The sky would look surprisingly familiar: our Sun would be just 11.1% wider. The energy budget changes far more—23.5% more sunlight and a 312-day year. Follow the chain from melting sea ice to dangerous humid heat and possible long-term water loss.
+Climate scenes are illustrative, and moist-greenhouse thresholds depend on the model. Save this orbital thought experiment for your next science conversation.
+
+#WhatIf #EarthScience #SolarSystem #PlanetaryClimate #HabitableZone #ScienceReels
+```
+
+**Target search keywords (research/reference):** earth 10 percent closer to sun, 0.9 AU orbit, inverse square law sunlight, 312 day year, water vapor feedback
+
+**Published URL:** Not published
+
+### Facebook Reels
+**Title — copy:**
+```text
+What if Earth moved closer to the Sun by just 10%?
+```
+
+**Description + hashtags — copy:**
+```text
+Why does ten percent less distance mean 23.5% more sunlight? A cinematic journey explains inverse-square geometry, a year shortened by 53 days, melting polar sea ice, drying land and the challenge of humid heat. The final molecular diagram shows how UV can separate hydrogen from water high in the atmosphere.
+
+This assumes a stable circular 0.90 AU orbit. Climate changes and timing are model dependent; the ocean-loss sequence represents geological processes, not an overnight event.
+
+Sources: Wolf & Toon (2015), https://doi.org/10.1002/2015JD023302; Vecellio et al. (2022), https://pmc.ncbi.nlm.nih.gov/articles/PMC8799385/. Earth imagery: NASA Earth Observatory / NASA GSFC Blue Marble (R. Stockli), Black Marble (J. Stevens, M. Roman).
+
+#WhatIf #Earth #Sun #SpaceScience #ClimatePhysics #Astronomy
+```
+
+**Target search keywords (research/reference):** earth 10 percent closer to sun, 0.9 AU orbit, inverse square law sunlight, 312 day year, polar sea ice warming
+
+**Published URL:** Not published
+
+### TikTok
+**Caption + hashtags — copy:**
+```text
+What if Earth moved 10% closer to the Sun?
+Only 11.1% bigger in the sky—but 23.5% more incoming sunlight. A 312-day year would be the easy part. Follow the ice, water-vapor feedback and humid heat to a possible moist greenhouse.
+Orbital math is derived; climate scenes show possibilities, and ocean loss takes geological time.
+
+#WhatIf #ScienceTok #Earth #Sun #OrbitalMechanics #ClimateScience
+```
+
+**Target search keywords (research/reference):** earth 10 percent closer to sun, 0.9 AU orbit, inverse square law sunlight, 312 day year, moist greenhouse explained
+
+**Published URL:** Not published
+
+### X
+**Post + hashtags — copy:**
+```text
+What if Earth moved 10% closer to the Sun? 23.5% more sunlight. A 312-day year. Severe warming and possible long-term water loss. Climate outcomes depend on the model.
+#WhatIf #Earth #Sun #Orbits #ClimateScience
+```
+
+**Target search keywords (research/reference):** earth 10 percent closer to sun, 0.9 AU orbit, inverse square law sunlight, 312 day year
+
+**Published URL:** Not published
+
+---
+
+## What if Earth's core cooled and became completely solid?
+**Video:** `output/earth-core-solid.mp4`  
+**Thumbnail:** `output/earth-core-solid.jpg`  
+**Publishing copy:** `output/earth-core-solid.md`  
+**Hugging Face:** [videos/007-earth-core-solid.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/007-earth-core-solid.mp4) · [videos/007-earth-core-solid.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/007-earth-core-solid.jpg) · [videos/007-earth-core-solid.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/007-earth-core-solid.md) (Whatif2203/whatif)  
+**Slug:** `earth-core-solid` | **Duration:** 54s | **Rendered (UTC):** 2026-10-13T20:55:22Z  
+**Publishing:** rendered_not_published  
+**Scientific accuracy note:** A thought experiment: the whole core is assumed to freeze at once (still thousands of degrees hot, but no longer liquid); in reality the inner core grows by about 1 mm a year, so freezing would take billions of years. The solid inner core, liquid outer core, the geodynamo, a centre of about 6,000 °C, aurora guided by the field, animals that navigate with it, and Mars losing air to the solar wind (about 100 g a second, MAVEN) are established. How fast Earth's field would decay and how much air Earth would lose are uncertain (Venus keeps a thick atmosphere without a global field). Volcanoes and plates continuing on mantle heat is a reasoned inference. The cutaway, field lines and solar-wind particles are schematic.
+**Assets reused:** film-pipeline-v1, camera-keyframe-rig-v1, caption-kinetic-v1, overlay-labels-v1, font-inter-v1, shader-noise-math-v1, audio-synth-kit-v1, earth-textures-nasa-v1, earth-globe-v1, starfield-v1, sky-dome-v1, ocean-surface-v1, bird-flock-v1, fish-school-v1, underwater-volume-v1, conifer-stand-v1, bokeh-field-v1, thumbnail-title-card-v1, font-display-set-v1  
+**Assets created:** planet-cutaway-v1, magnetic-field-lines-v1, solar-wind-stream-v1, aurora-curtains-v1, compass-v1, volcano-v1, rocky-planet-v1
+
+### YouTube Shorts
+**Title — copy:**
+```text
+What if Earth's core froze completely solid?
+```
+
+**Description + hashtags — copy:**
+```text
+What if Earth's core cooled until it was completely solid? Today only the very centre, the inner core, is solid, and it is about as hot as the Sun's surface. Around it swirls an ocean of molten iron, and that churning metal is a dynamo: it makes Earth's magnetic field.
+
+In this 3D science what-if, the whole core freezes. The dynamo stops and the field fades. Compasses lose north, and migrating animals such as birds and salmon lose one of their guides. The polar lights fade, and over millions of years the solar wind could strip away some of our air, as it did on Mars, which lost its global magnetic field and now loses about 100 grams of air every second. The surprise: volcanoes and drifting plates keep going, because they run mainly on the mantle's own heat.
+
+Our core really is freezing, from the inside out, but the inner core grows only about 1 mm a year, so it would take billions of years. Until then, liquid iron shields us.
+
+A thought experiment: the cutaway, field lines and solar wind are schematic, and how much air Earth would lose is uncertain.
+Sources: USGS (The Interior of the Earth; This Dynamic Earth); NASA Goddard geodynamo research; ESRF; University of Leeds; UC Berkeley; NOAA Space Weather Prediction Center; UNC Lohmann Lab; NASA MAVEN.
+
+#Shorts #WhatIf #EarthScience #MagneticField #EarthsCore #Space
+```
+
+**YouTube tags — comma-separated, copy:**
+```text
+what if earths core froze, earth core solid, earths magnetic field, geodynamo, liquid outer core, inner core, magnetic field fades, solar wind, mars atmosphere loss, aurora, compass north, earth science
+```
+
+**Target search keywords (research/reference):** what would happen if earth's core cooled down, what creates earth's magnetic field, is earth's core cooling, why did mars lose its atmosphere
+
+**Published URL:** Not published
+
+### Instagram Reels
+**Caption + hashtags — copy:**
+```text
+What if Earth's core cooled until it was completely solid? 🌍 Today only the very centre is solid, and around it swirls an ocean of molten iron. That churning metal makes our magnetic field. Freeze it and the field fades: compasses lose north, migrating birds and salmon lose a guide, the polar lights fade, and over millions of years the solar wind could strip away some of our air, as it did on Mars. The surprise: volcanoes and drifting plates keep going on the mantle's own heat.
+
+#WhatIf #ScienceReels #EarthScience #MagneticField #Space
+```
+
+**Target search keywords (research/reference):** earth core thought experiment, how earth's magnetic field works, geodynamo explained, earth science reels
+
+**Published URL:** Not published
+
+### Facebook Reels
+**Title — copy:**
+```text
+What if Earth's core froze? Our magnetic shield would fade
+```
+
+**Description + hashtags — copy:**
+```text
+Earth's magnetic field comes from liquid iron churning in the outer core. If the whole core froze solid, that dynamo would stop and the field would slowly fade: compasses would lose north, animals that navigate by the field would lose a guide, the polar lights would fade and, over millions of years, the solar wind could strip away some of the atmosphere, as it did on Mars. Volcanoes and moving plates would carry on, powered by the mantle's own heat. The real core is freezing too, but it would take billions of years.
+
+#WhatIf #EarthScience #MagneticField #Space #Science
+```
+
+**Target search keywords (research/reference):** what if earth's core stopped spinning, earth magnetic field explained, solar wind and mars, will earth's core freeze
+
+**Published URL:** Not published
+
+### TikTok
+**Caption + hashtags — copy:**
+```text
+What if Earth's core froze solid? The magnetic field fades, compasses lose north, the auroras fade… and the volcanoes keep erupting anyway. 🧲🌋
+
+#WhatIf #ScienceTok #EarthScience #MagneticField #LearnOnTikTok
+```
+
+**Target search keywords (research/reference):** earth core frozen, what if earth had no magnetic field, magnetic field facts, earth science
+
+**Published URL:** Not published
+
+### X
+**Post + hashtags — copy:**
+```text
+What if Earth's core froze solid? The dynamo stops and our magnetic field fades: no compass north, fading auroras, air exposed to the solar wind like Mars. Volcanoes keep going. The real core is freezing, over billions of years.
+#WhatIf #EarthScience #MagneticField #Space #Mars
+```
+
+**Target search keywords (research/reference):** Earth's core, magnetic field, geodynamo, solar wind
+
+**Published URL:** Not published
 
 ---
 

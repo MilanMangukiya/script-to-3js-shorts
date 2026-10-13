@@ -1,0 +1,1783 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if every human on Earth jumped at the same time?",
+    "title": "What if Every Human on Earth Jumped at the Same Time?",
+    "slug": "every-human-jumped-at-once",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 63,
+    "language": "en",
+    "audience": "International general audience; curious nontechnical science and documentary viewers",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "Could a synchronized human jump change Earth's orbit, and what would actually matter?",
+    "viewer_takeaway": "Humanity is about twelve trillion times less massive than Earth. Internal jumping cannot boost the Earth-human system's orbit; a concentrated crowd creates a much greater infrastructure problem."
+  },
+  "scientific_model": {
+    "baseline_reality": "Use a fixed illustrative population of 8.2 billion (UN 2024 baseline), mean body mass 62 kg, Earth mass 5.9722e24 kg and g=9.81 m/s2. This is not a live 2026 population count.",
+    "counterfactual_change": "Idealized perfectly synchronized 0.30 m center-of-mass jumps, first in one zone and then at normal home locations. All people being able to jump and safe crowd clearance are counterfactual assumptions.",
+    "assumptions": [
+      "Population 8.2e9 and assumed mean mass 62 kg: total 5.084e11 kg.",
+      "Jump height 0.30 m, takeoff speed sqrt(2gh)=2.43 m/s, flight time 0.495 s.",
+      "Use an isolated Earth-human system during the brief jump, subtracting common solar free fall.",
+      "Five people per square metre gives 1640 km2 of bodies alone. This dangerous density cannot provide safe real jumping space; roads and infrastructure would require additional area.",
+      "Aerial crowds show representative blocks; schematics and recoil are explicitly not to scale."
+    ],
+    "causal_chain": [
+      "Earth/human mass ratio 1.175e13, approximately twelve trillion.",
+      "At apex, terrestrial recoil is Mh/(Me+Mh)*0.30 = 2.55e-14 m, about 25 femtometres. This is larger than a proton, but approximately 4000 times smaller than a representative 1e-10 m atom.",
+      "In the isolated model the system center of mass stays fixed. Landing reverses the relative displacement; there is no orbital propulsion.",
+      "Landing potential energy Mh*g*h = 1.50e12 J, distributed over the crowd and dissipated into tissue, shoes, surface deformation, heat, sound and seismic vibration.",
+      "No reliable single earthquake magnitude or sound level follows from total energy alone; coupling, coherence, geometry and ground response are unknown.",
+      "Concentrating the population overwhelms water, transport and medical capacity; distributed jumps give differently directed impulses and additional partial vector cancellation."
+    ],
+    "uncertainties": [
+      "The 62 kg mean body mass is an illustrative assumption, not a measured current global total.",
+      "Seismic coupling, synchronization, local geology and acoustic propagation are unspecified; no quantitative quake magnitude or decibel prediction is made.",
+      "Human populations are unevenly distributed, so opposing radial impulses do not cancel exactly.",
+      "The film assumes a leap is possible and shows representative spacing; the 1640 km2 estimate includes only tightly packed bodies."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Humanity has approximately 5.1e11 kg mass; Earth is approximately twelve trillion times more massive.",
+        "confidence": "established",
+        "reasoning": "8.2e9 * 62 kg; NASA Earth mass 5.9722e24 kg.",
+        "presentation_guardrail": "62 kg is assumed. Label diagrams not to scale."
+      },
+      {
+        "id": "CL02",
+        "statement": "A concentrated 30 cm jump produces approximately 2.55e-14 m recoil, far smaller than an atom; the system center of mass receives no orbital boost.",
+        "confidence": "derived",
+        "reasoning": "Center-of-mass balance: deltaEarth = -Mh/(Me+Mh)*h. NIST proton radius is 0.84 fm, so the original less-than-a-proton comparison is false.",
+        "presentation_guardrail": "Use atom, not proton, comparison; show exaggerated motion and no orbital boost in isolated model."
+      },
+      {
+        "id": "CL03",
+        "statement": "Total landing potential energy is approximately 1.5 trillion joules.",
+        "confidence": "derived",
+        "reasoning": "E = 5.084e11 * 9.81 * .30 = 1.496e12 J.",
+        "presentation_guardrail": "Distributed low-speed impacts; sound rings are illustrative, not destructive shock fronts."
+      },
+      {
+        "id": "CL04",
+        "statement": "The impact is cushioned; total energy does not establish a particular earthquake magnitude.",
+        "confidence": "plausible",
+        "reasoning": "Unknown energy coupling and spatial coherence preclude a unique seismic prediction; USGS distinguishes radiated energy, magnitude and intensity.",
+        "presentation_guardrail": "Synthetic instrument trace, no magnitude label, collapse or cracking."
+      },
+      {
+        "id": "CL05",
+        "statement": "At five people per square metre, bodies alone occupy 1640 km2; concentrating humanity creates a severe supply and transport problem.",
+        "confidence": "derived",
+        "reasoning": "8.2e9 / 5 / 1e6 = 1640 km2; excludes all infrastructure and safe movement space.",
+        "presentation_guardrail": "Label density as dangerous and body-area only; logistics scenes are illustrative."
+      },
+      {
+        "id": "CL06",
+        "statement": "At home locations, differently directed radial impulses partly cancel; internal jumping still provides no orbital propulsion.",
+        "confidence": "established",
+        "reasoning": "Vector addition of radial impulses, not exact cancellation for uneven populations; conservation of total system momentum.",
+        "presentation_guardrail": "Schematic arrows; actual population is uneven."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NASA Earth Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "supports_claim_ids": [
+          "CL01",
+          "CL02",
+          "CL03"
+        ]
+      },
+      {
+        "name": "UN World Population Prospects 2024, Summary of Results (8.2 billion baseline)",
+        "url": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/wpp2024_summary_of_results_final_web.pdf",
+        "supports_claim_ids": [
+          "CL01",
+          "CL05"
+        ]
+      },
+      {
+        "name": "NIST CODATA 2022 proton charge radius; correction to supplied proton comparison",
+        "url": "https://physics.nist.gov/cgi-bin/cuu/Value?rp",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "USGS Earthquake Magnitude, Energy Release, and Shaking Intensity",
+        "url": "https://www.usgs.gov/programs/earthquake-hazards/earthquake-magnitude-energy-release-and-shaking-intensity",
+        "supports_claim_ids": [
+          "CL04"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "One synchronized jump barely recoils the planet; getting humanity into and out of one crowded city is the real problem.",
+    "visual_identity": "Tactile urban documentary realism paired with crisp physics-lab schematics: sunlit city crosswalks, slow-motion footfalls with golden acoustic shock-rings, precision brass instruments, and NASA-textured orbital views.",
+    "palette": [
+      "#090D16",
+      "#1E293B",
+      "#38BDF8",
+      "#FACC15",
+      "#F97316",
+      "#EF4444",
+      "#F1F5F9"
+    ],
+    "lighting": "Crisp late-morning urban sunlight with long architectural shadows for the city jump scenes, contrasted with clean studio key lighting for schematic physics stages and high-contrast orbital sunlight in space.",
+    "camera_language": "Dynamic ground-level tracking shots for the synchronized leap, locked-off macro instrumentation for the seismometer and gauges, and sweeping aerial/orbital pullbacks to reveal crowd scale.",
+    "motion_language": "Deterministic analytical trajectories: parabolic vertical jump arcs, expanding circular sound rings, damped sinusoidal seismometer traces, and smooth orbital rotation.",
+    "world_scale_policy": "Urban shots use metres; body-area, mass and atomic-scale recoil diagrams are explicitly schematic and not to scale.",
+    "emotional_arc": [
+      "Instant visceral intrigue as an entire city avenue leaps in unison",
+      "Perspective shift as Earth's 12-trillion-fold mass advantage is revealed",
+      "Understand center-of-mass conservation and an atomic-scale recoil.",
+      "Sensory awe at the 1.5-trillion-joule acoustic roar and modest seismic trace",
+      "Thoughtful surprise that the real danger is logistically stranding 8 billion people in one city"
+    ],
+    "opening_hook": "A low street view shows a synchronized 30 cm leap, clean shoe clearance and illustrative landing rings.",
+    "ending_payoff": "Return from serene Earth to the opening street, ending on the same resting crowd pose and camera.",
+    "loop_connection": "Scene S09 ends at the exact street-level camera position, lighting, and crowd phase where Scene S01 begins its synchronized jump.",
+    "asset_policy": "Maximize reuse of registered assets: city-street-block-v1, pedestrian-crowd-v1, humanoid-figure-v1, sound-rings-v1, seismometer-v1, dial-gauge-v1, earth-globe-v1, starfield-v1, sky-dome-v1, port-diorama-kit-v1, apartment-facade-v1, clinic-interior-v1, and wpp2024-world-graphics-v1."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 140,
+    "music_direction": "Rhythmic, minimalist documentary score using audio-synth-kit-v1: a poised marimba-and-sub-bass countdown pulse in D minor that suspends weightlessly during the jump apex, drops with a warm low-end thud on landing, and resolves into an airy, contemplative harmonic pad.",
+    "music_level_db_below_voice": -18,
+    "sfx_direction": "Clean, physical Foley and synth textures: synchronized crowd crouch rustle, brief airborne hush, deep stadium-like landing thud and rolling acoustic roar, subtle seismometer stylus scratch, and quiet urban gridlock ambience.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Two-line balanced captions with dark translucent backdrop pill, Inter Bold, active-word yellow.",
+    "font_stack": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_size_px": 64,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 300,
+      "caption_baseline_y_px": 1380
+    },
+    "active_word_treatment": "High-contrast solar-yellow fill (#FACC15) on the active word with a subtle 4% scale lift.",
+    "highlights_policy": "Emphasize at most one key quantitative or causal phrase per clause using exact substring matches from caption_emphasis."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0.0,
+      "end_s": 4.5,
+      "viewer_question": "What happens if every single person on Earth jumps at the exact same moment?",
+      "visual_payoff": "Along a sunlit city avenue, dozens of articulated pedestrians crouch in unison, launch 30 cm into the air, and slam down together as golden acoustic wave rings ripple across the street.",
+      "narration": {
+        "text": "What if every person on Earth jumped at once?",
+        "start_s": 0.2,
+        "end_s": 4.3,
+        "delivery_note": "Immediate, poised intrigue; slight rhythmic lift on 'jumped at once?'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0.0,
+          "end_s": 4.5,
+          "shot_type": "Low-angle wide street shot of a synchronized crowd jump",
+          "world": "Metre-scale city avenue (city-street-block-v1) under a crisp morning sky (sky-dome-v1) populated by articulated figures (pedestrian-crowd-v1).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0,
+                  1.05,
+                  10.5
+                ],
+                "look_at": [
+                  0,
+                  1.05,
+                  -1.2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4.5,
+                "position": [
+                  0,
+                  1.0,
+                  9.3
+                ],
+                "look_at": [
+                  0,
+                  1.05,
+                  -1.2
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "jumping_crowd",
+              "kind": "human",
+              "appearance": "Articulated crowd of adults and children facing forward along the crosswalk and sidewalks, all executing an identical parabolic vertical jump.",
+              "geometry_and_material": "Registered pedestrian-crowd-v1 with 24 foreground figures, umbrellaCount 0; synchronized-jump-motion-v1 drives their existing joints. Instanced crowd-field-v1 supplies distant people.",
+              "scale_and_accuracy": "True 1.0 m scale; 0.30 m jump apex matches a realistic human vertical jump.",
+              "movement": "Exact 0.30 m jump, flight time 0.495 s, analytic knee absorption.",
+              "asset_hint": "pedestrian-crowd-v1"
+            },
+            {
+              "id": "landing_shock_rings",
+              "kind": "diagram",
+              "appearance": "Concentric golden-cyan ground wave rings expanding outward across the asphalt upon impact at t = 2.65s.",
+              "geometry_and_material": "sound-rings-v1 in ground mode centered at the crosswalk origin.",
+              "scale_and_accuracy": "Illustrative acoustic/ground wave indicator.",
+              "movement": "Emits at t = 2.65s and expands to radius 18 m by t = 4.5s.",
+              "asset_hint": "sound-rings-v1"
+            },
+            {
+              "id": "city_avenue_stage",
+              "kind": "architecture",
+              "appearance": "Sunlit masonry street facades, zebra crossing, and surrounding city district.",
+              "geometry_and_material": "city-street-block-v1 with dry asphalt (wetness: 0.1) and sky-dome-v1 environment lighting.",
+              "scale_and_accuracy": "Metre-scale urban canyon.",
+              "movement": "Static architecture framing the vertical human leap.",
+              "asset_hint": "city-street-block-v1"
+            }
+          ],
+          "animation_plan": [
+            "Crouch at 1.6..2.1 seconds; true 0.30 m parabolic flight at 2.1..2.595 seconds; absorb the landing through knees; illustrative rings emit on landing.",
+            "Badge: 8.2 BILLION - ILLUSTRATIVE POPULATION; sound rings are schematic."
+          ],
+          "lighting": "Crisp morning directional sunlight [0.35, 0.78, 0.51] casting sharp, synchronized shadows under the airborne shoes.",
+          "effects": [
+            "Subtle dust puff at shoe level upon landing at t = 2.65s",
+            "Restrained bloom on the expanding ground wave rings"
+          ],
+          "composition_notes": "Airborne figures occupy the middle-upper frame (y = 450..1150 px), leaving a clear dark asphalt foreground band for captions and a bold thumbnail still at t = 2.4s."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "jumped at once?",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0.0,
+          "duration_s": 2.1,
+          "kind": "texture",
+          "description": "Tight marimba countdown pulse and synchronized clothing rustle.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 2.65,
+          "duration_s": 1.8,
+          "kind": "impact",
+          "description": "Deep, resonant unison footfall thud followed by an airy street echo.",
+          "relative_db": -12
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "match_cut",
+        "duration_s": 0.4,
+        "motivation": "Cut from the expanding circular shock-ring on the street to the circular silhouette of Earth in space."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.5,
+      "end_s": 11.5,
+      "viewer_question": "How much does all of humanity weigh compared to the planet we are pushing against?",
+      "visual_payoff": "An orbital view and a 3D schematic mass comparison reveal that 8.2 billion humans (~500 million tons) are outweighed by Earth nearly 12 trillion times over.",
+      "narration": {
+        "text": "Eight billion people weigh five hundred million tons. Earth is twelve trillion times more massive.",
+        "start_s": 4.7,
+        "end_s": 11.2,
+        "delivery_note": "Warm authority on 'five hundred million tons', then quiet amazement on 'twelve trillion times'."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.5,
+          "end_s": 8,
+          "shot_type": "Orbital Earth",
+          "world": "NASA-textured Earth and seeded stars",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 39,
+            "keyframes": [
+              {
+                "t_s": 4.5,
+                "position": [
+                  0,
+                  0.5,
+                  4.5
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 8,
+                "position": [
+                  0.18,
+                  0.5,
+                  4.1
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "orbital-earth",
+              "kind": "other",
+              "appearance": "Orbital Earth",
+              "geometry_and_material": "NASA-textured Earth and seeded stars",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        },
+        {
+          "id": "SH02",
+          "start_s": 8,
+          "end_s": 11.5,
+          "shot_type": "Mass-ratio schematic",
+          "world": "Studio brass beam, Earth and human pedestal",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 8,
+                "position": [
+                  0,
+                  1.6,
+                  8.7
+                ],
+                "look_at": [
+                  0,
+                  0.65,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 11.5,
+                "position": [
+                  0,
+                  1.45,
+                  8.1
+                ],
+                "look_at": [
+                  0,
+                  0.65,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "mass-ratio-schematic",
+              "kind": "diagram",
+              "appearance": "Mass-ratio schematic",
+              "geometry_and_material": "Studio brass beam, Earth and human pedestal",
+              "scale_and_accuracy": "SCHEMATIC - NOT TO SCALE. Sphere radii and balance beam are illustrative, not logarithmically encoded mass.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "twelve trillion",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.6,
+          "duration_s": 6.8,
+          "kind": "ambience",
+          "description": "Deep cosmic drone with a soft metallic scale-lock chime at t = 8.4s.",
+          "relative_db": -17
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.4,
+        "motivation": "Dissolve from the mass-ratio balance into the center-of-mass recoil mechanism."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 11.5,
+      "end_s": 19.5,
+      "viewer_question": "A jumping human platform and Earth recoil around a fixed system center of mass.",
+      "visual_payoff": "A jumping human platform and Earth recoil around a fixed system center of mass.",
+      "narration": {
+        "text": "Crowded together, we shift Earth by a fraction of an atom's width. Landing reverses that recoil.",
+        "start_s": 11.7,
+        "end_s": 19.3,
+        "delivery_note": "Calm peaceful warm male documentary delivery."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.5,
+          "end_s": 15.5,
+          "shot_type": "Recoil schematic",
+          "world": "Studio center-of-mass instrument",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 11.5,
+                "position": [
+                  0.1,
+                  1.25,
+                  8.2
+                ],
+                "look_at": [
+                  0,
+                  0.35,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 15.5,
+                "position": [
+                  0.25,
+                  1.25,
+                  7.949999999999999
+                ],
+                "look_at": [
+                  0,
+                  0.35,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "recoil-schematic",
+              "kind": "diagram",
+              "appearance": "Recoil schematic",
+              "geometry_and_material": "Studio center-of-mass instrument",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        },
+        {
+          "id": "SH02",
+          "start_s": 15.5,
+          "end_s": 19.5,
+          "shot_type": "Returning center-of-mass schematic",
+          "world": "Same studio instrument viewed from a second motivated angle",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 15.5,
+                "position": [
+                  -0.3,
+                  1.25,
+                  8.2
+                ],
+                "look_at": [
+                  0,
+                  0.35,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 19.5,
+                "position": [
+                  -0.15,
+                  1.25,
+                  7.949999999999999
+                ],
+                "look_at": [
+                  0,
+                  0.35,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "returning-center-of-mass-schematic",
+              "kind": "diagram",
+              "appearance": "Returning center-of-mass schematic",
+              "geometry_and_material": "Same studio instrument viewed from a second motivated angle",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "atom's width.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the causal change or match the circular shape."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 19.5,
+      "end_s": 26,
+      "viewer_question": "Slow-motion feet meet pavement; camera rises over illustrative golden sound rings.",
+      "visual_payoff": "Slow-motion feet meet pavement; camera rises over illustrative golden sound rings.",
+      "narration": {
+        "text": "The landing releases roughly one point five trillion joules, spread across billions of feet.",
+        "start_s": 19.7,
+        "end_s": 25.8,
+        "delivery_note": "Calm peaceful warm male documentary delivery."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 19.5,
+          "end_s": 22.8,
+          "shot_type": "Slow-motion landing",
+          "world": "Metre-scale city and articulated crowd",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 19.5,
+                "position": [
+                  -0.65,
+                  0.35,
+                  2.1
+                ],
+                "look_at": [
+                  0,
+                  0.3,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 22.8,
+                "position": [
+                  -0.42,
+                  0.28,
+                  1.8
+                ],
+                "look_at": [
+                  0,
+                  0.3,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "slow-motion-landing",
+              "kind": "other",
+              "appearance": "Slow-motion landing",
+              "geometry_and_material": "Metre-scale city and articulated crowd",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        },
+        {
+          "id": "SH02",
+          "start_s": 22.8,
+          "end_s": 26,
+          "shot_type": "Sound-wave crane",
+          "world": "City street with schematic ground acoustic rings",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 22.8,
+                "position": [
+                  2.5,
+                  12,
+                  17
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  -3
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 26,
+                "position": [
+                  5,
+                  20,
+                  24
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  -3
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "sound-wave-crane",
+              "kind": "other",
+              "appearance": "Sound-wave crane",
+              "geometry_and_material": "City street with schematic ground acoustic rings",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "trillion joules,",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the causal change or match the circular shape."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "mechanism",
+      "start_s": 26,
+      "end_s": 33.5,
+      "viewer_question": "A cushioned landing followed by a close view of a modest synthetic seismometer trace.",
+      "visual_payoff": "A cushioned landing followed by a close view of a modest synthetic seismometer trace.",
+      "narration": {
+        "text": "Knees, shoes, and soil cushion the impact. A roar and local vibrations, not a planet-shattering quake.",
+        "start_s": 26.2,
+        "end_s": 33.3,
+        "delivery_note": "Calm peaceful warm male documentary delivery."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 26,
+          "end_s": 29.5,
+          "shot_type": "Cushioned landing",
+          "world": "Metre-scale figure knees and shoes against tactile asphalt",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 26,
+                "position": [
+                  0.4,
+                  0.7,
+                  2.4
+                ],
+                "look_at": [
+                  0,
+                  0.65,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 29.5,
+                "position": [
+                  0.1,
+                  0.6,
+                  2.05
+                ],
+                "look_at": [
+                  0,
+                  0.65,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "cushioned-landing",
+              "kind": "other",
+              "appearance": "Cushioned landing",
+              "geometry_and_material": "Metre-scale figure knees and shoes against tactile asphalt",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        },
+        {
+          "id": "SH02",
+          "start_s": 29.5,
+          "end_s": 33.5,
+          "shot_type": "Seismometer macro",
+          "world": "Precision metal instrument on a ground-level concrete plinth",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 29.5,
+                "position": [
+                  0.1,
+                  0.85,
+                  2.75
+                ],
+                "look_at": [
+                  0.1,
+                  0.35,
+                  -0.05
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 33.5,
+                "position": [
+                  0.1,
+                  0.85,
+                  2.6
+                ],
+                "look_at": [
+                  0.1,
+                  0.35,
+                  -0.05
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "seismometer-macro",
+              "kind": "other",
+              "appearance": "Seismometer macro",
+              "geometry_and_material": "Precision metal instrument on a ground-level concrete plinth",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "cushion the impact.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the causal change or match the circular shape."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 33.5,
+      "end_s": 41.5,
+      "viewer_question": "Aerial crowd district followed by a clearly schematic body-area grid.",
+      "visual_payoff": "Aerial crowd district followed by a clearly schematic body-area grid.",
+      "narration": {
+        "text": "But gathering everyone takes sixteen hundred square kilometers, packed dangerously tight. And then everyone needs to leave.",
+        "start_s": 33.7,
+        "end_s": 41.3,
+        "delivery_note": "Calm peaceful warm male documentary delivery."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 33.5,
+          "end_s": 38,
+          "shot_type": "Crowded city aerial",
+          "world": "Representative dense crowd blocks around the registered city avenue",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 33.5,
+                "position": [
+                  12,
+                  55,
+                  60
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  -15
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 38,
+                "position": [
+                  30,
+                  100,
+                  95
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  -15
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "crowded-city-aerial",
+              "kind": "other",
+              "appearance": "Crowded city aerial",
+              "geometry_and_material": "Representative dense crowd blocks around the registered city avenue",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        },
+        {
+          "id": "SH02",
+          "start_s": 38,
+          "end_s": 41.5,
+          "shot_type": "Crowd-area schematic",
+          "world": "Forty by forty-one kilometre diagram with miniature city extrusions",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 38,
+                "position": [
+                  27,
+                  57,
+                  56
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 41.5,
+                "position": [
+                  20,
+                  50,
+                  50
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "crowd-area-schematic",
+              "kind": "diagram",
+              "appearance": "Crowd-area schematic",
+              "geometry_and_material": "Forty by forty-one kilometre diagram with miniature city extrusions",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "dangerously tight.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the causal change or match the circular shape."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "second_order_effect",
+      "start_s": 41.5,
+      "end_s": 50,
+      "viewer_question": "Respectful water queue, blocked street and busy clinic corridor.",
+      "visual_payoff": "Respectful water queue, blocked street and busy clinic corridor.",
+      "narration": {
+        "text": "Water runs short. Roads jam. Clinics fill. The real crisis is supporting humanity in one place.",
+        "start_s": 41.7,
+        "end_s": 49.8,
+        "delivery_note": "Calm peaceful warm male documentary delivery."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 41.5,
+          "end_s": 44.5,
+          "shot_type": "Water queue",
+          "world": "City service station, pressure gauge, tanker and calm waiting crowd",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 48,
+            "keyframes": [
+              {
+                "t_s": 41.5,
+                "position": [
+                  2.3,
+                  1.6,
+                  7.8
+                ],
+                "look_at": [
+                  0.2,
+                  1.05,
+                  -0.65
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 44.5,
+                "position": [
+                  2.15,
+                  1.6,
+                  7.5
+                ],
+                "look_at": [
+                  0.2,
+                  1.05,
+                  -0.65
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "water-queue",
+              "kind": "other",
+              "appearance": "Water queue",
+              "geometry_and_material": "City service station, pressure gauge, tanker and calm waiting crowd",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        },
+        {
+          "id": "SH02",
+          "start_s": 44.5,
+          "end_s": 47,
+          "shot_type": "Road gridlock",
+          "world": "Unbranded vehicles stopped between pedestrian queues",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 44.5,
+                "position": [
+                  -3.8,
+                  5.4,
+                  14
+                ],
+                "look_at": [
+                  0,
+                  1,
+                  -12
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 47,
+                "position": [
+                  -3.0,
+                  6.5,
+                  12.2
+                ],
+                "look_at": [
+                  0,
+                  1,
+                  -12
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "road-gridlock",
+              "kind": "other",
+              "appearance": "Road gridlock",
+              "geometry_and_material": "Unbranded vehicles stopped between pedestrian queues",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        },
+        {
+          "id": "SH03",
+          "start_s": 47,
+          "end_s": 50,
+          "shot_type": "Clinic corridor",
+          "world": "Registered furnished clinic with respectfully waiting human figures",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 45,
+            "keyframes": [
+              {
+                "t_s": 47,
+                "position": [
+                  0,
+                  1.65,
+                  7
+                ],
+                "look_at": [
+                  0,
+                  1.3,
+                  -4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 50,
+                "position": [
+                  0.2,
+                  1.65,
+                  5.8
+                ],
+                "look_at": [
+                  0,
+                  1.3,
+                  -4
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "clinic-corridor",
+              "kind": "other",
+              "appearance": "Clinic corridor",
+              "geometry_and_material": "Registered furnished clinic with respectfully waiting human figures",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "one place.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the causal change or match the circular shape."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "twist",
+      "start_s": 50,
+      "end_s": 57.5,
+      "viewer_question": "Orbital Earth with opposite radial impulse arrows; uneven population is acknowledged.",
+      "visual_payoff": "Orbital Earth with opposite radial impulse arrows; uneven population is acknowledged.",
+      "narration": {
+        "text": "Jump where we live, and pushes in different directions partly cancel. Earth barely notices.",
+        "start_s": 50.2,
+        "end_s": 57.3,
+        "delivery_note": "Calm peaceful warm male documentary delivery."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 50,
+          "end_s": 57.5,
+          "shot_type": "Distributed-jump schematic",
+          "world": "NASA Earth, stars and opposing radial impulse vectors",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 50,
+                "position": [
+                  0,
+                  0.45,
+                  5.4
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 57.5,
+                "position": [
+                  0.25,
+                  0.55,
+                  5.0
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "distributed-jump-schematic",
+              "kind": "diagram",
+              "appearance": "Distributed-jump schematic",
+              "geometry_and_material": "NASA Earth, stars and opposing radial impulse vectors",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "partly cancel.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL06",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the causal change or match the circular shape."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 57.5,
+      "end_s": 63,
+      "viewer_question": "Serene orbital Earth returns to the original street-level crowd pose.",
+      "visual_payoff": "Serene orbital Earth returns to the original street-level crowd pose.",
+      "narration": {
+        "text": "Our orbit stays steady. The bigger question? How does everyone get home?",
+        "start_s": 57.7,
+        "end_s": 62.8,
+        "delivery_note": "Calm peaceful warm male documentary delivery."
+      },
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 57.5,
+          "end_s": 60,
+          "shot_type": "Serene Earth",
+          "world": "NASA-textured Earth and seeded starfield",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 39,
+            "keyframes": [
+              {
+                "t_s": 57.5,
+                "position": [
+                  0.1,
+                  0.4,
+                  4.5
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 60,
+                "position": [
+                  0,
+                  0.35,
+                  4.2
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "serene-earth",
+              "kind": "other",
+              "appearance": "Serene Earth",
+              "geometry_and_material": "NASA-textured Earth and seeded starfield",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        },
+        {
+          "id": "SH02",
+          "start_s": 60,
+          "end_s": 63,
+          "shot_type": "Return to street",
+          "world": "Exact opening city, lighting, crowd and camera",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 60,
+                "position": [
+                  0,
+                  1.0,
+                  9.3
+                ],
+                "look_at": [
+                  0,
+                  1.05,
+                  -1.2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 63,
+                "position": [
+                  0,
+                  1.05,
+                  10.5
+                ],
+                "look_at": [
+                  0,
+                  1.05,
+                  -1.2
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Motivated smooth dolly or crane between the exact storyboard endpoints.",
+            "lens_notes": "Portrait cinematic framing; preserve the lower caption band."
+          },
+          "subjects": [
+            {
+              "id": "return-to-street",
+              "kind": "other",
+              "appearance": "Return to street",
+              "geometry_and_material": "Exact opening city, lighting, crowd and camera",
+              "scale_and_accuracy": "Urban shots use metres. Physics and world-scale representations carry explicit schematic labels.",
+              "movement": "Analytic frame-time evaluation; seeded geometry."
+            }
+          ],
+          "animation_plan": [
+            "Evaluate all motion from frameIndex / 30; no accumulated state."
+          ],
+          "lighting": "Warm directional key with soft environment fill; studio cyan and brass accents for diagrams.",
+          "effects": [
+            "Restrained bloom and film grade"
+          ],
+          "composition_notes": "Main subject at upper-middle; clear captions around y=1380."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "get home?",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL02",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the causal change or match the circular shape."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Existing IDs verified against the actual registry before implementation; the attached storyboard was cut off during S03.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "pedestrian-crowd-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "sound-rings-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "seismometer-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "dial-gauge-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "clinic-interior-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Reuse registered component in the completed film or its rendering and audio pipeline.",
+        "configuration": "Story-specific parameters and deterministic absolute frame time."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "synchronized-jump-motion-v1",
+        "description": "Analytic crouch, ballistic leap and landing driver for existing humanoid rigs.",
+        "reusable_in": "Future physics, crowd, infrastructure and urban documentaries.",
+        "parameters": [
+          "height",
+          "gravity",
+          "start_s",
+          "crouch_s",
+          "settle_s",
+          "time_s"
+        ],
+        "suggested_path": "src/library/characters/SynchronizedJump.ts"
+      },
+      {
+        "proposed_id": "center-of-mass-recoil-diagram-v1",
+        "description": "Parameterised two-body recoil apparatus with a fixed center-of-mass crosshair.",
+        "reusable_in": "Future physics, crowd, infrastructure and urban documentaries.",
+        "parameters": [
+          "massRatio",
+          "jumpHeight",
+          "visualRecoil",
+          "progress",
+          "landingProgress"
+        ],
+        "suggested_path": "src/library/diagram/CenterOfMassRecoil.ts"
+      },
+      {
+        "proposed_id": "crowd-field-v1",
+        "description": "Seeded instanced clothed human silhouettes for dense mid-distance and aerial crowds.",
+        "reusable_in": "Future physics, crowd, infrastructure and urban documentaries.",
+        "parameters": [
+          "seed",
+          "width",
+          "depth",
+          "spacing",
+          "height",
+          "density",
+          "jumpHeight",
+          "time_s"
+        ],
+        "suggested_path": "src/library/characters/CrowdField.ts"
+      },
+      {
+        "proposed_id": "water-service-station-v1",
+        "description": "Generic storage tank, manifold and metal tap for public water-service scenes.",
+        "reusable_in": "Future physics, crowd, infrastructure and urban documentaries.",
+        "parameters": [
+          "tankRadius",
+          "tankHeight",
+          "pipeRadius",
+          "color",
+          "flow"
+        ],
+        "suggested_path": "src/library/props/WaterServiceStation.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Mass-ratio brass beam stage",
+      "Schematic 1640 km2 body-area district",
+      "Street supply queues and gridlock arrangements"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "What happens if everyone on Earth jumps at the same time?",
+    "core_keywords": [
+      "everyone jumps at once",
+      "Earth recoil",
+      "conservation of momentum",
+      "human population mass",
+      "simultaneous jump earthquake",
+      "crowd logistics"
+    ],
+    "distinctive_angle": "Atomic-scale recoil versus a city-scale supply crisis, with an explicit correction to the proton misconception.",
+    "seo_integrity_note": "Descriptions reflect the completed shots and cite the illustrative population, density and unknown ground coupling; no SEO guarantees."
+  },
+  "delivery": {
+    "video_output": "output/every-human-jumped-at-once.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 2.35,
+    "headline": "WHAT IF EVERYONE JUMPED?",
+    "highlight": [
+      "EVERYONE",
+      "JUMPED?"
+    ],
+    "position": "top",
+    "badge": "8.2 BILLION PEOPLE",
+    "badge_at": [
+      0.55,
+      0.79
+    ],
+    "focus": [
+      0.48,
+      0.53
+    ],
+    "anchor": [
+      0.48,
+      0.6
+    ],
+    "zoom": 1.12,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "grade": "warm",
+    "tilt": -2,
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FACC15",
+      "badge": "#D92D32",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FACC15"
+    }
+  }
+}

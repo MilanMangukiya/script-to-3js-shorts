@@ -13,6 +13,7 @@ export interface CaptionStyle {
   maxCharsPerLine: number; baselineY: number; centerX: number; maxWidth: number;
   fill: string; accent: string; accentSoft: string; stroke: string; strokeWidth: number;
   backdrop: number;
+  backdropStyle?: 'band' | 'pill';
 }
 export const DEFAULT_CAPTION_STYLE: CaptionStyle = {
   fontFamily: 'Inter, "Segoe UI", system-ui, sans-serif', fontWeight: 600, fontSize: 66, lineHeight: 84,
@@ -113,11 +114,17 @@ export class KineticCaptions {
     const nLines = p.lines.length;
     // Soft backdrop band for legibility over bright picture areas.
     if (s.backdrop > 0) {
+      if (s.backdropStyle === 'pill') {
+        const widest = Math.min(s.maxWidth, Math.max(...p.lines.map(line => ctx.measureText(line.map(w => w.text).join(' ')).width)));
+        ctx.fillStyle = `rgba(6,8,14,${s.backdrop * alpha})`;
+        ctx.beginPath(); ctx.roundRect(s.centerX-widest/2-26,s.baselineY-(nLines-1)*s.lineHeight-s.fontSize-15,widest+52,(nLines-1)*s.lineHeight+s.fontSize+42,22); ctx.fill();
+      } else {
       const top = s.baselineY - nLines * s.lineHeight - 30, bottom = s.baselineY + 60;
       const g = ctx.createLinearGradient(0, top, 0, bottom);
       g.addColorStop(0, 'rgba(6,8,14,0)'); g.addColorStop(0.3, `rgba(6,8,14,${s.backdrop * alpha})`);
       g.addColorStop(0.75, `rgba(6,8,14,${s.backdrop * alpha})`); g.addColorStop(1, 'rgba(6,8,14,0)');
       ctx.fillStyle = g; ctx.fillRect(0, top, ctx.canvas.width, bottom - top);
+      }
     }
     for (let li = 0; li < nLines; li++) {
       const line = p.lines[li];

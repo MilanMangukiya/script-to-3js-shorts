@@ -11,6 +11,9 @@ import { createFilm as moonMadeOfIce } from './stories/moon-made-of-ice/film';
 import { createFilm as everyManDisappeared } from './stories/what-if-every-man-disappeared/film';
 import { createFilm as rainNonstopEverywhere } from './stories/rain-nonstop-everywhere/film';
 import { createFilm as continentsOneLandmass } from './stories/continents-one-landmass/film';
+import { createFilm as earthCoreSolid } from './stories/earth-core-solid/film';
+import { createFilm as earthTenPercentCloser } from './stories/earth-ten-percent-closer/film';
+import { createFilm as everyHumanJumpedAtOnce } from './stories/every-human-jumped-at-once/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -21,6 +24,9 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'what-if-every-man-disappeared': everyManDisappeared,
   'rain-nonstop-everywhere': rainNonstopEverywhere,
   'continents-one-landmass': continentsOneLandmass,
+  'earth-core-solid': earthCoreSolid,
+  'earth-ten-percent-closer': earthTenPercentCloser,
+  'every-human-jumped-at-once': everyHumanJumpedAtOnce,
 };
 
 async function boot() {
@@ -41,9 +47,10 @@ async function boot() {
   const pipeline = new FilmPipeline({ width: p.width, height: p.height, fps: p.fps, duration_s: p.duration_s, scenes: story.scenes, scale });
   const film = await FILMS[slug]({ renderer: pipeline.renderer, base });
   const cap = story.captions, safe = cap.safe_area;
+  const captionAccent = cap.active_word_treatment?.match(/#[0-9a-fA-F]{6}/)?.[0];
   const captions = new KineticCaptions(
     story.scenes.map((sc: any) => ({ offset_s: sc.narration.start_s, words: narration.scenes.find((n: any) => n.id === sc.id).words, emphasis: sc.caption_emphasis })),
-    { ...DEFAULT_CAPTION_STYLE, fontSize: cap.font_size_px, lineHeight: Math.round(cap.font_size_px * 1.27), maxCharsPerLine: cap.max_chars_per_line,
+    { ...DEFAULT_CAPTION_STYLE, ...(captionAccent ? { accent: captionAccent } : {}), ...(cap.style?.includes('backdrop pill') ? { backdropStyle: 'pill' as const, backdrop: 0.72, fontWeight: 700 } : {}), fontSize: cap.font_size_px, lineHeight: Math.round(cap.font_size_px * 1.27), maxCharsPerLine: cap.max_chars_per_line,
       baselineY: safe.caption_baseline_y_px, centerX: (safe.left_px + (p.width - safe.right_px)) / 2, maxWidth: p.width - safe.left_px - safe.right_px },
   );
   pipeline.setFilm(film, captions);

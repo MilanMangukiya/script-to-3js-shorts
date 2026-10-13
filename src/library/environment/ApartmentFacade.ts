@@ -3,7 +3,7 @@ import { RoomBox,tableLamp,plant } from './RoomBox';
 import { surface,solid,box,canvasTexture,rod } from '../util/Modeling';
 import { rng } from '../util/math';
 
-export interface ApartmentFacadeOptions {seed?:number;floors?:number;columns?:number;floorHeight?:number;windowSize?:[number,number];occupancy?:number;warmth?:THREE.ColorRepresentation;}
+export interface ApartmentFacadeOptions {seed?:number;floors?:number;columns?:number;floorHeight?:number;windowSize?:[number,number];occupancy?:number;warmth?:THREE.ColorRepresentation;balconies?:boolean;}
 /** Actual open room boxes behind real window openings; tableaux can be placed in public rooms. */
 export class ApartmentFacade extends THREE.Group {
   readonly rooms:{room:RoomBox;floor:number;column:number;lamp:THREE.PointLight}[]=[];
@@ -20,7 +20,7 @@ export class ApartmentFacade extends THREE.Group {
         // Curtains fold as a real mesh and stay at the edges of the view into the room.
         const curtainMat=new THREE.MeshStandardMaterial({color:0xd1c7b3,roughness:1,transparent:true,opacity:.58,side:THREE.DoubleSide});for(const side of [-1,1]){const geo=new THREE.PlaneGeometry(.38,2.05,12,1),p=geo.attributes.position;for(let k=0;k<p.count;k++)p.setZ(k,Math.sin(p.getX(k)*70)*.035);geo.computeVertexNormals();solid(room,geo,curtainMat,[side*.86,1.05,.02]);}
         const glass=new THREE.MeshPhysicalMaterial({color:0xa5b6c7,transparent:true,opacity:.035,roughness:.25,metalness:.2,depthWrite:false});solid(room,new THREE.PlaneGeometry(2.05,2.08),glass,[0,1.08,.12]);
-        if(j===0&&f%2===0){box(this,[2.5,.15,1],stone,[x,base-.1,.6]);for(const xx of [-1.1,0,1.1])rod(this,[x+xx,base,.95],[x+xx,base+1,.95],.03,dark);rod(this,[x-1.1,base+1,.95],[x+1.1,base+1,.95],.03,dark);plant(this,[x+.7,base,.7],.65);}
+        if(o.balconies!==false&&j===0&&f%2===0){box(this,[2.5,.15,1],stone,[x,base-.1,.6]);for(const xx of [-1.1,0,1.1])rod(this,[x+xx,base,.95],[x+xx,base+1,.95],.03,dark);rod(this,[x-1.1,base+1,.95],[x+1.1,base+1,.95],.03,dark);plant(this,[x+.7,base,.7],.65);}
         this.rooms.push({room,floor:f,column:j,lamp:lam.light});
       }
     }
