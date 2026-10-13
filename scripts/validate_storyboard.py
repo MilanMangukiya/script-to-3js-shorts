@@ -71,6 +71,15 @@ def validate(path):
             times=[k['t_s'] for k in keys]
             if times != sorted(set(times)) or any(t<sh['start_s'] or t>sh['end_s'] for t in times):
                 raise ValueError(f'Scene {sc["id"]} shot {sh["id"]}: unordered/out-of-range camera keyframe')
+    th=obj.get('thumbnail')
+    if th is not None:
+        if not (0 <= th['time_s'] < project['duration_s']): raise ValueError('thumbnail.time_s must fall inside the video')
+        for sc in scenes:
+            tr=sc['transition_out']
+            if tr['type']=='cross_dissolve' and tr['duration_s']>0 and sc['end_s']<project['duration_s'] and abs(th['time_s']-sc['end_s'])<tr['duration_s']/2+EPSILON:
+                raise ValueError(f'thumbnail.time_s is inside the {sc["id"]} cross-dissolve; pick a clean frame')
+        for w in th.get('highlight', []):
+            if w.lower() not in th['headline'].lower(): raise ValueError(f'thumbnail.highlight word {w!r} is not in the headline')
     target=f'output/{project["slug"]}.mp4'
     if obj['delivery']['video_output'] != target: raise ValueError(f'Output must be {target}')
     wordcount=sum(len(sc['narration']['text'].split()) for sc in scenes)

@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "all-earth-continents-joined",
+  "topic": "What if every continent on Earth slid together into one giant landmass?",
+  "duration_s": 85,
+  "video_file": "output/all-earth-continents-joined.mp4",
+  "production_note": "Rendered outside this studio's storyboard pipeline (no stories/<slug>.json here); metadata and thumbnail were made from the finished MP4, its narration and on-screen figures.",
+  "scientific_scope_note": "A thought experiment, not a forecast: the merged map is an illustrative arrangement, not a reconstruction, and distances come from the film's own model (the share of land more than 1,000 km from the sea rising from about 22% to 26%). Continental drift at about the speed fingernails grow, Pangaea (roughly 335–175 million years ago) and a likely next supercontinent in about 250 million years are established geology. About 40% of people living within 100 km of a coast, over 80% of world trade moving by sea, and average yield losses for each extra °C (wheat about 6%, maize about 7%) are published estimates. The famine, migration and \"global catastrophe\" verdict are the film's illustrative judgment.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if every continent slid together into one giant landmass?",
+      "description": "What if every continent on Earth slid together into one giant landmass? Continents really do drift, about as fast as fingernails grow, so this thought experiment skips ahead and joins them: one continent, one ocean.\n\nOld coastlines end up more than 1,000 km inland. Rain struggles to reach that far, so the interior becomes a desert with baking summers and freezing winters. About 40% of the world's 8 billion people live near a coast, and ports from Miami to Lagos would wake up landlocked. Farms end up in the wrong climate, and each extra degree cuts wheat and maize yields. Most goods travel by sea, so trade collapses, and famine and migration follow. Humanity survives, but it's a global catastrophe. Beyond Earth almost nothing changes: only the tides shift, changing how fast the Moon drifts away.\n\nThe twist: it already happened. Pangaea existed about 300 million years ago, and in about 250 million years the continents should merge again. Our scattered continents give us rain, coastlines and room to live.\n\nA thought experiment, not a forecast; the merged map is illustrative, not a reconstruction.",
+      "tags": [
+        "what if all continents joined",
+        "one giant landmass",
+        "supercontinent",
+        "pangaea",
+        "next supercontinent",
+        "continental drift",
+        "plate tectonics",
+        "landlocked cities",
+        "desert interior",
+        "world trade by sea",
+        "geography what if",
+        "earth science"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Pangaea",
+        "#Supercontinent",
+        "#Geography",
+        "#EarthScience"
+      ],
+      "keywords": [
+        "what would happen if all the continents joined together",
+        "what was pangaea",
+        "will the continents merge again",
+        "how fast do continents move"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "What if every continent slid together into one giant landmass? 🌍 Old coastlines would end up 1,000 km inland, rain would struggle to reach the middle, and the interior would turn to desert, with baking summers and freezing winters. About 40% of us live near a coast, so ports from Miami to Lagos would wake up landlocked, farms would sit in the wrong climate and sea trade would collapse. Humanity survives, but it's a global catastrophe. The twist: it already happened. Pangaea.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#Pangaea",
+        "#Geography",
+        "#EarthScience"
+      ],
+      "keywords": [
+        "one giant continent thought experiment",
+        "pangaea explained",
+        "supercontinent climate",
+        "geography reels"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if all of Earth's continents merged into one? Ports would wake up landlocked",
+      "description": "Join every continent into one landmass and old coastlines end up more than 1,000 km inland. The interior dries into a desert with extreme summers and winters, coastal cities and ports lose their sea, farms land in the wrong climate, and with most goods moving by sea, trade collapses. Famine and migration follow. It isn't pure fantasy: Pangaea existed about 300 million years ago, and the continents should merge again in about 250 million years.",
+      "hashtags": [
+        "#WhatIf",
+        "#EarthScience",
+        "#Geography",
+        "#Pangaea",
+        "#Supercontinent"
+      ],
+      "keywords": [
+        "what if the continents merged",
+        "pangaea climate",
+        "next supercontinent",
+        "landlocked cities"
+      ]
+    },
+    "tiktok": {
+      "caption": "What if every continent slid into one? Miami and Lagos wake up landlocked, the middle turns to desert and sea trade collapses. It already happened once: Pangaea. 🌍",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Pangaea",
+        "#Geography",
+        "#LearnOnTikTok"
+      ],
+      "keywords": [
+        "what if all continents were one",
+        "pangaea what if",
+        "supercontinent",
+        "continents moving"
+      ]
+    },
+    "x_video": {
+      "post": "What if every continent slid together into one? Old coasts end up 1,000 km inland, the interior turns to desert and ports wake up landlocked. It already happened with Pangaea, and they should merge again in ~250 million years.",
+      "hashtags": [
+        "#WhatIf",
+        "#Pangaea",
+        "#Supercontinent",
+        "#Geography",
+        "#Science"
+      ],
+      "keywords": [
+        "supercontinent",
+        "Pangaea",
+        "continental drift",
+        "geography"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-13T19:40:05Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 6,
+    "path_in_repo": "videos/006-all-earth-continents-joined.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/006-all-earth-continents-joined.mp4",
+    "sha256": "f2c36740b451946ee2507a92923adf5e1bff1ad84a09586f8333a3ad825deef7",
+    "size_bytes": 72436409,
+    "thumbnail_path_in_repo": "videos/006-all-earth-continents-joined.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/006-all-earth-continents-joined.jpg",
+    "thumbnail_sha256": "31e7318213d06169488abb371c9cb80243250449d80c46b687546b4d668b2778",
+    "copy_path_in_repo": "videos/006-all-earth-continents-joined.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/006-all-earth-continents-joined.md",
+    "copy_sha256": "43d1d9dc72cb6b8165b0b2ea2181c90d346a83f060db8ea75cfeaa56847fd6a6",
+    "uploaded_at_utc": "2026-10-13T19:51:25Z"
+  }
+}

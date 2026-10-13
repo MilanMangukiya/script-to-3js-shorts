@@ -3,6 +3,9 @@
 
 Usage: python scripts/finalize_video.py moon-half-distance
 Requires metadata/<slug>.json and a real output/<slug>.mp4; never creates fake video entries.
+Writes output/<slug>.md, the video's ready-to-paste publishing copy (uploaded to Hugging Face as <NNN>-<slug>.md).
+The film being finalized must follow the copy rules: 5-15 hashtags per platform, and every platform's title (the
+caption's or post's opening line where a platform has no title) starts with "What if".
 Stdlib only; ffprobe must be installed, as already required for rendering.
 """
 from __future__ import annotations
@@ -21,6 +24,9 @@ SLUG_RE = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 PLATFORMS = ('youtube_shorts', 'instagram_reels', 'facebook_reels', 'tiktok', 'x_video')
 TITLES = {'youtube_shorts': 'YouTube Shorts', 'instagram_reels': 'Instagram Reels',
           'facebook_reels': 'Facebook Reels', 'tiktok': 'TikTok', 'x_video': 'X'}
+# Copy rules for every film finalized from now on (older catalog entries are only checked structurally).
+HASHTAGS_MIN, HASHTAGS_MAX = 5, 15
+TITLE_PREFIX = 'What if'
 
 
 def require(test: bool, why: str) -> None:
@@ -57,7 +63,7 @@ def relative_file(value: str, prefix: str, must_exist: bool = True) -> Path:
     return p
 
 
-def validate_meta(m: dict, slug: str, known_assets: set[str]) -> None:
+def validate_meta(m: dict, slug: str, known_assets: set[str], copy_rules: bool = False) -> None:
     require(m.get('schema_version') == '1.0.0', f'{slug}: metadata schema_version must be 1.0.0')
     require(m.get('slug') == slug and bool(SLUG_RE.fullmatch(slug)), f'{slug}: invalid slug')
     txt(m.get('topic'), f'{slug}.topic')
@@ -98,6 +104,23 @@ def validate_meta(m: dict, slug: str, known_assets: set[str]) -> None:
         if p == 'x_video':
             ready = d['post'].rstrip() + '\n' + ' '.join(hashtags)
             require(len(ready) <= 280, f'{slug}: X post + hashtags exceeds 280 characters ({len(ready)})')
+        if copy_rules:
+            require(HASHTAGS_MIN <= len(hashtags) <= HASHTAGS_MAX,
+                    f'{slug}.{p}: use {HASHTAGS_MIN}-{HASHTAGS_MAX} hashtags (found {len(hashtags)})')
+            # Platforms without a title field open their caption or post with the "What if" line instead.
+            titled = p in ('youtube_shorts', 'facebook_reels')
+            head = d['title'] if titled else d['post' if p == 'x_video' else 'caption']
+            require(head.lstrip().startswith(TITLE_PREFIX),
+                    f'{slug}.{p}: the {"title" if titled else "opening line"} must start with "{TITLE_PREFIX}"')
+    hf = m.get('huggingface')   # optional archive record written by scripts/upload_to_hf.py
+    if hf is not None:
+        require(isinstance(hf, dict) and str(hf.get('url', '')).startswith('https://huggingface.co/'),
+                f'{slug}: invalid huggingface upload record')
+        txt(hf.get('path_in_repo'), f'{slug}.huggingface.path_in_repo')
+        require(hf.get('thumbnail_url') is None or str(hf['thumbnail_url']).startswith('https://huggingface.co/'),
+                f'{slug}: invalid huggingface thumbnail link')
+        require(hf.get('copy_url') is None or str(hf['copy_url']).startswith('https://huggingface.co/'),
+                f'{slug}: invalid huggingface publishing-copy link')
     # Publishing status is derived from actual URLs rather than trusting a suggested label.
 
 
@@ -126,6 +149,33 @@ def probe_video(filename: Path, expected_seconds: float) -> None:
         raise ValueError('MP4 duration missing') from exc
     require(abs(duration - expected_seconds) <= 0.50,
             f'MP4 actual runtime {duration:.2f}s disagrees with storyboard {expected_seconds}s')
+
+
+def jpeg_size(path: Path) -> tuple[int, int] | None:
+    """(width, height) from a JPEG's start-of-frame marker, or None if it is not a readable JPEG."""
+    data = path.read_bytes()
+    if data[:2] != b'\xff\xd8':
+        return None
+    i = 2
+    while i + 9 < len(data):
+        if data[i] != 0xFF:
+            i += 1
+            continue
+        marker = data[i + 1]
+        if marker in (0xD8, 0x01, 0xFF) or 0xD0 <= marker <= 0xD7:
+            i += 2 if marker != 0xFF else 1
+            continue
+        if marker in (0xC0, 0xC1, 0xC2):
+            return int.from_bytes(data[i + 7:i + 9], 'big'), int.from_bytes(data[i + 5:i + 7], 'big')
+        i += 2 + int.from_bytes(data[i + 2:i + 4], 'big')
+    return None
+
+
+def check_thumbnail(slug: str, width: int, height: int) -> None:
+    thumb = ROOT / f'output/{slug}.jpg'
+    require(thumb.is_file(), f'Thumbnail missing: output/{slug}.jpg (create it with: node tools/render.mjs {slug} --thumbnail)')
+    require(jpeg_size(thumb) == (width, height), f'Thumbnail must be a {width}x{height} JPEG: output/{slug}.jpg')
+    require(thumb.stat().st_size <= 2_000_000, f'Thumbnail is over 2 MB (YouTube limit): output/{slug}.jpg')
 
 
 def checked_registry() -> dict:
@@ -158,8 +208,15 @@ def hashtags(d: dict) -> str:
 
 
 def metadata_section(m: dict) -> str:
+    hf = m.get('huggingface') or {}
     s = [f'## {m["topic"]}',
          f'**Video:** `{m["video_file"]}`  ',
+         *([f'**Thumbnail:** `{m["video_file"][:-4]}.jpg`  '] if (ROOT / f'{m["video_file"][:-4]}.jpg').is_file() else []),
+         *([f'**Publishing copy:** `{m["video_file"][:-4]}.md`  '] if (ROOT / f'{m["video_file"][:-4]}.md').is_file() else []),
+         *([f'**Hugging Face:** [{hf["path_in_repo"]}]({hf["url"]})'
+             + (f' · [{hf["thumbnail_path_in_repo"]}]({hf["thumbnail_url"]})' if hf.get('thumbnail_url') else '')
+             + (f' · [{hf["copy_path_in_repo"]}]({hf["copy_url"]})' if hf.get('copy_url') else '')
+             + f' ({hf["repo_id"]})  '] if hf.get('url') else []),
          f'**Slug:** `{m["slug"]}` | **Duration:** {m["duration_s"]}s | **Rendered (UTC):** {m["rendered_at_utc"]}  ',
          f'**Publishing:** {m["publishing_status"]}  ',
          f'**Scientific accuracy note:** {m["scientific_scope_note"]}',
@@ -185,6 +242,33 @@ def metadata_section(m: dict) -> str:
         s.append(f'**Published URL:** {url if url else "Not published"}')
         s.append('')
     return '\n'.join(s).rstrip()
+
+
+def publishing_kit(m: dict) -> str:
+    """output/<slug>.md: every platform's ready-to-paste copy for one video (uploaded as <NNN>-<slug>.md). It holds no
+    paths, statuses or links, so it changes only when the copy changes and is not re-uploaded otherwise."""
+    s = [f'# {m["topic"]}', '',
+         f'Ready-to-paste publishing copy for `{m["slug"]}` ({m["duration_s"]} s). Copy each block as it is.', '']
+    for p in PLATFORMS:
+        d = m['platforms'][p]
+        tags = hashtags(d)
+        s += [f'## {TITLES[p]}', '']
+        if p in ('youtube_shorts', 'facebook_reels'):
+            s += ['**Title**', fence(d['title']), '']
+        if p == 'youtube_shorts':
+            s += ['**Description + hashtags**', fence(d['description'] + '\n\n' + tags), '',
+                  '**Tags** (comma-separated, for the tags box)', fence(', '.join(d['tags'])), '']
+        elif p == 'facebook_reels':
+            s += ['**Description + hashtags**', fence(d['description'] + '\n\n' + tags), '']
+        elif p == 'x_video':
+            post = d['post'].rstrip() + '\n' + tags
+            s += [f'**Post + hashtags** ({len(post)}/280 characters)', fence(post), '']
+        else:
+            s += ['**Caption + hashtags**', fence(d['caption'] + '\n\n' + tags), '']
+        s += [f'**Hashtags only** ({len(d["hashtags"])})', fence(tags), '',
+              '**Search keywords:** ' + ', '.join(d['keywords']), '']
+    s += ['## Accuracy note', '', m['scientific_scope_note']]
+    return '\n'.join(s).rstrip() + '\n'
 
 
 def write_catalog(metas: list[dict]) -> None:
@@ -232,13 +316,14 @@ def main(slug: str) -> None:
     require(story['project']['slug']==slug, f'{slug}: storyboard slug mismatch')
     require(45 <= story['project']['duration_s'] <= 90, f'{slug}: invalid storyboard duration')
     probe_video(ROOT/f'output/{slug}.mp4', story['project']['duration_s'])
+    check_thumbnail(slug, story['project']['width'], story['project']['height'])
 
     registry=checked_registry()
     by_id={a['id']:a for a in registry['assets']}
     meta_path=META/f'{slug}.json'
     require(meta_path.is_file(), f'Upload metadata JSON is required before finalizing: metadata/{slug}.json')
     m=read_json(meta_path)
-    validate_meta(m, slug, set(by_id))
+    validate_meta(m, slug, set(by_id), copy_rules=True)
     require(m['duration_s']==story['project']['duration_s'], f'{slug}: storyboard/metadata duration mismatch')
     for aid in m.get('created_asset_ids', []):
         require(by_id[aid]['created_for']==slug,
@@ -260,6 +345,8 @@ def main(slug: str) -> None:
     # Only write after every input and media check has passed.
     write_json(REGISTRY, registry)
     write_json(meta_path, m)
+    # LF line endings on every OS, so the same copy hashes the same everywhere and is not re-uploaded needlessly.
+    (ROOT/f'output/{slug}.md').write_text(publishing_kit(m), encoding='utf-8', newline='\n')
     metas=[]
     for p in sorted(META.glob('*.json')):
         candidate=read_json(p)
@@ -273,7 +360,7 @@ def main(slug: str) -> None:
     metas.sort(key=lambda x:(x['rendered_at_utc'],x['slug']),reverse=True)
     write_catalog(metas)
     write_assets(registry)
-    print(f'FINALIZED {slug}: output/{slug}.mp4 | metadata/{slug}.md | VIDEO_CATALOG.md | ASSET_LIBRARY.md')
+    print(f'FINALIZED {slug}: output/{slug}.mp4 | output/{slug}.md | metadata/{slug}.md | VIDEO_CATALOG.md | ASSET_LIBRARY.md')
 
 
 if __name__=='__main__':

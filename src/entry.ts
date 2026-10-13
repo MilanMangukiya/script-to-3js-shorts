@@ -2,12 +2,15 @@
 // frame API on window.__film for tools/render.mjs. Usage: index.html?slug=<slug>&scale=1
 import { FilmPipeline, type FilmDefinition } from './library/render/FilmPipeline';
 import { KineticCaptions, DEFAULT_CAPTION_STYLE } from './library/captions/KineticCaptions';
+import { drawThumbnailTitle, composeBoldThumbnail, THUMB_FONTS, THUMB_GRADES } from './library/overlay/Thumbnail';
 import type * as THREE from 'three';
 import { createFilm as oxygenGoneFiveSeconds } from './stories/oxygen-gone-five-seconds/film';
 import { createFilm as iceSankInsteadOfFloating } from './stories/ice-sank-instead-of-floating/film';
 import { createFilm as airPressureDoubled } from './stories/air-pressure-doubled/film';
 import { createFilm as moonMadeOfIce } from './stories/moon-made-of-ice/film';
+import { createFilm as everyManDisappeared } from './stories/what-if-every-man-disappeared/film';
 import { createFilm as rainNonstopEverywhere } from './stories/rain-nonstop-everywhere/film';
+import { createFilm as continentsOneLandmass } from './stories/continents-one-landmass/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -15,7 +18,9 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'ice-sank-instead-of-floating': iceSankInsteadOfFloating,
   'air-pressure-doubled': airPressureDoubled,
   'moon-made-of-ice': moonMadeOfIce,
+  'what-if-every-man-disappeared': everyManDisappeared,
   'rain-nonstop-everywhere': rainNonstopEverywhere,
+  'continents-one-landmass': continentsOneLandmass,
 };
 
 async function boot() {
@@ -24,9 +29,13 @@ async function boot() {
     fetch(`${base}stories/${slug}.json`).then((r) => r.json()),
     fetch(`${base}build/${slug}/audio/narration.json`).then((r) => r.json()),
   ]);
-  for (const [weight, file] of [[500, 'Inter-Medium'], [600, 'Inter-SemiBold'], [700, 'Inter-Bold']] as const) {
-    const face = new FontFace('Inter', `url(${base}assets/library/fonts/${file}.woff2)`, { weight: String(weight), style: 'normal' });
+  for (const [weight, file, style] of [[500, 'Inter-Medium', 'normal'], [600, 'Inter-SemiBold', 'normal'], [700, 'Inter-Bold', 'normal'], [900, 'Inter-Black', 'normal'], [900, 'Inter-BlackItalic', 'italic']] as const) {
+    const face = new FontFace('Inter', `url(${base}assets/library/fonts/${file}.woff2)`, { weight: String(weight), style });
     document.fonts.add(await face.load());
+  }
+  // Display faces for thumbnails (assets/library/fonts/display/FONTS.md).
+  for (const [family, file, weight] of [['Anton', 'Anton-Regular', 400], ['Bebas Neue', 'BebasNeue-Regular', 400], ['Archivo Black', 'ArchivoBlack-Regular', 400], ['Bangers', 'Bangers-Regular', 400], ['Orbitron', 'Orbitron-Black', 900], ['Playfair Display', 'PlayfairDisplay-Black', 900]] as const) {
+    document.fonts.add(await new FontFace(family, `url(${base}assets/library/fonts/display/${file}.woff2)`, { weight: String(weight), style: 'normal' }).load());
   }
   const p = story.project;
   const pipeline = new FilmPipeline({ width: p.width, height: p.height, fps: p.fps, duration_s: p.duration_s, scenes: story.scenes, scale });
@@ -45,6 +54,17 @@ async function boot() {
     gpu: dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : 'unknown',
     /** Render frame i and return it as a data URL. */
     renderFrame(i: number, mime = 'image/jpeg', quality = 0.95): string { return pipeline.renderFrame(i).toDataURL(mime, quality); },
+    /** Render the storyboard's thumbnail: a clean still (no captions or labels) composed as a bold cover (default) or a clean title card. */
+    renderThumbnail(mime = 'image/jpeg', quality = 0.92): string {
+      const th = story.thumbnail ?? { time_s: Math.min(story.scenes[0].end_s * 0.7, p.duration_s - 1 / p.fps), headline: p.title };
+      const frame = Math.min(p.duration_s * p.fps - 1, Math.max(0, Math.round(th.time_s * p.fps)));
+      const out = pipeline.renderFrame(frame, { overlay: false, captions: false });
+      if (th.style === 'clean') drawThumbnailTitle(pipeline.ctx, { headline: th.headline, highlight: th.highlight, position: th.position, width: p.width, height: p.height });
+      else composeBoldThumbnail(pipeline.ctx, { headline: th.headline, highlight: th.highlight, position: th.position, badge: th.badge, focus: th.focus, zoom: th.zoom, anchor: th.anchor, badgeAt: th.badge_at, arrow: th.arrow, width: p.width, height: p.height,
+        font: THUMB_FONTS[th.font ?? 'inter'], grade: THUMB_GRADES[th.grade ?? 'vivid'], tilt: th.tilt,
+        textColor: th.palette?.text, highlightColor: th.palette?.highlight, badgeColor: th.palette?.badge, badgeTextColor: th.palette?.badge_text, arrowColor: th.palette?.arrow });
+      return out.toDataURL(mime, quality);
+    },
   };
 }
 

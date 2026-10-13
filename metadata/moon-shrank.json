@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "moon-shrank",
+  "topic": "What if the gap to the Moon shrank to 0.1% of today's distance?",
+  "duration_s": 87,
+  "video_file": "output/moon-shrank.mp4",
+  "production_note": "Rendered outside this studio's storyboard pipeline (no stories/<slug>.json here); metadata and thumbnail were made from the finished MP4, its narration and on-screen figures.",
+  "scientific_scope_note": "A hypothetical thought experiment, not a prediction: the Moon is placed at 0.1% of today's Earth–Moon gap (about the space station's altitude, roughly 8,500 km centre to centre) and given orbital speed. The six-minute fall if released at rest, a lap about every two hours, a Moon about 108° wide, weighing about 10% less beneath it, a Roche limit of about 9,500–18,400 km, and 1% of the Moon striking with several times the energy needed to boil the oceans are order-of-magnitude estimates; tide and break-up timing are illustrative. The Moon's real drift of about 3.8 cm a year and its probable formation from a debris disk around the young Earth are established science.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if the Moon orbited just 400 km above Earth?",
+      "description": "What if the gap to the Moon shrank to 0.1% of today's distance? That's about the height of the International Space Station. Dropped there, the Moon would hit Earth in about six minutes, so in this thought experiment we give it orbital speed instead.\n\nIt would lap Earth every two hours and fill almost half the sky, and beneath it you'd weigh about 10% less. But that close, the Moon is inside the Roche limit, where tides tear moons apart. Tidal forces hundreds of thousands of times today's would push the oceans over coastlines with every pass, and within hours the Moon would begin to break up. Rock would rain down on the tropics first, home to about 4 in 10 people; power, food and water systems would collapse, and even 1% of the Moon would hit with enough energy to boil every ocean dry. Humanity would not survive.\n\nBeyond Earth almost nothing changes: the same total mass keeps the same pull on Venus and Mars. The twist: the Moon probably formed from a debris ring just outside this limit, and today it drifts about 4 cm farther away each year. That vast distance keeps it whole.\n\nA hypothetical scenario, not a prediction; figures are estimates and the scenes are illustrative.",
+      "tags": [
+        "what if the moon was closer",
+        "moon closer to earth",
+        "moon at iss height",
+        "roche limit",
+        "moon breaking apart",
+        "tidal forces",
+        "moon orbit",
+        "giant moon in the sky",
+        "moon formation",
+        "moon drifting away",
+        "astronomy",
+        "space what if"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Moon",
+        "#Space",
+        "#Astronomy",
+        "#RocheLimit"
+      ],
+      "keywords": [
+        "what would happen if the moon was closer to earth",
+        "what is the roche limit",
+        "how close can the moon get to earth",
+        "is the moon moving away from earth"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "What if the Moon orbited just 400 km up, at space station height? 🌕 It would fill almost half the sky, lap Earth every two hours, and you'd weigh about 10% less beneath it. But that close it's inside the Roche limit, where tides tear moons apart: within hours it starts breaking up, rock rains down, and humanity would not survive. The twist: the Moon probably formed just outside that limit, and today it drifts about 4 cm farther away every year.",
+      "hashtags": [
+        "#WhatIf",
+        "#Moon",
+        "#ScienceReels",
+        "#Space",
+        "#Astronomy"
+      ],
+      "keywords": [
+        "moon closer to earth thought experiment",
+        "roche limit explained",
+        "giant moon in the sky",
+        "space science reels"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if the Moon came as close as the space station?",
+      "description": "Bring the Moon down to 0.1% of its distance, about the altitude of the International Space Station, and it would fill nearly half the sky and circle Earth every two hours. But it would be inside the Roche limit, where tidal forces pull moons apart. The Moon would begin to break up within hours, its debris would rain down on the tropics, and the energy of even 1% of it hitting Earth would be enough to boil the oceans. A hypothetical scenario, not a prediction: the real Moon drifts about 4 cm farther away each year.",
+      "hashtags": [
+        "#WhatIf",
+        "#Moon",
+        "#Space",
+        "#Astronomy",
+        "#Science"
+      ],
+      "keywords": [
+        "what if the moon was closer",
+        "moon inside the roche limit",
+        "moon breaking apart",
+        "how far away is the moon"
+      ]
+    },
+    "tiktok": {
+      "caption": "What if the Moon orbited at space station height? Half the sky, a lap every two hours… then tides rip it apart and rock rains down on Earth. 🌕💥",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Moon",
+        "#Space",
+        "#LearnOnTikTok"
+      ],
+      "keywords": [
+        "moon too close to earth",
+        "what if the moon fell",
+        "roche limit",
+        "space facts"
+      ]
+    },
+    "x_video": {
+      "post": "What if the Moon orbited 400 km up, at space station height? It would fill half the sky and lap Earth every 2 hours, but tides would tear it apart and humanity would not survive. Today it drifts ~4 cm farther away each year.",
+      "hashtags": [
+        "#WhatIf",
+        "#Moon",
+        "#Space",
+        "#Astronomy",
+        "#RocheLimit"
+      ],
+      "keywords": [
+        "Moon",
+        "Roche limit",
+        "tidal forces",
+        "astronomy"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-13T19:38:08Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 5,
+    "path_in_repo": "videos/005-moon-shrank.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/005-moon-shrank.mp4",
+    "sha256": "5ba9754b262a13e6d0483ab1a34756d1b9df4844ba04fd8bb7d4784c3130cdbf",
+    "size_bytes": 99200553,
+    "thumbnail_path_in_repo": "videos/005-moon-shrank.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/005-moon-shrank.jpg",
+    "thumbnail_sha256": "790dc1430a7ef340c0fdea3918b9afd3e2b3705198b901ff99e6ff6e3ed32e15",
+    "copy_path_in_repo": "videos/005-moon-shrank.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/005-moon-shrank.md",
+    "copy_sha256": "ff1475d4ccd7b8952a6b7925876f44914d1294058e7b5bb58f468a20a4ba2664",
+    "uploaded_at_utc": "2026-10-13T19:51:03Z"
+  }
+}

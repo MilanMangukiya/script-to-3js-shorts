@@ -4,6 +4,10 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 | Rendered (UTC) | Video | Length | Publishing | Upload metadata |
 |---|---|---:|---|---|
+| 2026-10-13 | `all-earth-continents-joined` | 85s | rendered_not_published | [Copy metadata](metadata/all-earth-continents-joined.md) |
+| 2026-10-13 | `moon-shrank` | 87s | rendered_not_published | [Copy metadata](metadata/moon-shrank.md) |
+| 2026-10-13 | `continents-one-landmass` | 75s | rendered_not_published | [Copy metadata](metadata/continents-one-landmass.md) |
+| 2026-10-13 | `what-if-every-man-disappeared` | 75s | rendered_not_published | [Copy metadata](metadata/what-if-every-man-disappeared.md) |
 | 2026-10-13 | `rain-nonstop-everywhere` | 75s | rendered_not_published | [Copy metadata](metadata/rain-nonstop-everywhere.md) |
 | 2026-10-12 | `moon-made-of-ice` | 74s | rendered_not_published | [Copy metadata](metadata/moon-made-of-ice.md) |
 | 2026-10-12 | `air-pressure-doubled` | 74s | rendered_not_published | [Copy metadata](metadata/air-pressure-doubled.md) |
@@ -12,18 +16,389 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 ---
 
-## What if it rained nonstop everywhere on Earth for a year?
-**Video:** `output/rain-nonstop-everywhere.mp4`  
-**Slug:** `rain-nonstop-everywhere` | **Duration:** 75s | **Rendered (UTC):** 2026-10-13T01:57:25Z  
+## What if every continent on Earth slid together into one giant landmass?
+**Video:** `output/all-earth-continents-joined.mp4`  
+**Thumbnail:** `output/all-earth-continents-joined.jpg`  
+**Publishing copy:** `output/all-earth-continents-joined.md`  
+**Hugging Face:** [videos/006-all-earth-continents-joined.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/006-all-earth-continents-joined.mp4) · [videos/006-all-earth-continents-joined.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/006-all-earth-continents-joined.jpg) · [videos/006-all-earth-continents-joined.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/006-all-earth-continents-joined.md) (Whatif2203/whatif)  
+**Slug:** `all-earth-continents-joined` | **Duration:** 85s | **Rendered (UTC):** 2026-10-13T19:40:05Z  
 **Publishing:** rendered_not_published  
-**Scientific accuracy note:** Planet-wide nonstop rain is a thought experiment. The ~2.5 cm of water held in the atmosphere (USGS) and ~67% typical cloud cover (NASA) are measured values; about 1 m of rain a year (≈3 mm a day) is a global average derived from NASA's energy budget, not a forecast for any one place. Sahara greening, harvest losses and dimmer solar output are shown as possibilities, and the rain weakening under total cloud cover is likely but its size is not quantified.
-**Assets reused:** film-pipeline-v1, camera-keyframe-rig-v1, caption-kinetic-v1, overlay-labels-v1, font-inter-v1, shader-noise-math-v1, audio-synth-kit-v1, earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, ocean-surface-v1, terrain-massif-v1, grass-field-v1, humanoid-figure-v1, glass-of-water-v1, dial-gauge-v1, snowfall-v1, bokeh-field-v1  
-**Assets created:** rain-v1, dune-field-v1, cloud-ceiling-v1, overcast-shell-v1, solar-panel-array-v1
+**Scientific accuracy note:** A thought experiment, not a forecast: the merged map is an illustrative arrangement, not a reconstruction, and distances come from the film's own model (the share of land more than 1,000 km from the sea rising from about 22% to 26%). Continental drift at about the speed fingernails grow, Pangaea (roughly 335–175 million years ago) and a likely next supercontinent in about 250 million years are established geology. About 40% of people living within 100 km of a coast, over 80% of world trade moving by sea, and average yield losses for each extra °C (wheat about 6%, maize about 7%) are published estimates. The famine, migration and "global catastrophe" verdict are the film's illustrative judgment.
+**Assets reused:** None yet  
+**Assets created:** None registered
 
 ### YouTube Shorts
 **Title — copy:**
 ```text
-What If It Rained Nonstop Everywhere on Earth for a Year?
+What if every continent slid together into one giant landmass?
+```
+
+**Description + hashtags — copy:**
+```text
+What if every continent on Earth slid together into one giant landmass? Continents really do drift, about as fast as fingernails grow, so this thought experiment skips ahead and joins them: one continent, one ocean.
+
+Old coastlines end up more than 1,000 km inland. Rain struggles to reach that far, so the interior becomes a desert with baking summers and freezing winters. About 40% of the world's 8 billion people live near a coast, and ports from Miami to Lagos would wake up landlocked. Farms end up in the wrong climate, and each extra degree cuts wheat and maize yields. Most goods travel by sea, so trade collapses, and famine and migration follow. Humanity survives, but it's a global catastrophe. Beyond Earth almost nothing changes: only the tides shift, changing how fast the Moon drifts away.
+
+The twist: it already happened. Pangaea existed about 300 million years ago, and in about 250 million years the continents should merge again. Our scattered continents give us rain, coastlines and room to live.
+
+A thought experiment, not a forecast; the merged map is illustrative, not a reconstruction.
+
+#Shorts #WhatIf #Pangaea #Supercontinent #Geography #EarthScience
+```
+
+**YouTube tags — comma-separated, copy:**
+```text
+what if all continents joined, one giant landmass, supercontinent, pangaea, next supercontinent, continental drift, plate tectonics, landlocked cities, desert interior, world trade by sea, geography what if, earth science
+```
+
+**Target search keywords (research/reference):** what would happen if all the continents joined together, what was pangaea, will the continents merge again, how fast do continents move
+
+**Published URL:** Not published
+
+### Instagram Reels
+**Caption + hashtags — copy:**
+```text
+What if every continent slid together into one giant landmass? 🌍 Old coastlines would end up 1,000 km inland, rain would struggle to reach the middle, and the interior would turn to desert, with baking summers and freezing winters. About 40% of us live near a coast, so ports from Miami to Lagos would wake up landlocked, farms would sit in the wrong climate and sea trade would collapse. Humanity survives, but it's a global catastrophe. The twist: it already happened. Pangaea.
+
+#WhatIf #ScienceReels #Pangaea #Geography #EarthScience
+```
+
+**Target search keywords (research/reference):** one giant continent thought experiment, pangaea explained, supercontinent climate, geography reels
+
+**Published URL:** Not published
+
+### Facebook Reels
+**Title — copy:**
+```text
+What if all of Earth's continents merged into one? Ports would wake up landlocked
+```
+
+**Description + hashtags — copy:**
+```text
+Join every continent into one landmass and old coastlines end up more than 1,000 km inland. The interior dries into a desert with extreme summers and winters, coastal cities and ports lose their sea, farms land in the wrong climate, and with most goods moving by sea, trade collapses. Famine and migration follow. It isn't pure fantasy: Pangaea existed about 300 million years ago, and the continents should merge again in about 250 million years.
+
+#WhatIf #EarthScience #Geography #Pangaea #Supercontinent
+```
+
+**Target search keywords (research/reference):** what if the continents merged, pangaea climate, next supercontinent, landlocked cities
+
+**Published URL:** Not published
+
+### TikTok
+**Caption + hashtags — copy:**
+```text
+What if every continent slid into one? Miami and Lagos wake up landlocked, the middle turns to desert and sea trade collapses. It already happened once: Pangaea. 🌍
+
+#WhatIf #ScienceTok #Pangaea #Geography #LearnOnTikTok
+```
+
+**Target search keywords (research/reference):** what if all continents were one, pangaea what if, supercontinent, continents moving
+
+**Published URL:** Not published
+
+### X
+**Post + hashtags — copy:**
+```text
+What if every continent slid together into one? Old coasts end up 1,000 km inland, the interior turns to desert and ports wake up landlocked. It already happened with Pangaea, and they should merge again in ~250 million years.
+#WhatIf #Pangaea #Supercontinent #Geography #Science
+```
+
+**Target search keywords (research/reference):** supercontinent, Pangaea, continental drift, geography
+
+**Published URL:** Not published
+
+---
+
+## What if the gap to the Moon shrank to 0.1% of today's distance?
+**Video:** `output/moon-shrank.mp4`  
+**Thumbnail:** `output/moon-shrank.jpg`  
+**Publishing copy:** `output/moon-shrank.md`  
+**Hugging Face:** [videos/005-moon-shrank.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/005-moon-shrank.mp4) · [videos/005-moon-shrank.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/005-moon-shrank.jpg) · [videos/005-moon-shrank.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/005-moon-shrank.md) (Whatif2203/whatif)  
+**Slug:** `moon-shrank` | **Duration:** 87s | **Rendered (UTC):** 2026-10-13T19:38:08Z  
+**Publishing:** rendered_not_published  
+**Scientific accuracy note:** A hypothetical thought experiment, not a prediction: the Moon is placed at 0.1% of today's Earth–Moon gap (about the space station's altitude, roughly 8,500 km centre to centre) and given orbital speed. The six-minute fall if released at rest, a lap about every two hours, a Moon about 108° wide, weighing about 10% less beneath it, a Roche limit of about 9,500–18,400 km, and 1% of the Moon striking with several times the energy needed to boil the oceans are order-of-magnitude estimates; tide and break-up timing are illustrative. The Moon's real drift of about 3.8 cm a year and its probable formation from a debris disk around the young Earth are established science.
+**Assets reused:** None yet  
+**Assets created:** None registered
+
+### YouTube Shorts
+**Title — copy:**
+```text
+What if the Moon orbited just 400 km above Earth?
+```
+
+**Description + hashtags — copy:**
+```text
+What if the gap to the Moon shrank to 0.1% of today's distance? That's about the height of the International Space Station. Dropped there, the Moon would hit Earth in about six minutes, so in this thought experiment we give it orbital speed instead.
+
+It would lap Earth every two hours and fill almost half the sky, and beneath it you'd weigh about 10% less. But that close, the Moon is inside the Roche limit, where tides tear moons apart. Tidal forces hundreds of thousands of times today's would push the oceans over coastlines with every pass, and within hours the Moon would begin to break up. Rock would rain down on the tropics first, home to about 4 in 10 people; power, food and water systems would collapse, and even 1% of the Moon would hit with enough energy to boil every ocean dry. Humanity would not survive.
+
+Beyond Earth almost nothing changes: the same total mass keeps the same pull on Venus and Mars. The twist: the Moon probably formed from a debris ring just outside this limit, and today it drifts about 4 cm farther away each year. That vast distance keeps it whole.
+
+A hypothetical scenario, not a prediction; figures are estimates and the scenes are illustrative.
+
+#Shorts #WhatIf #Moon #Space #Astronomy #RocheLimit
+```
+
+**YouTube tags — comma-separated, copy:**
+```text
+what if the moon was closer, moon closer to earth, moon at iss height, roche limit, moon breaking apart, tidal forces, moon orbit, giant moon in the sky, moon formation, moon drifting away, astronomy, space what if
+```
+
+**Target search keywords (research/reference):** what would happen if the moon was closer to earth, what is the roche limit, how close can the moon get to earth, is the moon moving away from earth
+
+**Published URL:** Not published
+
+### Instagram Reels
+**Caption + hashtags — copy:**
+```text
+What if the Moon orbited just 400 km up, at space station height? 🌕 It would fill almost half the sky, lap Earth every two hours, and you'd weigh about 10% less beneath it. But that close it's inside the Roche limit, where tides tear moons apart: within hours it starts breaking up, rock rains down, and humanity would not survive. The twist: the Moon probably formed just outside that limit, and today it drifts about 4 cm farther away every year.
+
+#WhatIf #Moon #ScienceReels #Space #Astronomy
+```
+
+**Target search keywords (research/reference):** moon closer to earth thought experiment, roche limit explained, giant moon in the sky, space science reels
+
+**Published URL:** Not published
+
+### Facebook Reels
+**Title — copy:**
+```text
+What if the Moon came as close as the space station?
+```
+
+**Description + hashtags — copy:**
+```text
+Bring the Moon down to 0.1% of its distance, about the altitude of the International Space Station, and it would fill nearly half the sky and circle Earth every two hours. But it would be inside the Roche limit, where tidal forces pull moons apart. The Moon would begin to break up within hours, its debris would rain down on the tropics, and the energy of even 1% of it hitting Earth would be enough to boil the oceans. A hypothetical scenario, not a prediction: the real Moon drifts about 4 cm farther away each year.
+
+#WhatIf #Moon #Space #Astronomy #Science
+```
+
+**Target search keywords (research/reference):** what if the moon was closer, moon inside the roche limit, moon breaking apart, how far away is the moon
+
+**Published URL:** Not published
+
+### TikTok
+**Caption + hashtags — copy:**
+```text
+What if the Moon orbited at space station height? Half the sky, a lap every two hours… then tides rip it apart and rock rains down on Earth. 🌕💥
+
+#WhatIf #ScienceTok #Moon #Space #LearnOnTikTok
+```
+
+**Target search keywords (research/reference):** moon too close to earth, what if the moon fell, roche limit, space facts
+
+**Published URL:** Not published
+
+### X
+**Post + hashtags — copy:**
+```text
+What if the Moon orbited 400 km up, at space station height? It would fill half the sky and lap Earth every 2 hours, but tides would tear it apart and humanity would not survive. Today it drifts ~4 cm farther away each year.
+#WhatIf #Moon #Space #Astronomy #RocheLimit
+```
+
+**Target search keywords (research/reference):** Moon, Roche limit, tidal forces, astronomy
+
+**Published URL:** Not published
+
+---
+
+## What if all Earth's continents joined into one giant landmass?
+**Video:** `output/continents-one-landmass.mp4`  
+**Thumbnail:** `output/continents-one-landmass.jpg`  
+**Publishing copy:** `output/continents-one-landmass.md`  
+**Hugging Face:** [videos/004-continents-one-landmass.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/004-continents-one-landmass.mp4) · [videos/004-continents-one-landmass.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/004-continents-one-landmass.jpg) · [videos/004-continents-one-landmass.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/004-continents-one-landmass.md) (Whatif2203/whatif)  
+**Slug:** `continents-one-landmass` | **Duration:** 75s | **Rendered (UTC):** 2026-10-13T06:30:25Z  
+**Publishing:** rendered_not_published  
+**Scientific accuracy note:** The joined map is a schematic, Pangaea-like fit of today's continents (Africa and Eurasia held fixed, drift sped up by millions of times), not a reconstruction of any past or future geography. Pangaea's break-up about 200 million years ago, the South America–Africa coastline fit and plate speeds comparable to fingernail growth are established (USGS). The desert interior, monsoon-lashed coasts and hot-day/freezing-night interior follow reconstructions of Pangaea's climate and basic continentality; that most people would live on the coasts is a plausible inference. The wildlife figures come from research on the Great American Biotic Interchange (STRI): almost half of living South American mammals descend from North American immigrants. Less coastline and fewer shallow reef seas is derived; coral depth limits are from NOAA. The 8–16% livable-land figure is one University of Bristol–led model of the next supercontinent, Pangea Ultima, roughly 250 million years from now.
+**Assets reused:** film-pipeline-v1, camera-keyframe-rig-v1, caption-kinetic-v1, overlay-labels-v1, font-inter-v1, shader-noise-math-v1, audio-synth-kit-v1, earth-textures-nasa-v1, starfield-v1, overcast-shell-v1, dune-field-v1, sky-dome-v1, ocean-surface-v1, rain-v1, cloud-ceiling-v1, broadleaf-tree-v1, grass-field-v1, humanoid-figure-v1, pedestrian-crowd-v1, dial-gauge-v1, underwater-volume-v1, fish-school-v1, thumbnail-title-card-v1, font-display-set-v1  
+**Assets created:** plate-drift-globe-v1, coral-mounds-v1, village-houses-v1
+
+### YouTube Shorts
+**Title — copy:**
+```text
+What if all Earth’s continents joined into one supercontinent?
+```
+
+**Description + hashtags — copy:**
+```text
+Push every continent together and Earth becomes one giant landmass. It has happened before: Pangaea held nearly all land until it began splitting about 200 million years ago, and South America and Africa still fit like puzzle pieces. Plates move about as fast as fingernails grow.
+
+In this 3D science what-if, one landmass changes the weather. About 90% of the moisture in the air evaporates from the sea, so a supercontinent's heart would turn into a vast desert, with scorching days and freezing nights, while people crowd onto rainy, monsoon-battered coasts. Animals from every continent would meet, and not all would survive: when North and South America joined, many South American mammals died out, and almost half of living South American mammals descend from northern immigrants. At sea, less coastline means fewer shallow, sunlit waters where coral reefs grow. And the next supercontinent may be brutal: one model of Pangea Ultima, about 250 million years away, finds only 8–16% of its land livable for mammals.
+
+The joined map is schematic (sped up, not an exact reconstruction); the climate scenes are illustrative.
+Sources: USGS (This Dynamic Earth; plate speeds; Water Science School); NOAA Ocean Service; Smithsonian Tropical Research Institute via ScienceDaily; University of Bristol; Florida Atlantic University NASA education module.
+
+#Shorts #WhatIf #Pangaea #Supercontinent #PlateTectonics #Geology #EarthScience
+```
+
+**YouTube tags — comma-separated, copy:**
+```text
+what if all continents joined, pangaea, supercontinent, pangea ultima, next supercontinent, continental drift, plate tectonics explained, south america africa fit, megamonsoon, great american interchange, coral reefs, earth science
+```
+
+**Target search keywords (research/reference):** what would happen if all continents joined together, what was pangaea, how fast do tectonic plates move, will the continents join again
+
+**Published URL:** Not published
+
+### Instagram Reels
+**Caption + hashtags — copy:**
+```text
+What if every continent joined into one? 🌍 You wouldn’t get paradise: you’d get a desert heart thousands of kilometres from the sea, coasts hammered by monsoons, nights that freeze after days that scorch, and wildlife from everywhere competing at once. Earth has done this before (hello, Pangaea), and South America still fits into Africa like a puzzle piece. The plates are moving right now, about as fast as your fingernails grow.
+
+#WhatIf #ScienceReels #Pangaea #Geology #EarthScience
+```
+
+**Target search keywords (research/reference):** supercontinent thought experiment, pangaea explained, continental drift visualized, plate tectonics for beginners
+
+**Published URL:** Not published
+
+### Facebook Reels
+**Title — copy:**
+```text
+What if the continents joined again? Earth had one giant continent before
+```
+
+**Description + hashtags — copy:**
+```text
+About 200 million years ago nearly all land was joined in Pangaea. If today's continents merged again, the interior would dry into a vast desert with extreme heat by day and cold at night, people would cluster on wet, monsoon-lashed coasts, many species would be lost as animals from every continent mixed, and shrinking coastlines would leave less room for coral reefs. One model of the next supercontinent, about 250 million years away, finds only 8–16% of its land livable for mammals.
+
+#WhatIf #EarthScience #Geology #Pangaea #Supercontinent
+```
+
+**Target search keywords (research/reference):** what if the continents merged, pangaea climate, next supercontinent pangea ultima, why south america and africa fit together
+
+**Published URL:** Not published
+
+### TikTok
+**Caption + hashtags — copy:**
+```text
+What if all the continents smashed into one? A giant desert in the middle, monsoon coasts, freezing desert nights, and the next one might leave just 8–16% of land livable for mammals. 😳
+
+#WhatIf #ScienceTok #Pangaea #Geology #LearnOnTikTok
+```
+
+**Target search keywords (research/reference):** what if all continents were one, pangaea what if, supercontinent future earth, continents moving
+
+**Published URL:** Not published
+
+### X
+**Post + hashtags — copy:**
+```text
+What if every continent joined into one? A desert heart, crowded monsoon coasts, fewer reefs. It’s happened before (Pangaea), and one model finds the next supercontinent may leave just 8–16% of land livable for mammals.
+#WhatIf #Pangaea #Supercontinent #Geology #Science
+```
+
+**Target search keywords (research/reference):** supercontinent, Pangaea, plate tectonics, Pangea Ultima
+
+**Published URL:** Not published
+
+---
+
+## What if every man and boy on Earth disappeared?
+**Video:** `output/what-if-every-man-disappeared.mp4`  
+**Thumbnail:** `output/what-if-every-man-disappeared.jpg`  
+**Hugging Face:** [videos/003-what-if-every-man-disappeared.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/003-what-if-every-man-disappeared.mp4) · [videos/003-what-if-every-man-disappeared.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/003-what-if-every-man-disappeared.jpg) (Whatif2203/whatif)  
+**Slug:** `what-if-every-man-disappeared` | **Duration:** 75s | **Rendered (UTC):** 2026-10-13T04:48:31Z  
+**Publishing:** rendered_not_published  
+**Scientific accuracy note:** A one-time disappearance of all human males is a thought experiment. UN WPP 2024 population figures are 2026 projections. Jobs refers to paid employment, excluding unpaid care. The 2020 ground and bird findings and 2001 right-whale study are regional measured analogs, not predictions of exact worldwide effects. Future births and recovery depend on disruption, stored sperm and human choices; the age chart and +40-year street are schematic illustrations.
+**Assets reused:** earth-globe-v1, earth-textures-nasa-v1, starfield-v1, flame-v1, smoke-wisp-v1, sky-dome-v1, ocean-surface-v1, cloud-deck-v1, underwater-volume-v1, fish-school-v1, bird-flock-v1, humanoid-figure-v1, caption-kinetic-v1, film-pipeline-v1, camera-keyframe-rig-v1, overlay-labels-v1, audio-synth-kit-v1, shader-noise-math-v1, font-inter-v1, bokeh-field-v1, grass-field-v1, sailboat-v1  
+**Assets created:** city-street-block-v1, pedestrian-crowd-v1, vanish-dissolve-v1, port-diorama-kit-v1, container-ship-v1, apartment-facade-v1, clinic-interior-v1, ship-bridge-v1, room-box-v1, right-whale-v1, songbird-v1, sound-rings-v1, broadleaf-tree-v1, population-pyramid-v1, history-ribbon-v1, seismometer-v1, newborn-hand-v1, modeling-helpers-v1, wpp2024-world-graphics-v1
+
+### YouTube Shorts
+**Title — copy:**
+```text
+What If Every Man on Earth Disappeared? The First 40 Years
+```
+
+**Description + hashtags — copy:**
+```text
+Over four billion men and boys vanish in an instant. A 75-second cinematic thought experiment follows the empty jobs, the quieter ground and oceans, the grief, and the births that bring boys back within nine months. Twenty years later, the oldest man would be about twenty.
+
+Figures use UN World Population Prospects 2024. The measured nature examples come from Lecocq et al. (Science, 2020), Rolland et al. (Proc. R. Soc. B, 2012), and Derryberry et al. (Science, 2020). Future scenes are illustrative; disruption could alter births and recovery.
+
+Sources: https://population.un.org/wpp/ ; https://doi.org/10.1126/science.abd2438 ; https://doi.org/10.1098/rspb.2011.2429 ; https://doi.org/10.1126/science.abd5777
+
+#Shorts #WhatIf #ScienceShorts #Demography #Wildlife
+```
+
+**YouTube tags — comma-separated, copy:**
+```text
+what if every man disappeared, what if men disappeared, men vanish scenario, population science, demographic thought experiment, quiet oceans, right whales ship noise, sparrows lockdown, science shorts
+```
+
+**Target search keywords (research/reference):** what if all men vanished, what if every man disappeared, world population by sex 2026, right whales shipping noise, sparrow songs lockdown
+
+**Published URL:** Not published
+
+### Instagram Reels
+**Caption + hashtags — copy:**
+```text
+What happens after every man and boy vanishes at once? The first hours bring grief and stopped work. The oceans briefly quiet; pregnancies already underway still bring sons within nine months. This 75-second film follows the scenario through forty years, with measured wildlife analogs and an illustrative future.
+
+#WhatIf #ScienceReels #PopulationScience #WildlifeScience #ThreeJS
+```
+
+**Target search keywords (research/reference):** men disappear thought experiment, 2026 world population by sex, quieter oceans right whales, sparrow song urban noise, future births scenario
+
+**Published URL:** Not published
+
+### Facebook Reels
+**Title — copy:**
+```text
+What If Every Man and Boy Disappeared?
+```
+
+**Description + hashtags — copy:**
+```text
+A cinematic 75-second science scenario: more than four billion people vanish, jobs and shipping are disrupted, and families grieve. Real studies of quieter ground, whales and sparrows show possible short-term effects of reduced activity. Pregnancies continue; future recovery remains uncertain.
+
+#WhatIf #Science #Population #Nature #ShortFilm
+```
+
+**Target search keywords (research/reference):** what if men disappeared, population thought experiment, shipping and whale noise, 2020 seismic quiet, births after disappearance
+
+**Published URL:** Not published
+
+### TikTok
+**Caption + hashtags — copy:**
+```text
+If every man and boy vanished, the world would change in hours. But the oceans would quiet only temporarily, and pregnancies already underway would bring sons back within nine months. Watch the 40-year thought experiment.
+
+#WhatIf #ScienceTok #Population #OceanScience #Wildlife
+```
+
+**Target search keywords (research/reference):** men disappeared scenario, future population pyramid, right whale ship noise, sparrow song 2020, science what if
+
+**Published URL:** Not published
+
+### X
+**Post + hashtags — copy:**
+```text
+If every man and boy vanished once, about 4.13 billion people would remain. This 75-second film follows disrupted work, temporary quiet, grief and later births. The future scenes are illustrative.
+#WhatIf #Science #Demography
+```
+
+**Target search keywords (research/reference):** men disappeared scenario, UN population projection, temporary ocean quiet, future birth cohorts
+
+**Published URL:** Not published
+
+---
+
+## What if it rained nonstop everywhere on Earth for a year?
+**Video:** `output/rain-nonstop-everywhere.mp4`  
+**Thumbnail:** `output/rain-nonstop-everywhere.jpg`  
+**Publishing copy:** `output/rain-nonstop-everywhere.md`  
+**Hugging Face:** [videos/002-rain-nonstop-everywhere.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/002-rain-nonstop-everywhere.mp4) · [videos/002-rain-nonstop-everywhere.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/002-rain-nonstop-everywhere.jpg) · [videos/002-rain-nonstop-everywhere.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/002-rain-nonstop-everywhere.md) (Whatif2203/whatif)  
+**Slug:** `rain-nonstop-everywhere` | **Duration:** 75s | **Rendered (UTC):** 2026-10-13T01:57:25Z  
+**Publishing:** rendered_not_published  
+**Scientific accuracy note:** Planet-wide nonstop rain is a thought experiment. The ~2.5 cm of water held in the atmosphere (USGS) and ~67% typical cloud cover (NASA) are measured values; about 1 m of rain a year (≈3 mm a day) is a global average derived from NASA's energy budget, not a forecast for any one place. Sahara greening, harvest losses and dimmer solar output are shown as possibilities, and the rain weakening under total cloud cover is likely but its size is not quantified.
+**Assets reused:** film-pipeline-v1, camera-keyframe-rig-v1, caption-kinetic-v1, overlay-labels-v1, font-inter-v1, shader-noise-math-v1, audio-synth-kit-v1, earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, ocean-surface-v1, terrain-massif-v1, grass-field-v1, humanoid-figure-v1, glass-of-water-v1, dial-gauge-v1, snowfall-v1, bokeh-field-v1  
+**Assets created:** rain-v1, dune-field-v1, cloud-ceiling-v1, overcast-shell-v1, solar-panel-array-v1, thumbnail-title-card-v1, font-display-set-v1
+
+### YouTube Shorts
+**Title — copy:**
+```text
+What if it rained nonstop everywhere on Earth for a year?
 ```
 
 **Description + hashtags — copy:**
@@ -35,7 +410,7 @@ In this 3D science thought experiment, much of the Sahara would get dozens of ti
 Figures are global averages; the greening, farm and solar scenes are illustrative, and how much the rain would weaken is uncertain.
 Sources: USGS Water Science School; NASA Earth Observatory (Cloudy Earth; Climate and Earth's Energy Budget; Water for a Desert Lake in Algeria); NASA Science rainforest biome; Ohio State University Extension; U.S. Department of Energy.
 
-#Shorts #WhatIf #WaterCycle
+#Shorts #WhatIf #WaterCycle #Rain #Weather #EarthScience
 ```
 
 **YouTube tags — comma-separated, copy:**
@@ -50,7 +425,7 @@ what if it rained forever, nonstop rain, rain everywhere on earth, water cycle e
 ### Instagram Reels
 **Caption + hashtags — copy:**
 ```text
-A whole year of rain, everywhere at once. Sounds like a flood, right? The surprise: the sky only holds about 2.5 cm of water, so the rain gets recycled by sunlight into a gentle drizzle of roughly 3 mm a day. The Sahara could start turning green, rainforests would get less than they do now, and the endless clouds would slowly weaken the very rain they bring.
+What if it rained everywhere on Earth for a whole year? Sounds like a flood, right? The surprise: the sky only holds about 2.5 cm of water, so the rain gets recycled by sunlight into a gentle drizzle of roughly 3 mm a day. The Sahara could start turning green, rainforests would get less than they do now, and the endless clouds would slowly weaken the very rain they bring.
 
 #WhatIf #ScienceReels #Rain #Sahara #WaterCycle
 ```
@@ -62,14 +437,14 @@ A whole year of rain, everywhere at once. Sounds like a flood, right? The surpri
 ### Facebook Reels
 **Title — copy:**
 ```text
-A Year of Rain Everywhere Would Not Be a Flood. Here's Why.
+What if it rained everywhere for a year? Why it wouldn’t be a flood
 ```
 
 **Description + hashtags — copy:**
 ```text
 If rain fell everywhere on Earth for a year, the total would still be capped by sunlight-powered evaporation: about a meter of water, or a drizzle of roughly 3 mm a day. Deserts like the Sahara would get far more rain than usual, rainforests less, farmers would struggle to dry their harvests and solar panels would dim. Then the clouds themselves would block the sunlight that keeps the rain going.
 
-#EarthScience #WhatIf #Weather
+#WhatIf #EarthScience #Weather #Rain #WaterCycle
 ```
 
 **Target search keywords (research/reference):** what happens if it rains for a year, rain everywhere on earth, evaporation and rainfall, clouds and sunlight
@@ -79,9 +454,9 @@ If rain fell everywhere on Earth for a year, the total would still be capped by 
 ### TikTok
 **Caption + hashtags — copy:**
 ```text
-It rains nonstop, everywhere, for a year. Not a flood: just 3 mm a day. The Sahara wins, rainforests lose, and the clouds slowly starve the rain of sunlight.
+What if it rained nonstop, everywhere, for a year? Not a flood: just 3 mm a day. The Sahara wins, rainforests lose, and the clouds slowly starve the rain of sunlight.
 
-#WhatIf #ScienceTok #Rain #LearnOnTikTok
+#WhatIf #ScienceTok #Rain #WaterCycle #LearnOnTikTok
 ```
 
 **Target search keywords (research/reference):** what if it never stopped raining, rain all year everywhere, sahara green again, weather what if
@@ -91,8 +466,8 @@ It rains nonstop, everywhere, for a year. Not a flood: just 3 mm a day. The Saha
 ### X
 **Post + hashtags — copy:**
 ```text
-If it rained everywhere on Earth for a year, it wouldn't be a flood. The sky holds only ~2.5 cm of water, so sunlight recycles it: about 1 m a year, ~3 mm a day. The Sahara greens, rainforests get less, and the clouds slowly weaken the rain.
-#WaterCycle #Science
+What if it rained everywhere on Earth for a year? Not a flood: the sky holds only ~2.5 cm of water, so sunlight recycles it into ~3 mm a day. The Sahara greens, rainforests get less, and the clouds slowly weaken the rain.
+#WhatIf #WaterCycle #Rain #Weather #Science
 ```
 
 **Target search keywords (research/reference):** nonstop rain, water cycle, Sahara rain, evaporation
@@ -103,16 +478,19 @@ If it rained everywhere on Earth for a year, it wouldn't be a flood. The sky hol
 
 ## What if the Moon were made entirely of water ice?
 **Video:** `output/moon-made-of-ice.mp4`  
+**Thumbnail:** `output/moon-made-of-ice.jpg`  
+**Publishing copy:** `output/moon-made-of-ice.md`  
+**Hugging Face:** [videos/001-moon-made-of-ice.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/001-moon-made-of-ice.mp4) · [videos/001-moon-made-of-ice.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/001-moon-made-of-ice.jpg) · [videos/001-moon-made-of-ice.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/001-moon-made-of-ice.md) (Whatif2203/whatif)  
 **Slug:** `moon-made-of-ice` | **Duration:** 74s | **Rendered (UTC):** 2026-10-12T19:57:57Z  
 **Publishing:** rendered_not_published  
 **Scientific accuracy note:** A same-size, same-orbit pure-ice Moon is a thought experiment. About 31% lunar mass and sixfold full-Moon brightness are estimates; the tide diagrams show simplified forcing, not predicted heights at individual coasts. Wildlife and deep-ocean responses vary, and vapor loss is slow and uncertain.
-**Assets reused:** earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, ocean-surface-v1, terrain-massif-v1, bird-flock-v1, humanoid-figure-v1, caption-kinetic-v1, film-pipeline-v1, camera-keyframe-rig-v1, overlay-labels-v1, audio-synth-kit-v1, shader-noise-math-v1, font-inter-v1, water-molecules-v1, bokeh-field-v1, dial-gauge-v1, grass-field-v1, sailboat-v1  
+**Assets reused:** earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, ocean-surface-v1, terrain-massif-v1, bird-flock-v1, humanoid-figure-v1, caption-kinetic-v1, film-pipeline-v1, camera-keyframe-rig-v1, overlay-labels-v1, audio-synth-kit-v1, shader-noise-math-v1, font-inter-v1, water-molecules-v1, bokeh-field-v1, dial-gauge-v1, grass-field-v1, sailboat-v1, thumbnail-title-card-v1, font-display-set-v1  
 **Assets created:** moon-body-v1, tidal-bulge-v1, tidal-flat-v1, ocean-cross-section-v1, dung-beetle-v1
 
 ### YouTube Shorts
 **Title — copy:**
 ```text
-What If the Moon Were Made of Ice?
+What if the Moon were made of ice?
 ```
 
 **Description + hashtags — copy:**
@@ -123,7 +501,7 @@ The tide visuals are simplified diagrams. Real tidal ranges depend on each coast
 
 Science context: NASA Moon and icy-moon facts; NOAA tidal-force guidance; NASA Earth Observatory on deep-ocean tidal mixing.
 
-#Shorts #Moon #SpaceScience #WhatIf
+#Shorts #WhatIf #Moon #SpaceScience #Tides #Astronomy
 ```
 
 **YouTube tags — comma-separated, copy:**
@@ -138,7 +516,7 @@ what if the moon were made of ice, ice moon, moon made of ice, moon science, lun
 ### Instagram Reels
 **Caption + hashtags — copy:**
 ```text
-A Moon made of ice would light up full-Moon nights—but its weaker tidal pull would reshape the rhythm of coasts. Watch an ice Moon replace the familiar gray one, then follow the effects from shorebirds to the deep ocean. Tide heights and wildlife responses are illustrative and depend on place and species.
+What if the Moon were made of ice? It would light up full-Moon nights—but its weaker tidal pull would reshape the rhythm of coasts. Watch an ice Moon replace the familiar gray one, then follow the effects from shorebirds to the deep ocean. Tide heights and wildlife responses are illustrative and depend on place and species.
 
 #MoonFacts #ScienceReels #WhatIf #OceanScience #Space
 ```
@@ -150,14 +528,14 @@ A Moon made of ice would light up full-Moon nights—but its weaker tidal pull w
 ### Facebook Reels
 **Title — copy:**
 ```text
-If the Moon Were Ice, What Would Change on Earth?
+What if the Moon were made of ice? Here’s what would change on Earth
 ```
 
 **Description + hashtags — copy:**
 ```text
 Same size. Same orbit. A very different Moon. This cinematic science scenario follows brighter moonlight, a weaker lunar tide, narrower feeding flats for shorebirds, and a possible change in deep-ocean mixing. Coastal tide heights vary locally; the ocean and wildlife scenes illustrate possible effects.
 
-#Moon #EarthScience #Tides #WhatIf
+#WhatIf #Moon #EarthScience #Tides #Astronomy #OceanScience
 ```
 
 **Target search keywords (research/reference):** ice Moon effects, Moon and Earth tides, shorebird mudflats, deep ocean mixing
@@ -179,8 +557,8 @@ What if our Moon were solid ice? Brighter nights, a lighter Moon, and the Sun ta
 ### X
 **Post + hashtags — copy:**
 ```text
-An ice Moon at the same size and distance could shine about 6× brighter while weighing about one third as much. That shifts the balance of the tides toward the Sun. The coast and deep-ocean effects in this film are simplified and uncertain.
-#Moon #SpaceScience
+What if the Moon were ice? At the same size and distance it could shine about 6× brighter while weighing about a third as much, shifting the balance of the tides toward the Sun. The film’s coast and deep-ocean effects are simplified.
+#WhatIf #Moon #SpaceScience #Tides #Astronomy
 ```
 
 **Target search keywords (research/reference):** ice Moon, lunar tides, solar tides, Moon albedo

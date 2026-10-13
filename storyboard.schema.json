@@ -962,6 +962,161 @@
           "minLength": 15
         }
       }
+    },
+    "thumbnail": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "time_s",
+        "headline"
+      ],
+      "description": "Cover image rendered with the final video as output/<slug>.jpg: a clean still (no captions or labels) at time_s, composed as a bold, click-worthy cover (default) or a clean title card.",
+      "properties": {
+        "time_s": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Film time of the still: the most striking, instantly readable moment, outside cross-dissolves."
+        },
+        "headline": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 60,
+          "description": "Truthful curiosity hook in about 2-8 words (often the what-if question, ending in ?!); drawn in huge outlined capitals."
+        },
+        "highlight": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Words of the headline drawn in the accent colour."
+        },
+        "position": {
+          "enum": [
+            "top",
+            "middle",
+            "bottom"
+          ],
+          "description": "Where the headline sits; keep it clear of the subject."
+        },
+        "badge": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 28,
+          "description": "Sticker text: a striking true number or twist the film shows, e.g. \"≈6× brighter\"."
+        },
+        "badge_at": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "description": "Sticker centre [x, y] as fractions of the frame (default: attached to the headline)."
+        },
+        "focus": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "description": "Subject point [x, y] as fractions of the frame: punch-in centre and arrow target."
+        },
+        "zoom": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 2,
+          "description": "Punch-in toward the focus (1 = none; default 1.12 with a focus)."
+        },
+        "anchor": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "description": "Where the focus lands on the cover [x, y] (fractions); lets the punch-in move the subject to make room for text."
+        },
+        "arrow": {
+          "type": "boolean",
+          "description": "Arrow from the sticker to the focus (default true when both exist)."
+        },
+        "style": {
+          "enum": [
+            "bold",
+            "clean"
+          ],
+          "description": "bold (default): punchy cover with sticker and arrow; clean: plain headline title card."
+        },
+        "font": {
+          "enum": [
+            "inter",
+            "anton",
+            "bebas-neue",
+            "archivo-black",
+            "bangers",
+            "orbitron",
+            "playfair"
+          ],
+          "description": "Headline face, chosen for the niche (see assets/library/fonts/display/FONTS.md); default inter."
+        },
+        "palette": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Cover colours chosen for the subject and mood; defaults: white text, yellow highlight and arrow, red sticker with white text.",
+          "properties": {
+            "text": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$",
+              "description": "Headline colour."
+            },
+            "highlight": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$",
+              "description": "Highlighted words."
+            },
+            "badge": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$",
+              "description": "Sticker fill."
+            },
+            "badge_text": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$",
+              "description": "Sticker text."
+            },
+            "arrow": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$",
+              "description": "Arrow fill (defaults to the highlight colour)."
+            }
+          }
+        },
+        "grade": {
+          "enum": [
+            "vivid",
+            "cool",
+            "warm",
+            "dramatic",
+            "natural"
+          ],
+          "description": "Colour grade of the still; default vivid."
+        },
+        "tilt": {
+          "type": "number",
+          "minimum": -10,
+          "maximum": 10,
+          "description": "Headline tilt in degrees; default -3."
+        }
+      }
     }
   }
 }

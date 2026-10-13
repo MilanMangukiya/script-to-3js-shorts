@@ -18,13 +18,4 @@ def world(filename,years):
     (OUT/(filename+'.world.json')).write_text(json.dumps({'source':url,'rows':rows},indent=2),encoding='utf-8')
     print(len(rows),'observations',str(rows[0])[:500],flush=True)
 if not (OUT/'WPP2024_Demographic_Indicators_Medium.world.json').exists():world('WPP2024_Demographic_Indicators_Medium',range(1950,2027))
-for names in [
- ['WPP2024_Population1JanuaryBySingleAgeSex_Medium','WPP2024_Population1JulyBySingleAgeSex_Medium','WPP2024_PopulationByAge1GroupSex_Medium'],
- ['WPP2024_Life_Table_Complete_Medium_Female','WPP2024_Life_Table_Complete_Medium_Female_2024-2100','WPP2024_Life_Table_Complete_Medium_Female_2024-2100_Full']
-]:
-    for name in names:
-        try:
-            world(name,[2026]);break
-        except urllib.error.HTTPError as e:
-            if e.code!=404:raise
-            print('Not found:',name,flush=True)
+if not (OUT/'WPP2024_PopulationByAge5GroupSex_Medium.world.json').exists():world('WPP2024_PopulationByAge5GroupSex_Medium',[2026])

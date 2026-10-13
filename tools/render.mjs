@@ -17,7 +17,7 @@ const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2), slug = args[0];
 const opt = (n, d) => { const i = args.indexOf(`--${n}`); return i >= 0 ? (args[i + 1]?.startsWith('--') || args[i + 1] === undefined ? true : args[i + 1]) : d; };
-if (!slug) { console.error('Usage: node tools/render.mjs <slug> (--frames a,b,c | --range a-b | --final) [--scale s] [--png]'); process.exit(2); }
+if (!slug) { console.error('Usage: node tools/render.mjs <slug> (--frames a,b,c | --range a-b | --final | --thumbnail) [--scale s] [--png]'); process.exit(2); }
 const story = JSON.parse(fs.readFileSync(path.join(ROOT, 'stories', `${slug}.json`), 'utf8'));
 const { width: W, height: H, fps, duration_s } = story.project;
 const total = duration_s * fps;
@@ -54,7 +54,18 @@ console.log(`ready | ${info.frames} frames @ ${info.fps} fps | GPU: ${info.gpu}`
 const mime = png ? 'image/png' : 'image/jpeg';
 const grab = async (i) => Buffer.from((await page.evaluate(([f, m]) => window.__film.renderFrame(f, m, 0.96), [i, mime])).split(',')[1], 'base64');
 
-if (!final) {
+// The thumbnail (clean still + headline, 1080×1920 JPG) is written next to the video: output/<slug>.jpg.
+const thumbPath = path.join(ROOT, story.delivery.video_output.replace(/\.mp4$/, '.jpg'));
+const writeThumbnail = async () => {
+  const url = await page.evaluate(() => window.__film.renderThumbnail('image/jpeg', 0.92));
+  fs.mkdirSync(path.dirname(thumbPath), { recursive: true });
+  fs.writeFileSync(thumbPath, Buffer.from(url.split(',')[1], 'base64'));
+  console.log(`wrote ${path.relative(ROOT, thumbPath)} (${(fs.statSync(thumbPath).size / 1024).toFixed(0)} KB)`);
+};
+
+if (opt('thumbnail', false)) {
+  await writeThumbnail();
+} else if (!final) {
   const list = opt('frames') ? String(opt('frames')).split(',').map(Number)
     : (() => { const [a, b] = String(opt('range', `0-${total - 1}`)).split('-').map(Number); const step = Number(opt('step', '1')); const o = []; for (let i = a; i <= b; i += step) o.push(i); return o; })();
   const outDir = path.join(buildDir, 'frames'); fs.mkdirSync(outDir, { recursive: true });
@@ -77,5 +88,6 @@ if (!final) {
   }
   ff.stdin.end(); await done;
   console.log(`encoded ${path.relative(ROOT, out)} in ${((Date.now() - t0) / 1000).toFixed(0)}s`);
+  await writeThumbnail();
 }
 await browser.close(); server.close();

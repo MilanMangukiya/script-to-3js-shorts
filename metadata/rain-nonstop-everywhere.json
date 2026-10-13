@@ -10,7 +10,9 @@
     "dune-field-v1",
     "cloud-ceiling-v1",
     "overcast-shell-v1",
-    "solar-panel-array-v1"
+    "solar-panel-array-v1",
+    "thumbnail-title-card-v1",
+    "font-display-set-v1"
   ],
   "reused_asset_ids": [
     "film-pipeline-v1",
@@ -36,7 +38,7 @@
   "published_urls": {},
   "platforms": {
     "youtube_shorts": {
-      "title": "What If It Rained Nonstop Everywhere on Earth for a Year?",
+      "title": "What if it rained nonstop everywhere on Earth for a year?",
       "description": "What if gentle rain fell everywhere on Earth, without a single break, for a whole year? It would not drown the planet. The sky holds only enough water to cover Earth about 2.5 cm deep, so rain has to be recycled by evaporation, and sunlight can lift only about a meter of water a year. Spread evenly, that is a steady drizzle of roughly 3 mm a day.\n\nIn this 3D science thought experiment, much of the Sahara would get dozens of times its usual rain and could begin to turn green, as it was thousands of years ago. Rainforests, used to 2 m of rain or more a year, would actually get less. Farmers lose their dry days, wet grain can mould or sprout before harvest, and solar panels produce less under a sky that never clears. The twist: a planet-wide cloud deck reflects sunlight, so evaporation, and the rain itself, would likely weaken over time.\n\nFigures are global averages; the greening, farm and solar scenes are illustrative, and how much the rain would weaken is uncertain.\nSources: USGS Water Science School; NASA Earth Observatory (Cloudy Earth; Climate and Earth's Energy Budget; Water for a Desert Lake in Algeria); NASA Science rainforest biome; Ohio State University Extension; U.S. Department of Energy.",
       "tags": [
         "what if it rained forever",
@@ -55,7 +57,10 @@
       "hashtags": [
         "#Shorts",
         "#WhatIf",
-        "#WaterCycle"
+        "#WaterCycle",
+        "#Rain",
+        "#Weather",
+        "#EarthScience"
       ],
       "keywords": [
         "what if it rained forever everywhere on earth",
@@ -65,7 +70,7 @@
       ]
     },
     "instagram_reels": {
-      "caption": "A whole year of rain, everywhere at once. Sounds like a flood, right? The surprise: the sky only holds about 2.5 cm of water, so the rain gets recycled by sunlight into a gentle drizzle of roughly 3 mm a day. The Sahara could start turning green, rainforests would get less than they do now, and the endless clouds would slowly weaken the very rain they bring.",
+      "caption": "What if it rained everywhere on Earth for a whole year? Sounds like a flood, right? The surprise: the sky only holds about 2.5 cm of water, so the rain gets recycled by sunlight into a gentle drizzle of roughly 3 mm a day. The Sahara could start turning green, rainforests would get less than they do now, and the endless clouds would slowly weaken the very rain they bring.",
       "hashtags": [
         "#WhatIf",
         "#ScienceReels",
@@ -81,12 +86,14 @@
       ]
     },
     "facebook_reels": {
-      "title": "A Year of Rain Everywhere Would Not Be a Flood. Here's Why.",
+      "title": "What if it rained everywhere for a year? Why it wouldn’t be a flood",
       "description": "If rain fell everywhere on Earth for a year, the total would still be capped by sunlight-powered evaporation: about a meter of water, or a drizzle of roughly 3 mm a day. Deserts like the Sahara would get far more rain than usual, rainforests less, farmers would struggle to dry their harvests and solar panels would dim. Then the clouds themselves would block the sunlight that keeps the rain going.",
       "hashtags": [
-        "#EarthScience",
         "#WhatIf",
-        "#Weather"
+        "#EarthScience",
+        "#Weather",
+        "#Rain",
+        "#WaterCycle"
       ],
       "keywords": [
         "what happens if it rains for a year",
@@ -96,11 +103,12 @@
       ]
     },
     "tiktok": {
-      "caption": "It rains nonstop, everywhere, for a year. Not a flood: just 3 mm a day. The Sahara wins, rainforests lose, and the clouds slowly starve the rain of sunlight.",
+      "caption": "What if it rained nonstop, everywhere, for a year? Not a flood: just 3 mm a day. The Sahara wins, rainforests lose, and the clouds slowly starve the rain of sunlight.",
       "hashtags": [
         "#WhatIf",
         "#ScienceTok",
         "#Rain",
+        "#WaterCycle",
         "#LearnOnTikTok"
       ],
       "keywords": [
@@ -111,9 +119,12 @@
       ]
     },
     "x_video": {
-      "post": "If it rained everywhere on Earth for a year, it wouldn't be a flood. The sky holds only ~2.5 cm of water, so sunlight recycles it: about 1 m a year, ~3 mm a day. The Sahara greens, rainforests get less, and the clouds slowly weaken the rain.",
+      "post": "What if it rained everywhere on Earth for a year? Not a flood: the sky holds only ~2.5 cm of water, so sunlight recycles it into ~3 mm a day. The Sahara greens, rainforests get less, and the clouds slowly weaken the rain.",
       "hashtags": [
+        "#WhatIf",
         "#WaterCycle",
+        "#Rain",
+        "#Weather",
         "#Science"
       ],
       "keywords": [
@@ -125,5 +136,21 @@
     }
   },
   "rendered_at_utc": "2026-10-13T01:57:25Z",
-  "publishing_status": "rendered_not_published"
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 2,
+    "path_in_repo": "videos/002-rain-nonstop-everywhere.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/002-rain-nonstop-everywhere.mp4",
+    "sha256": "bbd7c35797c2d9afd6c3ef401b1dc801a14ffb665f6f9621fba423531f18415a",
+    "size_bytes": 77225706,
+    "thumbnail_path_in_repo": "videos/002-rain-nonstop-everywhere.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/002-rain-nonstop-everywhere.jpg",
+    "thumbnail_sha256": "03221f10eb89bc6e47470abe5821a647771c45fcf2f467a4621bf84da5dba820",
+    "copy_path_in_repo": "videos/002-rain-nonstop-everywhere.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/002-rain-nonstop-everywhere.md",
+    "copy_sha256": "99fc1a88fd7c6089e8ae885e6428cdd9b0cf806c621ce2bbcd077f41ea3229ea",
+    "uploaded_at_utc": "2026-10-13T16:02:09Z"
+  }
 }

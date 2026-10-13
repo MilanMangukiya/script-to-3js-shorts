@@ -14,6 +14,8 @@ export interface UnderwaterOptions {
   causticScale?: number; causticStrength?: number;
   fogDensity?: number;
   grassCount?: number; particleCount?: number; seed?: number;
+  /** How many of the 16 seeded rocks to show (default all; the random sequence is unchanged either way). */
+  rockCount?: number;
 }
 
 const CAUSTIC = /* glsl */ `
@@ -38,12 +40,13 @@ export class Underwater {
   /** Gradient backdrop and water-surface meshes, exposed so a stage can hide them (e.g. above water or under an ice sheet). */
   backdrop!: THREE.Mesh; surface!: THREE.Mesh;
   private rays: { mesh: THREE.Mesh; top: THREE.Vector3 }[] = [];
+  private floorSeed = 5;
   private rayDir = new THREE.Vector3();
   private bubbles: THREE.Points;
   private depth: number;
 
   constructor(o: UnderwaterOptions = {}) {
-    const depth = (this.depth = o.depth ?? 9), ext = o.extent ?? 60, seed = o.seed ?? 5, r = rng(seed);
+    const depth = (this.depth = o.depth ?? 9), ext = o.extent ?? 60, seed = (this.floorSeed = o.seed ?? 5), r = rng(seed);
     const water = new THREE.Color(o.waterColor ?? 0x1c6f86), deep = new THREE.Color(o.deepColor ?? 0x062a3c), surf = new THREE.Color(o.surfaceColor ?? 0x9fe6ee);
     const sun = (o.sunDirection ?? new THREE.Vector3(-0.35, 1, -0.25)).clone().normalize();
     this.rayDir.copy(sun).multiplyScalar(-1); // light travels downward
@@ -125,7 +128,7 @@ export class Underwater {
       const m = new THREE.Mesh(g, rockMat), sc = 0.6 + r() * 1.9;
       m.scale.set(sc * (0.8 + r() * 0.7), sc * (0.45 + r() * 0.5), sc * (0.8 + r() * 0.7));
       m.position.set((r() - 0.5) * ext * 0.9, -depth + sc * 0.15, -r() * ext * 0.6 + 6); m.rotation.y = r() * 6.28;
-      this.group.add(m);
+      if (i < (o.rockCount ?? 16)) this.group.add(m);
     }
 
     // Seagrass.
@@ -216,6 +219,12 @@ export class Underwater {
   /** Release a burst of bubbles from `origin` (local coordinates) starting at absolute time `t0`. */
   setBubbleBurst(t0: number, origin: THREE.Vector3) {
     const u = (this.bubbles.material as THREE.ShaderMaterial).uniforms; u.uT0.value = t0; u.uOrigin.value.copy(origin);
+  }
+
+  /** Exact sea-floor height (group-local y) at x, z, for seating props such as corals on the sand. */
+  floorHeight(x: number, z: number) {
+    const seed = this.floorSeed;
+    return -this.depth + (fbm2(x / 9, z / 9, seed, 4) - 0.5) * 2.4 + (fbm2(x / 1.7, z / 1.7, seed + 4, 2) - 0.5) * 0.18;
   }
 
   update(time_s: number, camera: THREE.Camera) {

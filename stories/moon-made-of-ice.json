@@ -2224,6 +2224,7 @@
     "distinctive_angle": "Same size, same orbit, but ice: the Moon would shine about six times brighter yet weigh a third as much, so the Sun takes over the tides, high tide keeps nearly the same hour every day, mudflats shrink, wildlife nights change, and the Moon itself slowly turns to vapor.",
     "seo_integrity_note": "Mass, brightness and tide figures are estimates from stated assumptions (density about 1,040 kg/m³, icy-moon albedo, open-ocean tides); effects on wildlife and deep-ocean mixing are presented as possibilities; tidal bulges, the vapor halo and sky polarization are labelled illustrative or schematic. Titles and descriptions must not claim more than the film shows."
   },
+  "thumbnail": { "time_s": 3.5, "headline": "The Moon is made of ice?!", "highlight": ["ice?!"], "position": "bottom", "badge": "≈6× brighter", "focus": [0.5, 0.176], "zoom": 1.1, "font": "orbitron", "grade": "cool", "tilt": -2, "palette": { "text": "#FFFFFF", "highlight": "#9EE8FF", "badge": "#FF3D68", "badge_text": "#FFFFFF", "arrow": "#9EE8FF" } },
   "delivery": {
     "video_output": "output/moon-made-of-ice.mp4",
     "video_codec": "h264",

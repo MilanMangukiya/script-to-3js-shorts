@@ -1,0 +1,1970 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if all Earth's continents joined into one giant landmass?",
+    "title": "What If All the Continents Joined Into One?",
+    "slug": "continents-one-landmass",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 75,
+    "language": "en",
+    "audience": "Curious global general audiences age 13+, no science background",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If all of today's land were pushed together into one supercontinent, how would weather, people and wildlife change, and will it really happen again?",
+    "viewer_takeaway": "Continents drift about as fast as fingernails grow and have joined before; one giant landmass would trap a vast desert in its heart, crowd life onto stormy coasts, cost species and reefs, and the next supercontinent may be too hot for most mammals."
+  },
+  "scientific_model": {
+    "baseline_reality": "Today Earth's land, about 29% of its surface, is split into several continents separated by oceans. The plates carrying them move roughly as fast as fingernails grow. Around 200 million years ago almost all land formed one supercontinent, Pangaea, which then split apart; climate models and rocks show it had a megamonsoon and a very dry interior.",
+    "counterfactual_change": "All of today's continents are joined into one compact landmass, arranged like Pangaea, keeping today's land area, Sun and air. The film shows the joining as a sped-up schematic and compares it with the real past (Pangaea) and a modelled future supercontinent (Pangea Ultima).",
+    "assumptions": [
+      "Total land area, ocean volume, the Sun and atmospheric composition stay as they are today; only the arrangement of the continents changes.",
+      "The joined arrangement is a Pangaea-like schematic, not an exact reconstruction; continent outlines are today's.",
+      "The climate response follows physical principles seen in Pangaea and in models: moisture comes mostly from open water, and land far from the sea has larger temperature swings.",
+      "The heat figures in S08 come from a published model of the next supercontinent about 250 million years from now, which also includes a brighter Sun and more CO2; they are not predictions for today's Sun."
+    ],
+    "causal_chain": [
+      "Plates move a few centimetres a year, about as fast as fingernails grow; over hundreds of millions of years continents gather and split.",
+      "Joining all land into one compact mass puts its interior thousands of kilometres from the nearest sea.",
+      "About 90% of atmospheric moisture evaporates from oceans, seas, lakes and rivers, so rain falls mostly near the coasts and the interior becomes very dry.",
+      "Far from the moderating ocean, the interior swings between extremely hot days and frigid nights, while the coasts get strong seasonal monsoons.",
+      "People would cluster on the wetter, milder coasts.",
+      "Joined land lets species spread everywhere; competition can wipe out many, as when the Americas joined.",
+      "One landmass has far less coastline and fewer shallow coastal seas, the habitat of coral reefs.",
+      "A future supercontinent, with a brighter Sun and more CO2, could leave only 8–16% of land habitable for mammals in one model."
+    ],
+    "uncertainties": [
+      "The exact arrangement and timing of the next supercontinent are uncertain; several configurations have been proposed (Pangea Ultima, Amasia, Novopangaea).",
+      "How dry the interior becomes depends on the shape of the landmass, mountains and ocean currents; the dry-interior overlay is schematic.",
+      "Species losses after continents join depend on the animals involved; the tabletop diorama is illustrative.",
+      "The 8–16% habitability figure is one model result and includes future solar brightening and higher CO2."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Almost all of Earth's land was once joined in the supercontinent Pangaea, which began to split apart about 200 million years ago.",
+        "confidence": "established",
+        "reasoning": "USGS This Dynamic Earth: \"around 200 million years ago, the supercontinent Pangaea began to split apart\".",
+        "presentation_guardrail": "Say \"about two hundred million years ago\"; label the joined arrangement as schematic."
+      },
+      {
+        "id": "CL02",
+        "statement": "The coastlines of South America and Africa fit together remarkably well, one of the first clues that they were once joined.",
+        "confidence": "established",
+        "reasoning": "USGS This Dynamic Earth describes the remarkable fit of the South American and African continents, first noted by Abraham Ortelius.",
+        "presentation_guardrail": "Show the fit schematically."
+      },
+      {
+        "id": "CL03",
+        "statement": "Tectonic plates move at roughly the rate fingernails grow.",
+        "confidence": "established",
+        "reasoning": "USGS FAQ \"How fast do tectonic plates move?\"",
+        "presentation_guardrail": "Use the fingernail comparison; no single speed number."
+      },
+      {
+        "id": "CL04",
+        "statement": "Joining all land (about 29% of Earth's surface, roughly 150 million km²) into one compact mass would put its interior thousands of kilometres from the sea.",
+        "confidence": "derived",
+        "reasoning": "USGS: about 71% of Earth's surface is water-covered, so land ≈ 0.29 × 510 million km² ≈ 148 million km²; a compact shape of that area has an equivalent radius of roughly 6,900 km, so its centre lies thousands of kilometres from any coast.",
+        "presentation_guardrail": "On-screen \"thousands of km from the sea\" only."
+      },
+      {
+        "id": "CL05",
+        "statement": "Pangaea's climate had a megamonsoon and an immensely arid interior with extremely hot days and frigid nights.",
+        "confidence": "established",
+        "reasoning": "Pangean megamonsoon (Wikipedia), citing Kutzbach & Gallimore (1989) and Parrish (1993).",
+        "presentation_guardrail": "Narrate \"would\"; desert and monsoon scenes are illustrative."
+      },
+      {
+        "id": "CL06",
+        "statement": "Coasts have milder temperatures because water's high heat capacity moderates them; inland areas have much wider daily and seasonal temperature ranges.",
+        "confidence": "established",
+        "reasoning": "NASA-funded Climate Science Investigations module (Land and water).",
+        "presentation_guardrail": "Dial without numbers."
+      },
+      {
+        "id": "CL07",
+        "statement": "On a supercontinent most people would live on the wetter, milder coasts.",
+        "confidence": "plausible",
+        "reasoning": "Rain and moderate temperatures concentrate near coasts (CL05, CL06, CL13); settlement follows water and mild climate.",
+        "presentation_guardrail": "Narrate \"would crowd\"; illustrative coast scene."
+      },
+      {
+        "id": "CL08",
+        "statement": "When North and South America connected, South American mammals went extinct at a disproportionately high rate; almost half of living South American mammals descend from North American immigrants, against about 10% the other way.",
+        "confidence": "established",
+        "reasoning": "Smithsonian Tropical Research Institute study in PNAS (2020), reported by ScienceDaily.",
+        "presentation_guardrail": "Diorama labelled schematic; callout \"≈ half\"."
+      },
+      {
+        "id": "CL09",
+        "statement": "Joining every continent would let species spread everywhere, and many could be lost to competition.",
+        "confidence": "plausible",
+        "reasoning": "Generalised from the Great American Biotic Interchange (CL08).",
+        "presentation_guardrail": "Narrate \"not all would survive\"."
+      },
+      {
+        "id": "CL10",
+        "statement": "One merged landmass has far less coastline than several separate continents, so there would be fewer shallow coastal seas.",
+        "confidence": "derived",
+        "reasoning": "Coastlines disappear where continents meet, and a single compact shape has a much smaller perimeter for the same area.",
+        "presentation_guardrail": "No coastline numbers."
+      },
+      {
+        "id": "CL11",
+        "statement": "Most reef-building corals live in shallow tropical and subtropical waters, mostly where light reaches to about 30 metres.",
+        "confidence": "established",
+        "reasoning": "NOAA Ocean Service coral tutorial (distribution).",
+        "presentation_guardrail": "Tag \"mostly shallower than ~30 m\"."
+      },
+      {
+        "id": "CL12",
+        "statement": "A University of Bristol–led model of the next supercontinent, Pangea Ultima (expected within about 250 million years), finds widespread 40–50 °C temperatures and only 8–16% of land habitable for mammals, due to continentality, a brighter Sun and more CO2.",
+        "confidence": "established",
+        "reasoning": "University of Bristol press release on the Nature Geoscience paper \"Climate extremes likely to drive land mammal extinction during next supercontinent assembly\" (2023).",
+        "presentation_guardrail": "Label \"model result\"; the globe shape is schematic."
+      },
+      {
+        "id": "CL13",
+        "statement": "About 90% of the moisture in the atmosphere evaporates from oceans, seas, lakes and rivers.",
+        "confidence": "established",
+        "reasoning": "USGS Water Science School, Evaporation and the Water Cycle.",
+        "presentation_guardrail": "Narrate \"most moisture rises from the sea\"."
+      }
+    ],
+    "sources": [
+      {
+        "name": "USGS — This Dynamic Earth: Historical perspective",
+        "url": "https://pubs.usgs.gov/gip/dynamic/historical.html",
+        "supports_claim_ids": [
+          "CL01",
+          "CL02"
+        ]
+      },
+      {
+        "name": "USGS — How fast do tectonic plates move?",
+        "url": "https://www.usgs.gov/faqs/how-fast-do-tectonic-plates-move",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "USGS Water Science School — How much water is there on Earth?",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-water-there-earth",
+        "supports_claim_ids": [
+          "CL04"
+        ]
+      },
+      {
+        "name": "USGS Water Science School — Evaporation and the Water Cycle",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/science/evaporation-and-water-cycle",
+        "supports_claim_ids": [
+          "CL13"
+        ]
+      },
+      {
+        "name": "Wikipedia — Pangean megamonsoon",
+        "url": "https://en.wikipedia.org/wiki/Pangean_megamonsoon",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      },
+      {
+        "name": "Climate Science Investigations (NASA-funded) — Land and water",
+        "url": "https://www.ces.fau.edu/ces/nasa/module-3/why-does-temperature-vary/land-and-water.php",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "name": "ScienceDaily (Smithsonian Tropical Research Institute) — Disproportionate extinction of South American mammals when Americas collided",
+        "url": "https://www.sciencedaily.com/releases/2020/10/201005170826.htm",
+        "supports_claim_ids": [
+          "CL08",
+          "CL09"
+        ]
+      },
+      {
+        "name": "NOAA Ocean Service — Coral reef distribution",
+        "url": "https://oceanservice.noaa.gov/education/tutorial_corals/coral05_distribution.html",
+        "supports_claim_ids": [
+          "CL11"
+        ]
+      },
+      {
+        "name": "University of Bristol — New research reveals extreme heat likely to wipe out humans and mammals in the distant future (2023)",
+        "url": "https://bristol.ac.uk/news/2023/september/nature-geoscience-extreme-heat.html",
+        "supports_claim_ids": [
+          "CL12"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "Today's continents slide together into one giant landmass, and we follow the consequences from orbit to a dry heart, stormy coasts, a meeting of animals and a coral sea, to a hotter future, before the map eases back to today.",
+    "visual_identity": "Premium documentary realism with a geological palette: deep ocean blues, NASA-true continents, rust-red desert and storm greys; schematics are clean tabletop or orbital overlays in warm orange and pale blue.",
+    "palette": [
+      "ocean blue #0E3A5F",
+      "continent green #5F7F45",
+      "desert rust #C26B3A",
+      "storm grey #59626B",
+      "reef turquoise #3FC1C9",
+      "heat orange #FF7A2F",
+      "caption amber #FFB45C"
+    ],
+    "lighting": "Hard space sunlight for orbital shots; harsh white sun inland; dim storm light on the coast; soft studio light for the diorama; sun shafts underwater.",
+    "camera_language": "Slow orbits and push-ins from space, close views of the South Atlantic seam, low glides over dunes and coasts, eye-level human scale, a tabletop diorama and an underwater glide.",
+    "motion_language": "Unhurried, inevitable motion: continents grind together, rain sweeps, the needle climbs; nothing jumps.",
+    "world_scale_policy": "Orbital shots use 1 unit = 1 Earth radius with true continent outlines (motion sped up, arrangement schematic). Ground scenes use metres at true scale (dunes ~15 m, trees 6–9 m, person 1.75 m, corals 0.3–1.2 m). The diorama is a labelled schematic.",
+    "emotional_arc": [
+      "curiosity",
+      "awe",
+      "insight",
+      "unease",
+      "empathy",
+      "loss",
+      "wonder",
+      "gravity",
+      "wry calm"
+    ],
+    "opening_hook": "Today's Earth from space: the continents start sliding together while the question is asked.",
+    "ending_payoff": "The supercontinent eases back apart into today's map, matching the opening frame.",
+    "loop_connection": "The last frame is today's Earth exactly as at frame 0, just before the continents begin to move.",
+    "asset_policy": "Reuse the studio library first (Earth textures, starfield, cloud shell, dunes, sky, ocean, rain, cloud base, trees, grass, humanoid, dial gauge, underwater volume, fish school, captions, labels, camera rig, pipeline, audio kit, thumbnail composer). New plate-drift globe and coral mounds are original procedural work promoted to the library."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local",
+      "piper_local"
+    ],
+    "narration_target_wpm": 140,
+    "music_direction": "Original slow pad in C minor with deep, grinding low textures for moving continents; open fifths for the supercontinent reveal; a warmer major lift underwater; a tense low swell for the hot future; resolving to C major on the return to today.",
+    "music_level_db_below_voice": -22,
+    "sfx_direction": "Synthesized and restrained: low tectonic rumble, a soft click as coasts meet, ocean and desert wind, monsoon rain with distant thunder, footsteps of many small animals, muffled underwater ambience, dry heat crackle.",
+    "mix_target_lufs": -16,
+    "true_peak_max_dbtp": -1.5
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Premium documentary subtitles: ivory semibold with a thin charcoal outline and soft shadow, restrained amber active word, phrase-by-phrase with a 120 ms ease; a soft dark band behind text over bright scenes.",
+    "font_stack": "Inter, Manrope, system-ui, sans-serif",
+    "font_size_px": 66,
+    "max_lines": 2,
+    "max_chars_per_line": 24,
+    "safe_area": {
+      "left_px": 100,
+      "right_px": 180,
+      "top_px": 230,
+      "bottom_px": 330,
+      "caption_baseline_y_px": 1370
+    },
+    "active_word_treatment": "The spoken word turns amber without moving the baseline; emphasised phrases keep a soft accent, a 1.04 scale or a gentle glow.",
+    "highlights_policy": "Exact narration only. In-scene labels are limited to chips, schematic/illustrative/model tags and numbers backed by the claim register."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.81,
+      "narration": {
+        "text": "What if all of Earth's continents joined into one giant landmass?",
+        "start_s": 0.35,
+        "end_s": 4.46,
+        "delivery_note": "Hushed, curious; a lift on \"one giant landmass\"."
+      },
+      "viewer_question": "What would Earth be like with one single continent?",
+      "visual_payoff": "Today's continents begin to slide together across the globe.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.81,
+          "shot_type": "orbital view, today's map starts to drift",
+          "world": "Space, 1 unit = 1 Earth radius, Earth at the origin, sun from the upper right; Africa faces the camera.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0.3,
+                  1.6,
+                  8.4
+                ],
+                "look_at": [
+                  0,
+                  -0.28,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4.81,
+                "position": [
+                  0.9,
+                  1.4,
+                  7.6
+                ],
+                "look_at": [
+                  0,
+                  -0.28,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push-in and slight orbit to the right.",
+            "lens_notes": "32° vertical FOV; the globe fills about 75% of the frame width."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth with NASA-textured continents in today's positions, beginning to slide together",
+              "geometry_and_material": "Ocean sphere with sun glint; each continent is a separate textured layer (NASA day map cut by the land mask) that rotates rigidly about its own Euler pole; atmosphere rim; scattered drifting clouds.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius; continent shapes true, motion schematic and sped up by millions of times.",
+              "movement": "Plates rotate with drift progress; slow cloud drift.",
+              "asset_hint": "candidate:plate-drift-globe-v1"
+            },
+            {
+              "id": "clouds",
+              "kind": "clouds",
+              "appearance": "Scattered white clouds drifting over the globe",
+              "geometry_and_material": "Planet cloud shell at low coverage.",
+              "scale_and_accuracy": "Cloud tops a few km; thickness exaggerated.",
+              "movement": "Slow drift.",
+              "asset_hint": "reuse:overcast-shell-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "0–1.06 s today's Earth holds still.",
+            "1.06–4.81 s every plate starts rotating toward Africa (drift progress 0 → 0.3).",
+            "2.16 s chip WHAT IF · ONE CONTINENT; tag SCHEMATIC · MILLIONS OF YEARS SPED UP."
+          ],
+          "lighting": "Hard sunlight from the upper right, soft terminator on the left limb, deep black space.",
+          "effects": [
+            "Atmosphere rim glow",
+            "Label: SCHEMATIC · MILLIONS OF YEARS SPED UP"
+          ],
+          "composition_notes": "Globe centred at y≈880 px; chip and tag in the top safe area; captions below the globe."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "one giant landmass",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0,
+          "duration_s": 2.4,
+          "kind": "silence",
+          "description": "Near silence: a faint low space hum.",
+          "relative_db": -32
+        },
+        {
+          "at_s": 1.2,
+          "duration_s": 3.61,
+          "kind": "texture",
+          "description": "Deep, slow grinding rumble as the plates start moving.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Continuous action: the drift keeps going into the next scene."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.81,
+      "end_s": 12.49,
+      "narration": {
+        "text": "It's happened before: Pangaea joined nearly all land until about two hundred million years ago.",
+        "start_s": 5.11,
+        "end_s": 11.89,
+        "delivery_note": "Calm, matter-of-fact wonder."
+      },
+      "viewer_question": "Has this ever happened?",
+      "visual_payoff": "The plates lock together into a Pangaea-like supercontinent wrapped around one ocean.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.81,
+          "end_s": 12.49,
+          "shot_type": "orbital view, supercontinent assembles",
+          "world": "Same space frame; the continents complete their drift into one landmass.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 4.81,
+                "position": [
+                  0.9,
+                  1.4,
+                  7.6
+                ],
+                "look_at": [
+                  0,
+                  -0.28,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 12.49,
+                "position": [
+                  0.52,
+                  -0.77,
+                  7.34
+                ],
+                "look_at": [
+                  0,
+                  -0.3,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow orbit down and to the right to reveal the whole supercontinent.",
+            "lens_notes": "Same lens."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth with NASA-textured continents locking into one Pangaea-like landmass",
+              "geometry_and_material": "Ocean sphere with sun glint; each continent is a separate textured layer (NASA day map cut by the land mask) that rotates rigidly about its own Euler pole; atmosphere rim; scattered drifting clouds.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius; continent shapes true, motion schematic and sped up by millions of times.",
+              "movement": "Plates rotate with drift progress; slow cloud drift.",
+              "asset_hint": "candidate:plate-drift-globe-v1"
+            },
+            {
+              "id": "clouds",
+              "kind": "clouds",
+              "appearance": "Scattered white clouds drifting over the globe",
+              "geometry_and_material": "Planet cloud shell at low coverage.",
+              "scale_and_accuracy": "Cloud tops a few km; thickness exaggerated.",
+              "movement": "Slow drift.",
+              "asset_hint": "reuse:overcast-shell-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "4.81–9.57 s drift progress 0.3 → 1: the Americas swing east into Africa and Europe; India, Australia and Antarctica close in from the south.",
+            "9.57 s chip PANGAEA; tag SPLIT ~200 MILLION YEARS AGO.",
+            "9.8–12.49 s hold on the supercontinent as the camera finishes its orbit."
+          ],
+          "lighting": "Same sunlight.",
+          "effects": [
+            "Label: SCHEMATIC ARRANGEMENT · NOT AN EXACT RECONSTRUCTION"
+          ],
+          "composition_notes": "Supercontinent centred; keep the globe clear of the caption band."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "happened before",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "two hundred million years",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.81,
+          "duration_s": 7.3,
+          "kind": "music_swell",
+          "description": "Warm low pad enters as the pieces lock together.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The assembled supercontinent dissolves into a close view of its South Atlantic seam."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 12.49,
+      "end_s": 21.42,
+      "narration": {
+        "text": "South America and Africa still fit like puzzle pieces, and plates drift about as fast as fingernails grow.",
+        "start_s": 12.79,
+        "end_s": 20.82,
+        "delivery_note": "Clear and explanatory; a smile on \"puzzle pieces\"."
+      },
+      "viewer_question": "How do we know continents move?",
+      "visual_payoff": "South America slides back into the curve of Africa, then the Atlantic opens again at its ridge.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 12.49,
+          "end_s": 17.4,
+          "shot_type": "close orbital view of the South Atlantic fit",
+          "world": "Same globe, close to the seam between South America and Africa.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 12.49,
+                "position": [
+                  0,
+                  -1.23,
+                  3.38
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 17.4,
+                "position": [
+                  0.33,
+                  -0.99,
+                  3.03
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the seam.",
+            "lens_notes": "30° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth with NASA-textured continents with South America drifting back into Africa",
+              "geometry_and_material": "Ocean sphere with sun glint; each continent is a separate textured layer (NASA day map cut by the land mask) that rotates rigidly about its own Euler pole; atmosphere rim; scattered drifting clouds.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius; continent shapes true, motion schematic and sped up by millions of times.",
+              "movement": "Plates rotate with drift progress; slow cloud drift.",
+              "asset_hint": "candidate:plate-drift-globe-v1"
+            }
+          ],
+          "animation_plan": [
+            "12.49 s South America sits apart from Africa; the others stay joined.",
+            "12.88–15.93 s South America slides east and rotates until its bulge nests into the Gulf of Guinea.",
+            "16.03 s callout THE COASTS FIT."
+          ],
+          "lighting": "Sunlight from the upper right.",
+          "effects": [
+            "Label: SCHEMATIC"
+          ],
+          "composition_notes": "The seam at frame centre around y≈850 px."
+        },
+        {
+          "id": "SH02",
+          "start_s": 17.4,
+          "end_s": 21.42,
+          "shot_type": "orbital view, the Atlantic opening at its ridge",
+          "world": "Today's globe: the mid-Atlantic ridge glows faintly while the Americas ease away from Africa and Europe.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 17.4,
+                "position": [
+                  -2.2,
+                  0.7,
+                  5
+                ],
+                "look_at": [
+                  -0.3,
+                  0.15,
+                  0.4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 21.42,
+                "position": [
+                  -2.6,
+                  0.8,
+                  5.6
+                ],
+                "look_at": [
+                  -0.3,
+                  0.15,
+                  0.4
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Gentle drift back.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth with NASA-textured continents easing apart along the Atlantic",
+              "geometry_and_material": "Ocean sphere with sun glint; each continent is a separate textured layer (NASA day map cut by the land mask) that rotates rigidly about its own Euler pole; atmosphere rim; scattered drifting clouds.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius; continent shapes true, motion schematic and sped up by millions of times.",
+              "movement": "Plates rotate with drift progress; slow cloud drift.",
+              "asset_hint": "candidate:plate-drift-globe-v1"
+            },
+            {
+              "id": "ridge",
+              "kind": "diagram",
+              "appearance": "Thin glowing seam down the middle of the Atlantic with small spreading arrows",
+              "geometry_and_material": "Glowing line on the ocean shader plus drawn arrows.",
+              "scale_and_accuracy": "Schematic.",
+              "movement": "Pulses gently.",
+              "asset_hint": "shot-specific:ridge-glow"
+            }
+          ],
+          "animation_plan": [
+            "17.4–21.42 s the Atlantic widens slightly as the Americas drift west (progress 0.15 → 0).",
+            "18.41 s chip ABOUT AS FAST AS FINGERNAILS GROW."
+          ],
+          "lighting": "Same sunlight.",
+          "effects": [
+            "Label: SCHEMATIC · DRIFT SPED UP"
+          ],
+          "composition_notes": "The Atlantic runs top to bottom through the centre."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "puzzle pieces",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "as fast as fingernails grow",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 13.83,
+          "duration_s": 2.68,
+          "kind": "texture",
+          "description": "Soft click as the coasts meet.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The globe dissolves into the joined supercontinent seen whole again."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "mechanism",
+      "start_s": 21.42,
+      "end_s": 31.54,
+      "narration": {
+        "text": "One landmass changes the weather. Most moisture rises from the sea, so a supercontinent's heart would become a vast desert.",
+        "start_s": 21.72,
+        "end_s": 30.94,
+        "delivery_note": "Slower and weightier on \"vast desert\"."
+      },
+      "viewer_question": "What would one landmass do to the weather?",
+      "visual_payoff": "Moist air pours in from the ocean and dries out inland; the heart of the supercontinent turns to dunes.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 21.42,
+          "end_s": 26.48,
+          "shot_type": "orbital view, moisture and the dry interior",
+          "world": "The assembled supercontinent; schematic moisture streams flow in from the ocean and fade inland while the interior tints dry.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 21.42,
+                "position": [
+                  -2.04,
+                  -0.49,
+                  7.1
+                ],
+                "look_at": [
+                  0,
+                  -0.3,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 26.48,
+                "position": [
+                  -0.75,
+                  -1,
+                  7.09
+                ],
+                "look_at": [
+                  0,
+                  -0.3,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow orbit east from the open ocean across the western coast toward the interior.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth with NASA-textured continents joined, its interior tinting dry (schematic)",
+              "geometry_and_material": "Ocean sphere with sun glint; each continent is a separate textured layer (NASA day map cut by the land mask) that rotates rigidly about its own Euler pole; atmosphere rim; scattered drifting clouds.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius; continent shapes true, motion schematic and sped up by millions of times.",
+              "movement": "Plates rotate with drift progress; slow cloud drift.",
+              "asset_hint": "candidate:plate-drift-globe-v1"
+            },
+            {
+              "id": "moisture",
+              "kind": "diagram",
+              "appearance": "Pale blue streams sweeping from the ocean onto the coasts and fading inland",
+              "geometry_and_material": "Additive particles drawn along curved paths.",
+              "scale_and_accuracy": "Schematic.",
+              "movement": "Stream inward and fade.",
+              "asset_hint": "shot-specific:moisture-streams"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "21.67–25.72 s moisture streams pour onto the coasts and fade inland.",
+            "22.18–25.97 s the interior tints from green-brown to desert tan.",
+            "22.94 s chip RAIN STAYS NEAR THE COASTS; tag SCHEMATIC."
+          ],
+          "lighting": "Sunlight from the upper right.",
+          "effects": [
+            "Label: SCHEMATIC"
+          ],
+          "composition_notes": "Supercontinent centred."
+        },
+        {
+          "id": "SH02",
+          "start_s": 26.48,
+          "end_s": 31.54,
+          "shot_type": "low wide view of the interior desert",
+          "world": "Interior of the supercontinent: rust-red dunes to the horizon under a white-hot sky; metres, +Y up.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 26.48,
+                "position": [
+                  0,
+                  3,
+                  18
+                ],
+                "look_at": [
+                  0,
+                  1.6,
+                  -30
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 31.54,
+                "position": [
+                  3.5,
+                  2.6,
+                  13
+                ],
+                "look_at": [
+                  0,
+                  1.6,
+                  -30
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow lateral glide over the dunes.",
+            "lens_notes": "36° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "dunes",
+              "kind": "terrain",
+              "appearance": "Rust-red dunes rippled by wind, bone dry",
+              "geometry_and_material": "Procedural dune heightfield with ripples and grain.",
+              "scale_and_accuracy": "Dunes up to ~15 m; true scale.",
+              "movement": "Static.",
+              "asset_hint": "reuse:dune-field-v1"
+            },
+            {
+              "id": "sky",
+              "kind": "atmosphere",
+              "appearance": "Pale, hazy, white-hot sky with a high sun",
+              "geometry_and_material": "Gradient dome with sun disc and warm haze.",
+              "scale_and_accuracy": "Sky only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:sky-dome-v1"
+            }
+          ],
+          "animation_plan": [
+            "26.48 s chip INTERIOR · THOUSANDS OF KM FROM THE SEA.",
+            "27.49–31.54 s heat haze shimmers above the dunes."
+          ],
+          "lighting": "Harsh high sun, short shadows, warm haze.",
+          "effects": [
+            "Warm distance haze",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Horizon at y≈760 px; dunes fill the lower frame under the captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "changes the weather",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "vast desert",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 21.42,
+          "duration_s": 5.06,
+          "kind": "ambience",
+          "description": "Soft wind over the ocean.",
+          "relative_db": -26
+        },
+        {
+          "at_s": 26.48,
+          "duration_s": 5.06,
+          "kind": "ambience",
+          "description": "Dry desert wind, hollow and hot.",
+          "relative_db": -25
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05",
+        "CL13"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "Desert dunes dissolve into a storm-lashed coast."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "human_impact",
+      "start_s": 31.54,
+      "end_s": 40.47,
+      "narration": {
+        "text": "People would crowd the rainy coasts, battered by monsoons. Inland, days would scorch and nights would freeze.",
+        "start_s": 31.84,
+        "end_s": 39.87,
+        "delivery_note": "Grave but gentle; contrast \"scorch\" and \"freeze\"."
+      },
+      "viewer_question": "Where could people live?",
+      "visual_payoff": "A coast thrashed by monsoon rain, then a lone traveller inland as a blazing day collapses into a freezing night.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 31.54,
+          "end_s": 36,
+          "shot_type": "crowded coast in a monsoon storm",
+          "world": "Wet green coastline of the supercontinent in a monsoon storm: heavy rain, dark clouds, rough sea, bending trees, a seaside village with lit windows and people walking the shore path under umbrellas; metres, +Y up.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 31.54,
+                "position": [
+                  4,
+                  4.4,
+                  14
+                ],
+                "look_at": [
+                  0.5,
+                  1.3,
+                  -10
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 36,
+                "position": [
+                  2.6,
+                  3.8,
+                  10
+                ],
+                "look_at": [
+                  0.5,
+                  1.3,
+                  -10
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push along the coast into the rain, looking down over the walkers.",
+            "lens_notes": "36° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "sea",
+              "kind": "water",
+              "appearance": "Rough grey-green sea with whitecaps",
+              "geometry_and_material": "Analytic wave normals and Fresnel reflection.",
+              "scale_and_accuracy": "Waves ~1.5 m.",
+              "movement": "Heavy swell.",
+              "asset_hint": "reuse:ocean-surface-v1"
+            },
+            {
+              "id": "rain",
+              "kind": "particle_system",
+              "appearance": "Dense slanted monsoon rain",
+              "geometry_and_material": "Instanced rain streaks.",
+              "scale_and_accuracy": "Heavy rain; streak length exaggerated.",
+              "movement": "Wind-driven.",
+              "asset_hint": "reuse:rain-v1"
+            },
+            {
+              "id": "clouds",
+              "kind": "atmosphere",
+              "appearance": "Low, dark monsoon cloud base",
+              "geometry_and_material": "Cloud base seen from below.",
+              "scale_and_accuracy": "Cloud base ~500 m.",
+              "movement": "Scrolling with the wind.",
+              "asset_hint": "reuse:cloud-ceiling-v1"
+            },
+            {
+              "id": "trees",
+              "kind": "vegetation",
+              "appearance": "Broadleaf trees and wet grass on the shore",
+              "geometry_and_material": "Branched trees with instanced leaves; grass field.",
+              "scale_and_accuracy": "Trees ~6–9 m.",
+              "movement": "Sway in gusts.",
+              "asset_hint": "reuse:broadleaf-tree-v1"
+            },
+            {
+              "id": "people",
+              "kind": "human",
+              "appearance": "People walking the seafront path under dark umbrellas",
+              "geometry_and_material": "Studio human rigs with umbrellas, analytic walking gait.",
+              "scale_and_accuracy": "Adult and child heights 1.1–1.9 m.",
+              "movement": "Walk along the shore in both directions.",
+              "asset_hint": "reuse:pedestrian-crowd-v1"
+            },
+            {
+              "id": "village",
+              "kind": "architecture",
+              "appearance": "Two rows of small gabled houses on low stilts along the coast, warm lit windows",
+              "geometry_and_material": "Merged procedural houses with emissive windows.",
+              "scale_and_accuracy": "Houses ~4–6 m wide.",
+              "movement": "Static; windows brighten with the lightning.",
+              "asset_hint": "new:village-houses-v1"
+            }
+          ],
+          "animation_plan": [
+            "31.54 s chip COASTS · MONSOON RAINS.",
+            "31.54–36 s people walk the shore path under umbrellas past the lit village.",
+            "33.55 s a lightning flash lights the cloud base.",
+            "32.43–36 s trees and grass bend in gusts as the rain sweeps sideways."
+          ],
+          "lighting": "Dim storm light, cool grey-green, a brief lightning flash.",
+          "effects": [
+            "Rain haze",
+            "Lightning flash",
+            "Label: ILLUSTRATIVE"
+          ],
+          "composition_notes": "Shoreline and the seafront path on a diagonal; walkers mid-frame, lit houses receding on the right."
+        },
+        {
+          "id": "SH02",
+          "start_s": 36,
+          "end_s": 40.47,
+          "shot_type": "lone traveller inland, day collapsing into night",
+          "world": "A dry inland plain: cracked ground, a lone traveller walking; a weather dial on a post; metres, +Y up.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 36,
+                "position": [
+                  -1,
+                  1.7,
+                  3
+                ],
+                "look_at": [
+                  7.94,
+                  1.05,
+                  -14.89
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 40.47,
+                "position": [
+                  -0.78,
+                  1.7,
+                  2.55
+                ],
+                "look_at": [
+                  8.17,
+                  1.05,
+                  -15.34
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Gentle push down a low corridor between the dunes as the traveller walks away toward the horizon.",
+            "lens_notes": "34° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "traveller",
+              "kind": "human",
+              "appearance": "Walker in a long coat and hat, head down against the wind",
+              "geometry_and_material": "Capsule-and-sphere figure with fabric materials.",
+              "scale_and_accuracy": "1.75 m tall.",
+              "movement": "Walks steadily away toward the horizon.",
+              "asset_hint": "reuse:humanoid-figure-v1"
+            },
+            {
+              "id": "dial",
+              "kind": "diagram",
+              "appearance": "Round weather dial labelled TEMPERATURE with HOT and COLD marks",
+              "geometry_and_material": "Dial gauge with a steel bezel.",
+              "scale_and_accuracy": "Illustrative: no numbers.",
+              "movement": "Needle swings from HOT to COLD as night falls.",
+              "asset_hint": "reuse:dial-gauge-v1"
+            },
+            {
+              "id": "plain",
+              "kind": "terrain",
+              "appearance": "Flat cracked plain with sparse dry tufts",
+              "geometry_and_material": "Flat dune-field area, dry tufts.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Static.",
+              "asset_hint": "reuse:dune-field-v1"
+            }
+          ],
+          "animation_plan": [
+            "36 s chip INLAND · HOT DAYS, FRIGID NIGHTS.",
+            "37.12–39.8 s the sky time-lapses from blazing day to deep blue night; stars appear.",
+            "37.12–39.8 s the dial needle swings from HOT to COLD."
+          ],
+          "lighting": "Harsh white sun turning to cold blue moonless night.",
+          "effects": [
+            "Label: ILLUSTRATIVE · TIME-LAPSE"
+          ],
+          "composition_notes": "Traveller walking away left of centre; dial on the right at y≈1000 px; open horizon and sky in the upper half."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "rainy coasts",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "days would scorch",
+          "treatment": "subtle_glow"
+        },
+        {
+          "phrase": "nights would freeze",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 31.54,
+          "duration_s": 4.47,
+          "kind": "ambience",
+          "description": "Heavy monsoon rain, gusts, distant thunder.",
+          "relative_db": -22
+        },
+        {
+          "at_s": 36,
+          "duration_s": 4.47,
+          "kind": "ambience",
+          "description": "Wind across a dry plain fading to night silence.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL05",
+        "CL06",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The cold night dissolves into a tabletop map of two continents meeting."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 40.47,
+      "end_s": 51.06,
+      "narration": {
+        "text": "Animals from every continent would meet, and not all would survive. When the Americas joined, many South American mammals vanished.",
+        "start_s": 40.77,
+        "end_s": 50.46,
+        "delivery_note": "Soft, a touch sad on \"vanished\"."
+      },
+      "viewer_question": "What happens to wildlife when continents meet?",
+      "visual_payoff": "On a tabletop map two continents join; their animals spread across the bridge, and many of the southern ones wink out.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 40.47,
+          "end_s": 51.06,
+          "shot_type": "tabletop diorama: two continents meet",
+          "world": "Studio tabletop: two low relief continents (north and south) on calm water; a land bridge rises between them; small coloured animal tokens on each.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 40.47,
+                "position": [
+                  0,
+                  2.6,
+                  3.4
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 51.06,
+                "position": [
+                  0.6,
+                  2.2,
+                  2.9
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  -0.1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push and drift right.",
+            "lens_notes": "34° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "lands",
+              "kind": "terrain",
+              "appearance": "Two low relief land tiles, green and ochre, joined by a narrow bridge",
+              "geometry_and_material": "Procedural relief meshes on a water plane.",
+              "scale_and_accuracy": "Schematic.",
+              "movement": "The bridge rises from the water.",
+              "asset_hint": "shot-specific:diorama-lands"
+            },
+            {
+              "id": "animals",
+              "kind": "diagram",
+              "appearance": "Small teal (northern) and orange (southern) animal tokens",
+              "geometry_and_material": "Instanced tokens with soft shadows.",
+              "scale_and_accuracy": "Each token stands for many species.",
+              "movement": "Spread across the bridge; about half the orange tokens fade out.",
+              "asset_hint": "shot-specific:species-tokens"
+            }
+          ],
+          "animation_plan": [
+            "41–43.12 s the land bridge rises.",
+            "43.12–48.94 s teal tokens stream south and orange tokens north; tokens mix.",
+            "45.77–49.47 s about half the orange tokens fade away.",
+            "48.41 s callout ≈ HALF OF SOUTH AMERICA'S MAMMALS NOW HAVE NORTHERN ANCESTORS."
+          ],
+          "lighting": "Soft studio key from the upper left, gentle rim.",
+          "effects": [
+            "Label: SCHEMATIC · GREAT AMERICAN INTERCHANGE"
+          ],
+          "composition_notes": "Bridge at frame centre y≈860 px; callout above."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "not all would survive",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "vanished",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 42.06,
+          "duration_s": 6.35,
+          "kind": "texture",
+          "description": "Soft patter of many small footsteps, then quiet.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL08",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The table water dissolves into a sunlit shallow sea."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "human_impact",
+      "start_s": 51.06,
+      "end_s": 58.99,
+      "narration": {
+        "text": "At sea, there'd be far less coastline, and fewer shallow, sunlit waters where coral reefs grow.",
+        "start_s": 51.36,
+        "end_s": 58.39,
+        "delivery_note": "Gentle and clear."
+      },
+      "viewer_question": "What about life in the ocean?",
+      "visual_payoff": "A sunlit coral garden full of fish gives way to the deep blue drop-off beyond it.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 51.06,
+          "end_s": 58.99,
+          "shot_type": "shallow reef to the drop-off",
+          "world": "Shallow tropical sea, metres: sunlit sand and coral mounds at ~6 m depth, a fish school, the reef edge falling away into deep blue.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 51.06,
+                "position": [
+                  0,
+                  -3.2,
+                  6
+                ],
+                "look_at": [
+                  0,
+                  -4.6,
+                  -4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 58.99,
+                "position": [
+                  0,
+                  -2.8,
+                  2.5
+                ],
+                "look_at": [
+                  0,
+                  -5.4,
+                  -14
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Glide forward over the reef toward the drop-off.",
+            "lens_notes": "40° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "sea",
+              "kind": "water",
+              "appearance": "Sunlit shallow water with shafts and caustics",
+              "geometry_and_material": "Underwater volume with Snell window, rays and caustics.",
+              "scale_and_accuracy": "Depth ~6 m.",
+              "movement": "Gentle surge.",
+              "asset_hint": "reuse:underwater-volume-v1"
+            },
+            {
+              "id": "corals",
+              "kind": "other",
+              "appearance": "Brain, branching and table corals in warm colours",
+              "geometry_and_material": "Instanced procedural coral heads.",
+              "scale_and_accuracy": "0.3–1.2 m.",
+              "movement": "Static; fish weave past.",
+              "asset_hint": "candidate:coral-mounds-v1"
+            },
+            {
+              "id": "fish",
+              "kind": "animal",
+              "appearance": "School of small silver-blue fish",
+              "geometry_and_material": "Instanced fish with tail beats.",
+              "scale_and_accuracy": "~15 cm fish.",
+              "movement": "School wheels over the reef.",
+              "asset_hint": "reuse:fish-school-v1"
+            }
+          ],
+          "animation_plan": [
+            "51.06 s chip REEFS NEED SHALLOW, SUNLIT WATER.",
+            "51.85–58.99 s the fish school wheels over the corals as the camera glides to the drop-off.",
+            "55.42 s tag MOSTLY SHALLOWER THAN ~30 M."
+          ],
+          "lighting": "Sun shafts from above, caustics on the sand, blue falloff with depth.",
+          "effects": [
+            "Light shafts",
+            "Drifting particles"
+          ],
+          "composition_notes": "Corals in the lower third; the drop-off opens in the centre."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "far less coastline",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "coral reefs",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 51.06,
+          "duration_s": 7.93,
+          "kind": "ambience",
+          "description": "Muffled underwater ambience, slow bubbles.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL10",
+        "CL11"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The deep blue dissolves into the hot glow of a future supercontinent."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "second_order_effect",
+      "start_s": 58.99,
+      "end_s": 68.71,
+      "narration": {
+        "text": "The next supercontinent may be brutal: one model finds only eight to sixteen percent of its land livable for mammals like us.",
+        "start_s": 59.29,
+        "end_s": 68.11,
+        "delivery_note": "Quiet, serious reveal."
+      },
+      "viewer_question": "Will it happen again, and could we live there?",
+      "visual_payoff": "A future supercontinent glows hot across its land while a dial climbs past forty degrees.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 58.99,
+          "end_s": 64.34,
+          "shot_type": "orbital view of a future supercontinent, glowing hot",
+          "world": "The joined supercontinent as a stand-in for the predicted Pangea Ultima; its land tinted by a hot overlay.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 58.99,
+                "position": [
+                  -2.68,
+                  0.33,
+                  7.43
+                ],
+                "look_at": [
+                  0,
+                  -0.3,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 64.34,
+                "position": [
+                  0.52,
+                  -1.03,
+                  7.31
+                ],
+                "look_at": [
+                  0,
+                  -0.3,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow orbit toward the lit face.",
+            "lens_notes": "32° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth with NASA-textured continents joined, with a heat overlay across most of its land",
+              "geometry_and_material": "Ocean sphere with sun glint; each continent is a separate textured layer (NASA day map cut by the land mask) that rotates rigidly about its own Euler pole; atmosphere rim; scattered drifting clouds.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius; continent shapes true, motion schematic and sped up by millions of times.",
+              "movement": "Plates rotate with drift progress; slow cloud drift.",
+              "asset_hint": "candidate:plate-drift-globe-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "58.99 s chip NEXT SUPERCONTINENT · ~250 MILLION YEARS AWAY.",
+            "59.53–63.27 s heat tint spreads across the land from the interior.",
+            "61.67 s tag MODEL RESULT · PANGEA ULTIMA (SCHEMATIC SHAPE)."
+          ],
+          "lighting": "Sunlight from the upper right; the heat tint glows.",
+          "effects": [
+            "Label: SCHEMATIC SHAPE"
+          ],
+          "composition_notes": "Globe centred."
+        },
+        {
+          "id": "SH02",
+          "start_s": 64.34,
+          "end_s": 68.71,
+          "shot_type": "dial in a scorched desert",
+          "world": "Scorched red desert at midday; a thermometer dial on a post in the foreground; metres.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 64.34,
+                "position": [
+                  -1.07,
+                  0.85,
+                  2.15
+                ],
+                "look_at": [
+                  0,
+                  1.22,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 68.71,
+                "position": [
+                  -0.76,
+                  0.92,
+                  1.52
+                ],
+                "look_at": [
+                  0,
+                  1.2,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Low, slow push toward the dial, looking up against the washed-out sky.",
+            "lens_notes": "34° vertical FOV."
+          },
+          "subjects": [
+            {
+              "id": "thermometer",
+              "kind": "diagram",
+              "appearance": "Thermometer dial reading up to 60 °C, needle climbing past 40 toward 50",
+              "geometry_and_material": "Dial gauge with brass bezel.",
+              "scale_and_accuracy": "Values from the model: widespread 40–50 °C.",
+              "movement": "Needle climbs 30 → 48.",
+              "asset_hint": "reuse:dial-gauge-v1"
+            },
+            {
+              "id": "dunes",
+              "kind": "terrain",
+              "appearance": "Rust-red dunes in heat haze",
+              "geometry_and_material": "Dune field.",
+              "scale_and_accuracy": "True scale.",
+              "movement": "Static.",
+              "asset_hint": "reuse:dune-field-v1"
+            }
+          ],
+          "animation_plan": [
+            "64.34 s chip 8–16% OF LAND LIVABLE FOR MAMMALS.",
+            "64.78–67.84 s the needle climbs past 40 toward 50 °C.",
+            "65.65 tag MODEL · WIDESPREAD 40–50 °C."
+          ],
+          "lighting": "Blinding high sun, washed-out sky.",
+          "effects": [
+            "Heat haze",
+            "Label: MODEL RESULT"
+          ],
+          "composition_notes": "Dial in the upper middle at y≈820 px."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "may be brutal",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "eight to sixteen percent",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 58.99,
+          "duration_s": 3.89,
+          "kind": "music_swell",
+          "description": "Low, tense swell.",
+          "relative_db": -21
+        },
+        {
+          "at_s": 63.85,
+          "duration_s": 4.86,
+          "kind": "texture",
+          "description": "Dry, crackling heat shimmer.",
+          "relative_db": -25
+        }
+      ],
+      "claim_ids": [
+        "CL12"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "The hot globe dissolves back into the cool blue of today."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 68.71,
+      "end_s": 75,
+      "narration": {
+        "text": "Enjoy the map while it lasts. The continents are still moving.",
+        "start_s": 69.01,
+        "end_s": 73.41,
+        "delivery_note": "Warm, settled, a little wry."
+      },
+      "viewer_question": "So is today's map permanent?",
+      "visual_payoff": "The continents ease back apart into today's map, exactly as the film began.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 68.71,
+          "end_s": 75,
+          "shot_type": "orbital view, back to today's map",
+          "world": "Space, the globe; the plates rotate back to their present positions.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 68.71,
+                "position": [
+                  1.2,
+                  2,
+                  7.9
+                ],
+                "look_at": [
+                  0,
+                  -0.28,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 75,
+                "position": [
+                  0.3,
+                  1.6,
+                  8.4
+                ],
+                "look_at": [
+                  0,
+                  -0.28,
+                  0
+                ],
+                "ease": "ease_in_out_cubic"
+              }
+            ],
+            "movement": "Slow pull back ending exactly on frame 0's pose.",
+            "lens_notes": "Same lens."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "appearance": "Earth with NASA-textured continents easing back apart to their present positions",
+              "geometry_and_material": "Ocean sphere with sun glint; each continent is a separate textured layer (NASA day map cut by the land mask) that rotates rigidly about its own Euler pole; atmosphere rim; scattered drifting clouds.",
+              "scale_and_accuracy": "1 unit = 1 Earth radius; continent shapes true, motion schematic and sped up by millions of times.",
+              "movement": "Plates rotate with drift progress; slow cloud drift.",
+              "asset_hint": "candidate:plate-drift-globe-v1"
+            },
+            {
+              "id": "clouds",
+              "kind": "clouds",
+              "appearance": "Scattered white clouds drifting over the globe",
+              "geometry_and_material": "Planet cloud shell at low coverage.",
+              "scale_and_accuracy": "Cloud tops a few km; thickness exaggerated.",
+              "movement": "Slow drift.",
+              "asset_hint": "reuse:overcast-shell-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Sparse faint stars",
+              "geometry_and_material": "Point-sprite star shell.",
+              "scale_and_accuracy": "Background only.",
+              "movement": "Static.",
+              "asset_hint": "reuse:starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "68.71–73.74 s drift progress 1 → 0: the continents return to today's positions.",
+            "75 s the final frame equals frame 0 for a seamless loop."
+          ],
+          "lighting": "Same sunlight.",
+          "effects": [
+            "Atmosphere rim glow"
+          ],
+          "composition_notes": "No labels in the final second; matches frame 0."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "still moving",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 68.71,
+          "duration_s": 6.29,
+          "kind": "music_swell",
+          "description": "The pad resolves warmly; a last low rumble fades.",
+          "relative_db": -21
+        }
+      ],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "The last frame equals frame 0, so the video loops."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json held 70 assets when this storyboard was written; every reuse ID below was checked against it. It has no component that moves real continents as plates, and no coral.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic rendering, post, dissolves and overlay compositing.",
+        "configuration": "Per-shot exposure and bloom."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Every camera from the storyboard keyframes.",
+        "configuration": "As written."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in word-timed captions.",
+        "configuration": "66 px Inter, 24 characters per line, baseline 1370."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Chips, tags, callouts and arrows.",
+        "configuration": "Teal for today, amber for the what-if."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Caption and label typeface.",
+        "configuration": "Weights 500–700."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Noise and maths in the new components and stages.",
+        "configuration": "Seeded."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and all sound effects.",
+        "configuration": "C minor pads, rumble and weather textures."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Continents (day map cut by the land mask) for the plate-drift globe.",
+        "configuration": "Day map and land mask."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Space backdrop.",
+        "configuration": "Low brightness."
+      },
+      {
+        "asset_id": "overcast-shell-v1",
+        "usage": "Scattered clouds over the globe.",
+        "configuration": "Low coverage."
+      },
+      {
+        "asset_id": "dune-field-v1",
+        "usage": "The dry interior, the inland plain and the scorched future desert.",
+        "configuration": "Rust-red sand, dry."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Hot hazy skies, storm sky and the day-to-night time-lapse.",
+        "configuration": "Animated colours and sun."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Rough monsoon sea.",
+        "configuration": "High waves, grey-green."
+      },
+      {
+        "asset_id": "rain-v1",
+        "usage": "Monsoon downpour.",
+        "configuration": "Dense, wind-slanted."
+      },
+      {
+        "asset_id": "cloud-ceiling-v1",
+        "usage": "Dark monsoon cloud base with a lightning flash.",
+        "configuration": "Low and dark."
+      },
+      {
+        "asset_id": "broadleaf-tree-v1",
+        "usage": "Coastal trees bending in the storm.",
+        "configuration": "Dark wet greens."
+      },
+      {
+        "asset_id": "grass-field-v1",
+        "usage": "Wet coastal grass and dry inland tufts.",
+        "configuration": "Strong gusts; sparse dry tufts."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "The lone inland traveller.",
+        "configuration": "Long coat, hat, walking pose cycle."
+      },
+      {
+        "asset_id": "pedestrian-crowd-v1",
+        "usage": "People walking the monsoon coast under umbrellas.",
+        "configuration": "16 walkers, all with umbrellas, no disappearance effect, turned to follow the shore."
+      },
+      {
+        "asset_id": "dial-gauge-v1",
+        "usage": "Hot/cold weather dial and the 0–60 °C thermometer.",
+        "configuration": "Steel and brass bezels."
+      },
+      {
+        "asset_id": "underwater-volume-v1",
+        "usage": "Sunlit shallow reef sea.",
+        "configuration": "Tropical blues, rays, caustics."
+      },
+      {
+        "asset_id": "fish-school-v1",
+        "usage": "Reef fish school.",
+        "configuration": "Silver-blue."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover thumbnail.",
+        "configuration": "Archivo Black, lava-orange highlight, ocean-blue sticker."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline face.",
+        "configuration": "archivo-black."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "plate-drift-globe-v1",
+        "description": "Earth whose continents are separate NASA-textured plates rotating rigidly about Euler poles (from today's positions toward any arrangement), on an ocean sphere with glint and atmosphere rim, with dry-interior and heat overlays.",
+        "reusable_in": "Plate tectonics, supercontinents, past and future Earths, \"what if continents moved\" topics.",
+        "parameters": [
+          "radius",
+          "plates (regions, target rotation)",
+          "progress (global and per plate)",
+          "sunDirection",
+          "dryness",
+          "dryCenter",
+          "heat",
+          "ridgeGlow",
+          "time_s"
+        ],
+        "suggested_path": "src/library/planet/PlateDriftGlobe.ts"
+      },
+      {
+        "proposed_id": "coral-mounds-v1",
+        "description": "Instanced procedural coral heads (brain, branching and table forms) in seeded warm colours for shallow reef scenes.",
+        "reusable_in": "Ocean, reef, climate and diving topics.",
+        "parameters": [
+          "count",
+          "area",
+          "seed",
+          "palette",
+          "ground"
+        ],
+        "suggested_path": "src/library/environment/CoralMounds.ts"
+      },
+      {
+        "proposed_id": "village-houses-v1",
+        "description": "Seeded rows of small gabled houses (walls, overhanging roofs, doors, lit and dark windows, optional stilts) merged into four draw calls.",
+        "reusable_in": "Coastal flooding, storms, sea-level rise, towns and villages at a distance.",
+        "parameters": [
+          "sites",
+          "ground",
+          "seed",
+          "width",
+          "depth",
+          "height",
+          "roofPitch",
+          "wallColors",
+          "roofColors",
+          "windowColor",
+          "litFraction",
+          "stilts",
+          "glow"
+        ],
+        "suggested_path": "src/library/environment/VillageHouses.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Moisture streams over the globe (S04)",
+      "Mid-Atlantic ridge glow and spreading arrows (S03)",
+      "Tabletop continents, land bridge and species tokens (S06)",
+      "Lightning flash on the monsoon coast (S05)"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if all continents joined together",
+    "core_keywords": [
+      "what if all continents joined",
+      "pangaea",
+      "supercontinent",
+      "pangea ultima",
+      "continental drift",
+      "plate tectonics explained",
+      "next supercontinent",
+      "south america africa puzzle",
+      "megamonsoon",
+      "earth science shorts",
+      "geology what if"
+    ],
+    "distinctive_angle": "Push today's continents together and Earth gains a desert heart, monsoon-battered coasts, fewer species and reefs, and the real next supercontinent may be too hot for most mammals.",
+    "seo_integrity_note": "Pangaea and plate speed are established (USGS); the joined arrangement and climate scenes are schematic or illustrative; the 8–16% habitability figure is one published model of the next supercontinent. Titles must not claim it will happen soon."
+  },
+  "thumbnail": {
+    "time_s": 11.09,
+    "headline": "All continents joined?!",
+    "highlight": [
+      "joined?!"
+    ],
+    "position": "top",
+    "badge": "It's happened before",
+    "focus": [
+      0.5,
+      0.52
+    ],
+    "zoom": 1.45,
+    "anchor": [
+      0.5,
+      0.64
+    ],
+    "font": "archivo-black",
+    "grade": "vivid",
+    "tilt": -3,
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FFB02E",
+      "badge": "#1565C0",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FFB02E"
+    }
+  },
+  "delivery": {
+    "video_output": "output/continents-one-landmass.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  }
+}

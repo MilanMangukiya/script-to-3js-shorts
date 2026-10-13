@@ -1,0 +1,9 @@
+{
+  "repo_id": "Whatif2203/whatif",
+  "repo_type": "dataset",
+  "private": true,
+  "folder": "videos",
+  "number_digits": 3,
+  "upload_thumbnail": true,
+  "upload_publishing_kit": true
+}

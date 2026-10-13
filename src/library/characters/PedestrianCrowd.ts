@@ -55,7 +55,7 @@ export class PedestrianCrowd {
     const t=state.clock_s??time_s, enabled=state.dissolveEnabled??false, start=state.vanishStart_s??Infinity;
     const stop=state.survivorStop_s??Infinity;
     const motion=t<stop?t:stop+Math.min(.36,Math.max(0,t-stop)-Math.pow(Math.min(.72,Math.max(0,t-stop)),2)/1.44);
-    const gaitWeight=1-smoothstep(stop,stop+.72,t);
+    const gaitWeight=Number.isFinite(stop)?1-smoothstep(stop,stop+.72,t):1;
     for(let i=0;i<this.walkers.length;i++){
       const w=this.walkers[i], p=w.person;
       const vanishT=start+w.startJitter, localMotion=enabled&&w.flagged?Math.min(motion,vanishT):motion;

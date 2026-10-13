@@ -160,8 +160,9 @@ export class FilmPipeline {
     this.composer.render();
   }
 
-  /** Render one frame into the output 2D canvas. */
-  renderFrame(frame: number): HTMLCanvasElement {
+  /** Render one frame into the output 2D canvas. Pass `{ overlay: false, captions: false }` for a clean picture
+   *  (e.g. a thumbnail still); both default to true, so normal rendering is unchanged. */
+  renderFrame(frame: number, opts: { overlay?: boolean; captions?: boolean } = {}): HTMLCanvasElement {
     const t = frame / this.fps;
     const ctx = this.ctx;
     let primary = this.shotIndexAt(t), mix = 0, secondary = -1;
@@ -181,7 +182,7 @@ export class FilmPipeline {
       ctx.drawImage(this.glCanvas, 0, 0, this.W, this.H);
       ctx.globalAlpha = 1;
     }
-    if (this.film.overlay) {
+    if (this.film.overlay && opts.overlay !== false) {
       // Labels belong to whichever shot dominates; they fade through the middle of a dissolve.
       const dom = secondary >= 0 && mix >= 0.5 ? secondary : primary;
       const alpha = secondary >= 0 ? Math.abs(1 - 2 * mix) : 1;
@@ -191,7 +192,7 @@ export class FilmPipeline {
       this.film.overlay({ ctx, time_s: t, shot, stage, alpha, width: this.W, height: this.H });
       ctx.restore();
     }
-    if (this.captions) { ctx.save(); this.captions.draw(ctx, t); ctx.restore(); }
+    if (this.captions && opts.captions !== false) { ctx.save(); this.captions.draw(ctx, t); ctx.restore(); }
     return this.out;
   }
 }

@@ -32,12 +32,14 @@
     "bokeh-field-v1",
     "dial-gauge-v1",
     "grass-field-v1",
-    "sailboat-v1"
+    "sailboat-v1",
+    "thumbnail-title-card-v1",
+    "font-display-set-v1"
   ],
   "published_urls": {},
   "platforms": {
     "youtube_shorts": {
-      "title": "What If the Moon Were Made of Ice?",
+      "title": "What if the Moon were made of ice?",
       "description": "Imagine the Moon keeping its size and orbit but turning entirely to ice. Its full phase could shine about six times brighter, while its mass would fall to roughly one third. Follow the change from a moonlit coast to smaller tides, shrinking mudflats, altered animal nights, possible deep-ocean mixing changes, and ice slowly turning to vapor.\n\nThe tide visuals are simplified diagrams. Real tidal ranges depend on each coastline, and ecological effects are uncertain.\n\nScience context: NASA Moon and icy-moon facts; NOAA tidal-force guidance; NASA Earth Observatory on deep-ocean tidal mixing.",
       "tags": [
         "what if the moon were made of ice",
@@ -53,9 +55,11 @@
       ],
       "hashtags": [
         "#Shorts",
+        "#WhatIf",
         "#Moon",
         "#SpaceScience",
-        "#WhatIf"
+        "#Tides",
+        "#Astronomy"
       ],
       "keywords": [
         "what if the Moon was ice",
@@ -66,7 +70,7 @@
       ]
     },
     "instagram_reels": {
-      "caption": "A Moon made of ice would light up full-Moon nights—but its weaker tidal pull would reshape the rhythm of coasts. Watch an ice Moon replace the familiar gray one, then follow the effects from shorebirds to the deep ocean. Tide heights and wildlife responses are illustrative and depend on place and species.",
+      "caption": "What if the Moon were made of ice? It would light up full-Moon nights—but its weaker tidal pull would reshape the rhythm of coasts. Watch an ice Moon replace the familiar gray one, then follow the effects from shorebirds to the deep ocean. Tide heights and wildlife responses are illustrative and depend on place and species.",
       "hashtags": [
         "#MoonFacts",
         "#ScienceReels",
@@ -82,13 +86,15 @@
       ]
     },
     "facebook_reels": {
-      "title": "If the Moon Were Ice, What Would Change on Earth?",
+      "title": "What if the Moon were made of ice? Here’s what would change on Earth",
       "description": "Same size. Same orbit. A very different Moon. This cinematic science scenario follows brighter moonlight, a weaker lunar tide, narrower feeding flats for shorebirds, and a possible change in deep-ocean mixing. Coastal tide heights vary locally; the ocean and wildlife scenes illustrate possible effects.",
       "hashtags": [
+        "#WhatIf",
         "#Moon",
         "#EarthScience",
         "#Tides",
-        "#WhatIf"
+        "#Astronomy",
+        "#OceanScience"
       ],
       "keywords": [
         "ice Moon effects",
@@ -114,10 +120,13 @@
       ]
     },
     "x_video": {
-      "post": "An ice Moon at the same size and distance could shine about 6× brighter while weighing about one third as much. That shifts the balance of the tides toward the Sun. The coast and deep-ocean effects in this film are simplified and uncertain.",
+      "post": "What if the Moon were ice? At the same size and distance it could shine about 6× brighter while weighing about a third as much, shifting the balance of the tides toward the Sun. The film’s coast and deep-ocean effects are simplified.",
       "hashtags": [
+        "#WhatIf",
         "#Moon",
-        "#SpaceScience"
+        "#SpaceScience",
+        "#Tides",
+        "#Astronomy"
       ],
       "keywords": [
         "ice Moon",
@@ -128,5 +137,21 @@
     }
   },
   "rendered_at_utc": "2026-10-12T19:57:57Z",
-  "publishing_status": "rendered_not_published"
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 1,
+    "path_in_repo": "videos/001-moon-made-of-ice.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/001-moon-made-of-ice.mp4",
+    "sha256": "69aca851e15dda65f44972572babe59b7da8d17d0018d6a82eb785d0dfa29df1",
+    "size_bytes": 50782592,
+    "thumbnail_path_in_repo": "videos/001-moon-made-of-ice.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/001-moon-made-of-ice.jpg",
+    "thumbnail_sha256": "7d9ad0cdb66d4a56bc6da46e8f5f016668a706da9fbe27880c918d9d6f78b353",
+    "copy_path_in_repo": "videos/001-moon-made-of-ice.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/001-moon-made-of-ice.md",
+    "copy_sha256": "d01d169a539550fe359de1b619b1b08f37eda5ca414729b8853afc31413f1251",
+    "uploaded_at_utc": "2026-10-13T16:02:07Z"
+  }
 }

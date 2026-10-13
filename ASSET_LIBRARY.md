@@ -7,53 +7,77 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 |---|---|---|---|---|---|
 | `air-molecules-v1` | Schematic air molecules | `src/library/diagram/AirMolecules.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `airliner-v1` | Unbranded twin-engine airliner with contrails | `src/library/vehicles/Airliner.ts` | `oxygen-gone-five-seconds` | `oxygen-gone-five-seconds` | original_procedural |
-| `audio-synth-kit-v1` | Procedural audio synthesis kit | `src/library/audio/synth.mjs` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_code |
-| `bird-flock-v1` | Instanced flapping birds | `src/library/creatures/BirdFlock.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `moon-made-of-ice`, `oxygen-gone-five-seconds` | original_procedural |
-| `bokeh-field-v1` | Soft bokeh light discs | `src/library/fx/BokehField.ts` | `ice-sank-instead-of-floating` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
+| `apartment-facade-v1` | Apartment facade | `src/library/environment/ApartmentFacade.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `audio-synth-kit-v1` | Procedural audio synthesis kit | `src/library/audio/synth.mjs` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `bird-flock-v1` | Instanced flapping birds | `src/library/creatures/BirdFlock.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
+| `bokeh-field-v1` | Soft bokeh light discs | `src/library/fx/BokehField.ts` | `ice-sank-instead-of-floating` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `broadleaf-tree-v1` | Broadleaf street tree | `src/library/environment/BroadleafTree.ts` | `what-if-every-man-disappeared` | `continents-one-landmass`, `what-if-every-man-disappeared` | original_procedural |
 | `bubble-stream-v1` | Exhalation bubble stream | `src/library/fx/BubbleStream.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
-| `camera-keyframe-rig-v1` | Storyboard keyframe camera rig | `src/library/camera/KeyframeRig.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_code |
-| `caption-kinetic-v1` | Kinetic burned-in captions | `src/library/captions/KineticCaptions.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_code |
-| `cloud-ceiling-v1` | Overcast cloud base seen from below | `src/library/environment/CloudCeiling.ts` | `rain-nonstop-everywhere` | `rain-nonstop-everywhere` | original_procedural |
-| `cloud-deck-v1` | Cloud-top layer seen from above | `src/library/environment/CloudDeck.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `oxygen-gone-five-seconds` | original_procedural |
+| `camera-keyframe-rig-v1` | Storyboard keyframe camera rig | `src/library/camera/KeyframeRig.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `caption-kinetic-v1` | Kinetic burned-in captions | `src/library/captions/KineticCaptions.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `city-street-block-v1` | Detailed city street and aerial district | `src/library/environment/CityStreet.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `clinic-interior-v1` | Clinic interior | `src/library/environment/ClinicInterior.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `cloud-ceiling-v1` | Overcast cloud base seen from below | `src/library/environment/CloudCeiling.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `rain-nonstop-everywhere` | original_procedural |
+| `cloud-deck-v1` | Cloud-top layer seen from above | `src/library/environment/CloudDeck.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
 | `conifer-stand-v1` | Instanced conifers with snow load | `src/library/environment/ConiferStand.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
+| `container-ship-v1` | Container ship | `src/library/vehicles/ContainerShip.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `cooking-pot-v1` | Cooking pot with boiling water | `src/library/props/CookingPot.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
-| `dial-gauge-v1` | Analog dial gauge | `src/library/props/DialGauge.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
-| `dune-field-v1` | Procedural sand dune sea | `src/library/environment/DuneField.ts` | `rain-nonstop-everywhere` | `rain-nonstop-everywhere` | original_procedural |
+| `coral-mounds-v1` | Procedural coral heads | `src/library/environment/CoralMounds.ts` | `continents-one-landmass` | `continents-one-landmass` | original_procedural |
+| `dial-gauge-v1` | Analog dial gauge | `src/library/props/DialGauge.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `continents-one-landmass`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
+| `dune-field-v1` | Procedural sand dune sea | `src/library/environment/DuneField.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `rain-nonstop-everywhere` | original_procedural |
 | `dung-beetle-v1` | Walking dung beetle | `src/library/creatures/DungBeetle.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
-| `earth-globe-v1` | Earth globe with atmosphere, clouds and city lights | `src/library/planet/Earth.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_code; textures NASA public domain (see earth-textures-nasa-v1) |
+| `earth-globe-v1` | Earth globe with atmosphere, clouds and city lights | `src/library/planet/Earth.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code; textures NASA public domain (see earth-textures-nasa-v1) |
 | `earth-seaice-mask-nasa-v1` | NASA-derived floating sea-ice mask | `assets/library/textures/earth/seaice_4k.png` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | public_domain_nasa |
-| `earth-textures-nasa-v1` | NASA Earth texture set (day, night lights, clouds, land mask) | `assets/library/textures/earth/day_8k.jpg` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | public_domain_nasa |
-| `film-pipeline-v1` | Deterministic film render pipeline | `src/library/render/FilmPipeline.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_code |
-| `fish-school-v1` | Instanced fish school | `src/library/creatures/FishSchool.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds` | original_procedural |
-| `flame-v1` | Procedural flame billboard | `src/library/fx/Flame.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `oxygen-gone-five-seconds` | original_procedural |
-| `font-inter-v1` | Inter typeface (Medium, SemiBold, Bold) | `assets/library/fonts/Inter-SemiBold.woff2` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | SIL Open Font License 1.1 |
+| `earth-textures-nasa-v1` | NASA Earth texture set (day, night lights, clouds, land mask) | `assets/library/textures/earth/day_8k.jpg` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | public_domain_nasa |
+| `film-pipeline-v1` | Deterministic film render pipeline | `src/library/render/FilmPipeline.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `fish-school-v1` | Instanced fish school | `src/library/creatures/FishSchool.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
+| `flame-v1` | Procedural flame billboard | `src/library/fx/Flame.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
+| `font-display-set-v1` | Display fonts for thumbnails | `assets/library/fonts/display/FONTS.md` | `rain-nonstop-everywhere` | `continents-one-landmass`, `moon-made-of-ice`, `rain-nonstop-everywhere` | SIL Open Font License 1.1 |
+| `font-inter-v1` | Inter typeface (Medium, SemiBold, Bold) | `assets/library/fonts/Inter-SemiBold.woff2` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | SIL Open Font License 1.1 |
 | `gas-burner-v1` | Gas hob burner | `src/library/props/GasBurner.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `glass-of-water-v1` | Glass of water with ice cubes | `src/library/props/GlassOfWater.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating`, `rain-nonstop-everywhere` | original_procedural |
-| `grass-field-v1` | Wind-bent grass field | `src/library/environment/GrassField.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
-| `humanoid-figure-v1` | Procedural articulated human figure | `src/library/characters/Humanoid.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_procedural |
+| `grass-field-v1` | Wind-bent grass field | `src/library/environment/GrassField.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `continents-one-landmass`, `moon-made-of-ice`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `history-ribbon-v1` | Historical data ribbon | `src/library/diagram/HistoryRibbon.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `humanoid-figure-v1` | Procedural articulated human figure | `src/library/characters/Humanoid.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
 | `ice-sheet-v1` | Floating ice sheet (top and underside) | `src/library/environment/IceSheet.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
+| `modeling-helpers-v1` | Procedural modeling helpers | `src/library/util/Modeling.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `moon-body-v1` | Procedural rocky and icy Moon | `src/library/planet/Moon.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
+| `newborn-hand-v1` | Articulated newborn hand | `src/library/characters/NewbornHand.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `ocean-cross-section-v1` | Deep ocean cross-section | `src/library/diagram/OceanCrossSection.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
-| `ocean-surface-v1` | Open-water ocean surface | `src/library/environment/OceanSurface.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_procedural |
-| `overcast-shell-v1` | Planet-wide cloud shell | `src/library/planet/OvercastShell.ts` | `rain-nonstop-everywhere` | `rain-nonstop-everywhere` | original_procedural |
-| `overlay-labels-v1` | Schematic label and callout helpers | `src/library/overlay/Labels.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_code |
+| `ocean-surface-v1` | Open-water ocean surface | `src/library/environment/OceanSurface.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `overcast-shell-v1` | Planet-wide cloud shell | `src/library/planet/OvercastShell.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `rain-nonstop-everywhere` | original_procedural |
+| `overlay-labels-v1` | Schematic label and callout helpers | `src/library/overlay/Labels.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `pedestrian-crowd-v1` | Deterministic articulated pedestrian crossing | `src/library/characters/PedestrianCrowd.ts` | `what-if-every-man-disappeared` | `continents-one-landmass`, `what-if-every-man-disappeared` | original_procedural |
 | `penguin-colony-v1` | Emperor penguin colony | `src/library/creatures/PenguinColony.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
 | `plastic-bottle-v1` | Crumpling plastic bottle | `src/library/props/PlasticBottle.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
-| `rain-v1` | Rain streaks, splash rings and rain shafts | `src/library/fx/Rain.ts` | `rain-nonstop-everywhere` | `rain-nonstop-everywhere` | original_procedural |
-| `sailboat-v1` | Sailboat (sloop) | `src/library/vehicles/Sailboat.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `moon-made-of-ice` | original_procedural |
+| `plate-drift-globe-v1` | Plate-drift Earth (continents as moving plates) | `src/library/planet/PlateDriftGlobe.ts` | `continents-one-landmass` | `continents-one-landmass` | original_procedural |
+| `population-pyramid-v1` | Population pyramid | `src/library/diagram/PopulationPyramid.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `port-diorama-kit-v1` | Port diorama kit | `src/library/environment/PortKit.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `rain-v1` | Rain streaks, splash rings and rain shafts | `src/library/fx/Rain.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `rain-nonstop-everywhere` | original_procedural |
+| `right-whale-v1` | North Atlantic right whale | `src/library/creatures/RightWhale.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `room-box-v1` | Modular room kit | `src/library/environment/RoomBox.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `sailboat-v1` | Sailboat (sloop) | `src/library/vehicles/Sailboat.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `moon-made-of-ice`, `what-if-every-man-disappeared` | original_procedural |
 | `scuba-gear-v1` | Scuba gear for the humanoid | `src/library/characters/ScubaGear.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `sea-ice-v1` | Sea-ice floes, fast-ice platform and tabular iceberg | `src/library/environment/SeaIce.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
-| `shader-noise-math-v1` | Shared shader noise and deterministic math | `src/library/util/glsl.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_code |
-| `sky-dome-v1` | Gradient sky dome with sun and haze | `src/library/environment/SkyDome.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_procedural |
-| `smoke-wisp-v1` | Rising smoke ribbon | `src/library/fx/SmokeWisp.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds` | original_procedural |
+| `seismometer-v1` | Seismometer with schematic trace | `src/library/props/Seismometer.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `shader-noise-math-v1` | Shared shader noise and deterministic math | `src/library/util/glsl.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_code |
+| `ship-bridge-v1` | Ship bridge | `src/library/environment/ShipBridge.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `sky-dome-v1` | Gradient sky dome with sun and haze | `src/library/environment/SkyDome.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
+| `smoke-wisp-v1` | Rising smoke ribbon | `src/library/fx/SmokeWisp.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
 | `snowfall-v1` | Wrapped particle fall (snow or sinking crystals) | `src/library/fx/Snowfall.ts` | `ice-sank-instead-of-floating` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `rain-nonstop-everywhere` | original_procedural |
 | `solar-panel-array-v1` | Ground-mounted solar panel array | `src/library/props/SolarPanelArray.ts` | `rain-nonstop-everywhere` | `rain-nonstop-everywhere` | original_procedural |
-| `starfield-v1` | Seeded starfield | `src/library/space/Starfield.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_procedural |
+| `songbird-v1` | White-crowned sparrow | `src/library/creatures/Songbird.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `sound-rings-v1` | Schematic sound rings | `src/library/diagram/SoundRings.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `starfield-v1` | Seeded starfield | `src/library/space/Starfield.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `what-if-every-man-disappeared` | original_procedural |
 | `terrain-massif-v1` | Fractal mountain massif with altitude contour | `src/library/environment/Terrain.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere` | original_procedural |
+| `thumbnail-title-card-v1` | Thumbnail cover composer (bold or clean) | `src/library/overlay/Thumbnail.ts` | `rain-nonstop-everywhere` | `continents-one-landmass`, `moon-made-of-ice`, `rain-nonstop-everywhere` | original_procedural |
 | `tidal-bulge-v1` | Schematic tidal-potential contours | `src/library/diagram/TidalBulge.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
 | `tidal-flat-v1` | Procedural intertidal estuary | `src/library/environment/TidalFlat.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
-| `underwater-volume-v1` | Shallow underwater environment | `src/library/environment/Underwater.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds` | original_procedural |
+| `underwater-volume-v1` | Shallow underwater environment | `src/library/environment/Underwater.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
+| `vanish-dissolve-v1` | Deterministic material erosion and sideways motes | `src/library/fx/VanishDissolve.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
+| `village-houses-v1` | Village of small gabled houses | `src/library/environment/VillageHouses.ts` | `continents-one-landmass` | `continents-one-landmass` | original_procedural |
 | `water-molecules-v1` | Schematic water molecules: liquid to ice lattice | `src/library/diagram/WaterMolecules.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating`, `moon-made-of-ice` | original_procedural |
+| `wpp2024-world-graphics-v1` | UN WPP 2024 world population graphics data | `assets/library/data/wpp2024/world-graphics.json` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | UN WPP 2024; CC BY 3.0 IGO; attribution required |
 
 ## Reuse instructions
 
@@ -72,6 +96,14 @@ Procedural narrow-body airliner (lathe fuselage with window band, swept wings, w
 **Tags:** aircraft, airliner, plane, aviation, contrails, vehicle
 **Parameters:** length, paintColor, accentColor, contrailLength, contrails, sunColor, engineGlow, airspeed, cutStart, cutEnd, time_s
 **Notes:** Flies toward local -Z. Add both group and contrailGroup to the scene; contrails stay level while the aircraft pitches or sinks. No real airline livery.
+
+### `apartment-facade-v1` — Apartment facade
+
+Reusable cutaway apartment wall with lit furnished rooms for intimate human scenes.
+
+**Tags:** apartment, city, interior
+**Parameters:** seed, floors, columns, floorHeight, windowSize, occupancy, warmth
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
 
 ### `audio-synth-kit-v1` — Procedural audio synthesis kit
 
@@ -97,6 +129,14 @@ Field of edge-bright out-of-focus discs for macro, interior and night-city backg
 **Parameters:** count, seed, center, extent, colors, size, gain, dim, time_s
 **Notes:** Additive; keep gain low over bright backdrops. Disc size is in pixels for 1080-wide output.
 
+### `broadleaf-tree-v1` — Broadleaf street tree
+
+Seeded branched tree with instanced leaves and editable seasonal foliage.
+
+**Tags:** tree, vegetation, city
+**Parameters:** height, canopyWidth, leafCount, seed, leafColor, trunkColor, leafFraction
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
 ### `bubble-stream-v1` — Exhalation bubble stream
 
 Periodic bursts of bubbles from an emitter that wobble, spread, accelerate gently and swell by Boyle's law as the water pressure falls toward the surface; placed statelessly from the burst schedule.
@@ -120,6 +160,22 @@ Word-timed caption renderer for a 2D canvas: clause-aware phrase splitting, two 
 **Tags:** captions, subtitles, typography, overlay, accessibility
 **Parameters:** fontFamily, fontWeight, fontSize, lineHeight, maxCharsPerLine, baselineY, centerX, maxWidth, fill, accent, accentSoft, stroke, strokeWidth, backdrop, emphasis, cues()
 **Notes:** Feed it word timings from tools/narrate.mjs (real synthesized audio aligned with local Whisper), never guessed timings. cues() returns the displayed phrases and their times; tools/transcript.mjs uses it so output SRT/TXT files match the burned-in captions.
+
+### `city-street-block-v1` — Detailed city street and aerial district
+
+Metre-scale street with procedural masonry and room-interior facade textures, warm shopfronts, granite paving, zebra crossing, wet asphalt and light streaks, practical street lamps, pedestrian signals, unbranded vehicles and an instanced surrounding city district. Static near geometry is combined by material for efficient frame capture.
+
+**Tags:** city, street, architecture, crosswalk, wet-road, aerial, windows
+**Parameters:** seed, roadWidth, sidewalkWidth, blocks, storeysMin, storeysMax, windowOccupancy, wetness, farFieldRadius, vehicles, lights, time_s
+**Notes:** All textures are generated by original Canvas code; no external branding or media. Road runs along Z, crossing at origin; facades start at X = plus/minus (roadWidth/2 + sidewalkWidth). Windows and lamps remain on unless lights explicitly changes. Wet-road effects use material response and authored reflection streaks, not a full ray-traced reflection. makeCityCar is exported for unbranded background vehicles. Validated in local Chrome WebGL smoke captures (opening, dissolve, survivors, aerial, memorial and repair crew); no shader errors.
+
+### `clinic-interior-v1` — Clinic interior
+
+Generic clinic corridor, rooms, practical lighting and medical furnishings.
+
+**Tags:** clinic, hospital, interior
+**Parameters:** corridorLength, rooms, lightingMix, seed
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
 
 ### `cloud-ceiling-v1` — Overcast cloud base seen from below
 
@@ -145,6 +201,14 @@ Instanced stylised conifers (tiered cones on a trunk) with snow painted on upwar
 **Parameters:** positions, seed, minHeight, maxHeight, color, trunkColor, snow, snowColor, scatterTrees(count,seed,area,y,reject)
 **Notes:** Mid-ground and background use; tree shapes are simple, so keep them beyond about 30 m from the camera.
 
+### `container-ship-v1` — Container ship
+
+Unbranded container ship with hull, deck cargo, bridge and propeller.
+
+**Tags:** ship, ocean, transport
+**Parameters:** length, beam, draft, containerFill, palette, seed, deckLights, navLights, rpm, speed, pitch, time_s
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
 ### `cooking-pot-v1` — Cooking pot with boiling water
 
 Brushed stainless pot with riveted handles and water: transmissive surface with ripples and boiling bumps, and a stateless bubble pool (small nucleation streams, then large rolling-boil bubbles) controlled by a boil value.
@@ -152,6 +216,14 @@ Brushed stainless pot with riveted handles and water: transmissive surface with 
 **Tags:** pot, kitchen, cooking, water, boiling, bubbles, prop
 **Parameters:** radius, height, waterLevel, seed, bubbles, metalColor, boil, time_s
 **Notes:** boil: 0 still, ~0.2 a few bubbles, 1 rolling boil. Pair with smoke-wisp-v1 for steam and gas-burner-v1 underneath. Needs a reasonably bright environment map for the steel to read as stainless.
+
+### `coral-mounds-v1` — Procedural coral heads
+
+Shallow-reef coral heads in three procedural forms (grooved brain coral, branching fans, table corals on stems), instanced with seeded positions, sizes, rotations and a warm reef palette; matte so they read under caustics and underwater fog.
+
+**Tags:** coral, reef, ocean, underwater, marine, sea-life
+**Parameters:** count (per form), area, ground(x, z), reject(x, z), minSize, maxSize, palette, seed
+**Notes:** Static; add group to the scene. With underwater-volume-v1 pass ground: (x, z) => sea.floorHeight(x, z) so every coral sits on the sand; use reject to keep sand channels open. MeshStandardMaterial with instance colours, so scene lights and FogExp2 apply.
 
 ### `dial-gauge-v1` — Analog dial gauge
 
@@ -206,8 +278,8 @@ Equirectangular maps (longitude -180..180 left to right): day_8k.jpg (Blue Marbl
 Storyboard-driven frame renderer: shot lookup, keyframe cameras, HDR MSAA scene buffer, bloom, ACES grade, vignette, deterministic grain, cross-dissolves, 2D label overlay and caption compositing. renderFrame(i) depends only on i.
 
 **Tags:** render, pipeline, post-processing, bloom, transition, deterministic
-**Parameters:** width, height, fps, duration_s, scale, exposure, bloomStrength, bloomRadius, bloomThreshold, vignette, grain, saturation, contrast, lift, tint
-**Notes:** Workflow for a new story: add src/stories/<slug>/film.ts (createFilm) and register it in src/entry.ts; then run node tools/narrate.mjs stories/<slug>.json, node tools/soundtrack.mjs <slug>, node tools/render.mjs <slug> --frames a,b,c for smoke frames and --final for the MP4. ffmpeg and ffprobe come from the ffmpeg-static and ffprobe-static npm packages. air-pressure-doubled added a sanitize pass before bloom that zeroes NaN/Inf scene pixels so a single bad pixel cannot bloom into a black block; valid pixels are unchanged.
+**Parameters:** width, height, fps, duration_s, scale, exposure, bloomStrength, bloomRadius, bloomThreshold, vignette, grain, saturation, contrast, lift, tint, renderFrame(frame, { overlay, captions })
+**Notes:** Workflow for a new story: add src/stories/<slug>/film.ts (createFilm) and register it in src/entry.ts; then run node tools/narrate.mjs stories/<slug>.json, node tools/soundtrack.mjs <slug>, node tools/render.mjs <slug> --frames a,b,c for smoke frames and --final for the MP4. ffmpeg and ffprobe come from the ffmpeg-static and ffprobe-static npm packages. air-pressure-doubled added a sanitize pass before bloom that zeroes NaN/Inf scene pixels so a single bad pixel cannot bloom into a black block; valid pixels are unchanged. renderFrame(i, { overlay: false, captions: false }) renders a clean still (used for thumbnails); defaults keep normal rendering unchanged.
 
 ### `fish-school-v1` — Instanced fish school
 
@@ -225,13 +297,21 @@ Additive teardrop flame shader on a Y-axis billboard with blue base, hot core an
 **Parameters:** width, height, turbulence, speed, brightness, blueBase, colorCore, colorMid, colorTip, colorBase, seed, intensity, time_s
 **Notes:** turbulence 0.1 = candle, 0.9 = campfire. Layer several with different seeds for a large fire. Outputs HDR values intended for bloom. Also used inside gas-burner-v1 for blue gas jets.
 
+### `font-display-set-v1` — Display fonts for thumbnails
+
+Six license-cleared display faces for thumbnail headlines, chosen per niche: Anton (condensed impact), Bebas Neue (condensed cinematic), Archivo Black (wide heavy), Bangers (comic), Orbitron 900 (sci-fi) and Playfair Display 900 (serif). Latin-subset WOFF2 files with their OFL texts; FONTS.md maps each to its thumbnail.font key and best uses.
+
+**Tags:** font, typography, thumbnail, display, headline
+**Parameters:** thumbnail.font: inter | anton | bebas-neue | archivo-black | bangers | orbitron | playfair
+**Notes:** Copied unmodified from the @fontsource/* 5.3.0 npm packages (Playfair Display has a Reserved Font Name, so keep it unmodified). Loaded by src/entry.ts; metrics (tracking, line height, outline) live in THUMB_FONTS in src/library/overlay/Thumbnail.ts.
+
 ### `font-inter-v1` — Inter typeface (Medium, SemiBold, Bold)
 
 Latin subsets of Inter at weights 500, 600 and 700 for captions and labels.
 
 **Tags:** font, typography, captions, inter
 **Parameters:** 
-**Notes:** Inter by Rasmus Andersson, copied from the @fontsource/inter npm package; licence text in assets/library/fonts/Inter-OFL.txt. Glyphs outside the Latin subset fall back to the system font.
+**Notes:** Inter by Rasmus Andersson, copied from the @fontsource/inter npm package; licence text in assets/library/fonts/Inter-OFL.txt. Glyphs outside the Latin subset fall back to the system font. Inter Black (900) and Black Italic (900 italic) were added from the same @fontsource/inter package (OFL-1.1) as assets/library/fonts/Inter-Black.woff2 and Inter-BlackItalic.woff2 for bold thumbnail covers.
 
 ### `gas-burner-v1` — Gas hob burner
 
@@ -257,6 +337,14 @@ Instanced grass blades over any ground function with a rejection test, bent alon
 **Parameters:** area, count, ground, reject, minHeight, maxHeight, width, baseColor, tipColor, dryColor, flowerFraction, flowerColor, sunDirection, sunColor, skyColor, fogColor, fogDensity, seed, wind.bend, wind.direction, wind.gust, wind.gustSpeed, setLight(), time_s, growth
 **Notes:** Doubling wind.bend shows a wind that pushes twice as hard (small-angle approximation). Grass does not receive shadows; the ground under it does. growth 0..1 (default 1), added for rain-nonstop-everywhere, raises blades in a staggered order for sprouting time-lapses; a noise-based reject gives sparse tufts.
 
+### `history-ribbon-v1` — Historical data ribbon
+
+Three-dimensional extruded time-series ribbon driven by supplied annual data.
+
+**Tags:** history, data, diagram
+**Parameters:** data, width, height, maxValue, color, fraction
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
 ### `humanoid-figure-v1` — Procedural articulated human figure
 
 Adult figure built from capsules and spheres with a joint hierarchy, standing and seated base poses, pose interpolation and two-bone arm IK (reachArm). Intended for respectful mid-distance, back-view and silhouette shots.
@@ -273,6 +361,14 @@ Lake or sea ice lid with a snow-dusted, cracked, reflective top surface and a so
 **Parameters:** size, thickness, snowAmount, seed, horizonColor, zenithColor, sunDirection, sunColor, fogColor, fogDensity, underFogColor, underFogDensity, transmission, setShadow(x,z,radius,strength), time_s
 **Notes:** Top surface at local y = 0. The custom shader does not receive shadow maps; add a blob shadow mesh for figures standing on it. Pair the underside with underwater-volume-v1 (hide that asset's own surface).
 
+### `modeling-helpers-v1` — Procedural modeling helpers
+
+Reusable geometry, rod, material and CanvasTexture helpers for architecture and props.
+
+**Tags:** modeling, geometry, material
+**Parameters:** geometry, material, position, textureSize
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
 ### `moon-body-v1` — Procedural rocky and icy Moon
 
 Seeded near-side lunar maria, cratered ice, moving frost front, albedo-controlled lighting and earthshine for Moon and icy-satellite stories.
@@ -280,6 +376,14 @@ Seeded near-side lunar maria, cratered ice, moving frost front, albedo-controlle
 **Tags:** moon, ice, planet, space, craters, maria
 **Parameters:** radius, seed, sunDirection, albedoRock, albedoIce, iceAmount, earthshine, time_s
 **Notes:** Rock and ice maps are generated from seeded canvas textures; visual geography is illustrative. Use a label when showing a material transformation.
+
+### `newborn-hand-v1` — Articulated newborn hand
+
+Close-view articulated newborn palm and digits with soft skin and nail details.
+
+**Tags:** newborn, hand, human
+**Parameters:** skinColor, scale, roughness, time_s, grasp
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
 
 ### `ocean-cross-section-v1` — Deep ocean cross-section
 
@@ -313,6 +417,14 @@ Sphere of slowly drifting fractal cloud for planets: coverage grows from scatter
 **Parameters:** size, weight, color, alpha, tracking, align, accent, dot, valueColor, sub
 **Notes:** Use projectToScreen() from film-pipeline-v1 to anchor labels to 3D points.
 
+### `pedestrian-crowd-v1` — Deterministic articulated pedestrian crossing
+
+Crowd built from the registered Humanoid rig with seeded overlapping heights and skin/clothing palettes, children, umbrellas, backpacks, opposite crossing directions, analytic gait, deceleration and head turns. Optional per-figure flags invoke the reusable dissolve effect and analytic prop drops.
+
+**Tags:** crowd, people, pedestrians, crosswalk, gait, umbrella, bicycle
+**Parameters:** seed, count, width, depth, speedRange, heightRange, childFraction, flagFraction, umbrellaCount, dissolve, clock_s, vanishStart_s, dissolveEnabled, survivorStop_s, visibleCount, time_s
+**Notes:** Uses humanoid-figure-v1 and vanish-dissolve-v1. Every pose and path is evaluated from absolute caller time; passing identical clock/state reproduces the opening configuration. Figures are intended for respectful medium views and silhouettes, not facial closeups. Validated in local Chrome WebGL smoke captures (opening, dissolve, survivors, aerial, memorial and repair crew); no shader errors. For close views of umbrellas, set umbrellaCount: 0, attach makeUmbrella() to each figure root and hold it with Humanoid.reachArm after update(); pass clock_s from the shot start to keep the seeded spacing.
+
 ### `penguin-colony-v1` — Emperor penguin colony
 
 Instanced vertex-coloured emperor penguins (adults with yellow ear patches, grey downy chicks beside them) with a gentle deterministic sway and shuffle.
@@ -329,6 +441,30 @@ Clear PET bottle (ribbed lathe shell with physical transmission, ribbed screw ca
 **Parameters:** height, radius, seed, tint, labelColor, capColor, crumple
 **Notes:** Deformation and normals are computed in the vertex shader from the crumple value alone (values slightly above 1 give an overshoot). Negative crumple values are not supported; to show a bottle swelling at altitude, add a separate parameter rather than reusing crumple.
 
+### `plate-drift-globe-v1` — Plate-drift Earth (continents as moving plates)
+
+Earth whose continents are separate plates: each plate is the NASA day map cut by the land mask inside lon/lat boxes, drawn on its own sphere layer and rotated rigidly about an Euler pole from today's map (progress 0) to a target arrangement (progress 1). Ocean sphere with sun glint and atmosphere rim, optional glowing mid-ocean ridge, and two schematic overlays measured on the sphere: a dry interior and a hot glow. Ships PANGAEA_PLATES (a Pangaea-like fit with Africa and Eurasia fixed), MID_ATLANTIC_RIDGE and geoDir().
+
+**Tags:** earth, globe, plate-tectonics, continents, pangaea, supercontinent, continental-drift, geology, space
+**Parameters:** radius, sunDirection, plates (name, boxes{lon, lat, ragged}, pole + angle or from/to/spin), viewLon, viewLat, oceanColor, deepColor, atmosphereColor, atmosphereStrength, glint, ridge, setView(lon, lat), setProgress(p, perPlateOverrides), pointOn(lon, lat, plate?), setDryness(amount, center, radius), setHeat(amount, center, radius), ridgeGlow, time_s
+**Notes:** Needs earth-textures-nasa-v1 (day map and land mask). PANGAEA_PLATES poles were fitted to matched coastlines and refined on the land mask for snug seams with little overlap; the arrangement is schematic, not a reconstruction. Boxes with ragged > 0 cut land along a noisy edge so a departing plate leaves a natural coastline (fixed land and plates still tile exactly). For close views set sunDirection every frame from the camera (key light behind and above the camera) and lower glint to about 0.25. pointOn() gives world positions for labels and camera targets on a moving plate.
+
+### `population-pyramid-v1` — Population pyramid
+
+Age by sex bar diagram fed by caller-provided counts in millions; no built-in demographic scenario.
+
+**Tags:** population, demography, diagram
+**Parameters:** maxAge, step, millionsPerUnit, color, depth, male, female
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
+### `port-diorama-kit-v1` — Port diorama kit
+
+Procedural container stacks, cranes, yard lights and working waterfront scenery.
+
+**Tags:** port, industry, crane
+**Parameters:** seed, cranes, containerRows, truckCount, palette, lightsOn, stopAt_s, stopDuration_s, time_s
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
 ### `rain-v1` — Rain streaks, splash rings and rain shafts
 
 Deterministic rain kit. Rain: instanced camera-facing streaks stretched along each drop's velocity, fixed in world space and recycled in a box around the camera; intensity reveals anything from a few drops to a steady fall. RainSplashes: expanding splash rings on puddles, a glass of water or a wet table. RainShaft: soft distant rain curtains hanging from a cloud base.
@@ -336,6 +472,22 @@ Deterministic rain kit. Rain: instanced camera-facing streaks stretched along ea
 **Tags:** rain, weather, drizzle, storm, splash, particles, fx
 **Parameters:** count, seed, box, fallSpeed, wind, streakLength, width, minPx, heightPx, color, brightness, opacity, groundY, near, far, intensity, time_s, RainSplashes: size|radius, cell, period, life, ringScale, lineWidth, color, opacity, seed, intensity, RainShaft: width, height, color, opacity, fallSpeed, seed
 **Notes:** Call update(time_s, camera) every frame; positions are a pure function of time. The streak material is double-sided because the quad's screen winding flips with the fall direction. For readable drizzle at 1080×1920 use width ≈ 2 mm, opacity ≈ 0.45, fallSpeed ≈ 4 m/s, streakLength ≈ 0.25 m; heavier rain: more drops, longer streaks.
+
+### `right-whale-v1` — North Atlantic right whale
+
+Procedural right whale rig with caudal and pectoral motion and visible callosity details.
+
+**Tags:** whale, ocean, marine-life
+**Parameters:** length, preset, callositySeed, flukePeriod_s, skinColor, quality, time_s
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
+### `room-box-v1` — Modular room kit
+
+Reusable furnished room shell and table, chair, cup and plant builders.
+
+**Tags:** interior, room, furniture
+**Parameters:** width, height, depth, wallColor, floorColor, ceiling
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
 
 ### `sailboat-v1` — Sailboat (sloop)
 
@@ -361,6 +513,14 @@ Irregular snow-topped floes with blue-green flanks, an optional flat fast-ice pl
 **Parameters:** seed, floeCount, area, minRadius, maxRadius, thickness, platformRadius, iceberg, avoid, sink, sinkSpan, time_s
 **Notes:** Use over ocean-surface-v1. update(time_s, sink) lowers pieces with staggered delays for melting or counterfactual shots.
 
+### `seismometer-v1` — Seismometer with schematic trace
+
+Generic instrument, cable and synthetic trace for vibration illustrations.
+
+**Tags:** seismic, instrument, trace
+**Parameters:** radius, color, traceWidth, time_s, amplitude
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
 ### `shader-noise-math-v1` — Shared shader noise and deterministic math
 
 GLSL value-noise and fbm chunks plus a fog helper (glsl.ts), with seeded RNG, value noise, fbm, ridged multifractal, easing and wobble helpers (math.ts) used by every library component.
@@ -368,6 +528,14 @@ GLSL value-noise and fbm chunks plus a fog helper (glsl.ts), with seeded RNG, va
 **Tags:** noise, glsl, math, random, utility, shader
 **Parameters:** seed, octaves, gain, lacunarity
 **Notes:** Companion file: src/library/util/math.ts.
+
+### `ship-bridge-v1` — Ship bridge
+
+Unbranded working vessel bridge with windows, helm and navigation displays.
+
+**Tags:** ship, bridge, interior
+**Parameters:** width, autopilotHeading, practicalWarmth, nightMode
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
 
 ### `sky-dome-v1` — Gradient sky dome with sun and haze
 
@@ -401,6 +569,22 @@ Rows of tilted photovoltaic panels with a canvas-drawn cell grid (silver busbars
 **Parameters:** rows, cols, panelSize, tilt, rowSpacing, gap, clearance, cellColor, frameColor, wetness
 **Notes:** The group origin is the centre of the array on the ground and panels face +Z. Give the scene an environment map (for example SkyDome.toEnvironment) for convincing reflections.
 
+### `songbird-v1` — White-crowned sparrow
+
+Parameterized songbird with feather layers, beak, legs and poseable head.
+
+**Tags:** bird, songbird, wildlife
+**Parameters:** preset, length, seed, quality, songEnvelope, headTurn, tailFlick, time_s
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
+### `sound-rings-v1` — Schematic sound rings
+
+Deterministic circular acoustic-wave illustration for ground, air or underwater scenes.
+
+**Tags:** sound, wave, diagram
+**Parameters:** mode, color, maxRadius, thickness, opacity, speedVisual, emissionRate, count, amplitude, time_s
+**Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
 ### `starfield-v1` — Seeded starfield
 
 Point-sprite star shell with a power-law brightness distribution and blackbody-like tints; optional horizon cut-off for terrestrial night skies.
@@ -416,6 +600,14 @@ Seeded ridged-multifractal mountain that falls to sea level at its edges, vertex
 **Tags:** mountain, terrain, island, altitude, contour, landscape
 **Parameters:** seed, width, depth, segmentsX, segmentsZ, peakHeight, snowLine, treeLine, contourColor, setContour(altitude,strength,width)
 **Notes:** mesh.position.y is the base (sea) level. terrain.peak gives the summit in mesh-local coordinates for framing. Uses scene fog for aerial perspective.
+
+### `thumbnail-title-card-v1` — Thumbnail cover composer (bold or clean)
+
+Video thumbnails and covers drawn over a clean film still. Bold (default): punch-in on the subject with a punchier grade and vignette, huge tilted Inter Black capitals with a heavy outline and hard shadow, yellow highlight words, a red sticker and a yellow arrow to the subject. Clean: calm centred headline title card with an accent bar. Text stays inside the band that survives grid crops and app buttons.
+
+**Tags:** thumbnail, cover, headline, title, typography, overlay, publishing, clickbait, sticker, arrow
+**Parameters:** headline, highlight, position, width, height, fontFamily, weight, color, accent, maxSize, minSize, maxLines, widthFrac, safeTop, safeBottom, uppercase, scrim, style, badge, badgeAt, focus, zoom, anchor, arrow, grade, tilt, highlightColor, badgeColor, arrowColor, font (THUMB_FONTS), grade (THUMB_GRADES), palette: text, highlight, badge, badge_text, arrow
+**Notes:** composeBoldThumbnail (default) and drawThumbnailTitle (style "clean") in the same module. src/entry.ts renderThumbnail() feeds the storyboard thumbnail block (badge_at -> badgeAt) over FilmPipeline.renderFrame(i, { overlay: false, captions: false }); tools/render.mjs writes output/<slug>.jpg after --final, or alone with --thumbnail. Long sticker text shrinks to about 64% of the width. Bold style needs Inter 900 / 900 italic (font-inter-v1). Style varies per video: font from THUMB_FONTS (font-display-set-v1), colour grade from THUMB_GRADES, palette colours and tilt.
 
 ### `tidal-bulge-v1` — Schematic tidal-potential contours
 
@@ -438,8 +630,24 @@ Seeded mudflat heightfield with branching channels, marsh tufts, and a clipped w
 Complete shallow-sea set seen from below the surface: rippling Snell-window surface, camera-aligned sun shafts, caustic-lit sand and rocks, swaying seagrass, drifting particles and an optional bubble burst.
 
 **Tags:** underwater, ocean, reef, sea, caustics, light-shafts, seagrass, bubbles
-**Parameters:** depth, extent, waterColor, deepColor, surfaceColor, sunDirection, rayStrength, rayCount, causticScale, causticStrength, fogDensity, grassCount, particleCount, seed, setBubbleBurst(t0,origin), time_s, backdrop.visible, surface.visible
-**Notes:** Surface at local y = 0. Exposes fogColor and fogDensity so other objects (for example fish-school-v1) can match the water. backdrop and surface meshes are now public so a stage can hide them above water or under an ice sheet. air-pressure-doubled guarded NaN-prone pow() calls in the shaft and caustic shaders and the floor normal.
+**Parameters:** depth, extent, waterColor, deepColor, surfaceColor, sunDirection, rayStrength, rayCount, causticScale, causticStrength, fogDensity, grassCount, particleCount, seed, setBubbleBurst(t0,origin), time_s, backdrop.visible, surface.visible, rockCount, floorHeight(x, z)
+**Notes:** Surface at local y = 0. Exposes fogColor and fogDensity so other objects (for example fish-school-v1) can match the water. backdrop and surface meshes are now public so a stage can hide them above water or under an ice sheet. air-pressure-doubled guarded NaN-prone pow() calls in the shaft and caustic shaders and the floor normal. floorHeight(x, z) returns the exact sand height for seating props (e.g. corals); rockCount shows only the first N of the 16 seeded rocks without changing the random sequence.
+
+### `vanish-dissolve-v1` — Deterministic material erosion and sideways motes
+
+Material modifier that clones source materials and adds reversible world-space threshold erosion with a soft emissive rim. Seeded short-lived motes drift along a configurable vector without an automatic upward bias.
+
+**Tags:** disappear, dissolve, particles, material, fx
+**Parameters:** seed, duration_s, noiseScale, edgeWidth, rimColor, rimIntensity, moteCount, moteLifetime_s, moteDrift, start_s, origin, enabled, time_s
+**Notes:** Attach motes separately beside the source object. update(time_s,start_s,origin,enabled) returns progress. Cloned MeshStandardMaterial programs share one shader cache key at the default material configuration. All temporal state is supplied by the caller. Validated in local Chrome WebGL smoke captures (opening, dissolve, survivors, aerial, memorial and repair crew); no shader errors.
+
+### `village-houses-v1` — Village of small gabled houses
+
+Seeded houses at given sites and headings: walls in a pastel palette, overhanging gabled roofs, doors, lit and dark windows, optional stilts, merged into four draw calls. glow scales the window light for dusk, storms or lightning.
+
+**Tags:** houses, village, town, buildings, architecture, coast, settlement, people
+**Parameters:** sites [x, z, yaw], ground(x, z), seed, width, depth, height, roofPitch, wallColors, roofColors, windowColor, litFraction, stilts, glow
+**Notes:** Yaw 0 faces +Z (−π/2 faces −X). Windows are unlit emissive quads that still take scene fog, so lit windows glow through rain haze; read best from 15–80 m. Pair with pedestrian-crowd-v1 for inhabited scenes.
 
 ### `water-molecules-v1` — Schematic water molecules: liquid to ice lattice
 
@@ -448,3 +656,11 @@ Instanced H2O molecules that morph between a jostling liquid and an open hexagon
 **Tags:** water, ice, molecules, chemistry, schematic, diagram, lattice
 **Parameters:** seed, cells, layers, bond, oxygenColor, hydrogenColor, bondColor, liquidScale, freeze, time_s
 **Notes:** Always label as schematic and not to scale. halfSize gives the ice-state bounding box for outline boxes; view down +Z to reveal the hexagons.
+
+### `wpp2024-world-graphics-v1` — UN WPP 2024 world population graphics data
+
+World historical totals and 2026 age-by-sex bars extracted from UN WPP 2024; five-year groups divided evenly for schematic single-year bars; future retention is an explicitly illustrative scenario.
+
+**Tags:** population, demography, data
+**Parameters:** year, age, sex
+**Notes:** UN DESA Population Division, World Population Prospects 2024, https://population.un.org/wpp/ . The age bars are schematic and future retention is illustrative.
