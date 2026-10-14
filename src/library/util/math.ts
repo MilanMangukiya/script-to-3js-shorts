@@ -63,3 +63,6 @@ export function ridged2(x: number, y: number, seed = 0, octaves = 6): number {
 /** Smooth deterministic 1D wobble in [-1,1] built from incommensurate sines. */
 export const wobble = (t: number, seed = 0) =>
   (Math.sin(t * 1.0 + seed * 1.7) + Math.sin(t * 2.31 + seed * 4.1) * 0.6 + Math.sin(t * 5.13 + seed * 9.3) * 0.3) / 1.9;
+
+/** Same generator as rng (mulberry32), under the name some modules import. */
+export const mulberry32 = rng;

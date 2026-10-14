@@ -33,8 +33,10 @@ async function boot() {
   const q = new URLSearchParams(location.search), slug = q.get('slug')!, scale = Number(q.get('scale') ?? '1'), base = '/';
   const [story, narration] = await Promise.all([
     fetch(`${base}stories/${slug}.json`).then((r) => r.json()),
-    fetch(`${base}build/${slug}/audio/narration.json`).then((r) => r.json()),
+    // Missing timings (e.g. a thumbnail for a film whose build/ was cleaned) give caption-less frames instead of failing.
+    fetch(`${base}build/${slug}/audio/narration.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
   ]);
+  if (!narration) console.warn(`no build/${slug}/audio/narration.json: rendering without captions`);
   for (const [weight, file, style] of [[500, 'Inter-Medium', 'normal'], [600, 'Inter-SemiBold', 'normal'], [700, 'Inter-Bold', 'normal'], [900, 'Inter-Black', 'normal'], [900, 'Inter-BlackItalic', 'italic']] as const) {
     const face = new FontFace('Inter', `url(${base}assets/library/fonts/${file}.woff2)`, { weight: String(weight), style });
     document.fonts.add(await face.load());
@@ -49,7 +51,7 @@ async function boot() {
   const cap = story.captions, safe = cap.safe_area;
   const captionAccent = cap.active_word_treatment?.match(/#[0-9a-fA-F]{6}/)?.[0];
   const captions = new KineticCaptions(
-    story.scenes.map((sc: any) => ({ offset_s: sc.narration.start_s, words: narration.scenes.find((n: any) => n.id === sc.id).words, emphasis: sc.caption_emphasis })),
+    story.scenes.map((sc: any) => ({ offset_s: sc.narration.start_s, words: narration?.scenes.find((n: any) => n.id === sc.id)?.words ?? [], emphasis: sc.caption_emphasis })),
     { ...DEFAULT_CAPTION_STYLE, ...(captionAccent ? { accent: captionAccent } : {}), ...(cap.style?.includes('backdrop pill') ? { backdropStyle: 'pill' as const, backdrop: 0.72, fontWeight: 700 } : {}), fontSize: cap.font_size_px, lineHeight: Math.round(cap.font_size_px * 1.27), maxCharsPerLine: cap.max_chars_per_line,
       baselineY: safe.caption_baseline_y_px, centerX: (safe.left_px + (p.width - safe.right_px)) / 2, maxWidth: p.width - safe.left_px - safe.right_px },
   );

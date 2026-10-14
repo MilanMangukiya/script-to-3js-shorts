@@ -1813,6 +1813,41 @@
       }
     }
   ],
+  "thumbnail": {
+    "time_s": 2.2,
+    "headline": "WHAT IF ICE SANK INSTEAD?!",
+    "highlight": [
+      "ICE",
+      "SANK"
+    ],
+    "position": "top",
+    "badge": "FROZEN OCEANS",
+    "badge_at": [
+      0.75,
+      0.32
+    ],
+    "focus": [
+      0.48,
+      0.6
+    ],
+    "zoom": 1.16,
+    "anchor": [
+      0.5,
+      0.62
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#38BDF8",
+      "badge": "#1D4ED8",
+      "badge_text": "#FFFFFF",
+      "arrow": "#38BDF8"
+    },
+    "grade": "cool",
+    "tilt": -3
+  },
   "delivery": {
     "video_output": "output/ice-sank-instead-of-floating.mp4",
     "video_codec": "h264",

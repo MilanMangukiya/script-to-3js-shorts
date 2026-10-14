@@ -3045,6 +3045,99 @@
       ],
       "license": "original_procedural",
       "notes": "Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation."
+    },
+    {
+      "id": "city-damage-map-v1",
+      "name": "3D tactical metropolitan damage & survival radius map",
+      "type": "three_component",
+      "source_path": "src/library/diagram/CityDamageMap.ts",
+      "description": "Dark-mode satellite street grid with winding river channel, concentric color-coded blast/gravity/thermal radius rings (e.g. 0.5 MI, 2 MI, 10 MI, 50 MI), pulsing epicenter pin, radar shockwave sweep, and ringPointWorld() helper for anchoring overlay-labels-v1 callouts.",
+      "tags": [
+        "map",
+        "city",
+        "radius",
+        "blast",
+        "survival",
+        "diagram",
+        "shockwave",
+        "black-hole"
+      ],
+      "configurable_parameters": [
+        "size",
+        "seed",
+        "epicenter",
+        "rings",
+        "progress",
+        "time_s",
+        "ringPointWorld(ringIndex, angleDeg)"
+      ],
+      "created_for": "coin-black-hole-city",
+      "used_in": [],
+      "license": "original_procedural",
+      "notes": "Pair with overlay-labels-v1 drawCallout() using projectToScreen(map.ringPointWorld(i, deg)) and ask 'Where would you be on the map?' to drive comment velocity."
+    },
+    {
+      "id": "planetary-ring-system-v1",
+      "name": "Procedural multi-band planetary ring system with shadow cutout",
+      "type": "three_component",
+      "source_path": "src/library/planet/PlanetaryRings.ts",
+      "description": "Multi-band concentric ring disc with Cassini and Encke divisions, ice/rock radial color gradient, and real-time planetary shadow cylinder cutout on the anti-solar side.",
+      "tags": [
+        "rings",
+        "saturn",
+        "earth",
+        "planet",
+        "space",
+        "orbit",
+        "shadow"
+      ],
+      "configurable_parameters": [
+        "innerRadius",
+        "outerRadius",
+        "planetRadius",
+        "tiltDeg",
+        "sunDirection",
+        "colorInner",
+        "colorOuter",
+        "opacity",
+        "seed",
+        "time_s"
+      ],
+      "created_for": "earth-rings-like-saturn",
+      "used_in": [],
+      "license": "original_procedural",
+      "notes": "Attach to earth-globe-v1 group for orbital views, or position in world space above sky-dome-v1 for ground-level ring-arch and shadow-winter views."
+    },
+    {
+      "id": "vortex-debris-pull-v1",
+      "name": "Deterministic singularity / vortex debris accretion rig",
+      "type": "three_component",
+      "source_path": "src/library/fx/VortexPull.ts",
+      "description": "Event-horizon core with relativistic photon ring and instanced urban/terrain debris chunks that lift and spiral inward in staggered distance order.",
+      "tags": [
+        "black-hole",
+        "vortex",
+        "tornado",
+        "debris",
+        "destruction",
+        "gravity",
+        "fx"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "count",
+        "origin",
+        "fieldRadius",
+        "coreRadius",
+        "showCore",
+        "ringColor",
+        "progress",
+        "time_s"
+      ],
+      "created_for": "coin-black-hole-city",
+      "used_in": [],
+      "license": "original_procedural",
+      "notes": "Pair with city-street-block-v1 (carLiftProgress, roofLiftProgress) and pedestrian-crowd-v1 (vortexPull) for sequential urban accretion."
     }
   ]
 }

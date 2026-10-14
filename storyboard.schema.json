@@ -14,7 +14,8 @@
     "scenes",
     "asset_plan",
     "distribution",
-    "delivery"
+    "delivery",
+    "thumbnail"
   ],
   "properties": {
     "schema_version": {
@@ -67,7 +68,7 @@
           "type": "integer",
           "minimum": 45,
           "maximum": 90,
-          "description": "Video duration 45–90 seconds inclusive; 55–75 seconds typical."
+          "description": "Video duration 45–90 seconds inclusive; 46–56 seconds target for high-retention simulations."
         },
         "language": {
           "const": "en"
@@ -267,6 +268,11 @@
         "opening_hook": {
           "type": "string"
         },
+        "mid_video_rehook": {
+          "type": "string",
+          "minLength": 12,
+          "description": "Pattern-interrupt reveal or survival escalation at ~45-55% runtime to prevent mid-video swipe-away."
+        },
         "ending_payoff": {
           "type": "string"
         },
@@ -293,7 +299,10 @@
       ],
       "properties": {
         "voice_style": {
-          "const": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting"
+          "enum": [
+            "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+            "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence"
+          ]
         },
         "voice_engine_preference": {
           "type": "array",
@@ -309,7 +318,7 @@
         "narration_target_wpm": {
           "type": "integer",
           "minimum": 120,
-          "maximum": 160
+          "maximum": 170
         },
         "music_direction": {
           "type": "string",
@@ -482,7 +491,7 @@
             "properties": {
               "text": {
                 "type": "string",
-                "minLength": 20
+                "minLength": 15
               },
               "start_s": {
                 "type": "number",
@@ -494,6 +503,17 @@
               },
               "delivery_note": {
                 "type": "string"
+              },
+              "pacing_energy": {
+                "enum": [
+                  "fast_hook",
+                  "crisp_mechanism",
+                  "steady_escalation",
+                  "weighty_impact",
+                  "reflective_payoff",
+                  "loop_bridge"
+                ],
+                "description": "Controls per-scene TTS speed multiplier and pause tightness in tools/narrate.mjs."
               }
             }
           },
@@ -607,6 +627,78 @@
                     },
                     "lens_notes": {
                       "type": "string"
+                    },
+                    "handheld_sway": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 1,
+                      "description": "Deterministic POV handheld breathing/walking sway (0 = tripod locked, 0.25-0.5 = ground-level human POV)."
+                    },
+                    "impulse_shake": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "at_s",
+                        "duration_s",
+                        "intensity"
+                      ],
+                      "properties": {
+                        "at_s": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "duration_s": {
+                          "type": "number",
+                          "exclusiveMinimum": 0,
+                          "maximum": 3
+                        },
+                        "intensity": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                },
+                "hud_telemetry": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "description": "Diegetic top-left simulation counter rendered via overlay-labels-v1.",
+                  "required": [
+                    "timer_label",
+                    "metric_label",
+                    "start_value",
+                    "end_value",
+                    "unit"
+                  ],
+                  "properties": {
+                    "timer_label": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 28
+                    },
+                    "metric_label": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 28
+                    },
+                    "start_value": {
+                      "type": "number"
+                    },
+                    "end_value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string",
+                      "maxLength": 16
+                    },
+                    "alert_level": {
+                      "enum": [
+                        "normal",
+                        "warning",
+                        "critical"
+                      ]
                     }
                   }
                 },
@@ -957,6 +1049,11 @@
           "type": "string",
           "minLength": 12
         },
+        "comment_bait_question": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Interactive map or personal survival question appended to social captions (e.g., 'Where would you be on the map? 👇')."
+        },
         "seo_integrity_note": {
           "type": "string",
           "minLength": 15
@@ -980,8 +1077,8 @@
         "headline": {
           "type": "string",
           "minLength": 3,
-          "maxLength": 60,
-          "description": "Truthful curiosity hook in about 2-8 words (often the what-if question, ending in ?!); drawn in huge outlined capitals."
+          "maxLength": 38,
+          "description": "Truthful curiosity hook in 2-5 punchy words (often ending in ?!); drawn in huge outlined capitals."
         },
         "highlight": {
           "type": "array",
@@ -1004,7 +1101,7 @@
           "type": "string",
           "minLength": 2,
           "maxLength": 28,
-          "description": "Sticker text: a striking true number or twist the film shows, e.g. \"≈6× brighter\"."
+          "description": "Sticker text: a striking true number or twist the film shows, e.g. \"3,900,000 G\"."
         },
         "badge_at": {
           "type": "array",

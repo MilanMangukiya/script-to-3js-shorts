@@ -1,33 +1,27 @@
-# AGENTS.md — Codex Production Contract: Persistent What-If Shorts Studio
+# AGENTS.md — Binding Repository Instructions for Codex & Autonomous Agents
 
-## Non-negotiable outcome
-Turn `stories/<slug>.json` into one finished **Three.js cinematic MP4** and durable library/catalog updates. Valid runtime: **45–90 seconds** inclusive, not automatically 90. 1080×1920 portrait, 30 FPS, H.264/yuv420p and AAC 48kHz stereo (`+faststart`) at `output/<slug>.mp4`. Film all storyboard shots rather than delivering a test preview.
+## REPOSITORY MISSION
+Generate, voice, score, caption, render, and publish-prepare deterministic 9:16 Three.js counterfactual simulation Shorts (`1080×1920`, `30 fps`, H.264/AAC) from `stories/<slug>.json` to `output/<slug>.mp4` in a single autonomous run.
 
-## Reuse-first asset lifecycle — essential
-Treat the entire repository as one ongoing studio across dozens/hundreds of videos.
-1. Open `assets/registry.json` and storyboard `asset_plan` before building. Search actual existing asset IDs/tags; do not assume unregistered or `new_reusable_asset_candidates` entries exist.
-2. **Reuse existing code/assets wherever scientifically and visually suitable**. Configure instead of duplicate. Code modules: `src/library/`; reusable binary/textures/audio: `assets/library/`. Build story-specific sets/shots outside the shared library.
-3. New Earth, Moon, Sun, planet, oceans, starfields, terrain, vegetation, clouds, particles, shaders, camera rigs, etc. that can support future topics should be parameterized and stored in the shared library **on the first video that creates them**. Deterministic frame time, typed options, editable visual quality, separate story-specific setups.
-4. Register **only actually present and validated** assets in `assets/registry.json`, stable unique kebab-case `id`, `name`, `type`, `source_path`, `description`, `tags` (array), `configurable_parameters` (array), `created_for` slug, `used_in` (array), `license` and `notes`. Preserve compatibility or version changed assets; track proper rights/attribution; never overwrite a shared asset destructively.
-5. Record exact reused and created asset IDs in `metadata/<slug>.json`. `scripts/finalize_video.py` records `used_in` and rebuilds `ASSET_LIBRARY.md`. This compounds asset reuse from video 1 to video 2 and beyond.
+## BINDING CONTRACTS
+- **Prompt Specs:** `01_MASTER_STORYBOARD_PROMPT.md` and `04_BUILD_VIDEO_PROMPT.md`.
+- **Schema Contract:** `storyboard.schema.json` (validate via `python scripts/validate_storyboard.py stories/<slug>.json`).
+- **Asset Library:** `assets/registry.json` (`reuse_before_create` mode). Inspect registered components in `src/library/` before writing new geometry or shaders.
 
-## Rendering workflow
-1. Inspect existing dependencies/tools, story JSON and relevant library entries; run `python scripts/validate_storyboard.py stories/<slug>.json`.
-2. Implement all shots with photoreal/cinematic Three.js visuals, motivated camera keyframes, rich materials, relevant planetary/human/ecological worldbuilding, clean transition effects and physically defensible scale (or labeled schematics). No static-slide substitute, generic globe loop or ugly placeholders.
-3. Implement frame-perfect deterministic `renderAt(frameIndex)`: `time_s=frameIndex/30`; seeded randomness, stateless camera/object/shader evaluation. Capture browser WebGL frames and encode with FFmpeg.
-4. Generate calm, peaceful licensed **male** narration via local Kokoro or Piper where available; synchronize every spoken word to legible, designed, burned-in captions. Mix understated rights-cleared music/ambience at intelligible voice levels. No paid media APIs.
-5. Thumbnail for every video: `output/<slug>.jpg` (same name as the video), a 1080×1920 JPG ≤ 2 MB: a bold, click-worthy cover built from a clean still (no captions or labels) at `thumbnail.time_s`, with a punch-in on the subject (`focus`, `zoom`, `anchor`), punchier colour, a huge outlined headline (`headline`, `highlight` words in yellow), a red sticker (`badge`, optional `badge_at`) and an arrow to the subject. Hooks may tease but must stay true to the film (questions, real numbers); `style: "clean"` gives a plain title card. Choose the style per video to fit its niche and subject, and vary it between videos: `font` (see `assets/library/fonts/display/FONTS.md`), `palette` colours, `grade` and `tilt`. `node tools/render.mjs <slug> --final` writes it right after the MP4; `node tools/render.mjs <slug> --thumbnail` regenerates only the thumbnail. The finalizer refuses a video without it. It is uploaded to Hugging Face with its video, under the same number.
-6. Essential QA: storyboard schema/timeline, 3 rendered frame samples, the thumbnail, final `ffprobe` stream+runtime check and nonempty file. Skip irrelevant unit/regression/E2E tests, full coverage, lint sweeps and long reports. Fix real failures; do not fake success.
-
-## Per-video SEO record and cumulative catalog — required after every render
-- Create `metadata/<slug>.json` based on `examples/moon-half-distance.metadata.example.json` and the **actual film** (not hypothetical scenes that were not made). Natural searchable language, accurate science and platform-specific copy. Supply separate metadata for **YouTube Shorts, Instagram Reels, Facebook Reels, TikTok and X**: titles where applicable, platform-ready descriptions/captions/posts, relevant hashtags, search keywords, plus YouTube tag list. Copy rules (the finalizer enforces them): every platform carries **5–15 relevant hashtags** (no generic spam), and every platform's title starts with **"What if"**: the YouTube Shorts and Facebook Reels titles, and the opening line of the Instagram and TikTok captions and the X post, which have no title field. The X post plus its hashtags stays within 280 characters.
-- Record the rendered filename, topic, runtime, scoped science caveat, `created_asset_ids`, `reused_asset_ids`; leave `published_urls` empty until genuine URLs exist. Don't claim SEO guarantees or automatic posting.
-- Then **run** `python scripts/finalize_video.py <slug>`; it verifies the MP4, validates metadata and the copy rules, writes the ready-to-paste publishing copy `output/<slug>.md` (same name as the video), creates user-copyable `metadata/<slug>.md`, regenerates history + all SEO blocks in **`VIDEO_CATALOG.md`**, and refreshes `assets/registry.json`/`ASSET_LIBRARY.md`. Do not consider the video complete until this succeeds. The index generator is idempotent and prevents duplicate video rows.
-- Then (required for every video) upload `output/<slug>.mp4`, its thumbnail `output/<slug>.jpg` and its publishing copy `output/<slug>.md` to the creator's private Hugging Face dataset repo set in `huggingface.json` (`Whatif2203/whatif`), into the one shared `videos/` folder as `<NNN>-<slug>.mp4`, `<NNN>-<slug>.jpg` and `<NNN>-<slug>.md`, all three under the same number in one commit. NNN is the next zero-padded number after the highest already in that folder, read from the Hub at upload time so other developers' uploads count; a film that already has a number keeps it and its files are replaced. `node tools/finalize.mjs <slug>` does it automatically: finalize → `python scripts/upload_to_hf.py <slug>` → finalize again so the links appear in `metadata/<slug>.md` and `VIDEO_CATALOG.md`. Unchanged files are skipped, simultaneous uploads are retried safely, and `python scripts/upload_to_hf.py --all` uploads every finished video in `output/`. Never read, print or commit the Hugging Face token. If it fails, report that blocker.
-- Update published URLs in metadata JSON manually after posting and rerun finalizer for tracking.
-
-## Token efficiency
-Read the registry once and only import assets relevant to the current shot; avoid whole-project dumps. Reuse components, keep code modular but small, avoid repeated explanations/plans, verbose logs or massive suites. Smoke-test before high-resolution frame capture. These efficiencies **never waive** validation of the real MP4, creating SEO metadata or updating both cumulative indexes.
-
-## Final response — strict
-**On successful render, metadata/index finalization AND Hugging Face upload (video, thumbnail and publishing copy), output exactly one line containing the absolute path to the finished MP4 and nothing else.** No Markdown, limitations, summaries, feature inventories, test reports or catalog text. If a required step fails, output one factual concise blocker, not an invented success path.
+## EXECUTION CHECKLIST (DO NOT SKIP STEPS)
+1. **Storyboard (`stories/<slug>.json`):**
+   - Target `46–56s` duration, `8–10` scenes, `148–160 WPM` hook cadence.
+   - Sentence 1 must drop straight into a 2nd-person domestic/street-level consequence without repeating the title.
+   - Include `hud_telemetry` on shots, `handheld_sway` / `impulse_shake` on ground cameras, `mid_video_rehook` in `creative_direction`, `comment_bait_question` in `distribution`, and a mandatory `bold` `thumbnail` block (`headline` $\le 38$ chars, quantified `badge`, `arrow: true`).
+2. **Stage Implementation (`src/stories/<slug>/`):**
+   - Register the film in `src/entry.ts`.
+   - Reuse registered 3D assets (`city-street-block-v1`, `pedestrian-crowd-v1`, `earth-globe-v1`, `ocean-surface-v1`, `flame-v1`, `vanish-dissolve-v1`, etc.).
+   - Ban 2D bar charts, floating rulers, frozen back-of-head mannequins ($>1.5\text{ s}$), and on-screen academic disclaimer chips (`SCHEMATIC • NOT TO SCALE`).
+3. **Audio & Captions:**
+   - Run `node tools/narrate.mjs stories/<slug>.json` and `node tools/transcript.mjs <slug>`.
+   - Implement `src/stories/<slug>/soundtrack.mjs` with a $0.3\text{ s}$ pre-impact silence drop and staggered destruction SFX; run `node tools/soundtrack.mjs <slug>` (`-14.0 LUFS`, $\le -1.0\text{ dBTP}$).
+4. **Render & Finalize:**
+   - Smoke test 3 frames: `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5`.
+   - Final render: `node tools/render.mjs <slug> --final --crf 19`.
+   - Write `metadata/<slug>.json` (YouTube `"What if"` search title; TikTok/Reels/X 2nd-person POV hook + `comment_bait_question`; science-qualified hashtags).
+   - Run `node tools/finalize.mjs <slug>` and reply with **only** the absolute path to `output/<slug>.mp4`.

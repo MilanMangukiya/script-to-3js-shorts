@@ -1924,6 +1924,41 @@
     "distinctive_angle": "Instead of a crushing catastrophe, a careful look at what twice the air would really change: people barely feel it, but bottles crumple, Everest becomes breathable, pots boil at 120 C, breezes push twice as hard, carbon dioxide doubles and sunsets deepen.",
     "seo_integrity_note": "Do not claim people would be crushed, the sky would turn red at noon or the oceans would rise; keep 'likely' for warming and present wind and sunset changes as same-speed or illustrative comparisons."
   },
+  "thumbnail": {
+    "time_s": 2.0,
+    "headline": "AIR PRESSURE DOUBLED?!",
+    "highlight": [
+      "PRESSURE",
+      "DOUBLED"
+    ],
+    "position": "top",
+    "badge": "2 ATMOSPHERES",
+    "badge_at": [
+      0.75,
+      0.32
+    ],
+    "focus": [
+      0.5,
+      0.55
+    ],
+    "zoom": 1.18,
+    "anchor": [
+      0.5,
+      0.62
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "bebas-neue",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FACC15",
+      "badge": "#EF4444",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FACC15"
+    },
+    "grade": "vivid",
+    "tilt": -3
+  },
   "delivery": {
     "video_output": "output/air-pressure-doubled.mp4",
     "video_codec": "h264",

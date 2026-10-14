@@ -1,168 +1,437 @@
-import { clamp, smoothstep } from '../util/math';
+/**
+ * caption-kinetic-v1 — Word-Timed Kinetic Burned-In Captions
+ *
+ * Driven by real synthesized audio word timings from tools/narrate.mjs (Whisper alignment).
+ * Preserves cues() for tools/transcript.mjs so output/<slug>.srt and .txt match screen text[cite: 1].
+ *
+ * Upgraded defaults for viral retention:
+ * - Larger default fontSize (70 px), tighter line wrapping (20 chars/line), and safer baselineY (1320 px)[cite: 1, 2].
+ * - Supports active-word accent pill + phrase-level `accent_color`, `gentle_scale`, and `subtle_glow`[cite: 1, 2].
+ */
 
-export interface CaptionWord { text: string; start_s: number; end_s: number }
-export interface CaptionSceneInput {
-  /** Absolute time the scene's narration clip starts. */
-  offset_s: number;
-  /** Word timings relative to the clip (from the real synthesized audio). */
-  words: CaptionWord[];
-  emphasis?: { phrase: string; treatment: 'accent_color' | 'gentle_scale' | 'subtle_glow' | 'none' }[];
+import { KineticCaptions as LegacyKineticCaptions, DEFAULT_CAPTION_STYLE, type CaptionSceneInput, type CaptionStyle } from './KineticCaptionsLegacy';
+// Earlier API, still used by src/entry.ts and tools/transcript.mjs.
+export { DEFAULT_CAPTION_STYLE };
+export type { CaptionSceneInput, CaptionStyle, CaptionWord } from './KineticCaptionsLegacy';
+
+export type EmphasisTreatment = 'accent_color' | 'gentle_scale' | 'subtle_glow' | 'none';
+
+export interface CaptionEmphasisSpec {
+  phrase: string;
+  treatment: EmphasisTreatment;
 }
-export interface CaptionStyle {
-  fontFamily: string; fontWeight: number; fontSize: number; lineHeight: number;
-  maxCharsPerLine: number; baselineY: number; centerX: number; maxWidth: number;
-  fill: string; accent: string; accentSoft: string; stroke: string; strokeWidth: number;
-  backdrop: number;
-  backdropStyle?: 'band' | 'pill';
+
+export interface WordTiming {
+  word: string;
+  start_s: number;
+  end_s: number;
+  sceneId?: string;
 }
-export const DEFAULT_CAPTION_STYLE: CaptionStyle = {
-  fontFamily: 'Inter, "Segoe UI", system-ui, sans-serif', fontWeight: 600, fontSize: 66, lineHeight: 84,
-  maxCharsPerLine: 24, baselineY: 1360, centerX: 500, maxWidth: 800,
-  fill: '#F6F0E4', accent: '#FFB45C', accentSoft: '#FFD9A6', stroke: 'rgba(14,16,22,0.92)', strokeWidth: 9, backdrop: 0.3,
-};
 
-interface Word { text: string; start: number; end: number; treat: string; }
-interface Phrase { words: Word[]; lines: Word[][]; start: number; end: number }
+export interface SceneNarrationInput {
+  id?: string;
+  start_s: number;
+  end_s: number;
+  text?: string;
+  words?: WordTiming[];
+  caption_emphasis?: CaptionEmphasisSpec[];
+}
 
-const endsSentence = (w: string) => /[.?!]["')]?$/.test(w);
-const endsClause = (w: string) => /[,;:]$/.test(w);
+export interface CaptionCue {
+  index: number;
+  start_s: number;
+  end_s: number;
+  text: string;
+  lines: WordTiming[][];
+  words: WordTiming[];
+  emphasis: CaptionEmphasisSpec[];
+}
+
+export interface KineticCaptionsOptions {
+  fontFamily?: string;
+  fontWeight?: number | string;
+  fontSize?: number;
+  lineHeight?: number;
+  maxCharsPerLine?: number;
+  baselineY?: number;
+  centerX?: number;
+  maxWidth?: number;
+  fill?: string;
+  accent?: string;
+  accentSoft?: string;
+  stroke?: string;
+  strokeWidth?: number;
+  backdrop?: string | boolean;
+  activeWordPill?: boolean;
+  uppercase?: boolean;
+  emphasis?: CaptionEmphasisSpec[];
+  words?: WordTiming[];
+  scenes?: SceneNarrationInput[];
+}
+
+const CLAUSE_BREAK_PUNCT = /[,.;:!?—–-]$/;
+
+function roundRect(
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  r: number
+): void {
+  const radius = Math.max(0, Math.min(r, w * 0.5, h * 0.5));
+  ctx.beginPath();
+  ctx.moveTo(x + radius, y);
+  ctx.arcTo(x + w, y, x + w, y + h, radius);
+  ctx.arcTo(x + w, y + h, x, y + h, radius);
+  ctx.arcTo(x, y + h, x, y, radius);
+  ctx.arcTo(x, y, x + w, y, radius);
+  ctx.closePath();
+}
 
 /**
- * Burned-in kinetic captions: phrase-by-phrase, max two lines, word-accurate highlight driven by real audio timings.
- * Pure function of time; layout is computed once.
+ * Splits a stream of timed words into punchy 2-5 word phrases (max 2 balanced lines)
+ * respecting natural clause punctuation and pause gaps[cite: 1].
  */
-export class KineticCaptions {
-  private phrases: Phrase[] = [];
-  constructor(scenes: CaptionSceneInput[], private style: CaptionStyle = DEFAULT_CAPTION_STYLE) {
-    for (const sc of scenes) this.addScene(sc);
-    this.phrases.sort((a, b) => a.start - b.start);
-    for (let i = 0; i < this.phrases.length; i++) {
-      const p = this.phrases[i], next = this.phrases[i + 1];
-      const lastEnd = p.words[p.words.length - 1].end;
-      p.start = p.words[0].start - 0.1;
-      p.end = next && next.words[0].start - lastEnd < 0.7 ? next.words[0].start - 0.1 : lastEnd + 0.35;
+export function buildCaptionCues(
+  words: WordTiming[],
+  maxCharsPerLine = 20,
+  globalEmphasis: CaptionEmphasisSpec[] = [],
+  sceneEmphasisMap?: Map<string, CaptionEmphasisSpec[]>
+): CaptionCue[] {
+  if (!words || words.length === 0) return [];
+
+  const maxPhraseChars = maxCharsPerLine * 2;
+  const phrases: WordTiming[][] = [];
+  let current: WordTiming[] = [];
+  let currentLen = 0;
+
+  const flush = () => {
+    if (current.length > 0) {
+      phrases.push(current);
+      current = [];
+      currentLen = 0;
+    }
+  };
+
+  for (let i = 0; i < words.length; i++) {
+    const w = words[i];
+    const cleanWord = w.word.trim();
+    if (!cleanWord) continue;
+
+    const prev = current.length > 0 ? current[current.length - 1] : null;
+    const pauseGap = prev ? w.start_s - prev.end_s : 0;
+    const sceneChanged = prev && w.sceneId && prev.sceneId && w.sceneId !== prev.sceneId;
+    const nextLen = currentLen === 0 ? cleanWord.length : currentLen + 1 + cleanWord.length;
+
+    if (
+      sceneChanged ||
+      pauseGap > 0.35 ||
+      current.length >= 5 ||
+      (current.length >= 2 && nextLen > maxPhraseChars)
+    ) {
+      flush();
+    }
+
+    current.push({ ...w, word: cleanWord });
+    currentLen = current.length === 1 ? cleanWord.length : currentLen + 1 + cleanWord.length;
+
+    if (CLAUSE_BREAK_PUNCT.test(cleanWord) && current.length >= 2) {
+      flush();
     }
   }
+  flush();
 
-  private addScene(sc: CaptionSceneInput) {
-    const words: Word[] = sc.words.map((w) => ({ text: w.text, start: w.start_s + sc.offset_s, end: w.end_s + sc.offset_s, treat: 'none' }));
-    // Mark emphasis words by locating each phrase as a run of words in the narration.
-    const strip = (s: string) => s.toLowerCase().replace(/[^a-z0-9' -]/g, '');
-    for (const e of sc.emphasis ?? []) {
-      const target = strip(e.phrase).split(/\s+/);
-      for (let i = 0; i + target.length <= words.length; i++) {
-        if (target.every((tw, k) => strip(words[i + k].text) === tw)) { for (let k = 0; k < target.length; k++) words[i + k].treat = e.treatment; break; }
-      }
-    }
-    // Phrases follow the sentence's own clauses: split at punctuation, merge tiny fragments, and break
-    // over-long clauses at a balanced, natural word boundary so no orphan words are left on screen.
-    const maxChars = this.style.maxCharsPerLine * 2 - 4;
-    const len = (ws: Word[]) => ws.reduce((s, w) => s + w.text.length + 1, -1);
-    const clauses: Word[][] = [];
-    let cur: Word[] = [];
-    for (const w of words) { cur.push(w); if (endsSentence(w.text) || endsClause(w.text)) { clauses.push(cur); cur = []; } }
-    if (cur.length) clauses.push(cur);
-    const merged: Word[][] = [];
-    for (const c of clauses) {
-      const prev = merged[merged.length - 1];
-      if (prev && !endsSentence(prev[prev.length - 1].text) && len(prev) + 1 + len(c) <= maxChars && (len(prev) < 14 || len(c) < 14)) prev.push(...c);
-      else merged.push([...c]);
-    }
-    const splitBefore = new Set(['and', 'but', 'or', 'to', 'of', 'in', 'on', 'by', 'for', 'like', 'that', 'until', 'than', 'with', 'from', 'could', 'would', 'how', 'as']);
-    const split = (ws: Word[]): Word[][] => {
-      if (len(ws) <= maxChars || ws.length < 4) return [ws];
-      const total = len(ws); let best = 2, bestScore = Infinity;
-      for (let i = 2; i <= ws.length - 2; i++) {
-        const a = len(ws.slice(0, i)), b = total - a - 1;
-        const score = Math.abs(a - b) - (splitBefore.has(strip(ws[i].text)) ? 9 : 0);
-        if (score < bestScore) { bestScore = score; best = i; }
-      }
-      return [...split(ws.slice(0, best)), ...split(ws.slice(best))];
+  return phrases.map((phraseWords, idx) => {
+    const lines = balanceTwoLines(phraseWords, maxCharsPerLine);
+    const text = lines.map((line) => line.map((w) => w.word).join(' ')).join('\n');
+    const sceneId = phraseWords[0]?.sceneId;
+    const emp =
+      (sceneId && sceneEmphasisMap?.get(sceneId)) || globalEmphasis || [];
+
+    return {
+      index: idx + 1,
+      start_s: phraseWords[0].start_s,
+      end_s: phraseWords[phraseWords.length - 1].end_s,
+      text,
+      lines,
+      words: phraseWords,
+      emphasis: emp,
     };
-    for (const c of merged) for (const ph of split(c)) this.phrases.push({ words: ph, lines: this.wrap(ph), start: 0, end: 0 });
+  });
+}
+
+function balanceTwoLines(words: WordTiming[], maxCharsPerLine: number): WordTiming[][] {
+  const joined = words.map((w) => w.word).join(' ');
+  if (words.length <= 3 && joined.length <= maxCharsPerLine) {
+    return [words];
   }
 
-  /** Balance words into one or two lines within the per-line character budget. */
-  private wrap(ws: Word[]): Word[][] {
-    const total = ws.reduce((s, w) => s + w.text.length + 1, -1);
-    if (total <= this.style.maxCharsPerLine * 0.8 || ws.length < 3) return [ws];
-    let best = 1, bestScore = Infinity;
-    for (let i = 1; i < ws.length; i++) {
-      const a = ws.slice(0, i).reduce((s, w) => s + w.text.length + 1, -1), b = total - a - 1;
-      const over = Math.max(0, a - this.style.maxCharsPerLine) + Math.max(0, b - this.style.maxCharsPerLine);
-      const score = Math.abs(a - b) + over * 50 + (a > b ? 0 : 1.5); // slight preference for a longer first line
-      if (score < bestScore) { bestScore = score; best = i; }
+  let bestSplit = Math.ceil(words.length / 2);
+  let bestDiff = Infinity;
+
+  for (let split = 1; split < words.length; split++) {
+    const line1Len = words
+      .slice(0, split)
+      .map((w) => w.word)
+      .join(' ').length;
+    const line2Len = words
+      .slice(split)
+      .map((w) => w.word)
+      .join(' ').length;
+    const penalty =
+      (line1Len > maxCharsPerLine + 4 ? 50 : 0) +
+      (line2Len > maxCharsPerLine + 4 ? 50 : 0);
+    const diff = Math.abs(line1Len - line2Len) + penalty;
+    if (diff < bestDiff) {
+      bestDiff = diff;
+      bestSplit = split;
     }
-    return [ws.slice(0, best), ws.slice(best)];
   }
 
-  /** Caption phrases exactly as displayed (line text and on-screen times), for SRT / transcript export. */
-  cues(): { lines: string[]; start: number; end: number }[] {
-    return this.phrases.map((p) => ({ lines: p.lines.map((l) => l.map((w) => w.text).join(' ')), start: p.start, end: p.end }));
-  }
+  return [words.slice(0, bestSplit), words.slice(bestSplit)];
+}
 
-  draw(ctx: CanvasRenderingContext2D, t: number) {
-    const s = this.style;
-    const p = this.phrases.find((ph) => t >= ph.start && t < ph.end);
-    if (!p) return;
-    const fadeIn = smoothstep(0, 0.12, t - p.start), fadeOut = 1 - smoothstep(-0.12, 0, t - p.end);
-    const alpha = clamp(fadeIn * fadeOut);
-    const rise = (1 - fadeIn) * 10;
-    ctx.font = `${s.fontWeight} ${s.fontSize}px ${s.fontFamily}`;
-    ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left'; ctx.lineJoin = 'round'; ctx.lineCap = 'round';
-    const space = ctx.measureText(' ').width;
-    const nLines = p.lines.length;
-    // Soft backdrop band for legibility over bright picture areas.
-    if (s.backdrop > 0) {
-      if (s.backdropStyle === 'pill') {
-        const widest = Math.min(s.maxWidth, Math.max(...p.lines.map(line => ctx.measureText(line.map(w => w.text).join(' ')).width)));
-        ctx.fillStyle = `rgba(6,8,14,${s.backdrop * alpha})`;
-        ctx.beginPath(); ctx.roundRect(s.centerX-widest/2-26,s.baselineY-(nLines-1)*s.lineHeight-s.fontSize-15,widest+52,(nLines-1)*s.lineHeight+s.fontSize+42,22); ctx.fill();
-      } else {
-      const top = s.baselineY - nLines * s.lineHeight - 30, bottom = s.baselineY + 60;
-      const g = ctx.createLinearGradient(0, top, 0, bottom);
-      g.addColorStop(0, 'rgba(6,8,14,0)'); g.addColorStop(0.3, `rgba(6,8,14,${s.backdrop * alpha})`);
-      g.addColorStop(0.75, `rgba(6,8,14,${s.backdrop * alpha})`); g.addColorStop(1, 'rgba(6,8,14,0)');
-      ctx.fillStyle = g; ctx.fillRect(0, top, ctx.canvas.width, bottom - top);
+/**
+ * Checks whether a word at index `wordIdx` inside `cue.words` belongs to a matched
+ * `caption_emphasis` substring[cite: 1, 2].
+ */
+function resolveWordEmphasis(
+  cue: CaptionCue,
+  wordIdxInCue: number
+): EmphasisTreatment {
+  if (!cue.emphasis || cue.emphasis.length === 0) return 'none';
+  const fullPhrase = cue.words.map((w) => w.word).join(' ');
+
+  for (const spec of cue.emphasis) {
+    if (!spec.phrase || spec.treatment === 'none') continue;
+    const target = spec.phrase.trim();
+    const startChar = fullPhrase.indexOf(target);
+    if (startChar === -1) continue;
+    const endChar = startChar + target.length;
+
+    let cursor = 0;
+    for (let i = 0; i < cue.words.length; i++) {
+      const wStart = cursor;
+      const wEnd = cursor + cue.words[i].word.length;
+      if (i === wordIdxInCue && wEnd > startChar && wStart < endChar) {
+        return spec.treatment;
       }
+      cursor = wEnd + 1;
     }
-    for (let li = 0; li < nLines; li++) {
-      const line = p.lines[li];
-      const widths = line.map((w) => ctx.measureText(w.text).width);
-      let width = widths.reduce((a, b) => a + b, 0) + space * (line.length - 1);
-      const fit = Math.min(1, s.maxWidth / width);
-      const y = s.baselineY - (nLines - 1 - li) * s.lineHeight + rise;
-      let x = s.centerX - (width * fit) / 2;
-      for (let wi = 0; wi < line.length; wi++) {
-        const w = line[wi], ww = widths[wi] * fit;
-        const nextStart = this.nextWordStart(p, w);
-        const active = t >= w.start - 0.03 && t < nextStart - 0.03;
-        const spoken = t >= w.start - 0.03;
-        const act = active ? smoothstep(0, 0.1, t - (w.start - 0.03)) : 0;
-        let color = s.fill;
-        if (w.treat === 'accent_color' && spoken) color = s.accentSoft;
-        if (active) color = s.accent;
-        const scale = fit * (1 + (w.treat === 'gentle_scale' ? 0.04 * act : 0));
+  }
+  return 'none';
+}
+
+export class KineticCaptions {
+  public fontFamily: string;
+  public fontWeight: number | string;
+  public fontSize: number;
+  public lineHeight: number;
+  public maxCharsPerLine: number;
+  public baselineY: number;
+  public centerX: number;
+  public maxWidth: number;
+  public fill: string;
+  public accent: string;
+  public accentSoft: string;
+  public stroke: string;
+  public strokeWidth: number;
+  public backdrop: string | boolean;
+  public activeWordPill: boolean;
+  public uppercase: boolean;
+  public emphasis: CaptionEmphasisSpec[];
+  private computedCues: CaptionCue[] = [];
+  private legacy?: LegacyKineticCaptions;
+
+  /** New form: new KineticCaptions(options). Earlier form: new KineticCaptions(scenes[], style), rendered by the earlier engine. */
+  constructor(options: KineticCaptionsOptions | CaptionSceneInput[] = {}, legacyStyle?: CaptionStyle) {
+    const legacyScenes = Array.isArray(options) ? options : null;
+    const opts: KineticCaptionsOptions = legacyScenes ? {} : (options as KineticCaptionsOptions);
+    this.fontFamily = opts.fontFamily ?? 'Inter, -apple-system, sans-serif';
+    this.fontWeight = opts.fontWeight ?? 800;
+    this.fontSize = opts.fontSize ?? 70;
+    this.lineHeight = opts.lineHeight ?? 1.18;
+    this.maxCharsPerLine = opts.maxCharsPerLine ?? 20;
+    this.baselineY = opts.baselineY ?? 1320;
+    this.centerX = opts.centerX ?? 540;
+    this.maxWidth = opts.maxWidth ?? 900;
+    this.fill = opts.fill ?? '#FFFFFF';
+    this.accent = opts.accent ?? '#FACC15';
+    this.accentSoft = opts.accentSoft ?? '#FDE047';
+    this.stroke = opts.stroke ?? '#050811';
+    this.strokeWidth = opts.strokeWidth ?? 11;
+    this.backdrop = opts.backdrop ?? 'rgba(6, 10, 18, 0.62)';
+    this.activeWordPill = opts.activeWordPill ?? true;
+    this.uppercase = opts.uppercase ?? false;
+    this.emphasis = opts.emphasis ?? [];
+
+    if (opts.scenes && opts.scenes.length > 0) {
+      this.setScenes(opts.scenes);
+    } else if (opts.words && opts.words.length > 0) {
+      this.setWords(opts.words, this.emphasis);
+    }
+    if (legacyScenes) this.legacy = new LegacyKineticCaptions(legacyScenes, legacyStyle ?? DEFAULT_CAPTION_STYLE);
+  }
+
+  public setWords(words: WordTiming[], emphasis: CaptionEmphasisSpec[] = []): void {
+    this.emphasis = emphasis;
+    this.computedCues = buildCaptionCues(words, this.maxCharsPerLine, emphasis);
+  }
+
+  public setScenes(scenes: SceneNarrationInput[]): void {
+    const allWords: WordTiming[] = [];
+    const empMap = new Map<string, CaptionEmphasisSpec[]>();
+
+    scenes.forEach((sc, idx) => {
+      const sceneId = sc.id ?? `S${String(idx + 1).padStart(2, '0')}`;
+      if (sc.caption_emphasis) {
+        empMap.set(sceneId, sc.caption_emphasis);
+      }
+      if (sc.words) {
+        for (const w of sc.words) {
+          allWords.push({ ...w, sceneId });
+        }
+      }
+    });
+
+    this.computedCues = buildCaptionCues(
+      allWords,
+      this.maxCharsPerLine,
+      this.emphasis,
+      empMap
+    );
+  }
+
+  /**
+   * Returns the exact displayed phrase cues and timestamps so tools/transcript.mjs
+   * writes matching .srt and .txt files[cite: 1].
+   */
+  public cues(): CaptionCue[] {
+    if (this.legacy) return this.legacy.cues() as unknown as CaptionCue[];   // earlier shape: { lines: string[], start, end }
+    return this.computedCues;
+  }
+
+  /** CaptionLayer interface used by FilmPipeline. */
+  public draw(ctx: CanvasRenderingContext2D, time_s: number): void { this.render(ctx, time_s); }
+
+  public render(ctx: CanvasRenderingContext2D, time_s: number): void {
+    if (this.legacy) { this.legacy.draw(ctx, time_s); return; }
+    const activeCue = this.computedCues.find(
+      (c) => time_s >= c.start_s - 0.04 && time_s <= c.end_s + 0.12
+    );
+    if (!activeCue) return;
+
+    const fadeIn = Math.min(1, Math.max(0, (time_s - (activeCue.start_s - 0.04)) / 0.07));
+    const fadeOut = Math.min(1, Math.max(0, (activeCue.end_s + 0.12 - time_s) / 0.09));
+    const alpha = Math.min(fadeIn, fadeOut);
+    if (alpha <= 0.01) return;
+
+    ctx.save();
+    ctx.globalAlpha *= alpha;
+    ctx.textBaseline = 'alphabetic';
+    ctx.lineJoin = 'round';
+    ctx.miterLimit = 2;
+
+    const lineStepPx = Math.round(this.fontSize * this.lineHeight);
+    const lineCount = activeCue.lines.length;
+    const firstLineY =
+      lineCount === 1 ? this.baselineY : this.baselineY - Math.round(lineStepPx * 0.5);
+
+    ctx.font = `${this.fontWeight} ${this.fontSize}px ${this.fontFamily}`;
+    const spaceW = ctx.measureText(' ').width;
+
+    // Measure line widths for backdrop pill
+    const lineWidths = activeCue.lines.map((line) => {
+      const str = line
+        .map((w) => (this.uppercase ? w.word.toUpperCase() : w.word))
+        .join(' ');
+      return ctx.measureText(str).width;
+    });
+    const maxLineW = Math.max(...lineWidths, 0);
+
+    if (this.backdrop) {
+      const padX = 32;
+      const padY = 22;
+      const boxW = Math.min(this.maxWidth + padX * 2, maxLineW + padX * 2);
+      const boxH = lineCount * lineStepPx + padY * 1.4;
+      const boxX = this.centerX - boxW * 0.5;
+      const boxY = firstLineY - Math.round(this.fontSize * 0.84) - padY * 0.5;
+
+      ctx.fillStyle =
+        typeof this.backdrop === 'string' ? this.backdrop : 'rgba(6, 10, 18, 0.62)';
+      roundRect(ctx, boxX, boxY, boxW, boxH, 22);
+      ctx.fill();
+    }
+
+    let wordCursorIdx = 0;
+
+    for (let lineIdx = 0; lineIdx < lineCount; lineIdx++) {
+      const lineWords = activeCue.lines[lineIdx];
+      const lineW = lineWidths[lineIdx];
+      let x = this.centerX - lineW * 0.5;
+      const y = firstLineY + lineIdx * lineStepPx;
+
+      for (let i = 0; i < lineWords.length; i++) {
+        const w = lineWords[i];
+        const displayWord = this.uppercase ? w.word.toUpperCase() : w.word;
+        const wordW = ctx.measureText(displayWord).width;
+
+        const isActive = time_s >= w.start_s - 0.02 && time_s <= w.end_s + 0.04;
+        const empTreatment = resolveWordEmphasis(activeCue, wordCursorIdx);
+        wordCursorIdx++;
+
+        let scale = isActive ? 1.045 : 1.0;
+        if (empTreatment === 'gentle_scale' && time_s >= w.start_s) {
+          scale *= 1.05;
+        }
+
+        let wordFill = this.fill;
+        if (isActive) {
+          wordFill = this.accent;
+        } else if (empTreatment === 'accent_color') {
+          wordFill = this.accentSoft;
+        }
+
         ctx.save();
-        ctx.globalAlpha = alpha;
-        ctx.translate(x + ww / 2, y);
+        const wordCenterX = x + wordW * 0.5;
+        const wordCenterY = y - this.fontSize * 0.34;
+        ctx.translate(wordCenterX, wordCenterY);
         ctx.scale(scale, scale);
-        ctx.textAlign = 'center';
-        ctx.shadowColor = 'rgba(0,0,0,0.55)'; ctx.shadowBlur = 14; ctx.shadowOffsetY = 3;
-        ctx.strokeStyle = s.stroke; ctx.lineWidth = s.strokeWidth;
-        ctx.strokeText(w.text, 0, 0);
-        ctx.shadowColor = 'transparent'; ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
-        if (w.treat === 'subtle_glow' && spoken) { ctx.shadowColor = 'rgba(255,180,92,0.75)'; ctx.shadowBlur = 22; }
-        ctx.fillStyle = color;
-        ctx.fillText(w.text, 0, 0);
+        ctx.translate(-wordCenterX, -wordCenterY);
+
+        // Optional subtle glow emphasis
+        if (empTreatment === 'subtle_glow' || isActive) {
+          ctx.shadowColor = isActive
+            ? 'rgba(250, 204, 21, 0.45)'
+            : 'rgba(56, 189, 248, 0.4)';
+          ctx.shadowBlur = isActive ? 18 : 14;
+        } else {
+          ctx.shadowColor = 'rgba(0, 0, 0, 0.75)';
+          ctx.shadowBlur = 10;
+          ctx.shadowOffsetY = 4;
+        }
+
+        // Optical stroke
+        if (this.strokeWidth > 0) {
+          ctx.strokeStyle = this.stroke;
+          ctx.lineWidth = this.strokeWidth;
+          ctx.strokeText(displayWord, x, y);
+        }
+
+        // Fill text
+        ctx.fillStyle = wordFill;
+        ctx.fillText(displayWord, x, y);
         ctx.restore();
-        x += ww + space * fit;
+
+        x += wordW + spaceW;
       }
     }
-  }
 
-  private nextWordStart(p: Phrase, w: Word): number {
-    const i = p.words.indexOf(w);
-    return i + 1 < p.words.length ? p.words[i + 1].start : w.end + 0.2;
+    ctx.restore();
   }
+}
+
+export function createKineticCaptions(options: KineticCaptionsOptions = {}): KineticCaptions {
+  return new KineticCaptions(options);
 }

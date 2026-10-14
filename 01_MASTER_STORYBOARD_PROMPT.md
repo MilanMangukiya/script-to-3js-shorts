@@ -1,133 +1,161 @@
 # MASTER PROMPT — What-If / How-Does Cinematic Short: Storyboard → Finished Video (one run)
 
 ## YOUR ROLE
-Act simultaneously as (1) rigorous science researcher, (2) viral short-form documentary screenwriter, (3) cinematic 3D director, (4) Three.js/WebGL technical animation designer, (5) narrator/caption designer, (6) production editor and (7) build-and-render engineer. In **one run** you write the storyboard JSON, then build, voice, caption, render and publish-prepare the finished film:
+Act simultaneously as (1) rigorous science researcher, (2) viral short-form simulation screenwriter, (3) cinematic 3D director, (4) Three.js/WebGL technical animation designer, (5) narrator/caption designer, (6) production editor and (7) build-and-render engineer. In **one run** you write the storyboard JSON, then build, voice, caption, render and publish-prepare the finished film:
 
 1. **Part A — Storyboard:** one valid JSON document conforming exactly to `storyboard.schema.json`, saved as `stories/<slug>.json`. It must be **executable as a visual production specification, not a vague creative outline**.
-2. **Part B — Finished video:** implement that storyboard in this repository as a real Three.js film with narration, music, sound design and burned-in captions, rendered to `output/<slug>.mp4`, plus a caption file and a plain-text transcript.
-3. **Part C — Checks, metadata and catalog:** minimal QA, upload metadata and the required finalizer.
+2. **Part B — Finished video:** implement that storyboard in this repository as a real Three.js film with narration, music, sound design and burned-in captions, rendered to `output/<slug>.mp4`, plus a caption file (`.srt`), a plain-text transcript (`.txt`), and a bold thumbnail cover (`.jpg`).
+3. **Part C — Checks, metadata and catalog:** minimal QA, multi-platform upload metadata and the required finalizer.
 
-Do not stop after the JSON and do not ask for permission between parts: go straight from Part A to Part C. Follow `CLAUDE.md` (Claude Code) or `AGENTS.md` (Codex); they are binding. **Where to run:** Claude Code or Codex inside this repository (it needs file access, Node.js, the local Kokoro/Whisper models and the bundled FFmpeg). If you are running without repository access, you can only do Part A: output the raw JSON and state in one line that Parts B–C need Claude Code or Codex.
+Do not stop after the JSON and do not ask for permission between parts: go straight from Part A to Part C. Follow `CLAUDE.md` (Claude Code) or `AGENTS.md` (Codex); they are binding. **Where to run:** Claude Code or Codex inside this repository (it needs file access, Node.js, the local Kokoro/Whisper models and the bundled FFmpeg). If you are running without repository access, you can only do Part A: output the raw JSON in a single code block and state that Parts B–C need Claude Code or Codex.
 
 ## USER INPUT (replace the values on each use)
-TOPIC: "What if Earth moved 10% closer to the Sun?"
-OPTIONAL_CREATIVE_ANGLE: "CREATIVE"
-OPTIONAL_FOCUS: "HUMAN AND NATURE IMPACT"
-OPTIONAL_DURATION_SECONDS: "{{DURATION_OR_AUTO}}"  # 45..90 inclusive
+TOPIC: "{{TOPIC}}"
+OPTIONAL_CREATIVE_ANGLE: "SIMULATION"
+OPTIONAL_FOCUS: "STREET LEVEL TO PLANETARY SCALE"
+OPTIONAL_DURATION_SECONDS: "{{DURATION_OR_AUTO}}"  # 45..90 inclusive; target 46..56
 OPTIONAL_ASSET_REGISTRY: "{{ASSET_REGISTRY_OR_EMPTY}}"  # actual assets/registry.json entries, not guessed
 
-If optional values are `AUTO`, choose the most captivating defensible interpretation. When `OPTIONAL_DURATION_SECONDS` is AUTO, target **55–75 seconds** (choose the shortest time that fully earns its runtime); otherwise use the requested integer **45–90 seconds**. Never ask for 90 seconds merely because it is allowed. In the repository, **read `assets/registry.json` yourself** instead of relying on the placeholder; without repository access, if the registry is not supplied, assume it is empty and do not invent already-built assets. Do not ask questions. Write in English for an international, nontechnical audience.
+If optional values are `AUTO`, choose the most captivating defensible interpretation. When `OPTIONAL_DURATION_SECONDS` is AUTO, target **46–56 seconds** for single-variable physical shocks (max **62 seconds** for multi-epoch geological/human arcs); choose the shortest time that fully earns its runtime. Never exceed 65 seconds without compelling cause. In the repository, **read `assets/registry.json` yourself** instead of relying on the placeholder; without repository access, reference only validated registry IDs. Write in English for an international, curious nontechnical audience.
 
 ## NON-NEGOTIABLE DELIVERY SETTINGS
-- Exactly one self-contained cinematic short; **45–90 seconds inclusive**, target **55–75 seconds** unless the story genuinely benefits from a shorter/longer treatment; never over 90 seconds.
-- Vertical **9:16**, **1080 × 1920**, **30 fps**, 24-bit-color-looking premium documentary aesthetic.
+- Exactly one self-contained cinematic short; **45–62 seconds inclusive**, target **46–56 seconds** unless the story genuinely requires multi-epoch scope; never over 90 seconds.
+- Vertical **9:16**, **1080 × 1920**, **30 fps**, 24-bit-color-looking premium documentary/simulation aesthetic.
 - Publishable on YouTube Shorts, TikTok, Instagram Reels, Facebook Reels, and X.
-- Main visuals: Three.js/WebGL **real 3D** with meaningful objects, lighting, materials, camera and environmental motion. Never substitute an entire video with static slides, charts, stock clips, or scrolling text.
-- Spoken voiceover: calm, gentle, warm, peaceful **adult male**; articulate, quietly fascinated, never sensationally shouted. Target about **125–150 spoken words per minute** after pauses; match each scene's words to its available seconds.
-- All words of the spoken narration must appear as **beautiful, correctly timed burned-in captions**, visually elegant (not karaoke chaos), with carefully emphasized keywords. Captions must derive from the *actual generated voice*, not from unsupported guessed timing.
-- Every film also ships a **caption file** (`output/<slug>.srt`) and a **plain-text transcript** (`output/<slug>.txt`) of the exact narration (Part B).
-- Music and sound design may only use procedurally generated or license-cleared assets; no subscriptions or paid APIs.
+- Main visuals: Three.js/WebGL **real 3D** with meaningful objects, lighting, materials, camera and environmental motion. Never substitute an entire video with static slides, 2D charts, floating rulers, or scrolling text.
+- Spoken voiceover: crisp, articulate, high-tension documentary narrator; intimate, quietly astonished, never sensationally shouted. Target **148–160 WPM** in opening scenes (`S01`–`S04`), easing to **125–135 WPM** during the final twist/payoff.
+- Audio loudness: master mix normalized to **-14.0 LUFS** (true peak $\le$ -1.0 dBTP). Foreground sound effects must stay punchy (-6 to -10 dB relative to voice), with an intentional **0.25–0.35s acoustic silence drop** (-24 dB duck) programmed immediately before major physical impacts.
+- All words of the spoken narration must appear as **beautiful, correctly timed burned-in captions** (`caption-kinetic-v1`), styled in high-contrast uppercase/title-case phrases (2–5 words), placed in the platform-safe band (baseline $y \approx 1300\text{–}1340\text{ px}$), with vibrant keyword highlights.
+- Mandatory bold thumbnail cover (`thumbnail-title-card-v1`): every film must output `output/<slug>.jpg` (1080×1920) with a punchy 2–4 word uppercase curiosity headline, numeric badge sticker, and directional arrow.
+- Every film also ships a SubRip caption file (`output/<slug>.srt`), a plain-text transcript (`output/<slug>.txt`), and copy-paste publishing metadata (`metadata/<slug>.md`).
 
 ---
 
 # PART A — STORYBOARD
 
-## AUDIENCE-RETENTION STORY ENGINE
-Invent a structure specific to the topic; do not inflate the runtime to hit 90 seconds. The essential story beats, adapted proportionately to the chosen length, are:
-1. **0–3 seconds: immediate visual hook**: make the counterfactual unmistakable and ask the most compelling question. No logos, greeting or CTA.
-2. **Opening ~10–18%: premise/reveal**: establish normal reality versus the changed rule; deliver a specific consequence.
-3. **Next ~20–25%: mechanism**: an intuitive Three.js animation proves why things change.
-4. **Middle ~30–35%: human/ecological stakes**: reveal concrete, scientifically defensible consequences in lived environments.
-5. **Next ~15–20%: second-order surprise**: one counterintuitive result, consequence or timescale comparison, tied to the mechanism.
-6. **Final ~10–15%: earned payoff and loop**: answer the opening clearly while ending on a striking visual/question that naturally connects to frame 0. No generic engagement bait.
+## AUDIENCE-RETENTION STORY ENGINE (SIMULATION ESCALATION)
+Structure every film around an escalating timeline simulation that commands immediate attention, drops the viewer into a human-scale vantage point, and builds relentless physical stakes.
 
-**Scene budget:** 45–60 seconds = 6–9 scenes; 61–75 = 8–11 scenes; 76–90 = 10–14 scenes; 1–4 planned shots per scene. A visible, meaningful reveal should generally happen every **3–7 seconds** without restless cutting. Vary world scale (cosmic, planetary, environmental, human, macro) and compositions. Narration must have room to breathe at a peaceful delivery rate.
+### 1. Scene & Beat Budget
+- **45–54 seconds = 7–9 scenes; 55–62 seconds = 9–11 scenes; 1–3 planned shots per scene.**
+- A visible reveal, spatial shift, or physical consequence must occur every **2.5–4.5 seconds**. Never hold a static camera or frozen subject longer than 3.0 seconds.
 
-## SCIENTIFIC HONESTY: IMPORTANT
-- First define a **precise counterfactual**. Distinguish the changed parameter, initial conditions, how it was changed, and timescale. A hypothetical that changes a moon's orbit, oxygen fraction, planetary position, an entire species or a human population must specify what's held constant; choose defensible assumptions explicitly.
-- Trace a causal chain: physical/biological mechanism → environmental response → ecosystem/infrastructure changes → human experience. Cite **claims via IDs** within JSON and link to trustworthy source URLs *only if actually known or verified*. Never fabricate sources or pretend to have browsed when you have not. If sources cannot be confirmed, use `sources: []` and conservative claims.
-- `confidence`: `established` for directly supported reality, `derived` for transparent calculations, `plausible` for reasonable counterfactual outcomes, `speculative` for story-world possibility. Strongly qualify uncertain outcomes in both voiceover and visuals.
-- Check dimensional consistency and orders of magnitude. **Force ≠ acceleration ≠ tidal height**; partial pressures depend on total pressure; orbit change affects period and climate; biological disappearance outcomes depend on definition and timing. Do not flatten subtleties into false certainties.
-- Never depict a scaled-up Moon taking up half the sky merely because it moved twice as close: **physical angular scale matters**. You may use telephoto framing for drama, or show clearly labeled schematic/explanatory overlays. Never present diagrams, speed changes, timelines, or exaggerated waves as literal footage.
-- When a scenario concerns human sexes/genders, health, populations or mass disappearance, be specific and respectful: no stereotyping, no simplistic extinction timelines, distinguish immediate events from multigenerational outcomes, and never treat people as interchangeable abstractions.
-- Prioritize high-quality, emotionally engaging **truthful spectacle**, not fictional catastrophes stated as fact. A good "could" is stronger than a misleading "would".
+### 2. The 5-Stage Narrative Sequence
+1. **0–3.5s (`hook`): The Domestic / Street-Level Anchor & Anti-Echo Rule.**
+   - **CRITICAL:** Sentence 1 of the narration must **NEVER repeat the title verbatim** and must **NEVER start with "What if"**. The viewer already read the title.
+   - Drop the viewer immediately into a 2nd-person domestic or street-level setting (`y = 1.4–1.8 m` eye-level camera) at the exact split-second the rule breaks (e.g., *"You're standing at a downtown crosswalk when every oxygen atom on Earth vanishes"* or *"Compress Earth's entire mass into a coin in your city, and the cars go first"*).
+   - Cut across at least two contrasting world scales (human eye-level to orbital/macro) within the first 8 seconds.
+2. **3.5–10s (`premise`): The Shocking Physical Metric & Telemetry Lock.**
+   - Establish the precise physical counterfactual with an unmistakable scale juxtaposition (e.g., *"It's only 0.35 inches wide, but weighs as much as the planet"*).
+   - Display a diegetic top-left Simulation Telemetry HUD (`TIMER: T+00:01s | SURVIVORS | DISTANCE | G-FORCE`).
+3. **10–25s (`mechanism` & `escalation`): Sequential Physical Object Failure.**
+   - Show concrete physical objects breaking down in clear causal order (**cars $\rightarrow$ roofs $\rightarrow$ rivers $\rightarrow$ buildings $\rightarrow$ atmosphere**).
+   - **FORBIDDEN:** Do NOT cut to detached 2D bar charts, measuring cylinders, or floating rulers. Show the consequences happening to real 3D assets (`city-street-block-v1`, `pedestrian-crowd-v1`, `flame-v1`, `ocean-surface-v1`, `plastic-bottle-v1`, `airliner-v1`).
+4. **25–42s (`human_impact` & `second_order_effect`): The Map Radius & Survival Zone.**
+   - Translate the physics into spatial survival thresholds using leader-line callouts (`overlay-labels-v1`) or city damage rings (e.g., *"At 2 miles away, your house feels millions of g"* or *"35°C wet-bulb heat — sweat can no longer cool the human body"*).
+   - Depict human impact with respectful medium-distance silhouettes or dynamic crowd movement; never use frozen back-of-head mannequins held for multiple seconds.
+5. **42–54s (`twist`, `ending` & `loop_connection`): The Counter-Intuitive Twist & Seamless Loop.**
+   - Deliver one surprising scientific revelation tied to the mechanism (e.g., *"the Moon keeps orbiting a coin"*, *"the oxygen rushes back, but the hydrogen is still there"*).
+   - **Ending CTA:** Close with an interactive survival or geographic prompt (e.g., *"Where would you be on the map?"* or *"Would you have survived the first five seconds?"*).
+   - **Loop Connection:** The final spoken line and camera keyframe must bridge syntactically and visually back into Frame 0 (`t = 0.0s`), compelling a seamless second watch.
+
+---
+
+## SCIENTIFIC HONESTY & SIMULATION TELEMETRY
+- Define a **precise counterfactual**: state initial conditions, what is held constant, and explicitly separate timescales (instantaneous $0\text{–}5\text{s}$ impact vs. decadal environmental response vs. geological aftermath).
+- Trace a rigorous causal chain: fundamental physics/chemistry $\rightarrow$ environmental response $\rightarrow$ structural/infrastructure failure $\rightarrow$ human experience. Cite claims via `claim_ids` linked to `scientific_model.claims[]`.
+- Assign defensible `confidence` levels: `established` for direct physics, `derived` for exact mathematical scaling, `plausible` for modeled outcomes, `speculative` for edge-case projections.
+- Check dimensional consistency: force $\neq$ acceleration $\neq$ pressure; Schwarzschild radius $R_s = 2GM/c^2$; inverse-square law $S \propto 1/r^2$; Kepler's third law $T \propto a^{1.5}$; Clausius-Clapeyron $\approx +7\% \text{ moisture}/^\circ\text{C}$.
+- **NO ACADEMIC DISCLAIMER BADGES ON SCREEN:** Never render meta-disclaimers like `SCHEMATIC • NOT TO SCALE`, `LIKELY • EXACT EFFECT UNCERTAIN`, or `HYPOTHETICAL • CGI` on the canvas. Keep scientific qualifications in the voiceover script and claim reasoning. All on-screen visual chips must be diegetic simulation telemetry (timers, distances, temperatures, accelerations, population metrics).
+
+---
 
 ## CINEMATIC & THREE.JS SHOT DIRECTION
-For every shot provide an implementation-level description, not just a noun:
-- The 3D `world` and place/time/weather/scale convention; major `subjects` with explicit physical proportions or clearly stated illustrative deviations.
-- Material construction and asset strategy for each subject: textures/procedural geometry/instancing/shaders/atmospheric scattering/ocean shader/PBR where appropriate. Include realistic imperfections, cloud motion, layered depth, micro-detail and believable shadows.
-- `camera`: projection type, numeric FOV (perspective) or orthographic scale, **at least two absolute-second keyframes** with numeric `[x,y,z]` positions and `look_at`, easing, movement and lens intent. The coordinates are local scene units (describe scale in `world` or `scale_and_accuracy`). Never simply say "cinematic camera movement."
-- `animation_plan`: concrete movements/events, their timing, visible direction and subject behavior. Specify what changes, not merely "animate smoothly". Deterministic from absolute timestamp; no frame-rate-dependent steps.
-- `lighting`, `effects` and `composition_notes`: practical lighting sources, volumetrics/fog/bloom sparingly, safe zones, focal hierarchy and color treatment. Avoid visual clutter, fake lens flare, plastic planetary surfaces, giant captions, or visually repetitive globe shots.
-- `transition_out` from physical action or visual match, not arbitrary flashy cuts. Respect exact time spans; no disjoint time gaps.
-- Sound `audio_cues` only where they add emotional or explanatory value; foreground voiceover always stays intelligible.
+Provide implementation-level technical direction for every shot:
+- `world`: scale convention (1 unit = 1 metre for urban/interiors; local planetary units for space), sky dome, lighting environment, and fog depth.
+- `subjects`: specific asset references (`asset_hint`), geometric proportions, material shaders, and movement behaviors.
+- `camera`: projection (`perspective` or `orthographic`), numeric FOV ($30\text{–}42^\circ$ typical), lens intent, and **at least two numeric keyframes** `[x,y,z]` with `look_at` coordinates and easing.
+  - **POV Dynamic Camera:** Ground-level shots (`y < 2.5 m`) must specify human eye-level framing with subtle handheld breathing sway (`handheldSway: 0.2–0.5`).
+  - **Impact Cam-Shake:** Program an impulse camera shake on the exact frame of major shockwaves, landings, or detonations.
+- `animation_plan`: concrete, deterministic, time-driven movements evaluating strictly from absolute timestamp `time_s`. No frame-rate-dependent drift.
+- `lighting` & `effects`: physical key/fill sources, HDR bloom on specular/emissive highlights, volumetric fog, and ACES tone mapping.
+- `transition_out`: physical action cuts, camera whip pans, match cuts, or cross-dissolves ($0.3\text{–}0.5\text{s}$).
 
-## TYPOGRAPHY/CAPTIONS
-- Burn-in **all narration** as dynamic readable captions synced with generated spoken audio; group into 2–6-word phrases, maximum two lines, approximately 56–78 px at 1080×1920, optical stroke/shadow and subtle active-word highlight.
-- Maintain a platform-safe region: at least 90 px from left/right, 220 px from top, 300 px from bottom; place normal captions in the lower-middle safe area, around baseline y≈1380 px, **not under TikTok/Reels interaction buttons**.
-- Use hierarchy: sparing single-word or numerical callouts can live *inside the 3D composition*, but spoken captions are a separate legible overlay. Highlight no more than one short phrase at once.
+---
+
+## TYPOGRAPHY, CAPTIONS & TELEMETRY OVERLAYS
+- Burn-in **all spoken narration** via `caption-kinetic-v1` driven by actual synthesized Whisper word timestamps.
+- Caption formatting: 2–5 word dynamic phrases, uppercase impact or clean Inter SemiBold, 68–76 px at 1080×1920, optical outline/shadow, resting in the lower safe area ($y \approx 1300\text{–}1340\text{ px}$).
+- Active word highlight: bright solar yellow (`#FACC15`) or alert cyan (`#38BDF8`) fill with subtle scale lift.
 - `caption_emphasis.phrase` must be an **exact, case-sensitive substring** of its scene's `narration.text`.
-- Never place important captions on top of the crucial reveal; shift the composition or use restrained behind-text gradient.
+- Diegetic Telemetry HUD: render persistent top-left simulation metrics via `overlay-labels-v1` (`x = 90`, `y = 240`) leaving the central $y \in [400, 1200]$ viewport completely clear for 3D action.
 
-## NARRATION & AUDIO
-- Write conversational language with short, rhythmic sentences, occasional wonder, one clear mechanism, and a satisfying last line. Avoid an encyclopedic explanation, inflated adjectives, filler or an unanswered clickbait title.
-- Aim for approximately **125–150 spoken words/minute** multiplied by the actual narration time (not by the entire film duration); for example a 75-second film with ~65 seconds of spoken audio usually supports roughly **135–160 words**. Leave purposeful gaps; check each scene independently. Leave brief breathing room after major visuals.
-- Each scene has `narration.start_s` and `end_s` **within** its scene and enough wall-clock time for its actual words. Let silence/ambience exist intentionally.
-- Distinguish `music_direction`, `sfx_direction` and scene `audio_cues`; use soft cinematic texture with restrained bass, no constant whooshing. Mix narration prominently; target -16 LUFS and a true peak no higher than -1.5 dBTP.
-- Spell numbers and names the way the narrator should say them, and avoid words a text-to-speech voice can stress wrongly (for example "turns to desert" can be read as "dessert"; "becomes a desert" cannot).
+---
 
-## ASSET LIBRARY — PLAN FOR COMPOUNDING REUSE
-- Search the actual `assets/registry.json` IDs/descriptions/tags for reusable Earth, Moon, Sun, stars, terrain, clouds, atmosphere, water, plants, lighting rigs, particles, camera systems, text effects and common SFX. **Do not invent existing asset IDs**.
-- Fill `asset_plan.existing_assets_to_reuse` with verified matching IDs, the intended shot usage and required configuration. A storyboard may request a variant, but should not clone the whole asset.
-- Fill `new_reusable_asset_candidates` only for *meaningfully generalizable* components that the renderer can extract into `src/library/` or `assets/library/`; include proposed stable IDs, key runtime parameters, and reuse scenarios. These are proposals, **not claims that files already exist**.
-- Leave truly unique props and one-off effects in `shot_specific_assets`. A reusable library must compound without sacrificing each video's original art direction.
-- Include specific `asset_hint` on each relevant shot subject, using existing registry IDs or proposed asset IDs so the build step can quickly resolve implementations. Fallback to a descriptive hint for bespoke items.
+## NARRATION, AUDIO & SOUNDTRACK
+- Write conversational, high-velocity language with short, rhythmic sentences, sensory details, and zero academic filler.
+- Target **148–160 WPM** during the opening $25\text{ seconds}$ to hook fast scrollers, moderating to **125–135 WPM** for the final philosophical payoff.
+- Insert purposeful $0.25\text{–}0.4\text{s}$ breathing gaps after massive visual reveals.
+- Program an explicit **`"silence"` audio cue** (-24 dB duck) in `audio_cues` 0.3s before the main shockwave hits.
+- Schedule staggered multi-tap `"impact"` cues separated by 80–150 ms for sequential physical failures.
+- Mix narration clearly over music (-16 to -18 dB bed); normalize master audio to **-14.0 LUFS** (true peak $\le$ -1.0 dBTP).
+- Spell out numbers phonetically where necessary to ensure natural TTS pronunciation.
 
-## PLATFORM DISCOVERY / SEO INPUTS
-- Set `distribution.primary_search_intent`, `core_keywords` and `distinctive_angle` for natural discovery. Choose terms audiences actually search, not generic hashtag stuffing.
-- After the MP4 is rendered (Part C), you write copy-paste upload metadata for `metadata/<slug>.md` and the cumulative `VIDEO_CATALOG.md`. The storyboard carries the accurate search intent, while finished titles/descriptions must reflect the **actual rendered and narrated film**.
-- All five platform variants should have independent hooks/keywords appropriate to YouTube Shorts, Instagram Reels, Facebook Reels, TikTok and X. Do not promise outcomes that the film does not show. Copy rules (the finalizer enforces them): every platform carries **5–15 relevant hashtags** (no generic spam), and every platform's title starts with **"What if"**: the YouTube Shorts and Facebook Reels titles, and the opening line of the Instagram and TikTok captions and the X post, which have no title field. The X post plus its hashtags stays within 280 characters.
+---
+
+## ASSET LIBRARY — REUSE BEFORE CREATE
+- Search actual `assets/registry.json` entries for reusable components: `earth-globe-v1`, `starfield-v1`, `sky-dome-v1`, `ocean-surface-v1`, `city-street-block-v1`, `pedestrian-crowd-v1`, `flame-v1`, `smoke-wisp-v1`, `plastic-bottle-v1`, `dial-gauge-v1`, `seismometer-v1`, `sound-rings-v1`, etc.
+- Fill `asset_plan.existing_assets_to_reuse` with verified matching IDs and explicit runtime configurations.
+- Propose new reusable assets in `new_reusable_asset_candidates` only for generalizable systems (e.g., `city-damage-map-v1`, `planetary-ring-system-v1`, `vortex-debris-pull-v1`).
+- Provide concrete `asset_hint` tags on each shot subject.
+
+---
+
+## PLATFORM DISCOVERY & SEO INPUTS
+- Define `distribution.primary_search_intent` and `core_keywords` pairing broad discovery tags with **explicit scientific domain qualifiers** (`"astrophysics simulation"`, `"earth science what if"`, `"physics thought experiment"`, `"threejs 3d documentary"`). This prevents YouTube from misrouting science simulations to gaming audiences.
+- Multi-Platform Copy Rules:
+  - **YouTube Shorts:** Title must start with `"What if"` for search SEO, paired with 5–10 relevant hashtags.
+  - **TikTok, Instagram Reels, and X:** Opening caption hook must be an intriguing, 2nd-person declarative hook (e.g., *"You're at a rooftop bar downtown when..."* or *"A coin-sized black hole just appeared in your city"*), followed by an interactive comment prompt (*"Where would you be on the map? 👇"*).
+  - Every platform includes 5–12 targeted hashtags without generic spam.
+
+---
 
 ## JSON CONTRACT — EXACT
-- Match `storyboard.schema.json`'s **field names, nesting, enumerations and required values** strictly. No additional keys, comments, Markdown fences, or explanatory prose inside the JSON. Do not add transcript or caption-file fields: the schema forbids extra keys, and those files are build outputs (Part B).
-- Include: project metadata, scientific assumptions and claim register, visual identity, sound/caption design, **asset_plan** referencing only verified registry entries, **distribution** search-intent cues, scene-by-scene timecodes/voiceover/shot design, render output contract.
-- Scenes must partition the runtime: `S01.start_s = 0`, each `end_s` equals next `start_s`, last `end_s = project.duration_s`; shot intervals must likewise partition each scene. No overlaps/gaps except transitions handled *within* shot time.
-- Story beat IDs `S01`... sequential; shot IDs can restart `SH01` within each scene. Camera keyframes begin/end at the respective shot boundaries. Narration timestamps fall inside their scene.
-- `claim_ids` may only reference existing `scientific_model.claims[].id`. Source URLs, if any, must correspond to evidence that actually supports the assigned claims. The `sources` array can be empty.
-- Add a `thumbnail` block for a bold, click-worthy cover that stays honest: `time_s` = the single most striking, instantly readable moment (a bold subject without tiny details, outside any cross-dissolve); `headline` = a 2–6 word curiosity hook, often ending in `?!` (e.g. "Nonstop rain for 1 year?!"); `highlight` = its key word or number; `badge` = a 1–3 word sticker with a striking true number or twist the film shows (e.g. "≈6× brighter", "Green Sahara?"); `focus` = the subject point `[x, y]` (fractions of the frame) that the arrow points at; optional `zoom` (about 1.1–1.4 punch-in), `anchor` (where the subject lands, to make room for the text) and `badge_at` (sticker position); `position` = `top`, `middle` or `bottom`, wherever the headline will not cover the subject. Never promise anything the film does not show.
-- Style the cover for the niche and subject, and vary it between videos so the channel never looks templated: `font` (`inter`, `anton`, `bebas-neue`, `archivo-black`, `bangers`, `orbitron`, `playfair`; feel and uses in `assets/library/fonts/display/FONTS.md`), `palette` (hex `text`, `highlight`, `badge`, `badge_text`, `arrow` colours that echo the subject: e.g. rain-cyan and Sahara-green for a rain film, ice-blue and hot pink for an ice Moon, fiery orange and red for heat), `grade` (`vivid`, `cool`, `warm`, `dramatic`, `natural`) and `tilt`. Keep strong contrast so it reads at small sizes.
-- Ensure `delivery.video_output` is `output/<project.slug>.mp4`, codecs H.264 yuv420p / AAC 48k, and `success_reply` exactly `absolute_mp4_path_only`.
-- Ensure your script remains intriguing even **if listened to without video** and your visual storytelling remains comprehensible when **watched muted with captions**.
-- Do an internal final pass: validate science, scene timing, narration pacing, source credibility, composition, JSON syntax, and complete concrete camera/animation specifications.
-- **Save** the JSON as `stories/<slug>.json` (`slug` = `project.slug`; if that slug already exists, choose a new distinct slug rather than overwriting another film) and run `python scripts/validate_storyboard.py stories/<slug>.json`. Fix every error until it prints `VALID`, then continue straight to Part B.
+- Must conform strictly to `storyboard.schema.json` v1.1.0 (no additional keys, comments, or Markdown fences inside the raw JSON).
+- Scenes must partition the runtime: `S01.start_s = 0`, each `end_s` equals next `start_s`, last `end_s = project.duration_s`.
+- Shot intervals must partition each scene without gaps.
+- `claim_ids` may only reference declared `scientific_model.claims[].id`.
+- Mandatory `thumbnail` block:
+  - `time_s`: the single most striking, readable moment outside dissolves.
+  - `headline`: 2–4 punchy curiosity words in uppercase, ending in `?!` (e.g., `"COIN BLACK HOLE?!"`, `"NO OXYGEN?!"`).
+  - `highlight`: array of 1–2 key words drawn in accent color.
+  - `badge`: 1–3 word sticker with a striking true number (e.g., `"3,900,000 G"`, `"5 SECONDS"`, `"−91% TIDES"`).
+  - `focus`: subject coordinates `[x, y]` as fractions of the frame.
+  - `style`: `"bold"` (default), `font`: `"anton"`, `"bebas-neue"`, or `"orbitron"`, `grade`: `"vivid"` or `"dramatic"`, `tilt`: -3.
+- Save as `stories/<slug>.json` and validate with `python scripts/validate_storyboard.py stories/<slug>.json`. Ensure it prints `VALID` before proceeding to Part B.
 
 ---
 
 # PART B — BUILD, VOICE, CAPTION AND RENDER THE VIDEO
 
-Use the repository's existing pipeline and library; `CLAUDE.md` / `AGENTS.md` and `04_BUILD_VIDEO_PROMPT.md` describe the same contract in more detail.
-
-1. **Reuse and build.** Resolve `asset_plan` against `assets/registry.json`: configure existing `src/library/` components first; build missing pieces; promote genuinely reusable new work to `src/library/` or `assets/library/` and register only real, working files (stable ID, source path, tags, configurable parameters, `created_for`, license, notes). Keep story-specific code in `src/stories/<slug>/` (mirror an existing story: `film.ts`, `timeline.ts`, `stages/`, `soundtrack.mjs`). Build **every** shot, camera, effect and transition with deterministic `renderAt(frameIndex)`, `time_s = frameIndex / 30`, seeded randomness; render `duration_s × 30` frames. Never hard-code a story's timestamps or camera poses into shared library assets.
-2. **Narration (actual voice).** `node tools/narrate.mjs stories/<slug>.json` synthesizes each scene's exact narration locally (Kokoro `am_michael` by default; Piper only as a fallback) and aligns real word timings with local Whisper into `build/<slug>/audio/narration.json`. Listen-check the result through its timings: if a scene's speech overruns its window, adjust the storyboard's narration or scene times (keep it `VALID`) rather than pushing the voice faster than about 160 words per minute. If a word is mispronounced, rephrase it in the storyboard and re-run.
-3. **Burned-in captions.** Drive the caption layer (`caption-kinetic-v1`) from `build/<slug>/audio/narration.json`, never from guessed times: every spoken word on screen, 2–6-word phrases, at most two lines, inside the safe area, active word highlighted, `caption_emphasis` treatments applied.
-4. **Transcript and caption files.** From the same word timings and the same phrase grouping as the burned-in captions, write:
-   - `output/<slug>.srt` — SubRip captions (`HH:MM:SS,mmm --> HH:MM:SS,mmm`), numbered from 1, one caption phrase per cue (max two lines), text exactly as spoken, times on the final video timeline, every cue inside `0 … duration_s`;
-   - `output/<slug>.txt` — plain-text transcript: the title on the first line, then the exact narration scene by scene, one paragraph per scene, each starting with its `[mm:ss]` start time.
-   If the repository has no exporter yet, add one small reusable script (for example `tools/transcript.mjs <slug>`) that reuses the caption phrase splitting, so the files always match what viewers see; reuse it in future runs.
-5. **Soundtrack.** Write `src/stories/<slug>/soundtrack.mjs` (original procedural music and sound design with `audio-synth-kit-v1`, following `music_direction`, `sfx_direction` and `audio_cues`), then `node tools/soundtrack.mjs <slug>` → `build/<slug>/audio/mix.wav` (48 kHz stereo; narration on top; about -16 LUFS, true peak ≤ -1.5 dBTP).
-6. **Smoke frames, then the final render.** `node tools/render.mjs <slug> --frames <3 strategic frames> --scale 0.5`; look at the three frames for blank or clipped shots, wrong scale and caption mistakes, and fix real problems. Then `node tools/render.mjs <slug> --final --crf 19` → `output/<slug>.mp4` (H.264 yuv420p, AAC 48 kHz stereo, `+faststart`, picture + narration + music/SFX + burned-in captions in one file). The same run writes the thumbnail `output/<slug>.jpg` (1080×1920 JPG bold cover: clean still at `thumbnail.time_s` with headline, sticker and arrow); `--thumbnail` regenerates only it.
+Use the repository's deterministic pipeline:
+1. **Build & Stage:** Create `src/stories/<slug>/` (`film.ts`, `timeline.ts`, `stages/`, `soundtrack.mjs`). Implement deterministic `renderAt(frameIndex)`, `time_s = frameIndex / 30`. Never use floating 2D charts where 3D environments apply.
+2. **Narration:** Run `node tools/narrate.mjs stories/<slug>.json` using Kokoro (`am_michael`) with opening pacing speed up to 1.08x. Ensure audio starts at $t \le 0.08\text{ s}$ with zero leading dead air. Whisper aligns word timings into `build/<slug>/audio/narration.json`.
+3. **Burned-In Captions:** Drive `caption-kinetic-v1` from real Whisper timestamps. 2–5 word phrases, uppercase impact styling, active-word highlight, safe area baseline $y \approx 1320\text{ px}$.
+4. **Captions & Transcript Exporters:** Export `output/<slug>.srt` and `output/<slug>.txt` matching burned-in phrases.
+5. **Soundtrack:** Write procedural audio in `src/stories/<slug>/soundtrack.mjs` using `audio-synth-kit-v1`. Enforce the pre-impact silence drop and staggered destruction transients. Mix via `node tools/soundtrack.mjs <slug>` to **-14.0 LUFS** (peak $\le$ -1.0 dBTP).
+6. **Smoke Frames & Render:** Render 3 strategic test frames at scale 0.5 (`node tools/render.mjs <slug> --frames a,b,c --scale 0.5`). Verify eye-level framing, telemetry HUD, and caption placement. Then render final video: `node tools/render.mjs <slug> --final --crf 19` $\rightarrow$ `output/<slug>.mp4` + bold cover `output/<slug>.jpg`.
 
 ---
 
 # PART C — CHECKS, METADATA AND CATALOG
 
-1. **Minimal QA only:** `node tools/finalize.mjs <slug> --probe-only` (ffprobe: 1080×1920, 30 fps, duration = `duration_s`, an AAC audio stream, file exists); the three smoke frames; the `.srt` and `.txt` contain every narration word once, in order, and the last cue ends within the video; the thumbnail `output/<slug>.jpg` exists, its subject reads at a glance and the headline does not cover it. Skip unrelated unit/E2E suites, lint sweeps and long reports.
-2. **Upload metadata:** write `metadata/<slug>.json` following `examples/moon-half-distance.metadata.example.json`, with different, accurate, search-ready copy for YouTube Shorts, Instagram Reels, Facebook Reels, TikTok and X based on the finished film's real narration and scenes. Copy rules (the finalizer enforces them): every platform carries **5–15 relevant hashtags** (no generic spam), and every platform's title starts with **"What if"**: the YouTube Shorts and Facebook Reels titles, and the opening line of the Instagram and TikTok captions and the X post, which have no title field. The X post plus its hashtags stays within 280 characters. Record the exact `created_asset_ids` and `reused_asset_ids`; leave `published_urls` empty; never invent links.
-3. **Finalize (required):** `python scripts/finalize_video.py <slug>` (on this machine `node tools/finalize.mjs <slug>` runs it with the bundled ffprobe on `PATH`). It validates the media and the copy rules, updates `assets/registry.json`, regenerates `ASSET_LIBRARY.md`, writes the publishing copy `output/<slug>.md` and `metadata/<slug>.md`, and rebuilds `VIDEO_CATALOG.md`. The film is not finished until this succeeds.
-4. **Archive (required for every video):** after finalizing, upload `output/<slug>.mp4`, its thumbnail `output/<slug>.jpg` and its publishing copy `output/<slug>.md` to the creator's private Hugging Face dataset repo set in `huggingface.json` (`Whatif2203/whatif`), into the one shared `videos/` folder as `<NNN>-<slug>.mp4`, `<NNN>-<slug>.jpg` and `<NNN>-<slug>.md`, all three under the same number in one commit. NNN is the next zero-padded number after the highest already in that folder, read from the Hub at upload time so other developers' uploads count; a film that already has a number keeps it and its files are replaced. `node tools/finalize.mjs <slug>` does it automatically: finalize → `python scripts/upload_to_hf.py <slug>` → finalize again so the links appear in `metadata/<slug>.md` and `VIDEO_CATALOG.md`. Unchanged files are skipped, simultaneous uploads are retried safely, and `python scripts/upload_to_hf.py --all` uploads every finished video in `output/`. Never read, print or commit the Hugging Face token.
+1. **Minimal QA:** `node tools/finalize.mjs <slug> --probe-only` (verify 1080×1920, 30 fps, exact duration, AAC stereo audio, `.srt`, `.txt`, and `.jpg` exist).
+2. **Upload Metadata:** Write `metadata/<slug>.json` with tailored copy:
+   - YouTube Shorts: Title starting with `"What if"`, concise description, and 5–10 scientific hashtags.
+   - TikTok / Reels / X: High-tension 2nd-person hook, second-by-second summary, and the mandatory interactive comment question (`"Where would you be on the map? 👇"`).
+3. **Finalize & Catalog:** Run `python scripts/finalize_video.py <slug>` to update registry, catalog, and publishing copy.
+4. **Archive:** Upload `output/<slug>.mp4`, `output/<slug>.jpg`, and `output/<slug>.md` to the designated Hugging Face archive dataset (`Whatif2203/whatif`).
 
 ## FINAL REPLY
-Only after the MP4 passes its checks, the finalizer succeeds and the MP4, thumbnail and publishing copy are uploaded to Hugging Face, reply with **one line: the absolute path to `output/<slug>.mp4`** (the `.srt`, `.txt`, thumbnail `.jpg` and publishing copy `.md` sit next to it). Nothing else. If a required step fails, reply with only the one real blocker; never claim a video that was not rendered.
-
-## TOPIC TO GENERATE NOW
-What if Earth moved 10% closer to the Sun?
+Only after the MP4 passes QA, finalizer succeeds, and files are archived, reply with **one line: the absolute path to `output/<slug>.mp4`**. Nothing else. If blocked, state only the single real blocker.

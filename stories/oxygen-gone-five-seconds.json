@@ -1778,6 +1778,41 @@
       }
     }
   ],
+  "thumbnail": {
+    "time_s": 1.8,
+    "headline": "NO OXYGEN FOR 5 SECONDS?!",
+    "highlight": [
+      "NO",
+      "OXYGEN"
+    ],
+    "position": "top",
+    "badge": "EARTH THINS",
+    "badge_at": [
+      0.75,
+      0.32
+    ],
+    "focus": [
+      0.5,
+      0.58
+    ],
+    "zoom": 1.18,
+    "anchor": [
+      0.5,
+      0.62
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "orbitron",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#38BDF8",
+      "badge": "#EF4444",
+      "badge_text": "#FFFFFF",
+      "arrow": "#38BDF8"
+    },
+    "grade": "dramatic",
+    "tilt": -2
+  },
   "delivery": {
     "video_output": "output/oxygen-gone-five-seconds.mp4",
     "video_codec": "h264",
