@@ -23,7 +23,7 @@ If optional values are `AUTO`, choose the most captivating defensible interpreta
 - Vertical **9:16**, **1080 × 1920**, **30 fps**, 24-bit-color-looking premium documentary/simulation aesthetic.
 - Publishable on YouTube Shorts, TikTok, Instagram Reels, Facebook Reels, and X.
 - Main visuals: Three.js/WebGL **real 3D** with meaningful objects, lighting, materials, camera and environmental motion. Never substitute an entire video with static slides, 2D charts, floating rulers, or scrolling text.
-- Spoken voiceover: crisp, articulate, high-tension documentary narrator; intimate, quietly astonished, never sensationally shouted. Target **148–160 WPM** in opening scenes (`S01`–`S04`), easing to **125–135 WPM** during the final twist/payoff.
+- Spoken voiceover: crisp, articulate, intimate narrator; match tension, wonder, or dry wit to the story, never sensationally shouted. Target **148–160 WPM** in opening scenes (`S01`–`S04`), easing to **125–135 WPM** during the final twist/payoff.
 - Audio loudness: master mix normalized to **-14.0 LUFS** (true peak $\le$ -1.0 dBTP). Foreground sound effects must stay punchy (-6 to -10 dB relative to voice), with an intentional **0.25–0.35s acoustic silence drop** (-24 dB duck) programmed immediately before major physical impacts.
 - All words of the spoken narration must appear as **beautiful, correctly timed burned-in captions** (`caption-kinetic-v1`), styled in high-contrast uppercase/title-case phrases (2–5 words), placed in the platform-safe band (baseline $y \approx 1300\text{–}1340\text{ px}$), with vibrant keyword highlights.
 - Mandatory bold thumbnail cover (`thumbnail-title-card-v1`): every film must output `output/<slug>.jpg` (1080×1920) with a punchy 2–4 word uppercase curiosity headline, numeric badge sticker, and directional arrow.
@@ -42,7 +42,7 @@ Read and apply **`skills/shorts-story-writer/SKILL.md`** before drafting. It is 
 - Give an early partial payoff, a substantive reversal **before the midpoint**, and a final answer that fulfills the opening promise. `mid_video_rehook` must name the actual reversal, not merely say "here's the twist."
 - Let the mechanism determine whether a globe shot, damage sequence, survival map, or number is useful. These are available visual tools, not required story stages. Show pivotal events happening to real 3D subjects; no detached 2D charts, floating rulers, or frozen back-of-head mannequins.
 - Include shot `hud_telemetry` using relevant, defensible metrics. Do not invent survivor totals, countdowns, or precision merely to fill the HUD.
-- End with an earned implication or decision and a **story-specific** `comment_bait_question`. Use a visual/sound callback for `loop_connection`; do not force a grammatical loop or narrate "rewind" and "remember where it started."
+- End with an earned implication, decision, or comic payoff. Write a **story-specific** `comment_bait_question` for distribution/publishing copy; speak it only if it strengthens the ending. Use a visual/sound callback for `loop_connection`; do not force a grammatical loop or narrate "rewind" and "remember where it started."
 
 ---
 
