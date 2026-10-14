@@ -5,6 +5,17 @@ Transform a validated storyboard (`stories/<slug>.json` conforming to `storyboar
 
 ---
 
+## 0. PRESERVE THE STORY DURING PRODUCTION
+
+Read `skills/shorts-story-writer/SKILL.md` and apply its editorial gate to the spoken narration before synthesis or rendering. Preserve the hook's promise, the timing of discoveries, the mid-video reversal, and the final payoff when tightening lines for TTS.
+
+- Stage each pivotal event as a visible action with specific subjects and timestamps. A ringing phone, attempted escape, or consequential discovery must affect what happens next; generic room, globe, or laboratory footage is not a substitute.
+- Resolve missing props or actions through the asset registry and explicit stage direction before rendering. Do not flatten the story into a lecture to fit convenient existing scenes.
+- Keep destruction, countdowns, and dramatic impacts grounded in the chosen premise. Physical failure rules apply when failures actually occur; they do not require inventing a catastrophe for a personal story.
+- The thumbnail and platform hooks must match the story actually rendered. Preserve a meaningful visual/sound callback without adding a spoken rewind instruction.
+
+---
+
 ## 1. ARCHITECTURE & REUSE-FIRST STAGE BUILDING (`src/stories/<slug>/`)
 
 1. **Resolve `asset_plan` Against `assets/registry.json`:**
@@ -65,8 +76,8 @@ Transform a validated storyboard (`stories/<slug>.json` conforming to `storyboar
 ## 5. PROCEDURAL SOUNDTRACK & ACOUSTIC STAGGERING (`src/stories/<slug>/soundtrack.mjs`)
 
 1. Author original procedural music and sound design using `audio-synth-kit-v1` (`src/library/audio/synth.mjs`), exporting `buildSoundtrack(duration)`.
-2. **Mandatory Pre-Impact Acoustic Vacuum:**
-   - Honor `"silence"` cues in `audio_cues`: duck music and ambient beds by `-24 dB` for `0.25–0.35s` immediately before the primary counterfactual shockwave or phase shift so the subsequent sub-bass transient hits with maximum contrast.
+2. **Mandatory Acoustic Contrast:**
+   - Honor `"silence"` cues in `audio_cues`: duck music and ambient beds by `-24 dB` for `0.25–0.35s` immediately before the primary impact or reveal. Use a sub-bass transient for a physical impact, or sound appropriate to the actual reveal for a story without destruction.
 3. **Staggered Multi-Tap Destruction Transients:**
    - When multiple 3D objects fail across a scene (cars, roofs, windows, cranes), schedule staggered multi-tap `"impact"` and `"whoosh"` cues separated by `80–180 ms` aligned to the exact visual keyframes (`-6 dB` to `-10 dB` relative to voice).
 4. **Loudness Normalization:**
@@ -77,7 +88,7 @@ Transform a validated storyboard (`stories/<slug>.json` conforming to `storyboar
 ## 6. SMOKE FRAMES, FINAL RENDER & BOLD THUMBNAIL (`tools/render.mjs`)
 
 1. **Smoke Frame Inspection:**
-   - Run `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5` across three strategic timestamps (opening hook, peak escalation, and molecular/planetary twist).
+   - Run `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5` across three strategic timestamps (opening hook, key reversal, and final payoff).
    - Inspect the rendered PNGs for: (a) eye-level POV framing, (b) readable top-left telemetry HUD without academic disclaimer clutter, (c) zero NaN/bloom artifacts, and (d) captions sitting cleanly at `y ≈ 1320 px` without covering the focal subject.
 2. **Final MP4 & Thumbnail Render:**
    - Run `node tools/render.mjs <slug> --final --crf 19` to produce `output/<slug>.mp4` (H.264 `yuv420p`, AAC 48 kHz stereo, `+faststart`) and `output/<slug>.jpg` (`thumbnail-title-card-v1` bold 1080×1920 cover at `thumbnail.time_s` with 2–5 word uppercase headline, quantified sticker `badge`, and `arrow`).
@@ -89,6 +100,6 @@ Transform a validated storyboard (`stories/<slug>.json` conforming to `storyboar
 1. **Probe QA:** Run `node tools/finalize.mjs <slug> --probe-only` to verify 1080×1920 resolution, 30 fps, exact `duration_s`, AAC audio stream, `.srt`, `.txt`, and `.jpg`.
 2. **Author `metadata/<slug>.json`:**
    - **YouTube Shorts:** Title must start with `"What if"` for search discovery; include 5–10 scientific hashtags (`#whatif #astrophysics #earthscience #physics #3danimation`).
-   - **TikTok, Instagram Reels, Facebook Reels & X:** Open the caption with a high-retention 2nd-person POV or declarative hook (e.g., *"You're standing downtown when..."* or *"It's only 0.35 inches wide, but weighs as much as Earth."*), summarize the escalating chain reaction, and end with `distribution.comment_bait_question` (e.g., *"Where would you be on the map? 👇"*).
+   - **TikTok, Instagram Reels, Facebook Reels & X:** Open with the film's strongest 2nd-person consequence or contradiction, summarize its causal story, and end with its earned `distribution.comment_bait_question`. Use a geographic survival question only when the story actually turns on geography or survival.
    - **Taxonomy Hygiene:** Never use standalone gaming tags; pair `#simulation` with explicit science qualifiers so recommendation algorithms route the film to science/documentary audiences.
 3. **Finalize & Archive:** Run `node tools/finalize.mjs <slug>` to validate media and metadata, update `assets/registry.json`, regenerate `ASSET_LIBRARY.md` and `VIDEO_CATALOG.md`, and upload `<NNN>-<slug>.{mp4,jpg,md}` to Hugging Face.

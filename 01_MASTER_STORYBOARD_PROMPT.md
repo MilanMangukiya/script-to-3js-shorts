@@ -7,12 +7,12 @@ Act simultaneously as (1) rigorous science researcher, (2) viral short-form simu
 2. **Part B — Finished video:** implement that storyboard in this repository as a real Three.js film with narration, music, sound design and burned-in captions, rendered to `output/<slug>.mp4`, plus a caption file (`.srt`), a plain-text transcript (`.txt`), and a bold thumbnail cover (`.jpg`).
 3. **Part C — Checks, metadata and catalog:** minimal QA, multi-platform upload metadata and the required finalizer.
 
-Do not stop after the JSON and do not ask for permission between parts: go straight from Part A to Part C. Follow `CLAUDE.md` (Claude Code) or `AGENTS.md` (Codex); they are binding. **Where to run:** Claude Code or Codex inside this repository (it needs file access, Node.js, the local Kokoro/Whisper models and the bundled FFmpeg). If you are running without repository access, you can only do Part A: output the raw JSON in a single code block and state that Parts B–C need Claude Code or Codex.
+For a requested film build, do not stop after the JSON and do not ask for permission between parts: go straight from Part A to Part C. Script reviews, prompt/skill edits, and individual production steps stay within the requested scope. Follow `CLAUDE.md` (Claude Code) or `AGENTS.md` (Codex); they are binding. **Where to run:** Claude Code or Codex inside this repository (it needs file access, Node.js, the local Kokoro/Whisper models and the bundled FFmpeg). If you are running without repository access, you can only do Part A: output the raw JSON in a single code block and state that Parts B–C need Claude Code or Codex.
 
 ## USER INPUT (replace the values on each use)
-TOPIC: "What if you were the last man alive?"
-OPTIONAL_CREATIVE_ANGLE: "SIMULATION"
-OPTIONAL_FOCUS: "STREET LEVEL TO PLANETARY SCALE"
+TOPIC: "{{TOPIC}}"
+OPTIONAL_CREATIVE_ANGLE: "AUTO"
+OPTIONAL_FOCUS: "AUTO"  # choose a causal story, not a mandatory tour of scales
 OPTIONAL_DURATION_SECONDS: "{{DURATION_OR_AUTO}}"  # 45..90 inclusive; target 46..56
 OPTIONAL_ASSET_REGISTRY: "{{ASSET_REGISTRY_OR_EMPTY}}"  # actual assets/registry.json entries, not guessed
 
@@ -33,37 +33,22 @@ If optional values are `AUTO`, choose the most captivating defensible interpreta
 
 # PART A — STORYBOARD
 
-## AUDIENCE-RETENTION STORY ENGINE (SIMULATION ESCALATION)
-Structure every film around an escalating timeline simulation that commands immediate attention, drops the viewer into a human-scale vantage point, and builds relentless physical stakes.
+## AUDIENCE-RETENTION STORY ENGINE
+Read and apply **`skills/shorts-story-writer/SKILL.md`** before drafting. It is the editorial contract for hooks, tension, reversals, payoffs, and clickbait-style packaging. Complete its narration-only editorial gate before Part B; valid JSON alone does not make a compelling story.
 
-### 1. Scene & Beat Budget
-- **45–54 seconds = 7–9 scenes; 55–62 seconds = 9–11 scenes; 1–3 planned shots per scene.**
-- A visible reveal, spatial shift, or physical consequence must occur every **2.5–4.5 seconds**. Never hold a static camera or frozen subject longer than 3.0 seconds.
-
-### 2. The 5-Stage Narrative Sequence
-1. **0–3.5s (`hook`): The Domestic / Street-Level Anchor & Anti-Echo Rule.**
-   - **CRITICAL:** Sentence 1 of the narration must **NEVER repeat the title verbatim** and must **NEVER start with "What if"**. The viewer already read the title.
-   - Drop the viewer immediately into a 2nd-person domestic or street-level setting (`y = 1.4–1.8 m` eye-level camera) at the exact split-second the rule breaks (e.g., *"You're standing at a downtown crosswalk when every oxygen atom on Earth vanishes"* or *"Compress Earth's entire mass into a coin in your city, and the cars go first"*).
-   - Cut across at least two contrasting world scales (human eye-level to orbital/macro) within the first 8 seconds.
-2. **3.5–10s (`premise`): The Shocking Physical Metric & Telemetry Lock.**
-   - Establish the precise physical counterfactual with an unmistakable scale juxtaposition (e.g., *"It's only 0.35 inches wide, but weighs as much as the planet"*).
-   - Display a diegetic top-left Simulation Telemetry HUD (`TIMER: T+00:01s | SURVIVORS | DISTANCE | G-FORCE`).
-3. **10–25s (`mechanism` & `escalation`): Sequential Physical Object Failure.**
-   - Show concrete physical objects breaking down in clear causal order (**cars $\rightarrow$ roofs $\rightarrow$ rivers $\rightarrow$ buildings $\rightarrow$ atmosphere**).
-   - **FORBIDDEN:** Do NOT cut to detached 2D bar charts, measuring cylinders, or floating rulers. Show the consequences happening to real 3D assets (`city-street-block-v1`, `pedestrian-crowd-v1`, `flame-v1`, `ocean-surface-v1`, `plastic-bottle-v1`, `airliner-v1`).
-4. **25–42s (`human_impact` & `second_order_effect`): The Map Radius & Survival Zone.**
-   - Translate the physics into spatial survival thresholds using leader-line callouts (`overlay-labels-v1`) or city damage rings (e.g., *"At 2 miles away, your house feels millions of g"* or *"35°C wet-bulb heat — sweat can no longer cool the human body"*).
-   - Depict human impact with respectful medium-distance silhouettes or dynamic crowd movement; never use frozen back-of-head mannequins held for multiple seconds.
-5. **42–54s (`twist`, `ending` & `loop_connection`): The Counter-Intuitive Twist & Seamless Loop.**
-   - Deliver one surprising scientific revelation tied to the mechanism (e.g., *"the Moon keeps orbiting a coin"*, *"the oxygen rushes back, but the hydrogen is still there"*).
-   - **Ending CTA:** Close with an interactive survival or geographic prompt (e.g., *"Where would you be on the map?"* or *"Would you have survived the first five seconds?"*).
-   - **Loop Connection:** The final spoken line and camera keyframe must bridge syntactically and visually back into Frame 0 (`t = 0.0s`), compelling a seamless second watch.
+- Build **one causal story around one viewer question**. Select personal decisions, physical escalation, discovery, or transformation to suit the topic. Do not automatically tour traffic, shipping, hospitals, a laboratory, and Earth from orbit.
+- Target **46–56 seconds, 8–10 scenes, and 1–3 planned shots per scene**. A beat every **2.5–4.5 seconds** must change an expectation, consequence, or action; moving the camera alone does not satisfy this requirement.
+- Sentence 1 must drop straight into a **second-person domestic/street-level consequence**, at human eye level (`y = 1.4–1.8 m`). Never start with "What if," repeat the title, or spend the first line establishing where the viewer is standing.
+- Give an early partial payoff, a substantive reversal **before the midpoint**, and a final answer that fulfills the opening promise. `mid_video_rehook` must name the actual reversal, not merely say "here's the twist."
+- Let the mechanism determine whether a globe shot, damage sequence, survival map, or number is useful. These are available visual tools, not required story stages. Show pivotal events happening to real 3D subjects; no detached 2D charts, floating rulers, or frozen back-of-head mannequins.
+- Include shot `hud_telemetry` using relevant, defensible metrics. Do not invent survivor totals, countdowns, or precision merely to fill the HUD.
+- End with an earned implication or decision and a **story-specific** `comment_bait_question`. Use a visual/sound callback for `loop_connection`; do not force a grammatical loop or narrate "rewind" and "remember where it started."
 
 ---
 
 ## SCIENTIFIC HONESTY & SIMULATION TELEMETRY
 - Define a **precise counterfactual**: state initial conditions, what is held constant, and explicitly separate timescales (instantaneous $0\text{–}5\text{s}$ impact vs. decadal environmental response vs. geological aftermath).
-- Trace a rigorous causal chain: fundamental physics/chemistry $\rightarrow$ environmental response $\rightarrow$ structural/infrastructure failure $\rightarrow$ human experience. Cite claims via `claim_ids` linked to `scientific_model.claims[]`.
+- Trace the topic's rigorous causal chain from mechanism to observable consequence to human experience. Use physics/chemistry, biology, infrastructure, or explicitly qualified human responses as appropriate; destruction is not mandatory. Cite claims via `claim_ids` linked to `scientific_model.claims[]`.
 - Assign defensible `confidence` levels: `established` for direct physics, `derived` for exact mathematical scaling, `plausible` for modeled outcomes, `speculative` for edge-case projections.
 - Check dimensional consistency: force $\neq$ acceleration $\neq$ pressure; Schwarzschild radius $R_s = 2GM/c^2$; inverse-square law $S \propto 1/r^2$; Kepler's third law $T \propto a^{1.5}$; Clausius-Clapeyron $\approx +7\% \text{ moisture}/^\circ\text{C}$.
 - **NO ACADEMIC DISCLAIMER BADGES ON SCREEN:** Never render meta-disclaimers like `SCHEMATIC • NOT TO SCALE`, `LIKELY • EXACT EFFECT UNCERTAIN`, or `HYPOTHETICAL • CGI` on the canvas. Keep scientific qualifications in the voiceover script and claim reasoning. All on-screen visual chips must be diegetic simulation telemetry (timers, distances, temperatures, accelerations, population metrics).
@@ -93,11 +78,11 @@ Provide implementation-level technical direction for every shot:
 ---
 
 ## NARRATION, AUDIO & SOUNDTRACK
-- Write conversational, high-velocity language with short, rhythmic sentences, sensory details, and zero academic filler.
-- Target **148–160 WPM** during the opening $25\text{ seconds}$ to hook fast scrollers, moderating to **125–135 WPM** for the final philosophical payoff.
+- Apply the writing skill's spoken-language and editorial rules: concrete actions, varied sentence lengths, earned surprises, and concise qualifications. Cut explanatory repetition before accelerating speech.
+- Target **148–160 WPM** during the opening $25\text{ seconds}$ to hook fast scrollers, moderating to **125–135 WPM** for the final revelation or consequential decision.
 - Insert purposeful $0.25\text{–}0.4\text{s}$ breathing gaps after massive visual reveals.
-- Program an explicit **`"silence"` audio cue** (-24 dB duck) in `audio_cues` 0.3s before the main shockwave hits.
-- Schedule staggered multi-tap `"impact"` cues separated by 80–150 ms for sequential physical failures.
+- Program an explicit **`"silence"` audio cue** (-24 dB duck) in `audio_cues` 0.3s before the primary impact or reveal. Choose reveal sounds that fit the event actually staged.
+- When sequential physical failures are depicted, schedule staggered multi-tap `"impact"` cues separated by 80–150 ms and aligned to those failures.
 - Mix narration clearly over music (-16 to -18 dB bed); normalize master audio to **-14.0 LUFS** (true peak $\le$ -1.0 dBTP).
 - Spell out numbers phonetically where necessary to ensure natural TTS pronunciation.
 
@@ -115,7 +100,7 @@ Provide implementation-level technical direction for every shot:
 - Define `distribution.primary_search_intent` and `core_keywords` pairing broad discovery tags with **explicit scientific domain qualifiers** (`"astrophysics simulation"`, `"earth science what if"`, `"physics thought experiment"`, `"threejs 3d documentary"`). This prevents YouTube from misrouting science simulations to gaming audiences.
 - Multi-Platform Copy Rules:
   - **YouTube Shorts:** Title must start with `"What if"` for search SEO, paired with 5–10 relevant hashtags.
-  - **TikTok, Instagram Reels, and X:** Opening caption hook must be an intriguing, 2nd-person declarative hook (e.g., *"You're at a rooftop bar downtown when..."* or *"A coin-sized black hole just appeared in your city"*), followed by an interactive comment prompt (*"Where would you be on the map? 👇"*).
+  - **TikTok, Instagram Reels, and X:** Open with the story's strongest 2nd-person consequence or contradiction, then its earned `distribution.comment_bait_question`. Preserve the film's actual promise and payoff; do not default to a generic map/survival question.
   - Every platform includes 5–12 targeted hashtags without generic spam.
 
 ---
@@ -127,10 +112,11 @@ Provide implementation-level technical direction for every shot:
 - `claim_ids` may only reference declared `scientific_model.claims[].id`.
 - Mandatory `thumbnail` block:
   - `time_s`: the single most striking, readable moment outside dissolves.
-  - `headline`: 2–4 punchy curiosity words in uppercase, ending in `?!` (e.g., `"COIN BLACK HOLE?!"`, `"NO OXYGEN?!"`).
+  - `headline`: 2–4 punchy curiosity words in uppercase, no more than 38 characters, ending in `?!` (e.g., `"COIN BLACK HOLE?!"`, `"NO OXYGEN?!"`). It must promise something the film delivers.
   - `highlight`: array of 1–2 key words drawn in accent color.
   - `badge`: 1–3 word sticker with a striking true number (e.g., `"3,900,000 G"`, `"5 SECONDS"`, `"−91% TIDES"`).
   - `focus`: subject coordinates `[x, y]` as fractions of the frame.
+  - `arrow`: `true`, directing attention to the central story subject.
   - `style`: `"bold"` (default), `font`: `"anton"`, `"bebas-neue"`, or `"orbitron"`, `grade`: `"vivid"` or `"dramatic"`, `tilt`: -3.
 - Save as `stories/<slug>.json` and validate with `python scripts/validate_storyboard.py stories/<slug>.json`. Ensure it prints `VALID` before proceeding to Part B.
 
@@ -143,7 +129,7 @@ Use the repository's deterministic pipeline:
 2. **Narration:** Run `node tools/narrate.mjs stories/<slug>.json` using Kokoro (`am_michael`) with opening pacing speed up to 1.08x. Ensure audio starts at $t \le 0.08\text{ s}$ with zero leading dead air. Whisper aligns word timings into `build/<slug>/audio/narration.json`.
 3. **Burned-In Captions:** Drive `caption-kinetic-v1` from real Whisper timestamps. 2–5 word phrases, uppercase impact styling, active-word highlight, safe area baseline $y \approx 1320\text{ px}$.
 4. **Captions & Transcript Exporters:** Export `output/<slug>.srt` and `output/<slug>.txt` matching burned-in phrases.
-5. **Soundtrack:** Write procedural audio in `src/stories/<slug>/soundtrack.mjs` using `audio-synth-kit-v1`. Enforce the pre-impact silence drop and staggered destruction transients. Mix via `node tools/soundtrack.mjs <slug>` to **-14.0 LUFS** (peak $\le$ -1.0 dBTP).
+5. **Soundtrack:** Write procedural audio in `src/stories/<slug>/soundtrack.mjs` using `audio-synth-kit-v1`. Enforce the silence drop before the primary impact or reveal, and stagger destruction transients when failures are depicted. Mix via `node tools/soundtrack.mjs <slug>` to **-14.0 LUFS** (peak $\le$ -1.0 dBTP).
 6. **Smoke Frames & Render:** Render 3 strategic test frames at scale 0.5 (`node tools/render.mjs <slug> --frames a,b,c --scale 0.5`). Verify eye-level framing, telemetry HUD, and caption placement. Then render final video: `node tools/render.mjs <slug> --final --crf 19` $\rightarrow$ `output/<slug>.mp4` + bold cover `output/<slug>.jpg`.
 
 ---
@@ -153,7 +139,7 @@ Use the repository's deterministic pipeline:
 1. **Minimal QA:** `node tools/finalize.mjs <slug> --probe-only` (verify 1080×1920, 30 fps, exact duration, AAC stereo audio, `.srt`, `.txt`, and `.jpg` exist).
 2. **Upload Metadata:** Write `metadata/<slug>.json` with tailored copy:
    - YouTube Shorts: Title starting with `"What if"`, concise description, and 5–10 scientific hashtags.
-   - TikTok / Reels / X: High-tension 2nd-person hook, second-by-second summary, and the mandatory interactive comment question (`"Where would you be on the map? 👇"`).
+   - TikTok / Reels / X: High-tension 2nd-person hook, concise causal summary, and the story-specific `distribution.comment_bait_question`.
 3. **Finalize & Catalog:** Run `python scripts/finalize_video.py <slug>` to update registry, catalog, and publishing copy.
 4. **Archive:** Upload `output/<slug>.mp4`, `output/<slug>.jpg`, and `output/<slug>.md` to the designated Hugging Face archive dataset (`Whatif2203/whatif`).
 
