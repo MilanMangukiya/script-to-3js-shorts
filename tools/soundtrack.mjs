@@ -137,63 +137,45 @@ async function main() {
   const finalMixWavPath = path.join(audioBuildDir, 'mix.wav');
   const bin = ffmpegPath || 'ffmpeg';
 
-  if (fs.existsSync(narrationWavPath)) {
-    // Sidechain duck bed slightly under active voiceover & normalize master to -14.0 LUFS
-    const filterComplex = [
-      `[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0[voice]`,
-      `[1:a]aresample=48000[bed]`,
-      `[bed][voice]sidechaincompress=threshold=0.035:ratio=3.5:attack=15:release=220[ducked]`,
-      `[voice][ducked]amix=inputs=2:duration=longest:dropout_transition=0:weights='1.25 0.95',loudnorm=I=${targetLufs}:TP=${truePeakDbtp}:LRA=7[out]`,
-    ].join(';');
+  // 1) Pre-mix (float, no normalisation): voice over the bed, the bed side-chain ducked under the voice. The voice is
+  //    split so it can feed both the ducker key and the mix (an FFmpeg label can only be consumed once).
+  const premixPath = path.join(audioBuildDir, 'premix.wav');
+  const hasVoice = fs.existsSync(narrationWavPath);
+  const premix = spawnSync(bin, hasVoice
+    ? ['-y', '-hide_banner', '-loglevel', 'error', '-i', narrationWavPath, '-i', bedWavPath, '-filter_complex', [
+        `[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0,asplit=2[voice][key]`,
+        `[1:a]aresample=48000[bed]`,
+        `[bed][key]sidechaincompress=threshold=0.035:ratio=3.5:attack=15:release=220[ducked]`,
+        `[voice][ducked]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0:weights='1.25 0.95'[out]`,
+      ].join(';'), '-map', '[out]', '-c:a', 'pcm_f32le', '-ar', '48000', '-ac', '2', '-t', String(duration_s), premixPath]
+    : ['-y', '-hide_banner', '-loglevel', 'error', '-i', bedWavPath, '-c:a', 'pcm_f32le', '-ar', '48000', '-ac', '2', '-t', String(duration_s), premixPath], { stdio: 'inherit' });
+  if (premix.status !== 0) process.exit(premix.status ?? 1);
 
-    const res = spawnSync(
-      bin,
-      [
-        '-y',
-        '-i',
-        narrationWavPath,
-        '-i',
-        bedWavPath,
-        '-filter_complex',
-        filterComplex,
-        '-map',
-        '[out]',
-        '-ar',
-        '48000',
-        '-ac',
-        '2',
-        '-t',
-        String(duration_s),
-        finalMixWavPath,
-      ],
-      { stdio: 'inherit' }
-    );
-    if (res.status !== 0) process.exit(res.status ?? 1);
-  } else {
-    const res = spawnSync(
-      bin,
-      [
-        '-y',
-        '-i',
-        bedWavPath,
-        '-af',
-        `loudnorm=I=${targetLufs}:TP=${truePeakDbtp}:LRA=7`,
-        '-ar',
-        '48000',
-        '-ac',
-        '2',
-        '-t',
-        String(duration_s),
-        finalMixWavPath,
-      ],
-      { stdio: 'inherit' }
-    );
-    if (res.status !== 0) process.exit(res.status ?? 1);
+  // 2) Linear loudness normalisation: measure integrated loudness (EBU R128), apply the gain, and catch peaks with a
+  //    limiter set below the true-peak ceiling (sample-peak limiter, so keep margin for inter-sample and AAC overshoot). Repeat
+  //    the measure → gain step until the integrated loudness is within 0.2 LU of the target.
+  const measure = (file) => {
+    const r = spawnSync(bin, ['-hide_banner', '-nostats', '-i', file, '-af', `loudnorm=I=${targetLufs}:TP=${truePeakDbtp}:LRA=11:print_format=json`, '-f', 'null', '-'], { encoding: 'utf8' });
+    const j = JSON.parse((r.stderr.match(/\{[\s\S]*?\}/g) ?? []).pop() ?? '{}');
+    return { I: Number(j.input_i), TP: Number(j.input_tp) };
+  };
+  // ~1.4 dB under the ceiling: sample-peak limiting plus AAC encoder overshoot in the final MP4.
+  const limit = Math.pow(10, (truePeakDbtp - 1.4) / 20);
+  let gain = targetLufs - measure(premixPath).I, result = { I: NaN, TP: NaN };
+  for (let pass = 0; pass < 4; pass++) {
+    const r = spawnSync(bin, ['-y', '-hide_banner', '-loglevel', 'error', '-i', premixPath, '-af', `volume=${gain.toFixed(3)}dB,alimiter=limit=${limit.toFixed(4)}:attack=4:release=60:level=false`,
+      '-c:a', 'pcm_s16le', '-ar', '48000', '-ac', '2', '-t', String(duration_s), finalMixWavPath], { stdio: 'inherit' });
+    if (r.status !== 0) process.exit(r.status ?? 1);
+    result = measure(finalMixWavPath);
+    if (Math.abs(result.I - targetLufs) <= 0.2) break;
+    gain += targetLufs - result.I;
   }
+  fs.rmSync(premixPath, { force: true });
 
   console.log(
-    `[soundtrack] Mixed ${finalMixWavPath} (${duration_s}s @ ${targetLufs} LUFS, peak <= ${truePeakDbtp} dBTP)`
+    `[soundtrack] Mixed ${finalMixWavPath} (${duration_s}s) | integrated ${result.I.toFixed(1)} LUFS (target ${targetLufs}), true peak ${result.TP.toFixed(1)} dBTP (max ${truePeakDbtp})`
   );
+  if (!(result.TP <= truePeakDbtp + 0.05)) { console.error('[soundtrack] true peak exceeds the ceiling'); process.exit(4); }
 }
 
 main().catch((err) => {

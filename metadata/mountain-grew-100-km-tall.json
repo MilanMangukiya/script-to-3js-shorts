@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "mountain-grew-100-km-tall",
+  "topic": "What if a mountain on Earth grew 100 kilometres tall?",
+  "duration_s": 55,
+  "video_file": "output/mountain-grew-100-km-tall.mp4",
+  "scientific_scope_note": "A thought experiment: one 100 km peak (200 km base radius) appears in the Western Alps while rock, gravity and air behave as today. Everest's 8,849 m, the 100 km Kármán line (FAI convention), US Standard Atmosphere pressures (about a third of sea level at 8.85 km), the Armstrong limit (~6.3 kPa near 19 km, where water boils at 37 °C; exposed fluids such as saliva boil, blood in vessels does not), the near-black sky by ~30 km, meteors burning up in the mesosphere, the 8,000 m death zone (92% of this mountain's height) and rain shadows are established. The ~26,000 atm (2.6 GPa) base load is ρgh with granite-like rock, against granite's ~100-250 MPa strength; the collapse, the 100,000-year time-lapse, the meteor rate shown, the 12% lee-side rain figure and the final plateau are illustrative.",
+  "created_asset_ids": [
+    "atmosphere-scatter-sky-v1",
+    "giant-peak-v1",
+    "meteor-streaks-v1"
+  ],
+  "reused_asset_ids": [
+    "film-pipeline-v1",
+    "camera-keyframe-rig-v1",
+    "caption-kinetic-v1",
+    "overlay-labels-v1",
+    "audio-synth-kit-v1",
+    "shader-noise-math-v1",
+    "font-inter-v1",
+    "earth-textures-nasa-v1",
+    "city-street-block-v1",
+    "humanoid-figure-v1",
+    "bird-flock-v1",
+    "starfield-v1",
+    "glass-of-water-v1",
+    "thumbnail-title-card-v1",
+    "font-display-set-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if a mountain on Earth grew 100 km tall?",
+      "description": "What if one mountain on Earth grew 100 kilometres tall? That's eleven Everests stacked, with its summit at the edge of space.\n\nIn this 3D science simulation we climb it by altitude. At 9 km you pass Everest, breathing a third of the oxygen. Near 19 km (the Armstrong limit) water boils at body temperature, even the saliva on your tongue. By 30 km the noon sky is nearly black, and at 80 km meteors burn up beside you. Over 90% of its height is a death zone, and it stands about nine times taller than the weather, splitting storms and leaving a desert in its rain shadow.\n\nThe twist: Earth can't hold it up. The rock under the summit would carry about 2.6 GPa, roughly 26,000 atmospheres, more than ten times what granite can bear. The base would crush, flow and sink, which is why Earth's mountains top out near Everest's height.\n\nWhere would you be standing when it rose? 👇\n\nA thought experiment: the growth, the meteor rate, the rain-shadow ratio and the 100,000-year collapse are illustrative, and numbers are rounded.\nSources: Britannica (Mount Everest); FAI (Kármán line statement); NASA NTRS (U.S. Standard Atmosphere, 1976); NOAA (layers of the atmosphere); National Geographic Education (rain shadow); UCAR (cloud types).",
+      "tags": [
+        "what if a mountain was 100 km tall",
+        "tallest possible mountain",
+        "how tall can mountains get",
+        "karman line",
+        "edge of space",
+        "armstrong limit",
+        "death zone",
+        "mount everest",
+        "rain shadow",
+        "earth science what if",
+        "physics thought experiment",
+        "3d science simulation"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#EarthScience",
+        "#Physics",
+        "#Space",
+        "#Mountains",
+        "#Everest",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what would happen if a mountain was 100 km tall",
+        "how tall can a mountain be on earth",
+        "why is everest the tallest mountain",
+        "what is the armstrong limit",
+        "where does space begin"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "What if a mountain grew 100 km tall? 🏔️ You're crossing a street downtown when the horizon starts to climb.\nClimb it: Everest's height at 9 km, water boiling at body temperature at 19 km, a black noon sky at 30 km, meteors burning up beside you at 80 km, and a summit in space. Then the twist: its base would feel about 26,000 atmospheres, and granite crushes long before that.\nWhere would you be standing when it rose? 👇",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#EarthScience",
+        "#Physics",
+        "#Space",
+        "#Mountains",
+        "#Everest"
+      ],
+      "keywords": [
+        "100 km mountain",
+        "edge of space",
+        "mountain height limit"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if a mountain on Earth grew 100 km tall?",
+      "description": "What if one mountain on Earth grew 100 km tall, eleven Everests with its summit in space? We climb it in a 3D science simulation: Everest's height at 9 km, water boiling at body temperature near 19 km, a black noon sky by 30 km and meteors burning up at 80 km. Over 90% of its height is a death zone, and it splits the weather into storms on one side and desert on the other. The twist: its base would feel about 26,000 atmospheres, and granite crushes long before that, so the mountain would sink back down. Where would you be standing when it rose? 👇 (Thought experiment; growth, weather and collapse timing are illustrative.)",
+      "hashtags": [
+        "#WhatIf",
+        "#EarthScience",
+        "#Physics",
+        "#Space",
+        "#Mountains",
+        "#Science"
+      ],
+      "keywords": [
+        "tallest mountain possible",
+        "karman line",
+        "armstrong limit"
+      ]
+    },
+    "tiktok": {
+      "caption": "What if a mountain grew 100 km tall? You're crossing a street when the horizon starts to climb 🏔️\n9 km: Everest. 19 km: water boils at body temperature. 30 km: black sky at noon. 80 km: meteors beside you. 100 km: space. Then Earth crushes it.\nWhere would you be standing when it rose? 👇",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#EarthScience",
+        "#Physics",
+        "#Space",
+        "#Mountains",
+        "#LearnOnTikTok"
+      ],
+      "keywords": [
+        "what if mountain 100 km",
+        "edge of space",
+        "everest"
+      ]
+    },
+    "x_video": {
+      "post": "What if a mountain grew 100 km tall? You're at a crosswalk when the horizon climbs: Everest at 9 km, boiling saliva at 19 km, meteors at 80 km, a summit in space. Then its base crushes under 26,000 atm. Where would you stand? 👇",
+      "hashtags": [
+        "#WhatIf",
+        "#EarthScience",
+        "#Physics",
+        "#Space",
+        "#Mountains"
+      ],
+      "keywords": [
+        "100 km mountain",
+        "karman line"
+      ]
+    }
+  },
+  "publishing_status": "rendered_not_published",
+  "rendered_at_utc": "2026-10-14T02:14:40Z",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 11,
+    "path_in_repo": "videos/011-mountain-grew-100-km-tall.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/011-mountain-grew-100-km-tall.mp4",
+    "sha256": "9fb2e9e9dc86574698f1fd5b7ec9552a305dc5689827028473f899b7eb28faed",
+    "size_bytes": 29624162,
+    "thumbnail_path_in_repo": "videos/011-mountain-grew-100-km-tall.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/011-mountain-grew-100-km-tall.jpg",
+    "thumbnail_sha256": "d2697ea4966acdfd3bee32cf49ef5c02816f2fd49db3399b5af53bcbd89dbac5",
+    "copy_path_in_repo": "videos/011-mountain-grew-100-km-tall.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/011-mountain-grew-100-km-tall.md",
+    "copy_sha256": "8114435e2c667e25dcfaa3ecc2a7f0c42975fc89b60eaedb5218190cb532081c",
+    "uploaded_at_utc": "2026-10-14T02:15:07Z"
+  }
+}

@@ -14,6 +14,7 @@ import { createFilm as continentsOneLandmass } from './stories/continents-one-la
 import { createFilm as earthCoreSolid } from './stories/earth-core-solid/film';
 import { createFilm as earthTenPercentCloser } from './stories/earth-ten-percent-closer/film';
 import { createFilm as everyHumanJumpedAtOnce } from './stories/every-human-jumped-at-once/film';
+import { createFilm as mountainGrew100KmTall } from './stories/mountain-grew-100-km-tall/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -27,6 +28,7 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'earth-core-solid': earthCoreSolid,
   'earth-ten-percent-closer': earthTenPercentCloser,
   'every-human-jumped-at-once': everyHumanJumpedAtOnce,
+  'mountain-grew-100-km-tall': mountainGrew100KmTall,
 };
 
 async function boot() {

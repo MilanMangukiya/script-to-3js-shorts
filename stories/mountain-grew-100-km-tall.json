@@ -1,0 +1,2641 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if a mountain on Earth grew 100 kilometres tall?",
+    "title": "What if a mountain on Earth grew 100 kilometres tall?",
+    "slug": "mountain-grew-100-km-tall",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 55,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science and space shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "What would a single 100 km mountain look like and do — from a city street to the edge of space — and could Earth even hold it up?",
+    "viewer_takeaway": "Air thins so fast that most of a 100 km mountain is lethal and its summit is in space, but rock under Earth's gravity cannot carry that weight: the mountain would crush its own base and sink."
+  },
+  "scientific_model": {
+    "baseline_reality": "Earth's highest summit, Everest, is 8.85 km; mountains on Earth top out near 9–10 km because rock strength, erosion and isostasy limit relief under 1 g.",
+    "counterfactual_change": "One cone-shaped peak, 100 km tall with a 200 km base radius, rises in the Western Alps (45.8°N, 6.9°E) about 300 km from the viewer's city; rock density, gravity, air and climate physics are unchanged.",
+    "assumptions": [
+      "Rock density 2,700 kg/m³ (granite-like), g = 9.8 m/s².",
+      "Atmosphere follows the 1976 US Standard Atmosphere; mid-latitude tropopause ~11 km.",
+      "Growth happens over seconds for the story (instantaneous counterfactual); consequences are then followed at their natural timescales.",
+      "Viewer stands 300 km south; noon sun."
+    ],
+    "causal_chain": [
+      "Height alone: summit far above the troposphere and at the conventional edge of space.",
+      "Air pressure falls ~exponentially (8 km scale height): a third at 9 km, Armstrong limit at 19 km, near-black sky by 30 km, meteors burning at 80 km.",
+      "The wall blocks the westerlies: orographic storms windward, rain shadow desert leeward.",
+      "The rock column loads its base with ~2.6 GPa, over ten times granite's strength.",
+      "The base fails, the mountain slumps, spreads and sinks isostatically until relief returns toward Earth's normal limits."
+    ],
+    "uncertainties": [
+      "Real collapse would start during growth; the timescale split (instant growth vs 100,000-year slump) is illustrative.",
+      "Weather response magnitudes (rain ratios, desert extent) are not modelled.",
+      "Final plateau height depends on rheology and isostatic compensation."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Mount Everest's summit is 8,848.86 m above sea level, so a 100 km peak is about 11.3 Everests tall.",
+        "confidence": "derived",
+        "reasoning": "100 / 8.849 = 11.3 using the 2020 Nepal–China survey height.",
+        "presentation_guardrail": "Say 'eleven Everests, stacked' (rounded down); rings are drawn every 8.849 km."
+      },
+      {
+        "id": "CL02",
+        "statement": "100 km altitude is the Kármán line that FAI and many organisations use as the conventional boundary of space.",
+        "confidence": "established",
+        "reasoning": "FAI 2018 statement; the boundary is a convention (some agencies use 80 km).",
+        "presentation_guardrail": "'In space' means at the conventional 100 km boundary, not in orbit."
+      },
+      {
+        "id": "CL03",
+        "statement": "Near 8.85 km the air pressure is about one third of sea level, so each breath carries about a third of the oxygen molecules.",
+        "confidence": "established",
+        "reasoning": "US Standard Atmosphere: ~31 kPa at 8.85 km vs 101 kPa at sea level; oxygen fraction stays 21%.",
+        "presentation_guardrail": "A third of the oxygen per breath, not a third of the oxygen percentage."
+      },
+      {
+        "id": "CL04",
+        "statement": "Around 18–19 km (the Armstrong limit) pressure falls to ~6.3 kPa, where water boils at 37 °C; exposed fluids like saliva and tears boil, blood inside vessels does not.",
+        "confidence": "established",
+        "reasoning": "Vapour pressure of water at 37 °C is ~6.3 kPa; documented altitude-chamber exposures.",
+        "presentation_guardrail": "Mention saliva only; never claim blood boils. Show a pressure suit as the protection."
+      },
+      {
+        "id": "CL05",
+        "statement": "By about 30 km roughly 99% of the atmosphere's mass is below, so little air remains to scatter sunlight and the daytime sky looks nearly black.",
+        "confidence": "established",
+        "reasoning": "Pressure at 30 km is ~1.2% of sea level; Rayleigh scattering scales with the air column above.",
+        "presentation_guardrail": "Say 'turns black' for a near-black sky; the rendered sky keeps a faint deep-blue limb."
+      },
+      {
+        "id": "CL06",
+        "statement": "Most meteors burn up in the mesosphere, around 50–85 km and up to ~100 km, so a climber at 80 km would see them burning up at their own height.",
+        "confidence": "established",
+        "reasoning": "NOAA atmosphere layer guidance: the mesosphere is where most meteors burn up.",
+        "presentation_guardrail": "The meteor rate shown is compressed for the shot; meteors are not shown hitting the mountain."
+      },
+      {
+        "id": "CL07",
+        "statement": "Mountaineers call altitudes above 8,000 m the death zone; 92 km of this mountain's 100 km height lies above that.",
+        "confidence": "derived",
+        "reasoning": "(100 - 8) / 100 = 92% of its height.",
+        "presentation_guardrail": "Say 'of its height', not of its volume or area."
+      },
+      {
+        "id": "CL08",
+        "statement": "Weather is confined to the troposphere, about 9–13 km deep at mid-latitudes, so a 100 km wall is roughly nine times taller than the weather.",
+        "confidence": "derived",
+        "reasoning": "Tropopause ~11 km at 45°N; 100 / 11 ≈ 9.",
+        "presentation_guardrail": "Present 'nine times' as a rounded ratio to a typical tropopause height."
+      },
+      {
+        "id": "CL09",
+        "statement": "A barrier that tall would force moist air up and wring out rain on the windward side, leaving a deep rain shadow and desert on the lee side.",
+        "confidence": "plausible",
+        "reasoning": "Orographic lift and rain shadows are well documented (e.g., Himalaya, Cascades); the scale here is extrapolated.",
+        "presentation_guardrail": "The '12%' lee rainfall HUD figure is an illustrative rain-shadow ratio, not a model output."
+      },
+      {
+        "id": "CL10",
+        "statement": "Most clouds form below about 6 km, the lowest ~6% of a 100 km mountain.",
+        "confidence": "derived",
+        "reasoning": "Low and middle cloud bases lie below ~6–7 km; only cirrus reaches ~12 km.",
+        "presentation_guardrail": "'Ankles' is a figure of speech for the lowest few percent of its height."
+      },
+      {
+        "id": "CL11",
+        "statement": "The rock column under the summit would press about ρgh = 2,700 kg/m³ × 9.8 m/s² × 100 km ≈ 2.6 GPa, about 26,000 atmospheres, onto its base.",
+        "confidence": "derived",
+        "reasoning": "Direct hydrostatic estimate; g falls only ~3% at 100 km.",
+        "presentation_guardrail": "Quote 'about twenty-six thousand atmospheres'."
+      },
+      {
+        "id": "CL12",
+        "statement": "Granite's compressive strength is roughly 100–250 MPa (~1,000–2,500 atm), so the base would fail and the mountain would slump, spread and sink; the same argument caps Earth's mountains near 10–15 km.",
+        "confidence": "plausible",
+        "reasoning": "Simple strength-of-rock limit ρgh ≲ S gives ~8–12 km; in reality creep, faulting and isostasy act over thousands to millions of years.",
+        "presentation_guardrail": "The 100,000-year time-lapse and final plateau shape are illustrative, not a simulation result."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Encyclopaedia Britannica — Mount Everest (8,848.86 m, 2020 survey)",
+        "url": "https://www.britannica.com/place/Mount-Everest",
+        "supports_claim_ids": [
+          "CL01"
+        ]
+      },
+      {
+        "name": "FAI — Statement about the Karman Line (2018)",
+        "url": "https://www.fai.org/news/statement-about-karman-line",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "NASA NTRS — U.S. Standard Atmosphere, 1976",
+        "url": "https://ntrs.nasa.gov/citations/19770009539",
+        "supports_claim_ids": [
+          "CL03",
+          "CL04",
+          "CL05",
+          "CL11"
+        ]
+      },
+      {
+        "name": "Wikipedia — Armstrong limit",
+        "url": "https://en.wikipedia.org/wiki/Armstrong_limit",
+        "supports_claim_ids": [
+          "CL04"
+        ]
+      },
+      {
+        "name": "NOAA Boulder — Layers of the Atmosphere",
+        "url": "https://www.boulder.noaa.gov/wp-content/uploads/2021/11/Layers-of-the-Atmosphere.pdf",
+        "supports_claim_ids": [
+          "CL05",
+          "CL06",
+          "CL08"
+        ]
+      },
+      {
+        "name": "Wikipedia — Death zone (mountaineering, above 8,000 m)",
+        "url": "https://en.wikipedia.org/wiki/Death_zone",
+        "supports_claim_ids": [
+          "CL07"
+        ]
+      },
+      {
+        "name": "National Geographic Education — Rain shadow",
+        "url": "https://education.nationalgeographic.org/resource/rain-shadow/",
+        "supports_claim_ids": [
+          "CL09"
+        ]
+      },
+      {
+        "name": "UCAR Center for Science Education — Clouds and cloud types",
+        "url": "https://scied.ucar.edu/learning-zone/clouds/cloud-types",
+        "supports_claim_ids": [
+          "CL10"
+        ]
+      },
+      {
+        "name": "Jay Maron — Mountains and the roundness of solar system objects (ρgh vs rock strength)",
+        "url": "https://jaymaron.com/oom/mountains.html",
+        "supports_claim_ids": [
+          "CL11",
+          "CL12"
+        ]
+      },
+      {
+        "name": "FYKOS physics problem — maximum mountain height from granite strength",
+        "url": "https://fykos.org/_media/year37/tasks/pdf/task37_2_p.pdf",
+        "supports_claim_ids": [
+          "CL12"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "From a city crosswalk to the edge of space and back: one impossible mountain, climbed by altitude, then crushed by its own weight.",
+    "visual_identity": "Premium documentary simulation: real NASA Earth from altitude, physically scattered skies that darken with height, a crisp sunlit spire, restrained diegetic telemetry in cyan and amber.",
+    "palette": [
+      "#0B1220",
+      "#1E3A5F",
+      "#38BDF8",
+      "#FACC15",
+      "#F97316",
+      "#E2E8F0",
+      "#7C2D12"
+    ],
+    "lighting": "Single noon sun everywhere (consistent scattering model), sky ambient that fades to black with altitude, emissive data layers only where telemetry demands.",
+    "camera_language": "Eye-level handheld at street level, then steady drone and orbital moves that always keep the horizon level; telephoto for scale, wide for human moments.",
+    "motion_language": "Every shot moves: growth, ascent, meteors, cloud time-lapse, cracks and slump — all pure functions of time.",
+    "world_scale_policy": "True kilometres on a 6,371 km planet for every mountain view; metre-scale stages are placed on the true flank; the street sees a 1:100 scaled backdrop with exact angular size and haze.",
+    "emotional_arc": [
+      "Disbelief at the crosswalk",
+      "Awe at the scale",
+      "Physical dread on the climb",
+      "Wonder at the edge of space",
+      "Reversal: physics wins",
+      "Calm loop back to normal"
+    ],
+    "opening_hook": "Second-person crosswalk POV at 1.6 m: the ground jolts and a spire climbs out of the horizon at the end of the avenue within two seconds.",
+    "mid_video_rehook": "At 25-31 s meteors burn up beside the camera and the summit is revealed standing in space, then 92% of the mountain turns red as a death zone.",
+    "ending_payoff": "The twist that rock itself can't hold the mountain up: a stress heat map, a crack, and a geological slump back to a flat horizon.",
+    "loop_connection": "The final shot returns to the same crosswalk and lands on the exact first-frame pose; 'Where would you be standing?' answers itself with 'You're crossing a street downtown…'.",
+    "asset_policy": "Reuse registered street, humanoid, bird, glass, starfield, caption, HUD, camera and audio kits; build three general assets (atmosphere-scatter-sky-v1, giant-peak-v1, meteor-streaks-v1) in src/library and keep shot orchestration in src/stories/<slug>/."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 155,
+    "music_direction": "Original synthesized score: low suspended pads in D minor that open into wide fifths at the edge of space, a ticking pulse under the climb, tension drone into the crack, resolving to the opening chord for the loop.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "City bed, seismic rumble, wing flutter, thin-air wind, laboured breathing, boiling, meteor sizzles, storms and thunder, then a 0.3 s vacuum before staggered crack impacts and a long grinding slump.",
+    "mix_target_lufs": -14.0,
+    "true_peak_max_dbtp": -1.0
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold sentence case on a dark backdrop pill, 2-5 word phrases, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 70,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a gentle scale lift on emphasised words.",
+    "highlights_policy": "Numbers, altitudes and the physical consequence of each scene use accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.2,
+      "narration": {
+        "text": "You're crossing a street downtown when the horizon starts to climb.",
+        "start_s": 0.05,
+        "end_s": 3.89,
+        "delivery_note": "Intimate, quick, second person; land on 'climb' with a hint of disbelief.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Why is the skyline moving?",
+      "visual_payoff": "A mountain spire rises out of the far horizon above the end of the avenue while the street shakes and people stop and turn.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0.0,
+          "end_s": 4.2,
+          "shot_type": "POV eye-level handheld turn-and-tilt",
+          "world": "1 unit = 1 m. Downtown avenue at a zebra crossing (city-street-block-v1 classic facades, 14 m road, 5 m sidewalks, far-field skyline lowered along the view corridor). Sky is atmosphere-scatter-sky-v1 at 1.6 m altitude; giant-peak-v1 sits 300 km north, drawn as a 1:100 scaled backdrop placed so the true camera position maps exactly (angular size and haze exact).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 0.0,
+                "position": [
+                  3.6,
+                  1.62,
+                  1.2
+                ],
+                "look_at": [
+                  -14,
+                  1.7,
+                  -6
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 1.6,
+                "position": [
+                  3.1,
+                  1.63,
+                  1.0
+                ],
+                "look_at": [
+                  -7,
+                  3.0,
+                  -40
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4.2,
+                "position": [
+                  2.4,
+                  1.61,
+                  0.9
+                ],
+                "look_at": [
+                  0.0,
+                  17.0,
+                  -150
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Walking across the crossing, the head turns from the far curb to look north down the avenue and tilts up at the rising peak.",
+            "lens_notes": "Human-eye 40° vertical (≈30 mm full-frame), deep focus, slight breathing sway.",
+            "handheld_sway": 0.38,
+            "impulse_shake": {
+              "at_s": 1.0,
+              "duration_s": 1.2,
+              "intensity": 0.55
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "LIVE · 300 KM SOUTH",
+            "metric_label": "PEAK HEIGHT",
+            "start_value": 0,
+            "end_value": 45,
+            "unit": "KM",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "appearance": "Grey-brown masonry facades with lit shopfronts and awnings, granite sidewalks, a zebra crossing, parked cars and lamp posts.",
+              "geometry_and_material": "city-street-block-v1 classic: canvas masonry/room textures, merged static meshes, instanced far-field towers (lowered inside a 250 m view corridor).",
+              "scale_and_accuracy": "True metres.",
+              "movement": "Static; lamp glows off in daylight.",
+              "asset_hint": "city-street-block-v1"
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "appearance": "Ten commuters in coats walking the crossing and sidewalks; they stumble at the jolt, stop, turn north and look up; two point.",
+              "geometry_and_material": "humanoid-figure-v1 rigs (capsule body, articulated arms/legs) with seeded coat/skin palettes and analytic walking gait.",
+              "scale_and_accuracy": "1.55-1.9 m adults at true scale; mid-distance, faces not featured.",
+              "movement": "Walk cycle until 1.0 s, stagger, then turn-and-look poses staggered 0.15-0.4 s apart; never static with backs turned for more than 1.5 s.",
+              "asset_hint": "humanoid-figure-v1"
+            },
+            {
+              "id": "birds",
+              "kind": "animal",
+              "appearance": "A small flock lifting off a cornice at the jolt.",
+              "geometry_and_material": "bird-flock-v1 instanced flapping birds.",
+              "scale_and_accuracy": "Pigeon scale.",
+              "movement": "Take off at 1.2 s and wheel away north.",
+              "asset_hint": "bird-flock-v1"
+            },
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "0.0-1.0 s: normal crossing, people walking both ways (seeded gait phases).",
+            "1.0 s: ground jolt (impulse shake 0.55), birds lift at 1.2 s, pedestrians stagger 1.0-1.6 s.",
+            "0.8-4.2 s: peak growth uGrow 0 → 0.45 (ease-in), summit climbing above the horizon at the end of the avenue.",
+            "2.0-3.4 s: pedestrians turn north in a 0.15-0.4 s stagger, look up, two raise pointing arms."
+          ],
+          "lighting": "Noon sun high in the south behind the camera (front-lighting the distant peak); sky light from the atmosphere dome baked to a PMREM environment.",
+          "effects": [
+            "ACES tone map, light bloom on sun glints",
+            "aerial haze on the distant peak from the shared scattering model",
+            "dust shimmer at the jolt"
+          ],
+          "composition_notes": "Rule of thirds: the avenue's vanishing point slightly left of centre, the rising spire in the sky gap above it; captions sit over the road surface at y≈1320."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "the horizon starts to climb",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "downtown",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0.0,
+          "duration_s": 4.2,
+          "kind": "ambience",
+          "description": "City crossing bed: distant traffic, footsteps, crossing beeper.",
+          "relative_db": -18
+        },
+        {
+          "at_s": 0.85,
+          "duration_s": 3.3,
+          "kind": "texture",
+          "description": "Sub-bass seismic rumble that grows with the peak.",
+          "relative_db": -12
+        },
+        {
+          "at_s": 1.0,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Ground jolt thump under the impulse shake.",
+          "relative_db": -8
+        },
+        {
+          "at_s": 1.2,
+          "duration_s": 0.9,
+          "kind": "whoosh",
+          "description": "Wing flutter as the birds lift off.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "match_cut",
+        "duration_s": 0.0,
+        "motivation": "Match the spire's silhouette from street level to the same spire on the planet's limb."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.2,
+      "end_s": 11.5,
+      "narration": {
+        "text": "One peak is rising to one hundred kilometres. Eleven Everests, stacked. Clouds barely reach its ankles.",
+        "start_s": 4.25,
+        "end_s": 11.25,
+        "delivery_note": "Brisk and precise; a tiny lift on 'one hundred', punch 'Eleven Everests', dry understatement on 'ankles'.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "How tall is it going to get?",
+      "visual_payoff": "From orbit the spire punches up through the glowing atmosphere into black space; then eleven glowing Everest-height contour rings climb its flank while a sea of cloud laps only at its foot.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.2,
+          "end_s": 7.6,
+          "shot_type": "Orbital telephoto limb reveal",
+          "world": "1 unit = 1 km, site-local frame at 45.8°N 6.9°E (x east, y up, z south, planet centre at (0, -6371, 0)). Camera hangs 120 km up, 1,300 km south; the real NASA Earth, cloud shell and scattering limb fill the frame bottom.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 16,
+            "keyframes": [
+              {
+                "t_s": 4.2,
+                "position": [
+                  -70,
+                  -15,
+                  1313
+                ],
+                "look_at": [
+                  0,
+                  46,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 7.6,
+                "position": [
+                  60,
+                  -14,
+                  1300
+                ],
+                "look_at": [
+                  0,
+                  52,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow lateral drift 1,300 km out while the peak grows up out of the bright limb.",
+            "lens_notes": "Telephoto 16° vertical: the base hides behind the curve, the spire rises through the glowing limb into black space.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "ORBIT CAM · 120 KM UP",
+            "metric_label": "PEAK HEIGHT",
+            "start_value": 45,
+            "end_value": 100,
+            "unit": "KM",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Faint star field above the limb.",
+              "geometry_and_material": "starfield-v1 point sprites.",
+              "scale_and_accuracy": "Decorative background brightness.",
+              "movement": "Static, follows camera.",
+              "asset_hint": "starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "4.2-6.6 s: uGrow 0.45 → 1.0 (ease-out); summit crosses the bright Rayleigh limb into black sky.",
+            "6.6 s: summit callout '100 KM · EDGE OF SPACE' via projectToScreen leader line."
+          ],
+          "lighting": "Sun high and to the south-east; limb glow from the scattering dome; the peak lit by attenuated sunlight computed at its own altitude.",
+          "effects": [
+            "bright scattering limb",
+            "bloom on sunlit snow belt",
+            "cloud texture drift"
+          ],
+          "composition_notes": "Limb runs across the lower third; spire rises near centre; HUD top-left; callout to the right of the summit."
+        },
+        {
+          "id": "SH02",
+          "start_s": 7.6,
+          "end_s": 11.5,
+          "shot_type": "Side-on scale reveal with contour rings",
+          "world": "1 unit = 1 km, same site frame. Camera 12 km up and ~430 km south-west of the peak, looking at the whole spire above a sea of cloud at 5 km.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 32,
+            "keyframes": [
+              {
+                "t_s": 7.6,
+                "position": [
+                  -80,
+                  -2.4,
+                  420.5
+                ],
+                "look_at": [
+                  0,
+                  52,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 11.5,
+                "position": [
+                  -70,
+                  -4.0,
+                  402
+                ],
+                "look_at": [
+                  0,
+                  9,
+                  40
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push in, then tilt down from the summit to the cloud sea at its base.",
+            "lens_notes": "Moderate 32° vertical; horizon kept level.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "SCALE CHECK",
+            "metric_label": "EVERESTS STACKED",
+            "start_value": 0,
+            "end_value": 11,
+            "unit": "×",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            },
+            {
+              "id": "everest_rings",
+              "kind": "diagram",
+              "appearance": "Eleven warm-gold contour rings at every 8.849 km of altitude.",
+              "geometry_and_material": "giant-peak-v1 emissive altitude bands (fwidth-scaled line width).",
+              "scale_and_accuracy": "Exactly k × 8.849 km, k = 1..11.",
+              "movement": "Light one by one, 0.12 s apart, bottom to top.",
+              "asset_hint": "giant-peak-v1"
+            }
+          ],
+          "animation_plan": [
+            "7.7-9.0 s: bands k=1..11 light with 0.12 s stagger as 'Eleven Everests, stacked' is spoken; HUD counts EVERESTS STACKED 0 → 11.",
+            "9.1-11.5 s: camera tilts down to the procedural cloud sea wrapping the lowest ~5 km of the flanks."
+          ],
+          "lighting": "Midday sun from the south-east, crisp shadows of ridges, blue haze thickening toward the base.",
+          "effects": [
+            "contour band glow",
+            "cloud sea occlusion of the lower flanks",
+            "aerial perspective"
+          ],
+          "composition_notes": "Spire centred, rings stacked like a ladder; final frame puts the cloud sea across the lower third."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "one hundred kilometres",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "Eleven Everests",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "ankles",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.2,
+          "duration_s": 0.5,
+          "kind": "whoosh",
+          "description": "Air-rush cut into orbit.",
+          "relative_db": -10
+        },
+        {
+          "at_s": 4.3,
+          "duration_s": 3.2,
+          "kind": "music_swell",
+          "description": "Low brass-like pad swell as the spire breaks into space.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 7.7,
+          "duration_s": 1.5,
+          "kind": "texture",
+          "description": "Eleven rising glassy ticks, one per Everest ring (0.12 s apart).",
+          "relative_db": -16
+        },
+        {
+          "at_s": 9.1,
+          "duration_s": 2.3,
+          "kind": "ambience",
+          "description": "Soft high-altitude wind.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02",
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "motivation": "Hard cut from the cloud sea down onto a climber on the snow ridge."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 11.5,
+      "end_s": 17.1,
+      "narration": {
+        "text": "Climb it. At nine kilometres you pass Everest, breathing a third of the oxygen.",
+        "start_s": 11.55,
+        "end_s": 16.85,
+        "delivery_note": "Crisp instruction 'Climb it.'; even, breathy restraint on 'a third of the oxygen'.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "What is it like to climb it?",
+      "visual_payoff": "A climber steps across a glowing 8,849 m line in the snow — Everest's summit height — with the mountain still towering 91 km above.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.5,
+          "end_s": 14.4,
+          "shot_type": "Low follow behind the climber",
+          "world": "1 unit = 1 m around a snow ridge on the south flank where a south-west spur reaches 8.85 km (origin on the snow, uphill toward the summit = (0.59, 0, -0.81)). Local 400 m heightfield patch with drifts and rocks; beyond it the full giant-peak-v1 mesh at 1,000 m per km rises 91 km higher to the summit; atmosphere-scatter-sky-v1 sky at true altitude.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 11.5,
+                "position": [
+                  -0.9677,
+                  0.56,
+                  2.2641
+                ],
+                "look_at": [
+                  17.655,
+                  7.45,
+                  -24.2549
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 14.4,
+                "position": [
+                  -0.2247,
+                  0.8,
+                  1.0733
+                ],
+                "look_at": [
+                  17.655,
+                  7.4,
+                  -24.2549
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Low handheld follow rising behind the climber; frame tilts up to reveal the summit far above.",
+            "lens_notes": "Wide 46° vertical, deep focus: boots and the summit 91 km higher share the frame.",
+            "handheld_sway": 0.32
+          },
+          "hud_telemetry": {
+            "timer_label": "ASCENT CAM",
+            "metric_label": "ALTITUDE",
+            "start_value": 8.8,
+            "end_value": 8.86,
+            "unit": "KM",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "climber",
+              "kind": "human",
+              "appearance": "Mountaineer in an orange down suit, black harness, backpack and oxygen mask, ice axe in hand.",
+              "geometry_and_material": "humanoid-figure-v1 with story-built mask, goggles, pack and axe.",
+              "scale_and_accuracy": "1.75 m adult at true scale.",
+              "movement": "Laboured uphill steps (0.9 s cycle), head lifting toward the summit, frosty breath puffs every 1.1 s.",
+              "asset_hint": "humanoid-figure-v1"
+            },
+            {
+              "id": "snow_ridge",
+              "kind": "terrain",
+              "appearance": "Wind-packed snow ridge with sastrugi and dark rock outcrops.",
+              "geometry_and_material": "Story heightfield (2 m cells) with snow PBR material and emissive 8,849 m contour.",
+              "scale_and_accuracy": "True metres; slope matched to the giant peak's local gradient (~6° on the spur).",
+              "movement": "Static; spindrift streaks blow across."
+            },
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "Climber walks from z = 1.0 to z = -2.6; crosses the glowing 8,849 m contour at ~13.7 s on 'pass Everest'.",
+            "Spindrift particles stream left to right; breath puffs every 1.1 s."
+          ],
+          "lighting": "Hard high-altitude sun from the south, deep-blue sky, snow bounce light; climber rim-lit.",
+          "effects": [
+            "glowing contour line in snow",
+            "spindrift",
+            "breath vapour",
+            "aerial perspective on the distant summit"
+          ],
+          "composition_notes": "Climber lower-centre, contour line diagonal across the lower third, the summit spire in the top third."
+        },
+        {
+          "id": "SH02",
+          "start_s": 14.4,
+          "end_s": 17.1,
+          "shot_type": "Side close-up on the breathing climber",
+          "world": "1 unit = 1 m around a snow ridge on the south flank where a south-west spur reaches 8.85 km (origin on the snow, uphill toward the summit = (0.59, 0, -0.81)). Local 400 m heightfield patch with drifts and rocks; beyond it the full giant-peak-v1 mesh at 1,000 m per km rises 91 km higher to the summit; atmosphere-scatter-sky-v1 sky at true altitude.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 14.4,
+                "position": [
+                  3.5816,
+                  2.0,
+                  -2.7115
+                ],
+                "look_at": [
+                  1.3536,
+                  1.85,
+                  -1.8595
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 17.1,
+                "position": [
+                  3.8134,
+                  2.1,
+                  -3.2849
+                ],
+                "look_at": [
+                  2.0009,
+                  1.98,
+                  -2.7489
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow handheld push toward the mask as breath condenses.",
+            "lens_notes": "34° vertical, shallow-feeling but deterministic sharp render.",
+            "handheld_sway": 0.28
+          },
+          "hud_telemetry": {
+            "timer_label": "ASCENT CAM · 8.85 KM",
+            "metric_label": "O₂ PER BREATH",
+            "start_value": 100,
+            "end_value": 31,
+            "unit": "%",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "climber",
+              "kind": "human",
+              "appearance": "Mountaineer in an orange down suit, black harness, backpack and oxygen mask, ice axe in hand.",
+              "geometry_and_material": "humanoid-figure-v1 with story-built mask, goggles, pack and axe.",
+              "scale_and_accuracy": "1.75 m adult at true scale.",
+              "movement": "Laboured uphill steps (0.9 s cycle), head lifting toward the summit, frosty breath puffs every 1.1 s.",
+              "asset_hint": "humanoid-figure-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            },
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            }
+          ],
+          "animation_plan": [
+            "Breath puffs expand and drift on each exhale; chest heaves (breath pose param).",
+            "HUD counts O2 per breath vs sea level 100 → 31 %."
+          ],
+          "lighting": "Sun from behind-left, rim light on the hood; cold blue fill.",
+          "effects": [
+            "breath vapour",
+            "subtle bloom on snow"
+          ],
+          "composition_notes": "Head-and-shoulders at right third, empty sky and cloud sea in the left two thirds."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "pass Everest",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "a third of the oxygen",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 11.5,
+          "duration_s": 5.6,
+          "kind": "ambience",
+          "description": "Thin high wind with spindrift hiss.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 13.6,
+          "duration_s": 0.6,
+          "kind": "texture",
+          "description": "Soft chime as the 8,849 m line is crossed.",
+          "relative_db": -18
+        },
+        {
+          "at_s": 14.4,
+          "duration_s": 2.7,
+          "kind": "texture",
+          "description": "Laboured breathing through a mask.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "motivation": "Cut on the exhale to the glass on the rock ten kilometres higher."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 17.1,
+      "end_s": 22.7,
+      "narration": {
+        "text": "At nineteen, water boils at body temperature, even the saliva on your tongue.",
+        "start_s": 17.15,
+        "end_s": 22.37,
+        "delivery_note": "Quietly astonished; slow slightly on 'body temperature', clipped 'saliva on your tongue'.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "What happens to a body this high?",
+      "visual_payoff": "A glass of body-warm water on a rock starts to boil by itself in the thin air; a figure in a full pressure suit kneels beside it.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 17.1,
+          "end_s": 19.9,
+          "shot_type": "Macro on the boiling glass",
+          "world": "1 unit = 1 m on a bare rock ledge where the south flank reaches 19 km (above the weather, so no snow). Local rock patch with a flat boulder; giant-peak-v1 at 1,000 m per km beyond; sky is indigo with the curved horizon and cloud sea far below.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 17.1,
+                "position": [
+                  0.04,
+                  0.48,
+                  -0.5
+                ],
+                "look_at": [
+                  0.0,
+                  0.465,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 19.9,
+                "position": [
+                  0.08,
+                  0.47,
+                  -0.36
+                ],
+                "look_at": [
+                  0.0,
+                  0.465,
+                  0.0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow macro push-in on the glass from the uphill side; the curved horizon sits behind it.",
+            "lens_notes": "Macro 30° vertical, near plane 2 cm.",
+            "handheld_sway": 0.12
+          },
+          "hud_telemetry": {
+            "timer_label": "ASCENT CAM",
+            "metric_label": "ALTITUDE",
+            "start_value": 18.9,
+            "end_value": 19.0,
+            "unit": "KM",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "glass",
+              "kind": "water",
+              "appearance": "Clear tumbler of water at 37 °C on a dark rock.",
+              "geometry_and_material": "glass-of-water-v1 (no ice) with story boiling bubbles: seeded nucleation sites, rising and growing bubbles, popping surface jitter, vapour wisps.",
+              "scale_and_accuracy": "Real tumbler size (10.5 cm).",
+              "movement": "Calm until 18.0 s, nucleation 18.0-18.6 s, rolling boil after.",
+              "asset_hint": "glass-of-water-v1"
+            },
+            {
+              "id": "rock_ledge",
+              "kind": "terrain",
+              "appearance": "Dark stratified rock with frost-free, dust-dry surfaces.",
+              "geometry_and_material": "Story heightfield + flat boulder, rough PBR rock.",
+              "scale_and_accuracy": "True metres.",
+              "movement": "Static."
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "18.0 s: first bubbles at the base; 18.6 s rolling boil; vapour wisps from 18.8 s.",
+            "Callout 'WATER AT 37 °C: BOILING' anchored to the glass rim."
+          ],
+          "lighting": "Hard sun from the upper left; dark indigo sky; bright limb band behind the glass.",
+          "effects": [
+            "boiling bubbles",
+            "vapour wisps",
+            "physical transmission refraction"
+          ],
+          "composition_notes": "Glass centred low, limb crossing behind its waterline; callout to the upper right."
+        },
+        {
+          "id": "SH02",
+          "start_s": 19.9,
+          "end_s": 22.7,
+          "shot_type": "Pull-back reveal of the suited climber",
+          "world": "1 unit = 1 m on a bare rock ledge where the south flank reaches 19 km (above the weather, so no snow). Local rock patch with a flat boulder; giant-peak-v1 at 1,000 m per km beyond; sky is indigo with the curved horizon and cloud sea far below.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 19.9,
+                "position": [
+                  1.5,
+                  1.05,
+                  1.9
+                ],
+                "look_at": [
+                  -0.35,
+                  0.85,
+                  -0.25
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 22.7,
+                "position": [
+                  2.2,
+                  1.3,
+                  2.7
+                ],
+                "look_at": [
+                  -0.35,
+                  1.05,
+                  -0.9
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Pull back from the glass to reveal the suited figure kneeling beside it with the bare flank rising behind.",
+            "lens_notes": "40° vertical.",
+            "handheld_sway": 0.22
+          },
+          "hud_telemetry": {
+            "timer_label": "ARMSTRONG LIMIT",
+            "metric_label": "WATER BOILS AT",
+            "start_value": 100,
+            "end_value": 37,
+            "unit": "°C",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "suited_figure",
+              "kind": "human",
+              "appearance": "Figure in a white full pressure suit with a gold visor helmet, kneeling, turning its head from the glass toward the summit.",
+              "geometry_and_material": "humanoid-figure-v1 with story-built helmet, visor, suit rings and backpack.",
+              "scale_and_accuracy": "1.75 m adult.",
+              "movement": "Kneels, tilts head down at the glass, then looks up.",
+              "asset_hint": "humanoid-figure-v1"
+            },
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "Callout 'ARMSTRONG LIMIT · 19 KM' on the helmet.",
+            "HUD counts the boiling point of water 100 → 37 °C."
+          ],
+          "lighting": "Same hard sun; suit fabric bright; deep sky.",
+          "effects": [
+            "boiling glass continues",
+            "helmet visor reflection"
+          ],
+          "composition_notes": "Figure right of centre, glass lower left, summit top centre."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "water boils at body temperature",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "saliva",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 17.1,
+          "duration_s": 5.6,
+          "kind": "ambience",
+          "description": "Near-silent thin air; faint suit hiss.",
+          "relative_db": -22
+        },
+        {
+          "at_s": 18.0,
+          "duration_s": 4.7,
+          "kind": "texture",
+          "description": "Bubbling and rolling boil, close-miked.",
+          "relative_db": -14
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "motivation": "Cut from the boiling glass to the open sky at 30 km."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 22.7,
+      "end_s": 28.2,
+      "narration": {
+        "text": "By thirty, the noon sky turns black. At eighty, meteors burn up beside you.",
+        "start_s": 22.75,
+        "end_s": 27.89,
+        "delivery_note": "Rising wonder; 'black' lands hard, 'beside you' almost whispered.",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "How high until the sky disappears?",
+      "visual_payoff": "At 30 km the noon sky beside the sun is nearly black; at 80 km shooting stars burn up beside the camera with the summit still above.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 22.7,
+          "end_s": 25.3,
+          "shot_type": "Tilt from horizon to black noon sky",
+          "world": "1 unit = 1 km, site frame. Camera hovers beside the south flank; atmosphere-scatter-sky-v1 renders the darkening sky, the planet's curve and the cloud shell below from true altitude.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 22.7,
+                "position": [
+                  14,
+                  31.5,
+                  112
+                ],
+                "look_at": [
+                  110,
+                  25,
+                  90
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 25.3,
+                "position": [
+                  14,
+                  31.8,
+                  112
+                ],
+                "look_at": [
+                  -10,
+                  92,
+                  30
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Hovering drone pan-and-tilt from the curved eastern horizon up the sunlit flank into the black noon sky.",
+            "lens_notes": "40° vertical.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "ASCENT CAM",
+            "metric_label": "ALTITUDE",
+            "start_value": 19,
+            "end_value": 30,
+            "unit": "KM",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            },
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            }
+          ],
+          "animation_plan": [
+            "Camera altitude 30.4 → 31.2 km; sky luminance falls as the view climbs away from the limb.",
+            "HUD altitude 19 → 30 km with live pressure line."
+          ],
+          "lighting": "Noon sun just outside frame top-right flaring the edge; black sky above a thin blue limb.",
+          "effects": [
+            "bloom from the sun edge",
+            "limb glow"
+          ],
+          "composition_notes": "Horizon starts on the lower third, tilt ends with the black sky filling the frame and the flank on the left edge."
+        },
+        {
+          "id": "SH02",
+          "start_s": 25.3,
+          "end_s": 28.2,
+          "shot_type": "Meteors burning up beside the flank",
+          "world": "1 unit = 1 km, site frame. Camera hovers beside the south flank; atmosphere-scatter-sky-v1 renders the darkening sky, the planet's curve and the cloud shell below from true altitude.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 25.3,
+                "position": [
+                  13,
+                  80.5,
+                  35
+                ],
+                "look_at": [
+                  -2,
+                  97,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 28.2,
+                "position": [
+                  11,
+                  81.0,
+                  33
+                ],
+                "look_at": [
+                  -4,
+                  98,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift alongside the flank looking up toward the summit while meteors streak past.",
+            "lens_notes": "44° vertical.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "ASCENT CAM",
+            "metric_label": "ALTITUDE",
+            "start_value": 30,
+            "end_value": 80,
+            "unit": "KM",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "meteors",
+              "kind": "particle_system",
+              "appearance": "Seven shooting stars: white-green heads with orange trails, one passing close and bright, faint green trains lingering.",
+              "geometry_and_material": "meteor-streaks-v1 instanced camera-facing ribbons, additive.",
+              "scale_and_accuracy": "Trails 6-14 km long at ~40 km/s, burning between 80 and 95 km altitude.",
+              "movement": "Seeded schedule 25.4-28.0 s.",
+              "asset_hint": "meteor-streaks-v1"
+            },
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Stars visible in the black sky.",
+              "geometry_and_material": "starfield-v1.",
+              "scale_and_accuracy": "Decorative.",
+              "movement": "Static.",
+              "asset_hint": "starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "25.4-28.0 s: seven meteors; the brightest at 26.3 s on 'meteors burn up' passes between camera and flank.",
+            "HUD altitude 30 → 80 km."
+          ],
+          "lighting": "Sun from the south lighting the flank; black sky; stars faint.",
+          "effects": [
+            "meteor glow with bloom",
+            "lingering green ionisation trains"
+          ],
+          "composition_notes": "Summit spire upper left, meteors crossing diagonally top-right to lower-left."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "the noon sky turns black",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "meteors burn up beside you",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 22.7,
+          "duration_s": 0.6,
+          "kind": "whoosh",
+          "description": "Upward rush on the cut.",
+          "relative_db": -12
+        },
+        {
+          "at_s": 23.0,
+          "duration_s": 2.3,
+          "kind": "ambience",
+          "description": "Wind thinning to near silence.",
+          "relative_db": -22
+        },
+        {
+          "at_s": 25.4,
+          "duration_s": 2.8,
+          "kind": "texture",
+          "description": "Fizzing meteor sizzles panned with each streak.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL05",
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "motivation": "Cut to the summit itself, the last 20 km above."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 28.2,
+      "end_s": 33.3,
+      "narration": {
+        "text": "The summit is in space. Over ninety percent of its height is a death zone.",
+        "start_s": 28.25,
+        "end_s": 32.93,
+        "delivery_note": "Weighty and level; let 'space' ring, then a grave 'death zone'.",
+        "pacing_energy": "weighty_impact"
+      },
+      "viewer_question": "Where could a person survive on it?",
+      "visual_payoff": "The summit stands on the edge of space; pulling back, everything above 8 km glows red as a death zone with labelled limits at 8, 19 and 100 km.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 28.2,
+          "end_s": 30.0,
+          "shot_type": "Summit orbit at the edge of space",
+          "world": "1 unit = 1 km, site frame. Camera hovers beside the south flank; atmosphere-scatter-sky-v1 renders the darkening sky, the planet's curve and the cloud shell below from true altitude.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 28.2,
+                "position": [
+                  8.0,
+                  97.0,
+                  7.5
+                ],
+                "look_at": [
+                  0,
+                  98.0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 30.0,
+                "position": [
+                  -4.5,
+                  96.6,
+                  9.6
+                ],
+                "look_at": [
+                  0,
+                  98.2,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Arcing orbit just below the summit pinnacle, which stands against black space above the glowing limb.",
+            "lens_notes": "36° vertical.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "SUMMIT",
+            "metric_label": "ALTITUDE",
+            "start_value": 99.6,
+            "end_value": 100,
+            "unit": "KM",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "Callout '100 KM · KÁRMÁN LINE' on the summit point.",
+            "Earth's limb curves below; black sky above."
+          ],
+          "lighting": "Unfiltered sunlight on bare summit rock; black sky.",
+          "effects": [
+            "limb glow",
+            "bloom on sunlit rock edges"
+          ],
+          "composition_notes": "Summit pinnacle centred, curved limb across the lower third."
+        },
+        {
+          "id": "SH02",
+          "start_s": 30.0,
+          "end_s": 33.3,
+          "shot_type": "Survival map of the whole mountain",
+          "world": "1 unit = 1 km, same site frame. Camera 12 km up and ~430 km south-west of the peak, looking at the whole spire above a sea of cloud at 5 km.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 30.0,
+                "position": [
+                  -60,
+                  -3.6,
+                  470
+                ],
+                "look_at": [
+                  0,
+                  35,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 33.3,
+                "position": [
+                  -52,
+                  -3.2,
+                  452
+                ],
+                "look_at": [
+                  0,
+                  34,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push in on the whole spire.",
+            "lens_notes": "30° vertical.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "SURVIVAL MAP",
+            "metric_label": "DEATH ZONE",
+            "start_value": 0,
+            "end_value": 92,
+            "unit": "% OF HEIGHT",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            },
+            {
+              "id": "survival_bands",
+              "kind": "diagram",
+              "appearance": "Red tint over everything above 8 km; glowing contour rings: 8 km red 'DEATH ZONE', 19 km orange 'ARMSTRONG LIMIT', 100 km cyan 'SPACE'.",
+              "geometry_and_material": "giant-peak-v1 zone tint + emissive bands; overlay-labels-v1 leader callouts.",
+              "scale_and_accuracy": "Exact altitudes.",
+              "movement": "Bands light on their words; zone tint ramps on 'death zone'.",
+              "asset_hint": "overlay-labels-v1"
+            }
+          ],
+          "animation_plan": [
+            "30.1 s: 8 km ring; 30.6 s 19 km ring; 31.1 s 100 km ring; 31.9 s death-zone tint ramps to full.",
+            "HUD death zone share 0 → 92 % of height."
+          ],
+          "lighting": "Midday sun; the red zone tint is emissive so it reads in shadow.",
+          "effects": [
+            "band glow",
+            "zone tint",
+            "aerial haze"
+          ],
+          "composition_notes": "Spire centred; callouts alternate left/right of the flank inside x 90-990."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "The summit is in space.",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "death zone",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 28.2,
+          "duration_s": 1.8,
+          "kind": "music_swell",
+          "description": "Open fifth swell at the summit.",
+          "relative_db": -12
+        },
+        {
+          "at_s": 31.9,
+          "duration_s": 0.9,
+          "kind": "impact",
+          "description": "Low boom as the death zone turns red.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "motivation": "Cut up and west to the weather piling against the mountain."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "second_order_effect",
+      "start_s": 33.3,
+      "end_s": 40.4,
+      "narration": {
+        "text": "It's also a wall nine times taller than the weather. One side drowns; the other turns to desert.",
+        "start_s": 33.35,
+        "end_s": 40.01,
+        "delivery_note": "Steady escalation; split the sentence cleanly between 'drowns' and 'desert'.",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "What does it do to the weather?",
+      "visual_payoff": "Cloud rivers slam into the west face and split; storms flicker with lightning on the windward side while the lee side bakes into a widening desert.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 33.3,
+          "end_s": 36.6,
+          "shot_type": "Windward high oblique",
+          "world": "1 unit = 1 km, site frame. High view of the peak with the 5 km cloud shell: westerly cloud bands flow (time-lapse) along potential-flow streamlines, pile into storms on the windward (west) side and clear in a long rain shadow to the east where the ground tints to desert.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 33.3,
+                "position": [
+                  -640,
+                  150,
+                  330
+                ],
+                "look_at": [
+                  0,
+                  22,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 36.6,
+                "position": [
+                  -600,
+                  140,
+                  300
+                ],
+                "look_at": [
+                  0,
+                  30,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the west face as clouds stream past.",
+            "lens_notes": "34° vertical.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "WEATHER SIM · TIME-LAPSE",
+            "metric_label": "PEAK ÷ WEATHER",
+            "start_value": 1,
+            "end_value": 9,
+            "unit": "×",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            },
+            {
+              "id": "weather",
+              "kind": "clouds",
+              "appearance": "Cloud streams piling and parting around the peak.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 cloud shell with potential-flow advection, windward storm boost and lee clearing.",
+              "scale_and_accuracy": "Weather confined below ~12 km (troposphere) against a 100 km wall.",
+              "movement": "Clouds advect at 25 km per film second (time-lapse).",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "Cloud flow speed 25 km/s (time-lapse), storm pile-up ramps 0.4 → 0.9.",
+            "HUD peak height vs weather ceiling 1 → 9 ×."
+          ],
+          "lighting": "Afternoon sun from the south-west lighting cloud tops; the mountain casts no rain where it shadows the wind.",
+          "effects": [
+            "cloud advection",
+            "storm cells",
+            "aerial haze"
+          ],
+          "composition_notes": "Mountain centre-right, cloud bands entering from the left."
+        },
+        {
+          "id": "SH02",
+          "start_s": 36.6,
+          "end_s": 40.4,
+          "shot_type": "High oblique of storms versus desert",
+          "world": "1 unit = 1 km, site frame. High view of the peak with the 5 km cloud shell: westerly cloud bands flow (time-lapse) along potential-flow streamlines, pile into storms on the windward (west) side and clear in a long rain shadow to the east where the ground tints to desert.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 36.6,
+                "position": [
+                  150,
+                  480,
+                  640
+                ],
+                "look_at": [
+                  70,
+                  15,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 40.4,
+                "position": [
+                  210,
+                  470,
+                  600
+                ],
+                "look_at": [
+                  110,
+                  10,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift east over the lee side.",
+            "lens_notes": "40° vertical.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "WEATHER SIM · TIME-LAPSE",
+            "metric_label": "LEE-SIDE RAIN",
+            "start_value": 100,
+            "end_value": 12,
+            "unit": "%",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "36.6-38.2 s: windward storms intensify with deterministic lightning flashes ('One side drowns').",
+            "38.2-40.2 s: lee-side clearing and desert tint ramp to full ('the other turns to desert').",
+            "Callouts 'STORMS' (west) and 'DESERT' (east)."
+          ],
+          "lighting": "High sun; desert ground warm tan; storm tops bright with flashes.",
+          "effects": [
+            "lightning flashes",
+            "desert tint",
+            "cloud flow"
+          ],
+          "composition_notes": "Peak upper left of centre, storms left, desert spreading right and down."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "nine times taller than the weather",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "drowns",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "desert",
+          "treatment": "subtle_glow"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 33.3,
+          "duration_s": 7.1,
+          "kind": "ambience",
+          "description": "Wind and distant storm roar.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 37.0,
+          "duration_s": 1.2,
+          "kind": "impact",
+          "description": "Rolling thunder with the first flash.",
+          "relative_db": -10
+        },
+        {
+          "at_s": 38.4,
+          "duration_s": 2.0,
+          "kind": "texture",
+          "description": "Dry hot wind hiss over the desert.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL08",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "motivation": "Cut into the mountain's cross-section."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "twist",
+      "start_s": 40.4,
+      "end_s": 47.6,
+      "narration": {
+        "text": "But Earth can't hold it. Its base feels twenty-six thousand atmospheres. Granite crushes long before that.",
+        "start_s": 40.45,
+        "end_s": 47.23,
+        "delivery_note": "Turn of the film: firm 'But', heavy numbers, final clause cut short before the crack.",
+        "pacing_energy": "weighty_impact"
+      },
+      "viewer_question": "Can rock even hold that up?",
+      "visual_payoff": "Inside the cutaway the stress heat map pours down to a white-hot base; a dashed granite-limit line sits only 7.5 km below the surface — then the base cracks in staggered bursts.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 40.4,
+          "end_s": 44.9,
+          "shot_type": "Cutaway stress reveal",
+          "world": "1 unit = 1 km, site frame. giant-peak-v1 clipped at z = 0 with a PeakCutaway cap: rock body coloured by overburden stress (26.5 MPa per km of rock above), crust to the 35 km Moho, glowing mantle beneath; back half of the mountain and the planet backdrop beyond.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 40.4,
+                "position": [
+                  45,
+                  58,
+                  620
+                ],
+                "look_at": [
+                  45,
+                  42,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 44.9,
+                "position": [
+                  42,
+                  52,
+                  570
+                ],
+                "look_at": [
+                  44,
+                  38,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the cross-section.",
+            "lens_notes": "30° vertical, nearly orthographic feel.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "STRESS SIM",
+            "metric_label": "BASE PRESSURE",
+            "start_value": 0,
+            "end_value": 26000,
+            "unit": "ATM",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "cutaway",
+              "kind": "diagram",
+              "appearance": "Half-section of the mountain glowing purple → red → white with depth, dashed cyan granite-limit line, layered crust and orange mantle.",
+              "geometry_and_material": "giant-peak-v1 PeakCutaway cap (900 columns × 90 rows) + clipped peak.",
+              "scale_and_accuracy": "Stress = ρ g d with ρ 2,700 kg/m³; base under the summit 2.65 GPa ≈ 26,000 atm.",
+              "movement": "uReveal 0 → 1 over 42.2-44.6 s; limit line at 43.5 s.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "42.2-44.6 s: stress fill sweeps from the surface down to the base.",
+            "Callouts 'BASE: 26,000 ATM' at the base and 'GRANITE CRUSHES ≈ 2,000 ATM' on the dashed line.",
+            "HUD base pressure 0 → 26,000 atm."
+          ],
+          "lighting": "Cutaway is emissive (self-lit data view inside the real scene); outer flank sunlit.",
+          "effects": [
+            "heat-map glow with bloom",
+            "dashed limit line"
+          ],
+          "composition_notes": "Summit column left of centre; base callout lower left; limit callout mid right."
+        },
+        {
+          "id": "SH02",
+          "start_s": 44.9,
+          "end_s": 47.6,
+          "shot_type": "Base failure",
+          "world": "1 unit = 1 km, site frame. giant-peak-v1 clipped at z = 0 with a PeakCutaway cap: rock body coloured by overburden stress (26.5 MPa per km of rock above), crust to the 35 km Moho, glowing mantle beneath; back half of the mountain and the planet backdrop beyond.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 44.9,
+                "position": [
+                  32,
+                  20,
+                  300
+                ],
+                "look_at": [
+                  30,
+                  9,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 47.6,
+                "position": [
+                  28,
+                  17,
+                  282
+                ],
+                "look_at": [
+                  30,
+                  10,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Push in on the base; impulse shake on the first crack.",
+            "lens_notes": "34° vertical.",
+            "handheld_sway": 0.0,
+            "impulse_shake": {
+              "at_s": 45.65,
+              "duration_s": 1.4,
+              "intensity": 1.2
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "STRESS SIM",
+            "metric_label": "LOAD ÷ GRANITE",
+            "start_value": 1,
+            "end_value": 13,
+            "unit": "×",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "fractures",
+              "kind": "particle_system",
+              "appearance": "Branching white-orange fracture lines racing through the overstressed base; flank rockfall glow.",
+              "geometry_and_material": "PeakCutaway uCrack + giant-peak-v1 crack network.",
+              "scale_and_accuracy": "Stylised fracture pattern in the overstressed zone (deeper than 7.5 km below the surface).",
+              "movement": "Staggered bursts at 45.65, 45.79, 45.93, 46.08 s.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "45.33-45.63 s: everything holds still (audio vacuum).",
+            "45.65 s: first crack burst + impulse shake; three more bursts 0.14-0.15 s apart.",
+            "47.0-47.6 s: slump begins (uCollapse 0 → 0.06)."
+          ],
+          "lighting": "Emissive fracture light flickers; heat map dims as rock fails.",
+          "effects": [
+            "fracture glow",
+            "camera shake",
+            "bloom"
+          ],
+          "composition_notes": "Base fills the lower half; cracks radiate from the summit column."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "twenty-six thousand atmospheres",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "Granite crushes",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 40.4,
+          "duration_s": 4.9,
+          "kind": "music_swell",
+          "description": "Rising tension drone under the heat-map reveal.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 45.33,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Pre-impact vacuum: music and beds duck -24 dB.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 45.65,
+          "duration_s": 1.6,
+          "kind": "impact",
+          "description": "Primary crack: sub-bass slam and rock snap.",
+          "relative_db": -6
+        },
+        {
+          "at_s": 45.79,
+          "duration_s": 1.2,
+          "kind": "impact",
+          "description": "Second fracture tap.",
+          "relative_db": -7
+        },
+        {
+          "at_s": 45.93,
+          "duration_s": 1.1,
+          "kind": "impact",
+          "description": "Third fracture tap.",
+          "relative_db": -8
+        },
+        {
+          "at_s": 46.08,
+          "duration_s": 1.0,
+          "kind": "impact",
+          "description": "Fourth fracture tap.",
+          "relative_db": -9
+        },
+        {
+          "at_s": 45.7,
+          "duration_s": 1.9,
+          "kind": "texture",
+          "description": "Grinding rumble of failing rock.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL11",
+        "CL12"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0.0,
+        "motivation": "Cut outside to watch the whole mountain slump over geological time."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 47.6,
+      "end_s": 55.0,
+      "narration": {
+        "text": "The rock flows, the peak sinks, and the horizon goes flat again. Where would you be standing?",
+        "start_s": 47.65,
+        "end_s": 53.2,
+        "delivery_note": "Reflective release; calm cadence, the closing question warm and direct to camera.",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "So what happens in the end?",
+      "visual_payoff": "In a time-lapse the spire sags, spreads and sinks into a low plateau; then we are back at the street crossing with a flat horizon, exactly where the film began.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 47.6,
+          "end_s": 51.4,
+          "shot_type": "Geological time-lapse of the collapse",
+          "world": "1 unit = 1 km, same site frame. Camera 12 km up and ~430 km south-west of the peak, looking at the whole spire above a sea of cloud at 5 km.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 47.6,
+                "position": [
+                  -40,
+                  8,
+                  330
+                ],
+                "look_at": [
+                  0,
+                  45,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 51.4,
+                "position": [
+                  -34,
+                  7,
+                  318
+                ],
+                "look_at": [
+                  0,
+                  12,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Push in and tilt down as the summit drops.",
+            "lens_notes": "30° vertical.",
+            "handheld_sway": 0.0
+          },
+          "hud_telemetry": {
+            "timer_label": "TIME-LAPSE",
+            "metric_label": "ELAPSED",
+            "start_value": 0,
+            "end_value": 100000,
+            "unit": "YEARS",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "giant_peak",
+              "kind": "terrain",
+              "appearance": "Single 100 km spire: dark forested foothills, alpine rock, a snow belt that stops at the top of the weather (~12 km), then bare stratified rock in thin air up to a knife-edge summit.",
+              "geometry_and_material": "giant-peak-v1 polar mesh (340 rings x 720 segments) on the curved planet; concave profile h = 100(1 - r/200)^1.6 km with radial ridge gullies and fractal bump detail; atmosphere-matched aerial perspective shader.",
+              "scale_and_accuracy": "Height 100 km and base radius 200 km in true kilometres on a 6,371 km planet; growth, contour bands and collapse are uniforms, not scale cheats.",
+              "movement": "Animated by uGrow / uCollapse / band uniforms per shot.",
+              "asset_hint": "giant-peak-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "47.7-51.2 s: uCollapse 0.06 → 1 (ease in-out): height × 0.1, base × 1.8, 4 km isostatic sink; crack glow fades.",
+            "HUD elapsed 0 → 100,000 years with live peak height."
+          ],
+          "lighting": "Same midday sun; long shadows shrink as relief flattens.",
+          "effects": [
+            "crack glow fading",
+            "haze"
+          ],
+          "composition_notes": "Spire centred, ends as a low plateau across the lower third."
+        },
+        {
+          "id": "SH02",
+          "start_s": 51.4,
+          "end_s": 55.0,
+          "shot_type": "POV return to the crossing (loop)",
+          "world": "1 unit = 1 m. Downtown avenue at a zebra crossing (city-street-block-v1 classic facades, 14 m road, 5 m sidewalks, far-field skyline lowered along the view corridor). Sky is atmosphere-scatter-sky-v1 at 1.6 m altitude; giant-peak-v1 sits 300 km north, drawn as a 1:100 scaled backdrop placed so the true camera position maps exactly (angular size and haze exact).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 51.4,
+                "position": [
+                  2.4,
+                  1.61,
+                  0.9
+                ],
+                "look_at": [
+                  0.0,
+                  17.0,
+                  -150
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 53.4,
+                "position": [
+                  3.1,
+                  1.63,
+                  1.0
+                ],
+                "look_at": [
+                  -7,
+                  3.0,
+                  -40
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 55.0,
+                "position": [
+                  3.6,
+                  1.62,
+                  1.2
+                ],
+                "look_at": [
+                  -14,
+                  1.7,
+                  -6
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Mirror of the opening move: from looking north at a flat horizon, the head turns back across the street to the exact opening pose.",
+            "lens_notes": "Human-eye 40° vertical.",
+            "handheld_sway": 0.38
+          },
+          "hud_telemetry": {
+            "timer_label": "LIVE · 300 KM SOUTH",
+            "metric_label": "PEAK HEIGHT",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "KM",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "appearance": "Same avenue, calm.",
+              "geometry_and_material": "city-street-block-v1 classic.",
+              "scale_and_accuracy": "True metres.",
+              "movement": "Static.",
+              "asset_hint": "city-street-block-v1"
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "appearance": "Ten commuters in coats walking the crossing and sidewalks; they stumble at the jolt, stop, turn north and look up; two point.",
+              "geometry_and_material": "humanoid-figure-v1 rigs (capsule body, articulated arms/legs) with seeded coat/skin palettes and analytic walking gait.",
+              "scale_and_accuracy": "1.55-1.9 m adults at true scale; mid-distance, faces not featured.",
+              "movement": "Walk cycle until 1.0 s, stagger, then turn-and-look poses staggered 0.15-0.4 s apart; never static with backs turned for more than 1.5 s.",
+              "asset_hint": "humanoid-figure-v1"
+            },
+            {
+              "id": "planet_sky",
+              "kind": "atmosphere",
+              "appearance": "Physically based sky and planet below: blue at street level, indigo by 19 km, black by 30 km with a thin bright limb, the real NASA day map and cloud map beneath.",
+              "geometry_and_material": "atmosphere-scatter-sky-v1 camera-centred dome: Rayleigh + Mie + ozone single scattering marched per pixel, cloud shell at 5 km, NASA day/cloud textures sampled by latitude/longitude around 45.8°N 6.9°E.",
+              "scale_and_accuracy": "Scale heights 8 km (Rayleigh) and 1.2 km (Mie); planet radius 6,371 km; sky colour follows true camera altitude.",
+              "movement": "Static per frame except camera altitude and cloud drift.",
+              "asset_hint": "atmosphere-scatter-sky-v1"
+            }
+          ],
+          "animation_plan": [
+            "Peak absent (uGrow 0); pedestrians walking normally again.",
+            "55.0 s camera pose equals the 0.0 s pose for a seamless loop."
+          ],
+          "lighting": "Same noon light as the opening.",
+          "effects": [
+            "ACES tone map"
+          ],
+          "composition_notes": "Ends on the exact opening composition."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "the horizon goes flat again",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "Where would you be standing?",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 47.6,
+          "duration_s": 3.8,
+          "kind": "texture",
+          "description": "Slow grinding sag, pitch falling.",
+          "relative_db": -12
+        },
+        {
+          "at_s": 49.6,
+          "duration_s": 5.4,
+          "kind": "music_swell",
+          "description": "Resolving pad back to the opening chord.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 51.4,
+          "duration_s": 3.6,
+          "kind": "ambience",
+          "description": "City crossing bed returns.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL12"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0.0,
+        "motivation": "Last frame equals the first frame; the loop restarts on the same crossing."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Read assets/registry.json (91 assets) on 2026-10-13; street, humans, birds, glass, starfield, overlays, captions, rig and audio kits reused; no existing asset covered a curved-planet 100 km mountain or a sky that changes with altitude.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic frame pipeline, bloom/ACES grade and projectToScreen callouts.",
+        "configuration": "Per-shot post settings; clear-depth layering for scaled backdrops."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Storyboard keyframes with handheld sway and impulse shake.",
+        "configuration": "handheld_sway 0.12-0.38 on ground shots; impulse shake at 1.0 s and 45.65 s."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in captions from Whisper word timings.",
+        "configuration": "70 px, 20 chars/line, baseline 1320, #FACC15 active word, pill backdrop."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Top-left simulation HUD and 3D leader-line callouts.",
+        "configuration": "renderShotHudTelemetry at x 90 y 240 with live pressure line; drawCallout anchored by projectToScreen."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Procedural score and sound design.",
+        "configuration": "Legacy pad/noise/filter helpers; story soundtrack.mjs."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "GLSL noise for terrain detail, clouds and cutaway.",
+        "configuration": "GLSL_NOISE vnoise3/fbm."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Caption and HUD typeface.",
+        "configuration": "Inter Bold/SemiBold."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Real Earth below every altitude view.",
+        "configuration": "day_8k and clouds_8k sampled by latitude/longitude."
+      },
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "Opening and closing crosswalk.",
+        "configuration": "Classic detailed implementation (CityStreetClassic), seed 4075, 9 blocks, daylight lights 0.1, far field 900 m lowered in the view corridor."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Pedestrians, mountaineer and pressure-suited figure.",
+        "configuration": "Story pose functions for walking, turning, pointing, climbing and kneeling; story-built gear."
+      },
+      {
+        "asset_id": "bird-flock-v1",
+        "usage": "Birds lifting off at the jolt.",
+        "configuration": "12 birds, take-off at 1.2 s."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Stars in the black sky at 80-100 km and in orbit.",
+        "configuration": "Brightness by altitude."
+      },
+      {
+        "asset_id": "glass-of-water-v1",
+        "usage": "Glass of body-warm water boiling at 19 km.",
+        "configuration": "No ice cubes; story boiling-bubble layer."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover.",
+        "configuration": "Anton, dramatic grade, cyan highlight, orange badge."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline face.",
+        "configuration": "Anton."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "atmosphere-scatter-sky-v1",
+        "description": "Single-scattering sky + real Earth + cloud shell backdrop valid from street level to orbit, with shared GLSL for aerial perspective and orographic weather controls.",
+        "reusable_in": "Any altitude, space, weather or scale-comparison story.",
+        "parameters": [
+          "lat",
+          "lon",
+          "sunDirection",
+          "sunPower",
+          "multiScatter",
+          "cloudAltitude",
+          "cloudOpacity",
+          "uWeather",
+          "uCloudSea",
+          "uDesertGround"
+        ],
+        "suggested_path": "src/library/environment/PlanetAtmosphere.ts"
+      },
+      {
+        "proposed_id": "giant-peak-v1",
+        "description": "Planetary-scale mountain on a curved planet with altitude zoning, contour bands, growth, collapse, cracks, cutaway cap and atmosphere-matched shading.",
+        "reusable_in": "Mountain, volcano, impact-crater rim, Olympus Mons and isostasy stories.",
+        "parameters": [
+          "height",
+          "baseRadius",
+          "profile",
+          "seed",
+          "uGrow",
+          "uCollapse",
+          "bands",
+          "zone",
+          "crack",
+          "clipZ",
+          "hole",
+          "logDepth"
+        ],
+        "suggested_path": "src/library/environment/GiantPeak.ts"
+      },
+      {
+        "proposed_id": "meteor-streaks-v1",
+        "description": "Deterministic meteor ribbons with hot heads, fading trails and lingering ionisation trains.",
+        "reusable_in": "Meteor showers, upper-atmosphere, re-entry and night-sky stories.",
+        "parameters": [
+          "count",
+          "seed",
+          "window",
+          "box",
+          "velocity",
+          "trail",
+          "width",
+          "life"
+        ],
+        "suggested_path": "src/library/fx/MeteorStreaks.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Mountaineer mask, goggles, pack and ice axe",
+      "Pressure-suit helmet and visor",
+      "Boiling-bubble layer for the glass",
+      "Snow and rock ledge heightfields",
+      "Breath vapour puffs"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if a mountain was 100 km tall / how tall can a mountain be on earth",
+    "core_keywords": [
+      "what if mountain 100 km tall",
+      "tallest possible mountain on earth",
+      "how tall can mountains get",
+      "edge of space karman line",
+      "armstrong limit",
+      "earth science what if",
+      "physics thought experiment",
+      "threejs 3d documentary",
+      "mountain simulation",
+      "everest vs space"
+    ],
+    "distinctive_angle": "One continuous climb by altitude with a physically scattered sky that really turns black, ending in the rock-strength twist that explains why Everest is as tall as mountains get.",
+    "comment_bait_question": "Where would you be standing when it rose? 👇",
+    "seo_integrity_note": "Numbers are rounded from the cited physics; the growth, meteor rate, weather ratio and 100,000-year slump are illustrative, and the copy will say it is a thought experiment."
+  },
+  "delivery": {
+    "video_output": "output/mountain-grew-100-km-tall.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 7.0,
+    "headline": "MOUNTAIN IN SPACE?!",
+    "highlight": [
+      "SPACE"
+    ],
+    "position": "top",
+    "badge": "100 KM TALL",
+    "badge_at": [
+      0.3,
+      0.8
+    ],
+    "focus": [
+      0.5,
+      0.346
+    ],
+    "zoom": 1.15,
+    "anchor": [
+      0.5,
+      0.53
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#38BDF8",
+      "badge": "#F97316",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FACC15"
+    },
+    "grade": "dramatic",
+    "tilt": -3
+  }
+}

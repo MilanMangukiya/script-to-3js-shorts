@@ -1,252 +1,90 @@
 #!/usr/bin/env node
-/**
- * tools/narrate.mjs — Local Voice Synthesis (Kokoro / Piper) & Whisper Word Alignment
- *
- * Usage: node tools/narrate.mjs stories/<slug>.json
- *
- * Upgraded for high-retention simulation pacing:
- * - Applies per-scene `pacing_energy` speed multipliers ("fast_hook" = 1.08x,
- *   "crisp_mechanism" = 1.05x, "steady_escalation" = 1.03x, "reflective_payoff" = 0.98x).
- * - Trims leading silence on Scene S01 so spoken audio begins within 50-80ms of frame 0.
- * - Aligns real synthesized audio word timestamps via local Whisper into
- *   `build/<slug>/audio/narration.json` and writes `build/<slug>/audio/narration.wav`.
- */
-
+// Local narration + word alignment + voice timeline. No network, no paid API.
+//   node tools/narrate.mjs stories/<slug>.json [--speed 0.92] [--reuse] [--voice am_michael]
+// 1) Kokoro-82M (ONNX, local cache) speaks each scene's exact narration text through tools/narrate-cached.py, at a
+//    per-scene speed taken from narration.pacing_energy (fast_hook 1.08 … reflective_payoff 0.98; else --speed).
+// 2) faster-whisper (local, word timestamps) listens to the real audio; its words are aligned back to the script words
+//    (tools/lib/align.mjs), so burned-in captions follow the actual synthesized speech.
+// 3) The clips are laid on the film timeline at each scene's narration.start_s and written as
+//    build/<slug>/audio/narration.wav (48 kHz mono) for tools/soundtrack.mjs.
+// --reuse skips synthesis when build/<slug>/audio/narration-raw.json already holds every scene's text at the same
+// speed (re-timing scenes after measuring the clips then only re-aligns and re-assembles).
+// Outputs: build/<slug>/audio/narration.json (+ narration/<scene>.wav, narration-raw.json, narration.wav).
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-import ffmpegPath from 'ffmpeg-static';
+import { fileURLToPath } from 'node:url';
+import { createRequire } from 'node:module';
+import { readWav, writeWav } from './lib/wav.mjs';
+import { sceneRecord } from './lib/align.mjs';
+import { reverb } from '../src/library/audio/synthLegacy.mjs';
 
-const PACING_SPEED_MAP = {
-  fast_hook: 1.08,
-  crisp_mechanism: 1.05,
-  steady_escalation: 1.03,
-  weighty_impact: 1.01,
-  reflective_payoff: 0.98,
-  loop_bridge: 1.02,
-};
+const require = createRequire(import.meta.url);
+const ffmpeg = require('ffmpeg-static');
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const args = process.argv.slice(2);
+const opt = (name, dflt) => { const i = args.indexOf(`--${name}`); return i >= 0 ? args[i + 1] : dflt; };
+const storyFile = args[0];
+if (!storyFile || storyFile.startsWith('--')) { console.error('Usage: node tools/narrate.mjs stories/<slug>.json [--speed 0.92] [--reuse] [--voice am_michael]'); process.exit(2); }
+const story = JSON.parse(fs.readFileSync(path.resolve(storyFile), 'utf8'));
+const slug = story.project.slug, D = story.project.duration_s;
+const voice = opt('voice', 'am_michael'), baseSpeed = Number(opt('speed', '0.92'));
+const dir = path.join(ROOT, 'build', slug, 'audio');
+fs.mkdirSync(path.join(dir, 'narration'), { recursive: true });
 
-function resolveSceneSpeed(scene, index, targetWpm = 148) {
-  if (scene.narration?.pacing_energy && PACING_SPEED_MAP[scene.narration.pacing_energy]) {
-    return PACING_SPEED_MAP[scene.narration.pacing_energy];
-  }
-  const baseScale = Math.max(0.95, Math.min(1.12, targetWpm / 140));
-  if (index === 0) return Math.max(1.06, baseScale * 1.04); // Hook scene briskness
-  if (index <= 2) return Math.max(1.03, baseScale * 1.02);
-  return baseScale;
-}
+// Kokoro speed per pacing_energy (Kokoro am_michael ≈ 135 wpm at 0.92 and ≈ 158 wpm at 1.08, pauses included).
+const PACING_SPEED = { fast_hook: 1.08, crisp_mechanism: 1.05, steady_escalation: 1.03, weighty_impact: 1.01, reflective_payoff: 0.98, loop_bridge: 1.02 };
+const speeds = Object.fromEntries(story.scenes.map((sc) => [sc.id, PACING_SPEED[sc.narration.pacing_energy] ?? baseSpeed]));
 
-function getWavDurationSeconds(wavPath, ffprobeBin = 'ffprobe') {
-  const res = spawnSync(
-    ffprobeBin,
-    [
-      '-v',
-      'error',
-      '-show_entries',
-      'format=duration',
-      '-of',
-      'default=noprint_wrappers=1:nokey=1',
-      wavPath,
-    ],
-    { encoding: 'utf8' }
-  );
-  const parsed = parseFloat((res.stdout || '').trim());
-  return Number.isFinite(parsed) ? parsed : 0;
-}
-
-async function main() {
-  const argPath = process.argv[2];
-  if (!argPath) {
-    console.error('Usage: node tools/narrate.mjs stories/<slug>.json');
-    process.exit(1);
-  }
-
-  const repoRoot = process.cwd();
-  const storyPath = path.isAbsolute(argPath)
-    ? argPath
-    : path.join(repoRoot, argPath);
-  const storyboard = JSON.parse(fs.readFileSync(storyPath, 'utf8'));
-  const slug = storyboard.project.slug;
-  const duration_s = storyboard.project.duration_s;
-  const targetWpm = storyboard.audio?.narration_target_wpm ?? 148;
-
-  const audioDir = path.join(repoRoot, 'build', slug, 'audio');
-  fs.mkdirSync(audioDir, { recursive: true });
-
-  const ffmpegBin = ffmpegPath || 'ffmpeg';
-  const sceneOutputs = [];
-
-  for (let i = 0; i < storyboard.scenes.length; i++) {
-    const scene = storyboard.scenes[i];
-    const sceneId = scene.id;
-    const text = scene.narration.text.trim();
-    const speed = resolveSceneSpeed(scene, i, targetWpm);
-
-    // Force S01 hook narration to start immediately at t <= 0.08s (zero dead air)
-    const start_s =
-      i === 0 ? Math.min(0.08, scene.narration.start_s ?? 0.05) : scene.narration.start_s;
-    const window_s = scene.end_s - start_s;
-
-    const rawSceneWav = path.join(audioDir, `${sceneId}_raw.wav`);
-    const trimmedSceneWav = path.join(audioDir, `${sceneId}.wav`);
-
-    // Invoke existing local TTS helper (scripts/tts_synthesize.py or kokoro CLI) if present
-    const ttsScript = path.join(repoRoot, 'scripts', 'tts_synthesize.py');
-    if (fs.existsSync(ttsScript)) {
-      const ttsRes = spawnSync(
-        'python',
-        [
-          ttsScript,
-          '--text',
-          text,
-          '--voice',
-          'am_michael',
-          '--speed',
-          String(speed.toFixed(2)),
-          '--out',
-          rawSceneWav,
-        ],
-        { stdio: 'inherit' }
-      );
-      if (ttsRes.status !== 0) process.exit(ttsRes.status ?? 1);
-
-      // Strip leading and trailing silence so hook starts on frame 2
-      spawnSync(
-        ffmpegBin,
-        [
-          '-y',
-          '-i',
-          rawSceneWav,
-          '-af',
-          'silenceremove=start_periods=1:start_duration=0.02:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_duration=0.04:start_threshold=-45dB,areverse',
-          '-ar',
-          '48000',
-          '-ac',
-          '1',
-          trimmedSceneWav,
-        ],
-        { stdio: 'ignore' }
-      );
-    }
-
-    const actualDur = fs.existsSync(trimmedSceneWav)
-      ? getWavDurationSeconds(trimmedSceneWav)
-      : Math.min(window_s - 0.15, (text.split(/\s+/).length / (targetWpm * speed)) * 60);
-
-    if (actualDur > window_s - 0.05) {
-      console.warn(
-        `[narrate] WARNING: ${sceneId} speech (${actualDur.toFixed(
-          2
-        )}s) is tight against window (${window_s.toFixed(2)}s).`
-      );
-    }
-
-    // Align words via local Whisper helper if present, else proportional fallback
-    const alignScript = path.join(repoRoot, 'scripts', 'whisper_align.py');
-    let words = [];
-    const wordsJsonPath = path.join(audioDir, `${sceneId}_words.json`);
-
-    if (fs.existsSync(alignScript) && fs.existsSync(trimmedSceneWav)) {
-      spawnSync(
-        'python',
-        [alignScript, '--audio', trimmedSceneWav, '--text', text, '--out', wordsJsonPath],
-        { stdio: 'inherit' }
-      );
-      if (fs.existsSync(wordsJsonPath)) {
-        const rawWords = JSON.parse(fs.readFileSync(wordsJsonPath, 'utf8'));
-        words = rawWords.map((w) => ({
-          word: w.word,
-          start_s: Number((start_s + w.start_s).toFixed(3)),
-          end_s: Number((start_s + w.end_s).toFixed(3)),
-          sceneId,
-        }));
-      }
-    }
-
-    if (words.length === 0) {
-      const tokens = text.split(/\s+/).filter(Boolean);
-      const totalWeights = tokens.reduce((acc, tk) => acc + Math.max(2, tk.length), 0);
-      let cursor = start_s;
-      for (const tk of tokens) {
-        const wDur = (Math.max(2, tk.length) / totalWeights) * actualDur;
-        words.push({
-          word: tk,
-          start_s: Number(cursor.toFixed(3)),
-          end_s: Number((cursor + wDur).toFixed(3)),
-          sceneId,
-        });
-        cursor += wDur;
-      }
-    }
-
-    sceneOutputs.push({
-      id: sceneId,
-      start_s,
-      end_s: Number((start_s + actualDur).toFixed(3)),
-      speed,
-      text,
-      wavPath: trimmedSceneWav,
-      words,
-      caption_emphasis: scene.caption_emphasis ?? [],
-    });
-  }
-
-  // Assemble master narration.wav on the exact 0..duration_s timeline
-  const existingClips = sceneOutputs.filter((s) => fs.existsSync(s.wavPath));
-  const masterNarrationWav = path.join(audioDir, 'narration.wav');
-  if (existingClips.length > 0) {
-    const inputs = [];
-    const delayFilters = [];
-    const mixLabels = [];
-
-    existingClips.forEach((sc, idx) => {
-      inputs.push('-i', sc.wavPath);
-      const delayMs = Math.max(0, Math.round(sc.start_s * 1000));
-      delayFilters.push(`[${idx}:a]adelay=${delayMs}|${delayMs}[s${idx}]`);
-      mixLabels.push(`[s${idx}]`);
-    });
-
-    const filterGraph = `${delayFilters.join(';')};${mixLabels.join(
-      ''
-    )}amix=inputs=${existingClips.length}:normalize=0,apad=whole_dur=${duration_s}[out]`;
-
-    spawnSync(
-      ffmpegBin,
-      [
-        '-y',
-        ...inputs,
-        '-filter_complex',
-        filterGraph,
-        '-map',
-        '[out]',
-        '-ar',
-        '48000',
-        '-ac',
-        '1',
-        '-t',
-        String(duration_s),
-        masterNarrationWav,
-      ],
-      { stdio: 'ignore' }
-    );
-  }
-
-  const narrationManifest = {
-    slug,
-    duration_s,
-    generated_at: new Date().toISOString(),
-    scenes: sceneOutputs.map(({ wavPath, ...rest }) => rest),
-    words: sceneOutputs.flatMap((s) => s.words),
-  };
-
-  const manifestPath = path.join(audioDir, 'narration.json');
-  fs.writeFileSync(manifestPath, JSON.stringify(narrationManifest, null, 2));
-  console.log(
-    `[narrate] Wrote ${manifestPath} (${narrationManifest.words.length} timed words across ${sceneOutputs.length} scenes)`
-  );
-}
-
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
+// ---- 1+2) synthesis and recognition (cached Kokoro ONNX + faster-whisper)
+const rawFile = path.join(dir, 'narration-raw.json');
+const cached = fs.existsSync(rawFile) ? JSON.parse(fs.readFileSync(rawFile, 'utf8')) : null;
+const fresh = cached && story.scenes.every((sc) => {
+  const r = cached.scenes.find((x) => x.id === sc.id);
+  return r && r.text === sc.narration.text && Math.abs((r.speed ?? cached.speed) - speeds[sc.id]) < 1e-6 && fs.existsSync(path.join(dir, r.file));
 });
+if (args.includes('--reuse') && fresh) console.log('reusing synthesized clips from narration-raw.json');
+else {
+  const t0 = Date.now();
+  const py = spawnSync(process.env.PYTHON ?? 'python', [path.join(ROOT, 'tools', 'narrate-cached.py'), path.resolve(storyFile), '--voice', voice, '--speed', String(baseSpeed), '--speeds', JSON.stringify(speeds), '--out', dir],
+    { stdio: 'inherit', env: { ...process.env, PYTHONUTF8: '1', PYTHONIOENCODING: 'utf-8' } });
+  if (py.status !== 0) { console.error('narrate-cached.py failed'); process.exit(py.status ?? 1); }
+  console.log(`synthesized ${story.scenes.length} scenes in ${((Date.now() - t0) / 1000).toFixed(0)}s`);
+}
+const raw = JSON.parse(fs.readFileSync(rawFile, 'utf8'));
+
+// ---- alignment → narration.json (word times relative to each clip; src/entry.ts offsets them by narration.start_s)
+const result = { slug, engine: raw.engine, model: raw.model, voice: raw.voice, speed: baseSpeed, aligner: raw.aligner, license: raw.license, scenes: [] };
+let words = 0, speech = 0;
+const problems = [];
+for (const sc of story.scenes) {
+  const r = raw.scenes.find((x) => x.id === sc.id);
+  if (!r || r.text !== sc.narration.text) { console.error(`${sc.id}: narration-raw.json does not match the storyboard text; run without --reuse`); process.exit(1); }
+  const { record, exact, wordCount } = sceneRecord(r);
+  record.speed = r.speed ?? raw.speed;
+  result.scenes.push(record);
+  const end = sc.narration.start_s + record.duration_s;
+  words += wordCount; speech += record.duration_s;
+  console.log(`${sc.id} ${record.duration_s.toFixed(2)}s ${wordCount}w ${(wordCount / record.duration_s * 60).toFixed(0)}wpm speed ${record.speed} match ${exact}/${wordCount} | ends ${end.toFixed(2)}s of scene ${sc.start_s}-${sc.end_s}`);
+  if (end > sc.end_s - 0.05) problems.push(`${sc.id}: speech ends at ${end.toFixed(2)}s, past scene end ${sc.end_s}s - 0.05s`);
+}
+fs.writeFileSync(path.join(dir, 'narration.json'), JSON.stringify(result, null, 2) + '\n');
+console.log(`total ${words} words, ${speech.toFixed(1)}s of speech (${(words / speech * 60).toFixed(0)} wpm) in a ${D}s film`);
+if (story.scenes[0].narration.start_s > 0.08) console.warn(`WARNING: S01 narration starts at ${story.scenes[0].narration.start_s}s (hook speech should start by 0.08s)`);
+if (problems.length) { console.error(`Narration overruns its scene windows (re-time the storyboard, then run with --reuse):\n  ${problems.join('\n  ')}`); process.exit(3); }
+
+// ---- 3) voice timeline: clips at narration.start_s, peak -6 dBFS, a touch of small-room warmth, 48 kHz mono
+const sr = result.scenes[0].sample_rate, voiceTrack = new Float32Array(Math.ceil(D * sr));
+for (const sc of story.scenes) {
+  const rec = result.scenes.find((x) => x.id === sc.id), x = readWav(path.join(dir, rec.file)).channels[0];
+  voiceTrack.set(x.subarray(0, Math.max(0, voiceTrack.length - Math.round(sc.narration.start_s * sr))), Math.round(sc.narration.start_s * sr));
+}
+let pk = 0; for (const v of voiceTrack) pk = Math.max(pk, Math.abs(v));
+for (let i = 0; i < voiceTrack.length; i++) voiceTrack[i] *= 0.5 / pk;
+const wet = reverb({ L: voiceTrack, R: voiceTrack.slice(), sr }, { decay: 0.7, mix: 0.07, damp: 0.5, tail: 0.1 });
+const tmp = path.join(dir, 'narration-timeline.wav'), out = path.join(dir, 'narration.wav');
+writeWav(tmp, [wet.L.subarray(0, voiceTrack.length)], sr);
+const ff = spawnSync(ffmpeg, ['-y', '-hide_banner', '-loglevel', 'error', '-i', tmp, '-af', 'aresample=48000', '-ar', '48000', '-ac', '1', '-t', String(D), out], { stdio: 'inherit' });
+if (ff.status !== 0) { console.error('ffmpeg failed to write narration.wav'); process.exit(1); }
+fs.rmSync(tmp, { force: true });
+console.log(`wrote ${path.relative(ROOT, path.join(dir, 'narration.json'))} and ${path.relative(ROOT, out)} (${D}s, 48 kHz mono)`);

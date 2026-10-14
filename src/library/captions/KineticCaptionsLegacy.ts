@@ -41,7 +41,7 @@ export class KineticCaptions {
     for (let i = 0; i < this.phrases.length; i++) {
       const p = this.phrases[i], next = this.phrases[i + 1];
       const lastEnd = p.words[p.words.length - 1].end;
-      p.start = p.words[0].start - 0.1;
+      p.start = Math.max(0, p.words[0].start - 0.1);
       p.end = next && next.words[0].start - lastEnd < 0.7 ? next.words[0].start - 0.1 : lastEnd + 0.35;
     }
   }
