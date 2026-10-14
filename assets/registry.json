@@ -42,6 +42,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
@@ -74,6 +76,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -111,6 +115,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -189,6 +195,8 @@
         "air-pressure-doubled",
         "earth-ten-percent-closer",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "oxygen-gone-five-seconds",
         "what-if-every-man-disappeared"
       ],
@@ -232,6 +240,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
@@ -276,6 +286,7 @@
         "earth-core-solid",
         "earth-ten-percent-closer",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
@@ -532,6 +543,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -615,6 +628,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -664,6 +679,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -699,6 +716,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -741,6 +760,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -784,6 +805,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -851,6 +874,8 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
@@ -1903,6 +1928,8 @@
         "earth-core-solid",
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "rain-nonstop-everywhere"
@@ -1932,6 +1959,8 @@
         "earth-core-solid",
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
+        "last-man-alive",
+        "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "rain-nonstop-everywhere"
@@ -1972,6 +2001,8 @@
       "used_in": [
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
+        "last-man-alive",
+        "last-woman-alive",
         "mountain-grew-100-km-tall",
         "what-if-every-man-disappeared"
       ],
@@ -2016,6 +2047,8 @@
         "continents-one-landmass",
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
+        "last-man-alive",
+        "last-woman-alive",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2051,6 +2084,8 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "last-man-alive",
+        "last-woman-alive",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2080,6 +2115,7 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "last-man-alive",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2112,6 +2148,7 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "last-man-alive",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2166,6 +2203,8 @@
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
         "every-human-jumped-at-once",
+        "last-man-alive",
+        "last-woman-alive",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2217,6 +2256,8 @@
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
         "earth-ten-percent-closer",
+        "last-man-alive",
+        "last-woman-alive",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2436,6 +2477,8 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "last-man-alive",
+        "last-woman-alive",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2462,6 +2505,8 @@
       "used_in": [
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
+        "last-man-alive",
+        "last-woman-alive",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",

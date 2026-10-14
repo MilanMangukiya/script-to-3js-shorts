@@ -4,6 +4,8 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 | Rendered (UTC) | Video | Length | Publishing | Upload metadata |
 |---|---|---:|---|---|
+| 2026-10-14 | `last-woman-alive` | 55s | rendered_not_published | [Copy metadata](metadata/last-woman-alive.md) |
+| 2026-10-14 | `last-man-alive` | 55s | rendered_not_published | [Copy metadata](metadata/last-man-alive.md) |
 | 2026-10-14 | `mountain-grew-100-km-tall` | 55s | rendered_not_published | [Copy metadata](metadata/mountain-grew-100-km-tall.md) |
 | 2026-10-13 | `every-human-jumped-at-once` | 63s | rendered_not_published | [Copy metadata](metadata/every-human-jumped-at-once.md) |
 | 2026-10-13 | `earth-ten-percent-closer` | 64s | rendered_not_published | [Copy metadata](metadata/earth-ten-percent-closer.md) |
@@ -17,6 +19,268 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 | 2026-10-12 | `air-pressure-doubled` | 74s | rendered_not_published | [Copy metadata](metadata/air-pressure-doubled.md) |
 | 2026-10-12 | `ice-sank-instead-of-floating` | 74s | rendered_not_published | [Copy metadata](metadata/ice-sank-instead-of-floating.md) |
 | 2026-10-12 | `oxygen-gone-five-seconds` | 72s | rendered_not_published | [Copy metadata](metadata/oxygen-gone-five-seconds.md) |
+
+---
+
+## What if you were the last woman alive?
+**Video:** `output/last-woman-alive.mp4`\
+**Thumbnail:** `output/last-woman-alive.jpg`\
+**Publishing copy:** `output/last-woman-alive.md`\
+**Hugging Face:** [videos/013-last-woman-alive.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/013-last-woman-alive.mp4) · [videos/013-last-woman-alive.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/013-last-woman-alive.jpg) · [videos/013-last-woman-alive.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/013-last-woman-alive.md)\
+**Slug:** `last-woman-alive` | **Duration:** 55s | **Rendered (UTC):** 2026-10-14T03:38:03Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** A fictional, one-time disappearance removes every other already-born woman and girl; men and boys remain, and the adult viewer is the exception. Stored eggs and embryos survive. Pregnancies carried by vanished people disappear with them; they do not continue independently. This episode additionally assumes no other survivor can carry a pregnancy. This is an extra fictional condition, not a consequence of being the last woman: reproductive anatomy is not determined by gender identity, and some men and gender-diverse people can carry pregnancies. The viewer may or may not be able to carry a pregnancy. The possible daughter appears months later, conditional on her free choice, capacity, viable embryos, appropriate donor consent, successful treatment, working clinics and sufficient support. The one-time event does not remove daughters born afterward. Frozen embryos can retain genetic contributions from many other women; the recipient does not replace those genes with her own. Preserved genes alone do not restore the population. WHO reports women at 67.2% of global health and care employment; this is a global workforce baseline, not the exact loss in a local ward or specialty. The friend, Dad's call, local crashes and care disruption are illustrative authored events. Current artificial-womb research has supported premature lambs and targets extreme prematurity; it does not establish conception-to-birth human gestation. The incubator shown is ordinary neonatal equipment, not an artificial womb. No guaranteed recovery, extinction deadline, universal social response or reproductive duty is claimed.
+**Assets reused:** city-street-block-v1, pedestrian-crowd-v1, vanish-dissolve-v1, humanoid-figure-v1, earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, clinic-interior-v1, room-box-v1, newborn-hand-v1, smoke-wisp-v1, modeling-helpers-v1, camera-keyframe-rig-v1, film-pipeline-v1, overlay-labels-v1, caption-kinetic-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** None
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if you were the last woman alive?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Your best friend vanishes mid-sentence. Her coffee splashes the pavement. You're still here. In this 55-second 3D science thought experiment, every other woman and girl has disappeared once, while men and boys remain.
+
+A street crisis turns personal when Dad calls: do you answer? Then comes the twist. Frozen embryos still hold other women's genetic contributions. But preserved genes need a pregnancy, and current artificial-womb research cannot replace a whole human pregnancy. A possible daughter is conditional on your choice, capacity, successful treatment and support.
+
+Would you tell the world you survived?
+
+Scope: A fictional, one-time disappearance removes every other already-born woman and girl; men and boys remain, and the adult viewer is the exception. Stored eggs and embryos survive. Pregnancies carried by vanished people disappear with them; they do not continue independently. This episode additionally assumes no other survivor can carry a pregnancy. This is an extra fictional condition, not a consequence of being the last woman: reproductive anatomy is not determined by gender identity, and some men and gender-diverse people can carry pregnancies. The viewer may or may not be able to carry a pregnancy. The possible daughter appears months later, conditional on her free choice, capacity, viable embryos, appropriate donor consent, successful treatment, working clinics and sufficient support. The one-time event does not remove daughters born afterward. Frozen embryos can retain genetic contributions from many other women; the recipient does not replace those genes with her own. Preserved genes alone do not restore the population. WHO reports women at 67.2% of global health and care employment; this is a global workforce baseline, not the exact loss in a local ward or specialty. The friend, Dad's call, local crashes and care disruption are illustrative authored events. Current artificial-womb research has supported premature lambs and targets extreme prematurity; it does not establish conception-to-birth human gestation. The incubator shown is ordinary neonatal equipment, not an artificial womb. No guaranteed recovery, extinction deadline, universal social response or reproductive duty is claimed.
+
+Sources:
+- WHO: gender equity in the global health and care workforce: https://www.who.int/teams/health-workforce/hwfequity/health-workforce
+- HFEA: Embryo freezing, thawing and transfer: https://www.hfea.gov.uk/treatments/fertility-preservation/embryo-freezing/
+- FDA: artificial womb technology advisory summary: https://www.fda.gov/media/172441/download
+- Primary research: extra-uterine life support development, September2026: https://link.springer.com/article/10.1186/s42490-026-00120-z
+- ACOG: Health Care for Transgender and Gender Diverse Individuals: https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/health-care-for-transgender-and-gender-diverse-individuals
+- NASA Glenn: Newton's Laws of Motion: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/
+
+Visuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.
+
+#Shorts #WhatIf #Demography #HumanBiology #Cryopreservation #ReproductiveScience #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if you were the last woman alive, last woman on earth men remain, population science thought experiment, human biology simulation, frozen embryos, cryopreservation, artificial womb research, demography explained, reproductive science, science simulation
+```
+
+**Target search keywords:** what if you were the last woman alive, last woman on earth men remain, population science thought experiment, human biology simulation, frozen embryos, cryopreservation, artificial womb research
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+Your friend's coffee splashes the pavement. She's gone. You're still here. Every other woman and girl has vanished once, and men remain. Then your phone lights up: Dad.
+
+From the street to a strained clinic and a frozen embryo bank, this 3D thought experiment follows personal loss, hidden genetic continuity and your own choice. Preserved embryos need a pregnancy; current artificial-womb research cannot replace complete human gestation. A later daughter is only a possibility.
+
+Would you tell the world you survived?
+
+The scenario separately assumes no other surviving potential gestator. Reproductive anatomy is not determined by gender. No reproductive duty or guaranteed recovery is assumed.
+
+#WhatIf #ScienceReels #Demography #HumanBiology #Cryopreservation #ReproductiveScience #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if you were the last woman alive, last woman on earth men remain, population science thought experiment, human biology simulation, frozen embryos, cryopreservation, artificial womb research
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if you were the last woman alive? Men remain
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Your best friend vanishes, her coffee spills across the pavement, and Dad is calling. You're the only woman left after a one-time fictional event. Men and boys remain.
+
+Follow a local traffic crisis, surviving clinicians and the frozen-embryo twist: other women's genetic contributions can remain, but embryos still need gestation. A possible daughter depends on your choice, your capacity and successful care.
+
+Would you tell the world you survived?
+
+A fictional, one-time disappearance removes every other already-born woman and girl; men and boys remain, and the adult viewer is the exception. Stored eggs and embryos survive. Pregnancies carried by vanished people disappear with them; they do not continue independently. This episode additionally assumes no other survivor can carry a pregnancy. This is an extra fictional condition, not a consequence of being the last woman: reproductive anatomy is not determined by gender identity, and some men and gender-diverse people can carry pregnancies. The viewer may or may not be able to carry a pregnancy. The possible daughter appears months later, conditional on her free choice, capacity, viable embryos, appropriate donor consent, successful treatment, working clinics and sufficient support. The one-time event does not remove daughters born afterward. Frozen embryos can retain genetic contributions from many other women; the recipient does not replace those genes with her own. Preserved genes alone do not restore the population. WHO reports women at 67.2% of global health and care employment; this is a global workforce baseline, not the exact loss in a local ward or specialty. The friend, Dad's call, local crashes and care disruption are illustrative authored events. Current artificial-womb research has supported premature lambs and targets extreme prematurity; it does not establish conception-to-birth human gestation. The incubator shown is ordinary neonatal equipment, not an artificial womb. No guaranteed recovery, extinction deadline, universal social response or reproductive duty is claimed.
+
+Sources:
+- WHO: gender equity in the global health and care workforce: https://www.who.int/teams/health-workforce/hwfequity/health-workforce
+- HFEA: Embryo freezing, thawing and transfer: https://www.hfea.gov.uk/treatments/fertility-preservation/embryo-freezing/
+- FDA: artificial womb technology advisory summary: https://www.fda.gov/media/172441/download
+- Primary research: extra-uterine life support development, September2026: https://link.springer.com/article/10.1186/s42490-026-00120-z
+- ACOG: Health Care for Transgender and Gender Diverse Individuals: https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/health-care-for-transgender-and-gender-diverse-individuals
+- NASA Glenn: Newton's Laws of Motion: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/
+
+#WhatIf #Demography #HumanBiology #Cryopreservation #ReproductiveScience #ScienceSimulation
+```
+
+**Target search keywords:** what if you were the last woman alive, last woman on earth men remain, population science thought experiment, human biology simulation, frozen embryos, cryopreservation, artificial womb research
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+Your best friend vanishes mid-sentence. Her coffee splashes the pavement. Then Dad calls. You're the last woman alive in a world where men remain. Do you answer?
+
+The twist is in frozen storage: other women's genes remain in embryos. Pregnancy, working clinics and your choice still matter. A daughter could be born; recovery is not guaranteed.
+
+Would you tell the world you survived?
+
+Fictional one-time event with an extra assumption that no other survivor can carry a pregnancy. Gender alone does not establish reproductive capacity.
+
+#WhatIf #ScienceTok #Demography #HumanBiology #Cryopreservation #ReproductiveScience #ScienceSimulation
+```
+
+**Target search keywords:** what if you were the last woman alive, last woman on earth men remain, population science thought experiment, human biology simulation, frozen embryos, cryopreservation, artificial womb research
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+Your friend's coffee spills. Every other woman has vanished. Frozen embryos hold a twist. Would you tell the world you survived?
+
+#WhatIf #Biology #Demography #Cryopreservation #ScienceSimulation
+```
+
+**Target search keywords:** what if you were the last woman alive, last woman on earth men remain, population science thought experiment
+
+**Published URL:** Not published
+
+
+---
+
+## What if you were the last man alive?
+**Video:** `output/last-man-alive.mp4`\
+**Thumbnail:** `output/last-man-alive.jpg`\
+**Publishing copy:** `output/last-man-alive.md`\
+**Hugging Face:** [videos/012-last-man-alive.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/012-last-man-alive.mp4) · [videos/012-last-man-alive.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/012-last-man-alive.jpg) · [videos/012-last-man-alive.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/012-last-man-alive.md)\
+**Slug:** `last-man-alive` | **Duration:** 55s | **Rendered (UTC):** 2026-10-14T02:46:23Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** One-time fictional disappearance of every already-born male person except the adult viewer; women, girls, pregnancies, embryos and stored sperm remain. A newborn boy could arrive moments after the event while the viewer remains the only adult man. IMO-WISTA 2024 surveyed organisations reported women as 1% of seafarers, not all maritime employees. WHO reports women as 67% of global health and social care workers, not every hospital specialty. Vehicle crashes, emergency overload, shipping disruption and local repairs are plausible illustrative consequences without predicted global counts or deadlines. Stored sperm can be used in fertility treatment if maintenance, resources and appropriate consent remain available. Recovery is conditional.
+**Assets reused:** city-street-block-v1, pedestrian-crowd-v1, vanish-dissolve-v1, humanoid-figure-v1, earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, port-diorama-kit-v1, container-ship-v1, ocean-surface-v1, clinic-interior-v1, room-box-v1, newborn-hand-v1, smoke-wisp-v1, modeling-helpers-v1, camera-keyframe-rig-v1, film-pipeline-v1, overlay-labels-v1, caption-kinetic-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** None
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if you were the last man alive?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You're at a crossing when the men beside you vanish. The women stay. In this 55-second 3D science thought experiment, you're the only adult man left.
+
+Follow the consequences from driverless cars to stalled cargo shipping and surviving clinicians. Then the twist: pregnancies continue, so boys can be born after the event. Preserved sperm also keeps genetic contributions from other men available if clinics can continue treatment.
+
+Would you help rebuild, or hide?
+
+Scope: One-time fictional disappearance of every already-born male person except the adult viewer; women, girls, pregnancies, embryos and stored sperm remain. A newborn boy could arrive moments after the event while the viewer remains the only adult man. IMO-WISTA 2024 surveyed organisations reported women as 1% of seafarers, not all maritime employees. WHO reports women as 67% of global health and social care workers, not every hospital specialty. Vehicle crashes, emergency overload, shipping disruption and local repairs are plausible illustrative consequences without predicted global counts or deadlines. Stored sperm can be used in fertility treatment if maintenance, resources and appropriate consent remain available. Recovery is conditional.
+
+Sources:
+- IMO-WISTA Women in Maritime 2024 survey, published May 2025: https://www.imo.org/en/mediacentre/pressbriefings/pages/idwim-2025-wista-survey.aspx
+- WHO: Value gender and equity in the global health workforce: https://www.who.int/activities/value-gender-and-equity-in-the-global-health-workforce
+- HFEA: Sperm freezing: https://www.hfea.gov.uk/treatments/fertility-preservation/sperm-freezing
+- NASA Glenn: Newton first law: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/
+
+Visuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.
+
+#Shorts #WhatIf #Demography #HumanBiology #Cryopreservation #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if you were the last man alive, last man on earth women remain, population science thought experiment, human biology simulation, cryopreservation, infrastructure staffing, last adult man, demography explained, what if men disappeared, science simulation, threejs documentary
+```
+
+**Target search keywords:** what if you were the last man alive, last man on earth women remain, population science thought experiment, human biology simulation, cryopreservation, infrastructure staffing
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+You're the only adult man left, standing at a crossing full of surviving women. The immediate problem is missing workers. The surprising part is what remains in maternity wards and cryogenic storage.
+
+Would you help rebuild, or hide?
+
+One-time disappearance: pregnancies, embryos and stored sperm remain. The aftermath is conditional; this film makes no extinction forecast.
+
+#WhatIf #ScienceReels #Demography #HumanBiology #Cryopreservation #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if you were the last man alive, last man on earth women remain, population science thought experiment, human biology simulation, cryopreservation, infrastructure staffing
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if you were the last man alive? Women remain
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You're at a crossing when the men beside you vanish. Women and girls remain, and you're the exception. This 3D thought experiment follows driverless traffic, shipping disruption, surviving healthcare workers and the pregnancy and stored-sperm twist.
+
+Would you help rebuild, or hide?
+
+One-time fictional disappearance of every already-born male person except the adult viewer; women, girls, pregnancies, embryos and stored sperm remain. A newborn boy could arrive moments after the event while the viewer remains the only adult man. IMO-WISTA 2024 surveyed organisations reported women as 1% of seafarers, not all maritime employees. WHO reports women as 67% of global health and social care workers, not every hospital specialty. Vehicle crashes, emergency overload, shipping disruption and local repairs are plausible illustrative consequences without predicted global counts or deadlines. Stored sperm can be used in fertility treatment if maintenance, resources and appropriate consent remain available. Recovery is conditional.
+
+Sources:
+- IMO-WISTA Women in Maritime 2024 survey, published May 2025: https://www.imo.org/en/mediacentre/pressbriefings/pages/idwim-2025-wista-survey.aspx
+- WHO: Value gender and equity in the global health workforce: https://www.who.int/activities/value-gender-and-equity-in-the-global-health-workforce
+- HFEA: Sperm freezing: https://www.hfea.gov.uk/treatments/fertility-preservation/sperm-freezing
+- NASA Glenn: Newton first law: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/
+
+#WhatIf #Science #Demography #HumanBiology #Cryopreservation #ScienceSimulation
+```
+
+**Target search keywords:** what if you were the last man alive, last man on earth women remain, population science thought experiment, human biology simulation, cryopreservation, infrastructure staffing
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+You're at a crossing when every other man vanishes. Women remain. Driverless cars move, shipping loses crews, and surviving clinicians keep working. But pregnancies and preserved sperm change what your survival means.
+
+Would you help rebuild, or hide?
+
+A one-time science thought experiment; recovery depends on people, resources and functioning clinics.
+
+#WhatIf #ScienceTok #Demography #HumanBiology #ScienceSimulation #Cryopreservation
+```
+
+**Target search keywords:** what if you were the last man alive, last man on earth women remain, population science thought experiment, human biology simulation, cryopreservation, infrastructure staffing
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+You're at a crossing when every other man vanishes. Pregnancies and preserved sperm change what comes next. Would you help rebuild, or hide?
+
+#WhatIf #Demography #Biology #Science #ScienceSimulation
+```
+
+**Target search keywords:** what if you were the last man alive, last man on earth women remain, population science thought experiment
+
+**Published URL:** Not published
+
 
 ---
 

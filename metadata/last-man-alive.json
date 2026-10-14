@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "last-man-alive",
+  "topic": "What if you were the last man alive?",
+  "duration_s": 55,
+  "video_file": "output/last-man-alive.mp4",
+  "scientific_scope_note": "One-time fictional disappearance of every already-born male person except the adult viewer; women, girls, pregnancies, embryos and stored sperm remain. A newborn boy could arrive moments after the event while the viewer remains the only adult man. IMO-WISTA 2024 surveyed organisations reported women as 1% of seafarers, not all maritime employees. WHO reports women as 67% of global health and social care workers, not every hospital specialty. Vehicle crashes, emergency overload, shipping disruption and local repairs are plausible illustrative consequences without predicted global counts or deadlines. Stored sperm can be used in fertility treatment if maintenance, resources and appropriate consent remain available. Recovery is conditional.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [
+    "city-street-block-v1",
+    "pedestrian-crowd-v1",
+    "vanish-dissolve-v1",
+    "humanoid-figure-v1",
+    "earth-globe-v1",
+    "earth-textures-nasa-v1",
+    "starfield-v1",
+    "sky-dome-v1",
+    "port-diorama-kit-v1",
+    "container-ship-v1",
+    "ocean-surface-v1",
+    "clinic-interior-v1",
+    "room-box-v1",
+    "newborn-hand-v1",
+    "smoke-wisp-v1",
+    "modeling-helpers-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "overlay-labels-v1",
+    "caption-kinetic-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if you were the last man alive?",
+      "description": "You're at a crossing when the men beside you vanish. The women stay. In this 55-second 3D science thought experiment, you're the only adult man left.\n\nFollow the consequences from driverless cars to stalled cargo shipping and surviving clinicians. Then the twist: pregnancies continue, so boys can be born after the event. Preserved sperm also keeps genetic contributions from other men available if clinics can continue treatment.\n\nWould you help rebuild, or hide?\n\nScope: One-time fictional disappearance of every already-born male person except the adult viewer; women, girls, pregnancies, embryos and stored sperm remain. A newborn boy could arrive moments after the event while the viewer remains the only adult man. IMO-WISTA 2024 surveyed organisations reported women as 1% of seafarers, not all maritime employees. WHO reports women as 67% of global health and social care workers, not every hospital specialty. Vehicle crashes, emergency overload, shipping disruption and local repairs are plausible illustrative consequences without predicted global counts or deadlines. Stored sperm can be used in fertility treatment if maintenance, resources and appropriate consent remain available. Recovery is conditional.\n\nSources:\n- IMO-WISTA Women in Maritime 2024 survey, published May 2025: https://www.imo.org/en/mediacentre/pressbriefings/pages/idwim-2025-wista-survey.aspx\n- WHO: Value gender and equity in the global health workforce: https://www.who.int/activities/value-gender-and-equity-in-the-global-health-workforce\n- HFEA: Sperm freezing: https://www.hfea.gov.uk/treatments/fertility-preservation/sperm-freezing\n- NASA Glenn: Newton first law: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/\n\nVisuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.",
+      "tags": [
+        "what if you were the last man alive",
+        "last man on earth women remain",
+        "population science thought experiment",
+        "human biology simulation",
+        "cryopreservation",
+        "infrastructure staffing",
+        "last adult man",
+        "demography explained",
+        "what if men disappeared",
+        "science simulation",
+        "threejs documentary"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Demography",
+        "#HumanBiology",
+        "#Cryopreservation",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if you were the last man alive",
+        "last man on earth women remain",
+        "population science thought experiment",
+        "human biology simulation",
+        "cryopreservation",
+        "infrastructure staffing"
+      ]
+    },
+    "tiktok": {
+      "caption": "You're at a crossing when every other man vanishes. Women remain. Driverless cars move, shipping loses crews, and surviving clinicians keep working. But pregnancies and preserved sperm change what your survival means.\n\nWould you help rebuild, or hide?\n\nA one-time science thought experiment; recovery depends on people, resources and functioning clinics.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Demography",
+        "#HumanBiology",
+        "#ScienceSimulation",
+        "#Cryopreservation"
+      ],
+      "keywords": [
+        "what if you were the last man alive",
+        "last man on earth women remain",
+        "population science thought experiment",
+        "human biology simulation",
+        "cryopreservation",
+        "infrastructure staffing"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "You're the only adult man left, standing at a crossing full of surviving women. The immediate problem is missing workers. The surprising part is what remains in maternity wards and cryogenic storage.\n\nWould you help rebuild, or hide?\n\nOne-time disappearance: pregnancies, embryos and stored sperm remain. The aftermath is conditional; this film makes no extinction forecast.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#Demography",
+        "#HumanBiology",
+        "#Cryopreservation",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if you were the last man alive",
+        "last man on earth women remain",
+        "population science thought experiment",
+        "human biology simulation",
+        "cryopreservation",
+        "infrastructure staffing"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if you were the last man alive? Women remain",
+      "description": "You're at a crossing when the men beside you vanish. Women and girls remain, and you're the exception. This 3D thought experiment follows driverless traffic, shipping disruption, surviving healthcare workers and the pregnancy and stored-sperm twist.\n\nWould you help rebuild, or hide?\n\nOne-time fictional disappearance of every already-born male person except the adult viewer; women, girls, pregnancies, embryos and stored sperm remain. A newborn boy could arrive moments after the event while the viewer remains the only adult man. IMO-WISTA 2024 surveyed organisations reported women as 1% of seafarers, not all maritime employees. WHO reports women as 67% of global health and social care workers, not every hospital specialty. Vehicle crashes, emergency overload, shipping disruption and local repairs are plausible illustrative consequences without predicted global counts or deadlines. Stored sperm can be used in fertility treatment if maintenance, resources and appropriate consent remain available. Recovery is conditional.\n\nSources:\n- IMO-WISTA Women in Maritime 2024 survey, published May 2025: https://www.imo.org/en/mediacentre/pressbriefings/pages/idwim-2025-wista-survey.aspx\n- WHO: Value gender and equity in the global health workforce: https://www.who.int/activities/value-gender-and-equity-in-the-global-health-workforce\n- HFEA: Sperm freezing: https://www.hfea.gov.uk/treatments/fertility-preservation/sperm-freezing\n- NASA Glenn: Newton first law: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+      "hashtags": [
+        "#WhatIf",
+        "#Science",
+        "#Demography",
+        "#HumanBiology",
+        "#Cryopreservation",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if you were the last man alive",
+        "last man on earth women remain",
+        "population science thought experiment",
+        "human biology simulation",
+        "cryopreservation",
+        "infrastructure staffing"
+      ]
+    },
+    "x_video": {
+      "post": "You're at a crossing when every other man vanishes. Pregnancies and preserved sperm change what comes next. Would you help rebuild, or hide?",
+      "hashtags": [
+        "#WhatIf",
+        "#Demography",
+        "#Biology",
+        "#Science",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if you were the last man alive",
+        "last man on earth women remain",
+        "population science thought experiment"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-14T02:46:23Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 12,
+    "path_in_repo": "videos/012-last-man-alive.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/012-last-man-alive.mp4",
+    "sha256": "63ed2ab334912358a9ae942c64c75f500f51cc3339fa3d5c546cb7100d32ae5c",
+    "size_bytes": 36032832,
+    "thumbnail_path_in_repo": "videos/012-last-man-alive.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/012-last-man-alive.jpg",
+    "thumbnail_sha256": "382b98ab1c8b6ded6c4ea0fed85f75aa4ab3569bcd01a71ea229c8ff31985f90",
+    "copy_path_in_repo": "videos/012-last-man-alive.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/012-last-man-alive.md",
+    "copy_sha256": "ec857b7edf1cda020a98e9b4662b8356e52aa2294516bfa9441a690bb81b4809",
+    "uploaded_at_utc": "2026-10-14T03:00:07Z"
+  }
+}

@@ -1,0 +1,2312 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if you were the last man alive?",
+    "title": "What if you were the last man alive?",
+    "slug": "last-man-alive",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 55,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science and space shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If every other male person vanished once, while women, pregnancies and stored sperm remained, what would actually happen to you and society?",
+    "viewer_takeaway": "Sudden occupational losses create uneven emergencies. Existing pregnancies and preserved sperm mean humanity does not depend on one surviving man; newborn boys can appear immediately afterward."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 155,
+    "music_direction": "Original D-minor pulse, metallic urban tension, then warm suspended piano-like tones for the maternity reveal; return to the opening chord.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "Crosswalk ambience, vanishing air rush, staggered driverless-car collisions, harbour machinery winding down, clinic footsteps, cold storage hiss; 0.3 seconds of -24 dB acoustic vacuum before the first collision.",
+    "mix_target_lufs": -14.0,
+    "true_peak_max_dbtp": -1.0
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold sentence case on a dark backdrop pill, 2-5 word phrases, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 70,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a gentle scale lift on emphasised words.",
+    "highlights_policy": "Numbers, altitudes and the physical consequence of each scene use accent colour; at most two emphasis phrases per scene."
+  },
+  "delivery": {
+    "video_output": "output/last-man-alive.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "scientific_model": {
+    "baseline_reality": "Modern Earth with highly uneven sex distributions across occupations. IMO-WISTA 2024 survey organisations employed approximately 1% women seafarers; WHO reports women as 67% of global health and social care workers. Frozen sperm is routinely used in fertility treatment.",
+    "counterfactual_change": "At one instant every male person already born disappears except the adult male viewer. Women and girls remain. This is a one-time magical selection, not a repeating filter; no physical mechanism is claimed. Existing pregnancies, fetuses, embryos, stored gametes, objects, animals and infrastructure are unchanged.",
+    "assumptions": [
+      "The viewer is an adult man and is the only exception to the disappearance.",
+      "The binary selection is an authored simplification for this thought experiment, not a medical or identity classification.",
+      "People disappear without explosive energy, mass-conversion heating, damage to the women beside them, or gravitational catastrophe.",
+      "Clothing worn by the vanished people disappears with them; separate carried objects and vehicles remain.",
+      "Pregnancies at all stages continue normally insofar as surviving healthcare and supplies allow. A birth already in progress can produce a boy moments afterward.",
+      "Cryopreserved sperm and embryos remain viable only with competent maintenance, supplies and appropriate consent; future treatment and recovery are not guaranteed.",
+      "Seconds, hours and days are separated by explicit HUD time labels. Recovery scenes depict one possible local response, not a worldwide forecast."
+    ],
+    "causal_chain": [
+      "One-time removal of male people leaves the viewer and surviving women and girls.",
+      "Unattended moving vehicles continue through inertia and can crash; no automatic universal vehicle shutdown is assumed.",
+      "Occupations with high male representation face disproportionately severe staffing losses; shipping can stall as operations become unsafe.",
+      "Surviving professionals continue emergency care and coordinate local repairs despite loss, overload and supply disruption.",
+      "Existing pregnancies can immediately begin producing newborn boys after the event, without waiting nine months.",
+      "Preserved sperm and embryos retain genetic contributions from many other people if treatment infrastructure survives."
+    ],
+    "uncertainties": [
+      "The selection event is fictional and has no scientific probability.",
+      "Reported occupation surveys use sex or gender categories that are only an approximate proxy for the fictional selection.",
+      "No global crash count, blackout deadline, political regime, reproductive coercion or universal social behaviour is predicted.",
+      "One surviving adult man remains the last adult man until boys mature, but is not necessarily the last male person for more than moments.",
+      "The long-term recovery and preserved gamete availability depend on local infrastructure; the film gives no extinction timetable."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Only one already-born male person remains immediately after the event; women and girls remain.",
+        "confidence": "speculative",
+        "reasoning": "This is the stipulated one-time counterfactual, not an empirical prediction.",
+        "presentation_guardrail": "State the one-time rule in narration; do not imply a real disappearance mechanism."
+      },
+      {
+        "id": "CL02",
+        "statement": "Driverless moving vehicles can continue moving and collide.",
+        "confidence": "established",
+        "reasoning": "Inertia preserves motion until forces change it; cars losing operators is a plausible accident trigger. Specific staged crashes are illustrative local events.",
+        "presentation_guardrail": "Show two local unbranded vehicle crashes without casualties or a numerical global estimate."
+      },
+      {
+        "id": "CL03",
+        "statement": "Shipping would face severe immediate crewing losses under the premise.",
+        "confidence": "plausible",
+        "reasoning": "IMO-WISTA 2024 sample reported women at 1% of surveyed seafarers. Removing male people therefore implies exceptionally large staffing losses, with severity varying by ship.",
+        "presentation_guardrail": "The 1% figure is a survey baseline for women seafarers, not a measured post-event survivor rate or a census of port employees."
+      },
+      {
+        "id": "CL04",
+        "statement": "Women already provide most global health and social care labour.",
+        "confidence": "established",
+        "reasoning": "WHO reports 67% of the global health and social care workforce as women. This does not mean every hospital keeps 67% of each specialty or supplies.",
+        "presentation_guardrail": "Narration says hospitals lose staff too. The statistic does not predict normal service after the shock."
+      },
+      {
+        "id": "CL05",
+        "statement": "A boy could be born moments after a one-time disappearance while the viewer remains the only adult man.",
+        "confidence": "derived",
+        "reasoning": "Pregnancies are unchanged by definition. A late-stage pregnancy or delivery already underway need not wait a new gestation interval.",
+        "presentation_guardrail": "Use could, not a fixed time or guaranteed birth. Newborn hand is a visual proxy; sex cannot be inferred from the hand."
+      },
+      {
+        "id": "CL06",
+        "statement": "Frozen sperm can preserve genetic contributions from other men for future fertility treatment if clinics keep operating.",
+        "confidence": "established",
+        "reasoning": "HFEA documents cryoprotectant, liquid-nitrogen storage and clinical use of thawed sperm in IVF, IUI and ICSI. Continued local operation is conditional.",
+        "presentation_guardrail": "Do not imply storage alone guarantees births, indefinite supply, consent or recovery."
+      },
+      {
+        "id": "CL07",
+        "statement": "Local rebuilding can be performed by surviving trained women, with results depending on staff and supplies.",
+        "confidence": "plausible",
+        "reasoning": "Women already work across healthcare, engineering and infrastructure. A local repair response is possible; its speed and global coverage are unknown.",
+        "presentation_guardrail": "Frame repair as a local response hours or days later, not an inevitable global outcome."
+      }
+    ],
+    "sources": [
+      {
+        "name": "IMO-WISTA Women in Maritime 2024 survey, published May 2025",
+        "url": "https://www.imo.org/en/mediacentre/pressbriefings/pages/idwim-2025-wista-survey.aspx",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "WHO: Value gender and equity in the global health workforce",
+        "url": "https://www.who.int/activities/value-gender-and-equity-in-the-global-health-workforce",
+        "supports_claim_ids": [
+          "CL04",
+          "CL07"
+        ]
+      },
+      {
+        "name": "HFEA: Sperm freezing",
+        "url": "https://www.hfea.gov.uk/treatments/fertility-preservation/sperm-freezing",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "name": "NASA Glenn: Newton first law",
+        "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "Your crosswalk loses its men, your city loses critical workers, and the future turns out to be bigger than one survivor.",
+    "visual_identity": "Premium full-frame 3D documentary: wet night street, NASA Earth, container port, active clinic, newborn hand macro and liquid-nitrogen storage. No charts or detached explanatory diagrams.",
+    "palette": [
+      "#091827",
+      "#38BDF8",
+      "#FACC15",
+      "#E9C4A0",
+      "#EF6B4D"
+    ],
+    "lighting": "Cool blue environment with warm street practicals; physical area and key lighting, ACES grade, restrained HDR bloom; warm maternity finish.",
+    "camera_language": "Opening y=1.68 m, 38 degree FOV, handheld sway 0.3. Orbit by 5.5 s. Continuous parallax or physical action every 2.5-4 seconds. Two numeric keyframes per shot.",
+    "motion_language": "All gait, dissolves, traffic paths, collision kicks, crane stops, cloth breathing, finger curl and cryogenic vapour evaluate from absolute timestamps and seeds.",
+    "world_scale_policy": "1 unit = 1 metre in streets, port and clinic; Earth radius = 1 local planetary unit. No cross-scale object is presented as a literal metric comparison.",
+    "emotional_arc": [
+      "Immediate absence",
+      "Personal exception",
+      "Infrastructure danger",
+      "Uneven occupational losses",
+      "Surviving expertise",
+      "Reproductive assumption challenged",
+      "Birth and genetic continuity",
+      "Choose your response"
+    ],
+    "opening_hook": "You're at a crossing when the men beside you vanish. The women stay.",
+    "mid_video_rehook": "And here's the catch: humanity doesn't need you to father its entire future.",
+    "ending_payoff": "The last adult man is not the sole genetic future: pregnancies continue and clinics hold preserved sperm.",
+    "loop_connection": "Final spoken Remember where it started leads directly into opening You are at a crossing. A labelled memory rewind returns the final camera and crowd gait phase to frame zero.",
+    "asset_policy": "Reuse actual registry components, including its documented CityStreetClassic implementation. Only story-specific cryostorage arrangement and traffic choreography are new."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 5.5,
+      "narration": {
+        "text": "You're at a crossing when the men beside you vanish. The women stay.",
+        "start_s": 0.05,
+        "end_s": 5.32,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Who is still beside you?",
+      "visual_payoff": "Men dissolve while women remain present.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 2.8,
+          "shot_type": "street POV dolly",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  9.7,
+                  1.68,
+                  4.5
+                ],
+                "look_at": [
+                  -1,
+                  1.2,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 2.8,
+                "position": [
+                  9.3,
+                  1.67,
+                  4.3
+                ],
+                "look_at": [
+                  -1,
+                  1.15,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "street POV dolly",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.3
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Detailed wet downtown crossing, warm shop windows, parked vehicles.",
+              "geometry_and_material": "CityStreetClassic seed 6221, 7 blocks, 14 m road, physical masonry and wet road materials.",
+              "scale_and_accuracy": "Metre-scale original procedural city.",
+              "movement": "Practical lamps flicker only at local impact; no universal blackout."
+            },
+            {
+              "id": "people",
+              "kind": "human",
+              "asset_hint": "pedestrian-crowd-v1",
+              "appearance": "Twenty crossing figures; ten flagged male figures disappear; women continue moving and react.",
+              "geometry_and_material": "Registered Humanoid and VanishDissolve rigs, seeded skin/clothing variation, analytic gait.",
+              "scale_and_accuracy": "Adults 1.58-1.85 m; respectful medium view; binary tags authored by premise.",
+              "movement": "Male erode at t=.65 with .12 s visual stagger; survivors move away and shield eyes."
+            }
+          ],
+          "animation_plan": [
+            "Crowd gait from time_s; male dissolve starts .65 with seeded .12 s stagger; female figures continue crossing."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+00:00",
+            "metric_label": "MALE SURVIVORS",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "critical"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 2.8,
+          "end_s": 5.5,
+          "shot_type": "street reaction tracking",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 2.8,
+                "position": [
+                  8.6,
+                  1.68,
+                  3.8
+                ],
+                "look_at": [
+                  1,
+                  1.2,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 5.5,
+                "position": [
+                  8.2,
+                  1.7,
+                  2.8
+                ],
+                "look_at": [
+                  0,
+                  1.2,
+                  -1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "street reaction tracking",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.3
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Detailed wet downtown crossing, warm shop windows, parked vehicles.",
+              "geometry_and_material": "CityStreetClassic seed 6221, 7 blocks, 14 m road, physical masonry and wet road materials.",
+              "scale_and_accuracy": "Metre-scale original procedural city.",
+              "movement": "Practical lamps flicker only at local impact; no universal blackout."
+            },
+            {
+              "id": "people",
+              "kind": "human",
+              "asset_hint": "pedestrian-crowd-v1",
+              "appearance": "Twenty crossing figures; ten flagged male figures disappear; women continue moving and react.",
+              "geometry_and_material": "Registered Humanoid and VanishDissolve rigs, seeded skin/clothing variation, analytic gait.",
+              "scale_and_accuracy": "Adults 1.58-1.85 m; respectful medium view; binary tags authored by premise.",
+              "movement": "Male erode at t=.65 with .12 s visual stagger; survivors move away and shield eyes."
+            }
+          ],
+          "animation_plan": [
+            "A survivor raises an arm and turns toward a missing companion while other women walk away from road."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+00:03",
+            "metric_label": "ADULT MEN",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "critical"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "vanish",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "women stay",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0.35,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Acoustic duck before disappearance",
+          "relative_db": -24
+        },
+        {
+          "at_s": 0.65,
+          "duration_s": 1.2,
+          "kind": "whoosh",
+          "description": "Soft sideways air rush and prop clatter",
+          "relative_db": -14
+        }
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 5.5,
+      "end_s": 10.5,
+      "narration": {
+        "text": "Worldwide, every other man and boy disappears once. You're the only exception.",
+        "start_s": 5.55,
+        "end_s": 10.32,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Did it happen everywhere?",
+      "visual_payoff": "Planetary scale with one surviving man.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 5.5,
+          "end_s": 8.1,
+          "shot_type": "orbital reveal",
+          "world": "Earth radius = 1 local unit; black starfield.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 5.5,
+                "position": [
+                  0.1,
+                  0.1,
+                  4.3
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 8.1,
+                "position": [
+                  0.3,
+                  0.2,
+                  3.8
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "orbital reveal",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "Blue Marble globe with cloud swirl and intact night lights.",
+              "geometry_and_material": "NASA day/night/cloud/land maps and atmospheric shell, radius 1.",
+              "scale_and_accuracy": "Local planetary units; night lights are not population counts.",
+              "movement": "Slow orbital camera; lights remain on at the instant of disappearance."
+            }
+          ],
+          "animation_plan": [
+            "Earth cloud drift and slow rotation from absolute time; no instant orbital or atmospheric change."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+00:05",
+            "metric_label": "MALE SURVIVORS",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "critical"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 8.1,
+          "end_s": 10.5,
+          "shot_type": "orbital terminator sweep",
+          "world": "Earth radius = 1 local unit; black starfield.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 8.1,
+                "position": [
+                  0.3,
+                  0.2,
+                  3.8
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 10.5,
+                "position": [
+                  0.55,
+                  0.25,
+                  3.55
+                ],
+                "look_at": [
+                  0.03,
+                  0,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "orbital terminator sweep",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax."
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "Blue Marble globe with cloud swirl and intact night lights.",
+              "geometry_and_material": "NASA day/night/cloud/land maps and atmospheric shell, radius 1.",
+              "scale_and_accuracy": "Local planetary units; night lights are not population counts.",
+              "movement": "Slow orbital camera; lights remain on at the instant of disappearance."
+            }
+          ],
+          "animation_plan": [
+            "Move along atmospheric rim; hold city lights intact as direct consequences remain local."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+00:08",
+            "metric_label": "EVENTS",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "critical"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "once",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "only exception",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 10.5,
+      "end_s": 15.8,
+      "narration": {
+        "text": "Driverless cars keep moving. You dodge the wreckage as emergency lines flood.",
+        "start_s": 10.55,
+        "end_s": 15.620000000000001,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "What fails first?",
+      "visual_payoff": "A car still moves after its driver is gone.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 10.5,
+          "end_s": 13.1,
+          "shot_type": "street collision POV",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 10.5,
+                "position": [
+                  9,
+                  1.7,
+                  5
+                ],
+                "look_at": [
+                  5,
+                  0.85,
+                  -7
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 13.1,
+                "position": [
+                  8.5,
+                  1.6,
+                  4.3
+                ],
+                "look_at": [
+                  5,
+                  0.85,
+                  -7
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "street collision POV",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.35,
+            "impulse_shake": {
+              "at_s": 12,
+              "duration_s": 0.65,
+              "intensity": 0.85
+            }
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Detailed wet downtown crossing, warm shop windows, parked vehicles.",
+              "geometry_and_material": "CityStreetClassic seed 6221, 7 blocks, 14 m road, physical masonry and wet road materials.",
+              "scale_and_accuracy": "Metre-scale original procedural city.",
+              "movement": "Practical lamps flicker only at local impact; no universal blackout."
+            },
+            {
+              "id": "traffic",
+              "kind": "other",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Two unbranded driverless cars swerve and hit curb in clear depth order.",
+              "geometry_and_material": "makeClassicCityCar physical body, dark windows, emissive lamps.",
+              "scale_and_accuracy": "4.2 m passenger car; collision path is authored illustrative event.",
+              "movement": "First impact t=12.0; secondary impact t=12.12; lateral kick and damped suspension. No explosions."
+            },
+            {
+              "id": "people",
+              "kind": "human",
+              "asset_hint": "pedestrian-crowd-v1",
+              "appearance": "Twenty crossing figures; ten flagged male figures disappear; women continue moving and react.",
+              "geometry_and_material": "Registered Humanoid and VanishDissolve rigs, seeded skin/clothing variation, analytic gait.",
+              "scale_and_accuracy": "Adults 1.58-1.85 m; respectful medium view; binary tags authored by premise.",
+              "movement": "Male erode at t=.65 with .12 s visual stagger; survivors move away and shield eyes."
+            }
+          ],
+          "animation_plan": [
+            "Car A follows analytic lane path and hits curb t=12; car B strikes separately at12.12; camera impulse12; women retreat."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+00:12",
+            "metric_label": "CAR SPEED",
+            "start_value": 38,
+            "end_value": 0,
+            "unit": "KM/H",
+            "alert_level": "critical"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 13.1,
+          "end_s": 15.8,
+          "shot_type": "street debris parallax",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 13.1,
+                "position": [
+                  8.5,
+                  1.65,
+                  3.7
+                ],
+                "look_at": [
+                  5,
+                  0.85,
+                  -7
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 15.8,
+                "position": [
+                  9.4,
+                  1.7,
+                  1.9
+                ],
+                "look_at": [
+                  5,
+                  0.85,
+                  -7
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "street debris parallax",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.3
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Detailed wet downtown crossing, warm shop windows, parked vehicles.",
+              "geometry_and_material": "CityStreetClassic seed 6221, 7 blocks, 14 m road, physical masonry and wet road materials.",
+              "scale_and_accuracy": "Metre-scale original procedural city.",
+              "movement": "Practical lamps flicker only at local impact; no universal blackout."
+            },
+            {
+              "id": "traffic",
+              "kind": "other",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Two unbranded driverless cars swerve and hit curb in clear depth order.",
+              "geometry_and_material": "makeClassicCityCar physical body, dark windows, emissive lamps.",
+              "scale_and_accuracy": "4.2 m passenger car; collision path is authored illustrative event.",
+              "movement": "First impact t=12.0; secondary impact t=12.12; lateral kick and damped suspension. No explosions."
+            },
+            {
+              "id": "people",
+              "kind": "human",
+              "asset_hint": "pedestrian-crowd-v1",
+              "appearance": "Twenty crossing figures; ten flagged male figures disappear; women continue moving and react.",
+              "geometry_and_material": "Registered Humanoid and VanishDissolve rigs, seeded skin/clothing variation, analytic gait.",
+              "scale_and_accuracy": "Adults 1.58-1.85 m; respectful medium view; binary tags authored by premise.",
+              "movement": "Male erode at t=.65 with .12 s visual stagger; survivors move away and shield eyes."
+            }
+          ],
+          "animation_plan": [
+            "Damped suspension kick and small glass fragments settle; survivors wave other pedestrians clear."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+00:15",
+            "metric_label": "LOCAL IMPACTS",
+            "start_value": 2,
+            "end_value": 2,
+            "unit": "",
+            "alert_level": "critical"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL02"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Driverless cars",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "emergency lines",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 11.7,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Full -24 dB bed duck immediately before primary collision",
+          "relative_db": -24
+        },
+        {
+          "at_s": 12,
+          "duration_s": 0.7,
+          "kind": "impact",
+          "description": "Foreground curb collision and metal strike",
+          "relative_db": -8
+        },
+        {
+          "at_s": 12.12,
+          "duration_s": 0.65,
+          "kind": "impact",
+          "description": "Second car collision staggered 120 ms",
+          "relative_db": -10
+        },
+        {
+          "at_s": 12.24,
+          "duration_s": 0.4,
+          "kind": "impact",
+          "description": "Separate glass and debris tap",
+          "relative_db": -12
+        }
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 15.8,
+      "end_s": 21.1,
+      "narration": {
+        "text": "At sea, crews disappear. Shipping stalls, and supply chains start to fracture.",
+        "start_s": 15.850000000000001,
+        "end_s": 20.92,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Which jobs lose almost everyone?",
+      "visual_payoff": "Afloat cargo ship and stalled port, with survey baseline in HUD.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 15.8,
+          "end_s": 18.5,
+          "shot_type": "port crane reveal",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 15.8,
+                "position": [
+                  150,
+                  68,
+                  145
+                ],
+                "look_at": [
+                  0,
+                  32,
+                  -240
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 18.5,
+                "position": [
+                  133,
+                  62,
+                  128
+                ],
+                "look_at": [
+                  0,
+                  30,
+                  -260
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "port crane reveal",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax."
+          },
+          "subjects": [
+            {
+              "id": "port",
+              "kind": "architecture",
+              "asset_hint": "port-diorama-kit-v1",
+              "appearance": "Cranes and container stacks over dark harbour water.",
+              "geometry_and_material": "PortKit seed 38 with four cranes and three trucks.",
+              "scale_and_accuracy": "Metre-scale container port; survey baseline applies to sea crews.",
+              "movement": "Cranes and yard vehicles decelerate on different timelines, not catastrophic instant structural failure."
+            },
+            {
+              "id": "ship",
+              "kind": "other",
+              "asset_hint": "container-ship-v1",
+              "appearance": "Unbranded container ship beside port; dark bridge windows.",
+              "geometry_and_material": "ContainerShip, steel hull, multicoloured boxes, deck lights.",
+              "scale_and_accuracy": "Metre-scale vessel.",
+              "movement": "Small analytic swell roll; still-afloat ship loses operators, not buoyancy."
+            }
+          ],
+          "animation_plan": [
+            "Port cranes decelerate from16.1 with .25 s staggering. Vessel roll remains swell-driven."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+01 HOUR",
+            "metric_label": "WOMEN SEAFARERS",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "%",
+            "alert_level": "critical"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 18.5,
+          "end_s": 21.1,
+          "shot_type": "harbour ship tracking",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 18.5,
+                "position": [
+                  116,
+                  42,
+                  -100
+                ],
+                "look_at": [
+                  0,
+                  24,
+                  -278
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 21.1,
+                "position": [
+                  96,
+                  37,
+                  -135
+                ],
+                "look_at": [
+                  0,
+                  23,
+                  -278
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "harbour ship tracking",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax."
+          },
+          "subjects": [
+            {
+              "id": "port",
+              "kind": "architecture",
+              "asset_hint": "port-diorama-kit-v1",
+              "appearance": "Cranes and container stacks over dark harbour water.",
+              "geometry_and_material": "PortKit seed 38 with four cranes and three trucks.",
+              "scale_and_accuracy": "Metre-scale container port; survey baseline applies to sea crews.",
+              "movement": "Cranes and yard vehicles decelerate on different timelines, not catastrophic instant structural failure."
+            },
+            {
+              "id": "ship",
+              "kind": "other",
+              "asset_hint": "container-ship-v1",
+              "appearance": "Unbranded container ship beside port; dark bridge windows.",
+              "geometry_and_material": "ContainerShip, steel hull, multicoloured boxes, deck lights.",
+              "scale_and_accuracy": "Metre-scale vessel.",
+              "movement": "Small analytic swell roll; still-afloat ship loses operators, not buoyancy."
+            }
+          ],
+          "animation_plan": [
+            "Push toward empty bridge and stacked containers; waves move; no spontaneous ship sinking."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+01 HOUR",
+            "metric_label": "CREW CALLS",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "",
+            "alert_level": "critical"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL03"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Shipping stalls",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "supply chains",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 16.1,
+          "duration_s": 3,
+          "kind": "texture",
+          "description": "Crane motors wind down and distant buoy",
+          "relative_db": -22
+        }
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "human_impact",
+      "start_s": 21.1,
+      "end_s": 26.7,
+      "narration": {
+        "text": "Hospitals lose staff too, but women already provide most health and social care.",
+        "start_s": 21.150000000000002,
+        "end_s": 26.52,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Can essential care continue?",
+      "visual_payoff": "Surviving clinicians work; resources still face strain.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 21.1,
+          "end_s": 23.9,
+          "shot_type": "clinic corridor dolly",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 21.1,
+                "position": [
+                  0.4,
+                  1.65,
+                  7.6
+                ],
+                "look_at": [
+                  0.1,
+                  1.35,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 23.9,
+                "position": [
+                  0.3,
+                  1.66,
+                  6.3
+                ],
+                "look_at": [
+                  0.2,
+                  1.3,
+                  -1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "clinic corridor dolly",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.25
+          },
+          "subjects": [
+            {
+              "id": "clinic",
+              "kind": "architecture",
+              "asset_hint": "clinic-interior-v1",
+              "appearance": "Lit clinic with surviving women attending beds and moving a cart.",
+              "geometry_and_material": "ClinicInterior three rooms, monitor textures, IV poles, practical lights.",
+              "scale_and_accuracy": "Metre-scale clinic; no normal-service guarantee.",
+              "movement": "ECG animates, staff gait and reach poses, cart rolls."
+            },
+            {
+              "id": "staff",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Women clinicians in teal scrubs; technicians in high-visibility jackets.",
+              "geometry_and_material": "Articulated Humanoid rigs with buns, badges, gloves or helmets as appropriate.",
+              "scale_and_accuracy": "1.6-1.75 m original stylised figures.",
+              "movement": "Continuous walking, reaching, purposeful head turns and breathing."
+            }
+          ],
+          "animation_plan": [
+            "Woman clinician walks toward the camera carrying a chart; another pushes cart; ECG animate."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+02 HOURS",
+            "metric_label": "WOMEN IN CARE",
+            "start_value": 67,
+            "end_value": 67,
+            "unit": "%",
+            "alert_level": "normal"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 23.9,
+          "end_s": 26.7,
+          "shot_type": "clinic care tracking",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 23.9,
+                "position": [
+                  4.800000000000001,
+                  1.68,
+                  4.9
+                ],
+                "look_at": [
+                  2.7,
+                  1.2,
+                  2.1
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 26.7,
+                "position": [
+                  5.1,
+                  1.65,
+                  4.5
+                ],
+                "look_at": [
+                  2.7,
+                  1.2,
+                  2.1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "clinic care tracking",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.25
+          },
+          "subjects": [
+            {
+              "id": "clinic",
+              "kind": "architecture",
+              "asset_hint": "clinic-interior-v1",
+              "appearance": "Lit clinic with surviving women attending beds and moving a cart.",
+              "geometry_and_material": "ClinicInterior three rooms, monitor textures, IV poles, practical lights.",
+              "scale_and_accuracy": "Metre-scale clinic; no normal-service guarantee.",
+              "movement": "ECG animates, staff gait and reach poses, cart rolls."
+            },
+            {
+              "id": "staff",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Women clinicians in teal scrubs; technicians in high-visibility jackets.",
+              "geometry_and_material": "Articulated Humanoid rigs with buns, badges, gloves or helmets as appropriate.",
+              "scale_and_accuracy": "1.6-1.75 m original stylised figures.",
+              "movement": "Continuous walking, reaching, purposeful head turns and breathing."
+            }
+          ],
+          "animation_plan": [
+            "Clinician leans and reaches toward bedside IV; foreground cart rolls clear, staff head turns."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+02 HOURS",
+            "metric_label": "WOMEN IN CARE",
+            "start_value": 67,
+            "end_value": 67,
+            "unit": "%",
+            "alert_level": "normal"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "lose staff",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "most health",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 21.4,
+          "duration_s": 5,
+          "kind": "ambience",
+          "description": "Quiet footsteps and medical monitor pulse",
+          "relative_db": -27
+        }
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "second_order_effect",
+      "start_s": 26.7,
+      "end_s": 32.8,
+      "narration": {
+        "text": "And here's the catch: humanity doesn't need you to father its entire future.",
+        "start_s": 26.75,
+        "end_s": 32.62,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "Does all reproduction depend on you?",
+      "visual_payoff": "The future is already in the maternity room.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 26.7,
+          "end_s": 29.8,
+          "shot_type": "maternity room threshold",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 26.7,
+                "position": [
+                  0.8,
+                  1.68,
+                  2.2
+                ],
+                "look_at": [
+                  0,
+                  0.9,
+                  -1.4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 29.8,
+                "position": [
+                  0.65,
+                  1.65,
+                  1.7
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.5
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "maternity room threshold",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.25
+          },
+          "subjects": [
+            {
+              "id": "room",
+              "kind": "architecture",
+              "asset_hint": "room-box-v1",
+              "appearance": "Warm maternity room, bassinet and chair.",
+              "geometry_and_material": "RoomBox width5 depth5, cream walls and soft teal bedding.",
+              "scale_and_accuracy": "Metre-scale intimate interior.",
+              "movement": "Blanket breathing and clinician shoulder motion."
+            },
+            {
+              "id": "staff",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Women clinicians in teal scrubs; technicians in high-visibility jackets.",
+              "geometry_and_material": "Articulated Humanoid rigs with buns, badges, gloves or helmets as appropriate.",
+              "scale_and_accuracy": "1.6-1.75 m original stylised figures.",
+              "movement": "Continuous walking, reaching, purposeful head turns and breathing."
+            }
+          ],
+          "animation_plan": [
+            "Reveal small bassinet through physical doorway; woman clinician enters from side and bends to attend."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+AFTER EVENT",
+            "metric_label": "ADULT MEN",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "normal"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 29.8,
+          "end_s": 32.8,
+          "shot_type": "bassinet push-in",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 29.8,
+                "position": [
+                  0.65,
+                  1.5,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.9,
+                  -1.5
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 32.8,
+                "position": [
+                  0.4,
+                  1.32,
+                  0.6
+                ],
+                "look_at": [
+                  0,
+                  0.9,
+                  -1.5
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "bassinet push-in",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.2
+          },
+          "subjects": [
+            {
+              "id": "baby",
+              "kind": "human",
+              "asset_hint": "newborn-hand-v1",
+              "appearance": "Tiny newborn hand closes around an adult finger under warm clinical light.",
+              "geometry_and_material": "NewbornHand five articulated digits, physical skin and fine nails; blank ID band.",
+              "scale_and_accuracy": "Palm width about 4.4 cm; no sex inferred from appearance.",
+              "movement": "Finger curl t=35..38.5 s, slight breathing motion; bassinet blanket moves subtly."
+            }
+          ],
+          "animation_plan": [
+            "Adult index finger enters beside newborn palm; shadow and warm light reveal a living hand."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+AFTER EVENT",
+            "metric_label": "EVENTS",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "normal"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL05",
+        "CL06"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "here's the catch",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "entire future",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 27,
+          "duration_s": 4,
+          "kind": "music_swell",
+          "description": "Tension opens into warm suspended chord",
+          "relative_db": -18
+        }
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.35,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "twist",
+      "start_s": 32.8,
+      "end_s": 39.8,
+      "narration": {
+        "text": "Pregnancies continue. A boy could be born moments later. You're still the last adult man.",
+        "start_s": 32.849999999999994,
+        "end_s": 39.62,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "How long are you the only male person?",
+      "visual_payoff": "Newborn fingers curl: boys can return without waiting a new pregnancy.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 32.8,
+          "end_s": 36.3,
+          "shot_type": "newborn macro",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 32.8,
+                "position": [
+                  0.11,
+                  1.12,
+                  -1.22
+                ],
+                "look_at": [
+                  0,
+                  1.0,
+                  -1.5
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 36.3,
+                "position": [
+                  0.08,
+                  1.09,
+                  -1.25
+                ],
+                "look_at": [
+                  0,
+                  1.0,
+                  -1.5
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "newborn macro",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax."
+          },
+          "subjects": [
+            {
+              "id": "baby",
+              "kind": "human",
+              "asset_hint": "newborn-hand-v1",
+              "appearance": "Tiny newborn hand closes around an adult finger under warm clinical light.",
+              "geometry_and_material": "NewbornHand five articulated digits, physical skin and fine nails; blank ID band.",
+              "scale_and_accuracy": "Palm width about 4.4 cm; no sex inferred from appearance.",
+              "movement": "Finger curl t=35..38.5 s, slight breathing motion; bassinet blanket moves subtly."
+            }
+          ],
+          "animation_plan": [
+            "Palm and finger scaled literally; individual digits begin closing; no visible identity label."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+NEXT BIRTH",
+            "metric_label": "MALE PEOPLE",
+            "start_value": 1,
+            "end_value": 2,
+            "unit": "",
+            "alert_level": "normal"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 36.3,
+          "end_s": 39.8,
+          "shot_type": "newborn grasp arc",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 36.3,
+                "position": [
+                  0.08,
+                  1.09,
+                  -1.25
+                ],
+                "look_at": [
+                  0,
+                  1.0,
+                  -1.5
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 39.8,
+                "position": [
+                  -0.06,
+                  1.08,
+                  -1.24
+                ],
+                "look_at": [
+                  0,
+                  1.0,
+                  -1.5
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "newborn grasp arc",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax."
+          },
+          "subjects": [
+            {
+              "id": "baby",
+              "kind": "human",
+              "asset_hint": "newborn-hand-v1",
+              "appearance": "Tiny newborn hand closes around an adult finger under warm clinical light.",
+              "geometry_and_material": "NewbornHand five articulated digits, physical skin and fine nails; blank ID band.",
+              "scale_and_accuracy": "Palm width about 4.4 cm; no sex inferred from appearance.",
+              "movement": "Finger curl t=35..38.5 s, slight breathing motion; bassinet blanket moves subtly."
+            }
+          ],
+          "animation_plan": [
+            "Newborn grasps index finger by38.5, with microscopic breathing displacement."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+NEXT BIRTH",
+            "metric_label": "ADULT MEN",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "normal"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL05"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Pregnancies continue",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "last adult man",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 34.1,
+          "duration_s": 1.8,
+          "kind": "texture",
+          "description": "Soft fabric rustle, warm bell partials",
+          "relative_db": -29
+        }
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "twist",
+      "start_s": 39.8,
+      "end_s": 45.8,
+      "narration": {
+        "text": "Stored sperm can also preserve other men's genes, if clinics keep operating.",
+        "start_s": 39.849999999999994,
+        "end_s": 45.62,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "Are your genes the only ones left?",
+      "visual_payoff": "Preserved samples from many people remain conditional on care.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 39.8,
+          "end_s": 42.8,
+          "shot_type": "cryostorage dolly",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 39.8,
+                "position": [
+                  2.5,
+                  1.7,
+                  2.1
+                ],
+                "look_at": [
+                  0,
+                  1,
+                  -1
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 42.8,
+                "position": [
+                  2.1,
+                  1.62,
+                  1.4
+                ],
+                "look_at": [
+                  0,
+                  1.05,
+                  -1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "cryostorage dolly",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.2
+          },
+          "subjects": [
+            {
+              "id": "storage",
+              "kind": "other",
+              "asset_hint": "modeling-helpers-v1",
+              "appearance": "Three steel cryogenic storage dewars, lifted canister of coloured sample straws, soft cold vapour.",
+              "geometry_and_material": "CylinderGeometry steel dewars, lid, neck and lifting canister assembled with registered Modeling helpers; SmokeWisp for vapour.",
+              "scale_and_accuracy": "Plausible generic liquid-nitrogen storage set, not a literal clinic design or capacity estimate.",
+              "movement": "Canister rises at t=41..43; vapour curls from neck at constant modest level."
+            }
+          ],
+          "animation_plan": [
+            "Camera glides between dewars; central canister rises according to42..43 smoothstep; vapour curls."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+LATER",
+            "metric_label": "STORAGE TEMP",
+            "start_value": -196,
+            "end_value": -196,
+            "unit": "C",
+            "alert_level": "normal"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 42.8,
+          "end_s": 45.8,
+          "shot_type": "sample canister close-up",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 42.8,
+                "position": [
+                  1.1,
+                  1.55,
+                  0.15
+                ],
+                "look_at": [
+                  0,
+                  1.26,
+                  -1
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 45.8,
+                "position": [
+                  0.8,
+                  1.5,
+                  -0.05
+                ],
+                "look_at": [
+                  0,
+                  1.3,
+                  -1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "sample canister close-up",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.2
+          },
+          "subjects": [
+            {
+              "id": "storage",
+              "kind": "other",
+              "asset_hint": "modeling-helpers-v1",
+              "appearance": "Three steel cryogenic storage dewars, lifted canister of coloured sample straws, soft cold vapour.",
+              "geometry_and_material": "CylinderGeometry steel dewars, lid, neck and lifting canister assembled with registered Modeling helpers; SmokeWisp for vapour.",
+              "scale_and_accuracy": "Plausible generic liquid-nitrogen storage set, not a literal clinic design or capacity estimate.",
+              "movement": "Canister rises at t=41..43; vapour curls from neck at constant modest level."
+            }
+          ],
+          "animation_plan": [
+            "Coloured sample straws rise above tank neck; unfrosted clamp and steel speculars remain readable."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+LATER",
+            "metric_label": "ADULT MEN",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "normal"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "other men's genes",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "if clinics keep operating",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 40.1,
+          "duration_s": 5,
+          "kind": "texture",
+          "description": "Liquid nitrogen hiss and soft metal canister ring",
+          "relative_db": -25
+        }
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 45.8,
+      "end_s": 55,
+      "narration": {
+        "text": "Would you help rebuild, or hide? Your first decision matters more than your genes. Remember where it started.",
+        "start_s": 45.849999999999994,
+        "end_s": 54.82,
+        "delivery_note": "Intimate documentary voice. Short clause pauses. No shouted or sexualised delivery.",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "What would you do first?",
+      "visual_payoff": "A local rebuilding choice, then a labelled rewind to the original crossing.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 45.8,
+          "end_s": 49,
+          "shot_type": "street repair response",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 45.8,
+                "position": [
+                  9.3,
+                  1.68,
+                  4
+                ],
+                "look_at": [
+                  5.5,
+                  1.1,
+                  -2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 49,
+                "position": [
+                  8.4,
+                  1.67,
+                  3.1
+                ],
+                "look_at": [
+                  5.3,
+                  1.25,
+                  -2
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "street repair response",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.3
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Detailed wet downtown crossing, warm shop windows, parked vehicles.",
+              "geometry_and_material": "CityStreetClassic seed 6221, 7 blocks, 14 m road, physical masonry and wet road materials.",
+              "scale_and_accuracy": "Metre-scale original procedural city.",
+              "movement": "Practical lamps flicker only at local impact; no universal blackout."
+            },
+            {
+              "id": "staff",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Women clinicians in teal scrubs; technicians in high-visibility jackets.",
+              "geometry_and_material": "Articulated Humanoid rigs with buns, badges, gloves or helmets as appropriate.",
+              "scale_and_accuracy": "1.6-1.75 m original stylised figures.",
+              "movement": "Continuous walking, reaching, purposeful head turns and breathing."
+            }
+          ],
+          "animation_plan": [
+            "Two female technicians replace a street signal cover while other survivors walk. Crashed vehicles removed from the locally cleared intersection."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+DAY 3",
+            "metric_label": "ADULT MEN",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "normal"
+          }
+        },
+        {
+          "id": "SH02",
+          "start_s": 49,
+          "end_s": 52,
+          "shot_type": "street helping gesture",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 49,
+                "position": [
+                  8.4,
+                  1.67,
+                  3.1
+                ],
+                "look_at": [
+                  5.3,
+                  1.25,
+                  -2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 52,
+                "position": [
+                  8.8,
+                  1.68,
+                  3.8
+                ],
+                "look_at": [
+                  1,
+                  1.2,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "street helping gesture",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.3
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Detailed wet downtown crossing, warm shop windows, parked vehicles.",
+              "geometry_and_material": "CityStreetClassic seed 6221, 7 blocks, 14 m road, physical masonry and wet road materials.",
+              "scale_and_accuracy": "Metre-scale original procedural city.",
+              "movement": "Practical lamps flicker only at local impact; no universal blackout."
+            },
+            {
+              "id": "staff",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Women clinicians in teal scrubs; technicians in high-visibility jackets.",
+              "geometry_and_material": "Articulated Humanoid rigs with buns, badges, gloves or helmets as appropriate.",
+              "scale_and_accuracy": "1.6-1.75 m original stylised figures.",
+              "movement": "Continuous walking, reaching, purposeful head turns and breathing."
+            }
+          ],
+          "animation_plan": [
+            "Technician gestures to a useful tool beside camera; walking women keep the scene active."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "T+DAY 3",
+            "metric_label": "LOCAL REPAIRS",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "normal"
+          }
+        },
+        {
+          "id": "SH03",
+          "start_s": 52,
+          "end_s": 55,
+          "shot_type": "memory rewind to crossing",
+          "world": "1 unit = 1 metre; physical set; sky environment or architectural interior, depth fog.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 52,
+                "position": [
+                  8.8,
+                  1.68,
+                  3.8
+                ],
+                "look_at": [
+                  1,
+                  1.2,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 55,
+                "position": [
+                  9.7,
+                  1.68,
+                  4.5
+                ],
+                "look_at": [
+                  -1,
+                  1.2,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "memory rewind to crossing",
+            "lens_notes": "Keep focal action within y=400..1180 and captions below; continuous parallax.",
+            "handheld_sway": 0.3
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Detailed wet downtown crossing, warm shop windows, parked vehicles.",
+              "geometry_and_material": "CityStreetClassic seed 6221, 7 blocks, 14 m road, physical masonry and wet road materials.",
+              "scale_and_accuracy": "Metre-scale original procedural city.",
+              "movement": "Practical lamps flicker only at local impact; no universal blackout."
+            },
+            {
+              "id": "people",
+              "kind": "human",
+              "asset_hint": "pedestrian-crowd-v1",
+              "appearance": "Twenty crossing figures; ten flagged male figures disappear; women continue moving and react.",
+              "geometry_and_material": "Registered Humanoid and VanishDissolve rigs, seeded skin/clothing variation, analytic gait.",
+              "scale_and_accuracy": "Adults 1.58-1.85 m; respectful medium view; binary tags authored by premise.",
+              "movement": "Male erode at t=.65 with .12 s visual stagger; survivors move away and shield eyes."
+            }
+          ],
+          "animation_plan": [
+            "Explicit memory rewind: crowd gait clock returns to0; dissolve rewinds to intact people; camera returns exactly to opening nominal pose. Sway clock ramps to0 by54.9."
+          ],
+          "lighting": "Cool hemisphere fill and warm directional/area key; practical emissives, soft shadows, physical materials.",
+          "effects": [
+            "ACES grade",
+            "restrained HDR bloom",
+            "deterministic motion"
+          ],
+          "composition_notes": "HUD x=90 y=240. Caption baseline y=1320. Avoid focal action under captions. Medium views of dynamic people, never a held frozen back-of-head.",
+          "hud_telemetry": {
+            "timer_label": "REWIND TO T+0",
+            "metric_label": "EVENTS",
+            "start_value": 1,
+            "end_value": 0,
+            "unit": "",
+            "alert_level": "normal"
+          }
+        }
+      ],
+      "claim_ids": [
+        "CL07",
+        "CL01"
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "help rebuild",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "Remember",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 52,
+          "duration_s": 0.8,
+          "kind": "whoosh",
+          "description": "Reverse shimmer into opening city bed",
+          "relative_db": -23
+        }
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Match physical movement, light or perspective to the next consequence."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Verified actual registry October2026; CityStreetClassic is explicitly documented as the detailed retained implementation in city-street-block-v1 notes.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "CityStreetClassic registered detailed implementation, seed6221 blocks7 vehicles enabled; makeClassicCityCar for two authored collisions.",
+        "configuration": "CityStreetClassic registered detailed implementation, seed6221 blocks7 vehicles enabled; makeClassicCityCar for two authored collisions."
+      },
+      {
+        "asset_id": "pedestrian-crowd-v1",
+        "usage": "20 figures, flagFraction .5, dissolve enabled; map group alias to current Humanoid.root and supply analytic gait per agent.",
+        "configuration": "20 figures, flagFraction .5, dissolve enabled; map group alias to current Humanoid.root and supply analytic gait per agent."
+      },
+      {
+        "asset_id": "vanish-dissolve-v1",
+        "usage": ".65 second onset plus .12 second visual stagger; one-time selection, reversible only in explicitly labelled memory.",
+        "configuration": ".65 second onset plus .12 second visual stagger; one-time selection, reversible only in explicitly labelled memory."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Clinicians and technicians with analytic poses, no frozen rear view.",
+        "configuration": "Clinicians and technicians with analytic poses, no frozen rear view."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Radius1, Blue/Black Marble textures, normal cloud/atmosphere and night lights; no artificial population-based light reduction.",
+        "configuration": "Radius1, Blue/Black Marble textures, normal cloud/atmosphere and night lights; no artificial population-based light reduction."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Shared local day/night/cloud/land maps; NASA public-domain imagery.",
+        "configuration": "Shared local day/night/cloud/land maps; NASA public-domain imagery."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "1800 seeded stars behind Earth.",
+        "configuration": "1800 seeded stars behind Earth."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Blue dusk environment and warm horizon at street and port.",
+        "configuration": "Blue dusk environment and warm horizon at street and port."
+      },
+      {
+        "asset_id": "port-diorama-kit-v1",
+        "usage": "Seed38 cranes4, trucks3; independent deceleration.",
+        "configuration": "Seed38 cranes4, trucks3; independent deceleration."
+      },
+      {
+        "asset_id": "container-ship-v1",
+        "usage": "Lit deck, empty bridge, swell roll; no sinking.",
+        "configuration": "Lit deck, empty bridge, swell roll; no sinking."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Port plane9000 metres, waveheight .15.",
+        "configuration": "Port plane9000 metres, waveheight .15."
+      },
+      {
+        "asset_id": "clinic-interior-v1",
+        "usage": "Three rooms, ECG animation, cart and beds.",
+        "configuration": "Three rooms, ECG animation, cart and beds."
+      },
+      {
+        "asset_id": "room-box-v1",
+        "usage": "Maternity room and storage room,5 m wide; soft clinical practicals.",
+        "configuration": "Maternity room and storage room,5 m wide; soft clinical practicals."
+      },
+      {
+        "asset_id": "newborn-hand-v1",
+        "usage": "Scale1, palm .044 m wide, articulated grasp around original adult index finger.",
+        "configuration": "Scale1, palm .044 m wide, articulated grasp around original adult index finger."
+      },
+      {
+        "asset_id": "smoke-wisp-v1",
+        "usage": "Cold white vapour at dewar neck, no fire association.",
+        "configuration": "Cold white vapour at dewar neck, no fire association."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Dewars, bassinet, canister and simple tool props as story-specific assembled geometry.",
+        "configuration": "Dewars, bassinet, canister and simple tool props as story-specific assembled geometry."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Numeric keyframes, .2-.35 handheld_sway; impact at12.0; rewind closes the loop.",
+        "configuration": "Numeric keyframes, .2-.35 handheld_sway; impact at12.0; rewind closes the loop."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic30fps frame rendering, ACES, mild grain, bloom.",
+        "configuration": "Deterministic30fps frame rendering, ACES, mild grain, bloom."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Persistent HUD plus anchored surveyed baseline / infrastructure callouts.",
+        "configuration": "Persistent HUD plus anchored surveyed baseline / infrastructure callouts."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Whisper words,70px,2-5 word phrases, baseline1320, yellow accent.",
+        "configuration": "Whisper words,70px,2-5 word phrases, baseline1320, yellow accent."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original pads/pulses/foley, .3s -24dB pre-impact vacuum, .12s collision transient stagger.",
+        "configuration": "Original pads/pulses/foley, .3s -24dB pre-impact vacuum, .12s collision transient stagger."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Locally loaded Inter caption and telemetry typography.",
+        "configuration": "Locally loaded Inter caption and telemetry typography."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Anton cover headline.",
+        "configuration": "Anton cover headline."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "LAST MAN ALIVE?!,1 MAN badge, arrow to surviving man foreground.",
+        "configuration": "LAST MAN ALIVE?!,1 MAN badge, arrow to surviving man foreground."
+      }
+    ],
+    "new_reusable_asset_candidates": [],
+    "shot_specific_assets": [
+      "Original three-dewar cryostorage set and sample straw canister",
+      "Maternity bassinet, blanket, blank ID band and adult index finger",
+      "Two driverless-car paths and small debris arcs",
+      "Single amber-jacket male survivor walks carrying supplies in the ending reverse shot and thumbnail; opening remains his POV.",
+      "Female street repair crew and signal housing",
+      "Crowd gender flags and corresponding analytic gait overrides; no clinical sex inference"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if you were the last man alive and women remained",
+    "core_keywords": [
+      "last man alive",
+      "last man on Earth women remain",
+      "population science thought experiment",
+      "demography simulation",
+      "human biology what if",
+      "cryopreservation science",
+      "infrastructure simulation",
+      "threejs 3d documentary"
+    ],
+    "distinctive_angle": "The only adult man faces a staffing crisis, but pregnancies and preserved sperm overturn the assumption that all of humanity needs his genes.",
+    "comment_bait_question": "Would you help rebuild, or hide?",
+    "seo_integrity_note": "Use the one-time disappearance rule, cite survey years and conditional clinic continuity. No extinction forecast, reproductive coercion, gender superiority or invented global crash count. YouTube title begins What if; other platforms open with second-person crossing hook and close with the question."
+  },
+  "thumbnail": {
+    "time_s": 47,
+    "headline": "LAST MAN ALIVE?!",
+    "highlight": [
+      "LAST",
+      "MAN"
+    ],
+    "badge": "1 MAN",
+    "focus": [
+      0.48,
+      0.36
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "grade": "vivid",
+    "tilt": -3,
+    "position": "bottom",
+    "zoom": 1.05,
+    "badge_at": [
+      0.8,
+      0.44
+    ]
+  }
+}

@@ -17,6 +17,8 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+from fractions import Fraction
+from catalog import finalize_catalogs
 
 BANNED_GAMING_TAGS = {
     "#securitygame",
@@ -44,7 +46,7 @@ def probe_video(mp4_path: Path, expected_duration_s: int) -> None:
         "-v",
         "error",
         "-show_entries",
-        "stream=codec_name,codec_type,width,height,r_frame_rate:format=duration",
+        "stream=codec_name,codec_type,width,height,r_frame_rate,pix_fmt,sample_rate,channels:format=duration",
         "-of",
         "json",
         str(mp4_path),
@@ -67,6 +69,12 @@ def probe_video(mp4_path: Path, expected_duration_s: int) -> None:
     height = int(v_stream.get("height", 0))
     if (width, height) != (1080, 1920):
         fail(f"Expected 1080x1920 resolution, found {width}x{height}.")
+    if v_stream.get('codec_name') != 'h264' or v_stream.get('pix_fmt') != 'yuv420p':
+        fail('Expected H.264 video with yuv420p pixels.')
+    if Fraction(v_stream.get('r_frame_rate', '0')) != 30:
+        fail('Expected 30 fps.')
+    if a_stream.get('codec_name') != 'aac' or int(a_stream.get('sample_rate', 0)) != 48000 or a_stream.get('channels') != 2:
+        fail('Expected AAC audio at 48 kHz stereo.')
 
     dur = float(info.get("format", {}).get("duration", 0.0))
     if abs(dur - expected_duration_s) > 0.75:
@@ -157,6 +165,7 @@ def main() -> None:
 
     meta = json.loads(meta_json_path.read_text(encoding="utf-8"))
     validate_platform_metadata(meta)
+    finalize_catalogs(repo_root, storyboard, meta)
 
     # Write human-readable publishing copy to output/<slug>.md and metadata/<slug>.md
     md_lines = [

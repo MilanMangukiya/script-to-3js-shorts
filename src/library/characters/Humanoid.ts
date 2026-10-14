@@ -48,6 +48,8 @@ export function lerpPose(a: HumanoidPose, b: Partial<HumanoidPose>, t: number): 
  */
 export class Humanoid {
   readonly root = new THREE.Group();
+  /** The crowd wrapper's original scene-node name; both names refer to the same rig. */
+  get group(): THREE.Group { return this.root; }
   private hips = new THREE.Group(); private spine = new THREE.Group(); private chest = new THREE.Group();
   /** Head joint; use head.localToWorld() to find targets such as an ear. */
   readonly head = new THREE.Group();
@@ -117,6 +119,15 @@ export class Humanoid {
       const foot = side === 1 ? this.footL : this.footR; foot.position.set(0, -0.41, 0.06); kn.add(foot);
     }
     this.setPose(POSE_STAND);
+  }
+
+  /** Analytic walking pose used by PedestrianCrowd; phase is supplied by the caller. */
+  setGait(phase: number, amount = .55) {
+    const swing = Math.sin(phase) * amount;
+    this.setPose({ ...POSE_STAND, legL: [swing, .06 + Math.max(0, -swing) * .65],
+      legR: [-swing, .06 + Math.max(0, swing) * .65],
+      armL: [-swing * .5, .08, .16], armR: [swing * .5, .08, .16],
+      breath: Math.sin(phase * .5) * .15 });
   }
 
   setPose(p: HumanoidPose) {
