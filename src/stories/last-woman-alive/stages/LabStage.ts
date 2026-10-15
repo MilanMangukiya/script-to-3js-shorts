@@ -39,45 +39,48 @@ export class LabStage implements Stage {
     const pmrem = new THREE.PMREMGenerator(renderer);
     const environment = new RoomEnvironment();
     this.scene.environment = pmrem.fromScene(environment, .04).texture;
-    this.scene.environmentIntensity = .65;
+    this.scene.environmentIntensity = .30;
     environment.dispose(); pmrem.dispose();
 
-    const room = new RoomBox({ width: 7, height: 3.2, depth: 6.7, wallColor: 0x6c919b, floorColor: 0x415b64, ceiling: false });
+    const room = new RoomBox({ width: 7, height: 3.2, depth: 6.7, wallColor: 0x344c55, floorColor: 0x415b64, ceiling: false });
     this.scene.add(room, this.tanks, this.laboratory);
-    const tile = surface(0x49636b, .52, .15), white = surface(0xc9dbd9, .42, .12), dark = surface(0x263d48, .45, .3);
+    const tile = surface(0x49636b, .52, .15), rearTrim = surface(0x61767b, .6, .12), dark = surface(0x263d48, .45, .3);
+    const rearCabinet = surface(0x52696e, .6, .12);
     box(room, [6.9, .018, 6.6], tile, [0, .015, -3.35]);
     for (let i = 1; i < 7; i++) box(room, [6.85, .002, .009], surface(0x29414a), [0, .026, -.95 * i]);
     for (const x of [-2.3, -.8, .8, 2.3]) box(room, [.009, .002, 6.6], surface(0x29414a), [x, .026, -3.35]);
     for (const x of [-3.38, 3.38]) {
-      box(room, [.055, .045, 5.9], glow(0x6ebfcf, 1.3), [x, .13, -3.3]);
+      box(room, [.055, .045, 5.9], glow(0x6ebfcf, .30), [x, .13, -3.3]);
       box(room, [.07, .7, 5.9], dark, [x, .42, -3.3]);
-      box(room, [.025, .018, 5.8], glow(0x76c2ce, 1.1), [x * .991, .79, -3.3]);
+      box(room, [.025, .018, 5.8], glow(0x76c2ce, .25), [x * .991, .79, -3.3]);
     }
     // A glazed observation wall gives the lab depth without floating graphic elements.
     box(room, [5.5, 1.15, .06], dark, [0, 1.95, -6.55]);
     const window = new THREE.MeshPhysicalMaterial({ color: 0x6399a6, roughness: .12, metalness: .25, transparent: true, opacity: .28 });
     box(room, [5.35, 1.02, .022], window, [0, 1.95, -6.50]);
-    for (const x of [-1.8, 0, 1.8]) box(room, [.035, 1.06, .05], white, [x, 1.95, -6.46]);
+    for (const x of [-1.8, 0, 1.8]) box(room, [.035, 1.06, .05], rearTrim, [x, 1.95, -6.46]);
     for (const x of [-2, 2]) {
-      box(room, [1.1, .68, .6], surface(0x849fa2, .55, .2), [x, .36, -6.07]);
-      box(room, [1.13, .055, .65], white, [x, .73, -6.07]);
+      box(room, [1.1, .68, .6], rearCabinet, [x, .36, -6.07]);
+      box(room, [1.13, .055, .65], rearTrim, [x, .73, -6.07]);
       for (const y of [.24, .46]) {
         box(room, [1.00, .015, .016], dark, [x, y, -5.756]);
-        rod(room, [x - .12, y + .07, -5.73], [x + .12, y + .07, -5.73], .009, white);
+        rod(room, [x - .12, y + .07, -5.73], [x + .12, y + .07, -5.73], .009, rearTrim);
       }
     }
     for (const x of [-2, 0, 2]) {
-      box(room, [.8, .06, 1.65], surface(0x8da5a8), [x, 3.08, -3.2]);
-      box(room, [.68, .012, 1.5], glow(0xd2f1ee, 1.6), [x, 3.04, -3.2]);
+      box(room, [.8, .06, 1.65], surface(0x708286), [x, 3.08, -3.2]);
+      box(room, [.68, .012, 1.5], glow(0xd2f1ee, .45), [x, 3.04, -3.2]);
     }
-    this.scene.add(new THREE.HemisphereLight(0xd6eef2, 0x334b57, 1.45));
-    const key = new THREE.DirectionalLight(0xc7e9ff, 2.25);
+    // Keep the clinical room readable, with quieter fill behind the sample action.
+    this.scene.add(new THREE.HemisphereLight(0xe2e9e5, 0x303e45, .65));
+    const key = new THREE.DirectionalLight(0xe5ece8, 2.25);
     key.position.set(-2, 5, 3); key.castShadow = true; key.shadow.mapSize.set(2048, 2048);
     Object.assign(key.shadow.camera, { left: -5, right: 5, top: 5, bottom: -5, near: .1, far: 18 });
     key.shadow.bias = -.00015; key.shadow.normalBias = .006; this.scene.add(key);
-    const rim = new THREE.DirectionalLight(0x80d9e5, 1.8); rim.position.set(3, 3, -6); this.scene.add(rim);
-    const warm = new THREE.PointLight(0xffcb91, 5, 5, 2); warm.position.set(-1.4, 2.1, -2.7); this.scene.add(warm);
-    const benchFill = new THREE.PointLight(0xd2f5fc, 3, 3.5, 2); benchFill.position.set(.4, 1.95, -2.6); this.laboratory.add(benchFill);
+    const rim = new THREE.DirectionalLight(0xa7cbd0, .65); rim.position.set(3, 3, -6); this.scene.add(rim);
+    const warm = new THREE.PointLight(0xffe5bc, 1.8, 5, 2); warm.position.set(-1.4, 2.1, -2.7); this.scene.add(warm);
+    // Local task illumination comes from immediately beneath the visible hood strip.
+    const benchFill = new THREE.PointLight(0xe5f1ed, 3, 3.5, 2); benchFill.position.set(0, 2.02, -3.74); this.laboratory.add(benchFill);
     this.buildStorage(); this.buildLaboratory(); this.buildMicroscopeImage();
   }
 
@@ -129,14 +132,15 @@ export class LabStage implements Stage {
 
   private buildLaboratory() {
     const white = surface(0xd8e6e1, .32, .08), steel = surface(0x9bb5bf, .24, .8), dark = surface(0x163340, .38, .32);
-    box(this.laboratory, [2.9, .08, 1.25], white, [0, .85, -3.5]);
+    const cabinet = surface(0xa1b2b0, .5, .08), cabinetBack = surface(0x38515a, .55, .15);
+    box(this.laboratory, [2.9, .08, 1.25], cabinet, [0, .85, -3.5]);
     for (const x of [-1.29, 1.29]) for (const z of [-3.97, -3.03]) rod(this.laboratory, [x, .05, z], [x, .81, z], .034, steel);
     box(this.laboratory, [2.65, .025, .75], steel, [0, .23, -3.62]);
     // Laminar-flow cabinet encloses the bench rather than leaving laboratory props in a void.
-    for (const x of [-1.47, 1.47]) box(this.laboratory, [.075, 1.35, 1.16], white, [x, 1.52, -3.64]);
-    box(this.laboratory, [2.97, .18, 1.20], white, [0, 2.19, -3.64]);
-    box(this.laboratory, [2.68, .02, .72], glow(0xc2f0ef, 1.3), [0, 2.085, -3.74]);
-    box(this.laboratory, [2.86, 1.22, .06], surface(0x75949a, .4, .25), [0, 1.51, -4.23]);
+    for (const x of [-1.47, 1.47]) box(this.laboratory, [.075, 1.35, 1.16], cabinet, [x, 1.52, -3.64]);
+    box(this.laboratory, [2.97, .18, 1.20], cabinet, [0, 2.19, -3.64]);
+    box(this.laboratory, [2.68, .02, .72], glow(0xc2f0ef, .65), [0, 2.085, -3.74]);
+    box(this.laboratory, [2.86, 1.22, .06], cabinetBack, [0, 1.51, -4.23]);
     for (let i = 0; i < 26; i++) box(this.laboratory, [.025, .28, .008], dark, [-1.24 + i * .099, 1.94, -4.19]);
 
     const microscope = new THREE.Group(); microscope.position.set(0, .89, -3.50); this.laboratory.add(microscope);
@@ -202,14 +206,14 @@ export class LabStage implements Stage {
 
   private buildMicroscopeImage() {
     this.microScene.background = new THREE.Color(0xa4b1a5);
-    this.microScene.environment = this.scene.environment; this.microScene.environmentIntensity = .25;
-    this.microScene.add(new THREE.HemisphereLight(0xfff3d4, 0x5b7e75, 1.8));
-    const key = new THREE.DirectionalLight(0xfff0d2, 2.5); key.position.set(-1, 3, 2); this.microScene.add(key);
-    const fill = new THREE.DirectionalLight(0x9ccbc6, .6); fill.position.set(2, 1, -2); this.microScene.add(fill);
+    this.microScene.environment = this.scene.environment; this.microScene.environmentIntensity = .10;
+    this.microScene.add(new THREE.HemisphereLight(0xfff3d4, 0x5b7e75, .8));
+    const key = new THREE.DirectionalLight(0xfff0d2, 1.6); key.position.set(-1, 3, 2); this.microScene.add(key);
+    const fill = new THREE.DirectionalLight(0x9ccbc6, .35); fill.position.set(2, 1, -2); this.microScene.add(fill);
     this.microCamera.position.set(.00002, .00032, .00006); this.microCamera.lookAt(0, 0, 0);
     this.microCamera.updateProjectionMatrix();
     this.microScene.add(this.specimen);
-    const membrane = new THREE.MeshPhysicalMaterial({ color: 0xb8a47e, roughness: .32, metalness: 0, clearcoat: .5, clearcoatRoughness: .2, sheen: .18, sheenColor: new THREE.Color(0xe2d8b7) });
+    const membrane = new THREE.MeshPhysicalMaterial({ color: 0xb8a47e, roughness: .36, metalness: 0, clearcoat: .2, clearcoatRoughness: .2, sheen: .18, sheenColor: new THREE.Color(0xe2d8b7) });
     // Eight blastomeres inside a single zona pellucida. Overall diameter ~150 μm.
     for (let i = 0; i < 8; i++) {
       const x = (i & 1 ? 1 : -1) * .000025, y = (i & 2 ? 1 : -1) * .000025, z = (i & 4 ? 1 : -1) * .000025;

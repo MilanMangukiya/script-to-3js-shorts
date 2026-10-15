@@ -24,6 +24,7 @@ If optional values are `AUTO`, choose the most captivating defensible interpreta
 - Publishable on YouTube Shorts, TikTok, Instagram Reels, Facebook Reels, and X.
 - Main visuals: Three.js/WebGL **real 3D** with meaningful objects, lighting, materials, camera and environmental motion. Never substitute an entire video with static slides, 2D charts, floating rulers, or scrolling text.
 - Spoken voiceover: crisp, articulate, intimate narrator; match tension, wonder, or dry wit to the story, never sensationally shouted. Target **148–160 WPM** in opening scenes (`S01`–`S04`), easing to **125–135 WPM** during the final twist/payoff.
+- Apply `skills/voice-direction/SKILL.md` when directing narration. Give each delivery note a useful intention, focal phrase and turn; use optional schema `narration.performance` for explicit scene rate and safe pauses. Delivery prose alone does not control local TTS emotion. Review performance with one fixed voice before casting.
 - Audio loudness: master mix normalized to **-14.0 LUFS** (true peak $\le$ -1.0 dBTP). Foreground sound effects must stay punchy (-6 to -10 dB relative to voice), with an intentional **0.25–0.35s acoustic silence drop** (-24 dB duck) programmed immediately before major physical impacts.
 - All words of the spoken narration must appear as **beautiful, correctly timed burned-in captions** (`caption-kinetic-v1`), styled in high-contrast uppercase/title-case phrases (2–5 words), placed in the platform-safe band (baseline $y \approx 1300\text{–}1340\text{ px}$), with vibrant keyword highlights.
 - Mandatory bold thumbnail cover (`thumbnail-title-card-v1`): every film must output `output/<slug>.jpg` (1080×1920) with a punchy 2–4 word uppercase curiosity headline, numeric badge sticker, and directional arrow.
@@ -56,15 +57,19 @@ Read and apply **`skills/shorts-story-writer/SKILL.md`** before drafting. It is 
 ---
 
 ## CINEMATIC & THREE.JS SHOT DIRECTION
+Read `skills/threejs-direction/SKILL.md` and apply its Analyze → Plan → Work → Review sequence. Stage a readable setup, change, and consequence for each pivotal event; a camera move or ambient motion alone is not a visual payoff.
+
 Provide implementation-level technical direction for every shot:
 - `world`: scale convention (1 unit = 1 metre for urban/interiors; local planetary units for space), sky dome, lighting environment, and fog depth.
 - `subjects`: specific asset references (`asset_hint`), geometric proportions, material shaders, and movement behaviors.
 - `camera`: projection (`perspective` or `orthographic`), numeric FOV ($30\text{–}42^\circ$ typical), lens intent, and **at least two numeric keyframes** `[x,y,z]` with `look_at` coordinates and easing.
+  - A deliberate hold may use identical position/target keyframes. Choose a move to reveal, follow, compare, or change scale; preserve a stable spatial anchor when it helps the viewer read the transformation.
   - **POV Dynamic Camera:** Ground-level shots (`y < 2.5 m`) must specify human eye-level framing with subtle handheld breathing sway (`handheldSway: 0.2–0.5`).
   - **Impact Cam-Shake:** Program an impulse camera shake on the exact frame of major shockwaves, landings, or detonations.
 - `animation_plan`: concrete, deterministic, time-driven movements evaluating strictly from absolute timestamp `time_s`. No frame-rate-dependent drift.
 - `lighting` & `effects`: physical key/fill sources, HDR bloom on specular/emissive highlights, volumetric fog, and ACES tone mapping.
 - `transition_out`: physical action cuts, camera whip pans, match cuts, or cross-dissolves ($0.3\text{–}0.5\text{s}$).
+  - Preserve the decisive action and completed state across cuts. Inspect centered cross-dissolves for early exposure of a withheld reveal.
 
 ---
 
@@ -126,11 +131,11 @@ Provide implementation-level technical direction for every shot:
 
 Use the repository's deterministic pipeline:
 1. **Build & Stage:** Create `src/stories/<slug>/` (`film.ts`, `timeline.ts`, `stages/`, `soundtrack.mjs`). Implement deterministic `renderAt(frameIndex)`, `time_s = frameIndex / 30`. Never use floating 2D charts where 3D environments apply.
-2. **Narration:** Run `node tools/narrate.mjs stories/<slug>.json` using Kokoro (`am_michael`) with opening pacing speed up to 1.08x. Ensure audio starts at $t \le 0.08\text{ s}$ with zero leading dead air. Whisper aligns word timings into `build/<slug>/audio/narration.json`.
+2. **Narration:** Run `node tools/narrate.mjs stories/<slug>.json` using the local voice and measured starting rates in `config/narration.json`; explicit `audio.voice_id` or CLI `--voice` overrides the default. Calibrate generated cadence for the story. Ensure actual waveform onset is $t \le 0.08\text{ s}$. Unprompted Whisper aligns word timings into `build/<slug>/audio/narration.json`.
 3. **Burned-In Captions:** Drive `caption-kinetic-v1` from real Whisper timestamps. 2–5 word phrases, uppercase impact styling, active-word highlight, safe area baseline $y \approx 1320\text{ px}$.
 4. **Captions & Transcript Exporters:** Export `output/<slug>.srt` and `output/<slug>.txt` matching burned-in phrases.
 5. **Soundtrack:** Write procedural audio in `src/stories/<slug>/soundtrack.mjs` using `audio-synth-kit-v1`. Enforce the silence drop before the primary impact or reveal, and stagger destruction transients when failures are depicted. Mix via `node tools/soundtrack.mjs <slug>` to **-14.0 LUFS** (peak $\le$ -1.0 dBTP).
-6. **Smoke Frames & Render:** Render 3 strategic test frames at scale 0.5 (`node tools/render.mjs <slug> --frames a,b,c --scale 0.5`). Verify eye-level framing, telemetry HUD, and caption placement. Then render final video: `node tools/render.mjs <slug> --final --crf 19` $\rightarrow$ `output/<slug>.mp4` + bold cover `output/<slug>.jpg`.
+6. **Smoke Frames & Render:** Render 3 strategic test frames at scale 0.5 (`node tools/render.mjs <slug> --frames a,b,c --scale 0.5`). Verify eye-level framing, telemetry HUD, and caption placement. Review a short moving excerpt of each new or materially changed pivotal sequence using `--preview build/<slug>/direction-review/preview.mp4 --range a-b --clean --scale 0.5`; fix direction failures before final rendering. Then render final video: `node tools/render.mjs <slug> --final --crf 19` $\rightarrow$ `output/<slug>.mp4` + bold cover `output/<slug>.jpg`.
 
 ---
 

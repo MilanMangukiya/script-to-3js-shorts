@@ -1114,44 +1114,44 @@
         {
           "id": "SH01",
           "start_s": 22,
-          "end_s": 25,
+          "end_s": 23.4,
           "shot_type": "cryobank revelation",
           "world": "1unit=1metre. Real architectural set with depth, physical materials and environmental illumination.",
           "camera": {
             "projection": "perspective",
-            "fov_or_scale": 40,
+            "fov_or_scale": 42,
             "keyframes": [
               {
                 "t_s": 22,
                 "position": [
-                  1.4,
-                  1.65,
-                  4
-                ],
-                "look_at": [
-                  0,
-                  0.95,
-                  -1.35
-                ],
-                "ease": "smoothstep"
-              },
-              {
-                "t_s": 25,
-                "position": [
-                  1.0,
+                  0.6,
                   1.65,
                   3.2
                 ],
                 "look_at": [
                   0,
-                  1.0,
-                  -1.25
+                  1.15,
+                  -1.1
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 23.4,
+                "position": [
+                  0.6,
+                  1.65,
+                  3.2
+                ],
+                "look_at": [
+                  0,
+                  1.15,
+                  -1.1
                 ],
                 "ease": "smoothstep"
               }
             ],
-            "movement": "cryobank revelation",
-            "lens_notes": "Maintain clear focal action above captions; no frozen rear-view figures.",
+            "movement": "Hold the cryobank as a spatial setup; only required handheld breathing sway.",
+            "lens_notes": "Establish the central tank and its neighbouring dewars at a readable human scale; avoid empty ceiling. Hold this anchor before cutting closer at23.4, ahead of the24-26 canister rise. Focal action stays clear of HUD and captions.",
             "handheld_sway": 0.2
           },
           "subjects": [
@@ -1166,7 +1166,8 @@
             }
           ],
           "animation_plan": [
-            "Three maintained dewars. Central canister begins rising at24. Cold vapour curls beside neck."
+            "22.0-23.4s setup: three existing dewars remain in place; central canister is still at y=1.05m, with its upper handle visible and sample caps below the neck. Existing cold vapour continues. The viewer learns that storage survives; no new sample or capacity claim is introduced.",
+            "The existing canister rise starts at absolute 24.0s, after this shot has cut. This view establishes the central dewar for the closer view and does not invent a lid opening, technician or extraction mechanism."
           ],
           "lighting": "Physical warm key and cool fill, practical emissives and soft shadows.",
           "effects": [
@@ -1186,24 +1187,24 @@
         },
         {
           "id": "SH02",
-          "start_s": 25,
+          "start_s": 23.4,
           "end_s": 28,
           "shot_type": "canister close-up",
           "world": "1unit=1metre. Real architectural set with depth, physical materials and environmental illumination.",
           "camera": {
             "projection": "perspective",
-            "fov_or_scale": 36,
+            "fov_or_scale": 38,
             "keyframes": [
               {
-                "t_s": 25,
+                "t_s": 23.4,
                 "position": [
-                  0.4,
-                  1.8,
-                  1.65
+                  0.3,
+                  1.75,
+                  0.7
                 ],
                 "look_at": [
                   0,
-                  1.32,
+                  1.47,
                   -1
                 ],
                 "ease": "smoothstep"
@@ -1213,18 +1214,18 @@
                 "position": [
                   0.3,
                   1.75,
-                  1.25
+                  0.7
                 ],
                 "look_at": [
                   0,
-                  1.4,
+                  1.47,
                   -1
                 ],
                 "ease": "smoothstep"
               }
             ],
-            "movement": "canister close-up",
-            "lens_notes": "Maintain clear focal action above captions; no frozen rear-view figures.",
+            "movement": "Hold the central neck through the existing rise and completed raised state.",
+            "lens_notes": "38-degree close view from the same front side retains the central neck and shoulder while giving the coloured straw caps readable size. Identical nominal position and target keyframes let the canister move against a stable reference. At completion, the handle, caps and cylinder foot project near y=408, 664 and 1170px before sway; the important samples sit above captions. The two seconds after the rise are for reading the raised samples, not another camera push.",
             "handheld_sway": 0.2
           },
           "subjects": [
@@ -1239,7 +1240,9 @@
             }
           ],
           "animation_plan": [
-            "Samples lift above central neck by26, coloured straws and steel clamps remain readable."
+            "23.4-24.0s setup: hold the central neck and the already-present extraction handle before the canister moves. The canister remains at y=1.05m; the samples are not yet raised clear of the neck.",
+            "24.0-26.0s change: unchanged LabStage raises the canister 0.40m with smoothstep, y=1.05m to y=1.45m. The existing twelve coloured straw caps emerge above the neck; their fixed number is a prop detail, not a population or clinic-capacity claim. Do not add a hand, lid motion or new physics.",
+            "26.0-28.0s consequence: vertical extraction is complete and remains at y=1.45m for a two-second read. Existing slight canister rotation, 0.035*sin(0.75*time_s), and low vapour continue; there is no continued rise. The viewer can connect the revealed samples to the storage established in SH01. The film-specific label still begins its existing 25.4-26.0s fade when normal overlays are enabled."
           ],
           "lighting": "Physical warm key and cool fill, practical emissives and soft shadows.",
           "effects": [
@@ -1304,44 +1307,44 @@
         {
           "id": "SH01",
           "start_s": 28,
-          "end_s": 31,
+          "end_s": 31.1,
           "shot_type": "IVF bench dolly",
           "world": "1unit=1metre. Real architectural set with depth, physical materials and environmental illumination.",
           "camera": {
             "projection": "perspective",
-            "fov_or_scale": 38,
+            "fov_or_scale": 40,
             "keyframes": [
               {
                 "t_s": 28,
                 "position": [
-                  1.05,
-                  1.55,
-                  -0.55
+                  0.4,
+                  1.6,
+                  -0.75
                 ],
                 "look_at": [
-                  0.15,
-                  1.24,
-                  -3.6
+                  0.24,
+                  1.15,
+                  -3.5
                 ],
                 "ease": "smoothstep"
               },
               {
-                "t_s": 31,
+                "t_s": 31.1,
                 "position": [
-                  0.72,
-                  1.48,
-                  -1.45
+                  0.4,
+                  1.6,
+                  -0.75
                 ],
                 "look_at": [
-                  0.15,
-                  1.24,
-                  -3.6
+                  0.24,
+                  1.15,
+                  -3.5
                 ],
                 "ease": "smoothstep"
               }
             ],
-            "movement": "IVF bench dolly",
-            "lens_notes": "Maintain clear focal action above captions; no frozen rear-view figures.",
+            "movement": "Hold a physical microscope, supported dish, manipulator and mounted display together.",
+            "lens_notes": "40-degree eye-level instrument view establishes the 60mm dish on the microscope stage, the mechanically supported capillary and the mounted circular image in one composition. The monitor stays on the right and the physical sample area on the left; this links the upcoming magnification to a real instrument. Hold while the existing small objective and pipette motions finish. The dish projects near x=309,y=1127px, above the caption baseline. Cut at 31.1s after the pipette lowering finishes at 30.6s; no additional tracking move is needed.",
             "handheld_sway": 0.2
           },
           "subjects": [
@@ -1356,7 +1359,9 @@
             }
           ],
           "animation_plan": [
-            "Physical microscope, dish and manipulator. Camera tracks along bench and monitor bezel."
+            "28.0s setup: the existing stage switches from dewars to the laboratory at the unchanged S05/S06 cut. The real dish, microscope and capillary are already present. The monitor already shows the eight-cell specimen; there is no newly arriving sample or invented transfer from storage.",
+            "28.2-30.4s change: the objective group lowers by 0.012m; 28.8-30.6s the capillary support lowers by 0.020m toward the dish. These are existing mechanical laboratory motions. The optical render is already sharp and does not animate a focus blur; do not promise an image snapping into focus.",
+            "30.6-31.1s consequence: the lowered objective and capillary remain in place for 0.5s before the cut. The viewer learns where the magnified image comes from and sees a supported laboratory sample, not an embryo enlarged into the room. The 20mm capillary motion is small at this scale; it is context rather than the principal reveal."
           ],
           "lighting": "Physical warm key and cool fill, practical emissives and soft shadows.",
           "effects": [
@@ -1376,24 +1381,24 @@
         },
         {
           "id": "SH02",
-          "start_s": 31,
+          "start_s": 31.1,
           "end_s": 34.5,
           "shot_type": "microscope display macro",
           "world": "1unit=1metre. Real architectural set with depth, physical materials and environmental illumination.",
           "camera": {
             "projection": "perspective",
-            "fov_or_scale": 36,
+            "fov_or_scale": 39,
             "keyframes": [
               {
-                "t_s": 31,
+                "t_s": 31.1,
                 "position": [
                   0.48,
-                  1.4,
-                  -2.26
+                  1.46,
+                  -2.4
                 ],
                 "look_at": [
                   0.48,
-                  1.36,
+                  1.28,
                   -3.64
                 ],
                 "ease": "smoothstep"
@@ -1402,19 +1407,19 @@
                 "t_s": 34.5,
                 "position": [
                   0.48,
-                  1.39,
-                  -2.42
+                  1.46,
+                  -2.4
                 ],
                 "look_at": [
                   0.48,
-                  1.36,
+                  1.28,
                   -3.64
                 ],
                 "ease": "smoothstep"
               }
             ],
-            "movement": "microscope display macro",
-            "lens_notes": "Maintain clear focal action above captions; no frozen rear-view figures.",
+            "movement": "Change scale with a cut, then hold the microscope display and visible bezel.",
+            "lens_notes": "39-degree front view enlarges the mounted microscope field while keeping its dark bezel and physical support visible. The circular image occupies approximately y=407-1153px before sway at 1080x1920, leaving the main specimen above captions and below the top HUD. Its centre remains x=540,y=787px. Identical numeric endpoints give the viewer time to inspect the eight-cell aggregate. This cut reveals optical detail; a continued push or orbit would provide no further evidence.",
             "handheld_sway": 0.2
           },
           "subjects": [
@@ -1429,7 +1434,8 @@
             }
           ],
           "animation_plan": [
-            "Magnified8-cell aggregate is rendered in3D and shown only inside mounted microscope screen. Actual model150micrometres; focus settles."
+            "31.1s change of scale: cut from the physical instrument relationship to its existing mounted image. The specimen remains an approximately 150-micrometre, eight-cell aggregate rendered by the offscreen microscope camera; its geometry does not grow, divide or become a child.",
+            "31.1-34.5s completed-state read: hold the magnified specimen for 3.4s. Only the existing submicrometre specimen drift persists. The pipette retracts by its existing 0.020m ease from 32.0-33.3s outside this tight frame; the objective stays lowered. The visual evidence is preserved cells in an instrument, while the unchanged narration supplies the requirement for pregnancy. No gestation or population restart is depicted."
           ],
           "lighting": "Physical warm key and cool fill, practical emissives and soft shadows.",
           "effects": [

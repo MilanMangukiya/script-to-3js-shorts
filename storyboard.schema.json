@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.local/whatif-shorts/storyboard.schema.json",
-  "title": "What-If Shorts — Film-Ready Three.js Storyboard v1.1",
+  "title": "What-If Shorts â€” Film-Ready Three.js Storyboard v1.1",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -68,7 +68,7 @@
           "type": "integer",
           "minimum": 45,
           "maximum": 90,
-          "description": "Video duration 45–90 seconds inclusive; 46–56 seconds target for high-retention simulations."
+          "description": "Video duration 45â€“90 seconds inclusive; 46â€“56 seconds target for high-retention simulations."
         },
         "language": {
           "const": "en"
@@ -340,6 +340,12 @@
         "true_peak_max_dbtp": {
           "type": "number",
           "maximum": -1
+        },
+        "voice_id": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 64,
+          "description": "Optional exact local voice identifier; overrides config/narration.json. CLI --voice has highest priority."
         }
       }
     },
@@ -513,7 +519,53 @@
                   "reflective_payoff",
                   "loop_bridge"
                 ],
-                "description": "Controls per-scene TTS speed multiplier and pause tightness in tools/narrate.mjs."
+                "description": "Selects the per-scene Kokoro speed in tools/narrate.mjs; emotional delivery notes are editorial intent, not model style prompts."
+              },
+              "performance": {
+                "type": "object",
+                "additionalProperties": false,
+                "minProperties": 1,
+                "properties": {
+                  "rate": {
+                    "type": "number",
+                    "minimum": 0.5,
+                    "maximum": 1.2,
+                    "description": "Explicit absolute Kokoro speed, overriding pacing_energy for this scene; measure the resulting WPM."
+                  },
+                  "pauses": {
+                    "type": "array",
+                    "maxItems": 6,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "after_word",
+                        "duration_s"
+                      ],
+                      "properties": {
+                        "after_word": {
+                          "type": "integer",
+                          "minimum": 1,
+                          "description": "1-based token count in narration.text split on whitespace; must precede another word and be unique within the scene."
+                        },
+                        "duration_s": {
+                          "type": "number",
+                          "minimum": 0.05,
+                          "maximum": 0.6,
+                          "description": "Desired word-boundary gap in seconds; existing silence counts toward it. Default mode minimum only extends it, target may also contract it safely. Maximum sum 1.2s per scene; requires a verified quiet boundary."
+                        },
+                        "mode": {
+                          "enum": [
+                            "minimum",
+                            "target"
+                          ],
+                          "default": "minimum",
+                          "description": "minimum only extends a gap; target also contracts excessive silence, provided enough continuous verified quiet audio exists."
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           },
@@ -1052,7 +1104,7 @@
         "comment_bait_question": {
           "type": "string",
           "minLength": 10,
-          "description": "Interactive map or personal survival question appended to social captions (e.g., 'Where would you be on the map? 👇')."
+          "description": "Interactive map or personal survival question appended to social captions (e.g., 'Where would you be on the map? ðŸ‘‡')."
         },
         "seo_integrity_note": {
           "type": "string",

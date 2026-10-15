@@ -68,7 +68,7 @@ async function boot() {
     frames: p.duration_s * p.fps, fps: p.fps,
     gpu: dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : 'unknown',
     /** Render frame i and return it as a data URL. */
-    renderFrame(i: number, mime = 'image/jpeg', quality = 0.95): string { return pipeline.renderFrame(i).toDataURL(mime, quality); },
+    renderFrame(i: number, mime = 'image/jpeg', quality = 0.95, opts: { overlay?: boolean; captions?: boolean } = {}): string { return pipeline.renderFrame(i, opts).toDataURL(mime, quality); },
     /** Render the storyboard's thumbnail: a clean still (no captions or labels) composed as a bold cover (default) or a clean title card. */
     renderThumbnail(mime = 'image/jpeg', quality = 0.92): string {
       const th = story.thumbnail ?? { time_s: Math.min(story.scenes[0].end_s * 0.7, p.duration_s - 1 / p.fps), headline: p.title };

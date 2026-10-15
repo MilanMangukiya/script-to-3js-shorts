@@ -3322,6 +3322,33 @@
       ],
       "license": "original_procedural",
       "notes": "Units are the stage's world units (km in the 80 km shot: trails 7-12 km, widths 35-70 m, ~37 km/s). Spawn in the camera's own frame and in open air: meteors placed inside terrain are depth-hidden."
+    },
+    {
+      "id": "character-motion-v1",
+      "name": "Grounded character acting and straight-path locomotion",
+      "type": "three_component",
+      "source_path": "src/library/characters/CharacterMotion.ts",
+      "description": "Opt-in absolute-time planted and seated pose helpers plus distance-driven straight walking for the registered Humanoid rig. Finite action progress supports authored reaches and reactions.",
+      "tags": [
+        "human",
+        "animation",
+        "acting",
+        "walking",
+        "contact"
+      ],
+      "configurable_parameters": [
+        "actionProgress(t,start,end)",
+        "applyGroundedPose(person,pose,groundY)",
+        "seatedPose(person,seatY,groundY)",
+        "applyStraightWalk(person,t,options)",
+        "soleHeight(person,side)"
+      ],
+      "created_for": "last-woman-alive",
+      "used_in": [
+        "last-woman-alive"
+      ],
+      "license": "original_code",
+      "notes": "Requires the existing Humanoid shoe dimensions, uniform rig scale and unrotated stage parent. Straight-path stance centers stay fixed; opt-in compensation levels the existing shoe mesh and foot anchor around the ankle. These owned transforms reset on every helper call. No full-body dynamics or curved-path foot locking. Stage owns intent, targets and all pose resets; call hand reachArm after posing."
     }
   ]
 }

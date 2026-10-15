@@ -13,8 +13,9 @@ export function trimSilence(x, sr, thr = 0.006, padS = 0.05) {
 
 const subCost = (a, b) => (a === b ? 0 : (a[0] === b[0] ? 0.6 : 1));
 
-/** Align script words to recognized words (edit-distance path); unmatched script words are interpolated. */
-export function alignWords(scriptWords, heard, duration) {
+/** Ordered alignment; matches contains a recognized index only for an exact script-word match. */
+export function wordAlignment(scriptWords, heard, duration) {
+  if (!Number.isFinite(duration) || duration < 0) throw new Error('Invalid narration clip duration');
   const S = scriptWords.map(norm), H = heard.map((h) => norm(h.text));
   const n = S.length, m = H.length;
   const D = Array.from({ length: n + 1 }, () => new Float64Array(m + 1));
@@ -23,10 +24,15 @@ export function alignWords(scriptWords, heard, duration) {
   for (let i = 1; i <= n; i++) for (let j = 1; j <= m; j++) {
     D[i][j] = Math.min(D[i - 1][j - 1] + subCost(S[i - 1], H[j - 1]), D[i - 1][j] + 1, D[i][j - 1] + 1);
   }
-  const times = new Array(n).fill(null);
+  const times = new Array(n).fill(null), matches = new Array(n).fill(null);
   let i = n, j = m;
   while (i > 0 && j > 0) {
-    if (D[i][j] === D[i - 1][j - 1] + subCost(S[i - 1], H[j - 1])) { times[i - 1] = [heard[j - 1].start, heard[j - 1].end]; i--; j--; }
+    if (D[i][j] === D[i - 1][j - 1] + subCost(S[i - 1], H[j - 1])) {
+      const h = heard[j - 1];
+      if (Number.isFinite(h.start) && Number.isFinite(h.end)) times[i - 1] = [h.start, h.end];
+      if (S[i - 1] && S[i - 1] === H[j - 1] && times[i - 1]) matches[i - 1] = j - 1;
+      i--; j--;
+    }
     else if (D[i][j] === D[i - 1][j] + 1) i--;
     else j--;
   }
@@ -43,12 +49,15 @@ export function alignWords(scriptWords, heard, duration) {
   }
   // Monotonic, non-overlapping, inside the clip.
   for (let q = 0; q < n; q++) {
-    times[q][0] = Math.max(q ? times[q - 1][0] + 0.02 : 0, Math.min(duration, times[q][0]));
-    times[q][1] = Math.max(times[q][0] + 0.05, Math.min(duration, times[q][1]));
+    times[q][0] = Math.min(duration, Math.max(q ? times[q - 1][0] + 0.02 : 0, times[q][0]));
+    times[q][1] = Math.min(duration, Math.max(times[q][0] + 0.05, times[q][1]));
     if (q) times[q - 1][1] = Math.min(times[q - 1][1], times[q][0]);
   }
-  return times;
+  return { times, matches, exact: matches.filter((x) => x !== null).length };
 }
+
+/** Align script words to recognized words; unmatched script words are interpolated. */
+export function alignWords(scriptWords, heard, duration) { return wordAlignment(scriptWords, heard, duration).times; }
 
 /**
  * One narration.json scene record from a clip's text, duration and recognized words ({ text, start, end } in
@@ -56,11 +65,10 @@ export function alignWords(scriptWords, heard, duration) {
  */
 export function sceneRecord({ id, text, file, sampleRate, duration, heardText, heard }) {
   const scriptWords = text.split(/\s+/).filter(Boolean);
-  const times = alignWords(scriptWords, heard, duration);
-  const exact = scriptWords.filter((w) => heard.some((h) => norm(h.text) === norm(w))).length;
+  const { times, matches, exact } = wordAlignment(scriptWords, heard, duration);
   const record = {
-    id, text, file, sample_rate: sampleRate, duration_s: +duration.toFixed(3), heard: heardText.trim(),
-    words: scriptWords.map((w, q) => ({ text: w, start_s: +times[q][0].toFixed(3), end_s: +times[q][1].toFixed(3) })),
+    id, text, file, sample_rate: sampleRate, duration_s: +duration.toFixed(6), heard: heardText.trim(),
+    words: scriptWords.map((w, q) => ({ text: w, start_s: +times[q][0].toFixed(6), end_s: +times[q][1].toFixed(6) })),
   };
-  return { record, exact, wordCount: scriptWords.length };
+  return { record, exact, wordCount: scriptWords.length, matches };
 }

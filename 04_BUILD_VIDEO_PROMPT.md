@@ -18,6 +18,10 @@ Read `skills/shorts-story-writer/SKILL.md` and apply its editorial gate to the s
 
 ## 1. ARCHITECTURE & REUSE-FIRST STAGE BUILDING (`src/stories/<slug>/`)
 
+Read `skills/threejs-direction/SKILL.md` and complete its Analyze → Plan → Work → Review sequence for the 3D direction. Use existing storyboard fields to specify the subject, absolute event times, and visible completed state; choose framing and cuts around those events.
+For composition and lighting work, apply its `references/composition-lighting.md`: establish a readable primary subject with stage-local light/material hierarchy, inspect phone-size frames, and compare a moving excerpt before changing character or voice performance.
+For character work, apply `references/character-animation.md`: stage attention and finite actions, maintain foot/seat/hand contacts, and drive locomotion from actual travel. Review the moving action before changing narration performance.
+
 1. **Resolve `asset_plan` Against `assets/registry.json`:**
    - Always configure existing components in `src/library/` first (`earth-globe-v1`, `plate-drift-globe-v1`, `sky-dome-v1`, `ocean-surface-v1`, `city-street-block-v1`, `pedestrian-crowd-v1`, `humanoid-figure-v1`, `port-diorama-kit-v1`, `apartment-facade-v1`, `clinic-interior-v1`, `room-box-v1`, `airliner-v1`, `flame-v1`, `smoke-wisp-v1`, `vanish-dissolve-v1`, `sound-rings-v1`, `seismometer-v1`, `dial-gauge-v1`, etc.).
    - Promote genuinely reusable new systems to `src/library/` and register them in `assets/registry.json` with accurate `configurable_parameters`, `created_for`, and `used_in` fields.
@@ -29,7 +33,7 @@ Read `skills/shorts-story-writer/SKILL.md` and apply its editorial gate to the s
 
 3. **Visual Retention Guardrails (NON-NEGOTIABLE):**
    - **NO 2D TEXTBOOK CHARTS OR FLOATING RULERS:** Never build standalone 2D bar charts, disembodied measuring cylinders, or floating wooden rulers when a 3D environment stage (`city-street-block-v1`, `dune-field-v1`, `ocean-surface-v1`, `terrain-massif-v1`, `room-box-v1`) can show the physical consequence directly.
-   - **NO FROZEN BACK-OF-HEAD MANNEQUINS:** Never place `humanoid-figure-v1` or `pedestrian-crowd-v1` standing motionless with their back to the camera for more than 1.5 seconds. Figures must be actively walking, running, crouching, shielding their eyes, or reacting while dynamic environmental motion (wind, vehicles, debris, water, or lighting collapse) unfolds around them.
+   - **NO FROZEN BACK-OF-HEAD MANNEQUINS:** Never place `humanoid-figure-v1` or `pedestrian-crowd-v1` standing motionless with their back to the camera for more than 1.5 seconds. Give figures purposeful action, attention, or a readable reaction. Planted feet and a deliberate hold are valid; walking in place and unrelated motion do not satisfy the direction requirement. A stable viewpoint can watch a changing environment.
    - **DOMESTIC / STREET-LEVEL POV ANCHORING:** Opening hook and human-impact street shots must frame the camera at human eye level (`y = 1.4–1.8 m`) with `handheld_sway` (`0.2–0.5`) enabled on `camera-keyframe-rig-v1`, and trigger `impulse_shake` on exact shockwave/impact timestamps.
    - **SEQUENTIAL OBJECT FAILURE:** When depicting urban or environmental escalation, stagger object failure timestamps by `0.15–0.40s` across depth (e.g., foreground cars swerve/lift first, then roofs/streetlights, then background water/buildings) rather than animating everything on a single uniform ease.
 
@@ -48,14 +52,13 @@ Read `skills/shorts-story-writer/SKILL.md` and apply its editorial gate to the s
 
 ## 3. NARRATION, DYNAMIC CADENCE & ZERO DEAD AIR (`tools/narrate.mjs`)
 
-1. Run `node tools/narrate.mjs stories/<slug>.json` to synthesize scene narration locally (Kokoro `am_michael` default) and align exact word timings via local Whisper into `build/<slug>/audio/narration.json`.
+Read `skills/voice-direction/SKILL.md` and its performance reference. Complete Analyze -> Plan -> Work -> Review with one fixed voice before selecting another. Editorial delivery notes do not become Kokoro emotion prompts; optional `narration.performance` supplies explicit rate and safe word-boundary pauses. Measure the generated result and keep comparison outputs under `build/` via `--out`.
+
+1. Run `node tools/narrate.mjs stories/<slug>.json` to synthesize narration with the local voice/rate profile in `config/narration.json` and align exact word timings via unprompted local Whisper into `build/<slug>/audio/narration.json`. CLI `--voice` overrides story `audio.voice_id`, which overrides the configured default. Explicit scene `performance.rate` overrides starting rates.
 2. **Dynamic Pacing Energy:**
-   - Apply scene `narration.pacing_energy` multipliers during synthesis:
-     - `"fast_hook"` / `"crisp_mechanism"`: `1.06x–1.08x` speed, tight clause pauses.
-     - `"steady_escalation"` / `"weighty_impact"`: `1.02x–1.04x` speed.
-     - `"reflective_payoff"` / `"loop_bridge"`: `0.98x–1.00x` speed.
+   - Use the chosen voice's calibrated starting rates from `config/narration.json`. For an unprofiled override, legacy fallbacks are `fast_hook: 1.08`, `crisp_mechanism: 1.05`, `steady_escalation: 1.03`, `weighty_impact: 1.01`, `reflective_payoff: 0.98`, and `loop_bridge: 1.02`; calibrate that voice before delivery. Optional `performance.rate` overrides either source. Measure WPM rather than treating rates as an emotion API. Use verified `performance.pauses` when a phrase boundary needs tightening or a deliberate hold.
 3. **Zero Leading Dead Air:**
-   - Scene `S01` speech must begin at `t = 0.05s–0.15s`. Trim any leading silence padding so fast scrollers hear the hook on frame 2.
+   - Scene `S01` speech must begin by `t = 0.08s`. Check the real waveform onset as well as `narration.start_s`; synthesis padding counts toward leading silence.
 4. **Overrun & Pronunciation Check:**
    - Verify every scene's synthesized speech finishes inside `[scene.start_s, scene.end_s]` with at least `0.15s` breathing room at scene boundaries. If a word overruns or is mispronounced by TTS, tighten the wording in `stories/<slug>.json`, re-validate, and re-run `tools/narrate.mjs`.
 
@@ -90,6 +93,9 @@ Read `skills/shorts-story-writer/SKILL.md` and apply its editorial gate to the s
 1. **Smoke Frame Inspection:**
    - Run `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5` across three strategic timestamps (opening hook, key reversal, and final payoff).
    - Inspect the rendered PNGs for: (a) eye-level POV framing, (b) readable top-left telemetry HUD without academic disclaimer clutter, (c) zero NaN/bloom artifacts, and (d) captions sitting cleanly at `y ≈ 1320 px` without covering the focal subject.
+   - For each new or materially changed pivotal sequence, render a short silent moving excerpt: `node tools/render.mjs <slug> --preview build/<slug>/direction-review/preview.mp4 --range <first>-<last> --clean --scale 0.5`. The inclusive frame range must cover setup, action, consequence, and nearby shot boundaries.
+   - Review without labels/captions, then with normal overlays and unchanged existing audio when available. Inspect action continuity, readable completed states, early reveal leaks, and repeated frames after out-of-order seeks. Fix direction failures before final rendering.
+   - Use `--storyboard build/<slug>/direction-review/storyboard.json` only with `--preview` for an isolated camera/cut variant of the same film. Existing stage construction and film-specific overlays still come from the registered implementation; the variant does not create assets or rewrite the production storyboard.
 2. **Final MP4 & Thumbnail Render:**
    - Run `node tools/render.mjs <slug> --final --crf 19` to produce `output/<slug>.mp4` (H.264 `yuv420p`, AAC 48 kHz stereo, `+faststart`) and `output/<slug>.jpg` (`thumbnail-title-card-v1` bold 1080×1920 cover at `thumbnail.time_s` with 2–5 word uppercase headline, quantified sticker `badge`, and `arrow`).
 

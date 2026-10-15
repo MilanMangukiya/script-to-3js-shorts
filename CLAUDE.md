@@ -14,6 +14,8 @@ This repository builds deterministic, scientifically grounded, viral-ready 9:16 
 
 ## NON-NEGOTIABLE ENGINEERING & CREATIVE RULES
 Read `skills/shorts-story-writer/SKILL.md` before drafting or revising story content, and apply its editorial gate before narration and rendering.
+Read `skills/threejs-direction/SKILL.md` before staging or revising 3D shots; analyze, plan, implement, and review their moving sequence before proceeding to another area or the final render.
+Read `skills/voice-direction/SKILL.md` before directing narration or selecting a voice; review performance with one fixed voice before casting and preserve exact speech/caption timing.
 
 1. **One-Run Execution:** For a requested film build, go straight from Part A (`stories/<slug>.json`) to Part B (`output/<slug>.mp4`) and Part C (`node tools/finalize.mjs <slug>`) without stopping to ask permission. Script reviews, prompt/skill edits, and individual production steps stay within the requested scope.
 2. **Anti-Echo & Domestic POV Hook:** Sentence 1 of `S01` must **never** repeat the video title verbatim. Always open `S01` at human eye level (`y = 1.4–1.8 m`) inside a recognizable human/urban/macro stage (`city-street-block-v1`, `room-box-v1`, `glass-of-water-v1`) at $t = 0.0\text{ s}$ with `handheld_sway` enabled. Use wide orbital globe shots (`earth-globe-v1`) only when they advance the story's causal chain; a scale change is not mandatory.

@@ -1,10 +1,11 @@
 import * as THREE from 'three';
 import { ClinicInterior } from '../../../library/environment/ClinicInterior';
 import { RoomBox, tableLamp, chair, plant } from '../../../library/environment/RoomBox';
-import { POSE_STAND, POSE_SIT } from '../../../library/characters/Humanoid';
+import { POSE_STAND, lerpPose } from '../../../library/characters/Humanoid';
+import { actionProgress, applyGroundedPose, applyStraightWalk, seatedPose } from '../../../library/characters/CharacterMotion';
 import { box, rod, solid, surface, glow, canvasTexture, screen } from '../../../library/util/Modeling';
 import type { ShotInfo } from '../../../library/render/FilmPipeline';
-import { SetStage, lightSet, person, movingPose } from './common';
+import { SetStage, lightSet, person } from './common';
 
 /** Aftermath: surviving male staff care for patients; no vanished staff remain in the ward. */
 export class CareStage extends SetStage {
@@ -61,24 +62,49 @@ export class CareStage extends SetStage {
   }
   update(t: number, shot: ShotInfo) {
     const consult = shot.sceneId === 'S04'; this.clinic.visible = !consult; this.waiting.visible = consult;
-    const dt = t - 13.2; this.clinic.update(t);
-    this.workers[0].root.position.set(-.15, 0, 1.5 + .18 * Math.sin(dt * .7));
-    this.workers[1].root.position.set(2.7 + Math.sin(dt * .7) * .06, .05, 2.1);
-    this.workers[2].root.position.set(.35, 0, -4.8 + .45 * Math.max(0, Math.min(dt, 4.5)));
-    this.clinic.cart.position.set(.35, 0, -4.0 + .45 * Math.max(0, Math.min(dt, 4.5)));
-    this.workers.forEach((h, i) => movingPose(h, t, i, i === 1
-      ? { legL: [0, .04], legR: [0, .04], armL: [-1.1 + .13 * Math.sin(t * 1.5), .16, .86], armR: [-.7, .12, .8], lean: .13, headPitch: .17 }
-      : i === 2 ? { armL: [-.85, .13, .7], armR: [-.85, .13, .7] }
-      : { armL: [-.8, .12, 1.1], armR: [-.4, .1, .5], headYaw: Math.sin(t) * .25 }));
+    this.clinic.update(t);
+    // A planted clinician reads the attached chart rather than marching on the spot.
+    this.workers[0].root.position.set(-.15, -.02, 1.5); this.workers[0].root.rotation.set(0, 0, 0);
+    applyGroundedPose(this.workers[0], { ...POSE_STAND, armL: [-.8, .12, 1.1], armR: [-.4, .1, .5],
+      headPitch: .12, headYaw: -.12 * actionProgress(t, 13.4, 14.1), breath: Math.sin(t * 1.3) * .06 }, -.02);
+    const reach = actionProgress(t, 13.5, 14.3) * (1 - actionProgress(t, 15.3, 16.2));
+    this.workers[1].root.position.set(2.7, .055, 1.65); this.workers[1].root.rotation.set(0, -.6, 0);
+    applyGroundedPose(this.workers[1], { ...POSE_STAND, lean: .06 + reach * .025,
+      armL: [-.22, .1, .35], armR: [-.2, .1, .35], headPitch: .08 + .10 * reach,
+      headYaw: -.12 - .25 * actionProgress(t, 13.25, 13.7), breath: Math.sin(t * 1.3 + 1) * .05 }, .055);
+    // Actual existing IV tubing, midway between its upper and lower endpoints.
+    const ivTarget = this.clinic.ivPoles[0].localToWorld(new THREE.Vector3(.095, 1.315, .05));
+    this.workers[1].reachArm('R', ivTarget, new THREE.Vector3(.8, -.5, .3), reach);
+    const clinicTravel = applyStraightWalk(this.workers[2], t, { origin: [.35, -.02, -4.8],
+      start_s: 13.2, end_s: 16.0, distance_m: 1.32, steps: 6, groundY: -.02,
+      pose: { lean: .055, armL: [-.85, .13, .7], armR: [-.85, .13, .7], headYaw: 0, breath: 0 } });
+    this.clinic.cart.position.set(.35, 0, -4.0 + clinicTravel.distance_m);
+    this.clinic.cart.rotation.set(0, 0, 0); this.clinic.cart.updateMatrixWorld(true);
+    for (const side of ['L', 'R'] as const) {
+      const grip = this.clinic.cart.localToWorld(new THREE.Vector3(side === 'L' ? .26 : -.26, 1.10, -.36));
+      this.workers[2].reachArm(side, grip, new THREE.Vector3(side === 'L' ? .7 : -.7, -.4, .1));
+    }
     this.patients.forEach((h, i) => h.setPose({ ...POSE_STAND, breath: Math.sin(t * 1.4 + i) * .24, armL: [-.03, .08, .2], armR: [-.03, .08, .2] }));
-    this.survivor.setPose({ ...POSE_SIT, lean: .12 + Math.sin(t * .7) * .025, armR: [-.65, .1, 1.13],
-      armL: [-.4, .13, .9], headYaw: .23 + Math.sin(t * .6) * .09, headPitch: .08, breath: Math.sin(t * 1.3) * .22 });
-    movingPose(this.consultationDoctor, t, 5, { legL: [.02, .04], legR: [-.02, .04],
-      armL: [-.54 - .15 * Math.sin(t * 1.1), .25, .95], armR: [-.15, .12, .42], headYaw: -.14, headPitch: .08 });
-    const travel = Math.sin((t - 16.5) * .38) * .38;
-    this.porter.root.position.set(1.65 + travel * .5, 0, -4.4 + travel);
-    this.waitingCart.position.set(1.4 + travel * .5, 0, -3.7 + travel);
-    movingPose(this.porter, t, 6, { armL: [-.85, .13, .7], armR: [-.85, .13, .7] });
+    const notice = actionProgress(t, 16.7, 17.25), lift = actionProgress(t, 17.05, 18.25);
+    this.survivor.root.position.set(-.65, 0, -1.6); this.survivor.root.rotation.set(0, .16, 0);
+    const seated = seatedPose(this.survivor, .5125);
+    applyGroundedPose(this.survivor, { ...lerpPose({ ...seated, lean: .10, armR: [-.25, .1, .55], armL: [-.4, .13, .9],
+      headYaw: .12, headPitch: .02 }, { lean: .13, armR: [-.65, .1, 1.13], headYaw: -.13, headPitch: .18 }, lift),
+      headPitch: .02 + .16 * notice, breath: Math.sin(t * 1.3) * .06 });
+    const invite = actionProgress(t, 17.0, 17.75) * (1 - actionProgress(t, 18.5, 19.15));
+    this.consultationDoctor.root.position.set(1.15, 0, -2.25); this.consultationDoctor.root.rotation.set(0, -.8, 0);
+    applyGroundedPose(this.consultationDoctor, { ...POSE_STAND, armL: [-.15, .1, .25],
+      armR: [-.15 - .5 * invite, .12 + .15 * invite, .25 + .5 * invite],
+      headYaw: -.4, headPitch: .05, breath: Math.sin(t * 1.25 + 2) * .05 });
+    const waitingTravel = applyStraightWalk(this.porter, t, { origin: [1.65, 0, -4.4],
+      start_s: 16.5, end_s: 18.7, distance_m: .66, steps: 3,
+      pose: { lean: .055, armL: [-.85, .13, .7], armR: [-.85, .13, .7], headYaw: 0, breath: 0 } });
+    this.waitingCart.position.set(1.65, 0, -3.70 + waitingTravel.distance_m);
+    this.waitingCart.rotation.set(0, 0, 0); this.waitingCart.updateMatrixWorld(true);
+    for (const side of ['L', 'R'] as const) {
+      const grip = this.waitingCart.localToWorld(new THREE.Vector3(side === 'L' ? .25 : -.25, 1.0, -.32));
+      this.porter.reachArm(side, grip, new THREE.Vector3(side === 'L' ? .7 : -.7, -.4, .1));
+    }
     if (consult && shot.shotId === 'SH02') {
       // Follow the real handset surface rather than guessing a world-space close-up point.
       this.survivor.root.updateMatrixWorld(true);
@@ -138,9 +164,13 @@ export class NeonatalStage extends SetStage {
   }
   update(t: number) {
     this.drawMonitor((this.monitorTexture.image as HTMLCanvasElement).getContext('2d')!, t); this.monitorTexture.needsUpdate = true;
-    movingPose(this.clinicians[0], t, 1, { legL: [0, .03], legR: [0, .03], lean: .13,
-      armL: [-.85 + .13 * Math.sin(t), .15, .85], armR: [-.62, .14, 1.0], headPitch: .18 });
-    this.clinicians[1].root.position.z = -4.8 + .25 * Math.sin((t - 34) * .5);
-    movingPose(this.clinicians[1], t, 2, { armL: [-.65, .1, .9], armR: [-.65, .1, .9] });
+    const inspect = actionProgress(t, 34.8, 35.7) * (1 - actionProgress(t, 38.0, 38.8));
+    this.clinicians[0].root.position.set(1.1, 0, -2.6); this.clinicians[0].root.rotation.set(0, -.72, 0);
+    applyGroundedPose(this.clinicians[0], { ...POSE_STAND, lean: .035 + .055 * inspect,
+      armL: [-.16, .1, .3], armR: [-.16, .1, .3], headYaw: -.18 - .18 * inspect,
+      headPitch: .06 + .12 * inspect, breath: Math.sin(t * 1.2) * .05 });
+    this.clinicians[1].root.position.set(1.8, 0, -4.8); this.clinicians[1].root.rotation.set(0, -.3, 0);
+    applyGroundedPose(this.clinicians[1], { ...POSE_STAND, headYaw: -.10 * actionProgress(t, 35.5, 36.4),
+      armL: [-.15, .1, .3], armR: [-.15, .1, .3], breath: Math.sin(t * 1.2 + 1) * .04 });
   }
 }

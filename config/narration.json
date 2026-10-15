@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "voice_id": "am_michael",
+  "language": "en-us",
+  "pacing_speed": {
+    "fast_hook": 1.1108,
+    "crisp_mechanism": 1.1059,
+    "steady_escalation": 1.1011,
+    "weighty_impact": 0.8756,
+    "reflective_payoff": 0.65,
+    "loop_bridge": 0.6695
+  },
+  "measured_energies": [
+    "fast_hook",
+    "steady_escalation",
+    "reflective_payoff"
+  ],
+  "selection_status": "user-selected",
+  "calibration_story": "last-woman-alive",
+  "evidence": "build/voice-selection-review/am_michael/audition.json",
+  "note": "User selected Michael from three matched auditions. Measured hook/mechanism/payoff starting rates; other energy rates are estimates. Measure each new script."
+}
