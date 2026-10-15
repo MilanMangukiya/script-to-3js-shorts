@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "sky-disappeared",
+  "topic": "What if the sky disappeared?",
+  "duration_s": 53,
+  "video_file": "output/sky-disappeared.mp4",
+  "scientific_scope_note": "Fictional optical premise: at noon on a clear equinox day at about 30°N, air and haze stop scattering visible sunlight; breathing, air pressure, weather and clouds are unchanged, and a cloudless day is shown. The shade-light figure (about one fifth of normal) and the sun-to-shade contrast (about 45 times) are estimates for one 22 m street canyon, not universal values. The near miss is an illustrative authored event. Star visibility assumes deep shade and adapted eyes: bright stars, not a full night sky. Sunset and sunrise are time-compressed; at 30°N the disc takes about 2.5 minutes to set or rise, and without twilight ground light falls from sunlight to starlight in that time. Brightness is shown with eye-adaptation exposure. Longer-term climate and ecological effects are not modelled.",
+  "created_asset_ids": [
+    "sun-skylight-rig-v1"
+  ],
+  "reused_asset_ids": [
+    "city-street-block-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "sky-dome-v1",
+    "starfield-v1",
+    "ocean-surface-v1",
+    "modeling-helpers-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "overlay-labels-v1",
+    "caption-kinetic-v1",
+    "audio-synth-kit-v1",
+    "shader-noise-math-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if the sky disappeared?",
+      "description": "You step outside at noon and the sky goes black. The sun is still blazing and you can still breathe: only the blue is gone. In this 53-second 3D science thought experiment, the air stays but stops scattering sunlight.\n\nThat blue was sunlight bouncing off the air, and it was lighting every shadow. Without it, shade turns nearly black, stepping into it feels like driving into a tunnel, and a pedestrian standing in it can vanish from a driver's view. Wait in the shade and bright stars come out at noon. Then the sun sets white, with no orange glow and no dusk, and the next morning it simply switches on.\n\nWhich would you miss first: blue sky, sunsets, or being able to see in the shade?\n\nScope: Fictional optical premise: at noon on a clear equinox day at about 30°N, air and haze stop scattering visible sunlight; breathing, air pressure, weather and clouds are unchanged, and a cloudless day is shown. The shade-light figure (about one fifth of normal) and the sun-to-shade contrast (about 45 times) are estimates for one 22 m street canyon, not universal values. The near miss is an illustrative authored event. Star visibility assumes deep shade and adapted eyes: bright stars, not a full night sky. Sunset and sunrise are time-compressed; at 30°N the disc takes about 2.5 minutes to set or rise, and without twilight ground light falls from sunlight to starlight in that time. Brightness is shown with eye-adaptation exposure. Longer-term climate and ecological effects are not modelled.\n\nSources:\n- NOAA Storm Prediction Center (S. Corfidi): The Colors of Sunset and Twilight: https://www.spc.noaa.gov/publications/corfidi/sunset/\n- Royal Museums Greenwich: Why is the sky blue?: https://www.rmg.co.uk/stories/space-astronomy/why-sky-blue\n- American Meteorological Society Glossary: Diffuse sky radiation: https://glossary.ametsoc.org/wiki/Diffuse_sky_radiation\n- PIARC Road Tunnels Manual: Tunnel lighting system: https://tunnelsmanual.piarc.org/en/node/1185\n- The Planetary Society: Why are there no stars in most space images?: https://www.planetary.org/articles/why-are-there-no-stars\n- Met Office: Why is the sunset red?: https://metoffice.gov.uk/learning/optics/why-is-the-sunset-red\n- National Weather Service: Twilight definitions: https://www.weather.gov/fsd/twilight\n\nVisuals: original deterministic Three.js animation. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.",
+      "tags": [
+        "what if the sky disappeared",
+        "why is the sky blue",
+        "rayleigh scattering",
+        "black sky at noon",
+        "stars during the day",
+        "no twilight",
+        "sunset without scattering",
+        "physics thought experiment",
+        "earth science what if",
+        "science simulation",
+        "threejs 3d documentary"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Physics",
+        "#EarthScience",
+        "#Sky",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if the sky disappeared",
+        "why is the sky blue",
+        "rayleigh scattering explained",
+        "black sky at noon",
+        "stars during the day",
+        "no twilight"
+      ]
+    },
+    "tiktok": {
+      "caption": "You step outside at noon and the sky goes black. You can still breathe, but shade turns into blind spots, stars come out at noon, and night drops the moment the sun sets.\n\nWhich would you miss first: blue sky, sunsets, or being able to see in the shade?\n\nA 3D thought experiment: the air stays, it just stops scattering sunlight.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Physics",
+        "#Sky",
+        "#EarthScience",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if the sky disappeared",
+        "why is the sky blue",
+        "rayleigh scattering explained",
+        "black sky at noon",
+        "stars during the day",
+        "no twilight"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "Shade used to protect you. Without a blue sky, it hides you. The sun still blazes and the air is still here, but every shadow goes nearly black, stars appear at noon, and sunrise arrives like a light switch.\n\nWhich would you miss first: blue sky, sunsets, or being able to see in the shade?\n\nFictional optical premise; shade and visibility figures are estimates for one street.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#Physics",
+        "#Sky",
+        "#EarthScience",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if the sky disappeared",
+        "why is the sky blue",
+        "rayleigh scattering explained",
+        "black sky at noon",
+        "stars during the day",
+        "no twilight"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if the sky disappeared? Stars at noon, no dusk",
+      "description": "You step outside at noon and the sky goes black, but you can still breathe. This 3D thought experiment follows what the blue sky was quietly doing: lighting every shadow, softening sunsets and slowing sunrise.\n\nWhich would you miss first: blue sky, sunsets, or being able to see in the shade?\n\nFictional optical premise: at noon on a clear equinox day at about 30°N, air and haze stop scattering visible sunlight; breathing, air pressure, weather and clouds are unchanged, and a cloudless day is shown. The shade-light figure (about one fifth of normal) and the sun-to-shade contrast (about 45 times) are estimates for one 22 m street canyon, not universal values. The near miss is an illustrative authored event. Star visibility assumes deep shade and adapted eyes: bright stars, not a full night sky. Sunset and sunrise are time-compressed; at 30°N the disc takes about 2.5 minutes to set or rise, and without twilight ground light falls from sunlight to starlight in that time. Brightness is shown with eye-adaptation exposure. Longer-term climate and ecological effects are not modelled.\n\nSources:\n- NOAA Storm Prediction Center (S. Corfidi): The Colors of Sunset and Twilight: https://www.spc.noaa.gov/publications/corfidi/sunset/\n- Royal Museums Greenwich: Why is the sky blue?: https://www.rmg.co.uk/stories/space-astronomy/why-sky-blue\n- American Meteorological Society Glossary: Diffuse sky radiation: https://glossary.ametsoc.org/wiki/Diffuse_sky_radiation\n- PIARC Road Tunnels Manual: Tunnel lighting system: https://tunnelsmanual.piarc.org/en/node/1185\n- The Planetary Society: Why are there no stars in most space images?: https://www.planetary.org/articles/why-are-there-no-stars\n- Met Office: Why is the sunset red?: https://metoffice.gov.uk/learning/optics/why-is-the-sunset-red\n- National Weather Service: Twilight definitions: https://www.weather.gov/fsd/twilight",
+      "hashtags": [
+        "#WhatIf",
+        "#Science",
+        "#Physics",
+        "#EarthScience",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if the sky disappeared",
+        "why is the sky blue",
+        "rayleigh scattering explained",
+        "black sky at noon",
+        "stars during the day",
+        "no twilight"
+      ]
+    },
+    "x_video": {
+      "post": "You step outside at noon and the sky goes black. Shade turns blind, stars come out at noon, and sunrise switches on like a light. Which would you miss first: blue sky, sunsets, or being able to see in the shade?",
+      "hashtags": [
+        "#WhatIf",
+        "#Physics",
+        "#Sky",
+        "#Science",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if the sky disappeared",
+        "why is the sky blue",
+        "rayleigh scattering explained"
+      ]
+    }
+  },
+  "publishing_status": "rendered_not_published",
+  "rendered_at_utc": "2026-10-15T04:55:31Z",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 14,
+    "path_in_repo": "videos/014-sky-disappeared.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/014-sky-disappeared.mp4",
+    "sha256": "0251aca6b9fb1f56801ef648264c854a6ba87c3c897923c666526c40c70082ab",
+    "size_bytes": 24211045,
+    "thumbnail_path_in_repo": "videos/014-sky-disappeared.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/014-sky-disappeared.jpg",
+    "thumbnail_sha256": "f660b4c96dfded0d1d8d732d118d27283b9a06d5dfc2bac1557d8110d21b0562",
+    "copy_path_in_repo": "videos/014-sky-disappeared.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/014-sky-disappeared.md",
+    "copy_sha256": "3ebe645dc2a816437a73c8776a0aec6cfd1a8c2e555db84103580eeb7ac4fb68",
+    "uploaded_at_utc": "2026-10-15T04:56:28Z"
+  }
+}

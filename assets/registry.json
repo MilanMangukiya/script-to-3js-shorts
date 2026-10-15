@@ -121,6 +121,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -245,6 +246,7 @@
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -290,6 +292,7 @@
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -549,6 +552,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -634,6 +638,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -685,6 +690,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -722,6 +728,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -766,6 +773,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -811,6 +819,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -848,6 +857,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -880,6 +890,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "SIL Open Font License 1.1",
@@ -1932,7 +1943,8 @@
         "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
-        "rain-nonstop-everywhere"
+        "rain-nonstop-everywhere",
+        "sky-disappeared"
       ],
       "license": "original_procedural",
       "notes": "composeBoldThumbnail (default) and drawThumbnailTitle (style \"clean\") in the same module. src/entry.ts renderThumbnail() feeds the storyboard thumbnail block (badge_at -> badgeAt) over FilmPipeline.renderFrame(i, { overlay: false, captions: false }); tools/render.mjs writes output/<slug>.jpg after --final, or alone with --thumbnail. Long sticker text shrinks to about 64% of the width. Bold style needs Inter 900 / 900 italic (font-inter-v1). Style varies per video: font from THUMB_FONTS (font-display-set-v1), colour grade from THUMB_GRADES, palette colours and tilt."
@@ -1963,7 +1975,8 @@
         "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
-        "rain-nonstop-everywhere"
+        "rain-nonstop-everywhere",
+        "sky-disappeared"
       ],
       "license": "SIL Open Font License 1.1",
       "notes": "Copied unmodified from the @fontsource/* 5.3.0 npm packages (Playfair Display has a Reserved Font Name, so keep it unmodified). Loaded by src/entry.ts; metrics (tracking, line height, outline) live in THUMB_FONTS in src/library/overlay/Thumbnail.ts."
@@ -2004,6 +2017,7 @@
         "last-man-alive",
         "last-woman-alive",
         "mountain-grew-100-km-tall",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2507,6 +2521,7 @@
         "every-human-jumped-at-once",
         "last-man-alive",
         "last-woman-alive",
+        "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -3345,10 +3360,50 @@
       ],
       "created_for": "last-woman-alive",
       "used_in": [
-        "last-woman-alive"
+        "last-woman-alive",
+        "sky-disappeared"
       ],
       "license": "original_code",
       "notes": "Requires the existing Humanoid shoe dimensions, uniform rig scale and unrotated stage parent. Straight-path stance centers stay fixed; opt-in compensation levels the existing shoe mesh and foot anchor around the ankle. These owned transforms reset on every helper call. No full-body dynamics or curved-path foot locking. Stage owns intent, targets and all pose resets; call hand reachArm after posing."
+    },
+    {
+      "id": "sun-skylight-rig-v1",
+      "name": "Sun and skylight lighting rig with horizon-clipped sun disc",
+      "type": "three_component",
+      "source_path": "src/library/environment/SunSkylightRig.ts",
+      "description": "Outdoor light split into physical parts: a shadow-casting sun DirectionalLight scaled by the visible disc fraction, scattered skylight (a visible SkyDome plus its share of a cached PMREM environment bake), sunlit-ground bounce in the bake’s lower hemisphere, and aerial haze (FogExp2 scaled with skylight). A world-space sun disc at true angular size with mild limb darkening and a round in-eye glare sprite is depth-tested, so sea, hills or buildings clip it at the real horizon.",
+      "tags": [
+        "lighting",
+        "sky",
+        "sun",
+        "atmosphere",
+        "sunset",
+        "sunrise",
+        "shadows"
+      ],
+      "configurable_parameters": [
+        "zenithColor",
+        "horizonColor",
+        "hazeColor",
+        "hazeAmount",
+        "sunGlow",
+        "groundColor",
+        "discAngularRadius",
+        "discDistance",
+        "discRadiance",
+        "glareAngularRadius",
+        "glareStrength",
+        "shadowMapSize",
+        "envCacheSize",
+        "apply(scene,camera,{sunDirection,sunIntensity,sunColor,horizon,skyAmount,groundAmount,envIntensity,hazeDensity,focus,shadowHalfWidth,shadowHalfHeight,shadowDepth})",
+        "SunSkylightRig.discFraction(altitude,horizon,radius)"
+      ],
+      "created_for": "sky-disappeared",
+      "used_in": [
+        "sky-disappeared"
+      ],
+      "license": "original_code",
+      "notes": "apply() sets the full lighting state every frame from its arguments; environment bakes are cached by quantised sky/ground/sun-direction keys (oldest disposed), so frames are identical after any seek order. Environment provides both sky fill and ground bounce without occlusion: shaded upward-facing ground goes black when skyAmount is 0, vertical surfaces keep some bounce. The disc billboard sits at discDistance; keep it inside the camera far plane. Low suns produce strong grazing specular glare on rough ground: lower exposure or raise roughness rather than adding light."
     }
   ]
 }

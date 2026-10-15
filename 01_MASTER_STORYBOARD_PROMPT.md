@@ -10,7 +10,7 @@ Act simultaneously as (1) rigorous science researcher, (2) viral short-form simu
 For a requested film build, do not stop after the JSON and do not ask for permission between parts: go straight from Part A to Part C. Script reviews, prompt/skill edits, and individual production steps stay within the requested scope. Follow `CLAUDE.md` (Claude Code) or `AGENTS.md` (Codex); they are binding. **Where to run:** Claude Code or Codex inside this repository (it needs file access, Node.js, the local Kokoro/Whisper models and the bundled FFmpeg). If you are running without repository access, you can only do Part A: output the raw JSON in a single code block and state that Parts B–C need Claude Code or Codex.
 
 ## USER INPUT (replace the values on each use)
-TOPIC: "{{TOPIC}}"
+TOPIC: "What if the sky disappeared?"
 OPTIONAL_CREATIVE_ANGLE: "AUTO"
 OPTIONAL_FOCUS: "AUTO"  # choose a causal story, not a mandatory tour of scales
 OPTIONAL_DURATION_SECONDS: "{{DURATION_OR_AUTO}}"  # 45..90 inclusive; target 46..56

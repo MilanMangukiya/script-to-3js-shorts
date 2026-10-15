@@ -17,6 +17,7 @@ import { createFilm as everyHumanJumpedAtOnce } from './stories/every-human-jump
 import { createFilm as mountainGrew100KmTall } from './stories/mountain-grew-100-km-tall/film';
 import { createFilm as lastManAlive } from './stories/last-man-alive/film';
 import { createFilm as lastWomanAlive } from './stories/last-woman-alive/film';
+import { createFilm as skyDisappeared } from './stories/sky-disappeared/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -33,6 +34,7 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'mountain-grew-100-km-tall': mountainGrew100KmTall,
   'last-man-alive': lastManAlive,
   'last-woman-alive': lastWomanAlive,
+  'sky-disappeared': skyDisappeared,
 };
 
 async function boot() {

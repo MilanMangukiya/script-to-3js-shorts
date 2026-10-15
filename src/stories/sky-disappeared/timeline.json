@@ -1,0 +1,12 @@
+{
+  "note": "Absolute film times (s) for every staged event; read by the stages, film overlay and soundtrack.mjs. Word-aligned to build/sky-disappeared/audio/narration.json.",
+  "bounds": [0, 4.4, 9.8, 16.0, 21.6, 27.9, 34.3, 41.5, 47.3, 53],
+  "step": 2.0, "drain0": 2.3, "drain1": 3.15,
+  "s02Cut": 6.15, "breath0": 6.7, "breath1": 8.1,
+  "s03Cut": 13.5, "crossEdge": 12.6,
+  "s04Edge": 17.75,
+  "s05Reveal": 25.05, "s05Brake": 25.5, "carSpeed": 11.1, "carStopZ": 3.4,
+  "s06Cut": 30.8,
+  "s07Cut": 37.8, "s08Cut": 44.4, "sunset": 45.6, "sunrise": 51.25, "s09Cut": 51.6,
+  "sunRateDegPerS": 0.214, "seaHorizonDeg": -0.03, "dawnHorizonDeg": 0.9, "sunRadiusDeg": 0.2665
+}

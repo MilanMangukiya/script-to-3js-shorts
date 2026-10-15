@@ -1,0 +1,2303 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if the sky disappeared?",
+    "title": "What if the sky disappeared?",
+    "slug": "sky-disappeared",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 53,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science and space shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If the air stayed but stopped scattering sunlight, what would a day on your street be like?",
+    "viewer_takeaway": "The blue sky is sunlight scattered by air; it lights every shadow and makes dusk and dawn gradual. Without it, shade turns dangerously dark and days switch on and off."
+  },
+  "scientific_model": {
+    "baseline_reality": "Air molecules scatter sunlight, blue most strongly (Rayleigh scattering), and haze adds whiter scattering. That scattered light is the blue sky; it lights shade on a clear day and keeps lighting the sky after sunset as twilight.",
+    "counterfactual_change": "At noon on a clear equinox day at about 30°N, air and haze stop scattering visible sunlight. Air composition, pressure, breathing, refraction, weather and clouds are otherwise unchanged; the film stages a cloudless day.",
+    "assumptions": [
+      "Scattering stops instantly and everywhere; absorption by ozone and water vapour continues.",
+      "Clouds would still scatter, but the staged day is cloudless.",
+      "Street geometry: east-west canyon, 14 m road, 16-26 m buildings, sun 60 degrees high at noon.",
+      "The near miss and the people are illustrative authored events, not predictions."
+    ],
+    "causal_chain": [
+      "Sunlight no longer scatters off air, so the daytime sky is black and the sun appears as a white disc among stars.",
+      "Shade loses its main light source, skylight, and is lit only by light reflected from sunlit surfaces.",
+      "Sun-adapted eyes see that shade as near-black, like a tunnel entrance, and drivers may not see people standing in it.",
+      "Eyes that adapt in deep shade can see bright stars at noon.",
+      "Without scattering the setting sun does not redden and there is no twilight, so ground light falls from sunlight to starlight as the disc sets, and returns at sunrise without dawn."
+    ],
+    "uncertainties": [
+      "Shade light depends strongly on street geometry and surface reflectance; the 20 percent and 45 times figures are estimates for this street.",
+      "How many stars a person would see depends on glare, adaptation and the sun direction.",
+      "Ozone and water-vapour absorption would tint and dim the setting sun slightly.",
+      "Longer-term climate and ecological effects are outside this film."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "The blue daytime sky is sunlight scattered by air molecules, which scatter shorter wavelengths more strongly.",
+        "confidence": "established",
+        "reasoning": "Rayleigh scattering by molecules much smaller than the wavelength scales roughly with the inverse fourth power of wavelength.",
+        "presentation_guardrail": "Say the blue is sunlight bouncing off air; do not claim the sky is a physical layer."
+      },
+      {
+        "id": "CL02",
+        "statement": "On a clear day, skylight is the main source of light in open shade; light reflected from sunlit surfaces adds the rest.",
+        "confidence": "established",
+        "reasoning": "Shaded surfaces receive no direct beam; diffuse sky radiation is defined as the scattered solar radiation reaching the ground from the whole sky.",
+        "presentation_guardrail": "Shadows lose most of their light, not all of it."
+      },
+      {
+        "id": "CL03",
+        "statement": "With scattering switched off, the daytime sky would look black, as it does from the Moon, while direct sunlight stays as strong or slightly stronger and whiter.",
+        "confidence": "derived",
+        "reasoning": "With no scattered light, only the solar disc and stars are visible; scattering no longer removes blue from the direct beam.",
+        "presentation_guardrail": "Keep breathing, pressure and weather unchanged; this is a fictional optical change only."
+      },
+      {
+        "id": "CL04",
+        "statement": "In this street canyon the shade would fall to roughly one fifth of its normal light, making sunlit pavement about 45 times brighter than shade instead of about 10 times.",
+        "confidence": "plausible",
+        "reasoning": "View-factor estimate for a 22 m wide canyon with 20 m buildings: about 6.7 klx of skylight plus 1.9 klx reflected light in shade becomes about 1.9 klx, against about 87 klx on sunlit horizontal pavement.",
+        "presentation_guardrail": "Present the numbers as this street’s telemetry, not a universal constant; shade is very dark, not perfectly black."
+      },
+      {
+        "id": "CL05",
+        "statement": "Drivers adapted to daylight can be unable to see into a much darker tunnel entrance, the black hole effect, which is why tunnel entrances are lit more brightly.",
+        "confidence": "established",
+        "reasoning": "Road tunnel lighting practice reinforces entrance lighting because eyes cannot adapt instantly to large luminance drops.",
+        "presentation_guardrail": "Use as an analogy for crossing into deep shade."
+      },
+      {
+        "id": "CL06",
+        "statement": "A pedestrian standing in such shade could be very hard for a sun-adapted driver to see until they step into sunlight.",
+        "confidence": "plausible",
+        "reasoning": "Shade luminance about 2-4 percent of the sunlit road is below typical tunnel threshold-zone ratios, where contrast detection fails.",
+        "presentation_guardrail": "The near miss is one illustrative event; say \"even from drivers\", not that every driver will hit someone."
+      },
+      {
+        "id": "CL07",
+        "statement": "Bright stars and planets could be seen in the black daytime sky from deep shade once the eyes adapt, but not from the sunlit glare.",
+        "confidence": "plausible",
+        "reasoning": "With a black sky, glare and adaptation limit star visibility; Apollo crews rarely saw stars on the sunlit lunar surface but reported bright stars from shadow.",
+        "presentation_guardrail": "Show bright stars from shade, not a full Milky Way in sunlight."
+      },
+      {
+        "id": "CL08",
+        "statement": "Sunset colours come from scattering along the long low-sun path; without scattering the setting sun would stay nearly white and there would be no coloured glow.",
+        "confidence": "derived",
+        "reasoning": "Reddening of the low sun is caused by scattering removing blue light along the path; ozone and water vapour absorption would remain but are weaker in the visible.",
+        "presentation_guardrail": "Say \"almost all the way down\"."
+      },
+      {
+        "id": "CL09",
+        "statement": "Twilight is sunlight scattered by the upper atmosphere after sunset; without it, ground light would fall from sunlight to starlight in the roughly 2.5 minutes the disc takes to set at 30°N, instead of fading over about 25 minutes of civil twilight.",
+        "confidence": "derived",
+        "reasoning": "The sun sinks about 13 degrees per hour at 30°N on an equinox: 0.53 degrees takes about 2.5 minutes and 6 degrees about 28 minutes.",
+        "presentation_guardrail": "Night \"drops\" refers to the end of direct sunlight; moonlight and airglow are not shown."
+      },
+      {
+        "id": "CL10",
+        "statement": "Sunrise would likewise go from starlight to direct sunlight as soon as the disc clears the horizon, with no dawn glow beforehand.",
+        "confidence": "derived",
+        "reasoning": "The same geometry applies in reverse; only the direct beam lights the ground.",
+        "presentation_guardrail": "The sky stays black after sunrise."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NOAA Storm Prediction Center (S. Corfidi): The Colors of Sunset and Twilight",
+        "url": "https://www.spc.noaa.gov/publications/corfidi/sunset/",
+        "supports_claim_ids": [
+          "CL01",
+          "CL08",
+          "CL09"
+        ]
+      },
+      {
+        "name": "Royal Museums Greenwich: Why is the sky blue?",
+        "url": "https://www.rmg.co.uk/stories/space-astronomy/why-sky-blue",
+        "supports_claim_ids": [
+          "CL01",
+          "CL03"
+        ]
+      },
+      {
+        "name": "American Meteorological Society Glossary: Diffuse sky radiation",
+        "url": "https://glossary.ametsoc.org/wiki/Diffuse_sky_radiation",
+        "supports_claim_ids": [
+          "CL02",
+          "CL04"
+        ]
+      },
+      {
+        "name": "PIARC Road Tunnels Manual: Tunnel lighting system",
+        "url": "https://tunnelsmanual.piarc.org/en/node/1185",
+        "supports_claim_ids": [
+          "CL05",
+          "CL06"
+        ]
+      },
+      {
+        "name": "The Planetary Society: Why are there no stars in most space images?",
+        "url": "https://www.planetary.org/articles/why-are-there-no-stars",
+        "supports_claim_ids": [
+          "CL07"
+        ]
+      },
+      {
+        "name": "Met Office: Why is the sunset red?",
+        "url": "https://metoffice.gov.uk/learning/optics/why-is-the-sunset-red",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      },
+      {
+        "name": "National Weather Service: Twilight definitions",
+        "url": "https://www.weather.gov/fsd/twilight",
+        "supports_claim_ids": [
+          "CL09",
+          "CL10"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "The sky goes black at noon but the air stays: shade turns into blind spots, sunsets lose their colour, and days start switching on and off.",
+    "visual_identity": "One coastal street seen like an Apollo photograph with Earth’s air: blazing stone, black shadows, a white sun among stars, then a colourless sunset over the sea and a sunrise like a switch.",
+    "palette": [
+      "#05070C",
+      "#F8F6F0",
+      "#38BDF8",
+      "#FACC15",
+      "#7C8A99",
+      "#B4532A"
+    ],
+    "lighting": "Physically separated sun key, skylight fill, ground bounce and haze; removing skylight empties shadows. Eye-adaptation exposure ramps in shade; ACES finish, bloom only on the sun and lamps.",
+    "camera_language": "Eye-level 1.45-1.65 m handheld POVs, a low shadow-edge dolly, a driver POV and locked telephotos; a move reveals, follows or compares, otherwise holds.",
+    "motion_language": "Distance-driven walking, natural reactions (stop, look up, breathe, shade eyes), analytic car braking, compressed sun motion, staggered light switching.",
+    "world_scale_policy": "One metre-scale street throughout; true sun angular size and 30°N equinox altitudes with compressed clock time at sunset and sunrise.",
+    "emotional_arc": [
+      "Shock",
+      "Relief",
+      "Understanding",
+      "Disorientation",
+      "Danger",
+      "Wonder",
+      "Unease",
+      "Abrupt night",
+      "Dry payoff"
+    ],
+    "opening_hook": "You step outside at noon, and the sky goes black.",
+    "mid_video_rehook": "Shade stops being a refuge: a driver adapted to the sunlit road cannot see you in it until you step into the light.",
+    "ending_payoff": "Without scattering there is no dusk or dawn: night drops when the sun sets, and in the morning the sun switches on.",
+    "loop_connection": "The final frame is a sunlit street under a black sky with a switch-clack; the opening replays the switch-off as the blue drains.",
+    "asset_policy": "Reuse the classic city street, Humanoid rig, sky dome, starfield and ocean; build one reusable sun/skylight lighting rig; story props (driver dash, promenade) from modeling helpers."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Original sparse score: airy midday pad that collapses with the sky, low heartbeat tension in the shade, a glassy star shimmer, cold open fifths at sunset, and a bright switch-on chord at sunrise.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "City bed ducks 0.3 s before the sky drains, the near miss and the night drop; brake thump and horn on the near miss; deep sub drop at sunset; staggered window and lamp switch clicks 120-140 ms apart; switch clack at sunrise.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The physical consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.4,
+      "narration": {
+        "text": "You step outside at noon, and the sky goes black.",
+        "start_s": 0.04,
+        "end_s": 4.25,
+        "delivery_note": "Close, matter-of-fact alarm; land \"sky goes black\" as a plain fact without shouting.",
+        "pacing_energy": "fast_hook",
+        "performance": {
+          "rate": 0.82
+        }
+      },
+      "viewer_question": "Why is the sky black at noon?",
+      "visual_payoff": "The blue sky drains to black over a sunlit street while people stop and look up.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.4,
+          "shot_type": "eye-level POV stepping out from under a shop awning into the shade",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  -11.1,
+                  1.62,
+                  -3.4
+                ],
+                "look_at": [
+                  0,
+                  6.6,
+                  -38
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 2,
+                "position": [
+                  -9.75,
+                  1.63,
+                  -4.4
+                ],
+                "look_at": [
+                  0,
+                  7.2,
+                  -38
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4.4,
+                "position": [
+                  -9.45,
+                  1.63,
+                  -4.8
+                ],
+                "look_at": [
+                  0.5,
+                  8.4,
+                  -38
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Two slow steps out from under a shop awning onto the shaded south sidewalk, then a small upward drift toward the sky wedge.",
+            "lens_notes": "Diagonal view west from the shade: sunlit north facades fill the right, shaded south facades close on the left, sky wedge in the upper third so the drain is readable at phone size.",
+            "handheld_sway": 0.35
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:00",
+            "metric_label": "SKYLIGHT",
+            "start_value": 100,
+            "end_value": 0,
+            "unit": "%",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Static; shaded south side turns from blue-grey to near black as skylight is removed."
+            },
+            {
+              "id": "sky",
+              "kind": "atmosphere",
+              "asset_hint": "sky-dome-v1",
+              "appearance": "Clear blue noon sky with a soft aureole that drains to pure black; afterwards only the sun disc and stars.",
+              "geometry_and_material": "Camera-centred SkyDome with scatter multiplier; environment bake swapped from blue sky to ground-bounce-only.",
+              "scale_and_accuracy": "Fictional premise: molecular and haze scattering removed; air, pressure and weather unchanged.",
+              "movement": "Blue until 2.3s, drains to black by 3.15s; aureole disappears with it."
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "asset_hint": "starfield-v1",
+              "appearance": "Bright stars and planets in the black daytime sky; fainter ones appear as eyes adapt.",
+              "geometry_and_material": "Seeded additive point sprites, brightness tied to the eye-adaptation exposure.",
+              "scale_and_accuracy": "Only the brightest stars are shown in sunlit views, consistent with glare limits.",
+              "movement": "Brightest stars fade in from 3.15s."
+            },
+            {
+              "id": "walkers",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "A walker approaching in the shade on your sidewalk; two distant walkers in sunlight on the far side.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Walk with distance-driven gait; from 3.15s the near walker, now almost black, slows, stops and tilts his head up."
+            }
+          ],
+          "animation_plan": [
+            "0-2s step out from the awning into sunlight.",
+            "2.3-3.15s skylight 1 -> 0: sky dome, sky fill and bounce-free haze drain together; shaded facades and the road shadow go nearly black while sunlit stone stays bright.",
+            "3.15-4.4s walkers stop and look up; stars emerge."
+          ],
+          "lighting": "Sun key unchanged; sky hemisphere fill 1 -> 0; ground-bounce fill stays; environment swaps from blue sky to ground-only.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only",
+            "skylight drain",
+            "fog density 0.004 -> 0"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "sky goes black",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "noon",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 2,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "City bed ducks just before the sky drains.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 2.3,
+          "duration_s": 1.4,
+          "kind": "whoosh",
+          "description": "Low descending sub drop as the blue drains.",
+          "relative_db": -12
+        },
+        {
+          "at_s": 0,
+          "duration_s": 4,
+          "kind": "ambience",
+          "description": "Midday traffic hum and footsteps.",
+          "relative_db": -26
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on the upward glance to the sun over the south rooftops."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.4,
+      "end_s": 9.8,
+      "narration": {
+        "text": "The sun's still blazing. You can still breathe. Only the blue is gone.",
+        "start_s": 4.52,
+        "end_s": 9.65,
+        "delivery_note": "Relief turning to curiosity: three short beats, lift \"still breathe\", settle on \"Only the blue is gone.\"",
+        "pacing_energy": "fast_hook",
+        "performance": {
+          "rate": 0.885
+        }
+      },
+      "viewer_question": "If the air is still here, what is missing?",
+      "visual_payoff": "A white sun in a black sky, and a neighbour breathing normally.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.4,
+          "end_s": 6.15,
+          "shot_type": "tilt up to the sun in a black sky",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 4.4,
+                "position": [
+                  8.6,
+                  1.58,
+                  3.5
+                ],
+                "look_at": [
+                  -6,
+                  12,
+                  -0.5
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 6.15,
+                "position": [
+                  8.5,
+                  1.58,
+                  3.3
+                ],
+                "look_at": [
+                  -8.5,
+                  25,
+                  -2.5
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "From the sunlit north sidewalk, tilt from the black south roofline up to the sun.",
+            "lens_notes": "Sun disc in the upper half, black roofline silhouette below, a few stars: the sun is still blazing in a black sky.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:00",
+            "metric_label": "DIRECT SUN",
+            "start_value": 100,
+            "end_value": 100,
+            "unit": "%",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "sun",
+              "kind": "sun",
+              "asset_hint": "sun-skylight-rig-v1",
+              "appearance": "Small white disc 0.53 degrees across, blooming slightly; it never reddens.",
+              "geometry_and_material": "World-space disc 9 km away, depth-tested so the sea or ground clips it; light scaled by the visible disc fraction.",
+              "scale_and_accuracy": "True angular size; altitude from 30°N equinox geometry.",
+              "movement": "Fixed at 60 degrees altitude."
+            },
+            {
+              "id": "sky",
+              "kind": "atmosphere",
+              "asset_hint": "sky-dome-v1",
+              "appearance": "Clear blue noon sky with a soft aureole that drains to pure black; afterwards only the sun disc and stars.",
+              "geometry_and_material": "Camera-centred SkyDome with scatter multiplier; environment bake swapped from blue sky to ground-bounce-only.",
+              "scale_and_accuracy": "Fictional premise: molecular and haze scattering removed; air, pressure and weather unchanged.",
+              "movement": "Pure black."
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "asset_hint": "starfield-v1",
+              "appearance": "Bright stars and planets in the black daytime sky; fainter ones appear as eyes adapt.",
+              "geometry_and_material": "Seeded additive point sprites, brightness tied to the eye-adaptation exposure.",
+              "scale_and_accuracy": "Only the brightest stars are shown in sunlit views, consistent with glare limits.",
+              "movement": "Bright stars static."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Shaded south roofline in silhouette."
+            }
+          ],
+          "animation_plan": [
+            "4.4-6.15s tilt reveals a white disc with no glow around it."
+          ],
+          "lighting": "Sun disc HDR 40, bloom only; no sky fill.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 6.15,
+          "end_s": 9.8,
+          "shot_type": "medium shot: a neighbour takes a deep breath",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 6.15,
+                "position": [
+                  6.9,
+                  1.55,
+                  -0.2
+                ],
+                "look_at": [
+                  9.3,
+                  1.45,
+                  -2.4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 9.8,
+                "position": [
+                  7.25,
+                  1.56,
+                  -0.55
+                ],
+                "look_at": [
+                  9.3,
+                  1.5,
+                  -2.4
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push toward the neighbour.",
+            "lens_notes": "Neighbour faces the sun; sunlit shopfront behind; black sky strip at the top of frame.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:01",
+            "metric_label": "AIR PRESSURE",
+            "start_value": 1013,
+            "end_value": 1013,
+            "unit": "hPa",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "neighbour",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Adult in a mustard jacket on the sunlit sidewalk.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Inhales deeply (chest and shoulders rise), exhales, then looks up and around."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Sunlit shopfront background."
+            }
+          ],
+          "animation_plan": [
+            "6.15s neighbour lowers gaze from the sky; 6.65-8.15s deep breath in and out; then looks up again."
+          ],
+          "lighting": "Hard sun from upper left; ground bounce from below; no sky fill.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "still breathe",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "blue is gone",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.4,
+          "duration_s": 1.6,
+          "kind": "music_swell",
+          "description": "Thin glassy pad as the sun appears.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "From the breathing neighbour to the shadow they stand beside."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 9.8,
+      "end_s": 16,
+      "narration": {
+        "text": "That blue was sunlight bouncing off the air itself, and it was lighting every shadow.",
+        "start_s": 9.92,
+        "end_s": 15.85,
+        "delivery_note": "Clear causal line with a turn: easy through \"bouncing off the air itself\", then weight on \"every shadow\".",
+        "pacing_energy": "crisp_mechanism",
+        "performance": {
+          "rate": 0.835
+        }
+      },
+      "viewer_question": "What did the blue sky actually do?",
+      "visual_payoff": "A walker vanishes into a razor-edged black shadow; half of a face goes black.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 9.8,
+          "end_s": 13.5,
+          "shot_type": "low shot from inside the shade: a walker steps out of the sun",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 9.8,
+                "position": [
+                  -6.4,
+                  0.85,
+                  1.9
+                ],
+                "look_at": [
+                  4,
+                  1.25,
+                  0.6
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 13.5,
+                "position": [
+                  -6,
+                  0.85,
+                  1.7
+                ],
+                "look_at": [
+                  4,
+                  1.15,
+                  0.7
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow low creep inside the shade while the walker approaches.",
+            "lens_notes": "Sunlit road and north facades behind; the razor-sharp shadow edge crosses the road; the walker turns from a lit figure into a silhouette as they step over it.",
+            "handheld_sway": 0.2
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:01",
+            "metric_label": "SHADE LIGHT",
+            "start_value": 20,
+            "end_value": 20,
+            "unit": "%",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Shadow edge of the 19.2 m south block crosses the road."
+            },
+            {
+              "id": "crosser",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Pedestrian in a white shirt crossing south.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Walks from sun into shade; the sunlit body turns to a dark silhouette lit only from below."
+            }
+          ],
+          "animation_plan": [
+            "9.8-13.5s crosser walks south toward camera, crossing the shadow edge at undefineds and continuing as a near-black silhouette."
+          ],
+          "lighting": "Shade lit only by light reflected from sunlit pavement and facades.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 13.5,
+          "end_s": 16,
+          "shot_type": "profile close-up: half a face in black",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 13.5,
+                "position": [
+                  9.3,
+                  1.62,
+                  0.2
+                ],
+                "look_at": [
+                  9.3,
+                  1.6,
+                  -2.4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 16,
+                "position": [
+                  9.3,
+                  1.62,
+                  -0.6
+                ],
+                "look_at": [
+                  9.3,
+                  1.6,
+                  -2.4
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push in on the neighbour in profile.",
+            "lens_notes": "Sunward half of the head and shoulders bright, far half nearly black: even the shadow side of a face lost its light.",
+            "handheld_sway": 0.25
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:01",
+            "metric_label": "SHADE LIGHT",
+            "start_value": 20,
+            "end_value": 20,
+            "unit": "%",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "neighbour",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Same neighbour in profile.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Turns head slowly toward camera, revealing the black side, then back."
+            }
+          ],
+          "animation_plan": [
+            "13.5-16s head turn 0 -> 0.5 rad and back while breathing."
+          ],
+          "lighting": "Single hard key; fill only from sunlit ground.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "bouncing off the air",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "every shadow",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 11.1,
+          "duration_s": 0.6,
+          "kind": "texture",
+          "description": "Muffled hush as the walker enters shade.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut to your own feet stepping off the kerb toward that shade."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 16,
+      "end_s": 21.6,
+      "narration": {
+        "text": "Now step into the shade, and you're blind, like driving into a tunnel.",
+        "start_s": 16.12,
+        "end_s": 21.45,
+        "delivery_note": "A dare that goes wrong: tighten toward \"blind\", then the tunnel comparison quickly.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.815
+        }
+      },
+      "viewer_question": "Can you see once you are in the shade?",
+      "visual_payoff": "The view goes black at the shadow edge, then dim shapes and a waiting stranger emerge as eyes adapt.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 16,
+          "end_s": 21.6,
+          "shot_type": "POV walk across the zebra into the shade",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 16,
+                "position": [
+                  1.4,
+                  1.64,
+                  0.4
+                ],
+                "look_at": [
+                  -20,
+                  1.5,
+                  -1.5
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 21.6,
+                "position": [
+                  -6.5,
+                  1.62,
+                  0.1
+                ],
+                "look_at": [
+                  -20,
+                  1.6,
+                  -1.2
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Steady walking pace south across the crossing (1.45 m/s).",
+            "lens_notes": "Ahead the shaded sidewalk is a black void like a tunnel mouth; after the camera crosses the edge, exposure slowly adapts and shapes emerge.",
+            "handheld_sway": 0.45
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:02",
+            "metric_label": "SUN : SHADE",
+            "start_value": 45,
+            "end_value": 45,
+            "unit": "× BRIGHTER",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Shaded south shopfronts with lit interiors."
+            },
+            {
+              "id": "waiting",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "A pedestrian waiting in the shade at the kerb.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Invisible until the eyes adapt; shifts weight and checks a phone."
+            }
+          ],
+          "animation_plan": [
+            "16s start in sun; 17.75s cross the shadow edge; 17.75-18.45s frame nearly black; 18.45-21.6s exposure rises x5 (eye adaptation) revealing the kerb, shops and the waiting pedestrian."
+          ],
+          "lighting": "Sun-adapted exposure until the edge, then a timed adaptation ramp.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only",
+            "eye-adaptation exposure ramp"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "you're blind",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "tunnel",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 17.65,
+          "duration_s": 0.8,
+          "kind": "whoosh",
+          "description": "Pressure-like muffle crossing the shadow edge.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 16,
+          "duration_s": 5,
+          "kind": "texture",
+          "description": "Footsteps and a slow heartbeat.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Hard cut to the driver who cannot see into that shade."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "twist",
+      "start_s": 21.6,
+      "end_s": 27.9,
+      "narration": {
+        "text": "Shade used to protect you. Now it hides you, even from drivers.",
+        "start_s": 21.72,
+        "end_s": 27.75,
+        "delivery_note": "Reversal: unhurried \"Shade used to protect you\", then cooler and faster \"Now it hides you, even from drivers.\"",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.82,
+          "pauses": [
+            {
+              "after_word": 5,
+              "duration_s": 0.3
+            }
+          ]
+        }
+      },
+      "viewer_question": "Who else can see you in the shade?",
+      "visual_payoff": "You step out of black shade into a car’s path; the driver brakes hard and stops short.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 21.6,
+          "end_s": 27.9,
+          "shot_type": "driver POV: near miss at the crossing",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 21.6,
+                "position": [
+                  3.1,
+                  1.22,
+                  55.5
+                ],
+                "look_at": [
+                  -0.5,
+                  1.05,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 25.05,
+                "position": [
+                  3.1,
+                  1.22,
+                  17.2
+                ],
+                "look_at": [
+                  -1.5,
+                  1.05,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 27.9,
+                "position": [
+                  3.1,
+                  1.22,
+                  3.4
+                ],
+                "look_at": [
+                  -2.6,
+                  1.2,
+                  -4.5
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Westbound at 40 km/h in the sunlit lane; analytic braking from the reveal to a stop with the bumper 1.2 m short of the pedestrian (runtime replaces the linear keyframes with the continuous braking profile).",
+            "lens_notes": "Bonnet and roof edge frame the view; the left half of the road and the south sidewalk are black; the pedestrian is invisible until stepping into sun.",
+            "handheld_sway": 0.15,
+            "impulse_shake": {
+              "at_s": 25.5,
+              "duration_s": 1.2,
+              "intensity": 0.8
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:03",
+            "metric_label": "SPEED",
+            "start_value": 40,
+            "end_value": 0,
+            "unit": "km/h",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "povcar",
+              "kind": "other",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Driver view over a grey bonnet.",
+              "geometry_and_material": "makeClassicCityCar body with clearcoat paint, emissive headlights; driver dash from modeling-helpers-v1.",
+              "scale_and_accuracy": "4.3 m saloon; 40 km/h urban speed, about 7 m/s2 emergency braking.",
+              "movement": "Constant 11.1 m/s, brakes hard after the reveal and stops."
+            },
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You, in a dark red jacket, crossing from the shaded side.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Walks north through the shade unseen; steps into sun at 25.05s; flinches and steps back as the car stops."
+            },
+            {
+              "id": "oncoming",
+              "kind": "other",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Eastbound car in the shaded lane with headlights on at noon.",
+              "geometry_and_material": "makeClassicCityCar body with clearcoat paint, emissive headlights; driver dash from modeling-helpers-v1.",
+              "scale_and_accuracy": "4.3 m saloon; 40 km/h urban speed, about 7 m/s2 emergency braking.",
+              "movement": "Passes in the opposite lane."
+            }
+          ],
+          "animation_plan": [
+            "21.6-25.05s approach; pedestrian crosses in black shade.",
+            "25.05s pedestrian enters sunlight 4 m ahead of the lane; 25.5s brakes bite with camera shake; 27.09s stop; pedestrian recoils."
+          ],
+          "lighting": "Sun-adapted driver exposure; cabin roof shadow.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only",
+            "impulse shake on braking"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "hides you",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "drivers",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 21.6,
+          "duration_s": 3,
+          "kind": "ambience",
+          "description": "Car interior engine hum.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 24.75,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Bed drops out before the reveal.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 25.5,
+          "duration_s": 1.4,
+          "kind": "impact",
+          "description": "Brake thump and tyre squeal.",
+          "relative_db": -8
+        },
+        {
+          "at_s": 25.65,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Short horn blast.",
+          "relative_db": -12
+        }
+      ],
+      "claim_ids": [
+        "CL05",
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut back to you retreating into the shade."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 27.9,
+      "end_s": 34.3,
+      "narration": {
+        "text": "Back in the shade, your eyes adjust, and stars come out at noon.",
+        "start_s": 28.02,
+        "end_s": 34.15,
+        "delivery_note": "Wonder after danger: unhurried, let \"stars come out at noon\" open up.",
+        "pacing_energy": "weighty_impact",
+        "performance": {
+          "rate": 0.7
+        }
+      },
+      "viewer_question": "What does the black sky look like from the shade?",
+      "visual_payoff": "From deep shade, stars appear over sunlit rooftops at noon.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 27.9,
+          "end_s": 30.8,
+          "shot_type": "shade-adapted medium shot: you step back into shade and look up",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 27.9,
+                "position": [
+                  -8.7,
+                  1.5,
+                  4
+                ],
+                "look_at": [
+                  -5.7,
+                  1.45,
+                  0.3
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 30.8,
+                "position": [
+                  -8.9,
+                  1.45,
+                  3.6
+                ],
+                "look_at": [
+                  -5.8,
+                  1.75,
+                  0.3
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift as you settle on the shaded kerb and tip your head up.",
+            "lens_notes": "Shade-adapted exposure: you are readable, the sunlit road behind blows out to white.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:04",
+            "metric_label": "SUN ALTITUDE",
+            "start_value": 60,
+            "end_value": 60,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You, back on the shaded kerb.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Steps back into shade, plants feet, raises a hand to the brow and looks up."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Overexposed sunlit road behind."
+            }
+          ],
+          "animation_plan": [
+            "27.9-29s step back; 29-30.8s hand to brow and head tilts up."
+          ],
+          "lighting": "Exposure x5 (shade-adapted); shade lit by reflected light.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only",
+            "shade-adapted exposure"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 30.8,
+          "end_s": 34.3,
+          "shot_type": "POV looking up from deep shade: stars at noon",
+          "world": "1 unit = 1 m. Coastal east-west street at about 30°N on an equinox noon: city-street-block-v1 classic kit, seed 1102, 7 blocks of 5-8 storeys, dry granite and asphalt. Sun 60 degrees high in the south (-X, slightly west), white, direct beam unchanged; sky-dome-v1 scatter 1 -> 0 at the event, starfield-v1 above, no aerial haze afterwards.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 30.8,
+                "position": [
+                  -9.2,
+                  1.6,
+                  1.2
+                ],
+                "look_at": [
+                  5,
+                  16,
+                  -6
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 34.3,
+                "position": [
+                  -9.2,
+                  1.6,
+                  1.1
+                ],
+                "look_at": [
+                  4,
+                  19,
+                  -8
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow tilt up the sunlit north facades into the black sky strip.",
+            "lens_notes": "Sunlit rooftops glow at the bottom; stars multiply as the eyes adapt.",
+            "handheld_sway": 0.25
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 12:04",
+            "metric_label": "SUN ALTITUDE",
+            "start_value": 60,
+            "end_value": 60,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "stars",
+              "kind": "stars",
+              "asset_hint": "starfield-v1",
+              "appearance": "Bright stars and planets in the black daytime sky; fainter ones appear as eyes adapt.",
+              "geometry_and_material": "Seeded additive point sprites, brightness tied to the eye-adaptation exposure.",
+              "scale_and_accuracy": "Only the brightest stars are shown in sunlit views, consistent with glare limits.",
+              "movement": "Brightness 0.4 -> 2.6 as adaptation proceeds; planet-bright points first."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Sunlit north roofline."
+            },
+            {
+              "id": "sky",
+              "kind": "atmosphere",
+              "asset_hint": "sky-dome-v1",
+              "appearance": "Clear blue noon sky with a soft aureole that drains to pure black; afterwards only the sun disc and stars.",
+              "geometry_and_material": "Camera-centred SkyDome with scatter multiplier; environment bake swapped from blue sky to ground-bounce-only.",
+              "scale_and_accuracy": "Fictional premise: molecular and haze scattering removed; air, pressure and weather unchanged.",
+              "movement": "Black."
+            }
+          ],
+          "animation_plan": [
+            "30.8-34.3s exposure and star brightness rise together; more stars appear in seeded order."
+          ],
+          "lighting": "Shade-adapted exposure; rooftops near clipping.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only",
+            "star brightness ramp"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "stars come out at noon",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 30.8,
+          "duration_s": 3,
+          "kind": "music_swell",
+          "description": "Glassy shimmer as stars appear.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Time jump from noon to evening on the same street."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "escalation",
+      "start_s": 34.3,
+      "end_s": 41.5,
+      "narration": {
+        "text": "Then evening comes. No orange, no glow. The sun stays white almost all the way down.",
+        "start_s": 34.42,
+        "end_s": 41.35,
+        "delivery_note": "Calm observation after a time jump; list \"No orange, no glow\" crisply, ease through the long last clause.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.93
+        }
+      },
+      "viewer_question": "What happens to sunset without a sky?",
+      "visual_payoff": "A white sun sits above the sea at the end of the street with no coloured glow.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 34.3,
+          "end_s": 37.8,
+          "shot_type": "wide eye-level view west at evening",
+          "world": "1 unit = 1 m. Same street looking west to a seawall promenade and ocean-surface-v1 horizon; sun on the street axis just above the sea; black sky, starfield-v1, lamps and shop windows lit.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 34.3,
+                "position": [
+                  1.5,
+                  1.62,
+                  24
+                ],
+                "look_at": [
+                  0,
+                  3.5,
+                  -200
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 37.8,
+                "position": [
+                  1.3,
+                  1.62,
+                  18
+                ],
+                "look_at": [
+                  0,
+                  3.3,
+                  -200
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow walk-pace push west.",
+            "lens_notes": "White sun at the end of the canyon above the sea; black facades on both sides; glare along the road; walkers in silhouette.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 17:48",
+            "metric_label": "SUN ALTITUDE",
+            "start_value": 2.12,
+            "end_value": 1.37,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "sun",
+              "kind": "sun",
+              "asset_hint": "sun-skylight-rig-v1",
+              "appearance": "Small white disc 0.53 degrees across, blooming slightly; it never reddens.",
+              "geometry_and_material": "World-space disc 9 km away, depth-tested so the sea or ground clips it; light scaled by the visible disc fraction.",
+              "scale_and_accuracy": "True angular size; altitude from 30°N equinox geometry.",
+              "movement": "Descends along the street axis."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Facades parallel to the rays stay black; lamps and windows lit."
+            },
+            {
+              "id": "walkers",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Three pedestrians walking home.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Silhouettes with long shadows toward camera."
+            },
+            {
+              "id": "sea",
+              "kind": "water",
+              "asset_hint": "ocean-surface-v1",
+              "appearance": "Calm sea beyond a seawall; a white sun-glitter path, no coloured reflection.",
+              "geometry_and_material": "Flat analytic wave plane with black sky reflection and sun glitter.",
+              "scale_and_accuracy": "Sea level 1.2 m below the promenade; horizon about 0.03 degrees below eye level.",
+              "movement": "Glitter path white."
+            }
+          ],
+          "animation_plan": [
+            "34.3-37.8s sun altitude 2.12 -> 1.37 degrees (time compressed)."
+          ],
+          "lighting": "Sun from the west at grazing incidence, light scaled by disc fraction; lamps 25 cd; no sky fill.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 37.8,
+          "end_s": 41.5,
+          "shot_type": "telephoto on the white sun above the sea",
+          "world": "1 unit = 1 m. Same street looking west to a seawall promenade and ocean-surface-v1 horizon; sun on the street axis just above the sea; black sky, starfield-v1, lamps and shop windows lit.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 14,
+            "keyframes": [
+              {
+                "t_s": 37.8,
+                "position": [
+                  0.4,
+                  1.7,
+                  -112
+                ],
+                "look_at": [
+                  0,
+                  160,
+                  -9000
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 41.5,
+                "position": [
+                  0.4,
+                  1.7,
+                  -112.4
+                ],
+                "look_at": [
+                  0,
+                  150,
+                  -9000
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Locked telephoto, imperceptible creep.",
+            "lens_notes": "Close to the seawall so a band of sea shows above the railing; sun disc large enough to read the limb touching the sea.",
+            "handheld_sway": 0.12
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 17:52",
+            "metric_label": "SUN ALTITUDE",
+            "start_value": 1.37,
+            "end_value": 0.58,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "sun",
+              "kind": "sun",
+              "asset_hint": "sun-skylight-rig-v1",
+              "appearance": "Small white disc 0.53 degrees across, blooming slightly; it never reddens.",
+              "geometry_and_material": "World-space disc 9 km away, depth-tested so the sea or ground clips it; light scaled by the visible disc fraction.",
+              "scale_and_accuracy": "True angular size; altitude from 30°N equinox geometry.",
+              "movement": "Still white; descends toward the horizon."
+            },
+            {
+              "id": "sea",
+              "kind": "water",
+              "asset_hint": "ocean-surface-v1",
+              "appearance": "Calm sea beyond a seawall; a white sun-glitter path, no coloured reflection.",
+              "geometry_and_material": "Flat analytic wave plane with black sky reflection and sun glitter.",
+              "scale_and_accuracy": "Sea level 1.2 m below the promenade; horizon about 0.03 degrees below eye level.",
+              "movement": "White glitter path."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Promenade railing and lamp post silhouettes."
+            }
+          ],
+          "animation_plan": [
+            "37.8-41.5s sun altitude 1.37 -> 0.58 degrees."
+          ],
+          "lighting": "Sun disc HDR; no reddening.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "No orange",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "white",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 34.5,
+          "duration_s": 6.5,
+          "kind": "ambience",
+          "description": "Promenade waves and distant gulls.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "The locked telephoto continues across the scene boundary."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "second_order_effect",
+      "start_s": 41.5,
+      "end_s": 47.3,
+      "narration": {
+        "text": "It slips into the sea, and night doesn't fall. It drops.",
+        "start_s": 41.62,
+        "end_s": 47.15,
+        "delivery_note": "Hushed and exact; a held beat before \"It drops.\"",
+        "pacing_energy": "reflective_payoff",
+        "performance": {
+          "rate": 0.72,
+          "pauses": [
+            {
+              "after_word": 9,
+              "duration_s": 0.5
+            }
+          ]
+        }
+      },
+      "viewer_question": "How long does dusk last?",
+      "visual_payoff": "The last sliver vanishes and the street drops straight into night; windows click on.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 41.5,
+          "end_s": 44.4,
+          "shot_type": "telephoto: the disc slips into the sea",
+          "world": "1 unit = 1 m. Same street looking west to a seawall promenade and ocean-surface-v1 horizon; sun on the street axis just above the sea; black sky, starfield-v1, lamps and shop windows lit.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 14,
+            "keyframes": [
+              {
+                "t_s": 41.5,
+                "position": [
+                  0.4,
+                  1.7,
+                  -112.4
+                ],
+                "look_at": [
+                  0,
+                  150,
+                  -9000
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 44.4,
+                "position": [
+                  0.4,
+                  1.7,
+                  -112.7
+                ],
+                "look_at": [
+                  0,
+                  140,
+                  -9000
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Locked telephoto continues.",
+            "lens_notes": "The disc is cut by the horizon, still white to the last sliver.",
+            "handheld_sway": 0.12
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 17:55",
+            "metric_label": "SUN ALTITUDE",
+            "start_value": 0.58,
+            "end_value": -0.04,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "sun",
+              "kind": "sun",
+              "asset_hint": "sun-skylight-rig-v1",
+              "appearance": "Small white disc 0.53 degrees across, blooming slightly; it never reddens.",
+              "geometry_and_material": "World-space disc 9 km away, depth-tested so the sea or ground clips it; light scaled by the visible disc fraction.",
+              "scale_and_accuracy": "True angular size; altitude from 30°N equinox geometry.",
+              "movement": "Bottom limb touches, then half sets."
+            },
+            {
+              "id": "sea",
+              "kind": "water",
+              "asset_hint": "ocean-surface-v1",
+              "appearance": "Calm sea beyond a seawall; a white sun-glitter path, no coloured reflection.",
+              "geometry_and_material": "Flat analytic wave plane with black sky reflection and sun glitter.",
+              "scale_and_accuracy": "Sea level 1.2 m below the promenade; horizon about 0.03 degrees below eye level.",
+              "movement": "Glitter shrinks with the disc."
+            }
+          ],
+          "animation_plan": [
+            "41.5-44.4s sun altitude 0.58 -> -0.04 degrees; bottom limb touches the sea at 43.1s; visible disc fraction falls."
+          ],
+          "lighting": "Direct light scales with the visible disc fraction.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 44.4,
+          "end_s": 47.3,
+          "shot_type": "medium shot: the last light on a face goes out",
+          "world": "1 unit = 1 m. Same street looking west to a seawall promenade and ocean-surface-v1 horizon; sun on the street axis just above the sea; black sky, starfield-v1, lamps and shop windows lit.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 44.4,
+                "position": [
+                  6.6,
+                  1.58,
+                  -12.4
+                ],
+                "look_at": [
+                  8.7,
+                  1.45,
+                  -10.2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 47.3,
+                "position": [
+                  6.75,
+                  1.58,
+                  -12.6
+                ],
+                "look_at": [
+                  8.7,
+                  1.5,
+                  -10.2
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift around a walker who has stopped to watch the sunset.",
+            "lens_notes": "Front-left three-quarter view: the face and coat lit edge-on by the last sliver from the west, unlit facade and lit shop windows behind; after the drop only lamplight remains.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 17:58",
+            "metric_label": "DIRECT SUN",
+            "start_value": 50,
+            "end_value": 0,
+            "unit": "%",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "watcher",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "A walker in a dark red coat facing the sunset on the north sidewalk.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Stands watching west; the lit half of the face dims with the disc and goes dark at 45.6s; turns to look around as windows click on."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Facade windows behind switch on in a staggered sequence from 45.75s."
+            },
+            {
+              "id": "sun",
+              "kind": "sun",
+              "asset_hint": "sun-skylight-rig-v1",
+              "appearance": "Small white disc 0.53 degrees across, blooming slightly; it never reddens.",
+              "geometry_and_material": "World-space disc 9 km away, depth-tested so the sea or ground clips it; light scaled by the visible disc fraction.",
+              "scale_and_accuracy": "True angular size; altitude from 30°N equinox geometry.",
+              "movement": "Out of frame to the left; its light on the face is the clock."
+            }
+          ],
+          "animation_plan": [
+            "44.4-45.6s direct light on the face falls with the visible disc fraction (about 50 percent to 0).",
+            "45.3-45.6s silence; 45.6s last light gone; 45.75-46.7s windows switch on in sequence; 45.9-47.3s eyes adapt to lamplight."
+          ],
+          "lighting": "Grazing white sun on west-facing surfaces only, then the nearest street lamp from above.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "It drops.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 45.3,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Everything ducks before the light goes.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 45.6,
+          "duration_s": 1.6,
+          "kind": "impact",
+          "description": "Deep sub drop as the light goes out.",
+          "relative_db": -8
+        },
+        {
+          "at_s": 45.75,
+          "duration_s": 0.9,
+          "kind": "impact",
+          "description": "Staggered window-switch clicks, 120 ms apart.",
+          "relative_db": -14
+        }
+      ],
+      "claim_ids": [
+        "CL08",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "Night to the next morning on the same street."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 47.3,
+      "end_s": 53,
+      "narration": {
+        "text": "And in the morning, the sun doesn't rise. It switches on.",
+        "start_s": 47.42,
+        "end_s": 52.85,
+        "delivery_note": "Dry payoff: set up \"doesn’t rise\", land \"switches on\" with a smile.",
+        "pacing_energy": "reflective_payoff",
+        "performance": {
+          "rate": 0.69,
+          "pauses": [
+            {
+              "after_word": 8,
+              "duration_s": 0.4
+            }
+          ]
+        }
+      },
+      "viewer_question": "What does sunrise look like?",
+      "visual_payoff": "The sun pops over the horizon and floods the dark street in one frame; lamps click off.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 47.3,
+          "end_s": 51.6,
+          "shot_type": "eye-level view east: the sun pops over the hills",
+          "world": "1 unit = 1 m. Same street the next morning looking east along an open corridor to low hills on the horizon (top 0.9 degrees above eye level); black sky and stars, lamps lit until sunrise.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 47.3,
+                "position": [
+                  -2.2,
+                  1.62,
+                  -20
+                ],
+                "look_at": [
+                  0,
+                  3.4,
+                  300
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 51.6,
+                "position": [
+                  -2.05,
+                  1.62,
+                  -18.2
+                ],
+                "look_at": [
+                  0,
+                  3.1,
+                  300
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push east.",
+            "lens_notes": "Night street with lamps; the gap at the end of the street over the hills is the reveal point.",
+            "handheld_sway": 0.3,
+            "impulse_shake": {
+              "at_s": 51.25,
+              "duration_s": 0.6,
+              "intensity": 0.25
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 05:56",
+            "metric_label": "DIRECT SUN",
+            "start_value": 0,
+            "end_value": 100,
+            "unit": "%",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "sun",
+              "kind": "sun",
+              "asset_hint": "sun-skylight-rig-v1",
+              "appearance": "Small white disc 0.53 degrees across, blooming slightly; it never reddens.",
+              "geometry_and_material": "World-space disc 9 km away, depth-tested so the sea or ground clips it; light scaled by the visible disc fraction.",
+              "scale_and_accuracy": "True angular size; altitude from 30°N equinox geometry.",
+              "movement": "Top limb clears the eastern hills at 51.25s."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "Lamps and windows lit; road glare appears far down the street at sunrise."
+            },
+            {
+              "id": "walkers",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "An early commuter.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Walks west on the north sidewalk."
+            }
+          ],
+          "animation_plan": [
+            "47.3-51.25s night; 51.25s the limb appears and direct light jumps from zero; exposure flashes as eyes are caught dark-adapted."
+          ],
+          "lighting": "Lamps only, then the low sun along the street axis.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 51.6,
+          "end_s": 53,
+          "shot_type": "reverse angle west: the street switched on",
+          "world": "1 unit = 1 m. Same street the next morning looking east along an open corridor to low hills on the horizon (top 0.9 degrees above eye level); black sky and stars, lamps lit until sunrise.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 51.6,
+                "position": [
+                  -3,
+                  1.62,
+                  82
+                ],
+                "look_at": [
+                  13,
+                  11,
+                  38
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 53,
+                "position": [
+                  -2.9,
+                  1.62,
+                  81.4
+                ],
+                "look_at": [
+                  13,
+                  11.4,
+                  38
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Cut on the word \"on\" to the reverse angle; slow drift.",
+            "lens_notes": "Sun behind the camera: the east wall of the last north block blazes beside the dark street canyon, a walker approaches in the new light, black sky above, echoing the opening frame.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 06:00",
+            "metric_label": "DIRECT SUN",
+            "start_value": 0,
+            "end_value": 100,
+            "unit": "%",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone and brick facades with shopfronts, awnings, lamps, zebra crossing and kerbs; north facades sunlit, south facades in shade.",
+              "geometry_and_material": "CityStreetClassic seed 1102 (merged static geometry, physical road, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings; the 19.2 m block at the crossing puts the noon shadow edge 1 m left of the road centre.",
+              "movement": "East-facing block ends blaze white; lamps click off one by one from 51.65s."
+            },
+            {
+              "id": "walkers",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "A walker heading east toward camera.",
+              "geometry_and_material": "Registered articulated Humanoid rig, matte clothing and skin; sunward side lit, far side lit only by ground bounce.",
+              "scale_and_accuracy": "Adults 1.62-1.82 m; gait driven by distance travelled.",
+              "movement": "Front lit by the new sun, long shadow behind."
+            },
+            {
+              "id": "sky",
+              "kind": "atmosphere",
+              "asset_hint": "sky-dome-v1",
+              "appearance": "Clear blue noon sky with a soft aureole that drains to pure black; afterwards only the sun disc and stars.",
+              "geometry_and_material": "Camera-centred SkyDome with scatter multiplier; environment bake swapped from blue sky to ground-bounce-only.",
+              "scale_and_accuracy": "Fictional premise: molecular and haze scattering removed; air, pressure and weather unchanged.",
+              "movement": "Still black with stars."
+            }
+          ],
+          "animation_plan": [
+            "51.6-53s the switched-on street holds; lamps finish switching off; the sky stays black."
+          ],
+          "lighting": "Low sun from behind camera on east-facing surfaces; no sky fill.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom on the sun disc and lamps",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "switches on",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 50.95,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Night bed ducks before sunrise.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 51.25,
+          "duration_s": 1.2,
+          "kind": "impact",
+          "description": "Light-switch clack with a bright chord.",
+          "relative_db": -8
+        },
+        {
+          "at_s": 51.65,
+          "duration_s": 0.8,
+          "kind": "impact",
+          "description": "Lamps clicking off, 140 ms apart.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Final frame: a sunlit street under a black sky, matching the opening."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json read 2026-10-15 (94 entries); classic street, Humanoid, character motion, sky dome, starfield and ocean implementations inspected.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "The single coastal street for every scene; makeClassicCityCar for the driver POV, parked and oncoming cars.",
+        "configuration": "CityStreetClassic seed 1102, blocks 7, storeys 5-8, wetness 0.15, vehicles false; far field cleared west of the seawall and along the east corridor."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "You, the neighbour, the crosser, the waiting pedestrian and walkers.",
+        "configuration": "Heights 1.62-1.82 m, distinct jacket colours; reachArm for shading eyes."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Planted acting and grounded standing poses.",
+        "configuration": "applyGroundedPose for standing reactions."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Blue noon sky that drains to black and the black night/dawn sky.",
+        "configuration": "scatter 1 -> 0, aureole glow scaled with scatter, built-in sun disc disabled."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Stars in the black sky at noon, evening and dawn.",
+        "configuration": "seed 31, 3200 stars, minY -0.02, brightness tied to eye adaptation."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Sea horizon for the colourless sunset.",
+        "configuration": "size 6000 m west of the seawall, level -1.2 m, black sky reflection, glitter from the live sun direction."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Driver dashboard, seawall, railing and planters.",
+        "configuration": "box/solid helpers with matte surfaces."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Eye-level sway, impulse shake on braking and sunrise.",
+        "configuration": "handheld_sway 0.12-0.45; braking profile override documented in the shot."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic 30 fps render with per-shot exposure functions for eye adaptation.",
+        "configuration": "Post exposure as a function of time; two cross-dissolves."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Top-left telemetry with live values.",
+        "configuration": "x 90, y 240; skylight, shade light, speed and sun altitude."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in Whisper-timed captions.",
+        "configuration": "72 px, baseline 1320, #FACC15 active word."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original procedural score and Foley.",
+        "configuration": "Pads, noise beds, sub drops, clicks and pre-impact vacuum."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Seeded RNG for walkers, stars and switching order.",
+        "configuration": "rng() from util/math.ts."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Captions and HUD.",
+        "configuration": "Inter 600/700."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline.",
+        "configuration": "Bebas Neue."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover from the stars-at-noon frame.",
+        "configuration": "headline, badge 12:00 PM, arrow, dramatic grade."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "sun-skylight-rig-v1",
+        "description": "Outdoor lighting rig that separates direct sun, skylight fill, ground bounce, environment reflections and aerial haze with one scatter control, plus a world-space horizon-clipped sun disc whose light follows the visible disc fraction.",
+        "reusable_in": "Any outdoor story that changes the sky: thin or missing atmospheres, eclipses, Mars or Moon daylight, smoke and haze events, sunsets on other planets.",
+        "parameters": [
+          "sunDirection",
+          "sunIntensity",
+          "skyAmount",
+          "skyColor",
+          "bounceColor",
+          "bounceAmount",
+          "hazeDensity",
+          "discAngularRadius",
+          "discDistance",
+          "shadowBounds"
+        ],
+        "suggested_path": "src/library/environment/SunSkylightRig.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Driver dashboard and A-pillars (box helpers)",
+      "Seawall promenade with railing (box helpers)",
+      "Far-field instance clearing for the west sea and east sunrise corridors"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if the sky disappeared, why is the sky blue, no atmosphere scattering, stars during the day",
+    "core_keywords": [
+      "what if the sky disappeared",
+      "why is the sky blue",
+      "rayleigh scattering explained",
+      "black sky at noon",
+      "stars during the day",
+      "no twilight",
+      "earth science what if",
+      "physics thought experiment",
+      "threejs 3d documentary",
+      "sky science simulation"
+    ],
+    "distinctive_angle": "The air stays and only its glow disappears: the consequences are optical and personal, from blind spots in shade to sunsets that end like a switch.",
+    "comment_bait_question": "Which would you miss first: blue sky, sunsets, or being able to see in the shade?",
+    "seo_integrity_note": "Fictional optical premise with breathing, pressure and weather unchanged; shade and visibility figures are estimates for one street; the near miss is an illustrative event."
+  },
+  "delivery": {
+    "video_output": "output/sky-disappeared.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 33.85,
+    "headline": "STARS AT NOON?!",
+    "highlight": [
+      "NOON"
+    ],
+    "position": "bottom",
+    "badge": "12:00 PM",
+    "focus": [
+      0.52,
+      0.34
+    ],
+    "zoom": 1.12,
+    "arrow": true,
+    "style": "bold",
+    "font": "bebas-neue",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#38BDF8",
+      "badge": "#FACC15",
+      "badge_text": "#0B1220",
+      "arrow": "#FACC15"
+    },
+    "grade": "vivid",
+    "tilt": -3
+  }
+}
