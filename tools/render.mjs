@@ -95,6 +95,10 @@ fs.writeFileSync(path.join(webDir, 'index.html'), `<!doctype html><meta charset=
 const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2', '.wav': 'audio/wav' };
 const server = http.createServer((req, res) => {
   if (new URL(req.url, 'http://x').pathname === '/favicon.ico') { res.writeHead(204); res.end(); return; }
+  if (clean && new URL(req.url, 'http://x').pathname === `/build/${slug}/audio/narration.json`
+    && !fs.existsSync(path.join(buildDir, 'audio', 'narration.json'))) {
+    res.writeHead(204); res.end(); return;
+  }
   if (previewNarration && new URL(req.url, 'http://x').pathname === `/build/${slug}/audio/narration.json`) {
     res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' });
     res.end(JSON.stringify(previewNarration)); return;
@@ -121,7 +125,10 @@ const page = await browser.newPage({ viewport: { width: 540, height: 960 } });
 const runtimeErrors = [];
 page.on('requestfailed', (request) => runtimeErrors.push(`${request.url()}: ${request.failure()?.errorText}`));
 page.on('response', (response) => { if (response.status() >= 400) runtimeErrors.push(`${response.status()} ${response.url()}`); });
-page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log(`[page ${m.type()}] ${m.text().slice(0, 600)}`); });
+page.on('console', (m) => {
+  if (m.type() === 'error') runtimeErrors.push(m.text());
+  if (m.type() === 'error' || m.type() === 'warning') console.log(`[page ${m.type()}] ${m.text().slice(0, 600)}`);
+});
 page.on('pageerror', (e) => { runtimeErrors.push(String(e.stack ?? e)); console.log(`[page error] ${String(e.stack ?? e).slice(0, 1200)}`); });
 await page.goto(`http://127.0.0.1:${port}/build/${slug}/web/index.html?slug=${slug}&scale=${scale}`);
 let info;
@@ -193,6 +200,7 @@ if (preview) {
     if (i % 150 === 0) console.log(`frame ${i}/${total} (${((Date.now() - t0) / 1000).toFixed(0)}s)`);
   }
   ff.stdin.end(); await done;
+  if (runtimeErrors.length) throw new Error(`Final render encountered runtime/resource errors: ${runtimeErrors.join('; ')}`);
   console.log(`encoded ${path.relative(ROOT, out)} in ${((Date.now() - t0) / 1000).toFixed(0)}s`);
   await writeThumbnail();
 }

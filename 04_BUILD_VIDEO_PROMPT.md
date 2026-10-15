@@ -35,7 +35,7 @@ For character work, apply `references/character-animation.md`: stage attention a
    - **NO 2D TEXTBOOK CHARTS OR FLOATING RULERS:** Never build standalone 2D bar charts, disembodied measuring cylinders, or floating wooden rulers when a 3D environment stage (`city-street-block-v1`, `dune-field-v1`, `ocean-surface-v1`, `terrain-massif-v1`, `room-box-v1`) can show the physical consequence directly.
    - **NO FROZEN BACK-OF-HEAD MANNEQUINS:** Never place `humanoid-figure-v1` or `pedestrian-crowd-v1` standing motionless with their back to the camera for more than 1.5 seconds. Give figures purposeful action, attention, or a readable reaction. Planted feet and a deliberate hold are valid; walking in place and unrelated motion do not satisfy the direction requirement. A stable viewpoint can watch a changing environment.
    - **DOMESTIC / STREET-LEVEL POV ANCHORING:** Opening hook and human-impact street shots must frame the camera at human eye level (`y = 1.4–1.8 m`) with `handheld_sway` (`0.2–0.5`) enabled on `camera-keyframe-rig-v1`, and trigger `impulse_shake` on exact shockwave/impact timestamps.
-   - **SEQUENTIAL OBJECT FAILURE:** When depicting urban or environmental escalation, stagger object failure timestamps by `0.15–0.40s` across depth (e.g., foreground cars swerve/lift first, then roofs/streetlights, then background water/buildings) rather than animating everything on a single uniform ease.
+   - **CAUSAL OBJECT FAILURE:** When a disturbance propagates or objects respond independently, stagger failures at physically justified times (often `0.15–0.40s` apart). A stipulated instantaneous global change occurs simultaneously; do not invent a traveling wave. Sound contacts follow the actual visual events.
 
 ---
 
@@ -82,7 +82,7 @@ Read `skills/voice-direction/SKILL.md` and its performance reference. Complete A
 2. **Mandatory Acoustic Contrast:**
    - Honor `"silence"` cues in `audio_cues`: duck music and ambient beds by `-24 dB` for `0.25–0.35s` immediately before the primary impact or reveal. Use a sub-bass transient for a physical impact, or sound appropriate to the actual reveal for a story without destruction.
 3. **Staggered Multi-Tap Destruction Transients:**
-   - When multiple 3D objects fail across a scene (cars, roofs, windows, cranes), schedule staggered multi-tap `"impact"` and `"whoosh"` cues separated by `80–180 ms` aligned to the exact visual keyframes (`-6 dB` to `-10 dB` relative to voice).
+   - When multiple 3D objects fail at different times, align their `"impact"` and `"whoosh"` cues to those exact visual contacts (`-6 dB` to `-10 dB` relative to voice). `80–180 ms` is useful when the pictured failures support it; a story without destruction needs no destruction transients.
 4. **Loudness Normalization:**
    - Run `node tools/soundtrack.mjs <slug>` to mix narration, music, and SFX into `build/<slug>/audio/mix.wav` (48 kHz stereo) normalized to **`-14.0 LUFS`** with a true peak ceiling of **`-1.0 dBTP`**.
 
@@ -97,6 +97,7 @@ Read `skills/voice-direction/SKILL.md` and its performance reference. Complete A
    - Review without labels/captions, then with normal overlays and unchanged existing audio when available. Inspect action continuity, readable completed states, early reveal leaks, and repeated frames after out-of-order seeks. Fix direction failures before final rendering.
    - Use `--storyboard build/<slug>/direction-review/storyboard.json` only with `--preview` for an isolated camera/cut variant of the same film. Existing stage construction and film-specific overlays still come from the registered implementation; the variant does not create assets or rewrite the production storyboard.
 2. **Final MP4 & Thumbnail Render:**
+   - Before the final encode, review the complete assembled story with its actual voice, mix, HUD and captions: `node tools/render.mjs <slug> --preview build/<slug>/assembled-review.mp4 --range 0-<last-frame> --scale 0.5 --narration build/<slug>/audio/narration.json --audio build/<slug>/audio/mix.wav`. Check the opening promise, pivotal spoken/visible reveals, caption clearance, transitions and earned ending. Fix integration failures and review again. Record listening limitations honestly; passing components cannot establish the whole film's quality or viewer retention.
    - Run `node tools/render.mjs <slug> --final --crf 19` to produce `output/<slug>.mp4` (H.264 `yuv420p`, AAC 48 kHz stereo, `+faststart`) and `output/<slug>.jpg` (`thumbnail-title-card-v1` bold 1080×1920 cover at `thumbnail.time_s` with 2–5 word uppercase headline, quantified sticker `badge`, and `arrow`).
 
 ---

@@ -18,7 +18,10 @@ const env = { ...process.env, PATH: path.dirname(ffprobe) + path.delimiter + pro
 const probe = spawnSync(ffprobe, ['-v', 'error', '-show_entries', 'format=duration,size:stream=codec_type,codec_name,profile,pix_fmt,width,height,r_frame_rate,avg_frame_rate,nb_frames,sample_rate,channels', '-of', 'default=nw=1', path.join(ROOT, 'output', `${slug}.mp4`)], { encoding: 'utf8' });
 process.stdout.write(probe.stdout + probe.stderr);
 if (probe.status !== 0) process.exit(probe.status ?? 1);
-if (process.argv.includes('--probe-only')) process.exit(0);
+if (process.argv.includes('--probe-only')) {
+  const qa = spawnSync('python', [path.join(ROOT, 'scripts', 'finalize_video.py'), slug, '--probe-only'], { cwd: ROOT, env, stdio: 'inherit' });
+  process.exit(qa.status ?? 1);
+}
 const finalize = () => spawnSync('python', [path.join(ROOT, 'scripts', 'finalize_video.py'), slug], { cwd: ROOT, env, stdio: 'inherit' }).status ?? 1;
 if (finalize() !== 0) process.exit(1);
 if (process.argv.includes('--no-upload')) process.exit(0);

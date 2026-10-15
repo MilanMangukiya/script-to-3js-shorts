@@ -4,6 +4,8 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 | Rendered (UTC) | Video | Length | Publishing | Upload metadata |
 |---|---|---:|---|---|
+| 2026-10-15 | `earth-without-tilt` | 52s | rendered_not_published | [Copy metadata](metadata/earth-without-tilt.md) |
+| 2026-10-15 | `ozone-layer-gone-overnight` | 55s | rendered_not_published | [Copy metadata](metadata/ozone-layer-gone-overnight.md) |
 | 2026-10-15 | `sky-disappeared` | 53s | rendered_not_published | [Copy metadata](metadata/sky-disappeared.md) |
 | 2026-10-14 | `last-woman-alive` | 55s | rendered_not_published | [Copy metadata](metadata/last-woman-alive.md) |
 | 2026-10-14 | `last-man-alive` | 55s | rendered_not_published | [Copy metadata](metadata/last-man-alive.md) |
@@ -20,6 +22,270 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 | 2026-10-12 | `air-pressure-doubled` | 74s | rendered_not_published | [Copy metadata](metadata/air-pressure-doubled.md) |
 | 2026-10-12 | `ice-sank-instead-of-floating` | 74s | rendered_not_published | [Copy metadata](metadata/ice-sank-instead-of-floating.md) |
 | 2026-10-12 | `oxygen-gone-five-seconds` | 72s | rendered_not_published | [Copy metadata](metadata/oxygen-gone-five-seconds.md) |
+
+---
+
+## What if Earth's axis had no tilt?
+**Video:** `output/earth-without-tilt.mp4`\
+**Thumbnail:** `output/earth-without-tilt.jpg`\
+**Publishing copy:** `output/earth-without-tilt.md`\
+**Hugging Face:** [videos/016-earth-without-tilt.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/016-earth-without-tilt.mp4) · [videos/016-earth-without-tilt.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/016-earth-without-tilt.jpg) · [videos/016-earth-without-tilt.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/016-earth-without-tilt.md)\
+**Slug:** `earth-without-tilt` | **Duration:** 52s | **Rendered (UTC):** 2026-10-15T11:52:20Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** A permanently zero-obliquity Earth, not a sudden axis change. Rotation, present orbital eccentricity, solar output and geography remain. The barbecue is an illustrative personal story at 45 degrees north. Times are local solar time. Nonpolar geometric daylight is about twelve hours; solar-disc size, refraction and terrain affect visible sunrise and sunset. At the exact poles the geometric solar center stays on the horizon; at the equator the overhead Sun is specifically at solar noon. Equal daylight does not imply equal surface heating or one worldwide climate. The present eccentricity gives about 6.9 percent more incoming solar irradiance near January perihelion than July aphelion, affecting both hemispheres together. No temperatures, weather, agricultural outcomes or future ice extents are predicted. Existing polar scenery is illustrative. Month comparisons and the earlier dinner are explicit time jumps; no instantaneous physical transformation is depicted. Orbital body sizes and separation are scaled for readability; eccentricity and relative orbital distances are retained.
+**Assets reused:** earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, sun-skylight-rig-v1, flame-v1, broadleaf-tree-v1, sea-ice-v1, ocean-surface-v1, modeling-helpers-v1, camera-keyframe-rig-v1, caption-kinetic-v1, overlay-labels-v1, audio-synth-kit-v1, thumbnail-title-card-v1, grass-field-v1, city-street-block-v1, humanoid-figure-v1, character-motion-v1, smoke-wisp-v1, film-pipeline-v1, font-inter-v1, font-display-set-v1\
+**Assets created:** None
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if Earth's axis had no tilt? Your summer evenings vanish
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Your summer barbecue needs a lantern. Waiting until another month or chasing summer south won't restore a long evening on an Earth with no axial tilt. Equal days still bring very different sunlight angles. Even January's slightly stronger sunlight cannot restore tilt-driven summer evenings. The practical rescue is an earlier dinner.
+
+Would you trade long summer evenings for longer winter afternoons?
+
+Scope: A permanently zero-obliquity Earth, not a sudden axis change. Rotation, present orbital eccentricity, solar output and geography remain. The barbecue is an illustrative personal story at 45 degrees north. Times are local solar time. Nonpolar geometric daylight is about twelve hours; solar-disc size, refraction and terrain affect visible sunrise and sunset. At the exact poles the geometric solar center stays on the horizon; at the equator the overhead Sun is specifically at solar noon. Equal daylight does not imply equal surface heating or one worldwide climate. The present eccentricity gives about 6.9 percent more incoming solar irradiance near January perihelion than July aphelion, affecting both hemispheres together. No temperatures, weather, agricultural outcomes or future ice extents are predicted. Existing polar scenery is illustrative. Month comparisons and the earlier dinner are explicit time jumps; no instantaneous physical transformation is depicted.
+
+Sources:
+- NASA Space Place — What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/
+- NOAA National Weather Service — Why Do We Have Seasons?: https://www.weather.gov/lmk/seasons
+- NOAA JetStream — Global Weather: https://www.noaa.gov/jetstream/global
+- NASA NSSDC — Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html
+- NASA — Milankovitch Orbital Cycles and Their Role in Earth’s Climate: https://science.nasa.gov/science-research/earth-science/climate-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/
+
+Visuals: original deterministic Three.js animation with NASA Earth imagery. Narrator: local Kokoro am_michael. Original procedural music and Foley.
+
+Orbital body sizes and separation are scaled for readability; eccentricity and relative orbital distances are retained.
+
+#Shorts #WhatIf #EarthScience #Astronomy #Seasons #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if Earth had no tilt, zero obliquity, Earth seasons explained, daylight length, astronomy simulation, sunlight angle, Earth science thought experiment
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+You light the barbecue, but summer's long evenings have vanished. Can the equator or January save dinner? This 52-second astronomy thought experiment follows the attempt.
+
+Would you trade long summer evenings for longer winter afternoons?
+
+A permanently zero-obliquity Earth, not a sudden axis change. Rotation, present orbital eccentricity, solar output and geography remain. The barbecue is an illustrative personal story at 45 degrees north. Times are local solar time. Nonpolar geometric daylight is about twelve hours; solar-disc size, refraction and terrain affect visible sunrise and sunset. At the exact poles the geometric solar center stays on the horizon; at the equator the overhead Sun is specifically at solar noon. Equal daylight does not imply equal surface heating or one worldwide climate. The present eccentricity gives about 6.9 percent more incoming solar irradiance near January perihelion than July aphelion, affecting both hemispheres together. No temperatures, weather, agricultural outcomes or future ice extents are predicted. Existing polar scenery is illustrative. Month comparisons and the earlier dinner are explicit time jumps; no instantaneous physical transformation is depicted.
+
+#ScienceReels #WhatIf #EarthScience #Astronomy #Seasons #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if Earth's axis had no tilt?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Your summer barbecue needs a lantern. Waiting until another month or chasing summer south won't restore a long evening on an Earth with no axial tilt. Equal days still bring very different sunlight angles. Even January's slightly stronger sunlight cannot restore tilt-driven summer evenings. The practical rescue is an earlier dinner.
+
+Would you trade long summer evenings for longer winter afternoons?
+
+Scope: A permanently zero-obliquity Earth, not a sudden axis change. Rotation, present orbital eccentricity, solar output and geography remain. The barbecue is an illustrative personal story at 45 degrees north. Times are local solar time. Nonpolar geometric daylight is about twelve hours; solar-disc size, refraction and terrain affect visible sunrise and sunset. At the exact poles the geometric solar center stays on the horizon; at the equator the overhead Sun is specifically at solar noon. Equal daylight does not imply equal surface heating or one worldwide climate. The present eccentricity gives about 6.9 percent more incoming solar irradiance near January perihelion than July aphelion, affecting both hemispheres together. No temperatures, weather, agricultural outcomes or future ice extents are predicted. Existing polar scenery is illustrative. Month comparisons and the earlier dinner are explicit time jumps; no instantaneous physical transformation is depicted.
+
+Sources:
+- NASA Space Place — What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/
+- NOAA National Weather Service — Why Do We Have Seasons?: https://www.weather.gov/lmk/seasons
+- NOAA JetStream — Global Weather: https://www.noaa.gov/jetstream/global
+- NASA NSSDC — Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html
+- NASA — Milankovitch Orbital Cycles and Their Role in Earth’s Climate: https://science.nasa.gov/science-research/earth-science/climate-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/
+
+Visuals: original deterministic Three.js animation with NASA Earth imagery. Narrator: local Kokoro am_michael. Original procedural music and Foley.
+
+Orbital body sizes and separation are scaled for readability; eccentricity and relative orbital distances are retained.
+
+#WhatIf #EarthScience #Astronomy #Seasons #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+You light the barbecue, but summer's long evenings have vanished. Can the equator or January save dinner? This 52-second astronomy thought experiment follows the attempt.
+
+Would you trade long summer evenings for longer winter afternoons?
+
+#ScienceTok #WhatIf #EarthScience #Astronomy #Seasons #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+Your summer barbecue needs a lantern. On an Earth with no tilt, chasing summer won't restore long evenings. Would you trade long summer evenings for longer winter afternoons?
+
+#WhatIf #EarthScience #Astronomy #Seasons #ScienceSimulation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+
+---
+
+## What if Earth’s ozone layer disappeared overnight?
+**Video:** `output/ozone-layer-gone-overnight.mp4`\
+**Thumbnail:** `output/ozone-layer-gone-overnight.jpg`\
+**Publishing copy:** `output/ozone-layer-gone-overnight.md`\
+**Hugging Face:** [videos/015-ozone-layer-gone-overnight.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/015-ozone-layer-gone-overnight.mp4) · [videos/015-ozone-layer-gone-overnight.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/015-ozone-layer-gone-overnight.jpg) · [videos/015-ozone-layer-gone-overnight.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/015-ozone-layer-gone-overnight.md)\
+**Slug:** `ozone-layer-gone-overnight` | **Duration:** 55s | **Rendered (UTC):** 2026-10-15T12:01:44Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** Fictional premise: all stratospheric ozone disappears overnight; oxygen, clouds and weather are unchanged, and the film follows the next clear June morning near 40°N. The UV index of about 263 (versus about 9 normally) and the burn times (about 38 s for fair skin in sun, about 2 minutes in awning shade, UV index about 2 behind ordinary window glass) are estimates from a simple radiative-transfer model; real values depend on aerosols, altitude and skin type. Ordinary glass blocks UV-B and UV-C but passes much UV-A. The ozone-making UV (shorter than about 242 nm) is absorbed high in the stratosphere; it is the same sun, not the same wavelengths that burn you. Refilling the layer would take weeks to months; the 60-day globe is qualitative. The reader, the barista and the busy night street are illustrative.
+**Assets reused:** city-street-block-v1, sun-skylight-rig-v1, sky-dome-v1, room-box-v1, dial-gauge-v1, humanoid-figure-v1, character-motion-v1, earth-globe-v1, earth-textures-nasa-v1, starfield-v1, shader-noise-math-v1, modeling-helpers-v1, camera-keyframe-rig-v1, film-pipeline-v1, overlay-labels-v1, caption-kinetic-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** None
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if Earth’s ozone layer disappeared overnight?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Finish your coffee outside and you'll blister by tonight. The ozone layer vanished while you slept, and the sky looks perfectly normal. In this 55-second 3D science thought experiment, the sun's harshest ultraviolet reaches the ground about thirty times stronger than usual.
+
+You feel no sting and get no warning. Shade only buys you minutes, because the whole sky scatters UV down on you. But an ordinary window stops nearly all the burning rays, so the city retreats behind glass. Meanwhile the same sun is splitting oxygen high overhead and rebuilding the shield, which takes weeks, maybe months.
+
+If daylight were off-limits for months, what’s the first thing you’d do after dark?
+
+Scope: Fictional premise: all stratospheric ozone disappears overnight; oxygen, clouds and weather are unchanged, and the film follows the next clear June morning near 40°N. The UV index of about 263 (versus about 9 normally) and the burn times (about 38 s for fair skin in sun, about 2 minutes in awning shade, UV index about 2 behind ordinary window glass) are estimates from a simple radiative-transfer model; real values depend on aerosols, altitude and skin type. Ordinary glass blocks UV-B and UV-C but passes much UV-A. The ozone-making UV (shorter than about 242 nm) is absorbed high in the stratosphere; it is the same sun, not the same wavelengths that burn you. Refilling the layer would take weeks to months; the 60-day globe is qualitative. The reader, the barista and the busy night street are illustrative.
+
+Sources:
+- NOAA Chemical Sciences Laboratory, Twenty Questions and Answers About the Ozone Layer (2022), Q2: https://csl.noaa.gov/assessments/ozone/2022/downloads/twentyquestions/Q2.pdf
+- D. J. Jacob, Introduction to Atmospheric Chemistry, Chapter 10: Stratospheric Ozone: https://projects.iq.harvard.edu/files/acmg/files/intro_atmo_chem_bookchap10.pdf
+- TEMIS: UV index and UV dose, short introduction: https://www.temis.nl/uvradiation/info/index.html
+- Baylor College of Medicine: what happens to your skin after a sunburn: https://blogs.bcm.edu/?p=37565
+- NOAA Storm Prediction Center (S. Corfidi): The Colors of Sunset and Twilight (scattering): https://www.spc.noaa.gov/publications/corfidi/sunset/
+- Skin Cancer Foundation: UV Window Film and Tint: https://www.skincancer.org/skin-cancer-prevention/sun-protection/uv-window-film/
+- NASA Ozone Watch: Ozone facts: https://ozonewatch.gsfc.nasa.gov/facts/
+- University of Washington ATM S 558: Stratospheric Chemistry lecture notes: https://www.atmos.washington.edu/academics/classes/2011Q2/558/S11_558_StratChem.pdf
+
+Visuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.
+
+#Shorts #WhatIf #OzoneLayer #EarthScience #UVIndex #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if the ozone layer disappeared, ozone layer gone overnight, uv index without ozone, does window glass block uv, sunburn in one minute, how ozone is made, chapman cycle, earth science what if, atmospheric chemistry, science simulation, threejs 3d documentary
+```
+
+**Target search keywords:** what if the ozone layer disappeared, ozone layer gone overnight, uv index without ozone, does glass block uv, sunburn in one minute, how ozone is made
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+The sky looks perfectly normal. Your UV meter is pinned past its scale. Without the ozone layer you'd burn in under a minute, feel nothing until tonight, and find that only glass (not shade) keeps you safe while the sun slowly rebuilds the shield.
+
+If daylight were off-limits for months, what’s the first thing you’d do after dark?
+
+Fictional premise; UV and burn times are estimates for one clear June morning.
+
+#WhatIf #ScienceReels #OzoneLayer #UVIndex #EarthScience #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if the ozone layer disappeared, ozone layer gone overnight, uv index without ozone, does glass block uv, sunburn in one minute, how ozone is made
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if Earth’s ozone layer disappeared overnight? A 1-minute sunburn
+```
+
+**Description / caption + hashtags — copy:**
+```text
+The ozone layer vanishes while you sleep. The morning looks normal, but the sun's ultraviolet burns about thirty times faster: shade only buys minutes, an ordinary window saves you, and the same sun slowly rebuilds the layer.
+
+If daylight were off-limits for months, what’s the first thing you’d do after dark?
+
+Fictional premise: all stratospheric ozone disappears overnight; oxygen, clouds and weather are unchanged, and the film follows the next clear June morning near 40°N. The UV index of about 263 (versus about 9 normally) and the burn times (about 38 s for fair skin in sun, about 2 minutes in awning shade, UV index about 2 behind ordinary window glass) are estimates from a simple radiative-transfer model; real values depend on aerosols, altitude and skin type. Ordinary glass blocks UV-B and UV-C but passes much UV-A. The ozone-making UV (shorter than about 242 nm) is absorbed high in the stratosphere; it is the same sun, not the same wavelengths that burn you. Refilling the layer would take weeks to months; the 60-day globe is qualitative. The reader, the barista and the busy night street are illustrative.
+
+Sources:
+- NOAA Chemical Sciences Laboratory, Twenty Questions and Answers About the Ozone Layer (2022), Q2: https://csl.noaa.gov/assessments/ozone/2022/downloads/twentyquestions/Q2.pdf
+- D. J. Jacob, Introduction to Atmospheric Chemistry, Chapter 10: Stratospheric Ozone: https://projects.iq.harvard.edu/files/acmg/files/intro_atmo_chem_bookchap10.pdf
+- TEMIS: UV index and UV dose, short introduction: https://www.temis.nl/uvradiation/info/index.html
+- Baylor College of Medicine: what happens to your skin after a sunburn: https://blogs.bcm.edu/?p=37565
+- NOAA Storm Prediction Center (S. Corfidi): The Colors of Sunset and Twilight (scattering): https://www.spc.noaa.gov/publications/corfidi/sunset/
+- Skin Cancer Foundation: UV Window Film and Tint: https://www.skincancer.org/skin-cancer-prevention/sun-protection/uv-window-film/
+- NASA Ozone Watch: Ozone facts: https://ozonewatch.gsfc.nasa.gov/facts/
+- University of Washington ATM S 558: Stratospheric Chemistry lecture notes: https://www.atmos.washington.edu/academics/classes/2011Q2/558/S11_558_StratChem.pdf
+
+#WhatIf #Science #OzoneLayer #EarthScience #ScienceSimulation
+```
+
+**Target search keywords:** what if the ozone layer disappeared, ozone layer gone overnight, uv index without ozone, does glass block uv, sunburn in one minute, how ozone is made
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+Finish your coffee outside and you'll blister by tonight. The ozone layer vanished while you slept, the sky looks normal, and the UV burns about thirty times faster. Shade barely helps; a plain window does.
+
+If daylight were off-limits for months, what’s the first thing you’d do after dark?
+
+A 3D thought experiment; UV figures are model estimates for one clear morning.
+
+#WhatIf #ScienceTok #OzoneLayer #UVIndex #EarthScience #ScienceSimulation
+```
+
+**Target search keywords:** what if the ozone layer disappeared, ozone layer gone overnight, uv index without ozone, does glass block uv, sunburn in one minute, how ozone is made
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+The ozone layer vanished overnight. The sky looks normal, but you'd burn in under a minute; shade barely helps, a plain window does. If daylight were off-limits for months, what’s the first thing you’d do after dark?
+
+#WhatIf #OzoneLayer #UVIndex #Science #ScienceSimulation
+```
+
+**Target search keywords:** what if the ozone layer disappeared, ozone layer gone overnight, uv index without ozone
+
+**Published URL:** Not published
+
 
 ---
 

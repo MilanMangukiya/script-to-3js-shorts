@@ -11,10 +11,12 @@ export interface PostSettings {
   exposure: number; bloomStrength: number; bloomRadius: number; bloomThreshold: number;
   vignette: number; grain: number; saturation: number; contrast: number; lift: number;
   tint: [number, number, number];
+  /** Heat-shimmer refraction strength (0 = off). Strongest near the bottom of frame, animated by film time. */
+  heatHaze: number;
 }
 export const DEFAULT_POST: PostSettings = {
   exposure: 1, bloomStrength: 0.35, bloomRadius: 0.6, bloomThreshold: 0.85,
-  vignette: 0.45, grain: 0.012, saturation: 1, contrast: 1, lift: 0, tint: [1, 1, 1],
+  vignette: 0.45, grain: 0.012, saturation: 1, contrast: 1, lift: 0, tint: [1, 1, 1], heatHaze: 0,
 };
 
 export interface ShotInfo {
@@ -42,16 +44,22 @@ const FinalShader = {
   uniforms: {
     tDiffuse: { value: null as THREE.Texture | null }, uExposure: { value: 1 }, uVignette: { value: 0.4 }, uGrain: { value: 0.012 },
     uFrame: { value: 0 }, uSaturation: { value: 1 }, uContrast: { value: 1 }, uLift: { value: 0 },
-    uTint: { value: new THREE.Vector3(1, 1, 1) }, uRes: { value: new THREE.Vector2(1080, 1920) },
+    uTint: { value: new THREE.Vector3(1, 1, 1) }, uRes: { value: new THREE.Vector2(1080, 1920) }, uHaze: { value: 0 }, uTimeS: { value: 0 },
   },
   vertexShader: /* glsl */ `varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0); }`,
   fragmentShader: /* glsl */ `
-    uniform sampler2D tDiffuse; uniform float uExposure, uVignette, uGrain, uFrame, uSaturation, uContrast, uLift; uniform vec3 uTint; uniform vec2 uRes;
+    uniform sampler2D tDiffuse; uniform float uExposure, uVignette, uGrain, uFrame, uSaturation, uContrast, uLift, uHaze, uTimeS; uniform vec3 uTint; uniform vec2 uRes;
     varying vec2 vUv;
     vec3 aces(vec3 x){ return clamp((x*(2.51*x+0.03))/(x*(2.43*x+0.59)+0.14), 0.0, 1.0); }
     float hash(vec2 p){ vec3 p3 = fract(vec3(p.xyx)*0.1031); p3 += dot(p3, p3.yzx+33.33); return fract((p3.x+p3.y)*p3.z); }
     void main(){
-      vec3 c = max(texture2D(tDiffuse, vUv).rgb, 0.0) * uExposure * uTint;
+      vec2 uv = vUv;
+      if (uHaze > 0.0) {
+        float g = smoothstep(0.9, 0.1, vUv.y);
+        uv += uHaze * g * vec2(sin(vUv.y * 170.0 + uTimeS * 9.0 + sin(vUv.x * 37.0 + uTimeS * 2.3) * 1.6),
+                               cos(vUv.x * 130.0 - uTimeS * 7.0 + sin(vUv.y * 23.0) * 1.2)) * 0.0022;
+      }
+      vec3 c = max(texture2D(tDiffuse, uv).rgb, 0.0) * uExposure * uTint;
       c = aces(c);
       float l = dot(c, vec3(0.2126, 0.7152, 0.0722));
       c = mix(vec3(l), c, uSaturation);
@@ -157,6 +165,7 @@ export class FilmPipeline {
     const u = this.final.uniforms;
     u.uExposure.value = p.exposure; u.uVignette.value = p.vignette; u.uGrain.value = p.grain; u.uFrame.value = frame % 997;
     u.uSaturation.value = p.saturation; u.uContrast.value = p.contrast; u.uLift.value = p.lift; u.uTint.value.set(p.tint[0], p.tint[1], p.tint[2]);
+    u.uHaze.value = p.heatHaze; u.uTimeS.value = t;
     this.composer.render();
   }
 

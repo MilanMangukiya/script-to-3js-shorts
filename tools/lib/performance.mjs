@@ -2,8 +2,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
+import {assertCaptionTiming,provenanceEqual} from './narration-quality.mjs';
+import {assertRecognitionTiming} from './align.mjs';
 
-export const PERFORMANCE_VERSION = 'kokoro-gap-v2';
+export const PERFORMANCE_VERSION = 'kokoro-gap-v3';
 export const PACING_SPEED = { fast_hook: 1.08, crisp_mechanism: 1.05, steady_escalation: 1.03, weighty_impact: 1.01, reflective_payoff: 0.98, loop_bridge: 1.02 };
 const ENGINE = 'kokoro_local', MODEL = 'Kokoro-82M v1.0 ONNX';
 
@@ -67,12 +69,13 @@ export function resolveOutputDir(root, requested, slug) {
   return dir;
 }
 
-export function rawCacheMatches(cache, { scenes, voice, speeds, dir }) {
+export function rawCacheMatches(cache, { scenes, voice, speeds, dir, provenance }) {
   if (!cache || cache.engine !== ENGINE || cache.model !== MODEL || cache.voice !== voice || !Array.isArray(cache.scenes)) return false;
+  if (!cache.provenance?.synthesis || (provenance && !provenanceEqual(cache.provenance.synthesis,provenance.synthesis))) return false;
   return scenes.every((sc) => {
     const r = cache.scenes.find((x) => x.id === sc.id);
     if (!r || r.text !== sc.narration.text || !Number.isFinite(r.speed ?? cache.speed) || Math.abs((r.speed ?? cache.speed) - speeds[sc.id]) >= 1e-6 || typeof r.file !== 'string') return false;
-    try { return fs.statSync(outputChild(dir, r.file)).isFile(); } catch { return false; }
+    try { const file=outputChild(dir,r.file); return fs.statSync(file).isFile() && typeof r.source_sha256==='string' && createHash('sha256').update(fs.readFileSync(file)).digest('hex')===r.source_sha256; } catch { return false; }
   });
 }
 
@@ -81,6 +84,7 @@ const seconds = (samples, sr) => +(samples / sr).toFixed(6);
 
 /** Keep the same verified quiet-prefix policy for production narration and isolated auditions. */
 export function prepareNarrationSource(raw, samples, sampleRate, hookStart_s) {
+  assertRecognitionTiming(raw.heard,raw.duration,raw.id);
   let source = raw, leadingTrim = 0;
   if (hookStart_s !== undefined) {
     const onset = samples.findIndex((x) => Math.abs(x) > 0.006);
@@ -117,8 +121,9 @@ export function applyPerformance({ record, raw, matches, samples, sampleRate, pl
   const splices = [], applied = [];
   for (const pause of plan.pauses) {
     const leftIndex = pause.after_word - 1, rightIndex = pause.after_word;
-    const l = matches[leftIndex], r = matches[rightIndex];
-    if (l === null || l === undefined || r !== l + 1 || !raw.heard[l] || !raw.heard[r]) throw new Error(`${record.id}: pause after word ${pause.after_word} needs exact adjacent recognized words`);
+    const evidence=record.recognition?.evidence;
+    const l=evidence?.[leftIndex]?.heard_end_index??matches[leftIndex],r=evidence?.[rightIndex]?.heard_start_index??matches[rightIndex];
+    if (l === null || l === undefined || r !== l + 1 || !raw.heard[l] || !raw.heard[r]) throw new Error(`${record.id}: pause after word ${pause.after_word} needs verified adjacent recognized word spans`);
     const left = Math.max(record.words[leftIndex].end_s, raw.heard[l].end);
     const right = Math.min(record.words[rightIndex].start_s, raw.heard[r].start);
     if (!Number.isFinite(left) || !Number.isFinite(right) || left < 0 || right < left || right > samples.length / sampleRate) throw new Error(`${record.id}: pause after word ${pause.after_word} has no safe measured word gap`);
@@ -168,5 +173,6 @@ export function applyPerformance({ record, raw, matches, samples, sampleRate, pl
     if (splice.added) { metadata.inserted_start_s = seconds(splice.gapStart, sampleRate); metadata.inserted_end_s = seconds(splice.gapEnd, sampleRate); }
     if (splice.removed) { metadata.removed_original_start_s = seconds(splice.point, sampleRate); metadata.removed_original_end_s = seconds(splice.point + splice.removed, sampleRate); metadata.join_s = seconds(splice.gapStart, sampleRate); }
   }
+  assertCaptionTiming(directed);
   return { samples: output, record: directed };
 }

@@ -1,0 +1,86 @@
+{
+  "note": "Absolute film times (s) for staged events; read by stages, film overlay and soundtrack.mjs. Re-timed to build/ozone-layer-gone-overnight/audio/narration.json.",
+  "bounds": [
+    0,
+    4.3,
+    9.4,
+    15.3,
+    19.7,
+    24.1,
+    30.4,
+    35.9,
+    41.9,
+    48.4,
+    55
+  ],
+  "step": 2,
+  "s02Cut": 6.85,
+  "fade0": 5.1,
+  "fade1": 6.4,
+  "meterOn": 12.3,
+  "meterPin": 13,
+  "doseAtS04": 9.5,
+  "burnSeconds": 38,
+  "burnShade": 114,
+  "pageTurn": 17,
+  "shade": 21.6,
+  "hatch0": 25.4,
+  "hatch1": 26.4,
+  "uvIndoorOpen": 60,
+  "uvShade": 89,
+  "uvBehindGlass": 2,
+  "uvOutside": 263,
+  "splits": [
+    36.6,
+    38.3,
+    39.6
+  ],
+  "bindDelay": 0.75,
+  "s09Cut": 45.3,
+  "regrow0": 42.1,
+  "regrow1": 45.1,
+  "sip": 46.4,
+  "pauses": {
+    "S04": [
+      {
+        "after_word": 4,
+        "duration_s": 0.3
+      }
+    ]
+  },
+  "thumbnail": {
+    "time_s": 14.6,
+    "headline": "1-MINUTE SUNBURN?!",
+    "highlight": [
+      "SUNBURN"
+    ],
+    "position": "bottom",
+    "badge": "UV INDEX 263",
+    "focus": [
+      0.74,
+      0.42
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FACC15",
+      "badge": "#7C3AED",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FACC15"
+    },
+    "grade": "dramatic",
+    "tilt": -3,
+    "badge_at": [
+      0.34,
+      0.075
+    ]
+  },
+  "rates": {
+    "S07": 0.86,
+    "S08": 1.02
+  },
+  "s06Cut": 26.5
+}

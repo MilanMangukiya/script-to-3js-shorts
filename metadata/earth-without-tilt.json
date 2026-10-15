@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "earth-without-tilt",
+  "topic": "What if Earth's axis had no tilt?",
+  "duration_s": 52,
+  "video_file": "output/earth-without-tilt.mp4",
+  "scientific_scope_note": "A permanently zero-obliquity Earth, not a sudden axis change. Rotation, present orbital eccentricity, solar output and geography remain. The barbecue is an illustrative personal story at 45 degrees north. Times are local solar time. Nonpolar geometric daylight is about twelve hours; solar-disc size, refraction and terrain affect visible sunrise and sunset. At the exact poles the geometric solar center stays on the horizon; at the equator the overhead Sun is specifically at solar noon. Equal daylight does not imply equal surface heating or one worldwide climate. The present eccentricity gives about 6.9 percent more incoming solar irradiance near January perihelion than July aphelion, affecting both hemispheres together. No temperatures, weather, agricultural outcomes or future ice extents are predicted. Existing polar scenery is illustrative. Month comparisons and the earlier dinner are explicit time jumps; no instantaneous physical transformation is depicted. Orbital body sizes and separation are scaled for readability; eccentricity and relative orbital distances are retained.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [
+    "earth-globe-v1",
+    "earth-textures-nasa-v1",
+    "starfield-v1",
+    "sky-dome-v1",
+    "sun-skylight-rig-v1",
+    "flame-v1",
+    "broadleaf-tree-v1",
+    "sea-ice-v1",
+    "ocean-surface-v1",
+    "modeling-helpers-v1",
+    "camera-keyframe-rig-v1",
+    "caption-kinetic-v1",
+    "overlay-labels-v1",
+    "audio-synth-kit-v1",
+    "thumbnail-title-card-v1",
+    "grass-field-v1",
+    "city-street-block-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "smoke-wisp-v1",
+    "film-pipeline-v1",
+    "font-inter-v1",
+    "font-display-set-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if Earth's axis had no tilt? Your summer evenings vanish",
+      "description": "Your summer barbecue needs a lantern. Waiting until another month or chasing summer south won't restore a long evening on an Earth with no axial tilt. Equal days still bring very different sunlight angles. Even January's slightly stronger sunlight cannot restore tilt-driven summer evenings. The practical rescue is an earlier dinner.\n\nWould you trade long summer evenings for longer winter afternoons?\n\nScope: A permanently zero-obliquity Earth, not a sudden axis change. Rotation, present orbital eccentricity, solar output and geography remain. The barbecue is an illustrative personal story at 45 degrees north. Times are local solar time. Nonpolar geometric daylight is about twelve hours; solar-disc size, refraction and terrain affect visible sunrise and sunset. At the exact poles the geometric solar center stays on the horizon; at the equator the overhead Sun is specifically at solar noon. Equal daylight does not imply equal surface heating or one worldwide climate. The present eccentricity gives about 6.9 percent more incoming solar irradiance near January perihelion than July aphelion, affecting both hemispheres together. No temperatures, weather, agricultural outcomes or future ice extents are predicted. Existing polar scenery is illustrative. Month comparisons and the earlier dinner are explicit time jumps; no instantaneous physical transformation is depicted.\n\nSources:\n- NASA Space Place — What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\n- NOAA National Weather Service — Why Do We Have Seasons?: https://www.weather.gov/lmk/seasons\n- NOAA JetStream — Global Weather: https://www.noaa.gov/jetstream/global\n- NASA NSSDC — Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n- NASA — Milankovitch Orbital Cycles and Their Role in Earth’s Climate: https://science.nasa.gov/science-research/earth-science/climate-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/\n\nVisuals: original deterministic Three.js animation with NASA Earth imagery. Narrator: local Kokoro am_michael. Original procedural music and Foley.\n\nOrbital body sizes and separation are scaled for readability; eccentricity and relative orbital distances are retained.",
+      "tags": [
+        "what if Earth had no tilt",
+        "zero obliquity",
+        "Earth seasons explained",
+        "daylight length",
+        "astronomy simulation",
+        "sunlight angle",
+        "Earth science thought experiment"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#EarthScience",
+        "#Astronomy",
+        "#Seasons",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "tiktok": {
+      "caption": "You light the barbecue, but summer's long evenings have vanished. Can the equator or January save dinner? This 52-second astronomy thought experiment follows the attempt.\n\nWould you trade long summer evenings for longer winter afternoons?",
+      "hashtags": [
+        "#ScienceTok",
+        "#WhatIf",
+        "#EarthScience",
+        "#Astronomy",
+        "#Seasons",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "You light the barbecue, but summer's long evenings have vanished. Can the equator or January save dinner? This 52-second astronomy thought experiment follows the attempt.\n\nWould you trade long summer evenings for longer winter afternoons?\n\nA permanently zero-obliquity Earth, not a sudden axis change. Rotation, present orbital eccentricity, solar output and geography remain. The barbecue is an illustrative personal story at 45 degrees north. Times are local solar time. Nonpolar geometric daylight is about twelve hours; solar-disc size, refraction and terrain affect visible sunrise and sunset. At the exact poles the geometric solar center stays on the horizon; at the equator the overhead Sun is specifically at solar noon. Equal daylight does not imply equal surface heating or one worldwide climate. The present eccentricity gives about 6.9 percent more incoming solar irradiance near January perihelion than July aphelion, affecting both hemispheres together. No temperatures, weather, agricultural outcomes or future ice extents are predicted. Existing polar scenery is illustrative. Month comparisons and the earlier dinner are explicit time jumps; no instantaneous physical transformation is depicted.",
+      "hashtags": [
+        "#ScienceReels",
+        "#WhatIf",
+        "#EarthScience",
+        "#Astronomy",
+        "#Seasons",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if Earth's axis had no tilt?",
+      "description": "Your summer barbecue needs a lantern. Waiting until another month or chasing summer south won't restore a long evening on an Earth with no axial tilt. Equal days still bring very different sunlight angles. Even January's slightly stronger sunlight cannot restore tilt-driven summer evenings. The practical rescue is an earlier dinner.\n\nWould you trade long summer evenings for longer winter afternoons?\n\nScope: A permanently zero-obliquity Earth, not a sudden axis change. Rotation, present orbital eccentricity, solar output and geography remain. The barbecue is an illustrative personal story at 45 degrees north. Times are local solar time. Nonpolar geometric daylight is about twelve hours; solar-disc size, refraction and terrain affect visible sunrise and sunset. At the exact poles the geometric solar center stays on the horizon; at the equator the overhead Sun is specifically at solar noon. Equal daylight does not imply equal surface heating or one worldwide climate. The present eccentricity gives about 6.9 percent more incoming solar irradiance near January perihelion than July aphelion, affecting both hemispheres together. No temperatures, weather, agricultural outcomes or future ice extents are predicted. Existing polar scenery is illustrative. Month comparisons and the earlier dinner are explicit time jumps; no instantaneous physical transformation is depicted.\n\nSources:\n- NASA Space Place — What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\n- NOAA National Weather Service — Why Do We Have Seasons?: https://www.weather.gov/lmk/seasons\n- NOAA JetStream — Global Weather: https://www.noaa.gov/jetstream/global\n- NASA NSSDC — Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n- NASA — Milankovitch Orbital Cycles and Their Role in Earth’s Climate: https://science.nasa.gov/science-research/earth-science/climate-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/\n\nVisuals: original deterministic Three.js animation with NASA Earth imagery. Narrator: local Kokoro am_michael. Original procedural music and Foley.\n\nOrbital body sizes and separation are scaled for readability; eccentricity and relative orbital distances are retained.",
+      "hashtags": [
+        "#WhatIf",
+        "#EarthScience",
+        "#Astronomy",
+        "#Seasons",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "x_video": {
+      "post": "Your summer barbecue needs a lantern. On an Earth with no tilt, chasing summer won't restore long evenings. Would you trade long summer evenings for longer winter afternoons?",
+      "hashtags": [
+        "#WhatIf",
+        "#EarthScience",
+        "#Astronomy",
+        "#Seasons",
+        "#ScienceSimulation"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-15T11:52:20Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 16,
+    "path_in_repo": "videos/016-earth-without-tilt.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/016-earth-without-tilt.mp4",
+    "sha256": "4b571125f78d106cab2780036bc2de1a5c00bfc20842a39eaf63ce1fbe91ca7b",
+    "size_bytes": 27207487,
+    "thumbnail_path_in_repo": "videos/016-earth-without-tilt.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/016-earth-without-tilt.jpg",
+    "thumbnail_sha256": "5ef9426fa7cd0245104698202c2a54ec238679247ef4b8ed6ae82fa789ff2b1f",
+    "copy_path_in_repo": "videos/016-earth-without-tilt.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/016-earth-without-tilt.md",
+    "copy_sha256": "ee95cbb0a1454b356acc602e1de0fb76cb9e026bf2b37daaf5a7389bb68cf5b1",
+    "uploaded_at_utc": "2026-10-15T22:10:43Z"
+  }
+}

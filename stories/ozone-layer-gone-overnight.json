@@ -1,0 +1,2066 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if Earth’s ozone layer disappeared overnight?",
+    "title": "What if Earth’s ozone layer disappeared overnight?",
+    "slug": "ozone-layer-gone-overnight",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 55,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If the ozone layer vanished while you slept, could you still go outside in the morning, and when would it be safe again?",
+    "viewer_takeaway": "Ozone filters the sun’s burning ultraviolet. Without it the morning looks normal but burns about thirty times faster; shade barely helps, ordinary glass does, and sunlight slowly rebuilds the layer over weeks to months."
+  },
+  "scientific_model": {
+    "baseline_reality": "Stratospheric ozone absorbs all solar UV-C and most UV-B; a clear June morning near 40°N has a UV index of about 9, and fair skin burns in roughly 15-20 minutes.",
+    "counterfactual_change": "All stratospheric ozone disappears overnight. Oxygen, clouds, weather and everything else stay the same; the film follows the next clear morning and the following weeks.",
+    "assumptions": [
+      "Ozone vanishes instantly; no ozone-destroying chemicals are added, so normal production restarts at sunrise.",
+      "Clear sky, sea-level city near 40°N in June; 10:00 sun elevation about 57 degrees.",
+      "UV figures come from a simple radiative-transfer estimate (solar spectrum, Rayleigh scattering, ozone cross-sections, O2 cutoff at 242 nm) that reproduces today’s index.",
+      "The reader, the barista and the people at night are illustrative authored characters."
+    ],
+    "causal_chain": [
+      "With no ozone, UV-B and UV-C above 242 nm reach the ground: the UV index rises from about 9 to about 260.",
+      "Fair skin collects a sunburn dose in under a minute, without heat or sting; the burn appears hours later.",
+      "About two thirds of the burning UV arrives as scattered skylight, so shade only slows the dose.",
+      "Ordinary window and car glass block UV-B and UV-C, so life moves behind glass.",
+      "Sunlight below 242 nm keeps splitting O2 high in the stratosphere, so ozone forms again; refilling the layer takes weeks to months.",
+      "After dark the UV index is zero, so outdoor life shifts to the night."
+    ],
+    "uncertainties": [
+      "Absolute UV values depend on aerosols, altitude, surface reflection and the radiative model; the index could plausibly be 150-350.",
+      "Skin type changes burn time by a factor of 2-4; darker skin still burns within minutes.",
+      "The regrowth rate of the layer is not well constrained for total removal; weeks to months is a qualitative range.",
+      "Ecological, eye and long-term health effects are outside this film."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "The ozone layer absorbs all solar UV-C and most UV-B; UV-A passes largely untouched.",
+        "confidence": "established",
+        "reasoning": "Ozone’s Hartley and Huggins absorption bands cover about 200-320 nm.",
+        "presentation_guardrail": "Say ozone \"soaked up the harshest ultraviolet\"; do not imply it blocks all sunlight."
+      },
+      {
+        "id": "CL02",
+        "statement": "Oxygen still absorbs ultraviolet shorter than about 242 nm, so without ozone the ground would receive UV from about 242 nm upward.",
+        "confidence": "established",
+        "reasoning": "O2 Schumann-Runge and Herzberg absorption ends near its 242 nm dissociation threshold.",
+        "presentation_guardrail": "Do not claim all solar UV-C reaches the ground."
+      },
+      {
+        "id": "CL03",
+        "statement": "On a clear June morning near 40°N the UV index would jump from about 9 to roughly 260, about thirty times faster burning.",
+        "confidence": "plausible",
+        "reasoning": "Simple model: extraterrestrial spectrum, Rayleigh two-stream transmission and ozone cross-sections give UVI 9.1 with 300 DU and 263 with none at 35 degrees zenith (25-38x across sun heights).",
+        "presentation_guardrail": "Use \"about thirty times\" and show 263 as this street’s estimate."
+      },
+      {
+        "id": "CL04",
+        "statement": "Fair skin would reach a sunburn dose in under a minute; ten minutes would deliver about fifteen doses, enough to blister.",
+        "confidence": "plausible",
+        "reasoning": "Erythemal irradiance about 6.6 W/m2 against a minimal erythema dose of about 250 J/m2 for fair skin gives about 38 s; blistering burns are commonly associated with roughly four or more doses.",
+        "presentation_guardrail": "Darker skin takes longer but still minutes; \"by tonight\" is the typical delay, not a guarantee."
+      },
+      {
+        "id": "CL05",
+        "statement": "Ultraviolet gives no immediate sting; sunburn redness appears hours later and peaks around 12-24 hours.",
+        "confidence": "established",
+        "reasoning": "Erythema is a delayed inflammatory response to UV damage.",
+        "presentation_guardrail": "The sun still feels warm from visible and infrared light; the warning sign that is missing is the burn."
+      },
+      {
+        "id": "CL06",
+        "statement": "About two thirds of the burning UV would arrive as scattered skylight, so awning shade would still burn fair skin in about two minutes.",
+        "confidence": "plausible",
+        "reasoning": "Short wavelengths scatter strongly (Rayleigh optical depth above 1); the model gives a 32% direct share and UVI about 90 with half the sky visible.",
+        "presentation_guardrail": "Say shade \"only buys you minutes\", not that it is useless."
+      },
+      {
+        "id": "CL07",
+        "statement": "Ordinary window glass blocks UV-B and UV-C, cutting the index behind glass to about 2 even without ozone.",
+        "confidence": "plausible",
+        "reasoning": "Soda-lime glass transmits almost nothing below about 300 nm but passes much UV-A; the model gives UVI about 2 behind glass.",
+        "presentation_guardrail": "Say \"nearly all the burning rays\"; UV-A still gets through."
+      },
+      {
+        "id": "CL08",
+        "statement": "Car glass blocks UV-B much as a window does, so an enclosed car protects about as well as a room behind glass.",
+        "confidence": "plausible",
+        "reasoning": "Laminated windscreens and tempered side windows are glass with similar short-UV cutoff.",
+        "presentation_guardrail": "\"Best seat in town\" is a joke about relative safety, not a claim that cars are safer than buildings."
+      },
+      {
+        "id": "CL09",
+        "statement": "Ozone forms when ultraviolet shorter than about 242 nm splits O2 high in the stratosphere and the freed atoms join other O2 molecules.",
+        "confidence": "established",
+        "reasoning": "Chapman mechanism: O2 + UV -> 2 O; O + O2 + M -> O3 + M.",
+        "presentation_guardrail": "It is the same sun but not the same wavelengths: the ozone-making UV is absorbed far above you."
+      },
+      {
+        "id": "CL10",
+        "statement": "Refilling the layer would take weeks to months.",
+        "confidence": "plausible",
+        "reasoning": "Odd-oxygen lifetimes range from days in the upper stratosphere to weeks-years in the lower stratosphere where most ozone sits.",
+        "presentation_guardrail": "Keep \"weeks, maybe months\"; no exact recovery date."
+      },
+      {
+        "id": "CL11",
+        "statement": "After dark the UV index is zero.",
+        "confidence": "derived",
+        "reasoning": "Solar UV requires the sun above the horizon; the index scales with solar elevation and falls to zero at night.",
+        "presentation_guardrail": "Low sun near dusk still carries UV; the safe time shown is full darkness."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NOAA Chemical Sciences Laboratory, Twenty Questions and Answers About the Ozone Layer (2022), Q2",
+        "url": "https://csl.noaa.gov/assessments/ozone/2022/downloads/twentyquestions/Q2.pdf",
+        "supports_claim_ids": [
+          "CL01"
+        ]
+      },
+      {
+        "name": "D. J. Jacob, Introduction to Atmospheric Chemistry, Chapter 10: Stratospheric Ozone",
+        "url": "https://projects.iq.harvard.edu/files/acmg/files/intro_atmo_chem_bookchap10.pdf",
+        "supports_claim_ids": [
+          "CL02",
+          "CL09",
+          "CL10"
+        ]
+      },
+      {
+        "name": "TEMIS: UV index and UV dose, short introduction",
+        "url": "https://www.temis.nl/uvradiation/info/index.html",
+        "supports_claim_ids": [
+          "CL03",
+          "CL04",
+          "CL11"
+        ]
+      },
+      {
+        "name": "Baylor College of Medicine: what happens to your skin after a sunburn",
+        "url": "https://blogs.bcm.edu/?p=37565",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      },
+      {
+        "name": "NOAA Storm Prediction Center (S. Corfidi): The Colors of Sunset and Twilight (scattering)",
+        "url": "https://www.spc.noaa.gov/publications/corfidi/sunset/",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "name": "Skin Cancer Foundation: UV Window Film and Tint",
+        "url": "https://www.skincancer.org/skin-cancer-prevention/sun-protection/uv-window-film/",
+        "supports_claim_ids": [
+          "CL07",
+          "CL08"
+        ]
+      },
+      {
+        "name": "NASA Ozone Watch: Ozone facts",
+        "url": "https://ozonewatch.gsfc.nasa.gov/facts/",
+        "supports_claim_ids": [
+          "CL09"
+        ]
+      },
+      {
+        "name": "University of Washington ATM S 558: Stratospheric Chemistry lecture notes",
+        "url": "https://www.atmos.washington.edu/academics/classes/2011Q2/558/S11_558_StratChem.pdf",
+        "supports_claim_ids": [
+          "CL10"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "A perfect sunny morning burns thirty times faster: shade fails, an ordinary window saves you, and life moves to the night while the sun rebuilds the shield.",
+    "visual_identity": "Warm, ordinary cafe terrace in bright sun, made threatening only by an instrument pinned past its scale; violet ozone shell bookends from orbit; a glowing night terrace as the payoff.",
+    "palette": [
+      "#3D7AD0",
+      "#F4F1E8",
+      "#7B3FC4",
+      "#FACC15",
+      "#D7263D",
+      "#2B2B2E"
+    ],
+    "lighting": "Hard morning sun with full blue-sky fill (sun-skylight-rig-v1); warm interior practicals behind glass; lamp and string-light night; cool key for the stratosphere.",
+    "camera_language": "Eye-level 1.5-1.65 m handheld POVs and close inserts on the terrace; locked slow pushes for orbit and molecules.",
+    "motion_language": "Finite actions: stepping out, needle sweep and pin, page turn, ducking into shade, hatch sliding shut, molecules splitting and binding.",
+    "world_scale_policy": "Street and cafe in metres; globe in Earth radii with the ozone shell thickened about 4x; molecules as a directed scale change.",
+    "emotional_arc": [
+      "Ease",
+      "Unease",
+      "Alarm",
+      "Helplessness",
+      "Failed fix",
+      "Relief",
+      "Irony",
+      "Wonder",
+      "Patience",
+      "Warm payoff"
+    ],
+    "opening_hook": "Finish your coffee out here, and you’ll blister by tonight.",
+    "mid_video_rehook": "Shade fails, but an ordinary window works: the barista slides the glass hatch shut and the meter falls from off the scale to about two.",
+    "ending_payoff": "With the shield refilling only over weeks to months, outdoor life moves after dark: you take your coffee outside at night.",
+    "loop_connection": "The final night frame repeats the opening terrace view with your coffee on the same table.",
+    "asset_policy": "Reuse the classic street, sun-skylight rig, RoomBox furniture, dial gauge, Humanoid rig and Earth globe; story-specific glazing, hatch, molecules and ozone shell."
+  },
+  "audio": {
+    "voice_style": "Calm, peaceful, warm adult male; intimate documentary voice; natural breathing; wonder without shouting",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Original light cafe-morning score with a thin unsettling high drone, a hush in the shade, relief chord behind glass, crystalline stratosphere textures, slow hopeful swell for the regrowth and a warm night groove.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "Terrace ambience; meter click and needle rattle; footsteps into shade; 0.3 s silence before the hatch seal thunk; muffled traffic behind glass; split and bind ticks 120 ms apart; night chatter.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.3,
+      "narration": {
+        "text": "Finish your coffee out here, and you’ll blister by tonight.",
+        "start_s": 0.04,
+        "end_s": 4.15,
+        "delivery_note": "Calm, close and certain; let \"blister by tonight\" land as plain fact.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Why would a coffee outside burn you?",
+      "visual_payoff": "You step into a perfectly normal sunny morning on a cafe terrace.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.3,
+          "shot_type": "eye-level POV stepping out of the cafe into the sun with a coffee",
+          "world": "1 unit = 1 m. Sunlit north-side cafe terrace on a city street (city-street-block-v1 classic kit, seed 5521, 7 blocks, 5-8 storeys) at about 10:00 on a clear June morning near 40°N: sun 57 degrees high from the -X side; normal blue sky (sun-skylight-rig-v1 skyAmount 1) with light haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  11.3,
+                  1.62,
+                  3.7
+                ],
+                "look_at": [
+                  -2,
+                  4.5,
+                  -36
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 2,
+                "position": [
+                  9.35,
+                  1.63,
+                  3.35
+                ],
+                "look_at": [
+                  -2,
+                  4.6,
+                  -36
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4.3,
+                "position": [
+                  9.15,
+                  1.62,
+                  3.25
+                ],
+                "look_at": [
+                  -2,
+                  4.8,
+                  -36
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Two steps from the awning shade into full sun beside your table.",
+            "lens_notes": "Eye level 1.62 m: your mug and meter on the table lower right, sunlit north facades receding right, blue sky wedge above.",
+            "handheld_sway": 0.35
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 10:00",
+            "metric_label": "UV INDEX",
+            "start_value": 263,
+            "end_value": 263,
+            "unit": "",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone facades with shopfronts and awnings, sunlit north side, shaded south side, lamps and kerbs.",
+              "geometry_and_material": "CityStreetClassic seed 5521 (merged static geometry, dry asphalt, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings.",
+              "movement": "Static; morning light."
+            },
+            {
+              "id": "terrace",
+              "kind": "other",
+              "asset_hint": "room-box-v1",
+              "appearance": "Four small round cafe tables with chairs and coffee mugs on the sunlit sidewalk.",
+              "geometry_and_material": "RoomBox chair and mug builders plus round tables from modeling-helpers-v1.",
+              "scale_and_accuracy": "Table top 0.76 m, seat 0.47 m.",
+              "movement": "A couple chats at the next table."
+            },
+            {
+              "id": "walkers",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Pedestrians on both sidewalks.",
+              "geometry_and_material": "Registered articulated Humanoid rig; seated and standing poses grounded with character-motion-v1.",
+              "scale_and_accuracy": "Adults 1.6-1.8 m.",
+              "movement": "Walk normally, unaware."
+            }
+          ],
+          "animation_plan": [
+            "0-2s step out of the shade; couple talks; walkers pass; a car drives by."
+          ],
+          "lighting": "Hard sun key, full blue-sky fill and ground bounce.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "blister by tonight",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "coffee",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0,
+          "duration_s": 4,
+          "kind": "ambience",
+          "description": "Cafe terrace morning: cups, chatter, birds, light traffic.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut to orbit to show what changed overnight."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.3,
+      "end_s": 9.4,
+      "narration": {
+        "text": "The ozone layer vanished while you slept. The sky looks perfectly normal.",
+        "start_s": 4.42,
+        "end_s": 9.25,
+        "delivery_note": "Matter-of-fact reveal, then a quiet contradiction on \"perfectly normal\".",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "What changed overnight?",
+      "visual_payoff": "The violet ozone shell dissolves; back on the street the sky looks unchanged.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.3,
+          "end_s": 6.85,
+          "shot_type": "orbital view: the ozone layer dissolves overnight",
+          "world": "Local planetary units: Earth radius 1 (earth-globe-v1 NASA textures), sun from the right; the ozone layer drawn as a violet shell about four times thicker than the real 15-35 km band so it reads at phone size; starfield-v1 background.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 4.3,
+                "position": [
+                  0.3,
+                  0.9,
+                  6.2
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 6.85,
+                "position": [
+                  0.15,
+                  0.85,
+                  5.9
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push on the globe.",
+            "lens_notes": "Whole globe with margin; the violet rim is the subject.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "OVERNIGHT",
+            "metric_label": "OZONE LAYER",
+            "start_value": 100,
+            "end_value": 0,
+            "unit": "%",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "NASA Blue Marble Earth with clouds and night lights, centred on the Mediterranean and Atlantic.",
+              "geometry_and_material": "Earth class, radius 1, slow spin.",
+              "scale_and_accuracy": "True relative size; ozone shell thickness exaggerated about 4x.",
+              "movement": "Slow spin."
+            },
+            {
+              "id": "ozone-layer",
+              "kind": "atmosphere",
+              "appearance": "Thin violet rim-lit shell around the globe.",
+              "geometry_and_material": "Additive fresnel shell at radius 1.014 with fbm-noise erosion and a latitude-dependent regrowth mask.",
+              "scale_and_accuracy": "Stylised visibility of an invisible gas layer; amount follows the premise and qualitative regrowth.",
+              "movement": "Erodes in noise patches from 5.1s to 6.4s."
+            }
+          ],
+          "animation_plan": [
+            "5.1-6.4s shell fades from 100 to 0 percent."
+          ],
+          "lighting": "Sun from the right; night lights on the dark side.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 6.85,
+          "end_s": 9.4,
+          "shot_type": "tilt up to a normal blue sky",
+          "world": "1 unit = 1 m. Sunlit north-side cafe terrace on a city street (city-street-block-v1 classic kit, seed 5521, 7 blocks, 5-8 storeys) at about 10:00 on a clear June morning near 40°N: sun 57 degrees high from the -X side; normal blue sky (sun-skylight-rig-v1 skyAmount 1) with light haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 6.85,
+                "position": [
+                  9.15,
+                  1.62,
+                  3.25
+                ],
+                "look_at": [
+                  -2,
+                  6,
+                  -30
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 9.4,
+                "position": [
+                  9.1,
+                  1.62,
+                  3.2
+                ],
+                "look_at": [
+                  -6.5,
+                  20,
+                  -1.6
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Tilt from the street to the sun over the south rooftops.",
+            "lens_notes": "The sky and sun look exactly as usual.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 10:00",
+            "metric_label": "UV INDEX",
+            "start_value": 263,
+            "end_value": 263,
+            "unit": "",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone facades with shopfronts and awnings, sunlit north side, shaded south side, lamps and kerbs.",
+              "geometry_and_material": "CityStreetClassic seed 5521 (merged static geometry, dry asphalt, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings.",
+              "movement": "Rooftops frame the sky."
+            }
+          ],
+          "animation_plan": [
+            "6.85-9.4s tilt to a white sun with blue aureole."
+          ],
+          "lighting": "Normal clear sky.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "vanished while you slept",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "perfectly normal",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 5.1,
+          "duration_s": 1.6,
+          "kind": "whoosh",
+          "description": "Glassy dissolve as the shell fades.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut down to the meter on your table."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 9.4,
+      "end_s": 15.3,
+      "narration": {
+        "text": "Ozone soaked up the harshest ultraviolet. Now it burns you about thirty times faster.",
+        "start_s": 9.52,
+        "end_s": 15.15,
+        "delivery_note": "Clear cause, then weight on \"thirty times faster\".",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "How much stronger is the sunlight?",
+      "visual_payoff": "The UV meter needle sweeps up and pins against the end of its scale.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 9.4,
+          "end_s": 15.3,
+          "shot_type": "close-up: the UV meter pins past its scale",
+          "world": "1 unit = 1 m. Sunlit north-side cafe terrace on a city street (city-street-block-v1 classic kit, seed 5521, 7 blocks, 5-8 storeys) at about 10:00 on a clear June morning near 40°N: sun 57 degrees high from the -X side; normal blue sky (sun-skylight-rig-v1 skyAmount 1) with light haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 9.4,
+                "position": [
+                  8.95,
+                  1.32,
+                  3.6
+                ],
+                "look_at": [
+                  8.38,
+                  0.9,
+                  3.08
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 15.3,
+                "position": [
+                  8.75,
+                  1.2,
+                  3.42
+                ],
+                "look_at": [
+                  8.4,
+                  0.9,
+                  3.1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push down onto the meter beside the coffee.",
+            "lens_notes": "Dial face fills the centre; coffee and sunlit sidewalk behind.",
+            "handheld_sway": 0.2
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 10:01",
+            "metric_label": "TIME TO SUNBURN",
+            "start_value": 780,
+            "end_value": 38,
+            "unit": "s",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "uv-meter",
+              "kind": "other",
+              "asset_hint": "dial-gauge-v1",
+              "appearance": "Handheld UV index meter: 0-16 dial with green-yellow-orange-red-violet bands, red needle, black case.",
+              "geometry_and_material": "DialGauge radius 6.5 cm on a black housing; canvas face titled UV METER.",
+              "scale_and_accuracy": "Scale tops out at 16; the outdoor index (about 260) pins the needle against its stop.",
+              "movement": "Switched on at 12.3s; needle sweeps up and pins at 16 by 13s, trembling against the stop."
+            },
+            {
+              "id": "terrace",
+              "kind": "other",
+              "asset_hint": "room-box-v1",
+              "appearance": "Four small round cafe tables with chairs and coffee mugs on the sunlit sidewalk.",
+              "geometry_and_material": "RoomBox chair and mug builders plus round tables from modeling-helpers-v1.",
+              "scale_and_accuracy": "Table top 0.76 m, seat 0.47 m.",
+              "movement": "Your mug beside it."
+            }
+          ],
+          "animation_plan": [
+            "12.3-13s needle sweeps 0 -> 16 and stays pinned."
+          ],
+          "lighting": "Direct sun on the dial; glass highlight.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "thirty times faster",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 12.3,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "Meter power click.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 13,
+          "duration_s": 0.6,
+          "kind": "texture",
+          "description": "Needle hits the stop with a tiny rattle.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02",
+        "CL03",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut to the reader at the next table."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 15.3,
+      "end_s": 19.7,
+      "narration": {
+        "text": "No sting, no warning. The burn shows up hours later.",
+        "start_s": 15.42,
+        "end_s": 19.55,
+        "delivery_note": "Hushed: two flat beats, then the delayed consequence.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "pauses": [
+            {
+              "after_word": 4,
+              "duration_s": 0.3
+            }
+          ]
+        }
+      },
+      "viewer_question": "Would you notice it happening?",
+      "visual_payoff": "A man reads happily in the sun while his sunburn dose counter climbs past nine.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 15.3,
+          "end_s": 19.7,
+          "shot_type": "medium shot: a reader in the sun feels nothing",
+          "world": "1 unit = 1 m. Sunlit north-side cafe terrace on a city street (city-street-block-v1 classic kit, seed 5521, 7 blocks, 5-8 storeys) at about 10:00 on a clear June morning near 40°N: sun 57 degrees high from the -X side; normal blue sky (sun-skylight-rig-v1 skyAmount 1) with light haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 15.3,
+                "position": [
+                  8.95,
+                  1.52,
+                  3.7
+                ],
+                "look_at": [
+                  8.25,
+                  1.05,
+                  6.1
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 19.7,
+                "position": [
+                  8.9,
+                  1.5,
+                  4
+                ],
+                "look_at": [
+                  8.25,
+                  1.05,
+                  6.1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift toward the next table.",
+            "lens_notes": "He faces camera, relaxed in full sun with a newspaper and coffee.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 10:06",
+            "metric_label": "SUNBURN DOSES",
+            "start_value": 9.5,
+            "end_value": 9.62,
+            "unit": "",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "reader",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Man in a cream shirt reading a newspaper.",
+              "geometry_and_material": "Registered articulated Humanoid rig; seated and standing poses grounded with character-motion-v1.",
+              "scale_and_accuracy": "Adults 1.6-1.8 m.",
+              "movement": "Reads, turns a page at 17s, breathes calmly; no reaction to the sun."
+            },
+            {
+              "id": "terrace",
+              "kind": "other",
+              "asset_hint": "room-box-v1",
+              "appearance": "Four small round cafe tables with chairs and coffee mugs on the sunlit sidewalk.",
+              "geometry_and_material": "RoomBox chair and mug builders plus round tables from modeling-helpers-v1.",
+              "scale_and_accuracy": "Table top 0.76 m, seat 0.47 m.",
+              "movement": "His mug on the table."
+            }
+          ],
+          "animation_plan": [
+            "15.3-19.7s dose counter climbs as he reads; page turn at 17s."
+          ],
+          "lighting": "Sun on his face and paper.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "No sting, no warning.",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "hours later",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 17,
+          "duration_s": 0.5,
+          "kind": "texture",
+          "description": "Newspaper page turn.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut to your own attempt: the shade."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 19.7,
+      "end_s": 24.1,
+      "narration": {
+        "text": "Shade only buys you minutes. The whole sky scatters it.",
+        "start_s": 19.82,
+        "end_s": 23.95,
+        "delivery_note": "Deflating the obvious fix; ease on \"the whole sky\".",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "Is the shade safe?",
+      "visual_payoff": "Under the awning the meter in your hand stays pinned.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 19.7,
+          "end_s": 24.1,
+          "shot_type": "POV: duck under the awning with the meter",
+          "world": "1 unit = 1 m. Sunlit north-side cafe terrace on a city street (city-street-block-v1 classic kit, seed 5521, 7 blocks, 5-8 storeys) at about 10:00 on a clear June morning near 40°N: sun 57 degrees high from the -X side; normal blue sky (sun-skylight-rig-v1 skyAmount 1) with light haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 19.7,
+                "position": [
+                  9.2,
+                  1.62,
+                  3.3
+                ],
+                "look_at": [
+                  8,
+                  2.2,
+                  -20
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 21.6,
+                "position": [
+                  10.9,
+                  1.6,
+                  3.9
+                ],
+                "look_at": [
+                  7.5,
+                  2,
+                  -16
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 24.1,
+                "position": [
+                  11.05,
+                  1.6,
+                  4
+                ],
+                "look_at": [
+                  7.5,
+                  1.9,
+                  -16
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Sidestep from the table into the awning shade, looking along the sunny sidewalk.",
+            "lens_notes": "Meter in your hand at lower right stays pinned in the shade; bright street beyond.",
+            "handheld_sway": 0.4
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 10:07",
+            "metric_label": "TIME TO SUNBURN",
+            "start_value": 38,
+            "end_value": 114,
+            "unit": "s",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "uv-meter",
+              "kind": "other",
+              "asset_hint": "dial-gauge-v1",
+              "appearance": "Handheld UV index meter: 0-16 dial with green-yellow-orange-red-violet bands, red needle, black case.",
+              "geometry_and_material": "DialGauge radius 6.5 cm on a black housing; canvas face titled UV METER.",
+              "scale_and_accuracy": "Scale tops out at 16; the outdoor index (about 260) pins the needle against its stop.",
+              "movement": "Held in hand; needle still pinned (shade index about 90)."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone facades with shopfronts and awnings, sunlit north side, shaded south side, lamps and kerbs.",
+              "geometry_and_material": "CityStreetClassic seed 5521 (merged static geometry, dry asphalt, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings.",
+              "movement": "Awning shadow, sunlit sidewalk and sky beyond."
+            }
+          ],
+          "animation_plan": [
+            "19.7-21.6s step into shade; needle never leaves the stop; burn time only grows from 38 to 114 s."
+          ],
+          "lighting": "Awning blocks the direct beam; open sky still fills the shade.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "only buys you minutes",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "whole sky",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 20,
+          "duration_s": 1.2,
+          "kind": "texture",
+          "description": "Footsteps into the shade.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut inside the cafe."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "twist",
+      "start_s": 24.1,
+      "end_s": 30.4,
+      "narration": {
+        "text": "Step inside, and an ordinary window saves you. Glass stops nearly all the burning rays.",
+        "start_s": 24.22,
+        "end_s": 30.25,
+        "delivery_note": "Relief with surprise: lift on \"an ordinary window saves you\", then clear explanation.",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "What actually protects you?",
+      "visual_payoff": "The barista slides the hatch shut and the needle drops from the stop to about two.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 24.1,
+          "end_s": 26.5,
+          "shot_type": "inside: the barista slides the glass hatch shut",
+          "world": "1 unit = 1 m. Inside the cafe behind its glass storefront: RoomBox interior, window counter, sliding service hatch; the sunny terrace and street beyond the glass.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 24.1,
+                "position": [
+                  15,
+                  1.5,
+                  3.7
+                ],
+                "look_at": [
+                  12.1,
+                  1.2,
+                  3.45
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 26.5,
+                "position": [
+                  14.85,
+                  1.48,
+                  3.7
+                ],
+                "look_at": [
+                  12.1,
+                  1.2,
+                  3.45
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Step in from the back of the room toward the window counter.",
+            "lens_notes": "Barista in profile at the window; the open hatch and the sunny terrace beyond; your meter on the counter.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 10:08",
+            "metric_label": "UV INDEX",
+            "start_value": 60,
+            "end_value": 2,
+            "unit": "",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "barista",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Barista in a brown apron.",
+              "geometry_and_material": "Registered articulated Humanoid rig; seated and standing poses grounded with character-motion-v1.",
+              "scale_and_accuracy": "Adults 1.6-1.8 m.",
+              "movement": "Grips the hatch handle and slides it shut 25.4-26.4s."
+            },
+            {
+              "id": "glass",
+              "kind": "other",
+              "asset_hint": "modeling-helpers-v1",
+              "appearance": "Clear storefront glass with a sliding service hatch.",
+              "geometry_and_material": "Thin physical glass panes (no shadow casting) in dark aluminium frames.",
+              "scale_and_accuracy": "Ordinary soda-lime glass: blocks UV-B and UV-C, passes much UV-A.",
+              "movement": "Hatch seals at 26.4s."
+            },
+            {
+              "id": "uv-meter",
+              "kind": "other",
+              "asset_hint": "dial-gauge-v1",
+              "appearance": "Handheld UV index meter: 0-16 dial with green-yellow-orange-red-violet bands, red needle, black case.",
+              "geometry_and_material": "DialGauge radius 6.5 cm on a black housing; canvas face titled UV METER.",
+              "scale_and_accuracy": "Scale tops out at 16; the outdoor index (about 260) pins the needle against its stop.",
+              "movement": "On the counter under the hatch, still pinned."
+            }
+          ],
+          "animation_plan": [
+            "25.4-26.4s hatch slides 1 m and seals; 26.1-26.4s silence."
+          ],
+          "lighting": "Sunbeam through the glass; warm interior practicals.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 26.5,
+          "end_s": 30.4,
+          "shot_type": "close-up: the needle falls off the stop",
+          "world": "1 unit = 1 m. Inside the cafe behind its glass storefront: RoomBox interior, window counter, sliding service hatch; the sunny terrace and street beyond the glass.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 26.5,
+                "position": [
+                  12.8,
+                  1.28,
+                  4.5
+                ],
+                "look_at": [
+                  12.2,
+                  1,
+                  4.1
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 30.4,
+                "position": [
+                  12.72,
+                  1.22,
+                  4.42
+                ],
+                "look_at": [
+                  12.2,
+                  1,
+                  4.1
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push on the dial.",
+            "lens_notes": "Dial fills the centre; the closed glass and bright terrace behind it.",
+            "handheld_sway": 0.2
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 10:08",
+            "metric_label": "UV INDEX",
+            "start_value": 60,
+            "end_value": 2,
+            "unit": "",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "uv-meter",
+              "kind": "other",
+              "asset_hint": "dial-gauge-v1",
+              "appearance": "Handheld UV index meter: 0-16 dial with green-yellow-orange-red-violet bands, red needle, black case.",
+              "geometry_and_material": "DialGauge radius 6.5 cm on a black housing; canvas face titled UV METER.",
+              "scale_and_accuracy": "Scale tops out at 16; the outdoor index (about 260) pins the needle against its stop.",
+              "movement": "Needle drops from the stop to about 2 right after the seal, settling by 27.2s."
+            },
+            {
+              "id": "glass",
+              "kind": "other",
+              "asset_hint": "modeling-helpers-v1",
+              "appearance": "Clear storefront glass with a sliding service hatch.",
+              "geometry_and_material": "Thin physical glass panes (no shadow casting) in dark aluminium frames.",
+              "scale_and_accuracy": "Ordinary soda-lime glass: blocks UV-B and UV-C, passes much UV-A.",
+              "movement": "Closed hatch behind the meter."
+            }
+          ],
+          "animation_plan": [
+            "26.4-27.2s needle swings down and settles at 2."
+          ],
+          "lighting": "Sun through glass on the dial.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "an ordinary window saves you",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "nearly all the burning rays",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 26.1,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Room tone drops before the hatch seals.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 26.4,
+          "duration_s": 0.5,
+          "kind": "impact",
+          "description": "Hatch seal thunk.",
+          "relative_db": -8
+        },
+        {
+          "at_s": 26.55,
+          "duration_s": 0.9,
+          "kind": "texture",
+          "description": "Needle swinging down and settling.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Same room, later: look out at the street."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "human_impact",
+      "start_s": 30.4,
+      "end_s": 35.9,
+      "narration": {
+        "text": "Forget walking anywhere. A traffic jam is now the best seat in town.",
+        "start_s": 30.52,
+        "end_s": 35.75,
+        "delivery_note": "Dry wit; let \"best seat in town\" smile.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.86
+        }
+      },
+      "viewer_question": "How does the city cope?",
+      "visual_payoff": "Empty sidewalks and abandoned cups outside; cars jammed bumper to bumper.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 30.4,
+          "end_s": 35.9,
+          "shot_type": "through the glass: empty sidewalks, a traffic jam",
+          "world": "1 unit = 1 m. Inside the cafe behind its glass storefront: RoomBox interior, window counter, sliding service hatch; the sunny terrace and street beyond the glass.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 30.4,
+                "position": [
+                  13.8,
+                  1.55,
+                  4.2
+                ],
+                "look_at": [
+                  1.5,
+                  1.6,
+                  -12
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 35.9,
+                "position": [
+                  13.6,
+                  1.55,
+                  4
+                ],
+                "look_at": [
+                  1.5,
+                  1.5,
+                  -12
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow drift toward the window, looking diagonally out.",
+            "lens_notes": "Abandoned cups and newspaper on the terrace; cars bumper to bumper; nobody walking.",
+            "handheld_sway": 0.25
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 11:40",
+            "metric_label": "UV BEHIND GLASS",
+            "start_value": 2,
+            "end_value": 2,
+            "unit": "",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone facades with shopfronts and awnings, sunlit north side, shaded south side, lamps and kerbs.",
+              "geometry_and_material": "CityStreetClassic seed 5521 (merged static geometry, dry asphalt, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings.",
+              "movement": "Sidewalks empty."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Sixteen cars in both lanes.",
+              "geometry_and_material": "makeClassicCityCar bodies, brake lights glowing when stopped.",
+              "scale_and_accuracy": "4.3 m saloons, 6.4 m spacing.",
+              "movement": "Stop-and-go creep at under 1 m/s."
+            }
+          ],
+          "animation_plan": [
+            "30.4-35.9s cars creep and stop; brake lights pulse."
+          ],
+          "lighting": "Midday sun outside.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "best seat in town",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 30.4,
+          "duration_s": 4,
+          "kind": "ambience",
+          "description": "Muffled traffic and horns behind glass.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL07",
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "Scale change from the street up into the stratosphere."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "second_order_effect",
+      "start_s": 35.9,
+      "end_s": 41.9,
+      "narration": {
+        "text": "The same sun that burned you is already splitting oxygen into fresh ozone overhead.",
+        "start_s": 36.02,
+        "end_s": 41.75,
+        "delivery_note": "Wonder and irony; emphasise \"The same sun\".",
+        "pacing_energy": "crisp_mechanism",
+        "performance": {
+          "rate": 1.02
+        }
+      },
+      "viewer_question": "Can the shield come back?",
+      "visual_payoff": "UV photons split oxygen molecules and the freed atoms build new ozone.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 35.9,
+          "end_s": 41.9,
+          "shot_type": "stratosphere close-up: sunlight splits oxygen into ozone",
+          "world": "Directed scale change: stratosphere at about 30 km, molecules magnified about 10^9 (1 unit about 0.5 nm); dark navy sky, UV photons drawn as violet streaks from the sun direction.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 35.9,
+                "position": [
+                  0,
+                  0,
+                  6
+                ],
+                "look_at": [
+                  0,
+                  -0.15,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 41.9,
+                "position": [
+                  0.15,
+                  0.1,
+                  5.2
+                ],
+                "look_at": [
+                  0,
+                  -0.15,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow push into the molecules.",
+            "lens_notes": "Each split and bind happens near frame centre.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "ALTITUDE 30 KM",
+            "metric_label": "NEW OZONE",
+            "start_value": 0,
+            "end_value": 6,
+            "unit": "MOLECULES",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "molecules",
+              "kind": "diagram",
+              "appearance": "Red O2 pairs and pale N2 pairs drifting; bent three-atom O3 forms after each split.",
+              "geometry_and_material": "Glossy spheres, radius 0.12, bond 0.24; additive flash sprites at splitting and binding.",
+              "scale_and_accuracy": "Magnified schematic of real Chapman chemistry; sizes not to scale relative to spacing.",
+              "movement": "UV photons split an O2 at 36.6, 38.3, 39.6s; each freed atom joins an O2 0.75s later."
+            }
+          ],
+          "animation_plan": [
+            "36.6s photon absorbed, O2 splits; 37.35s and 37.47s two new O3 form.",
+            "38.3s photon absorbed, O2 splits; 39.05s and 39.17s two new O3 form.",
+            "39.6s photon absorbed, O2 splits; 40.35s and 40.47s two new O3 form."
+          ],
+          "lighting": "Cool key from the sun direction, dark navy fill.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "The same sun that burned you",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "fresh ozone",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 36.6,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "Crystalline split tick.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 37.35,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "First bind tick.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 37.47,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "Second bind tick, 120 ms later.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 38.3,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "Crystalline split tick.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 39.05,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "First bind tick.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 39.17,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "Second bind tick, 120 ms later.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 39.6,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "Crystalline split tick.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 40.35,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "First bind tick.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 40.47,
+          "duration_s": 0.2,
+          "kind": "impact",
+          "description": "Second bind tick, 120 ms later.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.5,
+        "motivation": "From molecules out to the whole planet."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "second_order_effect",
+      "start_s": 41.9,
+      "end_s": 48.4,
+      "narration": {
+        "text": "It takes weeks, maybe months, to refill. Until then, you watch daylight through glass.",
+        "start_s": 42.02,
+        "end_s": 48.25,
+        "delivery_note": "Honest cost, unhurried; land \"through glass\" softly.",
+        "pacing_energy": "weighty_impact"
+      },
+      "viewer_question": "How long until it is safe?",
+      "visual_payoff": "The shell refills over sixty days; you watch the bright street from behind the glass.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 41.9,
+          "end_s": 45.3,
+          "shot_type": "orbital time-lapse: the ozone layer refills",
+          "world": "Local planetary units: Earth radius 1 (earth-globe-v1 NASA textures), sun from the right; the ozone layer drawn as a violet shell about four times thicker than the real 15-35 km band so it reads at phone size; starfield-v1 background.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 41.9,
+                "position": [
+                  -0.6,
+                  1.2,
+                  6
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 45.3,
+                "position": [
+                  -0.9,
+                  1.1,
+                  5.8
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow orbit.",
+            "lens_notes": "Shell reappears over the tropics first, then spreads poleward.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "REBUILDING",
+            "metric_label": "DAY",
+            "start_value": 1,
+            "end_value": 60,
+            "unit": "",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "NASA Blue Marble Earth with clouds and night lights, centred on the Mediterranean and Atlantic.",
+              "geometry_and_material": "Earth class, radius 1, slow spin.",
+              "scale_and_accuracy": "True relative size; ozone shell thickness exaggerated about 4x.",
+              "movement": "Slow spin."
+            },
+            {
+              "id": "ozone-layer",
+              "kind": "atmosphere",
+              "appearance": "Thin violet rim-lit shell around the globe.",
+              "geometry_and_material": "Additive fresnel shell at radius 1.014 with fbm-noise erosion and a latitude-dependent regrowth mask.",
+              "scale_and_accuracy": "Stylised visibility of an invisible gas layer; amount follows the premise and qualitative regrowth.",
+              "movement": "Regrows from 42.1s to 45.1s, still thinner than normal at day 60."
+            }
+          ],
+          "animation_plan": [
+            "42.1-45.1s day counter 1 -> 60; shell refills unevenly."
+          ],
+          "lighting": "Sun from the right.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 45.3,
+          "end_s": 48.4,
+          "shot_type": "you watch the bright day through the cafe glass",
+          "world": "1 unit = 1 m. Inside the cafe behind its glass storefront: RoomBox interior, window counter, sliding service hatch; the sunny terrace and street beyond the glass.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 45.3,
+                "position": [
+                  14.5,
+                  1.55,
+                  2.7
+                ],
+                "look_at": [
+                  12.3,
+                  1.35,
+                  4.2
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 48.4,
+                "position": [
+                  14.4,
+                  1.53,
+                  2.8
+                ],
+                "look_at": [
+                  12.3,
+                  1.35,
+                  4.2
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow creep.",
+            "lens_notes": "Three-quarter front: you stand at the glass with a mug, head turned to the bright, empty street outside.",
+            "handheld_sway": 0.25
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 14:30",
+            "metric_label": "UV OUTSIDE",
+            "start_value": 263,
+            "end_value": 263,
+            "unit": "",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You in a blue-grey jacket with a mug.",
+              "geometry_and_material": "Registered articulated Humanoid rig; seated and standing poses grounded with character-motion-v1.",
+              "scale_and_accuracy": "Adults 1.6-1.8 m.",
+              "movement": "Stand at the glass, sip at 46.4s, look out."
+            },
+            {
+              "id": "glass",
+              "kind": "other",
+              "asset_hint": "modeling-helpers-v1",
+              "appearance": "Clear storefront glass with a sliding service hatch.",
+              "geometry_and_material": "Thin physical glass panes (no shadow casting) in dark aluminium frames.",
+              "scale_and_accuracy": "Ordinary soda-lime glass: blocks UV-B and UV-C, passes much UV-A.",
+              "movement": "Closed."
+            }
+          ],
+          "animation_plan": [
+            "45.3-48.4s you sip and watch the street."
+          ],
+          "lighting": "Sunbeam on you through glass; warm interior fill.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "weeks, maybe months",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 41.9,
+          "duration_s": 3,
+          "kind": "music_swell",
+          "description": "Slow rising pad over the regrowth.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "Afternoon behind glass to the same terrace at night."
+      }
+    },
+    {
+      "id": "S10",
+      "beat": "ending",
+      "start_s": 48.4,
+      "end_s": 55,
+      "narration": {
+        "text": "So you take your coffee outside after dark. Nightfall becomes your morning.",
+        "start_s": 48.52,
+        "end_s": 54.85,
+        "delivery_note": "Warm payoff; settle on \"Nightfall becomes your morning.\"",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "When do you get your terrace back?",
+      "visual_payoff": "At night every table is full and your coffee is back where it started.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 48.4,
+          "end_s": 55,
+          "shot_type": "night: the terrace is full again",
+          "world": "1 unit = 1 m. The same terrace at 21:40: full darkness, street lamps, shop interiors and string lights under the awning; stars above.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 48.4,
+                "position": [
+                  9.25,
+                  1.62,
+                  3.4
+                ],
+                "look_at": [
+                  -2,
+                  4.2,
+                  -36
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 55,
+                "position": [
+                  9.05,
+                  1.62,
+                  3.2
+                ],
+                "look_at": [
+                  -2,
+                  4.4,
+                  -36
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "The opening view again, slow drift.",
+            "lens_notes": "Your coffee on the table, every table taken, people walking under lamps.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "LOCAL TIME 21:40",
+            "metric_label": "UV INDEX",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "terrace",
+              "kind": "other",
+              "asset_hint": "room-box-v1",
+              "appearance": "Four small round cafe tables with chairs and coffee mugs on the sunlit sidewalk.",
+              "geometry_and_material": "RoomBox chair and mug builders plus round tables from modeling-helpers-v1.",
+              "scale_and_accuracy": "Table top 0.76 m, seat 0.47 m.",
+              "movement": "All tables occupied."
+            },
+            {
+              "id": "crowd",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Seated customers and evening walkers.",
+              "geometry_and_material": "Registered articulated Humanoid rig; seated and standing poses grounded with character-motion-v1.",
+              "scale_and_accuracy": "Adults 1.6-1.8 m.",
+              "movement": "Talk, gesture and walk."
+            },
+            {
+              "id": "street",
+              "kind": "architecture",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Stone facades with shopfronts and awnings, sunlit north side, shaded south side, lamps and kerbs.",
+              "geometry_and_material": "CityStreetClassic seed 5521 (merged static geometry, dry asphalt, emissive interiors scaled by time of day).",
+              "scale_and_accuracy": "Metre scale: 14 m road, 5 m sidewalks, 16-26 m buildings.",
+              "movement": "Lamps, lit windows and string lights."
+            }
+          ],
+          "animation_plan": [
+            "48.4-55s the street lives at night; your mug in the foreground mirrors the opening."
+          ],
+          "lighting": "Lamps, string lights and shop interiors; UV zero.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained HDR bloom",
+            "deterministic grain",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "after dark",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "Nightfall becomes your morning.",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 48.6,
+          "duration_s": 6,
+          "kind": "ambience",
+          "description": "Night terrace: laughter, cups, soft music.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL11"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Final frame mirrors the opening terrace view."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json read 2026-10-15 (95 entries, including sun-skylight-rig-v1 from sky-disappeared).",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "The cafe street, its shopfront, awning, lamps, and makeClassicCityCar traffic.",
+        "configuration": "CityStreetClassic seed 5521, blocks 7, storeys 5-8, wetness 0, vehicles false; one shop glazing replaced."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Normal clear-sky daylight, shadows and haze; night state.",
+        "configuration": "skyAmount 1 by day, 0.035 at night; sun 57 degrees from -X."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Visible blue sky dome inside the rig.",
+        "configuration": "zenith 0x3d7ad0, horizon 0xaecbea."
+      },
+      {
+        "asset_id": "room-box-v1",
+        "usage": "Cafe interior, chairs and mugs.",
+        "configuration": "RoomBox 3.84 x 3.0 x 5.2 m rotated behind the glass; chair() and mug() builders."
+      },
+      {
+        "asset_id": "dial-gauge-v1",
+        "usage": "The UV index meter.",
+        "configuration": "radius 0.065, 0-16, coloured UV bands, black bezel, red needle."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "You, the reader, the barista, customers and walkers.",
+        "configuration": "Seated, standing and walking poses; reachArm for newspaper and hatch handle."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Grounded standing and seated poses.",
+        "configuration": "applyGroundedPose and seatedPose at seat 0.57 m."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Orbital bookends for the vanished and refilling ozone layer.",
+        "configuration": "radius 1, setView(10, 38), night lights 1.4."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Day, night, cloud and land maps for the globe.",
+        "configuration": "loadEarthTextures 8x anisotropy."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Stars around the globe, in the stratosphere and over the night street.",
+        "configuration": "Seeded shells."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Noise erosion of the ozone shell and seeded choreography.",
+        "configuration": "GLSL fbm and rng()."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Glazing, hatch, counter, tables, newspaper, string lights and molecule spheres.",
+        "configuration": "box/solid/rod helpers."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Eye-level handheld POVs and locked orbital pushes.",
+        "configuration": "handheld_sway 0.2-0.4 on the street."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic 30 fps render, three cross-dissolves.",
+        "configuration": "Per-shot bloom and exposure."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Top-left telemetry with live values.",
+        "configuration": "x 90, y 240."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in Whisper-timed captions.",
+        "configuration": "72 px, baseline 1320."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and Foley.",
+        "configuration": "Pads, noise beds, clicks, thunks and pre-impact vacuum."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Captions and HUD.",
+        "configuration": "Inter 600/700."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline.",
+        "configuration": "Anton."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover from the pinned-meter frame.",
+        "configuration": "headline, badge UV INDEX 263, arrow."
+      }
+    ],
+    "new_reusable_asset_candidates": [],
+    "shot_specific_assets": [
+      "Storefront glazing and sliding hatch",
+      "Stylised ozone shell shader",
+      "Chapman-cycle molecule choreography"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if the ozone layer disappeared, ozone layer gone overnight, UV index without ozone, does glass block UV",
+    "core_keywords": [
+      "what if the ozone layer disappeared",
+      "ozone layer gone overnight",
+      "uv index without ozone",
+      "does glass block uv",
+      "sunburn in one minute",
+      "how ozone is made",
+      "earth science what if",
+      "physics thought experiment",
+      "threejs 3d documentary",
+      "atmospheric chemistry simulation"
+    ],
+    "distinctive_angle": "Nothing looks different: a pinned UV meter, a reader who feels nothing, and an ordinary window that saves you, while the same sun quietly rebuilds the shield.",
+    "comment_bait_question": "If daylight were off-limits for months, what’s the first thing you’d do after dark?",
+    "seo_integrity_note": "Fictional instant removal of stratospheric ozone; UV and burn-time figures are estimates from a simple model for one clear morning; characters and city reactions are illustrative."
+  },
+  "delivery": {
+    "video_output": "output/ozone-layer-gone-overnight.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 14.6,
+    "headline": "1-MINUTE SUNBURN?!",
+    "highlight": [
+      "SUNBURN"
+    ],
+    "position": "bottom",
+    "badge": "UV INDEX 263",
+    "focus": [
+      0.74,
+      0.42
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FACC15",
+      "badge": "#7C3AED",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FACC15"
+    },
+    "grade": "dramatic",
+    "tilt": -3,
+    "badge_at": [
+      0.34,
+      0.075
+    ]
+  }
+}

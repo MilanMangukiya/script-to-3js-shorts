@@ -1,0 +1,1584 @@
+{
+  "schema_version": "1.1.0",
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC 15 with a subtle scale lift.",
+    "highlights_policy": "The physical consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "delivery": {
+    "video_output": "output/earth-without-tilt.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "project": {
+    "topic": "What if Earth's axis had no tilt?",
+    "title": "What if Earth's Axis Had No Tilt? Your Summer Evenings Vanish",
+    "slug": "earth-without-tilt",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 52,
+    "language": "en",
+    "audience": "Curious international viewers; playful discovery through one familiar barbecue.",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "Can you rescue a long summer evening by waiting or chasing summer south on a permanently upright Earth?",
+    "viewer_takeaway": "Zero tilt removes long summer evenings and short winter days; equal day length does not equal equal sunlight angle, and eccentricity still varies sunlight."
+  },
+  "scientific_model": {
+    "baseline_reality": "Earth has about 23.44 degrees obliquity, a roughly 24-hour solar day and orbital eccentricity 0.0167; seasonal solar declination changes day length and noon sunlight angle.",
+    "counterfactual_change": "Earth has permanently zero obliquity: its spin axis is normal to its orbital plane. This is an alternative established Earth, not a sudden torque, axis snap, or violent transition.",
+    "assumptions": [
+      "Keep rotation rate, present eccentric orbit, solar output, geography and atmosphere. Keep calendar month names and present January perihelion orientation as storytelling conventions.",
+      "The anchor patio is at 45 degrees north; the southern search compares 45 degrees south. All stated hours are LOCAL SOLAR TIME, not civil time or daylight-saving time.",
+      "Nonpolar geometric day/night intervals are each half a solar day at zero declination. Solar-disc size and atmospheric refraction extend observed daylight; say roughly twelve hours.",
+      "The exact-pole solar center is on the geometric horizon; refraction can lift the visible disc. The equatorial overhead Sun is at solar noon only.",
+      "No temperatures, weather, crop yields, ice-sheet extents or climate states are predicted. Existing polar ice is an illustrative surface, not a forecast of new freezing.",
+      "Month/hour changes are explicit time jumps or a dinner rescheduling card. The Sun does not suddenly change its physical trajectory.",
+      "The orbital view enlarges the Sun and Earth independently and compresses their separation for readability. Body sizes are not a physical comparison; eccentricity, perihelion/aphelion distance ratios and the irradiance ratio are retained."
+    ],
+    "causal_chain": [
+      "Zero obliquity fixes solar declination atzero; neither hemisphere tilts toward the Sun.",
+      "The rotating day/night boundary gives most latitudes roughly twelve daylight hours, removing long summer days and short winter days.",
+      "Waiting or changing hemisphere cannot recover a long summer evening, so the initial plan fails.",
+      "Latitude still changes incidence angle: oblique rays spread a fixed incoming beam across more ground. Equal daylight is not uniform solar heating.",
+      "Eccentricity changes incident sunlight worldwide together; January perihelion gives about 6.9 percent more incoming flux thanJulyaphelion. This is not a temperature forecast.",
+      "The protagonist changes dinner time:17:00 solar-time barbecue has daylight at the chosen latitude inJune andDecember, unlike the initial 20:00 plan."
+    ],
+    "uncertainties": [
+      "Climate adjustment, cloud, ocean, atmospheric circulation and ice feedbacks require coupled modeling; no numerical climate claims are made.",
+      "The premise suppresses real obliquity variations indefinitely; its dynamic origin is outside scope.",
+      "Refraction, terrain and equation of time alter apparent/civil sunrise and sunset; telemetry uses ideal geometric solar time."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Axial tilt produces familiar seasonal changes in sunlight angle and day length.",
+        "confidence": "established",
+        "reasoning": "NASA and NOAA describe seasonal hemisphere alternation caused by obliquity; zero obliquity removes that geometric alternation.",
+        "presentation_guardrail": "Start with an already upright planet; never show a physical axis snap or destruction."
+      },
+      {
+        "id": "CL02",
+        "statement": "At zero obliquity, nonpolar latitudes have about twelve hours of daylight throughout the year.",
+        "confidence": "derived",
+        "reasoning": "Solar declination delta=0 gives cos(H 0)=-tan(latitude)*tan(delta)=0 away from exactpoles, soH 0=90 deg and a half-day illuminated interval. Refraction and solar-disc size lengthen visible daylight.",
+        "presentation_guardrail": "Say roughly, exclude poles in speech, label LOCAL SOLAR TIME; never promise identical observed/civil sunsets."
+      },
+      {
+        "id": "CL03",
+        "statement": "At 45 degrees north or south, zero tilt removes long summer evenings and short winter daylight intervals.",
+        "confidence": "derived",
+        "reasoning": "At either chosenlatitude the same geometric half-day interval applies eachmonth.20:00 solar time is dark;17:00 solar time is sunlit. Compare with modern tilt-driven seasons.",
+        "presentation_guardrail": "The barbecue/search are illustrative personal actions. Winter-afternoon benefit refers to this midlatitude, not polar/equatorial regions."
+      },
+      {
+        "id": "CL04",
+        "statement": "Equal sunlight duration does not imply equal incoming solar energy per unit ground area at different latitudes.",
+        "confidence": "established",
+        "reasoning": "For matched incoming beam and atmosphere, irradiance on horizontal ground follows cosine of incidence angle. Oblique sunlight covers more ground; NOAA explains the latitude effect.",
+        "presentation_guardrail": "Stage real sunlight direction, grounded post/pergola shadows and oblique ground illumination. Do not invent thermometers, equal local climates or a floating measurement device."
+      },
+      {
+        "id": "CL05",
+        "statement": "At zero tilt the solar center is overhead at equatorial solar noon and on the geometric horizon at exactpoles.",
+        "confidence": "derived",
+        "reasoning": "Noon altitude equals 90 degrees minus absolute latitude when declination=0. At either pole altitude remains 0 as azimuth circles; disc size/refraction remain.",
+        "presentation_guardrail": "Explicitly use noon at equator; polarSun stays nearhorizon, never normal twelve-hour rising/setting arc."
+      },
+      {
+        "id": "CL06",
+        "statement": "Eccentricity 0.0167 preserves approximately 6.9 percent perihelion-to-aphelion variation in incident solar flux.",
+        "confidence": "derived",
+        "reasoning": "NASA gives e=.0167 and distances 147.095/152.100 millionkm. Inverse-square flux ratio=((1+e)/(1-e))^2=1.06909. Retained calendar convention puts perihelion aroundJanuary.",
+        "presentation_guardrail": "This is top-of-atmosphere solar flux, not weather or temperature. Keep orbit nearly circular; do not claimJanuary hottest."
+      },
+      {
+        "id": "CL07",
+        "statement": "Eccentricity-driven irradiance varies both hemispheres together rather than alternating tilt-driven summers.",
+        "confidence": "derived",
+        "reasoning": "Sun–Earth distance is shared globally; zero declination preserves geometric equatorial symmetry. Localweather and thermal lag need not match.",
+        "presentation_guardrail": "Strengthen paired incoming-ray indicators together, not synchronous weather or equal temperatures."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NASA Space Place — What Causes the Seasons?",
+        "url": "https://spaceplace.nasa.gov/seasons/en/",
+        "supports_claim_ids": [
+          "CL01",
+          "CL03"
+        ]
+      },
+      {
+        "name": "NOAA National Weather Service — Why Do We Have Seasons?",
+        "url": "https://www.weather.gov/lmk/seasons",
+        "supports_claim_ids": [
+          "CL01",
+          "CL02",
+          "CL03"
+        ]
+      },
+      {
+        "name": "NOAA JetStream — Global Weather",
+        "url": "https://www.noaa.gov/jetstream/global",
+        "supports_claim_ids": [
+          "CL01",
+          "CL04",
+          "CL05"
+        ]
+      },
+      {
+        "name": "NASA NSSDC — Earth Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "supports_claim_ids": [
+          "CL01",
+          "CL06"
+        ]
+      },
+      {
+        "name": "NASA — Milankovitch Orbital Cycles and Their Role in Earth’s Climate",
+        "url": "https://science.nasa.gov/science-research/earth-science/climate-science/milankovitch-orbital-cycles-and-their-role-in-earths-climate/",
+        "supports_claim_ids": [
+          "CL01",
+          "CL06",
+          "CL07"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "Your late summer barbecue loses its daylight. Waiting and searching the other hemisphere fail, until sunlight geometry reveals the plan that works.",
+    "visual_identity": "Tactile premium 3 D miniature discovery: a supported grill, calendar, lamp and paving anchor a playful astronomical counterfactual. Return to the same patio with a completed earlier dinner.",
+    "palette": [
+      "#101 B 2 B",
+      "#F 6 B 95 A",
+      "#80 C 6 EC",
+      "#F 3 ECD 9",
+      "#256 D 76"
+    ],
+    "lighting": "Amber grill/lantern atnight; coherent solar key and restrained skylight byday. Incoming beams illuminate physical ground, without invented temperature colors.",
+    "camera_language": "Eye-level patio holds preserve prop relationships; globe comparisons earn a scale change. Cuts clarify month, latitude and time transitions; ground sway remains subtle.",
+    "motion_language": "One-time grill ignition, physical month flip, north-to-south search, real lengthening post/pergola shadows, polar horizon sweep and a completed earlier dinner. Evaluate every state from absolute film time.",
+    "world_scale_policy": "Ground views use 1 unit=1 metre; Earth and orbit use explicit local planetary units. Do not exaggerate eccentricity or add floating rulers.",
+    "emotional_arc": [
+      "A familiar plan fails",
+      "The clever workaround fails",
+      "Equal days reveal unequal sunlight",
+      "An honest small exception",
+      "A practical comic rescue"
+    ],
+    "opening_hook": "A grill ignites under a darkJune 20:00 solar-time sky; the lost long summer evening disrupts dinner.",
+    "mid_video_rehook": "At22.8s the failed southern search reveals the real distinction: the same hours of sun can arrive at different angles. As the geographical noon view moves toward high latitude, low rays spread light over more ground and a planted post/pergola casts longer shadows.",
+    "ending_payoff": "Winter short afternoons are gone too. After a marked December 17:00 daylight comparison, the June dinner card changes 20:00→17:00 with a clear edit to an earlier sunlit hour. Waiting for another month cannot rescue the original plan.",
+    "loop_connection": "The same grill/lantern sound returns with successful dinner in daylight; openingdark 20:00 andclosinglit 17:00 show the changeddecision.",
+    "asset_policy": "Reuse verified registry assets and Modeling helpers. Only the story-specific grill/calendar/clock, grounded angle proof and nearly circular orbit curve are new."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 154,
+    "music_direction": "Light suspenseful pulse with warm plucked procedural notes. The failed plan gets a dry pause; the angle reveal opens the harmony; the earlier dinner ends warmly.",
+    "music_level_db_below_voice": -18,
+    "sfx_direction": "Tactile grill ignition, paper flip, search tick, short reveal swish and soft lantern click. No destruction. Duck every nonvoice track from 23.05 to 23.35 before the grounded shadow reveal.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1,
+    "voice_id": "am_michael"
+  },
+  "distribution": {
+    "primary_search_intent": "What if Earth had no axial tilt, and how would seasons and day length change?",
+    "core_keywords": [
+      "Earth axis no tilt",
+      "zero obliquity",
+      "seasons explained",
+      "earth science what if",
+      "astronomy simulation",
+      "daylight length",
+      "solar incidence angle",
+      "threejs 3 d documentary"
+    ],
+    "distinctive_angle": "A failed summer barbecue and hemisphere search reveal why equal days do not mean one worldwide climate, with an honest eccentricity exception.",
+    "comment_bait_question": "Would you trade long summer evenings for longer winter afternoons?",
+    "seo_integrity_note": "Use Earth science and astronomy qualifiers. Do not promise no weather, uniform climate, sudden freezing, perfectly twelve-hour observed days or the absence of every yearly variation."
+  },
+  "thumbnail": {
+    "time_s": 2.6,
+    "headline": "SUMMER EVENINGS GONE?!",
+    "highlight": [
+      "GONE"
+    ],
+    "badge": "0° TILT",
+    "focus": [
+      0.8,
+      0.5
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "grade": "dramatic",
+    "tilt": -3,
+    "position": "top",
+    "zoom": 1.08,
+    "badge_at": [
+      0.25,
+      0.7
+    ],
+    "anchor": [
+      0.8,
+      0.5
+    ]
+  },
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Inspected registry and actual Earth, SolarOrbitDiagram, SeaIce and Modeling source. Existing orbitdiagram makes circles; use a story-specific e=.0167 ellipse.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Upright rotatingEarth and hemispherecomparison.",
+        "configuration": "radius 1; permanentzero obliquity; equatorialSun; noaxissnap."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "SharedNASAsurface,cloud,nighttextures.",
+        "configuration": "loadEarthTextures once; preserve geographicidentity."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Quietorbitaldepth behindEarth.",
+        "configuration": "Fixedseed; brightnessbelowglobe."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Patio,equatorial,polar sky.",
+        "configuration": "SameSun asactualkey; no disconnectedbackgroundSun."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Coherent direct and scattered daylight.",
+        "configuration": "Resetfullstate bylatitude,solarhour andabsolutetime."
+      },
+      {
+        "asset_id": "flame-v1",
+        "usage": "Grill ignition andsmallsettledflame.",
+        "configuration": "Warmseededflame alignedtoburner."
+      },
+      {
+        "asset_id": "broadleaf-tree-v1",
+        "usage": "Patio scale andcastshadow.",
+        "configuration": "Restrainedsilhouette; no inventedseasonalphenology."
+      },
+      {
+        "asset_id": "sea-ice-v1",
+        "usage": "Illustrativeexistingpolarhorizon.",
+        "configuration": "Lowprofile; nogrowth ornewclimateprediction."
+      },
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Polarwaterhorizon.",
+        "configuration": "Restrainedwaves andhorizonsunglitter."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Supportedfurniture,grill,calendar,clock andgroundproof.",
+        "configuration": "Metre-scalebox,rod,surface,screenhelpers."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Deterministicpurposefulcameras.",
+        "configuration": "Numerickeyframes; groundhold/sway.2."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Exactverifiedspeechcaptions.",
+        "configuration": "Safe 1320 baseline;2–5 wordphrases."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Month,latitude,solar time andfluxtelemetry.",
+        "configuration": "Top-left 90,240; nophysicaltemperatureforecast."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Proceduralpulse,grill,paper,search,lantern.",
+        "configuration": "Nonvoice duck 23.05–23.35; master−14 LUFS and truepeak≤−1 dBTP."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bolddarkbarbecuecover.",
+        "configuration": "SUMMER EVENINGS GONE?!;0°TILTbadge;arrowgrill."
+      },
+      {
+        "asset_id": "grass-field-v1",
+        "usage": "Patio grass supplies coherent scale and surface context.",
+        "configuration": "Seed 923;2800 blades, fixed restrained bend; no seasonal growth or dying animation."
+      },
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "Distant inhabited street gives the patio a real neighborhood context.",
+        "configuration": "Two low-rise blocks, no vehicles, translated into the background; no destruction."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "One planted patio cook performs a finite lantern-switch action.",
+        "configuration": "Height 1.72 m; jacket; purposeful three-quarter pose with actual right-hand switch contact."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Supported grounded pose and full ankle/contact reset for the cook.",
+        "configuration": "applyGroundedPose after complete pose assignment; no walking or unsupported stride."
+      },
+      {
+        "asset_id": "smoke-wisp-v1",
+        "usage": "Subtle ordinary grill smoke.",
+        "configuration": "Small seeded wisp above the grate; no disaster plume."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic frame rendering and final postprocessing.",
+        "configuration": "1080×1920 at 30 fps; single shared ACES finish, authored scene cuts and exact timeline."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Readable captions and technical telemetry.",
+        "configuration": "Shared local Inter fonts; exact verified speech words; safe baseline 1320."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Bold thumbnail headline.",
+        "configuration": "Local Anton face; truthful 0°TILT numeric badge and grill-directed arrow."
+      }
+    ],
+    "new_reusable_asset_candidates": [],
+    "shot_specific_assets": [
+      "A metre-scale grill and supported calendar/clock built from registered Modeling helpers.",
+      "A grounded post and supported pergola with real cast shadows on physical paving; no floating beam device, ruler or bar chart.",
+      "A nearly circular 3 D orbit curve with e=.0167, Sun at its focus and paired incoming-flux cues."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4,
+      "narration": {
+        "text": "You light the barbecue. Summer's long evenings have vanished.",
+        "start_s": 0,
+        "end_s": 3.85,
+        "delivery_note": "Dry surprise, not panic. Land long evenings; let the dark sky answer why dinner feels wrong.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Why is your summer barbecue already in the dark?",
+      "visual_payoff": "The grill lights under a dark June 20:00 solar-time sky: the lost long evening becomes a tangible problem.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Metre-scale 45°Npatio: grill[-.22,.85,-2], table[-1.1,.8,-1.8], calendar[-.75,1.35,-2.25], lantern[.64,.98,-1.85], shadowpost[-.5,0,-3.4]. South=-Z; east=+X.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0,
+                  1.55,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.9
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 4,
+                "position": [
+                  0,
+                  1.55,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.9
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Same grill/lantern spatialanchor returns inending.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 0,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "JUNE · SOLAR 20:00",
+            "metric_label": "AXIAL TILT",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "barbecue",
+              "kind": "other",
+              "appearance": "Dark enamelgrill with warmburner andsupportedlid.",
+              "geometry_and_material": "Modelingbox/rod/surface; metalgrate and registeredFlame.",
+              "scale_and_accuracy": ".9 mworktop, ordinary gravity.",
+              "movement": "Igniteonce.2–.8 s andsettleby 1; laterfood stayssupported.",
+              "asset_hint": "modeling-helpers-v1; flame-v1"
+            },
+            {
+              "id": "calendar-clock-lantern",
+              "kind": "other",
+              "appearance": "Physicalmonthcard, solar-timeclock andamberlantern onsupportedfurniture.",
+              "geometry_and_material": "Modelingscreen/box; paper,glass andrestrainedemissive.",
+              "scale_and_accuracy": "Readableworld props; hours explicitlysolar time.",
+              "movement": "Setmonth/hour fromabsolutetime; finalinvitationreschedules 20:00→17:00.",
+              "asset_hint": "modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 0.0 show June card,20:00 solar-time clock, ordinary dark sky and unlit grill.",
+            "At 0.2–0.8 ignite grill; warm light reveals grate, calendar and lantern.",
+            "At 1.0–4.0 hold completed litgrill against unchanged darksky. No Sun vanishes or axis changes."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Same grill/lantern spatialanchor returns inending."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "long evenings",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0.2,
+          "duration_s": 0.5,
+          "kind": "texture",
+          "description": "Soft tactile grill ignition; no detonation.",
+          "relative_db": -8
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Clear time/place/scalechange; preserveanchor andwithholdnextreveal."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4,
+      "end_s": 10.5,
+      "narration": {
+        "text": "Earth keeps spinning, but its axis has no tilt. No hemisphere leans toward the sun.",
+        "start_s": 4,
+        "end_s": 10.35,
+        "delivery_note": "State no tilt before 8 s, confidently. Neither hemisphere gets a turn; no doom.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "What changed, and why can the calendar not bring summer back?",
+      "visual_payoff": "Rotating Earth stays upright as its Sun-facing direction moves through its orbit; neither pole leans into the light.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4,
+          "end_s": 10.5,
+          "shot_type": "Planetary mechanism discovery",
+          "world": "Local planetary units: Earth radius 1 atorigin; axis+Y normaltoorbitXZ; stars andequatorialSun.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 4,
+                "position": [
+                  4,
+                  1.8,
+                  4.8
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 10.5,
+                "position": [
+                  4,
+                  1.8,
+                  4.8
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Keep axis/equator readable; camera hold makescomparison clear."
+          },
+          "hud_telemetry": {
+            "timer_label": "PERMANENT ZERO TILT",
+            "metric_label": "OBLIQUITY",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "upright-earth",
+              "kind": "planet",
+              "appearance": "TexturedEarth with verticalspinaxis andthinequatorring.",
+              "geometry_and_material": "Earth radius 1,NASAmaps andworld-spaceraymarkers.",
+              "scale_and_accuracy": "Axisnormaltoorbitplane throughout; local planetary units.",
+              "movement": "RotatearoundY; neverlean/snap; sunliesinequatorialplane.",
+              "asset_hint": "earth-globe-v1; earth-textures-nasa-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Quiet darkorbitalbackground.",
+              "geometry_and_material": "Seededregisteredstarfield.",
+              "scale_and_accuracy": "Distantbackdrop.",
+              "movement": "Followcamera withoutaccumulateddrift.",
+              "asset_hint": "starfield-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 4.0 axis is alreadyvertical; never interpolate frompresenttilt.",
+            "At 4.4–7.5 rotatearoundY and move solarazimuth throughillustrativeorbitalarc withzerodeclination.",
+            "At 7.5–10.5 hold uprightaxis andbalancednorth/southillumination."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Keep axis/equator readable; camera hold makescomparison clear."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "no tilt",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Clear time/place/scalechange; preserveanchor andwithholdnextreveal."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "human_impact",
+      "start_s": 10.5,
+      "end_s": 17,
+      "narration": {
+        "text": "June. December. You still get roughly twelve daylight hours. Your calendar can't help.",
+        "start_s": 10.5,
+        "end_s": 16.85,
+        "delivery_note": "Make June and December distinct beats, then land the personal discovery: you still get roughly twelve daylight hours. You refers to the established45?N patio. Let calendar sound quietly disappointed.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Will waiting from June to December bring a longer day to your45?N patio?",
+      "visual_payoff": "The physical June card changes to December while the noon Sun and the same grounded post shadow stay matched.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 10.5,
+          "end_s": 17,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Metre-scale 45°Npatio: grill[-.22,.85,-2], table[-1.1,.8,-1.8], calendar[-.75,1.35,-2.25], lantern[.64,.98,-1.85], shadowpost[-.5,0,-3.4]. South=-Z; east=+X.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 10.5,
+                "position": [
+                  0,
+                  1.55,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.9
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 17,
+                "position": [
+                  0,
+                  1.55,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.9
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Calendar and cast-shadow anchor readable withinoneframe.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 10.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "JUNE → DEC · SOLAR 12:00",
+            "metric_label": "DAYLIGHT",
+            "start_value": 12,
+            "end_value": 12,
+            "unit": "h ≈",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "barbecue",
+              "kind": "other",
+              "appearance": "Dark enamelgrill with warmburner andsupportedlid.",
+              "geometry_and_material": "Modelingbox/rod/surface; metalgrate and registeredFlame.",
+              "scale_and_accuracy": ".9 mworktop, ordinary gravity.",
+              "movement": "Igniteonce.2–.8 s andsettleby 1; laterfood stayssupported.",
+              "asset_hint": "modeling-helpers-v1; flame-v1"
+            },
+            {
+              "id": "calendar-clock-lantern",
+              "kind": "other",
+              "appearance": "Physicalmonthcard, solar-timeclock andamberlantern onsupportedfurniture.",
+              "geometry_and_material": "Modelingscreen/box; paper,glass andrestrainedemissive.",
+              "scale_and_accuracy": "Readableworld props; hours explicitlysolar time.",
+              "movement": "Setmonth/hour fromabsolutetime; finalinvitationreschedules 20:00→17:00.",
+              "asset_hint": "modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 10.5 establish June 12:00 local solar time at 45°N, with noon solar elevation 45° and a clearly grounded post shadow.",
+            "At 11.4–12.0 change the physical calendar fromJune toDecember; this is an explicit six-month time jump.",
+            "Keep declination 0 and hour 12 fixed, preserving noon sunlight direction and post shadow; visible clock reads 12:00.",
+            "At 14.0–17.0 hold the December noon proof; no temperature or foliage forecast."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Calendar and cast-shadow anchor readable withinoneframe."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "roughly twelve",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "calendar",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 11.4,
+          "duration_s": 0.6,
+          "kind": "texture",
+          "description": "Quiet physical paper-card flip.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Clear time/place/scalechange; preserveanchor andwithholdnextreveal."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 17,
+      "end_s": 22.8,
+      "narration": {
+        "text": "So you search for summer south. Same problem. Neither hemisphere gets those long evenings.",
+        "start_s": 17,
+        "end_s": 22.650000000000002,
+        "delivery_note": "Try the cleverworkaround, then let flat same problem land the failure.",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "Can another hemisphere give you the lost summer evening?",
+      "visual_payoff": "The search marker moves 45°N→45°S; both locations retain matching half-day illuminated tracks.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 17,
+          "end_s": 22.8,
+          "shot_type": "Planetary mechanism discovery",
+          "world": "Same radius 1 uprightEarth, attachedlatitude markers andshared geometricday/night boundary.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 17,
+                "position": [
+                  4,
+                  1.8,
+                  4.8
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 22.8,
+                "position": [
+                  4,
+                  1.8,
+                  4.8
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Same globe viewpoint preserves the comparison."
+          },
+          "hud_telemetry": {
+            "timer_label": "SEARCH NORTH → SOUTH",
+            "metric_label": "DAYLIGHT",
+            "start_value": 12,
+            "end_value": 12,
+            "unit": "h ≈",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "upright-earth",
+              "kind": "planet",
+              "appearance": "TexturedEarth with verticalspinaxis andthinequatorring.",
+              "geometry_and_material": "Earth radius 1,NASAmaps andworld-spaceraymarkers.",
+              "scale_and_accuracy": "Axisnormaltoorbitplane throughout; local planetary units.",
+              "movement": "RotatearoundY; neverlean/snap; sunliesinequatorialplane.",
+              "asset_hint": "earth-globe-v1; earth-textures-nasa-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Quiet darkorbitalbackground.",
+              "geometry_and_material": "Seededregisteredstarfield.",
+              "scale_and_accuracy": "Distantbackdrop.",
+              "movement": "Followcamera withoutaccumulateddrift.",
+              "asset_hint": "starfield-v1"
+            },
+            {
+              "id": "search-markers",
+              "kind": "other",
+              "appearance": "Two small distinct surfacepins atmatchednorth/southlatitudes.",
+              "geometry_and_material": "Worldspace spheres andthinmeridian on actualglobe.",
+              "scale_and_accuracy": "Latitude±45 degrees; no physicaltraveltimeclaim.",
+              "movement": "At 17.5–19.6 activepin slidesnorth→south; day/nightarcs remainmatched.",
+              "asset_hint": "modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 17.0 establish the 45°N marker matching the patio.",
+            "At 18.4–20.5 transfer the active highlight from the northern marker to the 45°S marker; both retain the same geometric day/night division.",
+            "At 20.5–22.8 hold the southern marker and paired latitude tracks. The alternate-hemisphere search has failed."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Same globe viewpoint preserves the comparison."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Same problem",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "Neither hemisphere",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 20.5,
+          "duration_s": 0.2,
+          "kind": "texture",
+          "description": "Single dry search-result tick as southernmarker settles.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Clear time/place/scalechange; preserveanchor andwithholdnextreveal."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "twist",
+      "start_s": 22.8,
+      "end_s": 28.3,
+      "narration": {
+        "text": "Same hours of sun. But low rays spread light over more ground.",
+        "start_s": 22.8,
+        "end_s": 28.150000000000002,
+        "delivery_note": "Start with the familiar equal-hours result, then land low rays and more ground as one clear physical discovery. Keep the second sentence connected and conversational. This describes incoming light spread, not local air temperature.",
+        "pacing_energy": "weighty_impact"
+      },
+      "viewer_question": "How can the same daylight duration still give different sunlight concentration?",
+      "visual_payoff": "A grounded post and supported pergola cast progressively longer shadows across pale paving as the view moves from equatorial noon to high-latitude noon; the lower sunlight is more oblique.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 22.8,
+          "end_s": 28.3,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Metre-scale SunAngleStage: planted post at[0,0,-2.2], pale paving, supported pergola. Noon view moves geographically from latitude 0 to 75 degrees while zero declination is held fixed.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 22.8,
+                "position": [
+                  0,
+                  1.55,
+                  3.2
+                ],
+                "look_at": [
+                  0,
+                  0.4,
+                  -1.4
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 28.3,
+                "position": [
+                  0,
+                  1.55,
+                  3.2
+                ],
+                "look_at": [
+                  0,
+                  0.4,
+                  -1.4
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Footprints are centralphysicalsubjects; neverlabel angle astemperature.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 22.8,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "EQUAL INCOMING BEAMS",
+            "metric_label": "SUN ELEVATION",
+            "start_value": 90,
+            "end_value": 15,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "grounded-angle-proof",
+              "kind": "other",
+              "appearance": "A fixed wooden post and supported pergola over pale physical paving.",
+              "geometry_and_material": "Modeling rod/box/surface helpers; actual directional sunlight and cast shadows, not a floating beam device.",
+              "scale_and_accuracy": "One metre-scale post and unchanged paving. Latitude 0→75 at solar noon changes Sun elevation 90→15 degrees; incoming irradiance per normal beam remains constant.",
+              "movement": "At 23.35 to 27.25 seconds, the post and pergola shadows stretch as the geographic viewpoint moves from the equator to 75 degrees north at solar noon. Ground illumination becomes more oblique; no temperature forecast is depicted.",
+              "asset_hint": "modeling-helpers-v1; sun-skylight-rig-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 22.8–23.05 establish the grounded post, pergola and compact equatorial noon shadows.",
+            "At 23.05–23.35 duck every nonvoice track 24 dB before the primary change.",
+            "At 23.35–27.25 move the view latitude 0→75 at solar noon, lowering the Sun 90→15 degrees. Keep post/ground fixed; real shadows lengthen and illumination becomes oblique.",
+            "At 27.25–28.3 hold the completed long-shadow state. This geographical comparison is not a weather change or passing season."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Footprints are centralphysicalsubjects; neverlabel angle astemperature."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Same hours",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "low rays",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "more ground",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 23.05,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Duck every nonvoice track 24 dB for 0.3 s immediately before the 23.35 grounded shadow reveal.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 23.35,
+          "duration_s": 0.5,
+          "kind": "whoosh",
+          "description": "Soft short ray swish; noimpact.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Clear time/place/scalechange; preserveanchor andwithholdnextreveal."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "second_order_effect",
+      "start_s": 28.3,
+      "end_s": 34.6,
+      "narration": {
+        "text": "Try the equator. Noon sun overhead; still no late sunset. Polar sunlight skims the horizon.",
+        "start_s": 28.3,
+        "end_s": 34.45,
+        "delivery_note": "Invite the equatorial workaround, then make still no late sunset its disappointed answer. Polar is a short curious discovery. Keep noon explicit.",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "Can chasing stronger equatorial sunlight restore the lost late summer sunset?",
+      "visual_payoff": "The equatorial noon post shadow is compact, but the same roughly twelve-hour day remains; a polar horizon view then reveals grazing sunlight instead of a high noon Sun.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 28.3,
+          "end_s": 32.233333333333334,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Metre-scale equatorialgroundproof atlocalsolar noon; actualSun/key bothzenithdirected.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 28.3,
+                "position": [
+                  0,
+                  1.55,
+                  3
+                ],
+                "look_at": [
+                  0,
+                  0.35,
+                  -2
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 32.233333333333334,
+                "position": [
+                  0,
+                  1.55,
+                  3
+                ],
+                "look_at": [
+                  0,
+                  0.35,
+                  -2
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Groundshadow proves overheadSun; actualskylight agrees.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 28.3,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "EQUATOR · SOLAR 12:00",
+            "metric_label": "NOON SUN",
+            "start_value": 90,
+            "end_value": 90,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "equatorial-post",
+              "kind": "other",
+              "appearance": "Groundedpost with compactnoonshadow underneath.",
+              "geometry_and_material": "Modelinghelpers withcoherentSunSkylightRig andSkyDome.",
+              "scale_and_accuracy": "Latitude 0 atsolar noon, declination 0: solar center elevation 90°.",
+              "movement": "Maintain overheadnoon Sun andcompactgroundshadow; neverall-dayoverheadSun.",
+              "asset_hint": "modeling-helpers-v1; sun-skylight-rig-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 28.3 establish EQUATOR·SOLAR 12:00 andgrounded post.",
+            "At 28.3–29.4 reveal overheadray direction andcompactshadow.",
+            "At 29.4–32.233 hold noonresult, then clearcuttopole."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Groundshadow proves overheadSun; actualskylight agrees."
+        },
+        {
+          "id": "SH02",
+          "start_s": 32.233333333333334,
+          "end_s": 34.6,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Metre-scale existingseaice andlowocean horizon; exactpole solar center altitude 0; atmosphere retained.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 48,
+            "keyframes": [
+              {
+                "t_s": 32.233333333333334,
+                "position": [
+                  0,
+                  1.6,
+                  3
+                ],
+                "look_at": [
+                  0,
+                  1.6,
+                  -20
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 34.6,
+                "position": [
+                  0,
+                  1.6,
+                  3
+                ],
+                "look_at": [
+                  0,
+                  1.6,
+                  -20
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Horizon nearcenter; solar disc clearofHUD/captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 32.233333333333334,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "POLAR HORIZON",
+            "metric_label": "SOLAR CENTER",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "polar-horizon",
+              "kind": "terrain",
+              "appearance": "Low existingice/water undernear-horizonSun withgrazingshadows.",
+              "geometry_and_material": "SeaIce,OceanSurface,SkyDome andactualsunrig; nonewfreezing.",
+              "scale_and_accuracy": "Exactpole geometricSuncenter 0°; refractionmayliftvisible discslightly.",
+              "movement": "Sunazimuthmovesalonghorizon fromabsolutetime; nevernormalnoonarc.",
+              "asset_hint": "sea-ice-v1; ocean-surface-v1; sky-dome-v1; sun-skylight-rig-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 32.233 cuttoPOLAR HORIZON andexistingice.",
+            "At 32.233–33.3 move Sunazimuthalonghorizon withgeometriccenter 0°; key/glitterfollow.",
+            "At 33.3–34.6 holdgrazinglight consequence withouticegrowth/temperatureforecast."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Horizon nearcenter; solar disc clearofHUD/captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Noon sun overhead",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "no late sunset",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "skims the horizon",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Clear time/place/scalechange; preserveanchor andwithholdnextreveal."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "mechanism",
+      "start_s": 34.6,
+      "end_s": 42,
+      "narration": {
+        "text": "January brings slightly stronger sunlight worldwide, thanks to our oval orbit. It can't restore long summer evenings.",
+        "start_s": 34.6,
+        "end_s": 41.85,
+        "delivery_note": "Test January as one final loophole. Slightly stronger gives an honest partial answer; cannot restore lands the failed barbecue workaround. Keep final reflective pace forS 08.",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "Could the retained January sunlight increase rescue a long summer evening?",
+      "visual_payoff": "Nearcircular retainedorbit reaches Januaryperihelion; paired incoming flux cues strengthen together~6.9% relativeJuly.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 34.6,
+          "end_s": 42,
+          "shot_type": "Planetary mechanism discovery",
+          "world": "Localorbitaldiagramunits: ellipse e=.0167 nearly circular, Sun at focus, uprightEarth andpairedincomingrays.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 34.6,
+                "position": [
+                  5.2,
+                  6.24,
+                  8.06
+                ],
+                "look_at": [
+                  0,
+                  -1,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 42,
+                "position": [
+                  5.2,
+                  6.24,
+                  8.06
+                ],
+                "look_at": [
+                  0,
+                  -1,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Hold the complete orbit and enlarged Earth inside the portrait frame throughout every phase. Paired incoming-ray cues and telemetry reveal the small flux variation; eccentricity is not exaggerated."
+          },
+          "hud_telemetry": {
+            "timer_label": "JULY → JANUARY",
+            "metric_label": "INCIDENT SUNLIGHT",
+            "start_value": 100,
+            "end_value": 106.9,
+            "unit": "% vs JUL",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "upright-earth",
+              "kind": "planet",
+              "appearance": "TexturedEarth with verticalspinaxis andthinequatorring.",
+              "geometry_and_material": "Earth radius 1,NASAmaps andworld-spaceraymarkers.",
+              "scale_and_accuracy": "Axisnormaltoorbitplane throughout; local planetary units.",
+              "movement": "RotatearoundY; neverlean/snap; sunliesinequatorialplane.",
+              "asset_hint": "earth-globe-v1; earth-textures-nasa-v1"
+            },
+            {
+              "id": "stars",
+              "kind": "stars",
+              "appearance": "Quiet darkorbitalbackground.",
+              "geometry_and_material": "Seededregisteredstarfield.",
+              "scale_and_accuracy": "Distantbackdrop.",
+              "movement": "Followcamera withoutaccumulateddrift.",
+              "asset_hint": "starfield-v1"
+            },
+            {
+              "id": "retained-orbit",
+              "kind": "other",
+              "appearance": "Nearlycircularorbit, compactSun atfocus andmatchedhemisphere incomingraypatches.",
+              "geometry_and_material": "Storyspecific 3 Dellipse withregisteredEarth; nohugeoval or 2 Dbarchart.",
+              "scale_and_accuracy": "e=.0167; aspectratio sqrt(1-e²)≈.99986. FluxJuly 100→January 106.9 percent.",
+              "movement": "At 35–38 orbitalmarker movesJuly→January; bothraystrengthsincreasetogether, thenhold.",
+              "asset_hint": "earth-globe-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 34.6–35.5 establish JULY·APHELION and incident-flux baseline 100 on the near-circular orbit.",
+            "At 35.5–40.0 traverse the illustrative half-orbit toJANUARY·PERIHELION while zero obliquity remains fixed; Sun atfocus.",
+            "Strengthen paired incoming-ray cues together as inverse-square flux increases 100→106.9 percent. Do not change weather or forecast temperatures.",
+            "At 40.0–42.0 hold January flux; the residual variation never restores long summer days."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Usepairedraycues/telemetry, notdistortedellipse, toreveal smallfluxvariation."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "slightly stronger",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "long summer evenings",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL06",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Clear time/place/scalechange; preserveanchor andwithholdnextreveal."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "ending",
+      "start_s": 42,
+      "end_s": 52,
+      "narration": {
+        "text": "Winter's shortest afternoons are gone, too. Your barbecue survives. Move dinner earlier; the calendar can't save it.",
+        "start_s": 42,
+        "end_s": 51.85,
+        "delivery_note": "Warmpracticalpayoff: gone too revealsthebenefit, survivesreleasestension, calendarlandsdrycallback.",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "What can you change when the calendar cannot rescue dinner?",
+      "visual_payoff": "December 17:00 patio stayslight; supportedinvitation reschedules 20:00→17:00, thenJune 17:00 dinnerholds successful.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 42,
+          "end_s": 46.6,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Metre-scale 45°Npatio: grill[-.22,.85,-2], table[-1.1,.8,-1.8], calendar[-.75,1.35,-2.25], lantern[.64,.98,-1.85], shadowpost[-.5,0,-3.4]. South=-Z; east=+X.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 42,
+                "position": [
+                  0,
+                  1.55,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.9
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 46.6,
+                "position": [
+                  0,
+                  1.55,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.9
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Samegrill/lanternframegivespositivecomparison.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 42,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "DECEMBER · SOLAR 17:00",
+            "metric_label": "DAYLIGHT",
+            "start_value": 12,
+            "end_value": 12,
+            "unit": "h ≈",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "barbecue",
+              "kind": "other",
+              "appearance": "Dark enamelgrill with warmburner andsupportedlid.",
+              "geometry_and_material": "Modelingbox/rod/surface; metalgrate and registeredFlame.",
+              "scale_and_accuracy": ".9 mworktop, ordinary gravity.",
+              "movement": "Igniteonce.2–.8 s andsettleby 1; laterfood stayssupported.",
+              "asset_hint": "modeling-helpers-v1; flame-v1"
+            },
+            {
+              "id": "calendar-clock-lantern",
+              "kind": "other",
+              "appearance": "Physicalmonthcard, solar-timeclock andamberlantern onsupportedfurniture.",
+              "geometry_and_material": "Modelingscreen/box; paper,glass andrestrainedemissive.",
+              "scale_and_accuracy": "Readableworld props; hours explicitlysolar time.",
+              "movement": "Setmonth/hour fromabsolutetime; finalinvitationreschedules 20:00→17:00.",
+              "asset_hint": "modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 42.0 return explicitly to 45°N·DECEMBER·SOLAR 17:00, preserving the patio anchor.",
+            "At 42.0–46.6 hold the daylight winter-afternoon benefit. This is a marked calendar comparison with the opening dark 20:00 dinner."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Samegrill/lanternframegivespositivecomparison."
+        },
+        {
+          "id": "SH02",
+          "start_s": 46.6,
+          "end_s": 52,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Metre-scale 45°Npatio: grill[-.22,.85,-2], table[-1.1,.8,-1.8], calendar[-.75,1.35,-2.25], lantern[.64,.98,-1.85], shadowpost[-.5,0,-3.4]. South=-Z; east=+X.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 46.6,
+                "position": [
+                  0,
+                  1.55,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.9
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 52,
+                "position": [
+                  0,
+                  1.55,
+                  1.5
+                ],
+                "look_at": [
+                  0,
+                  0.95,
+                  -1.9
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold through setup,change andcompletedstate; authoredcuts clarifytime/location.",
+            "lens_notes": "Closeonsuccessfulgrillindaylight, captionclearofwarmfocalpoint.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 46.6,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "JUNE · SOLAR 17:00",
+            "metric_label": "AXIAL TILT",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "barbecue",
+              "kind": "other",
+              "appearance": "Dark enamelgrill with warmburner andsupportedlid.",
+              "geometry_and_material": "Modelingbox/rod/surface; metalgrate and registeredFlame.",
+              "scale_and_accuracy": ".9 mworktop, ordinary gravity.",
+              "movement": "Igniteonce.2–.8 s andsettleby 1; laterfood stayssupported.",
+              "asset_hint": "modeling-helpers-v1; flame-v1"
+            },
+            {
+              "id": "calendar-clock-lantern",
+              "kind": "other",
+              "appearance": "Physicalmonthcard, solar-timeclock andamberlantern onsupportedfurniture.",
+              "geometry_and_material": "Modelingscreen/box; paper,glass andrestrainedemissive.",
+              "scale_and_accuracy": "Readableworld props; hours explicitlysolar time.",
+              "movement": "Setmonth/hour fromabsolutetime; finalinvitationreschedules 20:00→17:00.",
+              "asset_hint": "modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 46.6 cut to the June 20:00 dinner plan; the supported card and sky must both agree that this is after sunset.",
+            "At 47.0–48.15 flip the dinner card 20:00→17:00 and make a clearly marked edit to the earlier dinner hour; this is not a physical reversal of Earth rotation.",
+            "At 48.15–52.0 hold the successful June 17:00 barbecue in daylight; settled food stays supported on the grate. Preserve the grill/lantern callback."
+          ],
+          "lighting": "Coherent ground SunSkylightRig or equatorialEarthkey; motivated warmpracticals, restrainedfill and singlepipelineACESfinish.",
+          "effects": [
+            "RestrainedHDRhighlightbloom; no shock/shakeevent.",
+            "Resetfullmaterial/transformstate fromabsolute time; seededambientmotiononly."
+          ],
+          "composition_notes": "Keep focalaction betweenHUD/captions andreadable atphonesize. Closeonsuccessfulgrillindaylight, captionclearofwarmfocalpoint."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "shortest afternoons",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "Move dinner earlier",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 46.8,
+          "duration_s": 0.35,
+          "kind": "texture",
+          "description": "Softlanternclick/grillecho fromopening, thensettleddinnerambience.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Holdsuccessfuldinnerthroughfinalframe."
+      }
+    }
+  ]
+}

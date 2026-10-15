@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "ozone-layer-gone-overnight",
+  "topic": "What if Earth’s ozone layer disappeared overnight?",
+  "duration_s": 55,
+  "video_file": "output/ozone-layer-gone-overnight.mp4",
+  "scientific_scope_note": "Fictional premise: all stratospheric ozone disappears overnight; oxygen, clouds and weather are unchanged, and the film follows the next clear June morning near 40°N. The UV index of about 263 (versus about 9 normally) and the burn times (about 38 s for fair skin in sun, about 2 minutes in awning shade, UV index about 2 behind ordinary window glass) are estimates from a simple radiative-transfer model; real values depend on aerosols, altitude and skin type. Ordinary glass blocks UV-B and UV-C but passes much UV-A. The ozone-making UV (shorter than about 242 nm) is absorbed high in the stratosphere; it is the same sun, not the same wavelengths that burn you. Refilling the layer would take weeks to months; the 60-day globe is qualitative. The reader, the barista and the busy night street are illustrative.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [
+    "city-street-block-v1",
+    "sun-skylight-rig-v1",
+    "sky-dome-v1",
+    "room-box-v1",
+    "dial-gauge-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "earth-globe-v1",
+    "earth-textures-nasa-v1",
+    "starfield-v1",
+    "shader-noise-math-v1",
+    "modeling-helpers-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "overlay-labels-v1",
+    "caption-kinetic-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if Earth’s ozone layer disappeared overnight?",
+      "description": "Finish your coffee outside and you'll blister by tonight. The ozone layer vanished while you slept, and the sky looks perfectly normal. In this 55-second 3D science thought experiment, the sun's harshest ultraviolet reaches the ground about thirty times stronger than usual.\n\nYou feel no sting and get no warning. Shade only buys you minutes, because the whole sky scatters UV down on you. But an ordinary window stops nearly all the burning rays, so the city retreats behind glass. Meanwhile the same sun is splitting oxygen high overhead and rebuilding the shield, which takes weeks, maybe months.\n\nIf daylight were off-limits for months, what’s the first thing you’d do after dark?\n\nScope: Fictional premise: all stratospheric ozone disappears overnight; oxygen, clouds and weather are unchanged, and the film follows the next clear June morning near 40°N. The UV index of about 263 (versus about 9 normally) and the burn times (about 38 s for fair skin in sun, about 2 minutes in awning shade, UV index about 2 behind ordinary window glass) are estimates from a simple radiative-transfer model; real values depend on aerosols, altitude and skin type. Ordinary glass blocks UV-B and UV-C but passes much UV-A. The ozone-making UV (shorter than about 242 nm) is absorbed high in the stratosphere; it is the same sun, not the same wavelengths that burn you. Refilling the layer would take weeks to months; the 60-day globe is qualitative. The reader, the barista and the busy night street are illustrative.\n\nSources:\n- NOAA Chemical Sciences Laboratory, Twenty Questions and Answers About the Ozone Layer (2022), Q2: https://csl.noaa.gov/assessments/ozone/2022/downloads/twentyquestions/Q2.pdf\n- D. J. Jacob, Introduction to Atmospheric Chemistry, Chapter 10: Stratospheric Ozone: https://projects.iq.harvard.edu/files/acmg/files/intro_atmo_chem_bookchap10.pdf\n- TEMIS: UV index and UV dose, short introduction: https://www.temis.nl/uvradiation/info/index.html\n- Baylor College of Medicine: what happens to your skin after a sunburn: https://blogs.bcm.edu/?p=37565\n- NOAA Storm Prediction Center (S. Corfidi): The Colors of Sunset and Twilight (scattering): https://www.spc.noaa.gov/publications/corfidi/sunset/\n- Skin Cancer Foundation: UV Window Film and Tint: https://www.skincancer.org/skin-cancer-prevention/sun-protection/uv-window-film/\n- NASA Ozone Watch: Ozone facts: https://ozonewatch.gsfc.nasa.gov/facts/\n- University of Washington ATM S 558: Stratospheric Chemistry lecture notes: https://www.atmos.washington.edu/academics/classes/2011Q2/558/S11_558_StratChem.pdf\n\nVisuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.",
+      "tags": [
+        "what if the ozone layer disappeared",
+        "ozone layer gone overnight",
+        "uv index without ozone",
+        "does window glass block uv",
+        "sunburn in one minute",
+        "how ozone is made",
+        "chapman cycle",
+        "earth science what if",
+        "atmospheric chemistry",
+        "science simulation",
+        "threejs 3d documentary"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#OzoneLayer",
+        "#EarthScience",
+        "#UVIndex",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if the ozone layer disappeared",
+        "ozone layer gone overnight",
+        "uv index without ozone",
+        "does glass block uv",
+        "sunburn in one minute",
+        "how ozone is made"
+      ]
+    },
+    "tiktok": {
+      "caption": "Finish your coffee outside and you'll blister by tonight. The ozone layer vanished while you slept, the sky looks normal, and the UV burns about thirty times faster. Shade barely helps; a plain window does.\n\nIf daylight were off-limits for months, what’s the first thing you’d do after dark?\n\nA 3D thought experiment; UV figures are model estimates for one clear morning.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#OzoneLayer",
+        "#UVIndex",
+        "#EarthScience",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if the ozone layer disappeared",
+        "ozone layer gone overnight",
+        "uv index without ozone",
+        "does glass block uv",
+        "sunburn in one minute",
+        "how ozone is made"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "The sky looks perfectly normal. Your UV meter is pinned past its scale. Without the ozone layer you'd burn in under a minute, feel nothing until tonight, and find that only glass (not shade) keeps you safe while the sun slowly rebuilds the shield.\n\nIf daylight were off-limits for months, what’s the first thing you’d do after dark?\n\nFictional premise; UV and burn times are estimates for one clear June morning.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#OzoneLayer",
+        "#UVIndex",
+        "#EarthScience",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if the ozone layer disappeared",
+        "ozone layer gone overnight",
+        "uv index without ozone",
+        "does glass block uv",
+        "sunburn in one minute",
+        "how ozone is made"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if Earth’s ozone layer disappeared overnight? A 1-minute sunburn",
+      "description": "The ozone layer vanishes while you sleep. The morning looks normal, but the sun's ultraviolet burns about thirty times faster: shade only buys minutes, an ordinary window saves you, and the same sun slowly rebuilds the layer.\n\nIf daylight were off-limits for months, what’s the first thing you’d do after dark?\n\nFictional premise: all stratospheric ozone disappears overnight; oxygen, clouds and weather are unchanged, and the film follows the next clear June morning near 40°N. The UV index of about 263 (versus about 9 normally) and the burn times (about 38 s for fair skin in sun, about 2 minutes in awning shade, UV index about 2 behind ordinary window glass) are estimates from a simple radiative-transfer model; real values depend on aerosols, altitude and skin type. Ordinary glass blocks UV-B and UV-C but passes much UV-A. The ozone-making UV (shorter than about 242 nm) is absorbed high in the stratosphere; it is the same sun, not the same wavelengths that burn you. Refilling the layer would take weeks to months; the 60-day globe is qualitative. The reader, the barista and the busy night street are illustrative.\n\nSources:\n- NOAA Chemical Sciences Laboratory, Twenty Questions and Answers About the Ozone Layer (2022), Q2: https://csl.noaa.gov/assessments/ozone/2022/downloads/twentyquestions/Q2.pdf\n- D. J. Jacob, Introduction to Atmospheric Chemistry, Chapter 10: Stratospheric Ozone: https://projects.iq.harvard.edu/files/acmg/files/intro_atmo_chem_bookchap10.pdf\n- TEMIS: UV index and UV dose, short introduction: https://www.temis.nl/uvradiation/info/index.html\n- Baylor College of Medicine: what happens to your skin after a sunburn: https://blogs.bcm.edu/?p=37565\n- NOAA Storm Prediction Center (S. Corfidi): The Colors of Sunset and Twilight (scattering): https://www.spc.noaa.gov/publications/corfidi/sunset/\n- Skin Cancer Foundation: UV Window Film and Tint: https://www.skincancer.org/skin-cancer-prevention/sun-protection/uv-window-film/\n- NASA Ozone Watch: Ozone facts: https://ozonewatch.gsfc.nasa.gov/facts/\n- University of Washington ATM S 558: Stratospheric Chemistry lecture notes: https://www.atmos.washington.edu/academics/classes/2011Q2/558/S11_558_StratChem.pdf",
+      "hashtags": [
+        "#WhatIf",
+        "#Science",
+        "#OzoneLayer",
+        "#EarthScience",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if the ozone layer disappeared",
+        "ozone layer gone overnight",
+        "uv index without ozone",
+        "does glass block uv",
+        "sunburn in one minute",
+        "how ozone is made"
+      ]
+    },
+    "x_video": {
+      "post": "The ozone layer vanished overnight. The sky looks normal, but you'd burn in under a minute; shade barely helps, a plain window does. If daylight were off-limits for months, what’s the first thing you’d do after dark?",
+      "hashtags": [
+        "#WhatIf",
+        "#OzoneLayer",
+        "#UVIndex",
+        "#Science",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if the ozone layer disappeared",
+        "ozone layer gone overnight",
+        "uv index without ozone"
+      ]
+    }
+  },
+  "publishing_status": "rendered_not_published",
+  "rendered_at_utc": "2026-10-15T12:01:44Z",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 15,
+    "path_in_repo": "videos/015-ozone-layer-gone-overnight.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/015-ozone-layer-gone-overnight.mp4",
+    "sha256": "12163913356f418c7b626566b87834730745eb6f41682ac63e26cfc4c7a4a669",
+    "size_bytes": 37006796,
+    "thumbnail_path_in_repo": "videos/015-ozone-layer-gone-overnight.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/015-ozone-layer-gone-overnight.jpg",
+    "thumbnail_sha256": "d1b682873e91fae22c547e2cb497af914fe0b6b6fbe5ed09013d938eee3c59c3",
+    "copy_path_in_repo": "videos/015-ozone-layer-gone-overnight.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/015-ozone-layer-gone-overnight.md",
+    "copy_sha256": "cf318605df2c185017c2d87df956e0eb60bc7ce9be71541ca89b14f3ceed5440",
+    "uploaded_at_utc": "2026-10-15T12:02:32Z"
+  }
+}

@@ -18,6 +18,8 @@ import { createFilm as mountainGrew100KmTall } from './stories/mountain-grew-100
 import { createFilm as lastManAlive } from './stories/last-man-alive/film';
 import { createFilm as lastWomanAlive } from './stories/last-woman-alive/film';
 import { createFilm as skyDisappeared } from './stories/sky-disappeared/film';
+import { createFilm as earthWithoutTilt } from './stories/earth-without-tilt/film';
+import { createFilm as ozoneLayerGoneOvernight } from './stories/ozone-layer-gone-overnight/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -35,6 +37,8 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'last-man-alive': lastManAlive,
   'last-woman-alive': lastWomanAlive,
   'sky-disappeared': skyDisappeared,
+  'earth-without-tilt': earthWithoutTilt,
+  'ozone-layer-gone-overnight': ozoneLayerGoneOvernight,
 };
 
 async function boot() {

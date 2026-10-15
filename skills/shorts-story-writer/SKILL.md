@@ -80,4 +80,6 @@ Read **only the spoken narration**, without scene labels, captions, or HUD. Rewr
 6. Can the film show every pivotal event with specific 3D subjects and timed actions? Reuse registered assets first; specify a missing prop or action explicitly rather than substituting generic room or globe footage.
 7. Do location, elapsed story time, prop states, and character actions stay coherent? Specify necessary time/location transitions so the audience can follow them.
 
+Record a brief gate decision under `build/<slug>/`: what new inference or action each beat adds, the strongest remaining weakness, and any revision required. When an independent reviewer is available, give them the narration before your intended verdict. A checkbox list alone does not demonstrate that a repetitive beat earns its runtime.
+
 Encode the result in existing schema fields: `project.core_question`; `creative_direction.opening_hook`, `mid_video_rehook`, `ending_payoff`, and `loop_connection`; each scene's `viewer_question`, `visual_payoff`, `narration`, and `claim_ids`; `distribution.comment_bait_question`; and `thumbnail`. These fields must describe the events actually written and staged. Do not add a retention-score field or claim a guaranteed retention rate.

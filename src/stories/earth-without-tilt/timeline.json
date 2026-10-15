@@ -1,0 +1,19 @@
+{
+  "duration": 52,
+  "lanternReach": 0.0,
+  "lanternSwitch": 0.55,
+  "lanternSettled": 0.9,
+  "lanternRelease": 1.25,
+  "monthFlip0": 11.4,
+  "monthFlip1": 12.0,
+  "primaryReveal": 23.35,
+  "primarySilence": 23.05,
+  "latitude0": 23.35,
+  "latitude1": 27.25,
+  "polarCut": 32.233333333333334,
+  "orbitJuly": 35.5,
+  "orbitJanuary": 40.0,
+  "clockMove0": 47.0,
+  "clockMove1": 48.15,
+  "clockFlipSwitch": 47.6
+}

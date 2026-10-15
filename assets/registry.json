@@ -40,12 +40,14 @@
         "air-pressure-doubled",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "what-if-every-man-disappeared"
       ],
@@ -74,6 +76,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -81,6 +84,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "what-if-every-man-disappeared"
       ],
@@ -113,6 +117,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -120,6 +125,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -160,6 +166,7 @@
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
+        "earth-without-tilt",
         "oxygen-gone-five-seconds",
         "what-if-every-man-disappeared"
       ],
@@ -195,6 +202,7 @@
       "used_in": [
         "air-pressure-doubled",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -239,12 +247,14 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -287,6 +297,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "moon-made-of-ice",
@@ -544,6 +555,7 @@
         "air-pressure-doubled",
         "continents-one-landmass",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -551,6 +563,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -630,6 +643,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -637,6 +651,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -682,6 +697,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -689,6 +705,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -720,6 +737,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -727,6 +745,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -765,6 +784,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -772,6 +792,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -811,6 +832,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -818,6 +840,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -856,6 +879,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -882,6 +906,7 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
@@ -889,6 +914,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -1113,6 +1139,7 @@
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "ice-sank-instead-of-floating"
       ],
       "license": "original_procedural",
@@ -1283,6 +1310,7 @@
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
         "moon-made-of-ice",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
@@ -1443,6 +1471,7 @@
         "air-pressure-doubled",
         "continents-one-landmass",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "moon-made-of-ice",
         "rain-nonstop-everywhere",
         "what-if-every-man-disappeared"
@@ -1938,11 +1967,13 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared"
       ],
@@ -1970,11 +2001,13 @@
         "continents-one-landmass",
         "earth-core-solid",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
+        "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared"
       ],
@@ -2013,10 +2046,12 @@
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "last-man-alive",
         "last-woman-alive",
         "mountain-grew-100-km-tall",
+        "ozone-layer-gone-overnight",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -2272,6 +2307,7 @@
         "earth-ten-percent-closer",
         "last-man-alive",
         "last-woman-alive",
+        "ozone-layer-gone-overnight",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2387,6 +2423,7 @@
       "used_in": [
         "continents-one-landmass",
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2518,9 +2555,11 @@
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
         "earth-ten-percent-closer",
+        "earth-without-tilt",
         "every-human-jumped-at-once",
         "last-man-alive",
         "last-woman-alive",
+        "ozone-layer-gone-overnight",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -3360,7 +3399,9 @@
       ],
       "created_for": "last-woman-alive",
       "used_in": [
+        "earth-without-tilt",
         "last-woman-alive",
+        "ozone-layer-gone-overnight",
         "sky-disappeared"
       ],
       "license": "original_code",
@@ -3400,6 +3441,8 @@
       ],
       "created_for": "sky-disappeared",
       "used_in": [
+        "earth-without-tilt",
+        "ozone-layer-gone-overnight",
         "sky-disappeared"
       ],
       "license": "original_code",
