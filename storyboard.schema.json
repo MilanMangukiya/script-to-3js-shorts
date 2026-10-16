@@ -980,6 +980,14 @@
         },
         "success_reply": {
           "const": "absolute_mp4_path_only"
+        },
+        "render_quality": {
+          "enum": [
+            "standard",
+            "cinematic",
+            "draft"
+          ],
+          "description": "Render preset (src/library/render/FilmPipeline.ts QUALITY). 'cinematic' = 2x supersampling, contrast-adaptive sharpening, 3-sample motion blur and per-shot AO / depth of field / sun shafts; 'draft' = the cinematic look without supersampling or motion blur, for fast reviews; 'standard' (default when omitted) reproduces the original pipeline."
         }
       }
     },

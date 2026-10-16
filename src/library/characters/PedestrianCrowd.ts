@@ -148,7 +148,7 @@ export class PedestrianCrowd {
         coatColor: coatPalette[Math.floor(rng() * coatPalette.length)],
         trouserColor: trouserPalette[Math.floor(rng() * trouserPalette.length)],
         skinColor: skinPalette[Math.floor(rng() * skinPalette.length)],
-        coat: true,
+        coat: 'long',
         hat: rng() < 0.22,
       });
 
