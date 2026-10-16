@@ -28,5 +28,5 @@ Apply the full checklist to requested film builds. For script reviews, prompt/sk
 4. **Render & Finalize:**
    - Smoke test 3 frames: `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5`.
    - Final render: `node tools/render.mjs <slug> --final --crf 19`.
-   - Write `metadata/<slug>.json` (YouTube `"What if"` search title; TikTok/Reels/X 2nd-person POV hook + `comment_bait_question`; science-qualified hashtags).
+   - Write `metadata/<slug>.json` (every platform's title is `project.title`, a `"What if …?"` question on its own: the YouTube/Facebook `title` and the first line of TikTok/Reels/X copy; then the 2nd-person POV hook + `comment_bait_question`; science-qualified hashtags).
    - Run `node tools/finalize.mjs <slug>` and reply with **only** the absolute path to `output/<slug>.mp4`.

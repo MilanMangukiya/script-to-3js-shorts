@@ -23,8 +23,10 @@ import { createFilm as ozoneLayerGoneOvernight } from './stories/ozone-layer-gon
 import { createFilm as earth1000fFiveSeconds } from './stories/earth-1000f-five-seconds/film';
 import { createFilm as everyVolcanoErupts } from './stories/every-volcano-erupts-at-once/film';
 import { createFilm as everyoneFartsAtOnce } from './stories/everyone-farts-at-once/film';
+import { createFilm as everyoneSneezesAtOnce } from './stories/everyone-sneezes-at-once/film';
 import { createFilm as sunLockedEarth } from './stories/sun-locked-earth/film';
 import { createFilm as socialMediaGoneFiveSeconds } from './stories/social-media-gone-five-seconds/film';
+import { createFilm as everyoneDrankTheOcean } from './stories/everyone-drank-the-ocean/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -47,8 +49,10 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'earth-1000f-five-seconds': earth1000fFiveSeconds,
   'every-volcano-erupts-at-once': everyVolcanoErupts,
   'everyone-farts-at-once': everyoneFartsAtOnce,
+  'everyone-sneezes-at-once': everyoneSneezesAtOnce,
   'sun-locked-earth': sunLockedEarth,
   'social-media-gone-five-seconds': socialMediaGoneFiveSeconds,
+  'everyone-drank-the-ocean': everyoneDrankTheOcean,
 };
 
 async function boot() {

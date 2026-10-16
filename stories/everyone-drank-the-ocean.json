@@ -1,0 +1,1651 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if 8.3 billion people on Earth drank the ocean at the same time?",
+    "title": "What if 8.3 billion people drank the ocean at the same time?",
+    "slug": "everyone-drank-the-ocean",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 50,
+    "language": "en",
+    "audience": "Curious international viewers who enjoy surprising Earth-scale comparisons and playful counterfactual science.",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "Could all 8.3 billion people make a visible dent in the ocean by drinking together?",
+    "viewer_takeaway": "One liter each totals 8.3 billion liters yet only about 23 nanometers of equivalent global mean sea-level change; emptying the ocean would require about 161 billion liters per person."
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The physical consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "delivery": {
+    "video_output": "output/everyone-drank-the-ocean.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 154,
+    "music_direction": "Playful escalating plucks and warm ocean pulse, dropping for 0.3 seconds before the 23nm reversal; dry final finish.",
+    "music_level_db_below_voice": -18,
+    "sfx_direction": "Restrained intake bubbles, straw handling, pool water and volume-case accents. No destruction, giant suction or invented tsunami.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1,
+    "voice_id": "am_michael"
+  },
+  "scientific_model": {
+    "baseline_reality": "The oceans, seas and bays contain approximately 1.338e21 liters of water. Ocean surface area is approximately 361.934e12 square meters. Normal seawater is salty and does not safely hydrate humans.",
+    "counterfactual_change": "Exactly the user-specified 8.3 billion people begin taking seawater together. Start with an explicitly hypothetical one-liter-per-person withdrawal, then calculate larger mathematical quotas.",
+    "assumptions": [
+      "8.3 billion is the stipulated participant count, not a claim about a live population census.",
+      "Every participant is granted access to seawater without entering the water or displacing it. Representative people stand on a grounded pier and use hoses; logistics are outside this arithmetic thought experiment.",
+      "One liter per person is the chosen first benchmark, not the capacity of one normal gulp or a recommended quantity. Withdrawing and drinking are represented as one stylized intake event.",
+      "Withdrawn water is kept out of the sea during the calculation; return flows, tides, rain, basin elasticity and gravity fingerprints are neglected.",
+      "Volume divided by fixed surface area gives an equivalent eventual global mean change, not an instantaneous uniform local shoreline response. Tiny changes are never visibly exaggerated.",
+      "Reference swimming pools have explicit interior dimensions 50 by 25 by 2 meters: 2.5 million liters each. No current Olympic standard is asserted.",
+      "The one-millimeter and whole-ocean personal shares are mathematical scaling cases, not quantities actually consumed. Grounded tanks display equivalent capacity; the huge tank is a volume comparison, not an engineering proposal.",
+      "No dose-specific medical outcome, immediate deaths or global catastrophe is predicted."
+    ],
+    "causal_chain": [
+      "8.3 billion participants times one liter each removes 8.3 billion liters.",
+      "That equals 3,320 reference pools, producing a misleadingly huge-looking volume.",
+      "Spread over the ocean surface, the same volume is only 22.93 nanometers of equivalent global mean drop, invisible beside ordinary waves.",
+      "A one-millimeter equivalent drop instead requires about 43,606 liters per person.",
+      "The full ocean divided among participants is about 161.2 billion liters each, far beyond human drinking capacity.",
+      "Seawater additionally causes net water loss; a finite person withdraws their straw while the coast remains visually unchanged."
+    ],
+    "uncertainties": [
+      "Ocean volume and area are approximate estimates; derived HUD values are appropriately rounded.",
+      "The surface-area approximation is appropriate for the tiny benchmark and one millimeter, not a complete ocean-drainage sea-level model. The full-drain result divides volume only.",
+      "Shader waves and finite straw acting illustrate intake; there is no fluid solver, biological dose model or actual 8.3-billion-character render."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "One liter each for 8.3 billion people totals 8.3 billion liters, or 3,320 reference pools.",
+        "confidence": "derived",
+        "reasoning": "8.3e9 times 1 L; 50*25*2 m3 times 1000 L/m3 is 2.5e6 L per pool.",
+        "presentation_guardrail": "Keep everyone-combined scope clear; do not present one liter as one ordinary gulp."
+      },
+      {
+        "id": "CL02",
+        "statement": "The one-liter benchmark corresponds to about 23 nanometers of equivalent global mean sea-level drop.",
+        "confidence": "derived",
+        "reasoning": "8.3e9 L /1000 /361.934e12 m2 =2.2932358e-8 m. NASA provides the area/conversion method.",
+        "presentation_guardrail": "Say average level and show unchanged natural waves, not retreating shore or an enlarged physical drop."
+      },
+      {
+        "id": "CL03",
+        "statement": "Draining the full ocean would require about 161 billion liters per person.",
+        "confidence": "derived",
+        "reasoning": "USGS volume 1.338e9 km3 *1e12 L/km3 divided by 8.3e9 participants =1.612048e11 L each.",
+        "presentation_guardrail": "A mathematical personal quota, not a physiologically possible drink or actual construction."
+      },
+      {
+        "id": "CL04",
+        "statement": "A one-millimeter equivalent global mean drop costs about 43,600 liters per person.",
+        "confidence": "derived",
+        "reasoning": "361.934e12 m2 *.001 m *1000 L/m3 /8.3e9 people =43606.5 L each.",
+        "presentation_guardrail": "Explicitly transition to scaling the math; never depict a human actually consuming this tank."
+      },
+      {
+        "id": "CL05",
+        "statement": "Real seawater contains about 3.5% salts by mass and can cause net water loss rather than hydration.",
+        "confidence": "established",
+        "reasoning": "NOAA gives normal salinity around35 parts per thousand and explains loss of more water in urine to excrete the excess salt.",
+        "presentation_guardrail": "No instantaneous dehydration animation or specific dose/death forecast."
+      }
+    ],
+    "sources": [
+      {
+        "name": "USGS: ocean, sea and bay water volume",
+        "url": "https://www.usgs.gov/water-science-school/science/how-much-water-there-earth",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "NASA JPL VESL: ocean area and global mean volume/area conversion",
+        "url": "https://vesl.jpl.nasa.gov/sea-level/slr-eustatic/",
+        "supports_claim_ids": [
+          "CL02",
+          "CL04"
+        ]
+      },
+      {
+        "name": "NOAA: seawater and dehydration",
+        "url": "https://oceanservice.noaa.gov/facts/drinksw.html",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      },
+      {
+        "name": "NOAA: normal seawater salinity about 35 parts per thousand",
+        "url": "https://oceanservice.noaa.gov/education/dyw-pass-salt.html",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "A synchronized ocean-drinking challenge escalates from one liter to thousands of pools, then reverses at an invisible 23-nanometer drop and impossible personal quotas.",
+    "visual_identity": "Premium bright coastal miniatures and real scale volume comparisons; reference-inspired boxless white top-left numbers over textured 3D subjects.",
+    "palette": [
+      "#1c6a8b",
+      "#3cb7c3",
+      "#e2c99c",
+      "#f2cf54",
+      "#f3f1df"
+    ],
+    "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+    "camera_language": "Eye-level straw/hand setup, active front-facing crowd, real pool-to-aerial reveal, calm shoreline contact, and human-to-tank scale reveals. Numeric camera keys own all moves.",
+    "motion_language": "Finite attention, supported straw grip and withdrawal; simultaneous intake; pool filling as an explicit capacity comparison; tank fill and settled capacity views; ordinary waves never become a fake tsunami.",
+    "world_scale_policy": "Metres. 50x25x2m pool cavities and capacity-derived tank dimensions. Magnification belongs in the camera; never enlarge a 23nm sea-level drop.",
+    "emotional_arc": [
+      "Absurd collective challenge",
+      "Apparently huge achievement",
+      "Scale reversal",
+      "Impossible personal quota",
+      "Human limit",
+      "Dry comic defeat"
+    ],
+    "opening_hook": "You slurp the ocean while everyone joins; a physical straw and active representative crowd make the action immediate.",
+    "mid_video_rehook": "Thousands of poolfuls make only a 23-nanometer average ocean-level change. The beach does not visibly move.",
+    "ending_payoff": "Human bodies and salty water are the bottleneck; the original straw lowers while the ocean remains visually unchanged.",
+    "loop_connection": "Return to the same straw, pier and normal waves after impossible mathematical quotas; no narrated rewind.",
+    "asset_policy": "Reuse registered ocean/sky, boat, bottle, humanoid, grounded-motion, modeling, editorial HUD and audio/render kits. Add reusable physically dimensioned pool and capacity-tank components after registry search found none."
+  },
+  "distribution": {
+    "primary_search_intent": "What happens if 8.3 billion people drink the ocean together, using volume and ocean science?",
+    "core_keywords": [
+      "what if everyone drank the ocean",
+      "8.3 billion people",
+      "ocean volume comparison",
+      "sea level calculation",
+      "earth science simulation",
+      "seawater physiology",
+      "physics thought experiment"
+    ],
+    "distinctive_angle": "Reference-inspired changing top-left numbers make an apparently huge collective drink collapse into a 23-nanometer result; real pools and impossible personal tanks show the scale.",
+    "comment_bait_question": "Before the calculation, how much did you think one liter each would lower the sea?",
+    "seo_integrity_note": "Use oceanography, scale and physiology qualifiers; no false global-disaster or population-statistic claims."
+  },
+  "thumbnail": {
+    "time_s": 3.5,
+    "headline": "DRINK THE OCEAN?!",
+    "highlight": [
+      "OCEAN?!"
+    ],
+    "badge": "8.3 BILLION",
+    "focus": [
+      0.55,
+      0.48
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "grade": "vivid",
+    "position": "bottom",
+    "zoom": 1.08,
+    "badge_at": [
+      0.76,
+      0.16
+    ],
+    "anchor": [
+      0.55,
+      0.48
+    ],
+    "tilt": -3
+  },
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Inspected actual registry, ocean/sky/bottle/boat/character/modeling/HUD components; no pool or capacity tank existed. New dimensioned comparison systems promoted to library.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "ocean-surface-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "sailboat-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "plastic-bottle-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Configure the registered component for the synchronized drinking and scale comparisons.",
+        "configuration": "Story-local parameters and absolute-time states; preserve other films."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "swimming-pool-field-v1",
+        "description": "Dimensioned instanced pool basins with absolute fill fraction.",
+        "reusable_in": "Water volume and infrastructure capacity comparisons.",
+        "parameters": [
+          "columns",
+          "rows",
+          "width",
+          "length",
+          "depth",
+          "gap",
+          "fill"
+        ],
+        "suggested_path": "src/library/environment/SwimmingPoolField.ts"
+      },
+      {
+        "proposed_id": "water-volume-tank-v1",
+        "description": "Grounded framed cubic tank whose internal capacity follows liters.",
+        "reusable_in": "Volume comparisons and storage visualizations.",
+        "parameters": [
+          "liters",
+          "color",
+          "fill"
+        ],
+        "suggested_path": "src/library/props/WaterVolumeTank.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Pier and beach",
+      "Mouth-connected yellow intake tubes",
+      "Coastal grounded crowd and straw acting",
+      "Capacity-case camera orchestration"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.8,
+      "narration": {
+        "text": "You slurp the ocean. Every person on Earth joins in.",
+        "start_s": 0,
+        "end_s": 4.6499999999999995,
+        "delivery_note": "Immediate absurd action; let ocean identify the material.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Can humanity outdrink the ocean?",
+      "visual_payoff": "A yellow intake tube meets the character mouth; nearby people join with planted feet and finite grips.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 2.8,
+          "shot_type": "eye_level_action",
+          "world": "coast: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  1.05,
+                  1.6,
+                  1.5
+                ],
+                "look_at": [
+                  -0.2,
+                  1.4,
+                  0.12
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 2.8,
+                "position": [
+                  1.05,
+                  1.6,
+                  1.5
+                ],
+                "look_at": [
+                  -0.2,
+                  1.4,
+                  0.12
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 0,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "PARTICIPANTS",
+            "start_value": 8300000000.0,
+            "end_value": 8300000000.0,
+            "unit": "people",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "coast_action",
+              "kind": "human",
+              "appearance": "A yellow intake tube meets the character mouth; nearby people join with planted feet and finite grips.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "A yellow intake tube meets the character mouth; nearby people join with planted feet and finite grips.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "0-4.8: A yellow intake tube meets the character mouth; nearby people join with planted feet and finite grips.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        },
+        {
+          "id": "SH02",
+          "start_s": 2.8,
+          "end_s": 4.8,
+          "shot_type": "eye_level_action",
+          "world": "coast: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 2.8,
+                "position": [
+                  2.8,
+                  1.6,
+                  4
+                ],
+                "look_at": [
+                  0,
+                  1.1,
+                  -1.8
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 4.8,
+                "position": [
+                  2.8,
+                  1.6,
+                  4
+                ],
+                "look_at": [
+                  0,
+                  1.1,
+                  -1.8
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 2.8,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "PARTICIPANTS",
+            "start_value": 8300000000.0,
+            "end_value": 8300000000.0,
+            "unit": "people",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "coast_action",
+              "kind": "human",
+              "appearance": "A yellow intake tube meets the character mouth; nearby people join with planted feet and finite grips.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "A yellow intake tube meets the character mouth; nearby people join with planted feet and finite grips.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "0-4.8: A yellow intake tube meets the character mouth; nearby people join with planted feet and finite grips.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep comparison scopes explicit and reveal results at their declared cuts."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.8,
+      "end_s": 11.2,
+      "narration": {
+        "text": "Everyone drinks one liter of seawater. Together, that's eight point three billion liters of seawater.",
+        "start_s": 4.8,
+        "end_s": 11.049999999999999,
+        "delivery_note": "Clear number and one-liter condition; distinguish participants from combined liters.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "How much water disappears together?",
+      "visual_payoff": "A wide pier crowd drinks from separate tubes while the combined withdrawal counter reaches8.3 billion liters.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.8,
+          "end_s": 8,
+          "shot_type": "eye_level_action",
+          "world": "coast: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 4.8,
+                "position": [
+                  3.8,
+                  2.1,
+                  4
+                ],
+                "look_at": [
+                  0,
+                  1.0,
+                  -4
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 8,
+                "position": [
+                  3.8,
+                  2.1,
+                  4
+                ],
+                "look_at": [
+                  0,
+                  1.0,
+                  -4
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 4.8,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "LITERS REMOVED",
+            "start_value": 0,
+            "end_value": 8300000000.0,
+            "unit": "L",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "coast_action",
+              "kind": "human",
+              "appearance": "A wide pier crowd drinks from separate tubes while the combined withdrawal counter reaches8.3 billion liters.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "A wide pier crowd drinks from separate tubes while the combined withdrawal counter reaches8.3 billion liters.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "4.8-11.2: A wide pier crowd drinks from separate tubes while the combined withdrawal counter reaches8.3 billion liters.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        },
+        {
+          "id": "SH02",
+          "start_s": 8,
+          "end_s": 11.2,
+          "shot_type": "scale_reveal",
+          "world": "coast: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 8,
+                "position": [
+                  0,
+                  11,
+                  12
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  -6
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 11.2,
+                "position": [
+                  0,
+                  11,
+                  12
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  -6
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 8,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "LITERS REMOVED",
+            "start_value": 0,
+            "end_value": 8300000000.0,
+            "unit": "L",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "coast_action",
+              "kind": "human",
+              "appearance": "A wide pier crowd drinks from separate tubes while the combined withdrawal counter reaches8.3 billion liters.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "A wide pier crowd drinks from separate tubes while the combined withdrawal counter reaches8.3 billion liters.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "4.8-11.2: A wide pier crowd drinks from separate tubes while the combined withdrawal counter reaches8.3 billion liters.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep comparison scopes explicit and reveal results at their declared cuts."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "escalation",
+      "start_s": 11.2,
+      "end_s": 16.8,
+      "narration": {
+        "text": "That's over three thousand swimming pools. You expect the beach to move.",
+        "start_s": 11.2,
+        "end_s": 16.650000000000002,
+        "delivery_note": "Build a concrete expectation of a moving beach.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Surely thousands of pools move the shore?",
+      "visual_payoff": "Water fills a real50x25x2m basin, then the camera reveals3,320 physical reference basins.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.2,
+          "end_s": 13.7,
+          "shot_type": "eye_level_action",
+          "world": "pools: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 11.2,
+                "position": [
+                  -624,
+                  1.65,
+                  -2348
+                ],
+                "look_at": [
+                  -624,
+                  -0.6,
+                  -2382
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 13.7,
+                "position": [
+                  -624,
+                  1.65,
+                  -2348
+                ],
+                "look_at": [
+                  -624,
+                  -0.6,
+                  -2382
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 11.2,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "POOL EQUIVALENTS",
+            "start_value": 0,
+            "end_value": 3320,
+            "unit": "pools",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "pools_action",
+              "kind": "other",
+              "appearance": "Water fills a real50x25x2m basin, then the camera reveals3,320 physical reference basins.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "Water fills a real50x25x2m basin, then the camera reveals3,320 physical reference basins.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "11.2-16.8: Water fills a real50x25x2m basin, then the camera reveals3,320 physical reference basins.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        },
+        {
+          "id": "SH02",
+          "start_s": 13.7,
+          "end_s": 16.8,
+          "shot_type": "scale_reveal",
+          "world": "pools: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 13.7,
+                "position": [
+                  1100,
+                  3500,
+                  3700
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 16.8,
+                "position": [
+                  1100,
+                  3500,
+                  3700
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 13.7,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "POOL EQUIVALENTS",
+            "start_value": 0,
+            "end_value": 3320,
+            "unit": "pools",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "pools_action",
+              "kind": "other",
+              "appearance": "Water fills a real50x25x2m basin, then the camera reveals3,320 physical reference basins.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "Water fills a real50x25x2m basin, then the camera reveals3,320 physical reference basins.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "11.2-16.8: Water fills a real50x25x2m basin, then the camera reveals3,320 physical reference basins.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep comparison scopes explicit and reveal results at their declared cuts."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "twist",
+      "start_s": 16.8,
+      "end_s": 23.2,
+      "narration": {
+        "text": "Spread across the ocean, the average level drops twenty three nanometers. The beach looks identical.",
+        "start_s": 16.8,
+        "end_s": 23.05,
+        "delivery_note": "Land average level and tiny nanometers before the identical coast.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "How can such a huge amount look like nothing?",
+      "visual_payoff": "The same coastline retains normal waves; a pier piling water contact remains unchanged to the eye.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 16.8,
+          "end_s": 19.5,
+          "shot_type": "eye_level_action",
+          "world": "coast: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 16.8,
+                "position": [
+                  2.8,
+                  1.6,
+                  -11
+                ],
+                "look_at": [
+                  2.8,
+                  -0.4,
+                  -17.6
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 19.5,
+                "position": [
+                  2.8,
+                  1.6,
+                  -11
+                ],
+                "look_at": [
+                  2.8,
+                  -0.4,
+                  -17.6
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 16.8,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "AVERAGE DROP",
+            "start_value": 0,
+            "end_value": 22.93,
+            "unit": "nm",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "coast_action",
+              "kind": "human",
+              "appearance": "The same coastline retains normal waves; a pier piling water contact remains unchanged to the eye.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "The same coastline retains normal waves; a pier piling water contact remains unchanged to the eye.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "16.8-23.2: The same coastline retains normal waves; a pier piling water contact remains unchanged to the eye.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        },
+        {
+          "id": "SH02",
+          "start_s": 19.5,
+          "end_s": 23.2,
+          "shot_type": "eye_level_action",
+          "world": "coast: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 19.5,
+                "position": [
+                  1.1,
+                  1.6,
+                  1.5
+                ],
+                "look_at": [
+                  -0.2,
+                  1.4,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 23.2,
+                "position": [
+                  1.1,
+                  1.6,
+                  1.5
+                ],
+                "look_at": [
+                  -0.2,
+                  1.4,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 19.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "AVERAGE DROP",
+            "start_value": 0,
+            "end_value": 22.93,
+            "unit": "nm",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "coast_action",
+              "kind": "human",
+              "appearance": "The same coastline retains normal waves; a pier piling water contact remains unchanged to the eye.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "The same coastline retains normal waves; a pier piling water contact remains unchanged to the eye.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "16.8-23.2: The same coastline retains normal waves; a pier piling water contact remains unchanged to the eye.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [
+        {
+          "at_s": 19.18,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Brief music and ambience dip immediately before the spoken 23-nanometer reversal.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep comparison scopes explicit and reveal results at their declared cuts."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "mechanism",
+      "start_s": 23.2,
+      "end_s": 29.6,
+      "narration": {
+        "text": "Now scale the math: one millimeter costs over forty thousand liters per person.",
+        "start_s": 23.2,
+        "end_s": 29.450000000000003,
+        "delivery_note": "Explicit mathematical scaling, not instructions to keep drinking.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "What would a visible millimeter cost each of us?",
+      "visual_payoff": "A grounded3.52m internal-side tank fills to the personal43,600-liter share for one millimeter.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 23.2,
+          "end_s": 26.4,
+          "shot_type": "eye_level_action",
+          "world": "smalltank: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 45,
+            "keyframes": [
+              {
+                "t_s": 23.2,
+                "position": [
+                  7.0,
+                  1.6,
+                  8.5
+                ],
+                "look_at": [
+                  0,
+                  1.4,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 26.4,
+                "position": [
+                  7.0,
+                  1.6,
+                  8.5
+                ],
+                "look_at": [
+                  0,
+                  1.4,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 23.2,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "LITERS EACH FOR 1mm",
+            "start_value": 0,
+            "end_value": 43606.5,
+            "unit": "L",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "smalltank_action",
+              "kind": "other",
+              "appearance": "A grounded3.52m internal-side tank fills to the personal43,600-liter share for one millimeter.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "A grounded3.52m internal-side tank fills to the personal43,600-liter share for one millimeter.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "23.2-29.6: A grounded3.52m internal-side tank fills to the personal43,600-liter share for one millimeter.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        },
+        {
+          "id": "SH02",
+          "start_s": 26.4,
+          "end_s": 29.6,
+          "shot_type": "scale_reveal",
+          "world": "smalltank: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 26.4,
+                "position": [
+                  8,
+                  6,
+                  9
+                ],
+                "look_at": [
+                  0,
+                  1.8,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 29.6,
+                "position": [
+                  8,
+                  6,
+                  9
+                ],
+                "look_at": [
+                  0,
+                  1.8,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 26.4,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "LITERS EACH FOR 1mm",
+            "start_value": 0,
+            "end_value": 43606.5,
+            "unit": "L",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "smalltank_action",
+              "kind": "other",
+              "appearance": "A grounded3.52m internal-side tank fills to the personal43,600-liter share for one millimeter.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "A grounded3.52m internal-side tank fills to the personal43,600-liter share for one millimeter.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "23.2-29.6: A grounded3.52m internal-side tank fills to the personal43,600-liter share for one millimeter.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep comparison scopes explicit and reveal results at their declared cuts."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "escalation",
+      "start_s": 29.6,
+      "end_s": 36.2,
+      "narration": {
+        "text": "Drain it completely? Your share is one hundred sixty one billion liters of seawater.",
+        "start_s": 29.6,
+        "end_s": 36.050000000000004,
+        "delivery_note": "Reveal each person, then the enormous personal share.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "How big is one persons full-ocean share?",
+      "visual_payoff": "The camera reveals a grounded544m internal-side volume tank representing161 billion liters for just one person.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 29.6,
+          "end_s": 32.4,
+          "shot_type": "eye_level_action",
+          "world": "bigtank: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 29.6,
+                "position": [
+                  450,
+                  1.6,
+                  450
+                ],
+                "look_at": [
+                  0,
+                  60,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 32.4,
+                "position": [
+                  450,
+                  1.6,
+                  450
+                ],
+                "look_at": [
+                  0,
+                  60,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 29.6,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "LITERS EACH TO EMPTY",
+            "start_value": 0,
+            "end_value": 161200000000.0,
+            "unit": "L",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "bigtank_action",
+              "kind": "other",
+              "appearance": "The camera reveals a grounded544m internal-side volume tank representing161 billion liters for just one person.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "The camera reveals a grounded544m internal-side volume tank representing161 billion liters for just one person.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "29.6-36.2: The camera reveals a grounded544m internal-side volume tank representing161 billion liters for just one person.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        },
+        {
+          "id": "SH02",
+          "start_s": 32.4,
+          "end_s": 36.2,
+          "shot_type": "scale_reveal",
+          "world": "bigtank: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 45,
+            "keyframes": [
+              {
+                "t_s": 32.4,
+                "position": [
+                  1050,
+                  760,
+                  1250
+                ],
+                "look_at": [
+                  0,
+                  270,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 36.2,
+                "position": [
+                  1050,
+                  760,
+                  1250
+                ],
+                "look_at": [
+                  0,
+                  270,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 32.4,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "LITERS EACH TO EMPTY",
+            "start_value": 0,
+            "end_value": 161200000000.0,
+            "unit": "L",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "bigtank_action",
+              "kind": "other",
+              "appearance": "The camera reveals a grounded544m internal-side volume tank representing161 billion liters for just one person.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "The camera reveals a grounded544m internal-side volume tank representing161 billion liters for just one person.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "29.6-36.2: The camera reveals a grounded544m internal-side volume tank representing161 billion liters for just one person.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep comparison scopes explicit and reveal results at their declared cuts."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "human_impact",
+      "start_s": 36.2,
+      "end_s": 43.2,
+      "narration": {
+        "text": "Real seawater makes you lose water. Your body quits long before the ocean does.",
+        "start_s": 36.2,
+        "end_s": 43.050000000000004,
+        "delivery_note": "Connect salt and the human limit without claiming immediate symptoms.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Could a real person keep doing this?",
+      "visual_payoff": "The finite character lowers the straw and opens the free hand; no instantaneous medical collapse.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 36.2,
+          "end_s": 43.2,
+          "shot_type": "eye_level_action",
+          "world": "coast: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 36.2,
+                "position": [
+                  1.05,
+                  1.6,
+                  1.5
+                ],
+                "look_at": [
+                  -0.2,
+                  1.4,
+                  0.12
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 43.2,
+                "position": [
+                  1.05,
+                  1.6,
+                  1.5
+                ],
+                "look_at": [
+                  -0.2,
+                  1.4,
+                  0.12
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 36.2,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "SEAWATER SALT",
+            "start_value": 3.5,
+            "end_value": 3.5,
+            "unit": "%",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "coast_action",
+              "kind": "human",
+              "appearance": "The finite character lowers the straw and opens the free hand; no instantaneous medical collapse.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "The finite character lowers the straw and opens the free hand; no instantaneous medical collapse.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "36.2-43.2: The finite character lowers the straw and opens the free hand; no instantaneous medical collapse.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep comparison scopes explicit and reveal results at their declared cuts."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "ending",
+      "start_s": 43.2,
+      "end_s": 50,
+      "narration": {
+        "text": "Eight point three billion straws. One tiny dent. The ocean wins without noticing.",
+        "start_s": 43.2,
+        "end_s": 49.85,
+        "delivery_note": "Dry comic verdict; return to the small straw and unchanged ocean.",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "Who wins the drinking contest?",
+      "visual_payoff": "The original straw is down; normal ocean waves continue with no visible shoreline retreat.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 43.2,
+          "end_s": 50,
+          "shot_type": "eye_level_action",
+          "world": "coast: physically dimensioned coastal comparison, metres, same blue/gold daylight palette.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 43.2,
+                "position": [
+                  2.2,
+                  1.6,
+                  3.0
+                ],
+                "look_at": [
+                  -0.2,
+                  1.15,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 50,
+                "position": [
+                  2.2,
+                  1.6,
+                  3.0
+                ],
+                "look_at": [
+                  -0.2,
+                  1.15,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical consequence or reveal the full capacity with a motivated cut.",
+            "lens_notes": "Keep the boxless top-left numerical block over quiet background and decisive hand/water action above the caption band.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 43.2,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OCEAN DRINKING MODEL",
+            "metric_label": "AVERAGE DROP",
+            "start_value": 22.93,
+            "end_value": 22.93,
+            "unit": "nm",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "coast_action",
+              "kind": "human",
+              "appearance": "The original straw is down; normal ocean waves continue with no visible shoreline retreat.",
+              "geometry_and_material": "Registered ocean/sky, articulated Humanoids, real-scale pool basins and capacity-derived framed tanks with PBR materials.",
+              "scale_and_accuracy": "One unit is one metre; physical capacity comparisons have explicit units. Equivalent average level is never exaggerated in geometry.",
+              "movement": "The original straw is down; normal ocean waves continue with no visible shoreline retreat.",
+              "asset_hint": "ocean-surface-v1; humanoid-figure-v1; character-motion-v1; swimming-pool-field-v1; water-volume-tank-v1"
+            }
+          ],
+          "animation_plan": [
+            "43.2-50: The original straw is down; normal ocean waves continue with no visible shoreline retreat.",
+            "All states use absolute film time. Intake 0.8-9.4; pool fill 11.5-13.400; mean-drop HUD reveal 19.480; small-tank fill 23.6-27.5; full-share tank reveal 29.6-36.2; finite straw withdrawal 37.0-39.0."
+          ],
+          "lighting": "Coastal late-morning directional sun, soft blue sky fill and controlled water reflections. The same palette anchors pier, pool complex and grounded volume tanks.",
+          "effects": [
+            "Seeded restrained grain and bloom; water normals and grounded shadows. No physical disaster."
+          ],
+          "composition_notes": "The reference-like numerical readout is the top-left supporting evidence, not a substitute for the physical 3D consequence."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep comparison scopes explicit and reveal results at their declared cuts."
+      }
+    }
+  ]
+}

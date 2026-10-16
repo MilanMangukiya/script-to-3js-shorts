@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "everyone-drank-the-ocean",
+  "topic": "What if 8.3 billion people on Earth drank the ocean at the same time?",
+  "duration_s": 50,
+  "video_file": "output/everyone-drank-the-ocean.mp4",
+  "scientific_scope_note": "A mathematical thought experiment with exactly 8.3 billion stipulated participants and a one-liter withdrawal each. Removed water stays out of the sea. The 23nm result is equivalent global mean volume/area change, not an instantaneous local shoreline prediction. Reference pools are 50x25x2m, 2.5 million liters each. The one-millimeter and full-ocean shares are mathematical quotas, not consumed quantities; grounded tanks compare capacity rather than propose real construction. Seawater physiology is qualitative: no dose-specific symptoms or deaths are predicted.",
+  "created_asset_ids": [
+    "swimming-pool-field-v1",
+    "water-volume-tank-v1"
+  ],
+  "reused_asset_ids": [
+    "ocean-surface-v1",
+    "sky-dome-v1",
+    "sailboat-v1",
+    "plastic-bottle-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "modeling-helpers-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "caption-kinetic-v1",
+    "overlay-labels-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if 8.3 billion people drank the ocean at the same time?",
+      "description": "You slurp the ocean and everyone joins. One liter each adds up to 8.3 billion liters: 3,320 reference pools. Surely the beach moves? The equivalent average drop is only about 23 nanometers. One millimeter instead costs about 43,600 liters per person; the full ocean about 161 billion liters each. Real seawater causes net water loss, and the tiny straw loses the contest.\n\nBefore the calculation, how much did you think one liter each would lower the sea?\n\nScope: A mathematical thought experiment with exactly 8.3 billion stipulated participants and a one-liter withdrawal each. Removed water stays out of the sea. The 23nm result is equivalent global mean volume/area change, not an instantaneous local shoreline prediction. Reference pools are 50x25x2m, 2.5 million liters each. The one-millimeter and full-ocean shares are mathematical quotas, not consumed quantities; grounded tanks compare capacity rather than propose real construction. Seawater physiology is qualitative: no dose-specific symptoms or deaths are predicted.\n\nSources:\n- USGS: ocean, sea and bay water volume: https://www.usgs.gov/water-science-school/science/how-much-water-there-earth\n- NASA JPL VESL: ocean area and global mean volume/area conversion: https://vesl.jpl.nasa.gov/sea-level/slr-eustatic/\n- NOAA: seawater and dehydration: https://oceanservice.noaa.gov/facts/drinksw.html\n- NOAA: normal seawater salinity about 35 parts per thousand: https://oceanservice.noaa.gov/education/dyw-pass-salt.html\n\nOriginal deterministic Three.js animation, original procedural score and Foley, local Kokoro am_michael narration. The upper-left numerical readout supports the physical comparison shots.",
+      "tags": [
+        "what if everyone drank the ocean",
+        "8.3 billion people",
+        "ocean volume comparison",
+        "sea level calculation",
+        "earth science simulation",
+        "seawater physiology",
+        "physics thought experiment"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Oceanography",
+        "#Physics",
+        "#Biology",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "tiktok": {
+      "caption": "You slurp the ocean. All 8.3 billion people join. Thousands of poolfuls disappear, yet your beach barely notices.\n\nBefore the calculation, how much did you think one liter each would lower the sea?",
+      "hashtags": [
+        "#ScienceTok",
+        "#WhatIf",
+        "#Oceanography",
+        "#Physics",
+        "#Biology",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "You slurp the ocean. All 8.3 billion people join. Thousands of poolfuls disappear, yet your beach barely notices.\n\nBefore the calculation, how much did you think one liter each would lower the sea?\n\nA mathematical thought experiment with exactly 8.3 billion stipulated participants and a one-liter withdrawal each. Removed water stays out of the sea. The 23nm result is equivalent global mean volume/area change, not an instantaneous local shoreline prediction. Reference pools are 50x25x2m, 2.5 million liters each. The one-millimeter and full-ocean shares are mathematical quotas, not consumed quantities; grounded tanks compare capacity rather than propose real construction. Seawater physiology is qualitative: no dose-specific symptoms or deaths are predicted.",
+      "hashtags": [
+        "#ScienceReels",
+        "#WhatIf",
+        "#Oceanography",
+        "#Physics",
+        "#Biology",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if 8.3 billion people drank the ocean at the same time?",
+      "description": "You slurp the ocean and everyone joins. One liter each adds up to 8.3 billion liters: 3,320 reference pools. Surely the beach moves? The equivalent average drop is only about 23 nanometers. One millimeter instead costs about 43,600 liters per person; the full ocean about 161 billion liters each. Real seawater causes net water loss, and the tiny straw loses the contest.\n\nBefore the calculation, how much did you think one liter each would lower the sea?\n\nScope: A mathematical thought experiment with exactly 8.3 billion stipulated participants and a one-liter withdrawal each. Removed water stays out of the sea. The 23nm result is equivalent global mean volume/area change, not an instantaneous local shoreline prediction. Reference pools are 50x25x2m, 2.5 million liters each. The one-millimeter and full-ocean shares are mathematical quotas, not consumed quantities; grounded tanks compare capacity rather than propose real construction. Seawater physiology is qualitative: no dose-specific symptoms or deaths are predicted.\n\nSources:\n- USGS: ocean, sea and bay water volume: https://www.usgs.gov/water-science-school/science/how-much-water-there-earth\n- NASA JPL VESL: ocean area and global mean volume/area conversion: https://vesl.jpl.nasa.gov/sea-level/slr-eustatic/\n- NOAA: seawater and dehydration: https://oceanservice.noaa.gov/facts/drinksw.html\n- NOAA: normal seawater salinity about 35 parts per thousand: https://oceanservice.noaa.gov/education/dyw-pass-salt.html\n\nOriginal deterministic Three.js animation, original procedural score and Foley, local Kokoro am_michael narration. The upper-left numerical readout supports the physical comparison shots.",
+      "hashtags": [
+        "#WhatIf",
+        "#Oceanography",
+        "#Physics",
+        "#Biology",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "x_video": {
+      "post": "Your 8.3 billion-liter drink barely moves the sea. Before the calculation, how much did you think one liter each would lower the sea?",
+      "hashtags": [
+        "#WhatIf",
+        "#Oceanography",
+        "#Physics",
+        "#Biology",
+        "#ThoughtExperiment"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-16T16:37:03Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 24,
+    "path_in_repo": "videos/024-everyone-drank-the-ocean.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/024-everyone-drank-the-ocean.mp4",
+    "sha256": "22d714e8498ddb8de75e60c34902076979f42b41c9b3389612b0757de7553371",
+    "size_bytes": 20251046,
+    "thumbnail_path_in_repo": "videos/024-everyone-drank-the-ocean.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/024-everyone-drank-the-ocean.jpg",
+    "thumbnail_sha256": "82581e6e30355bd760bce03b590cccb8b7cb98e1e2bd7448674a28c7af4509b4",
+    "copy_path_in_repo": "videos/024-everyone-drank-the-ocean.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/024-everyone-drank-the-ocean.md",
+    "copy_sha256": "902e87023023aa4d18b86664e33dde6a0a650e94a9f82fd7316cee6b5afd0d0f",
+    "uploaded_at_utc": "2026-10-16T16:38:08Z"
+  }
+}

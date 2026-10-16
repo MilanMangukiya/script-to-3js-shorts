@@ -1,12 +1,8 @@
-import events from './timeline.json';
-export const T=events;
-export const unit=(x:number)=>Math.max(0,Math.min(1,x));
-export const ramp=(t:number,a:number,b:number)=>{const u=unit((t-a)/(b-a));return u*u*(3-2*u);};
-/** Explicit slow-motion mapping. Only the first five story seconds are expanded. */
-export function outageSeconds(t:number){
- const f=[T.outageOn,5.5,11.5,17,23,29,35,T.restored],s=[0,.65,1.4,2.35,3.38,4.15,4.75,5];
- if(t<=f[0])return 0;if(t>=T.restored)return 5;
- for(let i=1;i<f.length;i++)if(t<=f[i])return s[i-1]+(s[i]-s[i-1])*(t-f[i-1])/(f[i]-f[i-1]);
- return 5;
-}
+export type City='tokyo'|'london'|'lagos'|'sao'|'mumbai'|'nyc';
+export const windows:Record<City,[number,number]>={tokyo:[0,11.4],london:[11.4,17.6],lagos:[17.6,23.8],sao:[23.8,30],mumbai:[30,36.2],nyc:[36.2,49]};
+export const cities=['tokyo','tokyo','london','lagos','sao','mumbai','nyc','nyc'] as City[];
+export const names:Record<City,string>={tokyo:'TOKYO',london:'LONDON',lagos:'LAGOS',sao:'SAO PAULO',mumbai:'MUMBAI',nyc:'NEW YORK'};
+export const unit=(n:number)=>Math.max(0,Math.min(1,n));
+export const ramp=(t:number,a:number,b:number)=>{const x=unit((t-a)/(b-a));return x*x*(3-2*x);};
 export const pulse=(t:number,a:number,b:number,c:number,d:number)=>ramp(t,a,b)*(1-ramp(t,c,d));
+export const localSeconds=(city:City,t:number)=>4.9*unit((t-windows[city][0])/(windows[city][1]-windows[city][0]));

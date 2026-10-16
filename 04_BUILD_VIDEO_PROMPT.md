@@ -106,7 +106,8 @@ Read `skills/voice-direction/SKILL.md` and its performance reference. Complete A
 
 1. **Probe QA:** Run `node tools/finalize.mjs <slug> --probe-only` to verify 1080×1920 resolution, 30 fps, exact `duration_s`, AAC audio stream, `.srt`, `.txt`, and `.jpg`.
 2. **Author `metadata/<slug>.json`:**
-   - **YouTube Shorts:** Title must start with `"What if"` for search discovery; include 5–10 scientific hashtags (`#whatif #astrophysics #earthscience #physics #3danimation`).
-   - **TikTok, Instagram Reels, Facebook Reels & X:** Open with the film's strongest 2nd-person consequence or contradiction, summarize its causal story, and end with its earned `distribution.comment_bait_question`. Use a geographic survival question only when the story actually turns on geography or survival.
+   - **Title (every platform):** `project.title` verbatim, a `"What if …?"` question, alone: the YouTube Shorts and Facebook Reels `title`, and the first line of the TikTok and Instagram captions and the X post. No hook, tagline or summary in that line, so viewers read the topic first. The finalizer rejects a title line that does not start with "What if" or that continues after its question mark.
+   - **YouTube Shorts:** The `"What if"` title for search discovery; include 5–10 scientific hashtags (`#whatif #astrophysics #earthscience #physics #3danimation`).
+   - **TikTok, Instagram Reels, Facebook Reels & X:** After the title, open with the film's strongest 2nd-person consequence or contradiction, summarize its causal story, and end with its earned `distribution.comment_bait_question`. Use a geographic survival question only when the story actually turns on geography or survival.
    - **Taxonomy Hygiene:** Never use standalone gaming tags; pair `#simulation` with explicit science qualifiers so recommendation algorithms route the film to science/documentary audiences.
 3. **Finalize & Archive:** Run `node tools/finalize.mjs <slug>` to validate media and metadata, update `assets/registry.json`, regenerate `ASSET_LIBRARY.md` and `VIDEO_CATALOG.md`, and upload `<NNN>-<slug>.{mp4,jpg,md}` to Hugging Face.

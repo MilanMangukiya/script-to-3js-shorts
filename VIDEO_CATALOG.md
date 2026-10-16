@@ -4,8 +4,10 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 | Rendered (UTC) | Video | Length | Publishing | Upload metadata |
 |---|---|---:|---|---|
+| 2026-10-16 | `everyone-sneezes-at-once` | 46s | rendered_not_published | [Copy metadata](metadata/everyone-sneezes-at-once.md) |
+| 2026-10-16 | `everyone-drank-the-ocean` | 50s | rendered_not_published | [Copy metadata](metadata/everyone-drank-the-ocean.md) |
+| 2026-10-16 | `social-media-gone-five-seconds` | 49s | rendered_not_published | [Copy metadata](metadata/social-media-gone-five-seconds.md) |
 | 2026-10-16 | `everyone-farts-at-once` | 49s | rendered_not_published | [Copy metadata](metadata/everyone-farts-at-once.md) |
-| 2026-10-16 | `social-media-gone-five-seconds` | 48s | rendered_not_published | [Copy metadata](metadata/social-media-gone-five-seconds.md) |
 | 2026-10-16 | `sun-locked-earth` | 48s | rendered_not_published | [Copy metadata](metadata/sun-locked-earth.md) |
 | 2026-10-16 | `every-volcano-erupts-at-once` | 54s | rendered_not_published | [Copy metadata](metadata/every-volcano-erupts-at-once.md) |
 | 2026-10-15 | `earth-1000f-five-seconds` | 56s | rendered_not_published | [Copy metadata](metadata/earth-1000f-five-seconds.md) |
@@ -27,6 +29,390 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 | 2026-10-12 | `air-pressure-doubled` | 74s | rendered_not_published | [Copy metadata](metadata/air-pressure-doubled.md) |
 | 2026-10-12 | `ice-sank-instead-of-floating` | 74s | rendered_not_published | [Copy metadata](metadata/ice-sank-instead-of-floating.md) |
 | 2026-10-12 | `oxygen-gone-five-seconds` | 72s | rendered_not_published | [Copy metadata](metadata/oxygen-gone-five-seconds.md) |
+
+---
+
+## What if 8.3 billion people on Earth sneezed at the same time?
+**Video:** `output/everyone-sneezes-at-once.mp4`\
+**Thumbnail:** `output/everyone-sneezes-at-once.jpg`\
+**Publishing copy:** `output/everyone-sneezes-at-once.md`\
+**Hugging Face:** [videos/022-everyone-sneezes-at-once.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/022-everyone-sneezes-at-once.mp4) · [videos/022-everyone-sneezes-at-once.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/022-everyone-sneezes-at-once.jpg) · [videos/022-everyone-sneezes-at-once.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/022-everyone-sneezes-at-once.md)\
+**Slug:** `everyone-sneezes-at-once` | **Duration:** 46s | **Rendered (UTC):** 2026-10-16T11:37:36Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** Comic thought experiment: every person on Earth sneezes once in the same second; nothing else changes. Closing the eyes during a sneeze is a common reflex that lasts a fraction of a second (about 0.3 s is assumed; it is not precisely measured), so a car at 50 km/h rolls about 4 m with its driver's eyes shut. Millions of cars are moving at any moment (an estimate from a world fleet of about 1.5 billion). Sound travels about 343 m/s, so the nearest sneezes are heard first; distant ones fade and would be lost under traffic. A single sneeze can produce up to about 40,000 droplets (Cole & Cook 1998), so 8.3 billion sneezes could release up to about 330 trillion. More than 95% of healthy people sneeze fewer than four times a day (Hansen & Mygind 2002), so a normal day probably holds on the order of 8 billion sneezes; that daily total is an estimate. Animals are not part of the premise. Droplets are enlarged to be visible; the people, the crosswalk and the dog are illustrative.
+**Assets reused:** city-street-block-v1, humanoid-figure-v1, character-motion-v1, sun-skylight-rig-v1, earth-globe-v1, eruption-column-v1, sound-rings-v1, modeling-helpers-v1, shader-noise-math-v1, camera-keyframe-rig-v1, film-pipeline-v1, overlay-labels-v1, caption-kinetic-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** dog-v1
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if 8.3 billion people on Earth sneezed at the same time?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Every driver passing you sneezes the instant you do, and so does everyone else on Earth. In this 46-second 3D science thought experiment, almost every human eye shuts for a split second: millions of cars roll a few meters blind, and only a dog is watching the road.
+
+Mostly, nothing happens; drivers sneeze at the wheel every day. You don't hear it all at once either: your own street first, then the city, fading under the traffic. One sneeze can spray up to about 40,000 droplets, so together that could top 300 trillion, yet a normal day probably holds about as many sneezes, just spread out. For once, there's nobody left to say bless you. Except the dog.
+
+Do you say bless you to strangers?
+
+Scope: Comic thought experiment: every person on Earth sneezes once in the same second; nothing else changes. Closing the eyes during a sneeze is a common reflex that lasts a fraction of a second (about 0.3 s is assumed; it is not precisely measured), so a car at 50 km/h rolls about 4 m with its driver's eyes shut. Millions of cars are moving at any moment (an estimate from a world fleet of about 1.5 billion). Sound travels about 343 m/s, so the nearest sneezes are heard first; distant ones fade and would be lost under traffic. A single sneeze can produce up to about 40,000 droplets (Cole & Cook 1998), so 8.3 billion sneezes could release up to about 330 trillion. More than 95% of healthy people sneeze fewer than four times a day (Hansen & Mygind 2002), so a normal day probably holds on the order of 8 billion sneezes; that daily total is an estimate. Animals are not part of the premise. Droplets are enlarged to be visible; the people, the crosswalk and the dog are illustrative.
+
+Sources:
+- NBC News: The eye-popping truth about why we close our eyes when we sneeze: https://www.nbcnews.com/healthmain/eye-popping-truth-about-why-we-close-our-eyes-when-1c9321739
+- Live Science: Why do my eyes close when I sneeze?: https://livescience.com/32108-why-do-my-eyes-close-when-i-sneeze.html
+- Hedges & Company: How many cars are there in the world?: https://hedgescompany.com/?p=33242
+- Hansen & Mygind (2002), How often do normal persons sneeze and blow the nose?, Rhinology: https://pubmed.ncbi.nlm.nih.gov/12012947/
+- BioNumbers: Number of droplets that can be generated by a sneeze (Cole & Cook 1998): https://bionumbers.hms.harvard.edu/bionumber.aspx?id=108804
+- Cole & Cook (1998), Characterization of infectious aerosols in health care facilities: https://pubmed.ncbi.nlm.nih.gov/9721404/
+- Bottom Line Inc: How to sneeze quietly (sneeze loudness): https://www.bottomlineinc.com/health/how-to-sneeze-quietly
+- NASA Glenn Research Center: Speed of sound: https://www.grc.nasa.gov/www/k-12/airplane/sound.html
+
+Visuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.
+
+#Shorts #WhatIf #FunnyScience #Science #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if everyone sneezed at once, everyone sneezes at the same time, do your eyes close when you sneeze, sneezing while driving, how many droplets in a sneeze, sneeze droplets slow motion, speed of sound, funny science, earth science what if, science simulation, threejs 3d documentary
+```
+
+**Target search keywords:** what if everyone sneezed at once, everyone sneezes at the same time, do your eyes close when you sneeze, sneezing while driving, how many droplets in a sneeze, sneeze droplets slow motion
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+What if 8.3 billion people on Earth sneezed at the same time?
+
+One sneeze can spray up to about 40,000 droplets, so together that could top 300 trillion. Yet a normal day probably holds about as many sneezes, just spread out. And for once, nobody's left to say bless you. Except the dog.
+
+Do you say bless you to strangers?
+
+Comic thought experiment; droplets are enlarged to be visible.
+
+#WhatIf #ScienceReels #FunnyScience #Science #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if everyone sneezed at once, everyone sneezes at the same time, do your eyes close when you sneeze, sneezing while driving, how many droplets in a sneeze, sneeze droplets slow motion
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if 8.3 billion people on Earth sneezed at the same time?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Everyone on Earth sneezes in the same second. Almost every human eye shuts for a split second and millions of cars roll a few meters blind; mostly, nothing happens. Up to 300 trillion droplets fly at once, yet a normal day probably holds about as many sneezes, just spread out.
+
+Do you say bless you to strangers?
+
+Comic thought experiment: every person on Earth sneezes once in the same second; nothing else changes. Closing the eyes during a sneeze is a common reflex that lasts a fraction of a second (about 0.3 s is assumed; it is not precisely measured), so a car at 50 km/h rolls about 4 m with its driver's eyes shut. Millions of cars are moving at any moment (an estimate from a world fleet of about 1.5 billion). Sound travels about 343 m/s, so the nearest sneezes are heard first; distant ones fade and would be lost under traffic. A single sneeze can produce up to about 40,000 droplets (Cole & Cook 1998), so 8.3 billion sneezes could release up to about 330 trillion. More than 95% of healthy people sneeze fewer than four times a day (Hansen & Mygind 2002), so a normal day probably holds on the order of 8 billion sneezes; that daily total is an estimate. Animals are not part of the premise. Droplets are enlarged to be visible; the people, the crosswalk and the dog are illustrative.
+
+Sources:
+- NBC News: The eye-popping truth about why we close our eyes when we sneeze: https://www.nbcnews.com/healthmain/eye-popping-truth-about-why-we-close-our-eyes-when-1c9321739
+- Live Science: Why do my eyes close when I sneeze?: https://livescience.com/32108-why-do-my-eyes-close-when-i-sneeze.html
+- Hedges & Company: How many cars are there in the world?: https://hedgescompany.com/?p=33242
+- Hansen & Mygind (2002), How often do normal persons sneeze and blow the nose?, Rhinology: https://pubmed.ncbi.nlm.nih.gov/12012947/
+- BioNumbers: Number of droplets that can be generated by a sneeze (Cole & Cook 1998): https://bionumbers.hms.harvard.edu/bionumber.aspx?id=108804
+- Cole & Cook (1998), Characterization of infectious aerosols in health care facilities: https://pubmed.ncbi.nlm.nih.gov/9721404/
+- Bottom Line Inc: How to sneeze quietly (sneeze loudness): https://www.bottomlineinc.com/health/how-to-sneeze-quietly
+- NASA Glenn Research Center: Speed of sound: https://www.grc.nasa.gov/www/k-12/airplane/sound.html
+
+#WhatIf #FunnyScience #Science #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if everyone sneezed at once, everyone sneezes at the same time, do your eyes close when you sneeze, sneezing while driving, how many droplets in a sneeze, sneeze droplets slow motion
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+What if 8.3 billion people on Earth sneezed at the same time?
+
+For a split second almost every human eye shuts, millions of cars roll a few meters blind, and only a dog is watching the road. Mostly, nothing happens.
+
+Do you say bless you to strangers?
+
+A comic 3D thought experiment; eye-closure time and daily sneeze totals are estimates.
+
+#WhatIf #ScienceTok #FunnyScience #Science #ScienceSimulation
+```
+
+**Target search keywords:** what if everyone sneezed at once, everyone sneezes at the same time, do your eyes close when you sneeze, sneezing while driving, how many droplets in a sneeze, sneeze droplets slow motion
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+What if 8.3 billion people on Earth sneezed at the same time?
+
+Millions of cars roll a few meters blind, up to 300 trillion droplets fly, and only the dog is left to say bless you. Do you say bless you to strangers?
+
+#WhatIf #FunnyScience #Science #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if everyone sneezed at once, everyone sneezes at the same time, do your eyes close when you sneeze
+
+**Published URL:** Not published
+
+
+---
+
+## What if 8.3 billion people on Earth drank the ocean at the same time?
+**Video:** `output/everyone-drank-the-ocean.mp4`\
+**Thumbnail:** `output/everyone-drank-the-ocean.jpg`\
+**Publishing copy:** `output/everyone-drank-the-ocean.md`\
+**Hugging Face:** [videos/024-everyone-drank-the-ocean.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/024-everyone-drank-the-ocean.mp4) · [videos/024-everyone-drank-the-ocean.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/024-everyone-drank-the-ocean.jpg) · [videos/024-everyone-drank-the-ocean.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/024-everyone-drank-the-ocean.md)\
+**Slug:** `everyone-drank-the-ocean` | **Duration:** 50s | **Rendered (UTC):** 2026-10-16T16:37:03Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** A mathematical thought experiment with exactly 8.3 billion stipulated participants and a one-liter withdrawal each. Removed water stays out of the sea. The 23nm result is equivalent global mean volume/area change, not an instantaneous local shoreline prediction. Reference pools are 50x25x2m, 2.5 million liters each. The one-millimeter and full-ocean shares are mathematical quotas, not consumed quantities; grounded tanks compare capacity rather than propose real construction. Seawater physiology is qualitative: no dose-specific symptoms or deaths are predicted.
+**Assets reused:** ocean-surface-v1, sky-dome-v1, sailboat-v1, plastic-bottle-v1, humanoid-figure-v1, character-motion-v1, modeling-helpers-v1, camera-keyframe-rig-v1, film-pipeline-v1, caption-kinetic-v1, overlay-labels-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** swimming-pool-field-v1, water-volume-tank-v1
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if 8.3 billion people drank the ocean at the same time?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You slurp the ocean and everyone joins. One liter each adds up to 8.3 billion liters: 3,320 reference pools. Surely the beach moves? The equivalent average drop is only about 23 nanometers. One millimeter instead costs about 43,600 liters per person; the full ocean about 161 billion liters each. Real seawater causes net water loss, and the tiny straw loses the contest.
+
+Before the calculation, how much did you think one liter each would lower the sea?
+
+Scope: A mathematical thought experiment with exactly 8.3 billion stipulated participants and a one-liter withdrawal each. Removed water stays out of the sea. The 23nm result is equivalent global mean volume/area change, not an instantaneous local shoreline prediction. Reference pools are 50x25x2m, 2.5 million liters each. The one-millimeter and full-ocean shares are mathematical quotas, not consumed quantities; grounded tanks compare capacity rather than propose real construction. Seawater physiology is qualitative: no dose-specific symptoms or deaths are predicted.
+
+Sources:
+- USGS: ocean, sea and bay water volume: https://www.usgs.gov/water-science-school/science/how-much-water-there-earth
+- NASA JPL VESL: ocean area and global mean volume/area conversion: https://vesl.jpl.nasa.gov/sea-level/slr-eustatic/
+- NOAA: seawater and dehydration: https://oceanservice.noaa.gov/facts/drinksw.html
+- NOAA: normal seawater salinity about 35 parts per thousand: https://oceanservice.noaa.gov/education/dyw-pass-salt.html
+
+Original deterministic Three.js animation, original procedural score and Foley, local Kokoro am_michael narration. The upper-left numerical readout supports the physical comparison shots.
+
+#Shorts #WhatIf #Oceanography #Physics #Biology #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if everyone drank the ocean, 8.3 billion people, ocean volume comparison, sea level calculation, earth science simulation, seawater physiology, physics thought experiment
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+You slurp the ocean. All 8.3 billion people join. Thousands of poolfuls disappear, yet your beach barely notices.
+
+Before the calculation, how much did you think one liter each would lower the sea?
+
+A mathematical thought experiment with exactly 8.3 billion stipulated participants and a one-liter withdrawal each. Removed water stays out of the sea. The 23nm result is equivalent global mean volume/area change, not an instantaneous local shoreline prediction. Reference pools are 50x25x2m, 2.5 million liters each. The one-millimeter and full-ocean shares are mathematical quotas, not consumed quantities; grounded tanks compare capacity rather than propose real construction. Seawater physiology is qualitative: no dose-specific symptoms or deaths are predicted.
+
+#ScienceReels #WhatIf #Oceanography #Physics #Biology #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if 8.3 billion people drank the ocean at the same time?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You slurp the ocean and everyone joins. One liter each adds up to 8.3 billion liters: 3,320 reference pools. Surely the beach moves? The equivalent average drop is only about 23 nanometers. One millimeter instead costs about 43,600 liters per person; the full ocean about 161 billion liters each. Real seawater causes net water loss, and the tiny straw loses the contest.
+
+Before the calculation, how much did you think one liter each would lower the sea?
+
+Scope: A mathematical thought experiment with exactly 8.3 billion stipulated participants and a one-liter withdrawal each. Removed water stays out of the sea. The 23nm result is equivalent global mean volume/area change, not an instantaneous local shoreline prediction. Reference pools are 50x25x2m, 2.5 million liters each. The one-millimeter and full-ocean shares are mathematical quotas, not consumed quantities; grounded tanks compare capacity rather than propose real construction. Seawater physiology is qualitative: no dose-specific symptoms or deaths are predicted.
+
+Sources:
+- USGS: ocean, sea and bay water volume: https://www.usgs.gov/water-science-school/science/how-much-water-there-earth
+- NASA JPL VESL: ocean area and global mean volume/area conversion: https://vesl.jpl.nasa.gov/sea-level/slr-eustatic/
+- NOAA: seawater and dehydration: https://oceanservice.noaa.gov/facts/drinksw.html
+- NOAA: normal seawater salinity about 35 parts per thousand: https://oceanservice.noaa.gov/education/dyw-pass-salt.html
+
+Original deterministic Three.js animation, original procedural score and Foley, local Kokoro am_michael narration. The upper-left numerical readout supports the physical comparison shots.
+
+#WhatIf #Oceanography #Physics #Biology #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+You slurp the ocean. All 8.3 billion people join. Thousands of poolfuls disappear, yet your beach barely notices.
+
+Before the calculation, how much did you think one liter each would lower the sea?
+
+#ScienceTok #WhatIf #Oceanography #Physics #Biology #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+Your 8.3 billion-liter drink barely moves the sea. Before the calculation, how much did you think one liter each would lower the sea?
+
+#WhatIf #Oceanography #Physics #Biology #ThoughtExperiment
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+
+---
+
+## What if social media didn't exist for 5 seconds in 2026?
+**Video:** `output/social-media-gone-five-seconds.mp4`\
+**Thumbnail:** `output/social-media-gone-five-seconds.jpg`\
+**Publishing copy:** `output/social-media-gone-five-seconds.md`\
+**Hugging Face:** [videos/020-social-media-gone-five-seconds.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.mp4) · [videos/020-social-media-gone-five-seconds.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.jpg) · [videos/020-social-media-gone-five-seconds.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.md)\
+**Slug:** `social-media-gone-five-seconds` | **Duration:** 49s | **Rendered (UTC):** 2026-10-16T04:11:33Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** Six fictional individuals in Tokyo, London, Lagos, Sao Paulo, Mumbai and New York react during the SAME five-second disappearance of social apps, feeds, livestreams and platform DMs in 2026. The 49-second edit expands parallel moments; each location clock remains below five seconds. No recovery or aftermath is shown. Electricity, the broader internet, ordinary carrier SMS and the selected standalone game remain operational by assumption. The birthday SMS is prewritten. These are authored examples, not statistics or cultural predictions. All UI and messages are original CGI; no actual message is sent.
+**Assets reused:** room-box-v1, humanoid-figure-v1, character-motion-v1, modeling-helpers-v1, city-street-block-v1, camera-keyframe-rig-v1, film-pipeline-v1, caption-kinetic-v1, overlay-labels-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** None
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if social media disappeared for 5 seconds in 2026? Six reactions
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You keep dancing while your livestream vanishes. A London commuter keeps refreshing. A Lagos customer orders by pointing. A Sao Paulo gamer loses chat but dodges an ambush. A Mumbai friend switches a birthday wish to SMS. In New York, an angry reply finds its perfect audience: absolutely nobody. Six situations, all inside the same five seconds.
+
+Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
+
+Scope: Six fictional individuals in Tokyo, London, Lagos, Sao Paulo, Mumbai and New York react during the SAME five-second disappearance of social apps, feeds, livestreams and platform DMs in 2026. The 49-second edit expands parallel moments; each location clock remains below five seconds. No recovery or aftermath is shown. Electricity, the broader internet, ordinary carrier SMS and the selected standalone game remain operational by assumption. The birthday SMS is prewritten. These are authored examples, not statistics or cultural predictions. All UI and messages are original CGI; no actual message is sent.
+
+Sources:
+- Meta Engineering: platform backbone outage details: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
+- Twilio: distinct SMS and app messaging channels: https://www.twilio.com/docs/messaging
+
+Original Three.js animation, generic UI, local Kokoro am_michael narration and original procedural music/Foley.
+
+#Shorts #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if social media disappeared, five seconds without social media, 2026 thought experiment, technology simulation, computer science what if, social apps versus internet, six reactions around the world
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+You keep dancing. Your livestream has vanished. Around the globe, six people face six different interruptions inside the same five seconds.
+
+Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
+
+Six fictional individuals in Tokyo, London, Lagos, Sao Paulo, Mumbai and New York react during the SAME five-second disappearance of social apps, feeds, livestreams and platform DMs in 2026. The 49-second edit expands parallel moments; each location clock remains below five seconds. No recovery or aftermath is shown. Electricity, the broader internet, ordinary carrier SMS and the selected standalone game remain operational by assumption. The birthday SMS is prewritten. These are authored examples, not statistics or cultural predictions. All UI and messages are original CGI; no actual message is sent.
+
+#ScienceReels #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if social media disappeared for 5 seconds in 2026? Six reactions
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You keep dancing while your livestream vanishes. A London commuter keeps refreshing. A Lagos customer orders by pointing. A Sao Paulo gamer loses chat but dodges an ambush. A Mumbai friend switches a birthday wish to SMS. In New York, an angry reply finds its perfect audience: absolutely nobody. Six situations, all inside the same five seconds.
+
+Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
+
+Scope: Six fictional individuals in Tokyo, London, Lagos, Sao Paulo, Mumbai and New York react during the SAME five-second disappearance of social apps, feeds, livestreams and platform DMs in 2026. The 49-second edit expands parallel moments; each location clock remains below five seconds. No recovery or aftermath is shown. Electricity, the broader internet, ordinary carrier SMS and the selected standalone game remain operational by assumption. The birthday SMS is prewritten. These are authored examples, not statistics or cultural predictions. All UI and messages are original CGI; no actual message is sent.
+
+Sources:
+- Meta Engineering: platform backbone outage details: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
+- Twilio: distinct SMS and app messaging channels: https://www.twilio.com/docs/messaging
+
+Original Three.js animation, generic UI, local Kokoro am_michael narration and original procedural music/Foley.
+
+#WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+You keep dancing. Your livestream has vanished. Around the globe, six people face six different interruptions inside the same five seconds.
+
+Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
+
+#ScienceTok #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+Your feed vanishes. Six reactions, same five seconds. Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
+
+#WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
 
 ---
 
@@ -154,128 +540,6 @@ Everyone in your elevator just farted at once. So did all 8.3 billion of us. The
 ```
 
 **Target search keywords:** what if everyone farted at once, everyone farts at the same time, how much gas do humans fart
-
-**Published URL:** Not published
-
-
----
-
-## What if social media didn't exist for 5 seconds in 2026?
-**Video:** `output/social-media-gone-five-seconds.mp4`\
-**Thumbnail:** `output/social-media-gone-five-seconds.jpg`\
-**Publishing copy:** `output/social-media-gone-five-seconds.md`\
-**Hugging Face:** [videos/020-social-media-gone-five-seconds.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.mp4) · [videos/020-social-media-gone-five-seconds.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.jpg) · [videos/020-social-media-gone-five-seconds.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.md)\
-**Slug:** `social-media-gone-five-seconds` | **Duration:** 48s | **Rendered (UTC):** 2026-10-16T04:11:33Z\
-**Publishing:** rendered_not_published\
-**Scientific accuracy note:** A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
-**Assets reused:** room-box-v1, humanoid-figure-v1, character-motion-v1, modeling-helpers-v1, camera-keyframe-rig-v1, film-pipeline-v1, caption-kinetic-v1, overlay-labels-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
-**Assets created:** None
-
-### YouTube Shorts
-
-**Title — copy:**
-```text
-What if social media didn't exist for 5 seconds in 2026?
-```
-
-**Description / caption + hashtags — copy:**
-```text
-You hit post and every social app disappears, but your coffee keeps sliding. Your camera and SMS still work. Another tap solves nothing; your friend points at the table edge. A quick catch saves the drink. At second five the draft returns, and you choose to leave this moment off camera.
-
-When the apps returned, would you finish the post or leave the moment offline?
-
-Scope: A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
-
-Sources:
-- Meta Engineering: more details about the October 4 outage: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
-- Apple Support: iPhone camera basics: https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios
-- Twilio: Programmable Messaging and distinct SMS/app channels: https://www.twilio.com/docs/messaging
-
-Original deterministic Three.js animation and original generic phone UI. Narrator: local Kokoro am_michael. Original procedural score and Foley.
-
-#Shorts #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
-```
-
-**Tags — comma-separated, copy:**
-```text
-what if social media disappeared, social media gone for 5 seconds, social media outage thought experiment, 2026 what if, SMS versus social messages, technology simulation, digital life, 3D animation
-```
-
-**Target search keywords:**
-
-**Published URL:** Not published
-
-### Instagram Reels
-
-**Description / caption + hashtags — copy:**
-```text
-You hit post. Your social apps vanish, but the coffee sliding toward the table edge does not stop. Five hypothetical seconds turn into one ridiculous cafe rescue.
-
-When the apps returned, would you finish the post or leave the moment offline?
-
-A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
-
-#ScienceReels #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
-```
-
-**Target search keywords:**
-
-**Published URL:** Not published
-
-### Facebook Reels
-
-**Title — copy:**
-```text
-What if social media didn't exist for 5 seconds in 2026?
-```
-
-**Description / caption + hashtags — copy:**
-```text
-You hit post and every social app disappears, but your coffee keeps sliding. Your camera and SMS still work. Another tap solves nothing; your friend points at the table edge. A quick catch saves the drink. At second five the draft returns, and you choose to leave this moment off camera.
-
-When the apps returned, would you finish the post or leave the moment offline?
-
-Scope: A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
-
-Sources:
-- Meta Engineering: more details about the October 4 outage: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
-- Apple Support: iPhone camera basics: https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios
-- Twilio: Programmable Messaging and distinct SMS/app channels: https://www.twilio.com/docs/messaging
-
-Original deterministic Three.js animation and original generic phone UI. Narrator: local Kokoro am_michael. Original procedural score and Foley.
-
-#WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
-```
-
-**Target search keywords:**
-
-**Published URL:** Not published
-
-### TikTok
-
-**Description / caption + hashtags — copy:**
-```text
-You hit post. Your social apps vanish, but the coffee sliding toward the table edge does not stop. Five hypothetical seconds turn into one ridiculous cafe rescue.
-
-When the apps returned, would you finish the post or leave the moment offline?
-
-#ScienceTok #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
-```
-
-**Target search keywords:**
-
-**Published URL:** Not published
-
-### X
-
-**Description / caption + hashtags — copy:**
-```text
-Your feed vanishes; your coffee keeps sliding. When the apps returned, would you finish the post or leave the moment offline?
-
-#WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation
-```
-
-**Target search keywords:**
 
 **Published URL:** Not published
 

@@ -1,123 +1,132 @@
 1
-00:00:00,000 --> 00:00:00,569
-You hit post,
+00:00:00,000 --> 00:00:01,386
+You keep
+dancing.
 
 2
-00:00:00,569 --> 00:00:02,759
-and every social
-app disappears.
+00:00:01,386 --> 00:00:02,866
+Your live stream
+just vanished,
 
 3
-00:00:03,029 --> 00:00:04,699
-Your coffee
-keeps sliding.
+00:00:02,866 --> 00:00:04,556
+and nobody
+can watch.
 
 4
-00:00:05,400 --> 00:00:06,680
-Five seconds
-without feeds
+00:00:05,100 --> 00:00:06,100
+Across Earth,
 
 5
-00:00:06,680 --> 00:00:08,280
-or social
-messages.
+00:00:06,100 --> 00:00:07,140
+the same
+five seconds
 
 6
-00:00:08,280 --> 00:00:10,670
-Your camera and
-SMS still work.
+00:00:07,140 --> 00:00:09,060
+knock out
+social media.
 
 7
-00:00:11,400 --> 00:00:13,620
-You tap the empty
-space again.
+00:00:09,060 --> 00:00:10,730
+The internet
+stays on.
 
 8
-00:00:13,620 --> 00:00:14,820
-Across the
-table,
+00:00:11,300 --> 00:00:13,020
+In London, you
+hammer refresh.
 
 9
-00:00:14,820 --> 00:00:16,530
-your friend
-points down.
+00:00:13,020 --> 00:00:13,940
+Full signal.
 
 10
-00:00:16,900 --> 00:00:18,820
-Your cup reaches
-the edge.
+00:00:13,940 --> 00:00:14,880
+Empty feed.
 
 11
-00:00:18,820 --> 00:00:20,460
-Your next move
-needs hands,
+00:00:14,880 --> 00:00:16,410
+Your thumb
+tries again.
 
 12
-00:00:20,460 --> 00:00:21,550
-not followers.
+00:00:17,500 --> 00:00:18,340
+In Lagos,
 
 13
-00:00:22,900 --> 00:00:23,740
-You catch it.
+00:00:18,340 --> 00:00:19,380
+your next
+order can't
 
 14
-00:00:23,740 --> 00:00:24,800
-No spill.
+00:00:19,380 --> 00:00:20,530
+reach your
+inbox.
 
 15
-00:00:24,800 --> 00:00:25,880
-Your friend
-watched that
+00:00:20,840 --> 00:00:22,570
+The customer
+just points.
 
 16
-00:00:25,880 --> 00:00:27,610
-whole ridiculous
-rescue.
+00:00:23,700 --> 00:00:25,920
+In Brazil, your
+chat disappears.
 
 17
-00:00:28,900 --> 00:00:30,380
-Your friend
-laughs.
+00:00:25,920 --> 00:00:27,300
+The game keeps
+running.
 
 18
-00:00:30,380 --> 00:00:31,240
-You laugh back,
+00:00:27,300 --> 00:00:28,710
+You dodge
+the ambush.
 
 19
-00:00:31,240 --> 00:00:33,410
-with no camera
-between you.
+00:00:29,900 --> 00:00:30,620
+In Mumbai,
 
 20
-00:00:34,900 --> 00:00:35,960
-At second five,
+00:00:30,620 --> 00:00:32,620
+your birthday
+message won't send.
 
 21
-00:00:35,960 --> 00:00:37,860
-social media
-returns.
+00:00:32,620 --> 00:00:34,470
+You switch to
+ordinary text.
 
 22
-00:00:37,860 --> 00:00:39,020
-Your unfinished
-post
+00:00:36,100 --> 00:00:36,960
+In New York,
 
 23
-00:00:39,020 --> 00:00:40,350
-is still
-waiting.
+00:00:36,960 --> 00:00:39,140
+your angry
+reply is ready.
 
 24
-00:00:40,900 --> 00:00:43,040
-Your phone goes
-face down.
+00:00:39,140 --> 00:00:40,850
+Your finger
+heads for send.
 
 25
-00:00:43,040 --> 00:00:44,470
-The coffee
-survived.
+00:00:42,100 --> 00:00:43,880
+The send button
+vanished.
 
 26
-00:00:44,820 --> 00:00:46,930
-This moment stays
-off camera.
+00:00:43,880 --> 00:00:44,840
+Your worst
+take has
+
+27
+00:00:44,840 --> 00:00:46,460
+the perfect
+audience.
+
+28
+00:00:46,460 --> 00:00:47,950
+Absolutely nobody.

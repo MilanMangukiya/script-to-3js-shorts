@@ -1,0 +1,1467 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if 8.3 billion people on Earth sneezed at the same time?",
+    "title": "What if 8.3 billion people on Earth sneezed at the same time?",
+    "slug": "everyone-sneezes-at-once",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 46,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If every person on Earth sneezed in the same second, what would actually happen in that blind moment?",
+    "viewer_takeaway": "A synchronized sneeze shuts almost every human eye at once, but only for about a blink: traffic rolls a few metres and carries on, the sound arrives nearest first and fades, and a normal day probably holds about as many sneezes, just spread out."
+  },
+  "scientific_model": {
+    "baseline_reality": "Most healthy people sneeze a few times a day or less; sneezes are reflexes that usually close the eyes briefly and spray droplets a metre or two.",
+    "counterfactual_change": "At one instant every person on Earth sneezes once. Nothing else changes. The film follows one city crosswalk, the planet, and the city as heard from above.",
+    "assumptions": [
+      "Eyes close for about 0.3 s during the sneeze (a fraction of a second; not precisely measured).",
+      "Traffic in the city moves at 50 km/h.",
+      "Animals do not sneeze on cue.",
+      "People, the dog and the crosswalk are illustrative."
+    ],
+    "causal_chain": [
+      "Everyone sneezes in the same second.",
+      "Almost everyone’s eyes close reflexively, including drivers.",
+      "Moving cars cover a few metres with no human looking; animals, like the dog, still watch.",
+      "People sneeze while driving every day, so nothing systematic happens.",
+      "Sound from the sneezes arrives nearest first; farther ones are fainter and soon lost under traffic.",
+      "Up to ~330 trillion droplets fly out at once.",
+      "A normal day probably holds a similar number of sneezes, spread out.",
+      "In that second the only bystanders not sneezing are animals."
+    ],
+    "uncertainties": [
+      "How long eyes stay shut during a sneeze varies and is not well measured.",
+      "How many vehicles are moving at any moment is an estimate (tens of millions of ~1.5 billion).",
+      "Distant sneezes are probably inaudible over traffic and through walls; only the nearest would be heard clearly.",
+      "Average sneezes per person per day are uncertain (most people sneeze fewer than four times a day)."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "The scenario has all 8.3 billion people sneeze in the same second.",
+        "confidence": "derived",
+        "reasoning": "Stipulated premise.",
+        "presentation_guardrail": "The count is the premise."
+      },
+      {
+        "id": "CL02",
+        "statement": "Most people close their eyes reflexively when they sneeze, for a fraction of a second.",
+        "confidence": "established",
+        "reasoning": "Physicians describe eye closure as part of the sneeze reflex; it is common but not universal.",
+        "presentation_guardrail": "\"Almost every human eye\"."
+      },
+      {
+        "id": "CL03",
+        "statement": "With about 1.5 billion vehicles in the world, millions are moving at any moment; at 50 km/h a car covers about 4 m in 0.3 s.",
+        "confidence": "plausible",
+        "reasoning": "Fleet size from Hedges & Company; 13.9 m/s x 0.3 s = 4.2 m.",
+        "presentation_guardrail": "\"Millions\" and \"a few meters\", not a precise count."
+      },
+      {
+        "id": "CL04",
+        "statement": "Drivers routinely sneeze at the wheel; a sub-second eye closure is comparable to a long blink, so a synchronized sneeze would mostly pass without incident.",
+        "confidence": "plausible",
+        "reasoning": "Everyday experience; a few metres of straight travel.",
+        "presentation_guardrail": "\"Mostly, nothing happens\"."
+      },
+      {
+        "id": "CL05",
+        "statement": "Sound travels about 343 m/s, so the sound of a sneeze 1 km away arrives about 3 s after nearby ones; a loud sneeze is about 90 dB up close, so only nearby sneezes would stand out over traffic.",
+        "confidence": "plausible",
+        "reasoning": "Speed of sound in air at 20 C; loudness estimate from Bottom Line Inc; spreading loss of about 6 dB per doubling of distance.",
+        "presentation_guardrail": "Narration says only nearest first, then fading; the HUD shows how far the sound has travelled, not what is audible."
+      },
+      {
+        "id": "CL06",
+        "statement": "A single sneeze can generate as many as 40,000 droplets, so 8.3 billion sneezes could release up to about 330 trillion.",
+        "confidence": "plausible",
+        "reasoning": "BioNumbers entry citing Cole & Cook (1998); 8.3e9 x 4e4 = 3.3e14.",
+        "presentation_guardrail": "\"Up to\" and \"could top 300 trillion\"; the HUD says UP TO."
+      },
+      {
+        "id": "CL07",
+        "statement": "More than 95% of healthy people sneeze fewer than four times a day, so a normal day worldwide probably holds on the order of 8 billion sneezes.",
+        "confidence": "plausible",
+        "reasoning": "Hansen & Mygind (2002) diary study; an average near one sneeze per person per day is an assumption.",
+        "presentation_guardrail": "\"Probably a normal day\"; the HUD shows an approximate count."
+      },
+      {
+        "id": "CL08",
+        "statement": "Animals are not part of the premise, so a dog would keep its eyes open and be the only bystander not sneezing at that instant.",
+        "confidence": "derived",
+        "reasoning": "Premise covers people only; comic illustration.",
+        "presentation_guardrail": "A joke about that one second."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NBC News: The eye-popping truth about why we close our eyes when we sneeze",
+        "url": "https://www.nbcnews.com/healthmain/eye-popping-truth-about-why-we-close-our-eyes-when-1c9321739",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "Live Science: Why do my eyes close when I sneeze?",
+        "url": "https://livescience.com/32108-why-do-my-eyes-close-when-i-sneeze.html",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "Hedges & Company: How many cars are there in the world?",
+        "url": "https://hedgescompany.com/?p=33242",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "Hansen & Mygind (2002), How often do normal persons sneeze and blow the nose?, Rhinology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12012947/",
+        "supports_claim_ids": [
+          "CL07"
+        ]
+      },
+      {
+        "name": "BioNumbers: Number of droplets that can be generated by a sneeze (Cole & Cook 1998)",
+        "url": "https://bionumbers.hms.harvard.edu/bionumber.aspx?id=108804",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "name": "Cole & Cook (1998), Characterization of infectious aerosols in health care facilities",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9721404/",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "name": "Bottom Line Inc: How to sneeze quietly (sneeze loudness)",
+        "url": "https://www.bottomlineinc.com/health/how-to-sneeze-quietly",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      },
+      {
+        "name": "NASA Glenn Research Center: Speed of sound",
+        "url": "https://www.grc.nasa.gov/www/k-12/airplane/sound.html",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "The countdown hits zero and everyone on Earth sneezes: for one blink only a dog watches the road, the sound arrives street by street, and the only one left to say bless you is the dog.",
+    "visual_identity": "A sunny crosswalk at eye level with an elegant boxless countdown in the top-left, a POV blink to black, a glowing blind stretch on the road, sound rings over the city, slow-motion droplets in profile, and a twinkling planet.",
+    "palette": [
+      "#3D7AD0",
+      "#FFFFFF",
+      "#38BDF8",
+      "#C8923E",
+      "#9A2B24",
+      "#D5E3F1"
+    ],
+    "lighting": "Morning sun over the far side of the road.",
+    "camera_language": "Handheld eye-level POV with a blink to black; curb-level replay and a dog-height close-up; a high aerial for sound; slow motion in profile; a push in on the dog.",
+    "motion_language": "Comic timing from a countdown: a collective wind-up, one snap, recovery; real-speed traffic and sound; 12x slow motion for the spray.",
+    "world_scale_policy": "Metre scale on the street; true 343 m/s rings over a 2.3 km city; Earth radius 1 for the globe; droplets enlarged.",
+    "emotional_arc": [
+      "Anticipation",
+      "Scale",
+      "Alarm",
+      "Relief",
+      "Wonder",
+      "Mock disgust",
+      "Perspective",
+      "Comic payoff"
+    ],
+    "opening_hook": "Every driver passing you sneezes the instant you do.",
+    "mid_video_rehook": "Millions of drivers go blind for a blink while only a dog watches; nothing happens, the sound arrives street by street, and up to 300 trillion droplets fly at once.",
+    "ending_payoff": "For once there is nobody left to say bless you, except the dog.",
+    "loop_connection": "The film ends at the same crosswalk where the countdown began.",
+    "asset_policy": "Reuse the street, humanoids, globe, lit puffs and sky rig; add a reusable dog-v1 and an editorial HUD style in overlay-labels-v1."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Original light score: ticking tension under the countdown, a held breath, a big comic sneeze chorus, a bright groove for the city, a twinkling celesta for the day, and a one-bark button.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "0.3 s silence before the sneeze chorus; car pass-by; a rolling rumble of distant sneezes; slowed sneeze and mist hiss; a single bark.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The key consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 5.1,
+      "narration": {
+        "text": "Every driver passing you sneezes the instant you do.",
+        "start_s": 0.04,
+        "end_s": 4.95,
+        "delivery_note": "Matter-of-fact and quick; \"the instant you do\" lands as the countdown hits zero.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "What happens in that second?",
+      "visual_payoff": "The countdown hits zero; everyone sneezes; your eyes shut.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 5.1,
+          "shot_type": "eye-level POV at a crosswalk as the countdown hits zero",
+          "world": "1 unit = 1 m. A sunny city crosswalk (city-street-block-v1, zebra crossing at z 0, signals on red for pedestrians); pedestrians on both curbs, a dog by its owner, cars passing at 50 km/h; sun-skylight-rig-v1.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  -7.05,
+                  1.62,
+                  3.4
+                ],
+                "look_at": [
+                  -8,
+                  1.3,
+                  -1.5
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 5.1,
+                "position": [
+                  -7.05,
+                  1.6,
+                  3.3
+                ],
+                "look_at": [
+                  -7.9,
+                  1.28,
+                  -1.5
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "At the curb edge, glancing back at the people waiting with you; your own sneeze jolts the view.",
+            "lens_notes": "Neighbours waiting at the curb in three-quarter view, the dog sitting by its owner, traffic passing on the right.",
+            "handheld_sway": 0.35,
+            "impulse_shake": {
+              "at_s": 3.5,
+              "duration_s": 0.45,
+              "intensity": 0.4
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "8:14 AM · A CITY CROSSWALK",
+            "metric_label": "EVERYONE SNEEZES IN",
+            "start_value": 3.5,
+            "end_value": 0,
+            "unit": "S",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight people waiting on both curbs.",
+              "geometry_and_material": "Registered Humanoid rigs with a sneeze pose (wind-up, snap, recovery); some sneeze into an elbow.",
+              "scale_and_accuracy": "1.62-1.84 m adults.",
+              "movement": "Idle; wind-up from 2.7s; everyone sneezes at 3.5s."
+            },
+            {
+              "id": "dog",
+              "kind": "animal",
+              "asset_hint": "dog-v1",
+              "appearance": "A golden dog sitting by its owner.",
+              "geometry_and_material": "Procedural Dog rig: sit, head tilt, tail wag, bark.",
+              "scale_and_accuracy": "0.55 m at the shoulder.",
+              "movement": "Sits watching the traffic; looks up at the sneezing people afterwards."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs.",
+              "scale_and_accuracy": "4.3 m, 50 km/h.",
+              "movement": "A red car crosses the zebra at 3.5s."
+            }
+          ],
+          "animation_plan": [
+            "0-3.5s countdown; 3.5s every person sneezes; your eyelids shut for 0.3s (POV blackout) and reopen on the aftermath."
+          ],
+          "lighting": "Morning sun behind you.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Every driver",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 3.2,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "The street holds its breath.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 3.5,
+          "duration_s": 0.8,
+          "kind": "impact",
+          "description": "A chorus of sneezes.",
+          "relative_db": -8
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Out to the planet."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 5.1,
+      "end_s": 9.45,
+      "narration": {
+        "text": "For a split second, almost every human eye is shut.",
+        "start_s": 5.22,
+        "end_s": 9.3,
+        "delivery_note": "Even; let \"almost every human eye\" land.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "How many eyes are shut?",
+      "visual_payoff": "Puffs pop over every populated place at once.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 5.1,
+          "end_s": 9.45,
+          "shot_type": "Earth: the same second everywhere",
+          "world": "Earth radius = 1 unit (earth-globe-v1) with one small puff per sampled populated place.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 5.1,
+                "position": [
+                  0,
+                  0.3,
+                  3.2
+                ],
+                "look_at": [
+                  0,
+                  0.08,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 9.45,
+                "position": [
+                  0.15,
+                  0.35,
+                  3
+                ],
+                "look_at": [
+                  0,
+                  0.08,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push in.",
+            "lens_notes": "Europe, Africa and Asia; pale puffs pop everywhere at once.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "FOR A SPLIT SECOND",
+            "metric_label": "HUMAN EYES SHUT",
+            "start_value": 16,
+            "end_value": 16,
+            "unit": "BILLION",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "Daylit and night Earth with tiny pale sneeze puffs where people live.",
+              "geometry_and_material": "NASA maps; sprites sampled from city lights.",
+              "scale_and_accuracy": "Puffs enlarged to be visible.",
+              "movement": "All puffs pop in the same instant, then fade."
+            }
+          ],
+          "animation_plan": [
+            "5.1s puffs everywhere at once (no travelling wave)."
+          ],
+          "lighting": "Sun from the right.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "almost every human eye",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 5.1,
+          "duration_s": 2,
+          "kind": "texture",
+          "description": "A planet-wide whoosh.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to the curb."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 9.45,
+      "end_s": 14.8,
+      "narration": {
+        "text": "Millions of cars roll a few meters blind. Only a dog watches.",
+        "start_s": 9.57,
+        "end_s": 14.65,
+        "delivery_note": "Brisk, then a small smile on \"Only a dog watches.\"",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "What about everyone driving?",
+      "visual_payoff": "The car crosses the zebra blind; the stretch glows on the road; the dog follows the traffic.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 9.45,
+          "end_s": 12.25,
+          "shot_type": "curb-level replay: a car rolls through the blink",
+          "world": "1 unit = 1 m. A sunny city crosswalk (city-street-block-v1, zebra crossing at z 0, signals on red for pedestrians); pedestrians on both curbs, a dog by its owner, cars passing at 50 km/h; sun-skylight-rig-v1.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 9.45,
+                "position": [
+                  -6,
+                  1.3,
+                  9.5
+                ],
+                "look_at": [
+                  -3.4,
+                  0.5,
+                  -2
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 12.25,
+                "position": [
+                  -5.95,
+                  1.28,
+                  9.2
+                ],
+                "look_at": [
+                  -3.4,
+                  0.5,
+                  -1.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld in the gutter, downstream of the crossing.",
+            "lens_notes": "The red car crosses the zebra while its driver sneezes; the 4.2 m it covers with eyes shut is highlighted on the road.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "AT 50 KM/H",
+            "metric_label": "DRIVEN WITH EYES SHUT",
+            "start_value": 0,
+            "end_value": 4.2,
+            "unit": "M",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs.",
+              "scale_and_accuracy": "4.3 m, 50 km/h.",
+              "movement": "Same moment replayed: the car keeps a straight line through 10.9s."
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight people waiting on both curbs.",
+              "geometry_and_material": "Registered Humanoid rigs with a sneeze pose (wind-up, snap, recovery); some sneeze into an elbow.",
+              "scale_and_accuracy": "1.62-1.84 m adults.",
+              "movement": "Sneezing on the curb."
+            }
+          ],
+          "animation_plan": [
+            "10.9s the replayed sneeze; the blind stretch grows over 0.3s and stays on the road."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 12.25,
+          "end_s": 14.8,
+          "shot_type": "low close-up: the dog watching the road",
+          "world": "1 unit = 1 m. A sunny city crosswalk (city-street-block-v1, zebra crossing at z 0, signals on red for pedestrians); pedestrians on both curbs, a dog by its owner, cars passing at 50 km/h; sun-skylight-rig-v1.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 12.25,
+                "position": [
+                  -6,
+                  0.7,
+                  2.45
+                ],
+                "look_at": [
+                  -7.1,
+                  0.95,
+                  1.3
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 14.8,
+                "position": [
+                  -6.12,
+                  0.7,
+                  2.33
+                ],
+                "look_at": [
+                  -7.1,
+                  0.95,
+                  1.3
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow creep at the gutter, eye level with the dog.",
+            "lens_notes": "The dog in the foreground, ears up, head following the traffic; its owner and neighbours behind it, still recovering.",
+            "handheld_sway": 0.25
+          },
+          "hud_telemetry": {
+            "timer_label": "AT 50 KM/H",
+            "metric_label": "DRIVEN WITH EYES SHUT",
+            "start_value": 4.2,
+            "end_value": 4.2,
+            "unit": "M",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "dog",
+              "kind": "animal",
+              "asset_hint": "dog-v1",
+              "appearance": "A golden dog sitting by its owner.",
+              "geometry_and_material": "Procedural Dog rig: sit, head tilt, tail wag, bark.",
+              "scale_and_accuracy": "0.55 m at the shoulder.",
+              "movement": "Eyes open, head turning to follow each passing car."
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight people waiting on both curbs.",
+              "geometry_and_material": "Registered Humanoid rigs with a sneeze pose (wind-up, snap, recovery); some sneeze into an elbow.",
+              "scale_and_accuracy": "1.62-1.84 m adults.",
+              "movement": "Straightening up behind the dog."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs.",
+              "scale_and_accuracy": "4.3 m, 50 km/h.",
+              "movement": "Passing behind the camera; heard, and seen in the dog's glance."
+            }
+          ],
+          "animation_plan": [
+            "12.25-14.8s the dog follows the next cars."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Only a dog watches.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 10.4,
+          "duration_s": 1.2,
+          "kind": "whoosh",
+          "description": "Car passing.",
+          "relative_db": -14
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "A moment later."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "twist",
+      "start_s": 14.8,
+      "end_s": 19.15,
+      "narration": {
+        "text": "Mostly, nothing happens. Drivers sneeze at the wheel every day.",
+        "start_s": 14.92,
+        "end_s": 19,
+        "delivery_note": "Relief.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Does anything crash?",
+      "visual_payoff": "Nothing happens; people sniff and carry on.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 14.8,
+          "end_s": 19.15,
+          "shot_type": "the crosswalk a moment later: nothing happened",
+          "world": "1 unit = 1 m. A sunny city crosswalk (city-street-block-v1, zebra crossing at z 0, signals on red for pedestrians); pedestrians on both curbs, a dog by its owner, cars passing at 50 km/h; sun-skylight-rig-v1.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 14.8,
+                "position": [
+                  6.6,
+                  1.6,
+                  4.2
+                ],
+                "look_at": [
+                  -8,
+                  1.2,
+                  -0.3
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 19.15,
+                "position": [
+                  6.6,
+                  1.6,
+                  3.8
+                ],
+                "look_at": [
+                  -8,
+                  1.2,
+                  -0.3
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld from the far curb.",
+            "lens_notes": "Looking back across the road at your curb: people straighten up and sniff while traffic carries on between.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "ABOUT ONE LONG BLINK",
+            "metric_label": "EYES SHUT FOR",
+            "start_value": 0.3,
+            "end_value": 0.3,
+            "unit": "S",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight people waiting on both curbs.",
+              "geometry_and_material": "Registered Humanoid rigs with a sneeze pose (wind-up, snap, recovery); some sneeze into an elbow.",
+              "scale_and_accuracy": "1.62-1.84 m adults.",
+              "movement": "Recovering, looking around."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs.",
+              "scale_and_accuracy": "4.3 m, 50 km/h.",
+              "movement": "Driving on normally."
+            }
+          ],
+          "animation_plan": [
+            "14.8-19.15s recovery; cars pass."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "nothing happens",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 14.8,
+          "duration_s": 3,
+          "kind": "ambience",
+          "description": "Street sounds return.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Up above the city."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 19.15,
+      "end_s": 25.3,
+      "narration": {
+        "text": "But you don't hear it at once: your street first, then the city, fading.",
+        "start_s": 19.27,
+        "end_s": 25.15,
+        "delivery_note": "Wonder; ease off on \"then the city, fading.\"",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "What does the city sound like?",
+      "visual_payoff": "Rings from every sneeze spread over the city; the nearest reach your crosswalk first.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 19.15,
+          "end_s": 25.3,
+          "shot_type": "from above: every sneeze in the city rolling toward you as sound",
+          "world": "1 unit = 1 m. The same city from 1.2 km up, with sound rings drawn just above the roofs.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 19.15,
+                "position": [
+                  600,
+                  750,
+                  900
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 25.3,
+                "position": [
+                  560,
+                  760,
+                  860
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow aerial drift.",
+            "lens_notes": "Rings expand at 343 m/s from sneezes all over the city; a marker shows your crosswalk.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "AT 343 M/S, NEAREST FIRST",
+            "metric_label": "SNEEZE SOUND HAS TRAVELED",
+            "start_value": 0,
+            "end_value": 1.5,
+            "unit": "KM",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "rings",
+              "kind": "diagram",
+              "asset_hint": "sound-rings-v1",
+              "appearance": "Thin bright rings.",
+              "geometry_and_material": "Instanced ring meshes above the roofs.",
+              "scale_and_accuracy": "True 343 m/s expansion.",
+              "movement": "Expand from every source at once."
+            }
+          ],
+          "animation_plan": [
+            "20.91-25.3s rings reach about 1.5 km and fade as they spread; nearer sneezes arrive first."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "the city, fading",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 20.91,
+          "duration_s": 2,
+          "kind": "texture",
+          "description": "Nearby sneezes arrive first, then a fading wash that sinks under the traffic.",
+          "relative_db": -14
+        }
+      ],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Down to one face."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "escalation",
+      "start_s": 25.3,
+      "end_s": 32.4,
+      "narration": {
+        "text": "One sneeze can spray tens of thousands of droplets. Together, that could top 300 trillion.",
+        "start_s": 25.42,
+        "end_s": 32.25,
+        "delivery_note": "Mock-gross; land \"300 trillion\".",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 1.1
+        }
+      },
+      "viewer_question": "And the germs?",
+      "visual_payoff": "A slow-motion cone of droplets.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 25.3,
+          "end_s": 32.4,
+          "shot_type": "slow motion (12x): one sneeze in profile",
+          "world": "1 unit = 1 m. A sunny city crosswalk (city-street-block-v1, zebra crossing at z 0, signals on red for pedestrians); pedestrians on both curbs, a dog by its owner, cars passing at 50 km/h; sun-skylight-rig-v1.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 25.3,
+                "position": [
+                  -8.6,
+                  1.47,
+                  2.04
+                ],
+                "look_at": [
+                  -8.2,
+                  1.42,
+                  0.08
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 32.4,
+                "position": [
+                  -8.55,
+                  1.47,
+                  2.09
+                ],
+                "look_at": [
+                  -8.12,
+                  1.41,
+                  0.09
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow pan following the droplets as they cross the frame.",
+            "lens_notes": "Side profile of one neighbour; the sneeze throws a cone of droplets across the frame over the dark road.",
+            "handheld_sway": 0.15
+          },
+          "hud_telemetry": {
+            "timer_label": "DROPLETS",
+            "metric_label": "ALL AT ONCE, UP TO",
+            "start_value": 0,
+            "end_value": 330,
+            "unit": "TRILLION",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "spray",
+              "kind": "particle_system",
+              "asset_hint": "eruption-column-v1",
+              "appearance": "Glittering droplets and a faint breath cloud.",
+              "geometry_and_material": "Shader points with drag and gravity plus AshPuffs.",
+              "scale_and_accuracy": "Droplets enlarged to be visible; most fall within 1-2 m.",
+              "movement": "Thousands of droplets fan out across the frame and sink."
+            }
+          ],
+          "animation_plan": [
+            "26.15s the sneeze begins in slow motion; the counter shows one sneeze (up to 40,000), then everyone (up to 330 trillion) from 28.68s."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "300 trillion",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 26.15,
+          "duration_s": 3,
+          "kind": "texture",
+          "description": "Slowed sneeze and a fine mist hiss.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to the planet."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "twist",
+      "start_s": 32.4,
+      "end_s": 37.15,
+      "narration": {
+        "text": "That's probably a normal day of sneezing, crammed into one second.",
+        "start_s": 32.52,
+        "end_s": 37,
+        "delivery_note": "Dry reveal; lean on \"one second\".",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.93
+        }
+      },
+      "viewer_question": "Is this unusual at all?",
+      "visual_payoff": "Sneezes twinkle everywhere over a day.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 32.4,
+          "end_s": 37.15,
+          "shot_type": "Earth over one day: sneezes everywhere, never in sync",
+          "world": "Earth radius = 1 unit (earth-globe-v1) with one small puff per sampled populated place.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 32.4,
+                "position": [
+                  0,
+                  0.25,
+                  3.25
+                ],
+                "look_at": [
+                  0,
+                  0.06,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 37.15,
+                "position": [
+                  0,
+                  0.3,
+                  3.1
+                ],
+                "look_at": [
+                  0,
+                  0.06,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Hold while the planet turns once.",
+            "lens_notes": "Day and night sweep past; puffs twinkle at random.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "OVER 24 HOURS, SPREAD OUT",
+            "metric_label": "SNEEZES ON A NORMAL DAY",
+            "start_value": 0,
+            "end_value": 8.3,
+            "unit": "BILLION",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "Daylit and night Earth with tiny pale sneeze puffs where people live.",
+              "geometry_and_material": "NASA maps; sprites sampled from city lights.",
+              "scale_and_accuracy": "Puffs enlarged to be visible.",
+              "movement": "Random twinkles over the time-lapse."
+            }
+          ],
+          "animation_plan": [
+            "32.4-37.15s one full turn; the counter reaches roughly 8 billion."
+          ],
+          "lighting": "Sun from the right.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "a normal day",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 32.4,
+          "duration_s": 4.75,
+          "kind": "music_swell",
+          "description": "Light plucked figure.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to the curb."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "ending",
+      "start_s": 37.15,
+      "end_s": 46,
+      "narration": {
+        "text": "So for once, there's nobody left to say bless you. Except the dog.",
+        "start_s": 37.27,
+        "end_s": 45.85,
+        "delivery_note": "Deadpan; a beat before \"Except the dog.\"",
+        "pacing_energy": "reflective_payoff",
+        "performance": {
+          "pauses": [
+            {
+              "after_word": 10,
+              "duration_s": 0.35
+            }
+          ]
+        }
+      },
+      "viewer_question": "Who says bless you?",
+      "visual_payoff": "The dog tilts its head and barks.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 37.15,
+          "end_s": 46,
+          "shot_type": "back at the curb: the dog",
+          "world": "1 unit = 1 m. A sunny city crosswalk (city-street-block-v1, zebra crossing at z 0, signals on red for pedestrians); pedestrians on both curbs, a dog by its owner, cars passing at 50 km/h; sun-skylight-rig-v1.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 37.15,
+                "position": [
+                  -5.7,
+                  1.2,
+                  2.75
+                ],
+                "look_at": [
+                  -7.3,
+                  0.95,
+                  1.2
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 46,
+                "position": [
+                  -6.3,
+                  0.95,
+                  2.05
+                ],
+                "look_at": [
+                  -7.1,
+                  0.84,
+                  1.36
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push in to the dog.",
+            "lens_notes": "The owner wipes their nose; the dog looks into the lens, tilts its head, then barks once.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "THE DOG",
+            "metric_label": "LEFT TO SAY BLESS YOU",
+            "start_value": 0,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "dog",
+              "kind": "animal",
+              "asset_hint": "dog-v1",
+              "appearance": "A golden dog sitting by its owner.",
+              "geometry_and_material": "Procedural Dog rig: sit, head tilt, tail wag, bark.",
+              "scale_and_accuracy": "0.55 m at the shoulder.",
+              "movement": "Looks into the lens; head tilt from 40.2s; one bark at 42.95s."
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight people waiting on both curbs.",
+              "geometry_and_material": "Registered Humanoid rigs with a sneeze pose (wind-up, snap, recovery); some sneeze into an elbow.",
+              "scale_and_accuracy": "1.62-1.84 m adults.",
+              "movement": "The owner wipes their nose."
+            }
+          ],
+          "animation_plan": [
+            "41.55s the counter flips from 0 to 1; 42.95s the bark."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on the droplets",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large number, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Except the dog.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 42.95,
+          "duration_s": 0.4,
+          "kind": "impact",
+          "description": "One bark.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Final frame on the dog."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json read 2026-10-16.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "The crosswalk and the city seen from above.",
+        "configuration": "farFieldRadius 2400, vehicles off (own traffic), signals set to red."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Pedestrians and the dog owner.",
+        "configuration": "Story Person wrapper with a sneeze pose."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Grounded poses.",
+        "configuration": "applyGroundedPose."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Morning light.",
+        "configuration": "Low sun behind you."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Synchronised and time-lapse globes.",
+        "configuration": "Sprites from city lights."
+      },
+      {
+        "asset_id": "eruption-column-v1",
+        "usage": "AshPuffs breath clouds.",
+        "configuration": "White, low opacity."
+      },
+      {
+        "asset_id": "sound-rings-v1",
+        "usage": "Reference for the city sound rings.",
+        "configuration": "Story rings at 343 m/s."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Props and markers.",
+        "configuration": "box/solid."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Seeded layouts.",
+        "configuration": "rng()."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Handheld POV and the sneeze jolt.",
+        "configuration": "handheld_sway 0.2-0.35."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic render and grades.",
+        "configuration": "Per-look post."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Editorial HUD block and callouts.",
+        "configuration": "renderEditorialHud at x 90, y 240."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in captions.",
+        "configuration": "72 px, baseline 1320."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and Foley.",
+        "configuration": "Plucks, sneezes, bark."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Captions and HUD.",
+        "configuration": "Inter 500/600/700."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline.",
+        "configuration": "Anton."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover.",
+        "configuration": "Headline, badge, arrow."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "dog-v1",
+        "description": "Procedural stylised dog that can stand or sit, tilt and turn its head, open its mouth to pant or bark, wag its tail and lift its ears.",
+        "reusable_in": "Street, home and park stories that need a pet or a bystander animal.",
+        "parameters": [
+          "coat",
+          "light",
+          "dark",
+          "scale",
+          "setPose({sit, headTilt, headYaw, headPitch, mouth, tailWag, tailLift, ears})",
+          "headWorld()",
+          "mouthWorld()"
+        ],
+        "suggested_path": "src/library/characters/Dog.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Sneeze pose and droplet spray",
+      "POV eyelid blackout",
+      "Blind-stretch road highlight",
+      "City sound rings"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if everyone sneezed at the same time, what if 8 billion people sneezed at once",
+    "core_keywords": [
+      "what if everyone sneezed at once",
+      "everyone sneezes at the same time",
+      "do your eyes close when you sneeze",
+      "sneezing while driving",
+      "how many droplets in a sneeze",
+      "speed of sound city",
+      "earth science what if",
+      "physics thought experiment",
+      "threejs 3d documentary",
+      "funny science"
+    ],
+    "distinctive_angle": "One shared blink: millions of drivers roll blind for a few metres while only a dog watches, and the dog is the only one left to say bless you.",
+    "comment_bait_question": "Do you say bless you to strangers?",
+    "seo_integrity_note": "Light thought experiment: eye-closure time, moving-vehicle numbers, droplet counts and daily sneeze totals are estimates or maxima; people, places and the dog are illustrative."
+  },
+  "delivery": {
+    "video_output": "output/everyone-sneezes-at-once.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 4.2,
+    "headline": "EVERYONE SNEEZES?!",
+    "highlight": [
+      "SNEEZES"
+    ],
+    "position": "bottom",
+    "badge": "8.3 BILLION",
+    "focus": [
+      0.5,
+      0.4
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#38BDF8",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#38BDF8"
+    },
+    "grade": "vivid",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

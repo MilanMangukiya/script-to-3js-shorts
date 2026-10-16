@@ -3,11 +3,13 @@
 scripts/finalize_video.py — Media QA, Multi-Platform Copy Validator & Catalog Builder
 
 Upgraded copy & taxonomy rules:
-1. YouTube Shorts & Facebook Reels titles MUST start with "What if" for search discovery.
-2. TikTok, Instagram Reels, and X posts may start EITHER with "What if" OR with a 2nd-person
-   POV / declarative simulation hook (e.g., "You're standing downtown when...", "Compress Earth...").
-3. Every platform description/caption must include an interactive question ("?") to drive
-   comment velocity (e.g., "Where would you be on the map? 👇").
+1. Every platform's title is the video's "What if ...?" topic question on its own (normally
+   project.title verbatim): the YouTube Shorts / Facebook Reels `title`, and the first line of the
+   TikTok / Instagram Reels caption and the X post. No hook, tagline or summary in that line.
+2. The copy after the title line opens with the story's hook (e.g., a 2nd-person consequence
+   such as "You're standing downtown when...") and its causal summary.
+3. Every platform's copy after the title must include an interactive question ("?") to drive
+   comment velocity (the story's comment_bait_question).
 4. Blocks unanchored gaming tags (#wwe2k24, #eafc26, #securitygame, #steamgames) to prevent
    seed-cohort misrouting on YouTube Shorts.
 """
@@ -104,27 +106,31 @@ def validate_platform_metadata(meta: dict) -> None:
         if overlap:
             fail(f"{p} contains banned gaming tags that pollute science routing: {overlap}")
 
-        # Search-intent platforms require "What if" title prefix
+        # Every platform's title is the "What if ...?" topic question on its own: the title field on
+        # YouTube/Facebook, and the first line of the TikTok/Instagram caption or the X post. Viewers
+        # should read the topic first, so nothing else may share that line.
         if p in ("youtube_shorts", "facebook_reels"):
             title = (block.get("title") or "").strip()
-            if not title.lower().startswith("what if"):
-                fail(f"{p} title must start with 'What if': '{title}'")
+            body = (block.get("description") or "").strip()
+        else:
+            copy = (block.get("caption") or block.get("post") or "").strip()
+            title, _, body = copy.partition("\n")
+            title, body = title.strip(), body.strip()
+        if not title.lower().startswith("what if"):
+            fail(f"{p} title must start with 'What if' (a caption or post opens with its title line): '{title}'")
+        if not title.endswith("?") or title.count("?") != 1:
+            fail(f"{p} title must be the 'What if ...?' question alone, with no hook or description after it: '{title}'")
+        if not body:
+            fail(f"{p} needs copy after the title line.")
 
-        # Feed-discovery platforms allow either "What if" or a 2nd-person POV hook,
-        # and must include an interactive question mark ("?") for comment velocity
-        caption_or_post = (
-            block.get("caption")
-            or block.get("post")
-            or block.get("description")
-            or ""
-        ).strip()
-        if "?" not in caption_or_post:
+        # The copy after the title must carry an interactive question ("?") for comment velocity
+        if "?" not in body:
             fail(
-                f"{p} copy must include an interactive survival/map question ('?') to drive comments."
+                f"{p} copy must include the story's comment question ('?') after the title."
             )
 
         if p == "x_video":
-            full_x = f"{caption_or_post} {' '.join(hashtags)}".strip()
+            full_x = f"{(block.get('post') or '').strip()} {' '.join(hashtags)}".strip()
             if len(full_x) > 280:
                 fail(f"x_video post + hashtags exceeds 280 chars ({len(full_x)} chars).")
 

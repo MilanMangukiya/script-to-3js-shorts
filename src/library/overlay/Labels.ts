@@ -582,3 +582,46 @@ export function drawCallout(ctx: CanvasRenderingContext2D, a: number | string, b
   if (typeof a === 'string') { legacyDrawCallout(ctx, a, b, c as number, d as number, e as number, f); return; }
   drawCalloutModern(ctx, a, b, c as string, (d as CalloutOptions | undefined) ?? {});
 }
+
+export interface EditorialHudOptions {
+  /** Top-left corner of the block (default the HUD safe zone x 90, y 240). */
+  x?: number; y?: number;
+  /** Small letter-spaced line above the number (e.g. "EVERYONE SNEEZES IN"). */
+  label: string;
+  /** The large readout, already formatted (e.g. "2.40 S", "8,300,000,000"). */
+  value: string;
+  /** Optional small letter-spaced line under the number (place, time or units). */
+  sub?: string;
+  alpha?: number; color?: string;
+  /** Pixel sizes of the number and the small lines; tracking of the small lines as a fraction of their size. */
+  valueSize?: number; labelSize?: number; tracking?: number;
+}
+
+/**
+ * Editorial telemetry: a boxless typographic HUD block for the top-left safe zone, with a small letter-spaced label,
+ * a large tabular readout and an optional letter-spaced sub-line, white with a soft shadow so it reads over any
+ * shot. Use it for diegetic counters (countdowns, counts, distances) when a film wants a lighter look than the
+ * dark-glass telemetry pill. Deterministic: draws exactly the strings it is given.
+ */
+export function renderEditorialHud(ctx: CanvasRenderingContext2D, o: EditorialHudOptions): void {
+  const a = o.alpha ?? 1; if (a <= 0.001) return;
+  const x = o.x ?? 90, y = o.y ?? 240, ls = o.labelSize ?? 27, vs = o.valueSize ?? 104, tr = o.tracking ?? 0.22;
+  const family = 'Inter, "Segoe UI", system-ui, sans-serif';
+  ctx.save();
+  ctx.globalAlpha = a; ctx.fillStyle = o.color ?? '#FFFFFF'; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+  ctx.shadowColor = 'rgba(0, 0, 0, 0.55)'; ctx.shadowBlur = 12; ctx.shadowOffsetY = 2;
+  const spaced = (text: string, px: number, yy: number) => {
+    ctx.font = '600 ' + px + 'px ' + family;
+    (ctx as any).letterSpacing = (px * tr).toFixed(1) + 'px';
+    ctx.fillText(text.toUpperCase(), x, yy);
+    (ctx as any).letterSpacing = '0px';
+  };
+  const labelY = y + ls;
+  spaced(o.label, ls, labelY);
+  ctx.font = '500 ' + vs + 'px ' + family;
+  (ctx as any).fontVariantNumeric = 'tabular-nums';
+  const valueY = labelY + 8 + vs * 0.86;
+  ctx.fillText(o.value, x - vs * 0.035, valueY);
+  if (o.sub) spaced(o.sub, ls * 0.92, valueY + 18 + ls);
+  ctx.restore();
+}

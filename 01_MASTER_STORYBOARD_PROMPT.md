@@ -104,8 +104,9 @@ Provide implementation-level technical direction for every shot:
 ## PLATFORM DISCOVERY & SEO INPUTS
 - Define `distribution.primary_search_intent` and `core_keywords` pairing broad discovery tags with **explicit scientific domain qualifiers** (`"astrophysics simulation"`, `"earth science what if"`, `"physics thought experiment"`, `"threejs 3d documentary"`). This prevents YouTube from misrouting science simulations to gaming audiences.
 - Multi-Platform Copy Rules:
-  - **YouTube Shorts:** Title must start with `"What if"` for search SEO, paired with 5–10 relevant hashtags.
-  - **TikTok, Instagram Reels, and X:** Open with the story's strongest 2nd-person consequence or contradiction, then its earned `distribution.comment_bait_question`. Preserve the film's actual promise and payoff; do not default to a generic map/survival question.
+  - **Title (every platform):** The title is the video's topic question, `project.title` verbatim, and starts with `"What if"`. It is the YouTube Shorts and Facebook Reels `title` and the first line, on its own, of the TikTok and Instagram captions and the X post. Never put a hook, tagline or summary in the title line; viewers must read the topic first.
+  - **YouTube Shorts:** The `"What if"` title for search SEO, paired with 5–10 relevant hashtags.
+  - **TikTok, Instagram Reels, and X:** After the title line, open the next paragraph with the story's strongest 2nd-person consequence or contradiction, then its earned `distribution.comment_bait_question`. Preserve the film's actual promise and payoff; do not default to a generic map/survival question.
   - Every platform includes 5–12 targeted hashtags without generic spam.
 
 ---
@@ -143,8 +144,9 @@ Use the repository's deterministic pipeline:
 
 1. **Minimal QA:** `node tools/finalize.mjs <slug> --probe-only` (verify 1080×1920, 30 fps, exact duration, AAC stereo audio, `.srt`, `.txt`, and `.jpg` exist).
 2. **Upload Metadata:** Write `metadata/<slug>.json` with tailored copy:
-   - YouTube Shorts: Title starting with `"What if"`, concise description, and 5–10 scientific hashtags.
-   - TikTok / Reels / X: High-tension 2nd-person hook, concise causal summary, and the story-specific `distribution.comment_bait_question`.
+   - Every platform: the title is `project.title` (a `"What if …?"` question) on its own — the YouTube/Facebook `title`, and the first line of each TikTok/Reels caption and X post.
+   - YouTube Shorts: concise description and 5–10 scientific hashtags.
+   - TikTok / Reels / X: after the title line, a high-tension 2nd-person hook, concise causal summary, and the story-specific `distribution.comment_bait_question`.
 3. **Finalize & Catalog:** Run `python scripts/finalize_video.py <slug>` to update registry, catalog, and publishing copy.
 4. **Archive:** Upload `output/<slug>.mp4`, `output/<slug>.jpg`, and `output/<slug>.md` to the designated Hugging Face archive dataset (`Whatif2203/whatif`).
 

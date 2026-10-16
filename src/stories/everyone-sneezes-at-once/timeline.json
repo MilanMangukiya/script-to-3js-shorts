@@ -1,0 +1,91 @@
+{
+  "note": "Absolute film times (s) for staged events; read by stages, film overlay, soundtrack.mjs and the storyboard generator.",
+  "bounds": [
+    0,
+    5.1,
+    9.45,
+    14.8,
+    19.15,
+    25.3,
+    32.4,
+    37.15,
+    46
+  ],
+  "sneeze": 3.5,
+  "eyesShut": 0.3,
+  "s03Sneeze": 10.9,
+  "s03Cut": 12.25,
+  "whiteCar": 1.96,
+  "s05Rings": 20.91,
+  "s06Sneeze": 26.15,
+  "s06Together": 28.68,
+  "slowmo": 12,
+  "s06Cam": {
+    "fov": 42,
+    "from": [
+      -8.6,
+      1.47,
+      2.04
+    ],
+    "lookFrom": [
+      -8.2,
+      1.42,
+      0.08
+    ],
+    "to": [
+      -8.55,
+      1.47,
+      2.09
+    ],
+    "lookTo": [
+      -8.12,
+      1.41,
+      0.09
+    ]
+  },
+  "exceptDog": 41.55,
+  "bark": 42.95,
+  "headTilt": 40.2,
+  "rates": {
+    "S06": 1.1,
+    "S07": 0.93
+  },
+  "pauses": {
+    "S08": [
+      {
+        "after_word": 10,
+        "duration_s": 0.35
+      }
+    ]
+  },
+  "thumbnail": {
+    "time_s": 4.2,
+    "headline": "EVERYONE SNEEZES?!",
+    "highlight": [
+      "SNEEZES"
+    ],
+    "position": "bottom",
+    "badge": "8.3 BILLION",
+    "focus": [
+      0.5,
+      0.4
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#38BDF8",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#38BDF8"
+    },
+    "grade": "vivid",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

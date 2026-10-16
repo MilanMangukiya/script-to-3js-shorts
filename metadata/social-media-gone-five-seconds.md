@@ -1,65 +1,63 @@
 # What if social media didn't exist for 5 seconds in 2026?
 
 - **Slug:** `social-media-gone-five-seconds`
-- **Duration:** 48s
-- **Core Question:** What do you save when your social audience vanishes for five seconds?
+- **Duration:** 49s
+- **Core Question:** How would six different people react inside the same five seconds without social media?
 
 ## youtube_shorts
-**Title:** What if social media didn't exist for 5 seconds in 2026?
+**Title:** What if social media disappeared for 5 seconds in 2026? Six reactions
 
-You hit post and every social app disappears, but your coffee keeps sliding. Your camera and SMS still work. Another tap solves nothing; your friend points at the table edge. A quick catch saves the drink. At second five the draft returns, and you choose to leave this moment off camera.
+You keep dancing while your livestream vanishes. A London commuter keeps refreshing. A Lagos customer orders by pointing. A Sao Paulo gamer loses chat but dodges an ambush. A Mumbai friend switches a birthday wish to SMS. In New York, an angry reply finds its perfect audience: absolutely nobody. Six situations, all inside the same five seconds.
 
-When the apps returned, would you finish the post or leave the moment offline?
+Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
 
-Scope: A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
+Scope: Six fictional individuals in Tokyo, London, Lagos, Sao Paulo, Mumbai and New York react during the SAME five-second disappearance of social apps, feeds, livestreams and platform DMs in 2026. The 49-second edit expands parallel moments; each location clock remains below five seconds. No recovery or aftermath is shown. Electricity, the broader internet, ordinary carrier SMS and the selected standalone game remain operational by assumption. The birthday SMS is prewritten. These are authored examples, not statistics or cultural predictions. All UI and messages are original CGI; no actual message is sent.
 
 Sources:
-- Meta Engineering: more details about the October 4 outage: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
-- Apple Support: iPhone camera basics: https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios
-- Twilio: Programmable Messaging and distinct SMS/app channels: https://www.twilio.com/docs/messaging
+- Meta Engineering: platform backbone outage details: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
+- Twilio: distinct SMS and app messaging channels: https://www.twilio.com/docs/messaging
 
-Original deterministic Three.js animation and original generic phone UI. Narrator: local Kokoro am_michael. Original procedural score and Foley.
+Original Three.js animation, generic UI, local Kokoro am_michael narration and original procedural music/Foley.
 
 #Shorts #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
 
 ## tiktok
 
-You hit post. Your social apps vanish, but the coffee sliding toward the table edge does not stop. Five hypothetical seconds turn into one ridiculous cafe rescue.
+You keep dancing. Your livestream has vanished. Around the globe, six people face six different interruptions inside the same five seconds.
 
-When the apps returned, would you finish the post or leave the moment offline?
+Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
 
 #ScienceTok #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
 
 ## instagram_reels
 
-You hit post. Your social apps vanish, but the coffee sliding toward the table edge does not stop. Five hypothetical seconds turn into one ridiculous cafe rescue.
+You keep dancing. Your livestream has vanished. Around the globe, six people face six different interruptions inside the same five seconds.
 
-When the apps returned, would you finish the post or leave the moment offline?
+Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
 
-A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
+Six fictional individuals in Tokyo, London, Lagos, Sao Paulo, Mumbai and New York react during the SAME five-second disappearance of social apps, feeds, livestreams and platform DMs in 2026. The 49-second edit expands parallel moments; each location clock remains below five seconds. No recovery or aftermath is shown. Electricity, the broader internet, ordinary carrier SMS and the selected standalone game remain operational by assumption. The birthday SMS is prewritten. These are authored examples, not statistics or cultural predictions. All UI and messages are original CGI; no actual message is sent.
 
 #ScienceReels #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
 
 ## facebook_reels
-**Title:** What if social media didn't exist for 5 seconds in 2026?
+**Title:** What if social media disappeared for 5 seconds in 2026? Six reactions
 
-You hit post and every social app disappears, but your coffee keeps sliding. Your camera and SMS still work. Another tap solves nothing; your friend points at the table edge. A quick catch saves the drink. At second five the draft returns, and you choose to leave this moment off camera.
+You keep dancing while your livestream vanishes. A London commuter keeps refreshing. A Lagos customer orders by pointing. A Sao Paulo gamer loses chat but dodges an ambush. A Mumbai friend switches a birthday wish to SMS. In New York, an angry reply finds its perfect audience: absolutely nobody. Six situations, all inside the same five seconds.
 
-When the apps returned, would you finish the post or leave the moment offline?
+Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
 
-Scope: A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
+Scope: Six fictional individuals in Tokyo, London, Lagos, Sao Paulo, Mumbai and New York react during the SAME five-second disappearance of social apps, feeds, livestreams and platform DMs in 2026. The 49-second edit expands parallel moments; each location clock remains below five seconds. No recovery or aftermath is shown. Electricity, the broader internet, ordinary carrier SMS and the selected standalone game remain operational by assumption. The birthday SMS is prewritten. These are authored examples, not statistics or cultural predictions. All UI and messages are original CGI; no actual message is sent.
 
 Sources:
-- Meta Engineering: more details about the October 4 outage: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
-- Apple Support: iPhone camera basics: https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios
-- Twilio: Programmable Messaging and distinct SMS/app channels: https://www.twilio.com/docs/messaging
+- Meta Engineering: platform backbone outage details: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
+- Twilio: distinct SMS and app messaging channels: https://www.twilio.com/docs/messaging
 
-Original deterministic Three.js animation and original generic phone UI. Narrator: local Kokoro am_michael. Original procedural score and Foley.
+Original Three.js animation, generic UI, local Kokoro am_michael narration and original procedural music/Foley.
 
 #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
 
 ## x_video
 
-Your feed vanishes; your coffee keeps sliding. When the apps returned, would you finish the post or leave the moment offline?
+Your feed vanishes. Six reactions, same five seconds. Which would you do first: refresh, switch to SMS, keep playing, or try to send anyway?
 
 #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation

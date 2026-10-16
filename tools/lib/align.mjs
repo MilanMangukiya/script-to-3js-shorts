@@ -34,10 +34,24 @@ export function wordAlignment(scriptWords,heard,duration) {
   assertRecognitionTiming(heard,duration);
   const initials=new Set(scriptWords.filter(w=>/^[A-Z]{2,}[.,!?;:]?$/.test(w)).map(norm));
   const S=scriptWords.flatMap((text,index)=>lexicalParts(text,initials).map(part=>({part,index})));
-  const heardUnits=heard.flatMap((h,index)=>{
-    const parts=lexicalParts(h.text,initials);
-    return parts.map((part,q)=>({part,index,start:h.start+(h.end-h.start)*q/parts.length,end:h.start+(h.end-h.start)*(q+1)/parts.length}));
-  });
+  // Whisper can timestamp a written number as separate punctuation fragments ("8", ".3"
+  // or "40", ",000"). Join only adjacent numeric fragments, without consulting the script.
+  // The original recognition stays untouched; internal word times are derived across the span.
+  const heardUnits=[];
+  for(let index=0;index<heard.length;index++){
+    const first=index,h=heard[index];
+    let value=h.text.trim(),end=h.end;
+    while(index+1<heard.length&&heard[index+1].start-end<=.12){
+      const next=heard[index+1].text.trim();
+      const thousands=/^\d{1,3}(?:,\d{3})*$/.test(value)&&/^,\d{3}[.!?;:]?$/.test(next);
+      const decimal=/^\d+(?:,\d{3})*$/.test(value)&&/^\.\d+[%!?;:]?$/.test(next);
+      if(!thousands&&!decimal)break;
+      value+=next;end=heard[++index].end;
+    }
+    const parts=lexicalParts(value,initials),joined=index!==first;
+    parts.forEach((part,q)=>heardUnits.push({part,index:first,endIndex:index,joined,
+      start:h.start+(end-h.start)*q/parts.length,end:h.start+(end-h.start)*(q+1)/parts.length}));
+  }
   // ASR sometimes joins two adjacent words ("Noon sun" -> "Noonsun"). Accept only an exact
   // character join of two complete script tokens into one complete recognized token. Its internal
   // caption boundary is derived from character proportions, never a measured pause boundary.
@@ -63,9 +77,9 @@ export function wordAlignment(scriptWords,heard,duration) {
     const left=H[first],right=H[last];
     times.push([left.start,right.end]);
     const oneToOne=left.index===right.index&&(first===0||H[first-1].index!==left.index)&&(last===H.length-1||H[last+1].index!==right.index);
-    const exact=oneToOne&&norm(scriptWords[index])===norm(heard[left.index].text);
+    const exact=oneToOne&&!left.joined&&norm(scriptWords[index])===norm(heard[left.index].text);
     matches.push(exact?left.index:null);
-    evidence.push({heard_start_index:left.index,heard_end_index:right.index,type:exact?'exact':'normalized',derived:!oneToOne,...(left.merged||right.merged?{normalization:'adjacent_merge'}:{})});
+    evidence.push({heard_start_index:left.index,heard_end_index:right.endIndex??right.index,type:exact?'exact':'normalized',derived:!oneToOne||!!left.joined||!!right.joined,...(left.joined||right.joined?{normalization:'split_numeric'}:left.merged||right.merged?{normalization:'adjacent_merge'}:{})});
   }
   return {times,matches,evidence,exact:matches.filter(x=>x!==null).length};
 }

@@ -44,6 +44,7 @@
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -257,6 +258,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "everyone-drank-the-ocean",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -307,6 +309,7 @@
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
+        "everyone-drank-the-ocean",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "moon-made-of-ice",
@@ -568,7 +571,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -661,7 +666,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -721,7 +728,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -766,7 +775,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -788,7 +799,7 @@
       "name": "Schematic label and callout helpers",
       "type": "overlay_helper",
       "source_path": "src/library/overlay/Labels.ts",
-      "description": "2D canvas helpers for SCHEMATIC / ILLUSTRATIVE tags, status chips, leader-line callouts that flip to stay inside the frame, and rich text with numeric subscripts (O_2 style).",
+      "description": "2D canvas helpers for SCHEMATIC / ILLUSTRATIVE tags, status chips, leader-line callouts that flip to stay inside the frame, and rich text with numeric subscripts (O_2 style). renderEditorialHud() draws a boxless editorial telemetry block for top-left counters: a letter-spaced label, a large number and a spaced sub-line, white with a soft shadow.",
       "tags": [
         "labels",
         "overlay",
@@ -806,7 +817,8 @@
         "accent",
         "dot",
         "valueColor",
-        "sub"
+        "sub",
+        "renderEditorialHud({x,y,label,value,sub,valueSize,labelSize,tracking})"
       ],
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
@@ -818,7 +830,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -871,7 +885,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -918,6 +934,7 @@
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
@@ -953,7 +970,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -1311,7 +1330,8 @@
       ],
       "created_for": "air-pressure-doubled",
       "used_in": [
-        "air-pressure-doubled"
+        "air-pressure-doubled",
+        "everyone-drank-the-ocean"
       ],
       "license": "original_procedural",
       "notes": "Deformation and normals are computed in the vertex shader from the crumple value alone (values slightly above 1 give an overshoot). Negative crumple values are not supported; to show a bottle swelling at altitude, add a separate parameter rather than reusing crumple."
@@ -1561,6 +1581,7 @@
       "created_for": "air-pressure-doubled",
       "used_in": [
         "air-pressure-doubled",
+        "everyone-drank-the-ocean",
         "moon-made-of-ice",
         "what-if-every-man-disappeared"
       ],
@@ -2023,7 +2044,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
@@ -2062,7 +2085,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
@@ -2112,11 +2137,13 @@
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "last-man-alive",
         "last-woman-alive",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
         "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
@@ -2461,6 +2488,7 @@
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
         "every-human-jumped-at-once",
+        "everyone-sneezes-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2629,7 +2657,9 @@
         "earth-without-tilt",
         "every-human-jumped-at-once",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "last-man-alive",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
@@ -3480,7 +3510,9 @@
         "earth-1000f-five-seconds",
         "earth-without-tilt",
         "every-volcano-erupts-at-once",
+        "everyone-drank-the-ocean",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
         "sky-disappeared",
@@ -3528,6 +3560,7 @@
         "earth-without-tilt",
         "every-volcano-erupts-at-once",
         "everyone-farts-at-once",
+        "everyone-sneezes-at-once",
         "ozone-layer-gone-overnight",
         "sky-disappeared",
         "sun-locked-earth"
@@ -3576,7 +3609,8 @@
       "created_for": "every-volcano-erupts-at-once",
       "used_in": [
         "every-volcano-erupts-at-once",
-        "everyone-farts-at-once"
+        "everyone-farts-at-once",
+        "everyone-sneezes-at-once"
       ],
       "license": "original_code",
       "notes": "Pass the stage camera to update() every frame: puffs are depth-sorted for it. Puffs are large soft billboards, so give distant columns a lighter hazeDensity than the scene fog to keep them dark and readable. Column motion is real-speed (about 95 s to climb), so a short shot shows billowing rather than visible rise."
@@ -3608,6 +3642,90 @@
       ],
       "license": "original_code",
       "notes": "Static geometry; every setPose call sets the full state. Most cattle methane leaves by the mouth, so burps come from mouthWorld(). Scale 1 is about 1.45 m at the withers and 2.4 m long."
+    },
+    {
+      "id": "dog-v1",
+      "name": "Procedural dog",
+      "type": "three_component",
+      "source_path": "src/library/characters/Dog.ts",
+      "description": "Stylised dog in metres facing +Z with feet on y = 0: capsule body that pivots at the hips so it can stand or sit, chest, four legs (front legs stay vertical, hind legs fold), head on a level neck with snout, muzzle, nose, eyes, jaw, floppy ears and a tail. setPose() blends standing and sitting and drives head tilt, yaw and pitch, mouth (pant or bark), tail wag and lift, and ears; headWorld() and mouthWorld() give anchor points.",
+      "tags": [
+        "animal",
+        "dog",
+        "pet",
+        "character",
+        "street",
+        "home"
+      ],
+      "configurable_parameters": [
+        "coat",
+        "light",
+        "dark",
+        "scale",
+        "setPose({sit,headTilt,headYaw,headPitch,mouth,tailWag,tailLift,ears})",
+        "headWorld()",
+        "mouthWorld()"
+      ],
+      "created_for": "everyone-sneezes-at-once",
+      "used_in": [
+        "everyone-sneezes-at-once"
+      ],
+      "license": "original_code",
+      "notes": "Static geometry; every setPose call sets the full state. Head yaw turns about the true vertical even when sitting (positive turns toward the dog's left); negative pitch looks up. Scale 1 is about 0.55 m at the shoulder."
+    },
+    {
+      "id": "swimming-pool-field-v1",
+      "name": "Metre-scale swimming-pool field",
+      "type": "three_component",
+      "source_path": "src/library/environment/SwimmingPoolField.ts",
+      "description": "Dimensioned instanced pool basins with absolute fill fraction.",
+      "tags": [
+        "water",
+        "volume",
+        "capacity",
+        "comparison"
+      ],
+      "configurable_parameters": [
+        "columns",
+        "rows",
+        "width",
+        "length",
+        "depth",
+        "gap",
+        "waterColor",
+        "setFill(fraction)",
+        "center(index)"
+      ],
+      "created_for": "everyone-drank-the-ocean",
+      "used_in": [
+        "everyone-drank-the-ocean"
+      ],
+      "license": "original_procedural",
+      "notes": "Absolute fraction controls fill; physical dimensions match capacity. Grounded volume comparison, not a structural-engineering or fluid solver. Moving review required in the creating film."
+    },
+    {
+      "id": "water-volume-tank-v1",
+      "name": "Capacity-derived grounded water tank",
+      "type": "three_component",
+      "source_path": "src/library/props/WaterVolumeTank.ts",
+      "description": "Grounded framed cubic tank whose internal capacity follows liters.",
+      "tags": [
+        "water",
+        "volume",
+        "capacity",
+        "comparison"
+      ],
+      "configurable_parameters": [
+        "liters",
+        "color",
+        "setFill(fraction)"
+      ],
+      "created_for": "everyone-drank-the-ocean",
+      "used_in": [
+        "everyone-drank-the-ocean"
+      ],
+      "license": "original_procedural",
+      "notes": "Absolute fraction controls fill; physical dimensions match capacity. Grounded volume comparison, not a structural-engineering or fluid solver. Moving review required in the creating film."
     }
   ]
 }
