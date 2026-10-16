@@ -4,6 +4,8 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 | Rendered (UTC) | Video | Length | Publishing | Upload metadata |
 |---|---|---:|---|---|
+| 2026-10-16 | `everyone-farts-at-once` | 49s | rendered_not_published | [Copy metadata](metadata/everyone-farts-at-once.md) |
+| 2026-10-16 | `social-media-gone-five-seconds` | 48s | rendered_not_published | [Copy metadata](metadata/social-media-gone-five-seconds.md) |
 | 2026-10-16 | `sun-locked-earth` | 48s | rendered_not_published | [Copy metadata](metadata/sun-locked-earth.md) |
 | 2026-10-16 | `every-volcano-erupts-at-once` | 54s | rendered_not_published | [Copy metadata](metadata/every-volcano-erupts-at-once.md) |
 | 2026-10-15 | `earth-1000f-five-seconds` | 56s | rendered_not_published | [Copy metadata](metadata/earth-1000f-five-seconds.md) |
@@ -25,6 +27,258 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 | 2026-10-12 | `air-pressure-doubled` | 74s | rendered_not_published | [Copy metadata](metadata/air-pressure-doubled.md) |
 | 2026-10-12 | `ice-sank-instead-of-floating` | 74s | rendered_not_published | [Copy metadata](metadata/ice-sank-instead-of-floating.md) |
 | 2026-10-12 | `oxygen-gone-five-seconds` | 72s | rendered_not_published | [Copy metadata](metadata/oxygen-gone-five-seconds.md) |
+
+---
+
+## What if 8.3 billion people farted at once?
+**Video:** `output/everyone-farts-at-once.mp4`\
+**Thumbnail:** `output/everyone-farts-at-once.jpg`\
+**Publishing copy:** `output/everyone-farts-at-once.md`\
+**Hugging Face:** [videos/021-everyone-farts-at-once.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/021-everyone-farts-at-once.mp4) · [videos/021-everyone-farts-at-once.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/021-everyone-farts-at-once.jpg) · [videos/021-everyone-farts-at-once.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/021-everyone-farts-at-once.md)\
+**Slug:** `everyone-farts-at-once` | **Duration:** 49s | **Rendered (UTC):** 2026-10-16T04:25:30Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** Comic thought experiment with real numbers: everyone passes one ordinary amount of gas (about 60 mL, typical range 35-90 mL) in the same second. Flatus holds about 1.06 µmol/L of hydrogen sulfide (Suarez et al. 1998); in a ~5 m³ elevator six passages give about 2 ppb once mixed, roughly four times the commonly cited 0.47 ppb smell threshold (published thresholds run up to about 8 ppb; unmixed plumes are much stronger). Together it is about 500,000 m³ (roughly 200 Olympic pools), about 0.12 parts per trillion of the atmosphere, with roughly 10-50 t of methane that the world’s cattle burp out in under half a minute (about 2.7 t/s). The yellow-green tint is a visual aid: the gas is colourless. People and places are illustrative.
+**Assets reused:** humanoid-figure-v1, character-motion-v1, city-street-block-v1, sun-skylight-rig-v1, earth-globe-v1, eruption-column-v1, grass-field-v1, broadleaf-tree-v1, modeling-helpers-v1, shader-noise-math-v1, camera-keyframe-rig-v1, film-pipeline-v1, overlay-labels-v1, caption-kinetic-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** dairy-cow-v1
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if 8.3 billion people farted at once?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Everyone in your elevator just farted at once, including you. So did everyone else on Earth, in the same second. In this 49-second 3D science thought experiment, the rotten-egg gas in a crowded elevator climbs to several times what noses can detect, while out on the street open air scatters each puff within a few steps.
+
+Add it all up and you could fill about 200 Olympic swimming pools. Spread through the sky, that's less than one part in five trillion, and the world's cattle burp out the same amount of methane in under half a minute. The planet won't smell a thing. The next person to ride your elevator will.
+
+What’s the worst place on Earth to be at that exact second?
+
+Scope: Comic thought experiment with real numbers: everyone passes one ordinary amount of gas (about 60 mL, typical range 35-90 mL) in the same second. Flatus holds about 1.06 µmol/L of hydrogen sulfide (Suarez et al. 1998); in a ~5 m³ elevator six passages give about 2 ppb once mixed, roughly four times the commonly cited 0.47 ppb smell threshold (published thresholds run up to about 8 ppb; unmixed plumes are much stronger). Together it is about 500,000 m³ (roughly 200 Olympic pools), about 0.12 parts per trillion of the atmosphere, with roughly 10-50 t of methane that the world’s cattle burp out in under half a minute (about 2.7 t/s). The yellow-green tint is a visual aid: the gas is colourless. People and places are illustrative.
+
+Sources:
+- Tomlin, Lowis & Read (1991), Investigation of normal flatus production in healthy volunteers, Gut: https://pubmed.ncbi.nlm.nih.gov/1648028/
+- Suarez, Springfield & Levitt (1998), Identification of gases responsible for the odour of human flatus, Gut: https://pmc.ncbi.nlm.nih.gov/articles/PMC1727181
+- Meta-analysis of the composition of human intestinal gases (2021): https://pubmed.ncbi.nlm.nih.gov/34623578/
+- Hydrogen sulfide odour threshold (Public Lab summary of standard data): https://publiclab.org/wiki/revisions/hydrogen-sulfide/29541
+- FAO: Livestock and enteric methane: https://www.fao.org/in-action/enteric-methane/en
+- Saunois et al. (2020), The global methane budget 2000-2017: https://ntrs.nasa.gov/citations/20220003744
+
+Visuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.
+
+#Shorts #WhatIf #FunnyScience #Science #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if everyone farted at once, everyone farts at the same time, how much gas do humans fart, fart science, cow methane vs human farts, hydrogen sulfide smell, funny science, earth science what if, physics thought experiment, science simulation, threejs 3d documentary
+```
+
+**Target search keywords:** what if everyone farted at once, everyone farts at the same time, how much gas do humans fart, fart science, cow methane vs human farts, hydrogen sulfide smell
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+You and five strangers in an elevator, and all of you just farted at once. So did everyone on Earth. It's about 200 Olympic pools of gas, yet less than one part in five trillion of the sky.
+
+What’s the worst place on Earth to be at that exact second?
+
+Comic thought experiment; the tint is a visual aid (the gas is colourless).
+
+#WhatIf #ScienceReels #FunnyScience #Science #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if everyone farted at once, everyone farts at the same time, how much gas do humans fart, fart science, cow methane vs human farts, hydrogen sulfide smell
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if 8.3 billion people farted at once? Your elevator vs the planet
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Everyone on Earth passes gas in the same second. In a crowded elevator the rotten-egg gas reaches several times what noses can detect; outside it's gone in a few steps. All of it together would fill about 200 Olympic pools, less than one part in five trillion of the air, and cows burp that much methane in under half a minute.
+
+What’s the worst place on Earth to be at that exact second?
+
+Comic thought experiment with real numbers: everyone passes one ordinary amount of gas (about 60 mL, typical range 35-90 mL) in the same second. Flatus holds about 1.06 µmol/L of hydrogen sulfide (Suarez et al. 1998); in a ~5 m³ elevator six passages give about 2 ppb once mixed, roughly four times the commonly cited 0.47 ppb smell threshold (published thresholds run up to about 8 ppb; unmixed plumes are much stronger). Together it is about 500,000 m³ (roughly 200 Olympic pools), about 0.12 parts per trillion of the atmosphere, with roughly 10-50 t of methane that the world’s cattle burp out in under half a minute (about 2.7 t/s). The yellow-green tint is a visual aid: the gas is colourless. People and places are illustrative.
+
+Sources:
+- Tomlin, Lowis & Read (1991), Investigation of normal flatus production in healthy volunteers, Gut: https://pubmed.ncbi.nlm.nih.gov/1648028/
+- Suarez, Springfield & Levitt (1998), Identification of gases responsible for the odour of human flatus, Gut: https://pmc.ncbi.nlm.nih.gov/articles/PMC1727181
+- Meta-analysis of the composition of human intestinal gases (2021): https://pubmed.ncbi.nlm.nih.gov/34623578/
+- Hydrogen sulfide odour threshold (Public Lab summary of standard data): https://publiclab.org/wiki/revisions/hydrogen-sulfide/29541
+- FAO: Livestock and enteric methane: https://www.fao.org/in-action/enteric-methane/en
+- Saunois et al. (2020), The global methane budget 2000-2017: https://ntrs.nasa.gov/citations/20220003744
+
+#WhatIf #FunnyScience #Science #EarthScience #ScienceSimulation
+```
+
+**Target search keywords:** what if everyone farted at once, everyone farts at the same time, how much gas do humans fart, fart science, cow methane vs human farts, hydrogen sulfide smell
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+Everyone in your elevator just farted at once, including you. And so did all 8.3 billion people on Earth. Your elevator is in trouble; the planet doesn't even notice, and cows out-burp it in seconds.
+
+What’s the worst place on Earth to be at that exact second?
+
+A comic 3D thought experiment with real numbers.
+
+#WhatIf #ScienceTok #FunnyScience #Science #ScienceSimulation
+```
+
+**Target search keywords:** what if everyone farted at once, everyone farts at the same time, how much gas do humans fart, fart science, cow methane vs human farts, hydrogen sulfide smell
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+Everyone in your elevator just farted at once. So did all 8.3 billion of us. The planet won't smell a thing; your elevator will. What’s the worst place on Earth to be at that exact second?
+
+#WhatIf #FunnyScience #Science #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if everyone farted at once, everyone farts at the same time, how much gas do humans fart
+
+**Published URL:** Not published
+
+
+---
+
+## What if social media didn't exist for 5 seconds in 2026?
+**Video:** `output/social-media-gone-five-seconds.mp4`\
+**Thumbnail:** `output/social-media-gone-five-seconds.jpg`\
+**Publishing copy:** `output/social-media-gone-five-seconds.md`\
+**Hugging Face:** [videos/020-social-media-gone-five-seconds.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.mp4) · [videos/020-social-media-gone-five-seconds.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.jpg) · [videos/020-social-media-gone-five-seconds.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.md)\
+**Slug:** `social-media-gone-five-seconds` | **Duration:** 48s | **Rendered (UTC):** 2026-10-16T04:11:33Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
+**Assets reused:** room-box-v1, humanoid-figure-v1, character-motion-v1, modeling-helpers-v1, camera-keyframe-rig-v1, film-pipeline-v1, caption-kinetic-v1, overlay-labels-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** None
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if social media didn't exist for 5 seconds in 2026?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You hit post and every social app disappears, but your coffee keeps sliding. Your camera and SMS still work. Another tap solves nothing; your friend points at the table edge. A quick catch saves the drink. At second five the draft returns, and you choose to leave this moment off camera.
+
+When the apps returned, would you finish the post or leave the moment offline?
+
+Scope: A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
+
+Sources:
+- Meta Engineering: more details about the October 4 outage: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
+- Apple Support: iPhone camera basics: https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios
+- Twilio: Programmable Messaging and distinct SMS/app channels: https://www.twilio.com/docs/messaging
+
+Original deterministic Three.js animation and original generic phone UI. Narrator: local Kokoro am_michael. Original procedural score and Foley.
+
+#Shorts #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if social media disappeared, social media gone for 5 seconds, social media outage thought experiment, 2026 what if, SMS versus social messages, technology simulation, digital life, 3D animation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+You hit post. Your social apps vanish, but the coffee sliding toward the table edge does not stop. Five hypothetical seconds turn into one ridiculous cafe rescue.
+
+When the apps returned, would you finish the post or leave the moment offline?
+
+A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
+
+#ScienceReels #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if social media didn't exist for 5 seconds in 2026?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You hit post and every social app disappears, but your coffee keeps sliding. Your camera and SMS still work. Another tap solves nothing; your friend points at the table edge. A quick catch saves the drink. At second five the draft returns, and you choose to leave this moment off camera.
+
+When the apps returned, would you finish the post or leave the moment offline?
+
+Scope: A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.
+
+Sources:
+- Meta Engineering: more details about the October 4 outage: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
+- Apple Support: iPhone camera basics: https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios
+- Twilio: Programmable Messaging and distinct SMS/app channels: https://www.twilio.com/docs/messaging
+
+Original deterministic Three.js animation and original generic phone UI. Narrator: local Kokoro am_michael. Original procedural score and Foley.
+
+#WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+You hit post. Your social apps vanish, but the coffee sliding toward the table edge does not stop. Five hypothetical seconds turn into one ridiculous cafe rescue.
+
+When the apps returned, would you finish the post or leave the moment offline?
+
+#ScienceTok #WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+Your feed vanishes; your coffee keeps sliding. When the apps returned, would you finish the post or leave the moment offline?
+
+#WhatIf #Technology #ComputerScience #ThoughtExperiment #ScienceSimulation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
 
 ---
 
