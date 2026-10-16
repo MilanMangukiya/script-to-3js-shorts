@@ -3,20 +3,51 @@
   "voice_id": "am_michael",
   "language": "en-us",
   "pacing_speed": {
-    "fast_hook": 1.1108,
-    "crisp_mechanism": 1.1059,
-    "steady_escalation": 1.1011,
-    "weighty_impact": 0.8756,
-    "reflective_payoff": 0.65,
-    "loop_bridge": 0.6695
+    "fast_hook": 0.887,
+    "crisp_mechanism": 0.866,
+    "steady_escalation": 0.84,
+    "weighty_impact": 0.86,
+    "reflective_payoff": 0.787,
+    "loop_bridge": 0.84
   },
   "measured_energies": [
     "fast_hook",
+    "crisp_mechanism",
     "steady_escalation",
     "reflective_payoff"
   ],
+  "targets_wpm": {
+    "fast_hook": 154,
+    "crisp_mechanism": 152,
+    "steady_escalation": 150,
+    "weighty_impact": 145,
+    "reflective_payoff": 130,
+    "loop_bridge": 145
+  },
   "selection_status": "user-selected",
-  "calibration_story": "last-woman-alive",
-  "evidence": "build/voice-selection-review/am_michael/audition.json",
-  "note": "User selected Michael from three matched auditions. Measured hook/mechanism/payoff starting rates; other energy rates are estimates. Measure each new script."
+  "calibration_story": "all-stories-corpus",
+  "evidence": "build/voice-calibration/am_michael-corpus.json",
+  "note": "User selected Michael from three matched auditions. Starting rates re-measured 2026-10-16 with kokoro-onnx 0.6.1: 109 storyboard narrations (every other scene of all 22 stories) at speeds 0.75/0.9/1.05 gave median 121/155/173 WPM; each energy's rate scales its own measured median at 0.9 to the target (weighty_impact and loop_bridge use the corpus median). Individual scenes still vary about +/-20%, so narrate.mjs predicts each scene's starting speed from its text with rate_model (syllables, pauses, digits) and still measures and calibrates every clip; pacing_speed remains the fallback for other voices and tools.",
+  "rate_model": {
+    "voice": "am_michael",
+    "exponent": 1.2,
+    "padding_s": 0.15,
+    "features": [
+      "syllables",
+      "clause_pauses",
+      "sentence_ends",
+      "words",
+      "digits",
+      "const"
+    ],
+    "coef": [
+      0.1921,
+      0.2474,
+      0.3546,
+      0.0678,
+      0.2737,
+      -0.6791
+    ],
+    "fit": "duration(s) = sum(coef * features) / s^exponent + padding_s; 109 storyboard narrations x speeds 0.75/0.9/1.05, median abs error 5.4 %, p90 14 % (tools/lib/rate-model.mjs)"
+  }
 }

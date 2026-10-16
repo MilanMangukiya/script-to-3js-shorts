@@ -6,7 +6,8 @@ import {assertCaptionTiming,provenanceEqual} from './narration-quality.mjs';
 import {assertRecognitionTiming} from './align.mjs';
 
 export const PERFORMANCE_VERSION = 'kokoro-gap-v3';
-export const PACING_SPEED = { fast_hook: 1.08, crisp_mechanism: 1.05, steady_escalation: 1.03, weighty_impact: 1.01, reflective_payoff: 0.98, loop_bridge: 1.02 };
+// Measured kokoro-onnx 0.6.1 starting rates (see config/narration.json); used when the config file is absent.
+export const PACING_SPEED = { fast_hook: 0.887, crisp_mechanism: 0.866, steady_escalation: 0.84, weighty_impact: 0.86, reflective_payoff: 0.787, loop_bridge: 0.84 };
 const ENGINE = 'kokoro_local', MODEL = 'Kokoro-82M v1.0 ONNX';
 
 export function performancePlan(narration, baseSpeed = 0.92, pacingSpeed = PACING_SPEED) {
