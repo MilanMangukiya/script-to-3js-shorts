@@ -8,6 +8,12 @@
 - **Publication tracking:** after every real finished MP4, agents write metadata JSON and run `scripts/finalize_video.py <slug>`. This generates `metadata/<slug>.md` and rebuilds **`VIDEO_CATALOG.md`** with all videos and copy-paste SEO content for YouTube Shorts, Instagram Reels, Facebook Reels, TikTok and X.
 - The catalog tracks *rendered* versus *published* honestly. It does not upload to platforms. `published_urls` starts empty and may be updated by you later.
 
+## v1.2 studio upgrade (branch `manthan`)
+- **Picture:** `delivery.render_quality: "cinematic"` (2x supersampling + CAS sharpening, deterministic 3-sample motion blur, per-shot GTAO, depth of field, sun shafts, AgX/Neutral tone mapping, split toning). `standard` stays bit-identical to the previous pipeline. `whip_pan` and `light_wipe` now render.
+- **Voice:** per-scene loudness matching, broadcast finishing chain and convolution room; Kokoro voice blends; a text-aware starting-rate model (fewer calibration passes); starting rates re-measured on a 327-clip corpus.
+- **Models:** 16-species quadrupeds, road vehicles, street furniture, PBR city/building/interior kits with CC0 textures and HDRIs, physical sky, nature and energy kits, insects, a lensing black hole, asteroids/comets, spacecraft, lightning, tornadoes and explosions, plus subsurface-style skin and draped clothing for `human-figure-v2`.
+- **Tools:** `node tools/lookdev.mjs <scene>` renders library look-dev scenes; `npm run typecheck` type-checks the library; `node tools/fetch-assets.mjs` re-fetches the CC0 Poly Haven set recorded in `assets/library/polyhaven.lock.json`.
+
 ## Key files
 
 | Path | Why it exists |

@@ -8,8 +8,8 @@ This repository builds deterministic, scientifically grounded, viral-ready 9:16 
 2. **Synthesize & Align Voiceover:** `node tools/narrate.mjs stories/<slug>.json` $\rightarrow$ `build/<slug>/audio/narration.json`.
 3. **Export Transcript & SRT:** `node tools/transcript.mjs <slug>` $\rightarrow$ `output/<slug>.srt` and `output/<slug>.txt`.
 4. **Build Procedural Soundtrack & Mix:** `node tools/soundtrack.mjs <slug>` $\rightarrow$ `build/<slug>/audio/mix.wav` (48 kHz stereo, target `-14.0 LUFS`, peak $\le -1.0\text{ dBTP}$).
-5. **Smoke Frame Check:** `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5`.
-6. **Final Render (MP4 + JPG Cover):** `node tools/render.mjs <slug> --final --crf 19` $\rightarrow$ `output/<slug>.mp4` + `output/<slug>.jpg`.
+5. **Smoke Frame Check:** `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5` (`--quality draft` for a fast look at a cinematic film; library look-dev: `node tools/lookdev.mjs <scene>`).
+6. **Final Render (MP4 + JPG Cover):** `node tools/render.mjs <slug> --final --crf 19` $\rightarrow$ `output/<slug>.mp4` + `output/<slug>.jpg` (renders `delivery.render_quality`; use `"cinematic"` for new films).
 7. **Finalize, Catalog & Upload:** `node tools/finalize.mjs <slug>`.
 
 ## NON-NEGOTIABLE ENGINEERING & CREATIVE RULES

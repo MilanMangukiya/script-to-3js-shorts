@@ -22,6 +22,8 @@ Read `skills/threejs-direction/SKILL.md` and complete its Analyze → Plan → W
    - Configure existing components in `src/library/` first (`city-street-block-v1`, `city-damage-map-v1`, `vortex-debris-pull-v1`, `planetary-ring-system-v1`, `giant-peak-v1`, `planet-cutaway-v1`, `earth-globe-v1`, `sky-dome-v1`, `sun-skylight-rig-v1`, `ocean-surface-v1`, `pedestrian-crowd-v1`, `humanoid-figure-v1`, `flame-v1`, `smoke-wisp-v1`, `vanish-dissolve-v1`, `plastic-bottle-v1`, `dial-gauge-v1`, etc.).
    - **High-Detail Street Rule:** Whenever a story uses `city-street-block-v1`, import the detailed masonry/shopfront/wet-asphalt implementation (`CityStreetClassic` from `src/library/environment/CityStreetClassic.ts`) or combine it with hazard rigging—never fall back to flat, untextured gray boxes for opening street hooks.
    - Keep story-specific orchestration inside `src/stories/<slug>/` (`film.ts`, `timeline.ts`, `stages/`, `soundtrack.mjs`) and register `createFilm` in `src/entry.ts`.
+   - **Model variety (v1.2 library):** before modelling anything new, check the newer kits: `quadruped-v1` (16 species with walk/trot/gallop), `road-vehicles-v1` (cars, taxi, police, ambulance, van, bus, truck), `street-furniture-v1`, `human-figure-v2`, `city-kit-v1`/`building-kit-v1` with `pbr-materials-v1` (CC0 photo textures and HDRIs), `physical-sky-v1`, `nature-kit-v1`, `energy-kit-v1`, `insect-swarm-v1`, `black-hole-sky-v1`, `asteroids-v1`, `spacecraft-v1`, `lightning-v1`, `tornado-v1`, `explosion-v1`. Preview any of them with `node tools/lookdev.mjs <animals|street|space|outdoors|humans|buildings|nature|interior|sky> --frames ...`.
+   - **Cinematic look:** set `delivery.render_quality: "cinematic"` for new films (2x supersampling + sharpening, 3-sample motion blur, and per-shot `post` AO/depth of field/sun shafts). Use `post.tonemap: "agx"` for fire, lava, suns and black holes so highlights roll off instead of clipping. `whip_pan` and `light_wipe` transitions render as real transitions (centred on the scene boundary like dissolves).
 
 2. **Strict Determinism (`renderFrame(frameIndex)`):**
    - Every visual state, particle position, shader uniform, camera transform, and HUD counter value must be a pure deterministic function of `time_s = frameIndex / 30` and seeded RNG (`shader-noise-math-v1`).
@@ -51,7 +53,7 @@ Read `skills/threejs-direction/SKILL.md` and complete its Analyze → Plan → W
 
 Read `skills/voice-direction/SKILL.md` and its performance reference.
 
-1. Run `node tools/narrate.mjs stories/<slug>.json` to synthesize narration and align exact word timings via local Whisper into `build/<slug>/audio/narration.json`.
+1. Run `node tools/narrate.mjs stories/<slug>.json` to synthesize narration and align exact word timings via local Whisper into `build/<slug>/audio/narration.json`. Leave `narration.performance.rate` unset unless the delivery needs it: the tool predicts each scene's starting speed from its text (syllables, pauses, digits), levels every scene to the same loudness and applies the broadcast finishing chain and a subtle room automatically. A distinct narrator can be a Kokoro blend such as `"voice_id": "am_michael*0.7+am_onyx*0.3"`.
 2. **Crisp Delivery + Breathing Room:**
    - Keep total script length at **95–115 words** so there are natural `0.35–0.60s` pauses between scene clauses and a **1.0–1.5s narration-free impact window** at the primary physical climax.
 3. **Zero Leading Dead Air:**
@@ -89,7 +91,7 @@ Read `skills/voice-direction/SKILL.md` and its performance reference.
 ## 6. SMOKE FRAMES, FINAL RENDER & BOLD THUMBNAIL (`tools/render.mjs`)
 
 1. **Smoke Frame & Moving Excerpt Inspection:**
-   - Run `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5` across opening hook, mid-video reversal, and planetary climax.
+   - Run `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5` across opening hook, mid-video reversal, and planetary climax (add `--quality draft` for fast looks at a cinematic film; `--final` always renders the storyboard's `delivery.render_quality`).
    - Verify: (a) eye-level first-person POV framing in `S01`–`S05`, (b) persistent top-left telemetry HUD on every frame with zero academic disclaimer clutter, (c) high-detail street/environment textures, and (d) captions cleanly placed at `y ≈ 1320 px`.
    - Render moving preview `node tools/render.mjs <slug> --preview build/<slug>/assembled-review.mp4 --range 0-<last-frame> --scale 0.5 --narration build/<slug>/audio/narration.json --audio build/<slug>/audio/mix.wav` to verify pacing and the 1.0–1.5s impact window.
 2. **Final MP4 & Thumbnail Render:**

@@ -9,7 +9,10 @@
     "narrate": "node tools/narrate.mjs",
     "soundtrack": "node tools/soundtrack.mjs",
     "render": "node tools/render.mjs",
-    "finalize": "python scripts/finalize_video.py"
+    "finalize": "python scripts/finalize_video.py",
+    "typecheck": "tsc -p tsconfig.json",
+    "lookdev": "node tools/lookdev.mjs",
+    "fetch-assets": "node tools/fetch-assets.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.3.0",
@@ -22,6 +25,7 @@
     "three": "^0.180.0"
   },
   "devDependencies": {
-    "@types/three": "^0.180.0"
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.3"
   }
 }

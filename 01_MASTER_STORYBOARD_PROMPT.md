@@ -74,7 +74,8 @@ Provide implementation-level technical direction for every shot:
   - **Impact Cam-Shake:** Program an impulse camera shake on the exact frame of major shockwaves, collapses, or detonations.
 - `animation_plan`: concrete, deterministic, time-driven movements evaluating strictly from absolute timestamp `time_s`. No frame-rate-dependent drift.
 - `lighting` & `effects`: physical key/fill sources, HDR bloom on specular/emissive highlights, volumetric fog, and ACES tone mapping.
-- `transition_out`: physical action cuts, camera whip pans, match cuts, or cross-dissolves (0.3–0.5s).
+- `transition_out`: physical action cuts, camera whip pans (`whip_pan`, 0.3–0.45s), light wipes (`light_wipe`, 0.5–0.7s), match cuts, or cross-dissolves (0.3–0.5s). Whip pans, wipes and dissolves are centred on the scene boundary.
+- `delivery.render_quality`: `"cinematic"` for new films (supersampled, motion-blurred, per-shot AO/depth of field/sun shafts).
 
 ---
 
