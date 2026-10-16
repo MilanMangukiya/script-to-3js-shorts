@@ -1,0 +1,2030 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if Earth hit 1000°F for 5 seconds?",
+    "title": "What if Earth hit 1000°F for 5 seconds?",
+    "slug": "earth-1000f-five-seconds",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 56,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If the air everywhere hit 1000 °F for five seconds, would you survive, and what would those five seconds actually destroy?",
+    "viewer_takeaway": "Air holds very little heat, so five seconds would burn your skin but probably not kill you. Thin things heat right through: insects die, leaves cook and paper and dry grass ignite, leaving fires and dead foliage behind."
+  },
+  "scientific_model": {
+    "baseline_reality": "Near-surface air is about 25 °C (77 °F); people, plants and objects sit near that temperature, and heat moves into them at rates set by convection, radiation and their own thermal mass.",
+    "counterfactual_change": "For exactly five seconds the air everywhere is 538 °C (1000 °F) at normal pressure, then it returns to normal. The ground, water, people and objects start at their usual temperatures and must absorb heat through their surfaces.",
+    "assumptions": [
+      "Pressure stays normal (no expansion blast); the hot air is dry and still to light breeze.",
+      "Exposed skin receives about 11-16 kW/m2: convection (about 6 kW/m2) plus infrared from the hot air column.",
+      "Indoors and under water are not shown; the film follows one park.",
+      "You wear a sweat-damp cotton tee; a dry synthetic shirt could soften or scorch.",
+      "You, the walkers and the fires shown are illustrative."
+    ],
+    "causal_chain": [
+      "The air jumps to 538 °C, hotter than the surface of Venus.",
+      "Air carries little heat per volume, so in five seconds skin surface reaches about 65-70 °C: a painful burn rather than a lethal one.",
+      "Breathing in or open eyes would expose delicate tissue; shutting the eyes and holding the breath avoids the worst.",
+      "Thin things heat through: insects pass their thermal limit in about a second, leaves reach boiling point and die; the vapour stays invisible until the air cools.",
+      "Thin paper and dead dry grass approach the air temperature, above their autoignition range, so some of it ignites.",
+      "When the air cools, the fires keep burning; the cooked foliage browns and annual crops are damaged."
+    ],
+    "uncertainties": [
+      "Heat flux to skin depends strongly on wind and the hot air’s infrared emission; burns could range from first to second degree.",
+      "Paper and dry grass ignition timing depends on thickness and moisture.",
+      "Whether trees regrow leaves and how much of a harvest is lost depend on species and season.",
+      "Deaths among vulnerable people, birds and animals are not estimated here.",
+      "Water vapour boiled off the leaves is invisible in 538 °C air; it shows as steam only after the air cools.",
+      "\"Most of the world’s leaves\" excludes plants under snow or water and thick succulent leaves."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "The scenario sets the air to 538 °C (1000 °F) for five seconds at normal pressure.",
+        "confidence": "derived",
+        "reasoning": "Stipulated premise; 1000 °F = 537.8 °C.",
+        "presentation_guardrail": "Say \"a thousand degrees\" with the °F HUD; do not imply the ground or water become that hot."
+      },
+      {
+        "id": "CL02",
+        "statement": "That is hotter than the surface of Venus, about 870-900 °F (465-480 °C).",
+        "confidence": "established",
+        "reasoning": "NASA gives Venus’s average surface temperature as about 870 °F and quotes up to 900 °F.",
+        "presentation_guardrail": "Compare temperature only; Venus also has 90x the pressure."
+      },
+      {
+        "id": "CL03",
+        "statement": "Air holds very little heat, so in five seconds only the outer skin of a person heats up and brief exposure to very hot dry air is survivable.",
+        "confidence": "established",
+        "reasoning": "At room temperature air holds about 1/3500 as much heat per volume as water, and at 538 °C it is 2.7x less dense (about 1/9000); Blagden’s 1775 experiments showed people enduring dry air above 100 °C for minutes.",
+        "presentation_guardrail": "The pizza-oven comparison describes the feeling (an oven dome radiates a similar ~15 kW/m2), not safety."
+      },
+      {
+        "id": "CL04",
+        "statement": "Five seconds at about 11-16 kW/m2 gives exposed skin a painful first-degree burn and possibly some blistering, but is unlikely to be lethal for a healthy adult who shuts their eyes and does not inhale.",
+        "confidence": "plausible",
+        "reasoning": "Thermal dose (q^4/3 t) of about 120-200 units sits between the first-degree (~105) and second-degree (~290) thresholds; NOAA burn tables give severe pain in ~5 s and second-degree burns in ~14 s at 10 kW/m2.",
+        "presentation_guardrail": "Say \"probably survive\"; children, the elderly and people who inhale fare worse."
+      },
+      {
+        "id": "CL05",
+        "statement": "Shutting the eyes and not breathing in protects the most delicate tissues for a few seconds.",
+        "confidence": "plausible",
+        "reasoning": "Eyelids and closed airways keep hot air off the cornea and airway lining; inhaled dry hot air mostly injures the upper airway.",
+        "presentation_guardrail": "Advice for this fictional scenario only."
+      },
+      {
+        "id": "CL06",
+        "statement": "Leaves heat to boiling point within about a second and are killed, browning over the next day; leaf tissue typically dies above about 50 °C.",
+        "confidence": "plausible",
+        "reasoning": "A leaf (~0.6 kJ/m2K, both faces exposed) approaches the air temperature until its water boils; global surveys put leaf thermal limits near 41-54 °C.",
+        "presentation_guardrail": "Cooked leaves brown over the next day; many trees can regrow from buds."
+      },
+      {
+        "id": "CL07",
+        "statement": "Flying insects heat through and pass their thermal limit (about 40-50 °C) in about a second.",
+        "confidence": "plausible",
+        "reasoning": "Tiny bodies have time constants well under a second; measured insect critical thermal maxima are typically 40-50 °C.",
+        "presentation_guardrail": "Insects in soil, hives or water are not covered."
+      },
+      {
+        "id": "CL08",
+        "statement": "Thin paper and dead dry grass approach the air temperature within seconds, above paper’s 218-246 °C autoignition range, so some of it ignites within the five seconds.",
+        "confidence": "plausible",
+        "reasoning": "Newspaper (~0.06 kJ/m2K) has a heating time constant of about a second at these heat-transfer rates; dry fine fuels behave similarly. Autoignition figures come from minute-long tests, so ignition within five seconds is likely but not certain.",
+        "presentation_guardrail": "Green, wet plants steam rather than burn."
+      },
+      {
+        "id": "CL09",
+        "statement": "Fires started during the five seconds keep burning after the air cools, so many fires would start at once.",
+        "confidence": "plausible",
+        "reasoning": "Once ignited, flaming combustion sustains itself in normal air.",
+        "presentation_guardrail": "No fire counts are given."
+      },
+      {
+        "id": "CL10",
+        "statement": "Annual crops whose leaves are cooked wilt, damaging this season’s harvest.",
+        "confidence": "speculative",
+        "reasoning": "Leaf death removes photosynthesis; recovery depends on growth stage and species.",
+        "presentation_guardrail": "Say \"wilting\", not total crop loss."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NASA: Why Is Venus So Hot? (We Asked a NASA Scientist)",
+        "url": "https://www.nasa.gov/general/why-is-venus-so-hot-we-asked-a-nasa-scientist-episode-39/",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "The Public Domain Review: Experiments and Observations in a Heated Room (Blagden, 1774-75)",
+        "url": "https://publicdomainreview.org/collection/experiments-and-observations-in-a-heated-room-1774/",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "NOAA Office of Response and Restoration: Thermal Radiation Levels of Concern",
+        "url": "https://response.restoration.noaa.gov/node/370",
+        "supports_claim_ids": [
+          "CL04",
+          "CL05"
+        ]
+      },
+      {
+        "name": "Thermal dose unit (first- and second-degree burn thresholds)",
+        "url": "https://en.wikipedia.org/wiki/Thermal_dose_unit",
+        "supports_claim_ids": [
+          "CL04"
+        ]
+      },
+      {
+        "name": "O’Sullivan et al.: Thermal limits of leaf metabolism across biomes",
+        "url": "https://experts.umn.edu/en/publications/thermal-limits-of-leaf-metabolism-across-biomes/",
+        "supports_claim_ids": [
+          "CL06",
+          "CL10"
+        ]
+      },
+      {
+        "name": "University of Florida Book of Insect Records, Chapter 21: Most Heat Tolerant",
+        "url": "https://entnemdept.ufl.edu/walker/ufbir/chapters/chapter_21.shtml",
+        "supports_claim_ids": [
+          "CL07"
+        ]
+      },
+      {
+        "name": "Autoignition temperature (paper 218-246 °C)",
+        "url": "https://en.wikipedia.org/wiki/Autoignition_temperature",
+        "supports_claim_ids": [
+          "CL08",
+          "CL09"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "The air hits a thousand degrees for five seconds: you walk away burned, but everything thinner than you cooks or catches fire.",
+    "visual_identity": "A bright summer park slowed to bullet time under an orange heat grade and shimmer; small things fail in the background, then the colour snaps back to a world of smoke and brown leaves.",
+    "palette": [
+      "#2D4A1C",
+      "#E8781C",
+      "#FB923C",
+      "#B8AB8F",
+      "#1F7A8C",
+      "#4A4540"
+    ],
+    "lighting": "Hard summer sun with blue-sky fill (sun-skylight-rig-v1); flames add warm flicker; next day a hazy, smoky sun.",
+    "camera_language": "Eye-level handheld POV and tracking shots at 1.4-1.6 m around a slowed jogger; low close-ups in the flower bed and under a canopy; a wide look up at the smoke over the skyline.",
+    "motion_language": "Speed ramp at the hit: the world runs 7.3x slow for five event-seconds, then snaps back; insects fold and fall, leaves darken, paper and litter ignite at their own times.",
+    "world_scale_policy": "Metre scale throughout; insects slightly enlarged for legibility; the farm is a second location 1.5 km east.",
+    "emotional_arc": [
+      "Alarm",
+      "Awe",
+      "Surprise relief",
+      "Agency",
+      "Reversal",
+      "Loss",
+      "Danger",
+      "Lingering threat",
+      "Aftermath",
+      "Ironic payoff"
+    ],
+    "opening_hook": "Out jogging, the air hits a thousand degrees Fahrenheit. Your face stings.",
+    "mid_video_rehook": "The danger flips: you survive because you are thick, but anything thinner than you heats all the way through, so leaves cook, insects drop and paper ignites.",
+    "ending_payoff": "Five seconds is too short to cook a person and long enough to cook the leaves outdoors.",
+    "loop_connection": "The final frame returns to the same park and path where the jog began, now brown.",
+    "asset_policy": "Reuse grass, tree, flame, smoke, Humanoid and sun rig; story-local bench, newspaper, insects and skyline; add an optional heatHaze setting to film-pipeline-v1."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Original score: light morning groove cut off by a deep heat roar, slowed heartbeat and stretched drones through the five seconds, crackle and hiss textures, a silence as the heat ends, then sparse sober chords for the aftermath.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "0.3 s silence before the hit and before the end; heat whoomp; slowed footsteps and heartbeat; steam hiss; paper and grass ignition whumps aligned to their frames; crackling fires; distant sirens.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The physical consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.85,
+      "narration": {
+        "text": "Out jogging, the air hits a thousand degrees Fahrenheit. Your face stings.",
+        "start_s": 0.04,
+        "end_s": 4.7,
+        "delivery_note": "Calm and immediate; land \"a thousand degrees\" plainly.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Do you survive?",
+      "visual_payoff": "Mid-stride, the park turns orange and slows down.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.85,
+          "shot_type": "POV jogging through the park as the air hits",
+          "world": "1 unit = 1 m. City park on a clear summer morning: gravel path, lawn (grass-field-v1), broadleaf trees, a flower bed, a bench and an instanced skyline; sun 40 degrees high (sun-skylight-rig-v1). From 1.2s the air is 538 °C (1000 °F) at normal pressure; the world runs 7.3x slow until 37.75s while a warm grade and heat shimmer carry the invisible heat.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0.6,
+                  1.62,
+                  10.7
+                ],
+                "look_at": [
+                  0.4,
+                  1.45,
+                  -9.3
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 1.2,
+                "position": [
+                  0.6,
+                  1.62,
+                  7.1
+                ],
+                "look_at": [
+                  0.4,
+                  1.45,
+                  -12.9
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 4.85,
+                "position": [
+                  0.6,
+                  1.6,
+                  5.6
+                ],
+                "look_at": [
+                  0.4,
+                  1.4,
+                  -14.4
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Jogging at 3 m/s, then the world slows 7.3x at the hit.",
+            "lens_notes": "Eye level 1.62 m along the path: trees, bench and two walkers ahead.",
+            "handheld_sway": 0.4,
+            "impulse_shake": {
+              "at_s": 1.2,
+              "duration_s": 0.6,
+              "intensity": 0.35
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 0.0 s",
+            "metric_label": "AIR TEMP",
+            "start_value": 77,
+            "end_value": 1000,
+            "unit": "°F",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "park",
+              "kind": "vegetation",
+              "asset_hint": "grass-field-v1",
+              "appearance": "Mown lawn, gravel path, flower bed and dry leaf litter under the trees.",
+              "geometry_and_material": "Instanced GrassField blades whose colours shift from green to olive (cooked) to straw (next day).",
+              "scale_and_accuracy": "Blades 8-20 cm; flower bed 2.3 x 4 m.",
+              "movement": "Normal, then the heat grade switches on."
+            },
+            {
+              "id": "trees",
+              "kind": "vegetation",
+              "asset_hint": "broadleaf-tree-v1",
+              "appearance": "Ten deciduous park trees in full summer leaf.",
+              "geometry_and_material": "BroadleafTree instanced leaves; leaf material colour follows the cooking curve.",
+              "scale_and_accuracy": "6-8.5 m trees, leaves 17-32 cm.",
+              "movement": "Green."
+            },
+            {
+              "id": "walkers",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Two walkers ahead on the path.",
+              "geometry_and_material": "Registered Humanoid rig, run cycle driven by distance; skin tone reddens with the burn.",
+              "scale_and_accuracy": "1.76 m adult running 3 m/s before slowing.",
+              "movement": "They stop and shield their faces after the hit."
+            }
+          ],
+          "animation_plan": [
+            "0-1.2s normal jog; 1.2s air hits 1000 °F: grade, shimmer and slow motion start; walkers flinch."
+          ],
+          "lighting": "Sunny morning; hard key, blue sky fill.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "a thousand degrees Fahrenheit",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0.9,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Park ambience drops out just before the heat.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 1.2,
+          "duration_s": 1.6,
+          "kind": "impact",
+          "description": "Deep heat whoomp as the air hits.",
+          "relative_db": -8
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut on your stride."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.85,
+      "end_s": 9.4,
+      "narration": {
+        "text": "Five seconds of it. That's hotter than the surface of Venus.",
+        "start_s": 4.97,
+        "end_s": 9.25,
+        "delivery_note": "Two beats: the duration, then the Venus comparison with a hint of awe.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "How hot is that?",
+      "visual_payoff": "You run in slow motion while butterflies fold and fall behind you.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.85,
+          "end_s": 9.4,
+          "shot_type": "slow-motion front tracking shot of you running",
+          "world": "1 unit = 1 m. City park on a clear summer morning: gravel path, lawn (grass-field-v1), broadleaf trees, a flower bed, a bench and an instanced skyline; sun 40 degrees high (sun-skylight-rig-v1). From 1.2s the air is 538 °C (1000 °F) at normal pressure; the world runs 7.3x slow until 37.75s while a warm grade and heat shimmer carry the invisible heat.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 4.85,
+                "position": [
+                  1.35,
+                  1.42,
+                  1.2
+                ],
+                "look_at": [
+                  0.75,
+                  1.1,
+                  8.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 9.4,
+                "position": [
+                  1.3,
+                  1.42,
+                  -0.47
+                ],
+                "look_at": [
+                  0.75,
+                  1.1,
+                  6.73
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Backs away at your slowed pace.",
+            "lens_notes": "You centred, running at the lens; butterflies flutter between you and the camera, then fold and fall.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 0.3 s",
+            "metric_label": "AIR TEMP",
+            "start_value": 1000,
+            "end_value": 1000,
+            "unit": "°F",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You, a jogger in a sweat-damp cotton tee and shorts.",
+              "geometry_and_material": "Registered Humanoid rig, run cycle driven by distance; skin tone reddens with the burn.",
+              "scale_and_accuracy": "1.76 m adult running 3 m/s before slowing.",
+              "movement": "Slow-motion stride."
+            },
+            {
+              "id": "insects",
+              "kind": "animal",
+              "appearance": "Orange butterflies and small bees over the flowers.",
+              "geometry_and_material": "Tiny bodies with hinged wing planes (story props).",
+              "scale_and_accuracy": "Butterflies and bees enlarged about 2x for phone legibility.",
+              "movement": "Butterflies stop flapping and drop between 0.3 and 1 event-seconds."
+            },
+            {
+              "id": "park",
+              "kind": "vegetation",
+              "asset_hint": "grass-field-v1",
+              "appearance": "Mown lawn, gravel path, flower bed and dry leaf litter under the trees.",
+              "geometry_and_material": "Instanced GrassField blades whose colours shift from green to olive (cooked) to straw (next day).",
+              "scale_and_accuracy": "Blades 8-20 cm; flower bed 2.3 x 4 m.",
+              "movement": "Flower bed behind."
+            }
+          ],
+          "animation_plan": [
+            "Event 0.5-1.12s: you run; butterflies fold and fall."
+          ],
+          "lighting": "Sun from front left.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "hotter than the surface of Venus",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.85,
+          "duration_s": 4,
+          "kind": "texture",
+          "description": "Slowed heartbeat and low roar.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut closer to your face."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 9.4,
+      "end_s": 15.75,
+      "narration": {
+        "text": "You'd probably survive. It's like leaning into a pizza oven, but only your skin heats up.",
+        "start_s": 9.52,
+        "end_s": 15.6,
+        "delivery_note": "Reassuring turn; clear and unhurried on the comparison.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Why would anyone survive?",
+      "visual_payoff": "Your skin temperature climbs on the HUD while steam starts to rise behind you.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 9.4,
+          "end_s": 15.75,
+          "shot_type": "close-up: your face and shoulder in the heat",
+          "world": "1 unit = 1 m. City park on a clear summer morning: gravel path, lawn (grass-field-v1), broadleaf trees, a flower bed, a bench and an instanced skyline; sun 40 degrees high (sun-skylight-rig-v1). From 1.2s the air is 538 °C (1000 °F) at normal pressure; the world runs 7.3x slow until 37.75s while a warm grade and heat shimmer carry the invisible heat.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 9.4,
+                "position": [
+                  1.6,
+                  1.55,
+                  1.03
+                ],
+                "look_at": [
+                  0.6,
+                  1.3,
+                  3.73
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 15.75,
+                "position": [
+                  1.5,
+                  1.55,
+                  -1.37
+                ],
+                "look_at": [
+                  0.6,
+                  1.3,
+                  1.13
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Tracks you at your slowed pace.",
+            "lens_notes": "Waist-up on you running; face and hands slowly reddening.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 1.0 s",
+            "metric_label": "SKIN TEMP",
+            "start_value": 93,
+            "end_value": 140,
+            "unit": "°F",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You, a jogger in a sweat-damp cotton tee and shorts.",
+              "geometry_and_material": "Registered Humanoid rig, run cycle driven by distance; skin tone reddens with the burn.",
+              "scale_and_accuracy": "1.76 m adult running 3 m/s before slowing.",
+              "movement": "Running; skin tone warms."
+            },
+            {
+              "id": "trees",
+              "kind": "vegetation",
+              "asset_hint": "broadleaf-tree-v1",
+              "appearance": "Ten deciduous park trees in full summer leaf.",
+              "geometry_and_material": "BroadleafTree instanced leaves; leaf material colour follows the cooking curve.",
+              "scale_and_accuracy": "6-8.5 m trees, leaves 17-32 cm.",
+              "movement": "Leaves begin to darken behind you."
+            }
+          ],
+          "animation_plan": [
+            "Event 1.12-1.99s: skin surface 93 -> 140 °F; heat shimmer, no visible steam (vapour stays invisible in 538 °C air)."
+          ],
+          "lighting": "Hard sun on the face.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "probably survive",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "only your skin",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 10.6,
+          "duration_s": 2,
+          "kind": "texture",
+          "description": "Dry grass ticking and crackling in the heat.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut to the side as you react."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 15.75,
+      "end_s": 21.45,
+      "narration": {
+        "text": "Shut your eyes, hold your breath, and you walk away with a bad sunburn.",
+        "start_s": 15.87,
+        "end_s": 21.3,
+        "delivery_note": "Instructional and close; small weight on \"bad burn\".",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "What do you do?",
+      "visual_payoff": "You shut your eyes, cover your mouth and stop; behind you the newspaper ignites.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 15.75,
+          "end_s": 21.45,
+          "shot_type": "side view: eyes shut, arm over your mouth, slowing to a stop",
+          "world": "1 unit = 1 m. City park on a clear summer morning: gravel path, lawn (grass-field-v1), broadleaf trees, a flower bed, a bench and an instanced skyline; sun 40 degrees high (sun-skylight-rig-v1). From 1.2s the air is 538 °C (1000 °F) at normal pressure; the world runs 7.3x slow until 37.75s while a warm grade and heat shimmer carry the invisible heat.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 15.75,
+                "position": [
+                  3.4,
+                  1.55,
+                  1.73
+                ],
+                "look_at": [
+                  -0.45,
+                  1.25,
+                  0.66
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 16.7,
+                "position": [
+                  3.38,
+                  1.55,
+                  1.34
+                ],
+                "look_at": [
+                  -0.45,
+                  1.25,
+                  0.27
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 17.65,
+                "position": [
+                  3.37,
+                  1.55,
+                  0.95
+                ],
+                "look_at": [
+                  -0.45,
+                  1.25,
+                  -0.12
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 18.6,
+                "position": [
+                  3.35,
+                  1.55,
+                  0.62
+                ],
+                "look_at": [
+                  -0.45,
+                  1.25,
+                  -0.45
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 19.55,
+                "position": [
+                  3.33,
+                  1.55,
+                  0.35
+                ],
+                "look_at": [
+                  -0.45,
+                  1.25,
+                  -0.72
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 20.5,
+                "position": [
+                  3.32,
+                  1.55,
+                  0.14
+                ],
+                "look_at": [
+                  -0.45,
+                  1.25,
+                  -0.93
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 21.45,
+                "position": [
+                  3.3,
+                  1.55,
+                  0
+                ],
+                "look_at": [
+                  -0.45,
+                  1.25,
+                  -1.07
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow pan following you.",
+            "lens_notes": "You in profile; behind you the newspaper on the bench browns and starts to smoke.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 1.8 s",
+            "metric_label": "SKIN TEMP",
+            "start_value": 140,
+            "end_value": 150,
+            "unit": "°F",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You, a jogger in a sweat-damp cotton tee and shorts.",
+              "geometry_and_material": "Registered Humanoid rig, run cycle driven by distance; skin tone reddens with the burn.",
+              "scale_and_accuracy": "1.76 m adult running 3 m/s before slowing.",
+              "movement": "Raises the forearm over mouth and nose at 2-2.3 event-seconds and brakes to a stop by 3."
+            },
+            {
+              "id": "newspaper",
+              "kind": "other",
+              "asset_hint": "flame-v1",
+              "appearance": "A folded newspaper and coffee cup left on a park bench.",
+              "geometry_and_material": "Printed paper plane that browns and chars; flame-v1 billboards and smoke-wisp-v1 once it ignites.",
+              "scale_and_accuracy": "Paper 56 x 40 cm; flames 50 cm.",
+              "movement": "Browns from 0.6 and smokes from 2.2 event-seconds."
+            }
+          ],
+          "animation_plan": [
+            "Event 1.99-2.77s: you shield and stop; the paper browns in the background."
+          ],
+          "lighting": "Sun from behind camera.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "bad sunburn",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 17.28,
+          "duration_s": 3,
+          "kind": "texture",
+          "description": "Faint crackle as the paper chars.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut into the canopy above."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "twist",
+      "start_s": 21.45,
+      "end_s": 25.3,
+      "narration": {
+        "text": "But thinner things heat up all the way through.",
+        "start_s": 21.57,
+        "end_s": 25.15,
+        "delivery_note": "The turn: slower on \"heats all the way through\".",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "What does the heat really hit?",
+      "visual_payoff": "Leaves darken to cooked olive and steam from the inside.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 21.45,
+          "end_s": 25.3,
+          "shot_type": "a park tree and the bench: leaves and paper cooking through",
+          "world": "1 unit = 1 m. City park on a clear summer morning: gravel path, lawn (grass-field-v1), broadleaf trees, a flower bed, a bench and an instanced skyline; sun 40 degrees high (sun-skylight-rig-v1). From 1.2s the air is 538 °C (1000 °F) at normal pressure; the world runs 7.3x slow until 37.75s while a warm grade and heat shimmer carry the invisible heat.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 21.45,
+                "position": [
+                  2.6,
+                  1.5,
+                  2.6
+                ],
+                "look_at": [
+                  -4.4,
+                  3.4,
+                  -2.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 25.3,
+                "position": [
+                  2.35,
+                  1.5,
+                  2.25
+                ],
+                "look_at": [
+                  -4.4,
+                  3.4,
+                  -2.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push toward the tree.",
+            "lens_notes": "The tree fills the frame, its leaves darkening to cooked olive; the newspaper on the bench below is browning.",
+            "handheld_sway": 0.15
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 2.6 s",
+            "metric_label": "LEAF TEMP",
+            "start_value": 212,
+            "end_value": 212,
+            "unit": "°F",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "trees",
+              "kind": "vegetation",
+              "asset_hint": "broadleaf-tree-v1",
+              "appearance": "Ten deciduous park trees in full summer leaf.",
+              "geometry_and_material": "BroadleafTree instanced leaves; leaf material colour follows the cooking curve.",
+              "scale_and_accuracy": "6-8.5 m trees, leaves 17-32 cm.",
+              "movement": "Leaf colour shifts from 1.2 to cooked olive by 4 event-seconds."
+            }
+          ],
+          "animation_plan": [
+            "Event 2.77-3.3s: leaves pinned at boiling point and darkening."
+          ],
+          "lighting": "Sun through the canopy.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "all the way through",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 21.45,
+          "duration_s": 3,
+          "kind": "texture",
+          "description": "Faint sizzle in the canopy.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut down to the flower bed."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "escalation",
+      "start_s": 25.3,
+      "end_s": 31.1,
+      "narration": {
+        "text": "Flying insects drop in the first second. The leaves overhead boil from the inside.",
+        "start_s": 25.42,
+        "end_s": 30.95,
+        "delivery_note": "Quiet and exact.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 1
+        }
+      },
+      "viewer_question": "What happened to everything small?",
+      "visual_payoff": "Butterflies and bees lie motionless on the soil and petals.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 25.3,
+          "end_s": 27.9,
+          "shot_type": "low close-up: fallen insects in the flower bed",
+          "world": "1 unit = 1 m. City park on a clear summer morning: gravel path, lawn (grass-field-v1), broadleaf trees, a flower bed, a bench and an instanced skyline; sun 40 degrees high (sun-skylight-rig-v1). From 1.2s the air is 538 °C (1000 °F) at normal pressure; the world runs 7.3x slow until 37.75s while a warm grade and heat shimmer carry the invisible heat.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 30,
+            "keyframes": [
+              {
+                "t_s": 25.3,
+                "position": [
+                  2.1,
+                  0.95,
+                  4.5
+                ],
+                "look_at": [
+                  2.9,
+                  0.35,
+                  6.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 27.9,
+                "position": [
+                  2.15,
+                  0.92,
+                  4.65
+                ],
+                "look_at": [
+                  2.9,
+                  0.35,
+                  6.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow creep toward the flowers.",
+            "lens_notes": "Butterflies and bees lie still on the soil and petals; flowers darken and droop.",
+            "handheld_sway": 0.2
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 3.3 s",
+            "metric_label": "LEAF TEMP",
+            "start_value": 212,
+            "end_value": 212,
+            "unit": "°F",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "insects",
+              "kind": "animal",
+              "appearance": "Orange butterflies and small bees over the flowers.",
+              "geometry_and_material": "Tiny bodies with hinged wing planes (story props).",
+              "scale_and_accuracy": "Butterflies and bees enlarged about 2x for phone legibility.",
+              "movement": "Lying where they fell."
+            },
+            {
+              "id": "park",
+              "kind": "vegetation",
+              "asset_hint": "grass-field-v1",
+              "appearance": "Mown lawn, gravel path, flower bed and dry leaf litter under the trees.",
+              "geometry_and_material": "Instanced GrassField blades whose colours shift from green to olive (cooked) to straw (next day).",
+              "scale_and_accuracy": "Blades 8-20 cm; flower bed 2.3 x 4 m.",
+              "movement": "Flowers wilting."
+            }
+          ],
+          "animation_plan": [
+            "Event 3.3-3.65s: no movement among the insects."
+          ],
+          "lighting": "Low sun on the bed.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 27.9,
+          "end_s": 31.1,
+          "shot_type": "looking up into a canopy as the leaves cook",
+          "world": "1 unit = 1 m. City park on a clear summer morning: gravel path, lawn (grass-field-v1), broadleaf trees, a flower bed, a bench and an instanced skyline; sun 40 degrees high (sun-skylight-rig-v1). From 1.2s the air is 538 °C (1000 °F) at normal pressure; the world runs 7.3x slow until 37.75s while a warm grade and heat shimmer carry the invisible heat.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 27.9,
+                "position": [
+                  -2.6,
+                  1.6,
+                  2.2
+                ],
+                "look_at": [
+                  -5.8,
+                  4.4,
+                  5
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 31.1,
+                "position": [
+                  -2.75,
+                  1.6,
+                  2.35
+                ],
+                "look_at": [
+                  -5.8,
+                  4.6,
+                  5
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow tilt up into the branches.",
+            "lens_notes": "Sunlit canopy against blue sky turning from green to olive, shimmering.",
+            "handheld_sway": 0.2
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 3.7 s",
+            "metric_label": "LEAF TEMP",
+            "start_value": 212,
+            "end_value": 212,
+            "unit": "°F",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "trees",
+              "kind": "vegetation",
+              "asset_hint": "broadleaf-tree-v1",
+              "appearance": "Ten deciduous park trees in full summer leaf.",
+              "geometry_and_material": "BroadleafTree instanced leaves; leaf material colour follows the cooking curve.",
+              "scale_and_accuracy": "6-8.5 m trees, leaves 17-32 cm.",
+              "movement": "Leaves overhead darken as their water boils."
+            }
+          ],
+          "animation_plan": [
+            "Event 3.65-4.09s: canopy colour darkens."
+          ],
+          "lighting": "Sun through the leaves.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "first second",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "boil from the inside",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 25.3,
+          "duration_s": 3,
+          "kind": "texture",
+          "description": "Muffled heat roar.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL06",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut to the bench."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "escalation",
+      "start_s": 31.1,
+      "end_s": 36.75,
+      "narration": {
+        "text": "Dry paper and dead grass don't just heat up. Some of it ignites.",
+        "start_s": 31.22,
+        "end_s": 36.6,
+        "delivery_note": "Build: \"don’t just heat up\", beat, \"They ignite.\"",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.82
+        }
+      },
+      "viewer_question": "Does anything catch fire?",
+      "visual_payoff": "The newspaper and the dead grass under the trees are burning.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 31.1,
+          "end_s": 36.75,
+          "shot_type": "the newspaper and dead grass burning",
+          "world": "1 unit = 1 m. City park on a clear summer morning: gravel path, lawn (grass-field-v1), broadleaf trees, a flower bed, a bench and an instanced skyline; sun 40 degrees high (sun-skylight-rig-v1). From 1.2s the air is 538 °C (1000 °F) at normal pressure; the world runs 7.3x slow until 37.75s while a warm grade and heat shimmer carry the invisible heat.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 31.1,
+                "position": [
+                  1.5,
+                  2,
+                  -1.1
+                ],
+                "look_at": [
+                  -4.6,
+                  0.2,
+                  -2.4
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 36.75,
+                "position": [
+                  1.2,
+                  1.95,
+                  -1.2
+                ],
+                "look_at": [
+                  -4.6,
+                  0.2,
+                  -2.4
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow drift behind the bench.",
+            "lens_notes": "The smoking newspaper on the bench seat, dry litter under the tree behind it; on \"ignites\" the paper flares, then the litter.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 4.1 s",
+            "metric_label": "PAPER TEMP",
+            "start_value": 900,
+            "end_value": 980,
+            "unit": "°F",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "newspaper",
+              "kind": "other",
+              "asset_hint": "flame-v1",
+              "appearance": "A folded newspaper and coffee cup left on a park bench.",
+              "geometry_and_material": "Printed paper plane that browns and chars; flame-v1 billboards and smoke-wisp-v1 once it ignites.",
+              "scale_and_accuracy": "Paper 56 x 40 cm; flames 50 cm.",
+              "movement": "Ignites at 4.7332 event-seconds."
+            },
+            {
+              "id": "park",
+              "kind": "vegetation",
+              "asset_hint": "grass-field-v1",
+              "appearance": "Mown lawn, gravel path, flower bed and dry leaf litter under the trees.",
+              "geometry_and_material": "Instanced GrassField blades whose colours shift from green to olive (cooked) to straw (next day).",
+              "scale_and_accuracy": "Blades 8-20 cm; flower bed 2.3 x 4 m.",
+              "movement": "Litter patches ignite at 4.7538, 4.7743, 4.7948 event-seconds."
+            }
+          ],
+          "animation_plan": [
+            "Event 4.09-4.86s: paper smokes harder; 35.55-35.8s silence; paper ignites at 35.8s and the litter patches follow at 35.95, 36.1, 36.25s."
+          ],
+          "lighting": "Flames add warm flicker.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "ignites",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 31.1,
+          "duration_s": 4,
+          "kind": "texture",
+          "description": "Smouldering crackle building.",
+          "relative_db": -18
+        },
+        {
+          "at_s": 35.55,
+          "duration_s": 0.25,
+          "kind": "silence",
+          "description": "Everything drops out just before the paper ignites.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 35.8,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "The newspaper flares into flame.",
+          "relative_db": -8
+        },
+        {
+          "at_s": 35.95,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Litter patch 1 catching fire.",
+          "relative_db": -11
+        },
+        {
+          "at_s": 36.1,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Litter patch 2 catching fire.",
+          "relative_db": -12
+        },
+        {
+          "at_s": 36.25,
+          "duration_s": 0.5,
+          "kind": "impact",
+          "description": "Litter patch 3 catching fire.",
+          "relative_db": -13
+        }
+      ],
+      "claim_ids": [
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Same place as the five seconds end."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "second_order_effect",
+      "start_s": 36.75,
+      "end_s": 41.8,
+      "narration": {
+        "text": "The five seconds end. The fires don't.",
+        "start_s": 36.87,
+        "end_s": 41.65,
+        "delivery_note": "Weighty; a held beat before \"The fires don’t.\"",
+        "pacing_energy": "weighty_impact"
+      },
+      "viewer_question": "Is it over when the heat ends?",
+      "visual_payoff": "Colour and speed snap back to normal but the flames keep burning; from above, smoke rises across the city.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 36.75,
+          "end_s": 40,
+          "shot_type": "the heat switches off; the fires keep burning",
+          "world": "1 unit = 1 m. The same park after the five seconds: normal colours, fires still burning, smoke above the city.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 36.75,
+                "position": [
+                  3.2,
+                  1.6,
+                  -10.2
+                ],
+                "look_at": [
+                  -0.58,
+                  1.15,
+                  -2.03
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 40,
+                "position": [
+                  3,
+                  1.6,
+                  -9.7
+                ],
+                "look_at": [
+                  -0.58,
+                  1.15,
+                  -2.03
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push.",
+            "lens_notes": "Wide: grade and speed snap back; you lower your arms beside the burning bench while steam condenses off the cooked tree behind you.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "ELAPSED 5.0 s",
+            "metric_label": "AIR TEMP",
+            "start_value": 1000,
+            "end_value": 77,
+            "unit": "°F",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You, a jogger in a sweat-damp cotton tee and shorts.",
+              "geometry_and_material": "Registered Humanoid rig, run cycle driven by distance; skin tone reddens with the burn.",
+              "scale_and_accuracy": "1.76 m adult running 3 m/s before slowing.",
+              "movement": "Lowers the arm and looks around."
+            },
+            {
+              "id": "newspaper",
+              "kind": "other",
+              "asset_hint": "flame-v1",
+              "appearance": "A folded newspaper and coffee cup left on a park bench.",
+              "geometry_and_material": "Printed paper plane that browns and chars; flame-v1 billboards and smoke-wisp-v1 once it ignites.",
+              "scale_and_accuracy": "Paper 56 x 40 cm; flames 50 cm.",
+              "movement": "Still burning."
+            },
+            {
+              "id": "smoke",
+              "kind": "particle_system",
+              "asset_hint": "smoke-wisp-v1",
+              "appearance": "Dark smoke from fires; white steam that condenses off the cooked trees once the air cools.",
+              "geometry_and_material": "SmokeWisp ribbons, age-driven rise.",
+              "scale_and_accuracy": "Steam 1.5-3 m; city smoke columns 100-230 m.",
+              "movement": "Steam rolls off the canopies as the air cools."
+            }
+          ],
+          "animation_plan": [
+            "37.75s air back to 77 °F: colour and speed return to normal, steam appears, flames keep going."
+          ],
+          "lighting": "Normal morning.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 40,
+          "end_s": 41.8,
+          "shot_type": "looking up from the park: smoke columns over the city",
+          "world": "1 unit = 1 m. The same park after the five seconds: normal colours, fires still burning, smoke above the city.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 40,
+                "position": [
+                  -1,
+                  1.7,
+                  14
+                ],
+                "look_at": [
+                  -30,
+                  40,
+                  -300
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 41.8,
+                "position": [
+                  -0.9,
+                  1.7,
+                  13.6
+                ],
+                "look_at": [
+                  -30,
+                  40,
+                  -300
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow handheld push.",
+            "lens_notes": "Park trees in the foreground, dark smoke columns rising over the skyline.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "20 MINUTES LATER",
+            "metric_label": "AIR TEMP",
+            "start_value": 77,
+            "end_value": 77,
+            "unit": "°F",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "smoke",
+              "kind": "particle_system",
+              "asset_hint": "smoke-wisp-v1",
+              "appearance": "Dark smoke from fires; white steam that condenses off the cooked trees once the air cools.",
+              "geometry_and_material": "SmokeWisp ribbons, age-driven rise.",
+              "scale_and_accuracy": "Steam 1.5-3 m; city smoke columns 100-230 m.",
+              "movement": "Columns from fires started across the city."
+            }
+          ],
+          "animation_plan": [
+            "40-41.8s smoke drifts; no new heat."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "The fires don't",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 37.75,
+          "duration_s": 1.5,
+          "kind": "texture",
+          "description": "The heat roar cuts out; normal sound and fire crackle return; a soft hiss of condensing steam.",
+          "relative_db": -12
+        },
+        {
+          "at_s": 40,
+          "duration_s": 1.8,
+          "kind": "ambience",
+          "description": "Distant sirens and wind.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cross_dissolve",
+        "duration_s": 0.6,
+        "motivation": "To the next morning."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "second_order_effect",
+      "start_s": 41.8,
+      "end_s": 48.15,
+      "narration": {
+        "text": "By tomorrow, summer trees have turned autumn brown, and this season's crops are wilting.",
+        "start_s": 41.92,
+        "end_s": 48,
+        "delivery_note": "Sober; let \"autumn\" contrast with summer.",
+        "pacing_energy": "weighty_impact"
+      },
+      "viewer_question": "What does it look like the next day?",
+      "visual_payoff": "The park is brown overnight; the wheat field droops.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 41.8,
+          "end_s": 45.5,
+          "shot_type": "next morning: the park in autumn colours",
+          "world": "1 unit = 1 m. The next morning: browned trees and lawn, scorch marks; smoke haze on the horizon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 41.8,
+                "position": [
+                  2.4,
+                  1.6,
+                  6.5
+                ],
+                "look_at": [
+                  -4.2,
+                  1.9,
+                  -2.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 45.5,
+                "position": [
+                  2.2,
+                  1.6,
+                  6
+                ],
+                "look_at": [
+                  -4.2,
+                  1.9,
+                  -2.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow walk-pace push.",
+            "lens_notes": "The same path: the charred bench and scorched ground under a brown tree, straw-coloured lawn.",
+            "handheld_sway": 0.35
+          },
+          "hud_telemetry": {
+            "timer_label": "NEXT DAY 09:00",
+            "metric_label": "AIR TEMP",
+            "start_value": 77,
+            "end_value": 77,
+            "unit": "°F",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "trees",
+              "kind": "vegetation",
+              "asset_hint": "broadleaf-tree-v1",
+              "appearance": "Ten deciduous park trees in full summer leaf.",
+              "geometry_and_material": "BroadleafTree instanced leaves; leaf material colour follows the cooking curve.",
+              "scale_and_accuracy": "6-8.5 m trees, leaves 17-32 cm.",
+              "movement": "Brown, some leaves fallen."
+            },
+            {
+              "id": "park",
+              "kind": "vegetation",
+              "asset_hint": "grass-field-v1",
+              "appearance": "Mown lawn, gravel path, flower bed and dry leaf litter under the trees.",
+              "geometry_and_material": "Instanced GrassField blades whose colours shift from green to olive (cooked) to straw (next day).",
+              "scale_and_accuracy": "Blades 8-20 cm; flower bed 2.3 x 4 m.",
+              "movement": "Straw-coloured lawn, scorch marks."
+            }
+          ],
+          "animation_plan": [
+            "41.8-45.5s still, quiet park."
+          ],
+          "lighting": "Morning sun through smoke haze.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 45.5,
+          "end_s": 48.15,
+          "shot_type": "farmland: the wheat is wilting",
+          "world": "1 unit = 1 m. Farmland east of the city the next morning: a wheat field with cooked, drooping leaves; distant wildfire smoke.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 45.5,
+                "position": [
+                  1470,
+                  1.6,
+                  34
+                ],
+                "look_at": [
+                  1500,
+                  0.7,
+                  -20
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 48.15,
+                "position": [
+                  1471,
+                  1.6,
+                  32.5
+                ],
+                "look_at": [
+                  1500,
+                  0.7,
+                  -20
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push along the field edge.",
+            "lens_notes": "Drooping brown wheat to the horizon, smoke columns far away.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "NEXT DAY 09:20",
+            "metric_label": "AIR TEMP",
+            "start_value": 77,
+            "end_value": 77,
+            "unit": "°F",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "wheat",
+              "kind": "vegetation",
+              "asset_hint": "grass-field-v1",
+              "appearance": "Wheat field with brown, drooping leaves.",
+              "geometry_and_material": "GrassField blades 0.7-1.0 m bent down by a strong bend value.",
+              "scale_and_accuracy": "80 x 100 m field.",
+              "movement": "Leaves cooked; stems bend over."
+            }
+          ],
+          "animation_plan": [
+            "45.5-48.15s barely any motion in the dead field."
+          ],
+          "lighting": "Hazy sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "autumn brown",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 41.8,
+          "duration_s": 4,
+          "kind": "ambience",
+          "description": "Quiet morning, a few birds far away.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL06",
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to you in the park."
+      }
+    },
+    {
+      "id": "S10",
+      "beat": "ending",
+      "start_s": 48.15,
+      "end_s": 56,
+      "narration": {
+        "text": "Five seconds. Too short to cook you. Long enough to cook most of the world's leaves.",
+        "start_s": 48.27,
+        "end_s": 55.85,
+        "delivery_note": "Measured payoff; two clauses, settle on the last word.",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "So what did five seconds do?",
+      "visual_payoff": "You stand sunburned but alive under a tree whose leaves are dead.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 48.15,
+          "end_s": 56,
+          "shot_type": "you, sunburned, under a brown tree",
+          "world": "1 unit = 1 m. The next morning: browned trees and lawn, scorch marks; smoke haze on the horizon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 48.15,
+                "position": [
+                  3.6,
+                  1.45,
+                  -3.4
+                ],
+                "look_at": [
+                  -0.9,
+                  2.1,
+                  0.9
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 56,
+                "position": [
+                  3.3,
+                  1.45,
+                  -3.15
+                ],
+                "look_at": [
+                  -0.9,
+                  2.1,
+                  0.9
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow creep.",
+            "lens_notes": "You face the lens, sunburned, with a brown tree behind you.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "NEXT DAY 09:10",
+            "metric_label": "AIR TEMP",
+            "start_value": 77,
+            "end_value": 77,
+            "unit": "°F",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You, a jogger in a sweat-damp cotton tee and shorts.",
+              "geometry_and_material": "Registered Humanoid rig, run cycle driven by distance; skin tone reddens with the burn.",
+              "scale_and_accuracy": "1.76 m adult running 3 m/s before slowing.",
+              "movement": "Standing, looking around the brown park."
+            },
+            {
+              "id": "trees",
+              "kind": "vegetation",
+              "asset_hint": "broadleaf-tree-v1",
+              "appearance": "Ten deciduous park trees in full summer leaf.",
+              "geometry_and_material": "BroadleafTree instanced leaves; leaf material colour follows the cooking curve.",
+              "scale_and_accuracy": "6-8.5 m trees, leaves 17-32 cm.",
+              "movement": "Brown."
+            }
+          ],
+          "animation_plan": [
+            "48.15-56s you turn your head across the park."
+          ],
+          "lighting": "Hazy morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "warm heat grade and heatHaze shimmer while the air is hot",
+            "restrained bloom on flames",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "cook most of the world's leaves",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 48.15,
+          "duration_s": 5,
+          "kind": "music_swell",
+          "description": "Low resolving chord.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Final frame: you under the brown tree."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json read 2026-10-15 (95 entries).",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "grass-field-v1",
+        "usage": "Park lawn, flower bed, dead leaf litter and the wheat field.",
+        "configuration": "Colours driven from the cooking curve; wheat bend 1.25 for wilting."
+      },
+      {
+        "asset_id": "broadleaf-tree-v1",
+        "usage": "Park trees whose leaves cook and brown.",
+        "configuration": "Ten trees 6-8.5 m; leaf material colour per frame; leafFraction 0.82 next day."
+      },
+      {
+        "asset_id": "flame-v1",
+        "usage": "Burning newspaper and litter patches.",
+        "configuration": "turbulence 0.8, intensity ramps at each ignition."
+      },
+      {
+        "asset_id": "smoke-wisp-v1",
+        "usage": "Steam from foliage, fire smoke and city smoke columns.",
+        "configuration": "Age-driven rise; white steam, dark smoke."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Summer morning light and haze.",
+        "configuration": "skyAmount 1, sun 40 degrees."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Blue sky inside the rig.",
+        "configuration": "zenith 0x3b7bd4."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "You and two walkers.",
+        "configuration": "Run cycle from distance; shielding pose."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Grounded poses.",
+        "configuration": "applyGroundedPose."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Bench, newspaper, cup, insects and skyline.",
+        "configuration": "box/solid/rod/canvasTexture."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Seeded layout and timings.",
+        "configuration": "rng()."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Handheld eye-level tracking and the hit impulse.",
+        "configuration": "handheld_sway 0.15-0.4; impulse at the hit."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic render with the new heatHaze post setting.",
+        "configuration": "heatHaze 1.2 and warm tint only while the air is hot."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Live event clock and temperatures.",
+        "configuration": "x 90, y 240."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in Whisper-timed captions.",
+        "configuration": "72 px, baseline 1320."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and Foley.",
+        "configuration": "Pads, roars, crackle, hiss and pre-impact vacuum."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Captions and HUD.",
+        "configuration": "Inter 600/700."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline.",
+        "configuration": "Orbitron."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover from the burning-bench frame.",
+        "configuration": "headline, badge 5 SECONDS, arrow."
+      }
+    ],
+    "new_reusable_asset_candidates": [],
+    "shot_specific_assets": [
+      "Park bench, newspaper and paper cup",
+      "Butterfly and bee props",
+      "Instanced skyline boxes",
+      "Farm field placement"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if earth hit 1000 degrees for 5 seconds, could you survive 1000 degrees, hotter than venus",
+    "core_keywords": [
+      "what if earth hit 1000 degrees",
+      "1000 degrees for 5 seconds",
+      "could you survive 1000 degrees",
+      "hotter than venus",
+      "heat transfer explained",
+      "thermal mass",
+      "earth science what if",
+      "physics thought experiment",
+      "threejs 3d documentary",
+      "heat simulation"
+    ],
+    "distinctive_angle": "The heat that sounds lethal mostly spares you because air holds so little energy; the real damage falls on everything thinner than you.",
+    "comment_bait_question": "Where would you want to be for those five seconds?",
+    "seo_integrity_note": "Fictional five-second pulse of 1000 °F air at normal pressure; burn, leaf and ignition outcomes are estimates; the people and fires shown are illustrative."
+  },
+  "delivery": {
+    "video_output": "output/earth-1000f-five-seconds.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 20.6,
+    "headline": "HOTTER THAN VENUS?!",
+    "highlight": [
+      "VENUS"
+    ],
+    "position": "bottom",
+    "badge": "5 SECONDS",
+    "focus": [
+      0.47,
+      0.31
+    ],
+    "zoom": 1.08,
+    "arrow": true,
+    "style": "bold",
+    "font": "orbitron",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FB923C",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FB923C"
+    },
+    "grade": "dramatic",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

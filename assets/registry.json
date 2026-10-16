@@ -166,6 +166,7 @@
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
+        "earth-1000f-five-seconds",
         "earth-without-tilt",
         "oxygen-gone-five-seconds",
         "what-if-every-man-disappeared"
@@ -201,6 +202,7 @@
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
+        "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "ice-sank-instead-of-floating",
@@ -245,6 +247,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -554,6 +557,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
@@ -641,6 +645,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -689,12 +694,14 @@
         "contrast",
         "lift",
         "tint",
+        "heatHaze",
         "renderFrame(frame, { overlay, captions })"
       ],
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -735,6 +742,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -782,6 +790,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -830,6 +839,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -872,6 +882,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
@@ -904,6 +915,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -1470,6 +1482,7 @@
       "used_in": [
         "air-pressure-doubled",
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "moon-made-of-ice",
@@ -1965,6 +1978,7 @@
       "created_for": "rain-nonstop-everywhere",
       "used_in": [
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -1999,6 +2013,7 @@
       "created_for": "rain-nonstop-everywhere",
       "used_in": [
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-core-solid",
         "earth-ten-percent-closer",
         "earth-without-tilt",
@@ -2422,6 +2437,7 @@
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
         "continents-one-landmass",
+        "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "what-if-every-man-disappeared"
@@ -2554,6 +2570,7 @@
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
+        "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
@@ -3399,6 +3416,7 @@
       ],
       "created_for": "last-woman-alive",
       "used_in": [
+        "earth-1000f-five-seconds",
         "earth-without-tilt",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
@@ -3441,6 +3459,7 @@
       ],
       "created_for": "sky-disappeared",
       "used_in": [
+        "earth-1000f-five-seconds",
         "earth-without-tilt",
         "ozone-layer-gone-overnight",
         "sky-disappeared"

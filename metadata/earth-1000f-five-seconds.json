@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "earth-1000f-five-seconds",
+  "topic": "What if Earth hit 1000°F for 5 seconds?",
+  "duration_s": 56,
+  "video_file": "output/earth-1000f-five-seconds.mp4",
+  "scientific_scope_note": "Fictional premise: for exactly five seconds the air everywhere is 538 °C (1000 °F) at normal pressure, then it returns to normal; the ground, water, people and objects start at their usual temperatures. Skin, leaf, insect and paper temperatures are estimates from simple heat-transfer models. A healthy adult who shuts their eyes and holds their breath would most likely get a painful first-degree burn, possibly with some blistering; children, the elderly and anyone who breathes in the hot air would fare worse. Ignition of paper and dry grass within five seconds is likely but not certain. Water vapour boiled off the leaves stays invisible until the air cools. \"Most of the world’s leaves\" excludes plants under snow or water and thick succulents. Venus averages about 870 °F at the surface. The jogger, walkers and fires shown are illustrative.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [
+    "grass-field-v1",
+    "broadleaf-tree-v1",
+    "flame-v1",
+    "smoke-wisp-v1",
+    "sun-skylight-rig-v1",
+    "sky-dome-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "modeling-helpers-v1",
+    "shader-noise-math-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "overlay-labels-v1",
+    "caption-kinetic-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if Earth hit 1000°F for 5 seconds?",
+      "description": "You're out jogging when the air hits a thousand degrees Fahrenheit, hotter than the surface of Venus. It lasts five seconds. In this 56-second 3D science thought experiment, you'd probably survive: air holds so little heat that only your skin warms up, and you walk away with a bad sunburn.\n\nThinner things aren't so lucky. Flying insects drop in the first second, leaves boil from the inside, and dry paper and dead grass catch fire. When the five seconds end, the fires keep burning, and by the next morning summer trees have turned autumn brown.\n\nWhere would you want to be for those five seconds?\n\nScope: Fictional premise: for exactly five seconds the air everywhere is 538 °C (1000 °F) at normal pressure, then it returns to normal; the ground, water, people and objects start at their usual temperatures. Skin, leaf, insect and paper temperatures are estimates from simple heat-transfer models. A healthy adult who shuts their eyes and holds their breath would most likely get a painful first-degree burn, possibly with some blistering; children, the elderly and anyone who breathes in the hot air would fare worse. Ignition of paper and dry grass within five seconds is likely but not certain. Water vapour boiled off the leaves stays invisible until the air cools. \"Most of the world’s leaves\" excludes plants under snow or water and thick succulents. Venus averages about 870 °F at the surface. The jogger, walkers and fires shown are illustrative.\n\nSources:\n- NASA: Why Is Venus So Hot? (We Asked a NASA Scientist): https://www.nasa.gov/general/why-is-venus-so-hot-we-asked-a-nasa-scientist-episode-39/\n- The Public Domain Review: Experiments and Observations in a Heated Room (Blagden, 1774-75): https://publicdomainreview.org/collection/experiments-and-observations-in-a-heated-room-1774/\n- NOAA Office of Response and Restoration: Thermal Radiation Levels of Concern: https://response.restoration.noaa.gov/node/370\n- Thermal dose unit (first- and second-degree burn thresholds): https://en.wikipedia.org/wiki/Thermal_dose_unit\n- O’Sullivan et al.: Thermal limits of leaf metabolism across biomes: https://experts.umn.edu/en/publications/thermal-limits-of-leaf-metabolism-across-biomes/\n- University of Florida Book of Insect Records, Chapter 21: Most Heat Tolerant: https://entnemdept.ufl.edu/walker/ufbir/chapters/chapter_21.shtml\n- Autoignition temperature (paper 218-246 °C): https://en.wikipedia.org/wiki/Autoignition_temperature\n\nVisuals: original deterministic Three.js animation. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.",
+      "tags": [
+        "what if earth hit 1000 degrees",
+        "1000 degrees for 5 seconds",
+        "could you survive 1000 degrees",
+        "hotter than venus",
+        "why air holds little heat",
+        "thermal mass explained",
+        "heat transfer",
+        "earth science what if",
+        "physics thought experiment",
+        "science simulation",
+        "threejs 3d documentary"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Physics",
+        "#EarthScience",
+        "#Venus",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if earth hit 1000 degrees",
+        "1000 degrees for 5 seconds",
+        "could you survive 1000 degrees",
+        "hotter than venus",
+        "why air holds little heat",
+        "what burns at 1000 degrees"
+      ]
+    },
+    "tiktok": {
+      "caption": "You're jogging when the air hits 1000°F for five seconds. You'd probably walk away with a bad sunburn, but leaves cook, insects drop and dry grass bursts into flame.\n\nWhere would you want to be for those five seconds?\n\nA 3D thought experiment; burn and ignition figures are estimates.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Physics",
+        "#Venus",
+        "#EarthScience",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if earth hit 1000 degrees",
+        "1000 degrees for 5 seconds",
+        "could you survive 1000 degrees",
+        "hotter than venus",
+        "why air holds little heat",
+        "what burns at 1000 degrees"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "You'd survive five seconds of 1000°F air, hotter than Venus, with little more than a bad sunburn. Air holds so little heat that only your skin warms up. Everything thinner than you heats right through: insects, leaves, paper and dead grass.\n\nWhere would you want to be for those five seconds?\n\nFictional premise; temperatures are heat-transfer estimates.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#Physics",
+        "#Venus",
+        "#EarthScience",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if earth hit 1000 degrees",
+        "1000 degrees for 5 seconds",
+        "could you survive 1000 degrees",
+        "hotter than venus",
+        "why air holds little heat",
+        "what burns at 1000 degrees"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if Earth hit 1000°F for 5 seconds? You might just get sunburned",
+      "description": "For five seconds the air hits 1000°F, hotter than the surface of Venus. You'd probably walk away with a bad sunburn, but insects drop, leaves cook and dry grass ignites. The fires outlast the heat, and by morning the trees are brown.\n\nWhere would you want to be for those five seconds?\n\nFictional premise: for exactly five seconds the air everywhere is 538 °C (1000 °F) at normal pressure, then it returns to normal; the ground, water, people and objects start at their usual temperatures. Skin, leaf, insect and paper temperatures are estimates from simple heat-transfer models. A healthy adult who shuts their eyes and holds their breath would most likely get a painful first-degree burn, possibly with some blistering; children, the elderly and anyone who breathes in the hot air would fare worse. Ignition of paper and dry grass within five seconds is likely but not certain. Water vapour boiled off the leaves stays invisible until the air cools. \"Most of the world’s leaves\" excludes plants under snow or water and thick succulents. Venus averages about 870 °F at the surface. The jogger, walkers and fires shown are illustrative.\n\nSources:\n- NASA: Why Is Venus So Hot? (We Asked a NASA Scientist): https://www.nasa.gov/general/why-is-venus-so-hot-we-asked-a-nasa-scientist-episode-39/\n- The Public Domain Review: Experiments and Observations in a Heated Room (Blagden, 1774-75): https://publicdomainreview.org/collection/experiments-and-observations-in-a-heated-room-1774/\n- NOAA Office of Response and Restoration: Thermal Radiation Levels of Concern: https://response.restoration.noaa.gov/node/370\n- Thermal dose unit (first- and second-degree burn thresholds): https://en.wikipedia.org/wiki/Thermal_dose_unit\n- O’Sullivan et al.: Thermal limits of leaf metabolism across biomes: https://experts.umn.edu/en/publications/thermal-limits-of-leaf-metabolism-across-biomes/\n- University of Florida Book of Insect Records, Chapter 21: Most Heat Tolerant: https://entnemdept.ufl.edu/walker/ufbir/chapters/chapter_21.shtml\n- Autoignition temperature (paper 218-246 °C): https://en.wikipedia.org/wiki/Autoignition_temperature",
+      "hashtags": [
+        "#WhatIf",
+        "#Science",
+        "#Physics",
+        "#EarthScience",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if earth hit 1000 degrees",
+        "1000 degrees for 5 seconds",
+        "could you survive 1000 degrees",
+        "hotter than venus",
+        "why air holds little heat",
+        "what burns at 1000 degrees"
+      ]
+    },
+    "x_video": {
+      "post": "You're jogging when the air hits 1000°F for 5 seconds. You'd probably walk away with a bad sunburn, but leaves cook, insects drop and dry grass ignites. Where would you want to be for those five seconds?",
+      "hashtags": [
+        "#WhatIf",
+        "#Physics",
+        "#Venus",
+        "#Science",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if earth hit 1000 degrees",
+        "1000 degrees for 5 seconds",
+        "could you survive 1000 degrees"
+      ]
+    }
+  },
+  "publishing_status": "rendered_not_published",
+  "rendered_at_utc": "2026-10-15T23:25:47Z",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 17,
+    "path_in_repo": "videos/017-earth-1000f-five-seconds.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/017-earth-1000f-five-seconds.mp4",
+    "sha256": "2f4b1019c80c8cb5120724b2eedce4411b4018f321a0630b80284d86f4abdece",
+    "size_bytes": 97423320,
+    "thumbnail_path_in_repo": "videos/017-earth-1000f-five-seconds.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/017-earth-1000f-five-seconds.jpg",
+    "thumbnail_sha256": "542858464dffd541682821feb653dabbd877d4bb6b7909b5ee4aaf4fc8667b96",
+    "copy_path_in_repo": "videos/017-earth-1000f-five-seconds.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/017-earth-1000f-five-seconds.md",
+    "copy_sha256": "6fb29efff502705c55afcb96865c5603802ee078982b67066697897d9f11a8a1",
+    "uploaded_at_utc": "2026-10-15T23:26:31Z"
+  }
+}
