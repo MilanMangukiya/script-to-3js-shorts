@@ -52,6 +52,22 @@ function prof(keys: number[][], t: number): number {
   return (2 * u3 - 3 * u2 + 1) * v0 + (u3 - 2 * u2 + u) * h * m(i) + (-2 * u3 + 3 * u2) * v1 + (u3 - u2) * h * m(i + 1);
 }
 type W = [number, number][];
+/**
+ * Skin shading: wrap lighting with a warm scatter band at the light terminator (a cheap stand-in for subsurface
+ * scattering), so faces and hands read soft and alive instead of plastic, especially in side light and at sunset.
+ */
+function skinShading<T extends THREE.MeshPhysicalMaterial>(m: T, wrap = 0.38, scatter: [number, number, number] = [0.55, 0.16, 0.08]) {
+  const line = 'reflectedLight.directDiffuse += irradiance * BRDF_Lambert( material.diffuseColor );';
+  m.onBeforeCompile = (sh) => {
+    sh.uniforms.uSkinWrap = { value: wrap }; sh.uniforms.uSkinScatter = { value: new THREE.Vector3(...scatter) };
+    sh.fragmentShader = 'uniform float uSkinWrap; uniform vec3 uSkinScatter;\n' + sh.fragmentShader.replace('#include <lights_physical_pars_fragment>', THREE.ShaderChunk.lights_physical_pars_fragment.replace(line,
+      `{ float ndl = dot( geometryNormal, directLight.direction ), wrapped = saturate( ( ndl + uSkinWrap ) / ( 1.0 + uSkinWrap ) );
+         vec3 band = uSkinScatter * max( wrapped - saturate( ndl ), 0.0 );
+         reflectedLight.directDiffuse += directLight.color * ( wrapped * BRDF_Lambert( material.diffuseColor ) + band * material.diffuseColor * RECIPROCAL_PI ); }`));
+  };
+  m.customProgramCacheKey = () => `skin-sss-v1-${wrap}`;
+  return m;
+}
 const norm4 = (w: W): W => { const s = [...w].filter((x) => x[1] > 0).sort((a, b) => b[1] - a[1]).slice(0, 4), t = s.reduce((x, y) => x + y[1], 0) || 1; return s.map(([i, v]) => [i, v / t]); };
 
 /** Accumulates skinned, coloured, UV-mapped geometry. */
@@ -136,6 +152,18 @@ function torsoRing(S: Shape, y: number, th: number, inflate = 0) {
   z -= Math.exp(-(((y - 1.36) / 0.05) ** 2)) * smooth(0, -0.6, Math.sin(th)) * 0.008;         // shoulder blades
   return new THREE.Vector3(x, y, z + cz);
 }
+/**
+ * Garment ring that drapes rather than shrink-wraps: on the front, cloth hangs from the fullest point just above
+ * (bust, belly) instead of following the creases beneath them; sides and back follow the body.
+ */
+function drapeRing(S: Shape, y: number, th: number, inflate = 0) {
+  const p = torsoRing(S, y, th, inflate), c = prof(S.C, y), r0 = Math.hypot(p.x, p.z - c), front = smooth(0.15, 0.75, Math.sin(th));
+  if (front <= 0 || y > 1.36 || r0 < 1e-6) return p;
+  let rMax = r0;
+  for (let k = 1; k <= 7; k++) { const yy = Math.min(1.36, y + k * 0.018), q = torsoRing(S, yy, th, inflate); rMax = Math.max(rMax, Math.hypot(q.x, q.z - prof(S.C, yy))); }
+  const k = 1 + (rMax / r0 - 1) * front;
+  return new THREE.Vector3(p.x * k, y, c + (p.z - c) * k);
+}
 /** Limb centre line from p0 to p1; cross-section half-axes a (side to side) and b (front to back). */
 function limbPoint(p0: THREE.Vector3, p1: THREE.Vector3, t: number, th: number, a: number, b: number) {
   const [x, z] = sup(th, a, b, 2.05);
@@ -202,17 +230,18 @@ export class HumanV2 {
 
     // ---- materials
     const skinColor = new THREE.Color(o.skin ?? 0xc68b67), sheen = skinColor.clone().lerp(new THREE.Color(0xffffff), 0.4);
-    const skin = new THREE.MeshPhysicalMaterial({ color: 0xffffff, vertexColors: true, roughness: 0.52, metalness: 0, sheen: 0.3, sheenRoughness: 0.55, sheenColor: sheen });
-    const skinPlain = new THREE.MeshPhysicalMaterial({ color: skinColor, roughness: 0.5, metalness: 0, sheen: 0.3, sheenRoughness: 0.55, sheenColor: sheen });
+    const skin = skinShading(new THREE.MeshPhysicalMaterial({ color: 0xffffff, vertexColors: true, roughness: 0.5, metalness: 0, sheen: 0.3, sheenRoughness: 0.55, sheenColor: sheen }));
+    const skinPlain = skinShading(new THREE.MeshPhysicalMaterial({ color: skinColor, roughness: 0.48, metalness: 0, sheen: 0.3, sheenRoughness: 0.55, sheenColor: sheen }));
     const fab = (id: string, color: THREE.ColorRepresentation, rough = 1, tile = 0.35) => o.pbr ? o.pbr.material(id, { tint: color, roughness: rough, tile, normalScale: 0.8 })
       : new THREE.MeshStandardMaterial({ color, roughness: 0.85 * rough, metalness: 0 });
     const hairColor = new THREE.Color(o.hair?.color ?? 0x2a1d15);
     const hairMat = new THREE.MeshPhysicalMaterial({ color: hairColor, roughness: 0.45, metalness: 0, normalMap: strandNormals(), normalScale: new THREE.Vector2(0.7, 0.7), sheen: 0.6, sheenColor: hairColor.clone().lerp(new THREE.Color(0xffffff), 0.3), sheenRoughness: 0.35 });
     const top = o.top ?? 'tshirt', bottom = o.bottom ?? (top === 'dress' ? 'none' : 'trousers'), shoes = o.shoes ?? 'sneakers';
     const topColor = o.topColor ?? 0x4f6d8f, bottomColor = o.bottomColor ?? 0x2e3440, shoeColor = o.shoeColor ?? 0xe9e6df;
-    const topMat = top === 'jacket' || top === 'coat' ? fab('velour_velvet', topColor, 1.1, 0.5) : top === 'hoodie' ? fab('cotton_jersey', topColor, 1.15, 0.5) : fab('cotton_jersey', topColor, 1, 0.3);
-    const bottomMat = bottom === 'jeans' ? fab('denim_fabric', bottomColor, 1, 0.3) : fab('cotton_jersey', bottomColor, 1.05, 0.45);
-    const shoeMat = shoes === 'boots' || shoes === 'dress' ? fab('brown_leather', shoeColor, 0.8, 0.25) : new THREE.MeshStandardMaterial({ color: shoeColor, roughness: 0.6 });
+    // Real-world texture scale: a knit rib or denim twill is millimetres across (larger tiles read as body rolls).
+    const topMat = top === 'jacket' || top === 'coat' ? fab('velour_velvet', topColor, 1.1, 0.22) : top === 'hoodie' ? fab('cotton_jersey', topColor, 1.15, 0.16) : fab('cotton_jersey', topColor, 1, 0.11);
+    const bottomMat = bottom === 'jeans' ? fab('denim_fabric', bottomColor, 1, 0.16) : fab('cotton_jersey', bottomColor, 1.05, 0.14);
+    const shoeMat = shoes === 'boots' || shoes === 'dress' ? fab('brown_leather', shoeColor, 0.8, 0.15) : new THREE.MeshStandardMaterial({ color: shoeColor, roughness: 0.6 });
     const soleMat = new THREE.MeshStandardMaterial({ color: shoes === 'sneakers' ? 0xf2f0ea : 0x2a221d, roughness: 0.7 });
 
     // ---- body
@@ -372,7 +401,7 @@ export class HumanV2 {
   }
 
   private addTop(top: Top, mat: THREE.Material) {
-    const S = this.S, g = new Builder(), loose = top === 'jacket' || top === 'coat' ? 0.026 : top === 'hoodie' ? 0.02 : top === 'shirt' || top === 'blouse' ? 0.012 : 0.009;
+    const S = this.S, g = new Builder(), loose = top === 'jacket' || top === 'coat' ? 0.021 : top === 'hoodie' ? 0.017 : top === 'shirt' || top === 'blouse' ? 0.01 : 0.008;
     const hem = top === 'coat' ? 0.52 : top === 'jacket' ? 0.8 : top === 'dress' ? 0.98 : 0.86;
     const fr = (th: number) => Math.sin(th);
     // Neckline as an exact top edge: crew, V (shirts, jackets, coats) or scoop (blouse, dress, tank).
@@ -382,8 +411,8 @@ export class HumanV2 {
       if (top === 'blouse' || top === 'dress' || top === 'tank') return 1.452 - 0.055 * smooth(0.15, 1, fr(th)) - (top === 'tank' ? 0.02 : 0);
       return crew; };
     const R = 42;
-    g.loft(R, 44, (i, th) => { const yTop = neck(th), y = hem + (yTop - hem) * (i / (R - 1)), flare = y < 0.95 ? (0.95 - y) * (top === 'coat' ? 0.22 : 0.16) : 0;
-      const p = torsoRing(S, Math.max(y, 0.8), th, loose + 0.008 + flare + (y < 0.8 ? (0.8 - y) * 0.06 : 0));   // even ease all the way up (no ridge at the waist)
+    g.loft(R, 44, (i, th) => { const yTop = neck(th), y = hem + (yTop - hem) * (i / (R - 1)), flare = y < 0.95 ? (0.95 - y) * (top === 'coat' ? 0.14 : top === 'dress' ? 0.12 : 0.06) : 0;
+      const p = drapeRing(S, Math.max(y, 0.8), th, loose + 0.008 + flare + (y < 0.8 ? (0.8 - y) * 0.06 : 0));   // even ease all the way up (no ridge at the waist)
       if (y < 0.8) p.y = y;
       return { p, w: y < 0.86 ? [[B.hips, 0.6], [B.hiL, p.x > 0 ? 0.2 : 0], [B.hiR, p.x < 0 ? 0.2 : 0]] : torsoW(y) }; });
     if (top === 'hoodie') { const h = new Builder(); h.loft(10, 30, (i, th) => { const t = i / 9, p = torsoRing(S, 1.44 + t * 0.03, th, 0.03 + 0.02 * t); p.z -= 0.03 + t * 0.03; p.y += t * 0.03; return { p, w: [[B.chest, 1]] }; }, (i, th) => Math.sin(th) < 0.2); merge(g, h); }
