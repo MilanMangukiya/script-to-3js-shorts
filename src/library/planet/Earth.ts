@@ -37,6 +37,7 @@ export async function loadEarthTextures(base = '/', maxAnisotropy = 8, opts: { s
  *  - `scatter`: scales atmospheric glow (1 = normal air).
  *  - `nightOutage`: 0..1 fraction of city lights switched off in noise-shaped regional patches (illustrative).
  *  - `setView(lon, lat)`: orient the globe so a geographic point faces +Z.
+ *  - `flattening`: oblateness f = (a − c) / a along the spin axis, volume preserved (0 = sphere, the default; Earth today ≈ 0.0034).
  */
 export class Earth {
   readonly group = new THREE.Group();
@@ -63,7 +64,7 @@ export class Earth {
       },
       vertexShader: /* glsl */ `
         varying vec2 vUv; varying vec3 vN; varying vec3 vP; varying vec3 vObj;
-        void main(){ vUv = uv; vObj = normalize(position); vN = normalize(mat3(modelMatrix)*normal);
+        void main(){ vUv = uv; vObj = normalize(position); vN = normalize((vec4(normalMatrix*normal, 0.0)*viewMatrix).xyz);   // world normal, exact under the oblate scale
           vec4 w = modelMatrix*vec4(position,1.0); vP = w.xyz; gl_Position = projectionMatrix*viewMatrix*w; }`,
       fragmentShader: /* glsl */ `
         uniform sampler2D tDay, tNight, tClouds, tLand, tSeaIce; uniform float uSeaIce;
@@ -109,7 +110,7 @@ export class Earth {
       side: THREE.BackSide, transparent: true, depthWrite: false, fog: false,
       blending: THREE.CustomBlending, blendEquation: THREE.AddEquation, blendSrc: THREE.OneFactor, blendDst: THREE.OneFactor,
       uniforms: { uSunDir: { value: sun }, uColor: { value: atmoColor }, uStrength: { value: o.atmosphereStrength ?? 1 }, uScatter: { value: 1 }, uEdge: { value: edge } },
-      vertexShader: /* glsl */ `varying vec3 vN; varying vec3 vP; void main(){ vN = normalize(mat3(modelMatrix)*normal); vec4 w = modelMatrix*vec4(position,1.0); vP = w.xyz; gl_Position = projectionMatrix*viewMatrix*w; }`,
+      vertexShader: /* glsl */ `varying vec3 vN; varying vec3 vP; void main(){ vN = normalize((vec4(normalMatrix*normal, 0.0)*viewMatrix).xyz); vec4 w = modelMatrix*vec4(position,1.0); vP = w.xyz; gl_Position = projectionMatrix*viewMatrix*w; }`,
       fragmentShader: /* glsl */ `uniform vec3 uSunDir, uColor; uniform float uStrength, uScatter, uEdge; varying vec3 vN; varying vec3 vP;
         void main(){ vec3 N = normalize(vN), V = normalize(cameraPosition - vP);
           float g = clamp(-dot(N, V) / uEdge, 0.0, 1.0);
@@ -127,9 +128,16 @@ export class Earth {
   setView(lonDeg: number, latDeg: number) {
     this.baseLon = -Math.PI / 2 - THREE.MathUtils.degToRad(lonDeg);
     this.tilt.rotation.x = THREE.MathUtils.degToRad(latDeg);
+    this.atmosphere.rotation.x = this.tilt.rotation.x;   // keeps a flattened shell aligned with the spin axis
     this.globe.rotation.y = this.baseLon;
   }
   set sunDirection(v: THREE.Vector3) { this.mat.uniforms.uSunDir.value.copy(v).normalize(); this.atmoMat.uniforms.uSunDir.value.copy(v).normalize(); }
+  /** Oblate spheroid along the spin axis with the same volume: equatorial radius (1 − f)^(−1/3), polar (1 − f)^(2/3). */
+  set flattening(f: number) {
+    const a = Math.pow(1 - f, -1 / 3), c = (1 - f) * a;
+    this.globe.scale.set(a, c, a); this.atmosphere.scale.set(a, c, a);
+    this.atmosphere.rotation.x = this.tilt.rotation.x;
+  }
   set scatter(v: number) { this.mat.uniforms.uScatter.value = v; this.atmoMat.uniforms.uScatter.value = v; }
   set cloudOpacity(v: number) { this.mat.uniforms.uCloudOpacity.value = v; }
   set nightLights(v: number) { this.mat.uniforms.uNight.value = v; }
