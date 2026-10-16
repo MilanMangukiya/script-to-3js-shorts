@@ -42,13 +42,13 @@ export class OceanSurface {
       uShoreOn: { value: o.shore ? 1 : 0 }, uShoreO: { value: new THREE.Vector2(...(o.shore?.origin ?? [0, 0])) },
       uShoreD: { value: new THREE.Vector2(...(o.shore?.direction ?? [0, -1])).normalize() }, uShoreSlope: { value: o.shore?.slope ?? 0.05 },
       uSand: { value: new THREE.Color(o.shore?.sandColor ?? 0xe8d9b8) }, uAbsorb: { value: new THREE.Vector3(...(o.shore?.absorption ?? [0.42, 0.075, 0.05])) },
-      uFoam: { value: o.shore?.foam ?? 1 }, uRefl: { value: o.reflectivity ?? 1 },
+      uShoreFoam: { value: o.shore?.foam ?? 1 }, uRefl: { value: o.reflectivity ?? 1 },
     };
     const mat = new THREE.ShaderMaterial({
       uniforms: this.uniforms, fog: false,
       vertexShader: /* glsl */ `varying vec3 vP; void main(){ vec4 w = modelMatrix*vec4(position,1.0); vP = w.xyz; gl_Position = projectionMatrix*viewMatrix*w; }`,
       fragmentShader: /* glsl */ `
-        uniform float uTime, uWaveH, uWaveS, uFogDensity, uGlitter, uSkyScale, uShoreOn, uShoreSlope, uFoam, uRefl;
+        uniform float uTime, uWaveH, uWaveS, uFogDensity, uGlitter, uSkyScale, uShoreOn, uShoreSlope, uShoreFoam, uRefl;
         uniform vec3 uDeep, uHorizon, uZenith, uSunDir, uSunColor, uFogColor, uSand, uAbsorb; uniform vec2 uShoreO, uShoreD;
         varying vec3 vP;
         ${GLSL_NOISE}
@@ -92,7 +92,7 @@ export class OceanSurface {
             float n = fbm(vP.xz * 2.6 + vec2(uTime * 0.11, -uTime * 0.07)), swash = 0.75 + 0.5 * sin(uTime * 0.8);
             float edge = smoothstep(0.42, 0.78, n + 0.25 * exp(-max(sd, 0.0) / 0.5)) * exp(-max(sd, 0.0) / swash);
             float roll = smoothstep(0.86, 1.0, sin(sd * 0.75 + uTime * 1.25)) * smoothstep(0.35, 0.75, n) * exp(-sd * 0.06) * step(1.5, sd);
-            foam = clamp(edge + roll * 0.55, 0.0, 1.0) * uFoam * (1.0 - smoothstep(60.0, 140.0, dist));
+            foam = clamp(edge + roll * 0.55, 0.0, 1.0) * uShoreFoam * (1.0 - smoothstep(60.0, 140.0, dist));
           }
           vec3 col = mix(body, refl, F * uRefl) + glint * (1.0 - foam);
           col = mix(col, vec3(0.93, 0.95, 0.96) * (0.45 + 0.75 * max(uSunDir.y, 0.0)) * uSkyScale, foam);
