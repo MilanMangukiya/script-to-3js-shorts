@@ -1,0 +1,21 @@
+{
+  "duration": 48,
+  "openingPress": 0.35,
+  "openingRelease": 1.15,
+  "open0": 0.7,
+  "open1": 2.4,
+  "road0": 11,
+  "road1": 16.0,
+  "heatReveal": 20.56,
+  "arrival0": 28.5,
+  "arrival1": 31.8,
+  "cloud0": 34.5,
+  "cloudCentre": 36.0,
+  "cloud1": 40.0,
+  "porchOn": 38.35,
+  "closingPress": 41.0,
+  "closingRelease": 41.9,
+  "close0": 41.5,
+  "close1": 44.8,
+  "cloudExit": 39.0
+}

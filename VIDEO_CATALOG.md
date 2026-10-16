@@ -4,6 +4,8 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 | Rendered (UTC) | Video | Length | Publishing | Upload metadata |
 |---|---|---:|---|---|
+| 2026-10-16 | `sun-locked-earth` | 48s | rendered_not_published | [Copy metadata](metadata/sun-locked-earth.md) |
+| 2026-10-16 | `every-volcano-erupts-at-once` | 54s | rendered_not_published | [Copy metadata](metadata/every-volcano-erupts-at-once.md) |
 | 2026-10-15 | `earth-1000f-five-seconds` | 56s | rendered_not_published | [Copy metadata](metadata/earth-1000f-five-seconds.md) |
 | 2026-10-15 | `earth-without-tilt` | 52s | rendered_not_published | [Copy metadata](metadata/earth-without-tilt.md) |
 | 2026-10-15 | `ozone-layer-gone-overnight` | 55s | rendered_not_published | [Copy metadata](metadata/ozone-layer-gone-overnight.md) |
@@ -23,6 +25,268 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 | 2026-10-12 | `air-pressure-doubled` | 74s | rendered_not_published | [Copy metadata](metadata/air-pressure-doubled.md) |
 | 2026-10-12 | `ice-sank-instead-of-floating` | 74s | rendered_not_published | [Copy metadata](metadata/ice-sank-instead-of-floating.md) |
 | 2026-10-12 | `oxygen-gone-five-seconds` | 72s | rendered_not_published | [Copy metadata](metadata/oxygen-gone-five-seconds.md) |
+
+---
+
+## What if the same side of Earth always faced the Sun?
+**Video:** `output/sun-locked-earth.mp4`\
+**Thumbnail:** `output/sun-locked-earth.jpg`\
+**Publishing copy:** `output/sun-locked-earth.md`\
+**Hugging Face:** [videos/019-sun-locked-earth.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/019-sun-locked-earth.mp4) · [videos/019-sun-locked-earth.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/019-sun-locked-earth.jpg) · [videos/019-sun-locked-earth.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/019-sun-locked-earth.md)\
+**Slug:** `sun-locked-earth` | **Duration:** 48s | **Rendered (UTC):** 2026-10-16T01:01:02Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** An already established Sun-locked alternative Earth, not a sudden stopping event. A circular orbit at 1 AU, zero obliquity and one prograde sidereal turn per approximately one-year orbit keep the subsolar point fixed. Earth mass, radius, gravity, geography, atmosphere, oceans and present solar luminosity remain. The midnight clock counts a retained human schedule, not apparent solar time. Road travel is compressed geographical relocation; no distances, routes, temperatures or universal safe twilight ring are forecast. Air and oceans can redistribute heat, but the cited exoplanet models do not calculate this one-year Earth climate. The cloud and choice of a twilight home are individual illustrative conditions. Practical lights use other power, and opaque blinds create indoor darkness without moving the exterior Sun. Orbital body sizes and separation are independently enlarged; spin/orbit phase is retained. Heat paths illustrate possibility, not computed circulation.
+**Assets reused:** earth-globe-v1, earth-textures-nasa-v1, starfield-v1, sky-dome-v1, sun-skylight-rig-v1, room-box-v1, city-street-block-v1, humanoid-figure-v1, character-motion-v1, modeling-helpers-v1, camera-keyframe-rig-v1, film-pipeline-v1, caption-kinetic-v1, overlay-labels-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** None
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if the same side of Earth always faced the Sun?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You wake at midnight in sunlight, then scout a darker home. Sunset becomes a place you can travel toward. The night side is not automatically frozen, but its solar panels cannot wait for sunrise. A cloud tests your twilight choice, and a blackout blind finally gives you control over night.
+
+Would you build your home in daylight, darkness, or permanent twilight?
+
+Scope: An already established Sun-locked alternative Earth, not a sudden stopping event. A circular orbit at 1 AU, zero obliquity and one prograde sidereal turn per approximately one-year orbit keep the subsolar point fixed. Earth mass, radius, gravity, geography, atmosphere, oceans and present solar luminosity remain. The midnight clock counts a retained human schedule, not apparent solar time. Road travel is compressed geographical relocation; no distances, routes, temperatures or universal safe twilight ring are forecast. Air and oceans can redistribute heat, but the cited exoplanet models do not calculate this one-year Earth climate. The cloud and choice of a twilight home are individual illustrative conditions. Practical lights use other power, and opaque blinds create indoor darkness without moving the exterior Sun. Orbital body sizes and separation are independently enlarged; spin/orbit phase is retained. Heat paths illustrate possibility, not computed circulation.
+
+Sources:
+- NASA: Tidal Locking: https://science.nasa.gov/moon/tidal-locking/
+- NASA Universe Glossary: terminator and tidal locking: https://science.nasa.gov/universe/glossary/
+- Yang et al. 2019: Ocean dynamics on tidally locked terrestrial planets: https://arxiv.org/abs/1902.02103
+- Wordsworth 2015: Atmospheric heat redistribution on tidally locked rocky planets: https://arxiv.org/abs/1412.5575
+- NASA SVS: climate patterns on tidally locked TOI 700 d: https://svs.gsfc.nasa.gov/13496
+
+Original deterministic Three.js animation using NASA Earth imagery. Narrator: local Kokoro am_michael. Original procedural music and Foley.
+
+#Shorts #WhatIf #Astronomy #EarthScience #TidalLocking #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if Earth was tidally locked, same side of Earth faces Sun, synchronous rotation, permanent daylight, planetary climate, astronomy thought experiment, Earth science
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+You wake at midnight, but your bedroom is still sunlit. You scout a darker home, discover a power problem, and learn to make your own night.
+
+Would you build your home in daylight, darkness, or permanent twilight?
+
+An already established Sun-locked alternative Earth, not a sudden stopping event. A circular orbit at 1 AU, zero obliquity and one prograde sidereal turn per approximately one-year orbit keep the subsolar point fixed. Earth mass, radius, gravity, geography, atmosphere, oceans and present solar luminosity remain. The midnight clock counts a retained human schedule, not apparent solar time. Road travel is compressed geographical relocation; no distances, routes, temperatures or universal safe twilight ring are forecast. Air and oceans can redistribute heat, but the cited exoplanet models do not calculate this one-year Earth climate. The cloud and choice of a twilight home are individual illustrative conditions. Practical lights use other power, and opaque blinds create indoor darkness without moving the exterior Sun. Orbital body sizes and separation are independently enlarged; spin/orbit phase is retained. Heat paths illustrate possibility, not computed circulation.
+
+#ScienceReels #WhatIf #Astronomy #EarthScience #TidalLocking #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if the same side of Earth always faced the Sun?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You wake at midnight in sunlight, then scout a darker home. Sunset becomes a place you can travel toward. The night side is not automatically frozen, but its solar panels cannot wait for sunrise. A cloud tests your twilight choice, and a blackout blind finally gives you control over night.
+
+Would you build your home in daylight, darkness, or permanent twilight?
+
+Scope: An already established Sun-locked alternative Earth, not a sudden stopping event. A circular orbit at 1 AU, zero obliquity and one prograde sidereal turn per approximately one-year orbit keep the subsolar point fixed. Earth mass, radius, gravity, geography, atmosphere, oceans and present solar luminosity remain. The midnight clock counts a retained human schedule, not apparent solar time. Road travel is compressed geographical relocation; no distances, routes, temperatures or universal safe twilight ring are forecast. Air and oceans can redistribute heat, but the cited exoplanet models do not calculate this one-year Earth climate. The cloud and choice of a twilight home are individual illustrative conditions. Practical lights use other power, and opaque blinds create indoor darkness without moving the exterior Sun. Orbital body sizes and separation are independently enlarged; spin/orbit phase is retained. Heat paths illustrate possibility, not computed circulation.
+
+Sources:
+- NASA: Tidal Locking: https://science.nasa.gov/moon/tidal-locking/
+- NASA Universe Glossary: terminator and tidal locking: https://science.nasa.gov/universe/glossary/
+- Yang et al. 2019: Ocean dynamics on tidally locked terrestrial planets: https://arxiv.org/abs/1902.02103
+- Wordsworth 2015: Atmospheric heat redistribution on tidally locked rocky planets: https://arxiv.org/abs/1412.5575
+- NASA SVS: climate patterns on tidally locked TOI 700 d: https://svs.gsfc.nasa.gov/13496
+
+Original deterministic Three.js animation using NASA Earth imagery. Narrator: local Kokoro am_michael. Original procedural music and Foley.
+
+#WhatIf #Astronomy #EarthScience #TidalLocking #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+You wake at midnight, but your bedroom is still sunlit. You scout a darker home, discover a power problem, and learn to make your own night.
+
+Would you build your home in daylight, darkness, or permanent twilight?
+
+#ScienceTok #WhatIf #Astronomy #EarthScience #TidalLocking #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+You wake at midnight in sunlight. On a Sun-locked Earth, sunset becomes a place. Would you build your home in daylight, darkness, or permanent twilight?
+
+#WhatIf #Astronomy #EarthScience #TidalLocking #ScienceSimulation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+
+---
+
+## What if every active volcano on Earth erupted at once?
+**Video:** `output/every-volcano-erupts-at-once.mp4`\
+**Thumbnail:** `output/every-volcano-erupts-at-once.jpg`\
+**Publishing copy:** `output/every-volcano-erupts-at-once.md`\
+**Hugging Face:** [videos/018-every-volcano-erupts-at-once.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/018-every-volcano-erupts-at-once.mp4) · [videos/018-every-volcano-erupts-at-once.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/018-every-volcano-erupts-at-once.jpg) · [videos/018-every-volcano-erupts-at-once.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/018-every-volcano-erupts-at-once.md)\
+**Slug:** `every-volcano-erupts-at-once` | **Duration:** 54s | **Rendered (UTC):** 2026-10-16T01:16:16Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** Fictional premise: all of Earth’s roughly 1,350 potentially active volcanoes (USGS count) begin an eruption at the same moment, each one typical of what that volcano does. The city, its volcano and the people are illustrative, as are local HUD readings such as lava and ash-flow speeds, ash depth and air temperatures. About 800 million people live within 100 km of an active volcano (Brown et al. 2015). Ash falls out within hours to days; only large explosive eruptions put sulfur into the stratosphere, where sulfate droplets spread worldwide within weeks, last about a year and reflect sunlight. Tambora (1815, about 55 Mt of SO2) led to snow in New England in June 1816. How much sulfur all eruptions together would inject is uncertain (from about one Pinatubo to several Tamboras), so the cooling, failed summers and harvest losses are possibilities, not predictions; cooling would be global but uneven.
+**Assets reused:** city-street-block-v1, volcano-v1, earth-globe-v1, sun-skylight-rig-v1, humanoid-figure-v1, character-motion-v1, grass-field-v1, broadleaf-tree-v1, village-houses-v1, snowfall-v1, modeling-helpers-v1, shader-noise-math-v1, camera-keyframe-rig-v1, film-pipeline-v1, overlay-labels-v1, caption-kinetic-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** eruption-column-v1
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if every active volcano on Earth erupted at once?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+The mountain down your street just exploded, and so did every other volcano that could erupt. In this 54-second 3D science thought experiment, you walk away from slow lava, but avalanches of hot ash outrun cars, and 800 million people live near a volcano.
+
+Within days the ash is swept up, yet the sun stays dim. The biggest blasts lift sulfur 20 km up, where it hangs for about a year and bounces sunlight back to space. One volcano, Tambora, did this in 1815, and the next June it snowed in New England. All of them together could do more.
+
+What's the first thing you'd stock up on before a year without summer?
+
+Scope: Fictional premise: all of Earth’s roughly 1,350 potentially active volcanoes (USGS count) begin an eruption at the same moment, each one typical of what that volcano does. The city, its volcano and the people are illustrative, as are local HUD readings such as lava and ash-flow speeds, ash depth and air temperatures. About 800 million people live within 100 km of an active volcano (Brown et al. 2015). Ash falls out within hours to days; only large explosive eruptions put sulfur into the stratosphere, where sulfate droplets spread worldwide within weeks, last about a year and reflect sunlight. Tambora (1815, about 55 Mt of SO2) led to snow in New England in June 1816. How much sulfur all eruptions together would inject is uncertain (from about one Pinatubo to several Tamboras), so the cooling, failed summers and harvest losses are possibilities, not predictions; cooling would be global but uneven.
+
+Sources:
+- USGS FAQ: How many active volcanoes are there on Earth?: https://www.usgs.gov/faqs/how-many-active-volcanoes-are-there-earth
+- Brown et al. (2015), Global Volcanic Hazards and Risk (USGS publication record): https://pubs.usgs.gov/publication/70148718
+- USGS: Lava flows, domes and dome collapses: https://www.usgs.gov/volcanoes/long-valley-caldera/lava-flows-domes-and-dome-collapses
+- USGS Volcano Hazards Program: Pyroclastic flows move fast and destroy everything in their path: https://www.usgs.gov/programs/vhp/pyroclastic-flows-move-fast-and-destroy-everything-their-path
+- NOAA Global Monitoring Laboratory: Volcanoes and climate change: https://gml.noaa.gov/outreach/info_activities/pdfs/PSA_volcanoes_and_climate_change.pdf
+- NASA Earth Observatory: Global Effects of Mount Pinatubo: https://earthobservatory.nasa.gov/images/1510
+- Self et al. (2004), Magma volume, volatile emissions, and stratospheric aerosols from the 1815 eruption of Tambora: https://rex.libraries.wsu.edu/esploro/outputs/journalArticle/Magma-volume-volatile-emissions-and-stratospheric/99900548073901842
+- Raible et al. (2016), Tambora 1815 as a test case for high impact volcanic eruptions: Earth system effects: https://boris.unibe.ch/83823/
+- Toohey & Sigl (2017), Volcanic stratospheric sulfur injections 500 BCE to 1900 CE: https://essd.copernicus.org/articles/9/809/2017/
+
+Visuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.
+
+#Shorts #WhatIf #Volcano #EarthScience #VolcanicWinter #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if every volcano erupted at once, all volcanoes erupting at the same time, volcanic winter, year without a summer, tambora 1815, pyroclastic flow vs lava, volcanic sulfur cooling, earth science what if, physics thought experiment, volcano simulation, threejs 3d documentary
+```
+
+**Target search keywords:** what if every volcano erupted at once, all volcanoes erupting at the same time, volcanic winter, year without a summer, tambora 1815, pyroclastic flow vs lava
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+You could sweep the ash off your street in days. The haze 20 km above you would stay for a year. If every active volcano erupted at once, the lava would stay near the mountains, but the cold would reach everyone.
+
+What's the first thing you'd stock up on before a year without summer?
+
+Fictional premise; the sulfur total and the cooling are uncertain.
+
+#WhatIf #ScienceReels #Volcano #EarthScience #VolcanicWinter #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:** what if every volcano erupted at once, all volcanoes erupting at the same time, volcanic winter, year without a summer, tambora 1815, pyroclastic flow vs lava
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if every active volcano on Earth erupted at once? The real danger is the cold
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Every active volcano erupts at once. Lava is slow, ash avalanches are deadly near the mountains, and the ash settles within days. The sulfur from the biggest blasts dims the sun for a year, as Tambora did in 1816, the year it snowed in June.
+
+What's the first thing you'd stock up on before a year without summer?
+
+Fictional premise: all of Earth’s roughly 1,350 potentially active volcanoes (USGS count) begin an eruption at the same moment, each one typical of what that volcano does. The city, its volcano and the people are illustrative, as are local HUD readings such as lava and ash-flow speeds, ash depth and air temperatures. About 800 million people live within 100 km of an active volcano (Brown et al. 2015). Ash falls out within hours to days; only large explosive eruptions put sulfur into the stratosphere, where sulfate droplets spread worldwide within weeks, last about a year and reflect sunlight. Tambora (1815, about 55 Mt of SO2) led to snow in New England in June 1816. How much sulfur all eruptions together would inject is uncertain (from about one Pinatubo to several Tamboras), so the cooling, failed summers and harvest losses are possibilities, not predictions; cooling would be global but uneven.
+
+Sources:
+- USGS FAQ: How many active volcanoes are there on Earth?: https://www.usgs.gov/faqs/how-many-active-volcanoes-are-there-earth
+- Brown et al. (2015), Global Volcanic Hazards and Risk (USGS publication record): https://pubs.usgs.gov/publication/70148718
+- USGS: Lava flows, domes and dome collapses: https://www.usgs.gov/volcanoes/long-valley-caldera/lava-flows-domes-and-dome-collapses
+- USGS Volcano Hazards Program: Pyroclastic flows move fast and destroy everything in their path: https://www.usgs.gov/programs/vhp/pyroclastic-flows-move-fast-and-destroy-everything-their-path
+- NOAA Global Monitoring Laboratory: Volcanoes and climate change: https://gml.noaa.gov/outreach/info_activities/pdfs/PSA_volcanoes_and_climate_change.pdf
+- NASA Earth Observatory: Global Effects of Mount Pinatubo: https://earthobservatory.nasa.gov/images/1510
+- Self et al. (2004), Magma volume, volatile emissions, and stratospheric aerosols from the 1815 eruption of Tambora: https://rex.libraries.wsu.edu/esploro/outputs/journalArticle/Magma-volume-volatile-emissions-and-stratospheric/99900548073901842
+- Raible et al. (2016), Tambora 1815 as a test case for high impact volcanic eruptions: Earth system effects: https://boris.unibe.ch/83823/
+- Toohey & Sigl (2017), Volcanic stratospheric sulfur injections 500 BCE to 1900 CE: https://essd.copernicus.org/articles/9/809/2017/
+
+#WhatIf #Science #Volcano #EarthScience #ScienceSimulation
+```
+
+**Target search keywords:** what if every volcano erupted at once, all volcanoes erupting at the same time, volcanic winter, year without a summer, tambora 1815, pyroclastic flow vs lava
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+The volcano down your street just erupted, and so did every other one on Earth. You can walk away from the lava, and the ash is gone in days, but the sulfur dims the sun for a year. In 1816 one volcano was enough to bring June snow.
+
+What's the first thing you'd stock up on before a year without summer?
+
+A 3D thought experiment; cooling and harvest effects are uncertain estimates.
+
+#WhatIf #ScienceTok #Volcano #EarthScience #VolcanicWinter #ScienceSimulation
+```
+
+**Target search keywords:** what if every volcano erupted at once, all volcanoes erupting at the same time, volcanic winter, year without a summer, tambora 1815, pyroclastic flow vs lava
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+The volcano down your street just erupted, and so did every other one. The ash is gone in days, but the sulfur dims the sun for a year. What's the first thing you'd stock up on before a year without summer?
+
+#WhatIf #Volcano #EarthScience #Science #ScienceSimulation
+```
+
+**Target search keywords:** what if every volcano erupted at once, all volcanoes erupting at the same time, volcanic winter
+
+**Published URL:** Not published
+
 
 ---
 

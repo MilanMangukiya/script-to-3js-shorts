@@ -42,6 +42,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -49,6 +50,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code; textures NASA public domain (see earth-textures-nasa-v1)",
@@ -86,6 +88,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "public_domain_nasa",
@@ -128,6 +131,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -260,6 +264,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -561,6 +566,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -570,6 +576,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -650,6 +657,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -659,6 +667,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -706,6 +715,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -715,6 +725,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -747,6 +758,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -756,6 +768,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -795,6 +808,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -804,6 +818,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -844,6 +859,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -853,6 +869,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -886,6 +903,7 @@
         "earth-core-solid",
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
@@ -920,6 +938,7 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -929,6 +948,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "SIL Open Font License 1.1",
@@ -1080,6 +1100,7 @@
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
         "air-pressure-doubled",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "rain-nonstop-everywhere"
       ],
@@ -1485,6 +1506,7 @@
         "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
+        "every-volcano-erupts-at-once",
         "moon-made-of-ice",
         "rain-nonstop-everywhere",
         "what-if-every-man-disappeared"
@@ -1983,13 +2005,15 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
-        "sky-disappeared"
+        "sky-disappeared",
+        "sun-locked-earth"
       ],
       "license": "original_procedural",
       "notes": "composeBoldThumbnail (default) and drawThumbnailTitle (style \"clean\") in the same module. src/entry.ts renderThumbnail() feeds the storyboard thumbnail block (badge_at -> badgeAt) over FilmPipeline.renderFrame(i, { overlay: false, captions: false }); tools/render.mjs writes output/<slug>.jpg after --final, or alone with --thumbnail. Long sticker text shrinks to about 64% of the width. Bold style needs Inter 900 / 900 italic (font-inter-v1). Style varies per video: font from THUMB_FONTS (font-display-set-v1), colour grade from THUMB_GRADES, palette colours and tilt."
@@ -2018,13 +2042,15 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
-        "sky-disappeared"
+        "sky-disappeared",
+        "sun-locked-earth"
       ],
       "license": "SIL Open Font License 1.1",
       "notes": "Copied unmodified from the @fontsource/* 5.3.0 npm packages (Playfair Display has a Reserved Font Name, so keep it unmodified). Loaded by src/entry.ts; metrics (tracking, line height, outline) live in THUMB_FONTS in src/library/overlay/Thumbnail.ts."
@@ -2063,11 +2089,13 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "last-man-alive",
         "last-woman-alive",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2323,6 +2351,7 @@
         "last-man-alive",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2440,6 +2469,7 @@
         "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
+        "every-volcano-erupts-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2574,10 +2604,12 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
         "last-man-alive",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2687,7 +2719,8 @@
       "type": "three_component",
       "created_for": "continents-one-landmass",
       "used_in": [
-        "continents-one-landmass"
+        "continents-one-landmass",
+        "every-volcano-erupts-at-once"
       ],
       "license": "original_procedural",
       "source_path": "src/library/environment/VillageHouses.ts",
@@ -2906,7 +2939,8 @@
       "type": "three_component",
       "created_for": "earth-core-solid",
       "used_in": [
-        "earth-core-solid"
+        "earth-core-solid",
+        "every-volcano-erupts-at-once"
       ],
       "license": "original_procedural",
       "source_path": "src/library/environment/Volcano.ts",
@@ -2938,6 +2972,7 @@
         "ejecta",
         "puffs",
         "channels [angle, length]",
+        "groundRelief",
         "eruption",
         "lavaGlow",
         "heightAt(x, z)",
@@ -3418,9 +3453,11 @@
       "used_in": [
         "earth-1000f-five-seconds",
         "earth-without-tilt",
+        "every-volcano-erupts-at-once",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
-        "sky-disappeared"
+        "sky-disappeared",
+        "sun-locked-earth"
       ],
       "license": "original_code",
       "notes": "Requires the existing Humanoid shoe dimensions, uniform rig scale and unrotated stage parent. Straight-path stance centers stay fixed; opt-in compensation levels the existing shoe mesh and foot anchor around the ankle. These owned transforms reset on every helper call. No full-body dynamics or curved-path foot locking. Stage owns intent, targets and all pose resets; call hand reachArm after posing."
@@ -3461,11 +3498,58 @@
       "used_in": [
         "earth-1000f-five-seconds",
         "earth-without-tilt",
+        "every-volcano-erupts-at-once",
         "ozone-layer-gone-overnight",
-        "sky-disappeared"
+        "sky-disappeared",
+        "sun-locked-earth"
       ],
       "license": "original_code",
       "notes": "apply() sets the full lighting state every frame from its arguments; environment bakes are cached by quantised sky/ground/sun-direction keys (oldest disposed), so frames are identical after any seek order. Environment provides both sky fill and ground bounce without occlusion: shaded upward-facing ground goes black when skyAmount is 0, vertical surfaces keep some bounce. The disc billboard sits at discDistance; keep it inside the camera far plane. Low suns produce strong grazing specular glare on rough ground: lower exposure or raise roughness rather than adding light."
+    },
+    {
+      "id": "eruption-column-v1",
+      "name": "Eruption column, umbrella cloud and pyroclastic flow",
+      "type": "three_component",
+      "source_path": "src/library/fx/AshCloud.ts",
+      "description": "Sunlit volcanic ash drawn as instanced camera-facing puffs whose centres, sizes and opacity are evaluated on the CPU from absolute time, sorted back-to-front and shaded as soft lit spheres (wrap diffuse from the sun direction, sky ambient, incandescent glow, distance haze). EruptionColumn: a Plinian column rising from a vent to its neutral-buoyancy height with entrainment widening and wind drift, spreading into an umbrella cloud of a given radius. PyroclasticFlow: a ground-hugging avalanche whose front advances along a terrain path, billowing and lifting off behind the front.",
+      "tags": [
+        "volcano",
+        "eruption",
+        "ash",
+        "plume",
+        "pyroclastic flow",
+        "smoke",
+        "particles"
+      ],
+      "configurable_parameters": [
+        "vent",
+        "top",
+        "neutral",
+        "ventRadius",
+        "spread",
+        "puffScale",
+        "wind",
+        "columnPuffs",
+        "umbrellaPuffs",
+        "seed",
+        "EruptionColumn.update(time_s,camera,{amount,height,umbrella,glow})",
+        "PyroclasticFlow({path,puffs,width,liftOff})",
+        "PyroclasticFlow.update(time_s,camera,{front,amount,glow})",
+        "pointAt(s)",
+        "ashColor",
+        "ambient",
+        "sunColor",
+        "glowColor",
+        "hazeColor",
+        "hazeDensity",
+        "AshPuffs.setLook({sun,sunColor,ambient,ash,haze,hazeDensity,light})"
+      ],
+      "created_for": "every-volcano-erupts-at-once",
+      "used_in": [
+        "every-volcano-erupts-at-once"
+      ],
+      "license": "original_code",
+      "notes": "Pass the stage camera to update() every frame: puffs are depth-sorted for it. Puffs are large soft billboards, so give distant columns a lighter hazeDensity than the scene fog to keep them dark and readable. Column motion is real-speed (about 95 s to climb), so a short shot shows billowing rather than visible rise."
     }
   ]
 }

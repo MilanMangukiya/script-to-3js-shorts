@@ -1,0 +1,1684 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if every active volcano on Earth erupted at once?",
+    "title": "What if every active volcano on Earth erupted at once?",
+    "slug": "every-volcano-erupts-at-once",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 54,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If every active volcano erupted at the same moment, is the danger the lava and ash near the mountains, or something that reaches everyone?",
+    "viewer_takeaway": "Lava and ash are deadly but local; the sulfur that the biggest eruptions lift into the stratosphere dims the sun for about a year, cooling summers and threatening harvests far from any volcano, as Tambora did in 1816."
+  },
+  "scientific_model": {
+    "baseline_reality": "About 1,350 volcanoes are potentially active; roughly 50-70 erupt in a typical year, most of them small. Only a few large explosive eruptions per century lift enough sulfur into the stratosphere to cool the climate.",
+    "counterfactual_change": "Every potentially active volcano starts an eruption at the same moment, each one typical of what that volcano does. Weather, oceans and people are otherwise unchanged. The film follows one city 15.7 km from a stratovolcano, then the planet over the following year.",
+    "assumptions": [
+      "Each volcano produces an eruption typical for itself: most small, a minority large and explosive.",
+      "Only large explosive eruptions reach the stratosphere (about 15-25 km).",
+      "The street, the city and its volcano are illustrative; distances are typical of cities near volcanoes.",
+      "Local readings on the HUD (time, lava and ash-flow speeds, ash depth, air temperatures) are illustrative values for the scenes shown."
+    ],
+    "causal_chain": [
+      "All active volcanoes erupt at once.",
+      "Near the mountains, lava is usually slow but pyroclastic flows and ashfall are deadly; about 800 million people live within 100 km of an active volcano.",
+      "Ash falls out of the air within hours to days.",
+      "Sulfur dioxide from the largest blasts reaches the stratosphere, becomes sulfate droplets, spreads around the globe in weeks and stays for about a year.",
+      "The droplets reflect sunlight, cooling the surface; Tambora (1815) caused the 1816 Year Without a Summer.",
+      "All eruptions together could inject more than Tambora, so northern summers and harvests could fail, and cooling is felt worldwide."
+    ],
+    "uncertainties": [
+      "How much sulfur all eruptions together would inject depends on how many large explosive eruptions occur: anywhere from about one Pinatubo to several Tamboras.",
+      "Cooling is uneven: strongest over northern continents in summer, weaker in the tropics and southern oceans.",
+      "Food-system outcomes depend on stocks, trade and adaptation."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "There are about 1,350 potentially active volcanoes on Earth (excluding mid-ocean ridges); the scenario has all of them erupt at once.",
+        "confidence": "established",
+        "reasoning": "USGS count; the simultaneity is the stipulated premise.",
+        "presentation_guardrail": "The HUD count is the premise, not a forecast."
+      },
+      {
+        "id": "CL02",
+        "statement": "About 800 million people live within 100 km of an active volcano.",
+        "confidence": "established",
+        "reasoning": "Brown et al. (2015), Global Volcanic Hazards and Risk.",
+        "presentation_guardrail": "Within 100 km does not mean every person is hit by ash flows."
+      },
+      {
+        "id": "CL03",
+        "statement": "Most lava flows advance slowly enough for people to walk away, while pyroclastic flows move at roughly 80 to over 400 km/h and can outrun vehicles.",
+        "confidence": "established",
+        "reasoning": "USGS Volcano Hazards Program descriptions of lava flows and pyroclastic flows.",
+        "presentation_guardrail": "Some fluid lava flows are fast; \"most\" stays in the line."
+      },
+      {
+        "id": "CL04",
+        "statement": "Volcanic ash falls out of the atmosphere within hours to days, mostly near the volcano.",
+        "confidence": "established",
+        "reasoning": "Ash particles are heavy; NOAA notes the gas, not the ash, drives global effects.",
+        "presentation_guardrail": "Fine ash can drift far and disrupt aviation for days."
+      },
+      {
+        "id": "CL05",
+        "statement": "Large explosive eruptions inject sulfur dioxide into the stratosphere, where it forms sulfate droplets that spread around the globe within weeks, persist for about a year or two and reflect sunlight, cooling the surface (Pinatubo 1991: about 15-20 Mt SO2, about 0.5-0.6 °C).",
+        "confidence": "established",
+        "reasoning": "NASA Earth Observatory and NOAA summaries of Pinatubo and volcanic aerosols.",
+        "presentation_guardrail": "Only the biggest blasts reach the stratosphere."
+      },
+      {
+        "id": "CL06",
+        "statement": "Tambora (April 1815) released about 53-58 Mt of SO2; 1816 became the Year Without a Summer, with snow in New England in June 1816 and widespread crop failures.",
+        "confidence": "established",
+        "reasoning": "Self et al. (2004); historical records summarised by Raible et al. (2016).",
+        "presentation_guardrail": "Global cooling about 0.4-0.8 °C; regional summer cooling larger."
+      },
+      {
+        "id": "CL07",
+        "statement": "If every active volcano erupted at once, the large explosive eruptions among them could together inject more stratospheric sulfur than Tambora.",
+        "confidence": "speculative",
+        "reasoning": "Long-dormant volcanoes tend to produce larger eruptions; if even a few of the ~1,350 produced Pinatubo-sized eruptions (15-20 Mt each) the total would pass Tambora. A purely typical-year mix would give about one Pinatubo.",
+        "presentation_guardrail": "Always \"could\"."
+      },
+      {
+        "id": "CL08",
+        "statement": "Cooling of that size could bring summer frosts and failed harvests across northern mid-latitudes, as in 1816.",
+        "confidence": "plausible",
+        "reasoning": "1816 analogue; modelled Tambora-scale responses.",
+        "presentation_guardrail": "Food outcomes depend on stocks and trade."
+      },
+      {
+        "id": "CL09",
+        "statement": "The cooling would be global but uneven: lava and ash stay regional, the temperature drop reaches every continent.",
+        "confidence": "plausible",
+        "reasoning": "Stratospheric aerosol spreads globally; tropical and ocean regions cool less.",
+        "presentation_guardrail": "\"The cold reaches everyone\" means a measurable global drop, not winter everywhere."
+      }
+    ],
+    "sources": [
+      {
+        "name": "USGS FAQ: How many active volcanoes are there on Earth?",
+        "url": "https://www.usgs.gov/faqs/how-many-active-volcanoes-are-there-earth",
+        "supports_claim_ids": [
+          "CL01"
+        ]
+      },
+      {
+        "name": "Brown et al. (2015), Global Volcanic Hazards and Risk (USGS publication record)",
+        "url": "https://pubs.usgs.gov/publication/70148718",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "USGS: Lava flows, domes and dome collapses",
+        "url": "https://www.usgs.gov/volcanoes/long-valley-caldera/lava-flows-domes-and-dome-collapses",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "USGS Volcano Hazards Program: Pyroclastic flows move fast and destroy everything in their path",
+        "url": "https://www.usgs.gov/programs/vhp/pyroclastic-flows-move-fast-and-destroy-everything-their-path",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "NOAA Global Monitoring Laboratory: Volcanoes and climate change",
+        "url": "https://gml.noaa.gov/outreach/info_activities/pdfs/PSA_volcanoes_and_climate_change.pdf",
+        "supports_claim_ids": [
+          "CL04",
+          "CL05"
+        ]
+      },
+      {
+        "name": "NASA Earth Observatory: Global Effects of Mount Pinatubo",
+        "url": "https://earthobservatory.nasa.gov/images/1510",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      },
+      {
+        "name": "Self et al. (2004), Magma volume, volatile emissions, and stratospheric aerosols from the 1815 eruption of Tambora",
+        "url": "https://rex.libraries.wsu.edu/esploro/outputs/journalArticle/Magma-volume-volatile-emissions-and-stratospheric/99900548073901842",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      },
+      {
+        "name": "Raible et al. (2016), Tambora 1815 as a test case for high impact volcanic eruptions: Earth system effects",
+        "url": "https://boris.unibe.ch/83823/",
+        "supports_claim_ids": [
+          "CL06",
+          "CL08"
+        ]
+      },
+      {
+        "name": "Toohey & Sigl (2017), Volcanic stratospheric sulfur injections 500 BCE to 1900 CE",
+        "url": "https://essd.copernicus.org/articles/9/809/2017/",
+        "supports_claim_ids": [
+          "CL07",
+          "CL09"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "The volcano down your street erupts along with every other one on Earth; the ash ends in days, but the sulfur dims the sun and the cold spreads to everyone.",
+    "visual_identity": "Grounded eye-level street views of a towering ash column, a hot flank road, a daytime-dark ash fall, then a pale milky sun; orbit shots of glowing volcanic belts and a spreading white veil; snow and frost on June farms.",
+    "palette": [
+      "#3B3533",
+      "#FF6A1F",
+      "#8C8F94",
+      "#D9DEE4",
+      "#2E4A6B",
+      "#E8EEF2"
+    ],
+    "lighting": "Low morning sun on the column; daytime darkness under ash with street lamps; milky high haze with a whitish sun; overcast snow light; hazy orange dawn.",
+    "camera_language": "Handheld eye-level street and road views (1.5-1.6 m) with an impulse at the blast wave; slow orbits for the planet; a tilt from your broom to the dim sun.",
+    "motion_language": "Real-speed physics: a slowly rising column, creeping lava, a fast ash flow, steady ash fall, a veil spreading over weeks in time-lapse.",
+    "world_scale_policy": "Metre scale on the ground with the volcano at true size and distance; Earth radius 1 for orbit shots with eruption points and the veil exaggerated for legibility.",
+    "emotional_arc": [
+      "Shock",
+      "Scale",
+      "Fear",
+      "Recognition",
+      "Relief undercut",
+      "Understanding",
+      "Precedent",
+      "Dread",
+      "Quiet payoff"
+    ],
+    "opening_hook": "The mountain down your street just exploded. It's not the only one.",
+    "mid_video_rehook": "When the ash is swept away the danger seems over, but the sun stays dim: sulfur from the biggest blasts hangs 20 km up for a year, bouncing sunlight back to space.",
+    "ending_payoff": "The lava and ash stay near the mountains; the cold reaches everyone.",
+    "loop_connection": "The last shot returns to the opening view down your street, now under a pale sun with the volcano quiet.",
+    "asset_policy": "Reuse the street, volcano, globe, humanoids, grass, trees, houses and snow; add a reusable eruption-column-v1 (Plinian column, umbrella cloud and pyroclastic flow)."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Original score: low drones and distant thunder for the eruption, a cold airy pad for the haze, sparse piano and a resolving chord for the ending.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "0.3 s silence then the blast wave with rattling windows; crackling lava crust; roaring ash flow and a passing car; ash hiss on umbrellas; broom on ash; muffled snow; frost crunch.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.95,
+      "narration": {
+        "text": "The mountain down your street just exploded. It's not the only one.",
+        "start_s": 0.04,
+        "end_s": 4.8,
+        "delivery_note": "Matter-of-fact shock; land \"exploded\", then a quiet turn on \"not the only one\".",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "What just happened?",
+      "visual_payoff": "An ash column towers over the end of your street; the blast wave rattles the street.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.95,
+          "shot_type": "eye-level POV down the street at the erupting volcano",
+          "world": "1 unit = 1 m. A city street (city-street-block-v1) whose far end looks across open country to a 2.9 km stratovolcano 15.7 km away (volcano-v1, eruption-column-v1); sun-skylight-rig-v1 sky and haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  -9,
+                  1.62,
+                  18
+                ],
+                "look_at": [
+                  39.18,
+                  55.59,
+                  -292.36
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 4.95,
+                "position": [
+                  -9,
+                  1.62,
+                  17.2
+                ],
+                "look_at": [
+                  39.18,
+                  55.59,
+                  -293.14
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "A slow step forward as you stop to stare.",
+            "lens_notes": "Street in the lower third; the volcano at the end of the street with a 6-7 km ash column and lightning filling the upper frame.",
+            "handheld_sway": 0.4,
+            "impulse_shake": {
+              "at_s": 2.45,
+              "duration_s": 0.7,
+              "intensity": 0.45
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "07:42",
+            "metric_label": "ERUPTING",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "volcano",
+              "kind": "terrain",
+              "asset_hint": "volcano-v1",
+              "appearance": "Dark stratovolcano with glowing lava channels.",
+              "geometry_and_material": "Noise-carved basalt cone, emissive lava flows.",
+              "scale_and_accuracy": "2.9 km high, 9.5 km base radius, 15.7 km from the street.",
+              "movement": "Lava fountains in the crater; channels glowing."
+            },
+            {
+              "id": "column",
+              "kind": "particle_system",
+              "asset_hint": "eruption-column-v1",
+              "appearance": "Grey-brown Plinian ash column, sunlit on one side, glowing at the vent.",
+              "geometry_and_material": "Depth-sorted lit ash puffs; umbrella cloud at the neutral-buoyancy height.",
+              "scale_and_accuracy": "Column top up to 20 km; umbrella radius grows to tens of km.",
+              "movement": "Rising steadily; lightning flickers; the pressure wave reaches the street at 2.45s."
+            },
+            {
+              "id": "people",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Neighbours on the sidewalk.",
+              "geometry_and_material": "Humanoid rigs walking, stopping and turning.",
+              "scale_and_accuracy": "1.6-1.85 m adults.",
+              "movement": "Neighbours stop, look back at the mountain, then hurry toward the camera."
+            }
+          ],
+          "animation_plan": [
+            "0-2.45s column rising; 2.45s the blast wave arrives: windows rattle, camera shake; people turn and walk away from the mountain."
+          ],
+          "lighting": "Low morning sun from behind the camera lights the column.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "just exploded",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "not the only one",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 2.15,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Street sound drops out before the blast wave.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 2.45,
+          "duration_s": 1.4,
+          "kind": "impact",
+          "description": "Deep blast wave and rattling windows.",
+          "relative_db": -8
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut to orbit."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.95,
+      "end_s": 9.1,
+      "narration": {
+        "text": "Every volcano that could erupt did, all around the planet.",
+        "start_s": 5.07,
+        "end_s": 8.95,
+        "delivery_note": "Even and wide; stress \"Every volcano\".",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "How many?",
+      "visual_payoff": "Eruptions glow along every volcanic belt at once.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.95,
+          "end_s": 9.1,
+          "shot_type": "Earth from orbit: eruptions along every volcanic belt at once",
+          "world": "Earth radius = 1 unit (earth-globe-v1). About 1,350 eruption sites along the main volcanic belts; a stratospheric sulfate veil shell drawn at radius 1.006.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 4.95,
+                "position": [
+                  0,
+                  0.35,
+                  3.3
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 9.1,
+                "position": [
+                  0.25,
+                  0.42,
+                  3.05
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push in over the western Pacific.",
+            "lens_notes": "The Ring of Fire from Japan to Indonesia lit with eruption points; HUD shows 1,350.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "07:42",
+            "metric_label": "ERUPTING",
+            "start_value": 1350,
+            "end_value": 1350,
+            "unit": "",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "Daylit Earth from orbit with eruption points glowing along the volcanic belts.",
+              "geometry_and_material": "NASA day/night maps, clouds, atmosphere rim; additive eruption sprites and small ash puffs.",
+              "scale_and_accuracy": "Points enlarged to read at phone size.",
+              "movement": "All sites erupt at the same moment; small ash plumes grow over each."
+            }
+          ],
+          "animation_plan": [
+            "4.95s all eruption points already lit (simultaneous by premise); plumes grow slowly."
+          ],
+          "lighting": "Sun from the right; night side shows city lights.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Every volcano",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.95,
+          "duration_s": 4,
+          "kind": "texture",
+          "description": "Low global rumble.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut down to a volcano flank."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 9.1,
+      "end_s": 15.2,
+      "narration": {
+        "text": "You can walk away from most lava. Avalanches of hot ash can outrun a car.",
+        "start_s": 9.22,
+        "end_s": 15.05,
+        "delivery_note": "Calm first sentence, faster second; land \"outrun a car\".",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Which part kills?",
+      "visual_payoff": "Slow lava you can walk away from; an ash avalanche racing toward a road.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 9.1,
+          "end_s": 11.5,
+          "shot_type": "a lava front creeping onto the flank road",
+          "world": "1 unit = 1 m. A contour road on the volcano flank 6.2 km from the summit, about 430 m above the plain; lava channels and an ash-flow gully above the road.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 9.1,
+                "position": [
+                  1302.95,
+                  470.62,
+                  -9365.32
+                ],
+                "look_at": [
+                  1293.01,
+                  471.95,
+                  -9372.19
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 11.5,
+                "position": [
+                  1301.97,
+                  470.68,
+                  -9365.49
+                ],
+                "look_at": [
+                  1293.01,
+                  471.95,
+                  -9372.19
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Backs away at walking pace.",
+            "lens_notes": "Eye level on the road: the crusted lava lobe oozing onto the asphalt, a man walking calmly away from it toward the lens.",
+            "handheld_sway": 0.35
+          },
+          "hud_telemetry": {
+            "timer_label": "07:51",
+            "metric_label": "LAVA FRONT",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "km/h",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "lava",
+              "kind": "other",
+              "appearance": "Crusted lava lobe with glowing cracks.",
+              "geometry_and_material": "Displaced mesh with emissive crack shader.",
+              "scale_and_accuracy": "Front 1 m high, advancing about 0.3 m/s.",
+              "movement": "Creeps down-slope onto the road."
+            },
+            {
+              "id": "people",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Neighbours on the sidewalk.",
+              "geometry_and_material": "Humanoid rigs walking, stopping and turning.",
+              "scale_and_accuracy": "1.6-1.85 m adults.",
+              "movement": "A man walks away from the lava at an easy pace."
+            }
+          ],
+          "animation_plan": [
+            "9.1-11.5s lava front advances ~1 m; walker gains easily."
+          ],
+          "lighting": "Morning sun; lava glow on the asphalt.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 11.5,
+          "end_s": 15.2,
+          "shot_type": "an ash avalanche racing down a gully above a fleeing car",
+          "world": "1 unit = 1 m. A contour road on the volcano flank 6.2 km from the summit, about 430 m above the plain; lava channels and an ash-flow gully above the road.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 11.5,
+                "position": [
+                  2090.14,
+                  414.57,
+                  -9207.62
+                ],
+                "look_at": [
+                  1132.53,
+                  1414.92,
+                  -11391.04
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 15.2,
+                "position": [
+                  2115.77,
+                  415.59,
+                  -9216.43
+                ],
+                "look_at": [
+                  1132.53,
+                  1414.92,
+                  -11391.04
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld, below the road.",
+            "lens_notes": "The billowing pyroclastic flow pours down the gully toward the road while a car speeds along the road past the lens.",
+            "handheld_sway": 0.4
+          },
+          "hud_telemetry": {
+            "timer_label": "07:51",
+            "metric_label": "ASH FLOW",
+            "start_value": 150,
+            "end_value": 150,
+            "unit": "km/h",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "flow",
+              "kind": "particle_system",
+              "asset_hint": "eruption-column-v1",
+              "appearance": "Grey-brown avalanche of hot ash, billowing upward behind its front.",
+              "geometry_and_material": "PyroclasticFlow lit puffs along a terrain path.",
+              "scale_and_accuracy": "Front speed 42 m/s (150 km/h).",
+              "movement": "Front advances down the gully; cloud lifts off behind it."
+            },
+            {
+              "id": "car",
+              "kind": "other",
+              "appearance": "A small hatchback.",
+              "geometry_and_material": "Story car rig.",
+              "scale_and_accuracy": "4.2 m, 20 m/s.",
+              "movement": "Speeds along the road past the camera."
+            }
+          ],
+          "animation_plan": [
+            "11.5-15.2s the flow front advances ~150 m; the car passes the camera."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "walk away",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "outrun a car",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 9.1,
+          "duration_s": 2.5,
+          "kind": "texture",
+          "description": "Lava crust crackling and tinkling.",
+          "relative_db": -20
+        },
+        {
+          "at_s": 11.5,
+          "duration_s": 3,
+          "kind": "whoosh",
+          "description": "Roar of the ash flow; car engine passing.",
+          "relative_db": -12
+        }
+      ],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to your street."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "escalation",
+      "start_s": 15.2,
+      "end_s": 19.4,
+      "narration": {
+        "text": "You're one of 800 million people living near a volcano.",
+        "start_s": 15.32,
+        "end_s": 19.25,
+        "delivery_note": "Personal; \"You're one of\" lands close.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Does this reach you?",
+      "visual_payoff": "Ash falls on your street in daytime darkness; you walk through it.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 15.2,
+          "end_s": 19.4,
+          "shot_type": "your street under falling ash",
+          "world": "1 unit = 1 m. A city street (city-street-block-v1) whose far end looks across open country to a 2.9 km stratovolcano 15.7 km away (volcano-v1, eruption-column-v1); sun-skylight-rig-v1 sky and haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 15.2,
+                "position": [
+                  -8.6,
+                  1.6,
+                  9
+                ],
+                "look_at": [
+                  -7.4,
+                  1.45,
+                  -12
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 19.4,
+                "position": [
+                  -8.6,
+                  1.6,
+                  8.4
+                ],
+                "look_at": [
+                  -7.4,
+                  1.45,
+                  -12
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld hold.",
+            "lens_notes": "You walk toward the lens under an umbrella through falling ash; headlights and street lamps on at 8 a.m.",
+            "handheld_sway": 0.35
+          },
+          "hud_telemetry": {
+            "timer_label": "08:20",
+            "metric_label": "LIVE NEAR A VOLCANO",
+            "start_value": 800,
+            "end_value": 800,
+            "unit": "MILLION",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You: dark green jacket, jeans.",
+              "geometry_and_material": "Registered Humanoid rig with grounded poses (character-motion-v1).",
+              "scale_and_accuracy": "1.74 m adult.",
+              "movement": "Walks toward the camera with an umbrella and a scarf over your mouth."
+            },
+            {
+              "id": "street",
+              "kind": "terrain",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Mid-rise street running toward the volcano.",
+              "geometry_and_material": "Procedural masonry facades, paving, parked cars.",
+              "scale_and_accuracy": "14 m road, 5 m sidewalks, 5-8 storeys.",
+              "movement": "Grey ash settling on cars and paving; lights on."
+            }
+          ],
+          "animation_plan": [
+            "15.2-19.4s ash falls steadily; you approach."
+          ],
+          "lighting": "Daylight blotted out by the umbrella cloud; street lamps and headlights.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "800 million",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 15.2,
+          "duration_s": 4,
+          "kind": "ambience",
+          "description": "Muffled street, ash hissing on umbrellas.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Days later."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "twist",
+      "start_s": 19.4,
+      "end_s": 24.3,
+      "narration": {
+        "text": "Within days, you're sweeping up the ash. But the sun stays dim.",
+        "start_s": 19.52,
+        "end_s": 24.15,
+        "delivery_note": "Plain action, then the turn: \"But the sun stays dim.\"",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "Is it over when the ash is gone?",
+      "visual_payoff": "You sweep ash; the camera finds a pale, dim sun.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 19.4,
+          "end_s": 24.3,
+          "shot_type": "days later: you sweep ash, then the camera tilts up to a dim sun",
+          "world": "1 unit = 1 m. A city street (city-street-block-v1) whose far end looks across open country to a 2.9 km stratovolcano 15.7 km away (volcano-v1, eruption-column-v1); sun-skylight-rig-v1 sky and haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 19.4,
+                "position": [
+                  -6,
+                  1.5,
+                  5.4
+                ],
+                "look_at": [
+                  -8.3,
+                  0.85,
+                  0.3
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 21.9,
+                "position": [
+                  -6,
+                  1.5,
+                  5.3
+                ],
+                "look_at": [
+                  -8.3,
+                  0.95,
+                  0.3
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 23.7,
+                "position": [
+                  -6,
+                  1.5,
+                  5.2
+                ],
+                "look_at": [
+                  -1.2,
+                  20.29,
+                  -29.78
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 24.3,
+                "position": [
+                  -6,
+                  1.5,
+                  5.15
+                ],
+                "look_at": [
+                  -1.2,
+                  20.29,
+                  -29.83
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Hold on you sweeping, then tilt up to the sun on \"But the sun stays dim\".",
+            "lens_notes": "Grey ash on everything; the sun a pale disc in a milky sky.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "DAY 3",
+            "metric_label": "ASH ON GROUND",
+            "start_value": 4,
+            "end_value": 4,
+            "unit": "cm",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You: dark green jacket, jeans.",
+              "geometry_and_material": "Registered Humanoid rig with grounded poses (character-motion-v1).",
+              "scale_and_accuracy": "1.74 m adult.",
+              "movement": "Sweeps ash off the sidewalk with a broom."
+            },
+            {
+              "id": "street",
+              "kind": "terrain",
+              "asset_hint": "city-street-block-v1",
+              "appearance": "Mid-rise street running toward the volcano.",
+              "geometry_and_material": "Procedural masonry facades, paving, parked cars.",
+              "scale_and_accuracy": "14 m road, 5 m sidewalks, 5-8 storeys.",
+              "movement": "Ash-grey cars and paving."
+            }
+          ],
+          "animation_plan": [
+            "19.4-21.9s sweeping; 21.9-24.3s tilt up to the dim sun."
+          ],
+          "lighting": "Milky high haze; dim whitish sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "the sun stays dim",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 19.4,
+          "duration_s": 2,
+          "kind": "texture",
+          "description": "Broom on ash.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Out to the planet."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "mechanism",
+      "start_s": 24.3,
+      "end_s": 31.95,
+      "narration": {
+        "text": "The biggest blasts lifted sulfur twenty kilometers up. It hangs there for a year, bouncing sunlight back to space.",
+        "start_s": 24.42,
+        "end_s": 31.8,
+        "delivery_note": "Clear and spacious; \"bouncing sunlight back to space\" as the image.",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "Why is the sun dim?",
+      "visual_payoff": "A milky sulfate veil spreads around the globe.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 24.3,
+          "end_s": 31.95,
+          "shot_type": "a sulfate haze spreads around the planet over weeks",
+          "world": "Earth radius = 1 unit (earth-globe-v1). About 1,350 eruption sites along the main volcanic belts; a stratospheric sulfate veil shell drawn at radius 1.006.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 24.3,
+                "position": [
+                  -0.9,
+                  0.55,
+                  3
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 31.95,
+                "position": [
+                  0.7,
+                  0.62,
+                  3
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow orbit.",
+            "lens_notes": "Plumes from the biggest eruptions spread into bands, then a milky veil over most of the globe.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "WEEK 1",
+            "metric_label": "HAZE ALTITUDE",
+            "start_value": 20,
+            "end_value": 20,
+            "unit": "km",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "Daylit Earth from orbit with eruption points glowing along the volcanic belts.",
+              "geometry_and_material": "NASA day/night maps, clouds, atmosphere rim; additive eruption sprites and small ash puffs.",
+              "scale_and_accuracy": "Points enlarged to read at phone size.",
+              "movement": "A milky veil grows from the largest eruption sites into zonal bands and then covers most of the planet."
+            }
+          ],
+          "animation_plan": [
+            "24.3-31.95s weeks 1-10: veil coverage grows."
+          ],
+          "lighting": "Sun from the right; the veil brightens the day side.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "twenty kilometers up",
+          "treatment": "gentle_scale"
+        },
+        {
+          "phrase": "bouncing sunlight back",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 24.3,
+          "duration_s": 6,
+          "kind": "music_swell",
+          "description": "High airy pad.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back in time."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "second_order_effect",
+      "start_s": 31.95,
+      "end_s": 39.95,
+      "narration": {
+        "text": "One volcano, Tambora, did this in 1815. A year later, it snowed in New England. In June.",
+        "start_s": 32.07,
+        "end_s": 39.8,
+        "delivery_note": "Story-telling tone; a beat before \"In June.\"",
+        "pacing_energy": "weighty_impact",
+        "performance": {
+          "rate": 1.08
+        }
+      },
+      "viewer_question": "Has this happened before?",
+      "visual_payoff": "Snow falls on a June farm in 1816.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 31.95,
+          "end_s": 39.95,
+          "shot_type": "June 1816: snow on a New England farm",
+          "world": "1 unit = 1 m. A New England farm: clapboard house, barn, fence, young crops, broadleaf trees.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 31.95,
+                "position": [
+                  3,
+                  1.6,
+                  13.5
+                ],
+                "look_at": [
+                  -4,
+                  2.4,
+                  -12
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 39.95,
+                "position": [
+                  2.7,
+                  1.6,
+                  12.7
+                ],
+                "look_at": [
+                  -4,
+                  2.4,
+                  -12
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push.",
+            "lens_notes": "A farmer in period clothes holds out a hand as snow falls on green June crops and leafy trees.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "JUNE 1816",
+            "metric_label": "TAMBORA SO₂",
+            "start_value": 55,
+            "end_value": 55,
+            "unit": "Mt",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "farm",
+              "kind": "terrain",
+              "asset_hint": "village-houses-v1",
+              "appearance": "Farmhouse, barn and fields.",
+              "geometry_and_material": "VillageHouses, box barn, grass-field-v1 crops, broadleaf-tree-v1 trees, snowfall-v1.",
+              "scale_and_accuracy": "Metre scale.",
+              "movement": "Snow settles on leaves, roofs and crops."
+            },
+            {
+              "id": "farmer1816",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Neighbours on the sidewalk.",
+              "geometry_and_material": "Humanoid rigs walking, stopping and turning.",
+              "scale_and_accuracy": "1.6-1.85 m adults.",
+              "movement": "A farmer looks up and holds out a hand."
+            }
+          ],
+          "animation_plan": [
+            "31.95-39.95s snow thickens; the farmer reaches out."
+          ],
+          "lighting": "Grey overcast.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "it snowed",
+          "treatment": "accent_color"
+        },
+        {
+          "phrase": "In June.",
+          "treatment": "gentle_scale"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 31.95,
+          "duration_s": 6,
+          "kind": "ambience",
+          "description": "Muffled snowfall, distant cow.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "To next June."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "escalation",
+      "start_s": 39.95,
+      "end_s": 47.7,
+      "narration": {
+        "text": "All these eruptions together could lift even more sulfur. Northern summers could fail, and the harvest with them.",
+        "start_s": 40.07,
+        "end_s": 47.55,
+        "delivery_note": "Measured; \"could\" stays audible.",
+        "pacing_energy": "weighty_impact",
+        "performance": {
+          "rate": 1
+        }
+      },
+      "viewer_question": "Could it be worse this time?",
+      "visual_payoff": "Frost on a June wheat field at dawn.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 39.95,
+          "end_s": 47.7,
+          "shot_type": "next June: frost on a wheat field at dawn",
+          "world": "1 unit = 1 m. A New England farm: clapboard house, barn, fence, young crops, broadleaf trees.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 39.95,
+                "position": [
+                  9.2,
+                  1.45,
+                  4
+                ],
+                "look_at": [
+                  7.6,
+                  1.5,
+                  -40
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 47.7,
+                "position": [
+                  9,
+                  1.45,
+                  3
+                ],
+                "look_at": [
+                  7.6,
+                  1.5,
+                  -40
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push along the field edge.",
+            "lens_notes": "Frost-white wheat under a dim orange sun; a farmer walks the edge toward the lens.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "NEXT JUNE 05:40",
+            "metric_label": "AIR TEMP",
+            "start_value": -2,
+            "end_value": -2,
+            "unit": "°C",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "wheat",
+              "kind": "vegetation",
+              "asset_hint": "grass-field-v1",
+              "appearance": "Young wheat white with frost.",
+              "geometry_and_material": "GrassField with frost tint.",
+              "scale_and_accuracy": "0.5-0.7 m stalks.",
+              "movement": "Still."
+            },
+            {
+              "id": "farmer",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Neighbours on the sidewalk.",
+              "geometry_and_material": "Humanoid rigs walking, stopping and turning.",
+              "scale_and_accuracy": "1.6-1.85 m adults.",
+              "movement": "A farmer walks the field edge, stops and looks at the crop."
+            }
+          ],
+          "animation_plan": [
+            "39.95-47.7s the farmer approaches and stops."
+          ],
+          "lighting": "Low hazy sunrise.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Northern summers could fail",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 39.95,
+          "duration_s": 6,
+          "kind": "texture",
+          "description": "Frost crunch under boots.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL07",
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to your street."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 47.7,
+      "end_s": 54,
+      "narration": {
+        "text": "The lava stays near the mountains. The cold reaches everyone.",
+        "start_s": 47.82,
+        "end_s": 53.85,
+        "delivery_note": "Two clauses, settle on \"everyone\".",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "So who is affected?",
+      "visual_payoff": "Your street next summer: the volcano quiet, the sun pale, you in a jacket.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 47.7,
+          "end_s": 54,
+          "shot_type": "your street next summer under a dim sun",
+          "world": "1 unit = 1 m. A city street (city-street-block-v1) whose far end looks across open country to a 2.9 km stratovolcano 15.7 km away (volcano-v1, eruption-column-v1); sun-skylight-rig-v1 sky and haze.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 47.7,
+                "position": [
+                  -9,
+                  1.62,
+                  18
+                ],
+                "look_at": [
+                  39.18,
+                  75.59,
+                  -292.36
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 54,
+                "position": [
+                  -9,
+                  1.62,
+                  17.3
+                ],
+                "look_at": [
+                  39.18,
+                  75.59,
+                  -293.05
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow step forward: the same view as the opening.",
+            "lens_notes": "The quiet, ash-grey volcano at the end of the street under a whitish sun; you walk toward the lens in a light jacket.",
+            "handheld_sway": 0.35
+          },
+          "hud_telemetry": {
+            "timer_label": "NEXT JULY 12:00",
+            "metric_label": "AIR TEMP",
+            "start_value": 19,
+            "end_value": 19,
+            "unit": "°C",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "you",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "You: dark green jacket, jeans.",
+              "geometry_and_material": "Registered Humanoid rig with grounded poses (character-motion-v1).",
+              "scale_and_accuracy": "1.74 m adult.",
+              "movement": "Walks toward the camera, glances up at the pale sun."
+            },
+            {
+              "id": "volcano",
+              "kind": "terrain",
+              "asset_hint": "volcano-v1",
+              "appearance": "Dark stratovolcano with glowing lava channels.",
+              "geometry_and_material": "Noise-carved basalt cone, emissive lava flows.",
+              "scale_and_accuracy": "2.9 km high, 9.5 km base radius, 15.7 km from the street.",
+              "movement": "Quiet; a thin steam plume."
+            }
+          ],
+          "animation_plan": [
+            "47.7-54s you walk toward the lens."
+          ],
+          "lighting": "High milky haze, dim whitish sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lava and lightning",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "The cold reaches everyone.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 47.7,
+          "duration_s": 5,
+          "kind": "music_swell",
+          "description": "Low resolving chord.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL08",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Final frame on your street."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json read 2026-10-15.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "Your street, with a short far field so the volcano is visible past the end of the street.",
+        "configuration": "blocks 7, farFieldRadius 240, vehicles on."
+      },
+      {
+        "asset_id": "volcano-v1",
+        "usage": "The stratovolcano and its lava channels and fountains.",
+        "configuration": "height 2900, radius 9500, crater 380."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Orbit shots of eruptions and the sulfate veil.",
+        "configuration": "setView over the western Pacific."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Morning, ash-darkened and hazy skies.",
+        "configuration": "Per-scene sun, haze and sky amount."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "You, neighbours, the lava walker and farmers.",
+        "configuration": "Story Person wrapper."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Grounded walking and standing poses.",
+        "configuration": "applyGroundedPose."
+      },
+      {
+        "asset_id": "grass-field-v1",
+        "usage": "Lawns and crops (frosted wheat).",
+        "configuration": "Colour uniforms per scene."
+      },
+      {
+        "asset_id": "broadleaf-tree-v1",
+        "usage": "Street and farm trees.",
+        "configuration": "Leaf colour with snow tint."
+      },
+      {
+        "asset_id": "village-houses-v1",
+        "usage": "Farmhouse and outbuildings.",
+        "configuration": "White clapboard walls."
+      },
+      {
+        "asset_id": "snowfall-v1",
+        "usage": "June snow in 1816 and falling ash.",
+        "configuration": "Grey colour and slower fall for ash."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Umbrella, broom, car, barn, fence, lava lobe.",
+        "configuration": "box/solid/rod."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Seeded layouts and noise.",
+        "configuration": "rng()."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Handheld eye-level moves and the blast impulse.",
+        "configuration": "handheld_sway 0.3-0.4."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic render and grade.",
+        "configuration": "Per-shot post."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "HUD telemetry.",
+        "configuration": "x 90, y 240."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in captions.",
+        "configuration": "72 px, baseline 1320."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and Foley.",
+        "configuration": "Pads, rumbles, crackle, pre-impact vacuum."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Captions and HUD.",
+        "configuration": "Inter 600/700."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline.",
+        "configuration": "Anton."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover from the eruption frame.",
+        "configuration": "headline, badge 1,350 VOLCANOES, arrow."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "eruption-column-v1",
+        "description": "Plinian eruption column with umbrella cloud and a pyroclastic flow along a terrain path, drawn as depth-sorted sunlit ash puffs.",
+        "reusable_in": "Volcano, asteroid-impact and wildfire-plume stories at street to mountain scale.",
+        "suggested_path": "src/library/fx/AshCloud.ts",
+        "parameters": [
+          "vent",
+          "top",
+          "neutral",
+          "ventRadius",
+          "wind",
+          "amount",
+          "height",
+          "umbrella",
+          "glow",
+          "path",
+          "front",
+          "width",
+          "liftOff",
+          "ashColor",
+          "ambient",
+          "sunColor",
+          "hazeColor",
+          "hazeDensity"
+        ]
+      }
+    ],
+    "shot_specific_assets": [
+      "Lava lobe with glowing cracks",
+      "Eruption-site sprites and sulfate veil shell",
+      "Umbrella and broom props",
+      "Barn and fence"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if every volcano erupted at once, all volcanoes erupt at the same time, year without a summer, volcanic winter",
+    "core_keywords": [
+      "what if every volcano erupted at once",
+      "all volcanoes erupting at the same time",
+      "volcanic winter",
+      "year without a summer",
+      "tambora 1815",
+      "pyroclastic flow vs lava",
+      "earth science what if",
+      "physics thought experiment",
+      "threejs 3d documentary",
+      "volcano simulation"
+    ],
+    "distinctive_angle": "The lava and ash stay near the mountains; the sulfur haze that dims the sun reaches everyone, exactly as Tambora did in 1816.",
+    "comment_bait_question": "What's the first thing you'd stock up on before a year without summer?",
+    "seo_integrity_note": "Fictional simultaneous eruption of all ~1,350 potentially active volcanoes; total sulfur and cooling are uncertain estimates; the city, people and local readings are illustrative."
+  },
+  "delivery": {
+    "video_output": "output/every-volcano-erupts-at-once.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 3.8,
+    "headline": "NO MORE SUMMER?!",
+    "highlight": [
+      "SUMMER"
+    ],
+    "position": "bottom",
+    "badge": "1,350 VOLCANOES",
+    "focus": [
+      0.62,
+      0.36
+    ],
+    "zoom": 1.06,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FB923C",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FB923C"
+    },
+    "grade": "dramatic",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

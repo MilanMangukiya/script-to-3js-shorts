@@ -14,6 +14,8 @@ export interface VolcanoOptions {
   ejecta?: number; puffs?: number;
   /** Lava flows as [angle in radians around the cone (atan2(z, x)), length in metres from the centre]; up to 12. */
   channels?: [number, number][];
+  /** Peak-to-peak relief of the rolling ground around the cone in metres (default 140); 0 gives a flat plain at y = 0 beyond the cone. */
+  groundRelief?: number;
 }
 
 /**
@@ -24,12 +26,12 @@ export interface VolcanoOptions {
 export class Volcano {
   readonly group = new THREE.Group();
   readonly height: number; readonly radius: number; readonly crater: number;
-  private seed: number;
+  private seed: number; private relief: number;
   private rockMat: THREE.ShaderMaterial; private ejectaMat: THREE.ShaderMaterial; private plumeMat: THREE.ShaderMaterial;
 
   constructor(o: VolcanoOptions = {}) {
     const H = (this.height = o.height ?? 1200), R = (this.radius = o.radius ?? 3400), C = (this.crater = o.crater ?? 240), seg = o.segments ?? 320;
-    this.seed = o.seed ?? 7;
+    this.seed = o.seed ?? 7; this.relief = o.groundRelief ?? 140;
     const g = new THREE.PlaneGeometry(R * 3, R * 3, seg, seg).rotateX(-Math.PI / 2), p = g.attributes.position as THREE.BufferAttribute;
     for (let i = 0; i < p.count; i++) p.setY(i, this.heightAt(p.getX(i), p.getZ(i)));
     g.computeVertexNormals();
@@ -132,7 +134,7 @@ export class Volcano {
     const k = Math.min(1, r / R), cone = H * Math.pow(1 - k, 1.7);
     const gully = (fbm2(Math.cos(a) * 3 + this.seed, Math.sin(a) * 3, 2, 3) - 0.5) * 0.08 * H * Math.sin(Math.PI * Math.min(1, k * 1.2));
     const crater = r < C * 1.3 ? -0.22 * H * Math.pow(Math.max(0, 1 - r / (C * 1.3)), 1.6) : 0;
-    const ground = (fbm2(x * 0.0006, z * 0.0006, this.seed + 1, 4) - 0.5) * 140;
+    const ground = (fbm2(x * 0.0006, z * 0.0006, this.seed + 1, 4) - 0.5) * this.relief;
     return cone + gully + crater + ground * (0.3 + 0.7 * k);
   }
 

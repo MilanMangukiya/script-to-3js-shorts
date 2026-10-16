@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "sun-locked-earth",
+  "topic": "What if the same side of Earth always faced the Sun?",
+  "duration_s": 48,
+  "video_file": "output/sun-locked-earth.mp4",
+  "scientific_scope_note": "An already established Sun-locked alternative Earth, not a sudden stopping event. A circular orbit at 1 AU, zero obliquity and one prograde sidereal turn per approximately one-year orbit keep the subsolar point fixed. Earth mass, radius, gravity, geography, atmosphere, oceans and present solar luminosity remain. The midnight clock counts a retained human schedule, not apparent solar time. Road travel is compressed geographical relocation; no distances, routes, temperatures or universal safe twilight ring are forecast. Air and oceans can redistribute heat, but the cited exoplanet models do not calculate this one-year Earth climate. The cloud and choice of a twilight home are individual illustrative conditions. Practical lights use other power, and opaque blinds create indoor darkness without moving the exterior Sun. Orbital body sizes and separation are independently enlarged; spin/orbit phase is retained. Heat paths illustrate possibility, not computed circulation.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [
+    "earth-globe-v1",
+    "earth-textures-nasa-v1",
+    "starfield-v1",
+    "sky-dome-v1",
+    "sun-skylight-rig-v1",
+    "room-box-v1",
+    "city-street-block-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "modeling-helpers-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "caption-kinetic-v1",
+    "overlay-labels-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if the same side of Earth always faced the Sun?",
+      "description": "You wake at midnight in sunlight, then scout a darker home. Sunset becomes a place you can travel toward. The night side is not automatically frozen, but its solar panels cannot wait for sunrise. A cloud tests your twilight choice, and a blackout blind finally gives you control over night.\n\nWould you build your home in daylight, darkness, or permanent twilight?\n\nScope: An already established Sun-locked alternative Earth, not a sudden stopping event. A circular orbit at 1 AU, zero obliquity and one prograde sidereal turn per approximately one-year orbit keep the subsolar point fixed. Earth mass, radius, gravity, geography, atmosphere, oceans and present solar luminosity remain. The midnight clock counts a retained human schedule, not apparent solar time. Road travel is compressed geographical relocation; no distances, routes, temperatures or universal safe twilight ring are forecast. Air and oceans can redistribute heat, but the cited exoplanet models do not calculate this one-year Earth climate. The cloud and choice of a twilight home are individual illustrative conditions. Practical lights use other power, and opaque blinds create indoor darkness without moving the exterior Sun. Orbital body sizes and separation are independently enlarged; spin/orbit phase is retained. Heat paths illustrate possibility, not computed circulation.\n\nSources:\n- NASA: Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\n- NASA Universe Glossary: terminator and tidal locking: https://science.nasa.gov/universe/glossary/\n- Yang et al. 2019: Ocean dynamics on tidally locked terrestrial planets: https://arxiv.org/abs/1902.02103\n- Wordsworth 2015: Atmospheric heat redistribution on tidally locked rocky planets: https://arxiv.org/abs/1412.5575\n- NASA SVS: climate patterns on tidally locked TOI 700 d: https://svs.gsfc.nasa.gov/13496\n\nOriginal deterministic Three.js animation using NASA Earth imagery. Narrator: local Kokoro am_michael. Original procedural music and Foley.",
+      "tags": [
+        "what if Earth was tidally locked",
+        "same side of Earth faces Sun",
+        "synchronous rotation",
+        "permanent daylight",
+        "planetary climate",
+        "astronomy thought experiment",
+        "Earth science"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Astronomy",
+        "#EarthScience",
+        "#TidalLocking",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "tiktok": {
+      "caption": "You wake at midnight, but your bedroom is still sunlit. You scout a darker home, discover a power problem, and learn to make your own night.\n\nWould you build your home in daylight, darkness, or permanent twilight?",
+      "hashtags": [
+        "#ScienceTok",
+        "#WhatIf",
+        "#Astronomy",
+        "#EarthScience",
+        "#TidalLocking",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "You wake at midnight, but your bedroom is still sunlit. You scout a darker home, discover a power problem, and learn to make your own night.\n\nWould you build your home in daylight, darkness, or permanent twilight?\n\nAn already established Sun-locked alternative Earth, not a sudden stopping event. A circular orbit at 1 AU, zero obliquity and one prograde sidereal turn per approximately one-year orbit keep the subsolar point fixed. Earth mass, radius, gravity, geography, atmosphere, oceans and present solar luminosity remain. The midnight clock counts a retained human schedule, not apparent solar time. Road travel is compressed geographical relocation; no distances, routes, temperatures or universal safe twilight ring are forecast. Air and oceans can redistribute heat, but the cited exoplanet models do not calculate this one-year Earth climate. The cloud and choice of a twilight home are individual illustrative conditions. Practical lights use other power, and opaque blinds create indoor darkness without moving the exterior Sun. Orbital body sizes and separation are independently enlarged; spin/orbit phase is retained. Heat paths illustrate possibility, not computed circulation.",
+      "hashtags": [
+        "#ScienceReels",
+        "#WhatIf",
+        "#Astronomy",
+        "#EarthScience",
+        "#TidalLocking",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if the same side of Earth always faced the Sun?",
+      "description": "You wake at midnight in sunlight, then scout a darker home. Sunset becomes a place you can travel toward. The night side is not automatically frozen, but its solar panels cannot wait for sunrise. A cloud tests your twilight choice, and a blackout blind finally gives you control over night.\n\nWould you build your home in daylight, darkness, or permanent twilight?\n\nScope: An already established Sun-locked alternative Earth, not a sudden stopping event. A circular orbit at 1 AU, zero obliquity and one prograde sidereal turn per approximately one-year orbit keep the subsolar point fixed. Earth mass, radius, gravity, geography, atmosphere, oceans and present solar luminosity remain. The midnight clock counts a retained human schedule, not apparent solar time. Road travel is compressed geographical relocation; no distances, routes, temperatures or universal safe twilight ring are forecast. Air and oceans can redistribute heat, but the cited exoplanet models do not calculate this one-year Earth climate. The cloud and choice of a twilight home are individual illustrative conditions. Practical lights use other power, and opaque blinds create indoor darkness without moving the exterior Sun. Orbital body sizes and separation are independently enlarged; spin/orbit phase is retained. Heat paths illustrate possibility, not computed circulation.\n\nSources:\n- NASA: Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\n- NASA Universe Glossary: terminator and tidal locking: https://science.nasa.gov/universe/glossary/\n- Yang et al. 2019: Ocean dynamics on tidally locked terrestrial planets: https://arxiv.org/abs/1902.02103\n- Wordsworth 2015: Atmospheric heat redistribution on tidally locked rocky planets: https://arxiv.org/abs/1412.5575\n- NASA SVS: climate patterns on tidally locked TOI 700 d: https://svs.gsfc.nasa.gov/13496\n\nOriginal deterministic Three.js animation using NASA Earth imagery. Narrator: local Kokoro am_michael. Original procedural music and Foley.",
+      "hashtags": [
+        "#WhatIf",
+        "#Astronomy",
+        "#EarthScience",
+        "#TidalLocking",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "x_video": {
+      "post": "You wake at midnight in sunlight. On a Sun-locked Earth, sunset becomes a place. Would you build your home in daylight, darkness, or permanent twilight?",
+      "hashtags": [
+        "#WhatIf",
+        "#Astronomy",
+        "#EarthScience",
+        "#TidalLocking",
+        "#ScienceSimulation"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-16T01:01:02Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 19,
+    "path_in_repo": "videos/019-sun-locked-earth.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/019-sun-locked-earth.mp4",
+    "sha256": "3557c446e39a046bfe7826c95b5278572788f1f940f7998cc90898bdb94e4504",
+    "size_bytes": 14519501,
+    "thumbnail_path_in_repo": "videos/019-sun-locked-earth.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/019-sun-locked-earth.jpg",
+    "thumbnail_sha256": "1c211f5bd4bc16fddbcb232bd0040a36ad18e2c9e3d3a8f15992cb831687a60f",
+    "copy_path_in_repo": "videos/019-sun-locked-earth.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/019-sun-locked-earth.md",
+    "copy_sha256": "0b5448c06faaa81c2ba181764d8592ca915647246416a22fa07af9b46a901c38",
+    "uploaded_at_utc": "2026-10-16T02:32:41Z"
+  }
+}

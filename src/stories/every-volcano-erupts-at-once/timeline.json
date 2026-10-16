@@ -1,0 +1,68 @@
+{
+  "note": "Absolute film times (s) for staged events; read by stages, film overlay, soundtrack.mjs and the storyboard generator.",
+  "bounds": [
+    0,
+    4.95,
+    9.1,
+    15.2,
+    19.4,
+    24.3,
+    31.95,
+    39.95,
+    47.7,
+    54
+  ],
+  "blast": 2.45,
+  "columnGrow": [
+    0.42,
+    0.47
+  ],
+  "s03Cut": 11.5,
+  "s05Tilt": 21.9,
+  "globeOn": 5,
+  "thumbnail": {
+    "time_s": 3.8,
+    "headline": "NO MORE SUMMER?!",
+    "highlight": [
+      "SUMMER"
+    ],
+    "position": "bottom",
+    "badge": "1,350 VOLCANOES",
+    "focus": [
+      0.62,
+      0.36
+    ],
+    "zoom": 1.06,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FB923C",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FB923C"
+    },
+    "grade": "dramatic",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  },
+  "rates": {
+    "S07": 1.08,
+    "S08": 1
+  },
+  "s05TiltEnd": 23.7,
+  "pdcFront0": 3950,
+  "pdcSpeed": 42,
+  "lavaSpeed": 0.3,
+  "carCross": 13,
+  "flashes": [
+    0.55,
+    1.35,
+    3.3,
+    4.25
+  ]
+}

@@ -1,0 +1,1341 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if the same side of Earth always faced the Sun?",
+    "title": "What if the same side of Earth always faced the Sun?",
+    "slug": "sun-locked-earth",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 48,
+    "language": "en",
+    "audience": "Curious international viewers; playful discovery through one familiar barbecue.",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "Where could you find darkness and build a daily life when the Sun never moves across your sky?",
+    "viewer_takeaway": "Synchronous rotation makes sunset a geographical destination. Heat transport complicates the frozen-night stereotype; power, weather and shelter still shape a personal choice of home."
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC 15 with a subtle scale lift.",
+    "highlights_policy": "The physical consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "delivery": {
+    "video_output": "output/sun-locked-earth.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 154,
+    "music_direction": "Original nocturnal discovery score: a small clock motif, momentum on the road, a 0.3-second drop before the heat-transport reversal, and a warm blackout-blind callback.",
+    "music_level_db_below_voice": -18,
+    "sfx_direction": "Clock button, blind slats, a car motor and braking, inverter switch, passing cloud wind and a final soft blind closure. No invented catastrophe or destruction.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1,
+    "voice_id": "am_michael"
+  },
+  "scientific_model": {
+    "baseline_reality": "Modern Earth rotates relative to the Sun, carrying the day-night boundary across its surface. Synchronous rotation instead matches one axial rotation to one orbit.",
+    "counterfactual_change": "An established alternative Earth keeps the same geographical hemisphere facing the Sun. For an exact fixed subsolar point, stipulate a circular orbit at one astronomical unit, zero obliquity, and prograde synchronous rotation: one sidereal turn per approximately one-year orbit. No sudden stopping event is depicted.",
+    "assumptions": [
+      "Keep Earth mass, radius, gravity, continents, atmosphere and oceans, and present solar luminosity. The dynamical origin and climate-adjustment history are outside scope.",
+      "The home begins on the sunward side with an 8-degree Sun elevation. Its 00:00 clock is a retained human 24-hour schedule, not local apparent solar time.",
+      "The road sequence is a compressed travel montage between illustrative locations. A lower local Sun is caused by geographical travel, never by waiting for a daily sunset. No distance, travel speed, safe route or relocation feasibility is forecast.",
+      "Air and ocean heat transport is physically possible and supported by exoplanet models, but those models are not an equilibrium simulation of this one-year-rotation Earth. No temperature, guaranteed ice extent or narrow habitable ring is claimed.",
+      "The chosen twilight home is an illustrative personal decision, not a claim that the boundary is the only safe or habitable region. Water, weather and climate would require coupled modeling.",
+      "Clouds are one authored possible weather event. Their passage changes illumination while solar direction stays fixed. Clouds and atmospheric scattering do not create a daily sunrise.",
+      "Artificial indoor darkness from opaque blinds is possible on the day or twilight side. It does not change the external Sun, climate or planetary orbit.",
+      "Orbital body sizes and separation are scaled independently for readability. The spin/orbit ratio and the marker facing the Sun are retained exactly. Heat-transport traces illustrate possible pathways, not computed circulation or speeds."
+    ],
+    "causal_chain": [
+      "A fixed sunward home remains directly illuminated through the human midnight schedule.",
+      "One prograde spin per circular orbit keeps its geographical face toward the Sun and makes the terminator stationary.",
+      "The viewer travels toward the terminator: sunset becomes a place rather than a future hour.",
+      "Possible atmospheric and oceanic transport undermines a guaranteed frozen-night assumption.",
+      "Lack of direct sunlight still rules out waiting for night-side sunrise to power the same solar panels.",
+      "The viewer chooses a twilight home, encounters variable cloud shading, and creates controllable indoor darkness with blinds."
+    ],
+    "uncertainties": [
+      "Equilibrium climate, circulation, condensation and habitability are not calculated.",
+      "Real obliquity or eccentricity introduces subsolar motion or libration; the exact-face idealization removes both.",
+      "Cloud brightness, terrain and refraction alter visible twilight; local scenes use chosen illustrative conditions."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "One prograde axial rotation per circular orbit can keep the same face toward the Sun.",
+        "confidence": "established",
+        "reasoning": "NASA explains synchronous tidal locking using the Moon: rotation and orbital periods match. Applying the same geometry to an idealized Earth-Sun system fixes the substellar longitude.",
+        "presentation_guardrail": "Keep the geographical marker facing the Sun throughout the animated orbit; never represent a completely nonrotating planet as synchronous."
+      },
+      {
+        "id": "CL02",
+        "statement": "At a fixed sunward location in the exact idealization there is no daily sunrise or sunset.",
+        "confidence": "derived",
+        "reasoning": "The Sun direction in the surface frame is constant when obliquity and eccentricity are zero and spin matches orbital motion. A human clock may still count 24-hour schedules.",
+        "presentation_guardrail": "No sudden axis stop, ejection, shockwave or instant climatic transformation. A cloud can obscure the Sun without constituting a sunset."
+      },
+      {
+        "id": "CL03",
+        "statement": "Travelling geographically toward the stationary day-night boundary lowers the local solar elevation.",
+        "confidence": "derived",
+        "reasoning": "The local vertical changes over the spherical surface while the star-facing orientation is retained. NASA distinguishes a stationary terminator on tidally locked planets and diffuse twilight in an atmosphere.",
+        "presentation_guardrail": "Cuts and travel telemetry must identify location change; do not imply that the Sun descends merely because time passes."
+      },
+      {
+        "id": "CL04",
+        "statement": "Darkness alone does not prove that the entire night hemisphere becomes a frozen wasteland.",
+        "confidence": "plausible",
+        "reasoning": "Atmospheric GCM and coupled ocean-atmosphere studies demonstrate heat redistribution on tidally locked planets. Parameters differ from this Earth counterfactual; the defensible conclusion is possibility, not a forecast temperature or universal habitability.",
+        "presentation_guardrail": "Say can carry heat. Show illustrative paths, not a thermal map or invented temperature. Never claim the terminator is the only safe place."
+      },
+      {
+        "id": "CL05",
+        "statement": "Solar panels on the deep permanent night side cannot wait for a daily sunrise to restore direct sunlight.",
+        "confidence": "derived",
+        "reasoning": "The local Sun remains below the horizon; the rotating day-night cycle is absent. Starlight, diffuse light and alternate power sources are separate issues.",
+        "presentation_guardrail": "The meter reports direct Sun visibility, not an exact photovoltaic wattage or battery countdown. Practical city lights can remain on."
+      },
+      {
+        "id": "CL06",
+        "statement": "Synchronous rotation does not require a motionless atmosphere or cloud-free sky.",
+        "confidence": "plausible",
+        "reasoning": "NASA climate-model visualizations and primary heat-transport research include atmospheric circulation and cloud patterns on synchronously rotating worlds. One moving cloud is an illustrative authored event.",
+        "presentation_guardrail": "Do not predict hurricane speeds or an eternal storm. Keep the Sun fixed while the cloud changes received illumination."
+      },
+      {
+        "id": "CL07",
+        "statement": "Opaque blinds can create local indoor darkness while the exterior stays sunlit.",
+        "confidence": "established",
+        "reasoning": "Blocking the direct and diffuse light entering a window is ordinary occlusion.",
+        "presentation_guardrail": "Close a physical supported blind and darken its actual interior; keep the external Sun and other lights coherent."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NASA: Tidal Locking",
+        "url": "https://science.nasa.gov/moon/tidal-locking/",
+        "supports_claim_ids": [
+          "CL01",
+          "CL02"
+        ]
+      },
+      {
+        "name": "NASA Universe Glossary: terminator and tidal locking",
+        "url": "https://science.nasa.gov/universe/glossary/",
+        "supports_claim_ids": [
+          "CL01",
+          "CL02",
+          "CL03"
+        ]
+      },
+      {
+        "name": "Yang et al. 2019: Ocean dynamics on tidally locked terrestrial planets",
+        "url": "https://arxiv.org/abs/1902.02103",
+        "supports_claim_ids": [
+          "CL04",
+          "CL06"
+        ]
+      },
+      {
+        "name": "Wordsworth 2015: Atmospheric heat redistribution on tidally locked rocky planets",
+        "url": "https://arxiv.org/abs/1412.5575",
+        "supports_claim_ids": [
+          "CL04",
+          "CL06"
+        ]
+      },
+      {
+        "name": "NASA SVS: climate patterns on tidally locked TOI 700 d",
+        "url": "https://svs.gsfc.nasa.gov/13496",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "You wake to sunlight at midnight, try to find darkness, and discover that a new home needs more than a beautiful sunset.",
+    "visual_identity": "Tactile 3D domestic discovery and a cinematic road journey, with upright NASA-textured Earth, physical solar panels and an actual closing blind.",
+    "palette": [
+      "#14243A",
+      "#F5B870",
+      "#3A6878",
+      "#F0E5CC",
+      "#192B31"
+    ],
+    "lighting": "Motivated low sun through a real window; warm practicals on the night side; a clear fixed-direction twilight source with one visible passing cloud. Pipeline ACES only.",
+    "camera_language": "Human-eye-level holds and a short follow reveal physical actions; orbital scale changes earn the mechanism explanation. Keep the globe and hand/blind clear of captions.",
+    "motion_language": "Finite clock/blind actions, absolute-distance car travel and braking, one fixed-face orbit, illustrative advective traces and a cloud crossing. Every transform resets from film time.",
+    "world_scale_policy": "Ground scenes use metres. Orbital icon sizes are enlarged independently; preserve spin/orbit phase exactly. No floating rulers, bar charts or thermal forecasts.",
+    "emotional_arc": [
+      "A private contradiction",
+      "A clever escape",
+      "A hopeful scientific reversal",
+      "An energy tradeoff",
+      "Control over your own night"
+    ],
+    "opening_hook": "At 00:00 sunlight still crosses your pillow. A blind opens enough to reveal that the low Sun remains fixed.",
+    "mid_video_rehook": "Before the midpoint, the night side is no longer an automatic frozen wasteland: air and oceans can carry heat. That changes the viewer from fleeing a doomed hemisphere to evaluating a possible home.",
+    "ending_payoff": "You choose twilight, then close a supported blackout blind to create your own night while the exterior sunset stays fixed.",
+    "loop_connection": "The final blind makes the bedroom dark; the opening shows the same domestic light problem. A soft clock motif returns, without a spoken rewind instruction.",
+    "asset_policy": "Reuse registered room, city, car construction, SunSkylightRig, Earth textures, modeling, characters and pipeline before story-specific props."
+  },
+  "distribution": {
+    "primary_search_intent": "What if the same side of Earth always faced the Sun?",
+    "core_keywords": [
+      "tidally locked Earth",
+      "synchronous rotation",
+      "permanent day and night",
+      "earth science thought experiment",
+      "astronomy simulation",
+      "terminator twilight",
+      "planetary climate"
+    ],
+    "distinctive_angle": "A search for sleep and a new home exposes a frozen-night misconception and an energy tradeoff, rather than an unsupported instant-apocalypse montage.",
+    "comment_bait_question": "Would you build your home in daylight, darkness, or permanent twilight?",
+    "seo_integrity_note": "Identify the exact synchronous idealization and climate uncertainty. Use astronomy and Earth-science qualifiers; do not promise a universal safe ring or instantaneous freezing."
+  },
+  "thumbnail": {
+    "time_s": 13.6,
+    "headline": "SUNSET IS STUCK?!",
+    "highlight": [
+      "STUCK"
+    ],
+    "badge": "1 SPIN/YEAR",
+    "focus": [
+      0.67,
+      0.32
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "grade": "dramatic",
+    "tilt": -3,
+    "position": "bottom",
+    "zoom": 1.05,
+    "badge_at": [
+      0.22,
+      0.16
+    ],
+    "anchor": [
+      0.67,
+      0.32
+    ]
+  },
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Verified actual registered room, street, sky, Earth, character and production sources before implementation.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "earth-textures-nasa-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "starfield-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "room-box-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Use the registered component in the film or production pipeline.",
+        "configuration": "Story-local palette, absolute-time state and deterministic seeds; preserve shared defaults."
+      }
+    ],
+    "new_reusable_asset_candidates": [],
+    "shot_specific_assets": [
+      "A supported blackout blind and midnight clock in RoomBox architecture.",
+      "Solar panel racks and a standby inverter built from Modeling helpers.",
+      "A Sun-facing marker and possible air/ocean transport paths around the Earth asset."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 5,
+      "narration": {
+        "text": "You wake at midnight in a sunlit bedroom. The Sun never sets.",
+        "start_s": 0,
+        "end_s": 4.85,
+        "delivery_note": "Close, dry disbelief on midnight; finish never sets plainly without shouting.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Why is your bedroom bright at midnight?",
+      "visual_payoff": "A sunlit pillow and readable 00:00 clock; blind opens once to expose the unchanging low Sun.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 5,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0.15,
+                  1.4,
+                  3.0
+                ],
+                "look_at": [
+                  0,
+                  1.35,
+                  -2.6
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 5,
+                "position": [
+                  0.15,
+                  1.4,
+                  3.0
+                ],
+                "look_at": [
+                  0,
+                  1.35,
+                  -2.6
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold a readable composition while the event unfolds.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 0,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "HOME / 00:00",
+            "metric_label": "SUN ELEVATION",
+            "start_value": 8,
+            "end_value": 8,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "bedroom",
+              "kind": "other",
+              "appearance": "A sunlit pillow and readable 00:00 clock; blind opens once to expose the unchanging low Sun.",
+              "geometry_and_material": "Registered components with story-local PBR materials and supported Modeling props.",
+              "scale_and_accuracy": "Metres on the ground; explicitly enlarged orbital bodies. No temperature or weather forecast.",
+              "movement": "A sunlit pillow and readable 00:00 clock; blind opens once to expose the unchanging low Sun.",
+              "asset_hint": "room-box-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "0.1 establish sunlight on the pillow and the retained 00:00 clock.",
+            "0.35-1.15 planted actor presses the supported blind motor button; 0.7-2.4 roller raises fabric, exposing the fixed Sun.",
+            "2.4-5 hold the open window and fixed external Sun."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "midnight",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL02",
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep time/location changes explicit and preserve the completed action."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 5,
+      "end_s": 11,
+      "narration": {
+        "text": "Earth still turns once per year, keeping the same face toward the Sun.",
+        "start_s": 5,
+        "end_s": 10.85,
+        "delivery_note": "Keep once per year clear; this is a geometric answer, not a disaster announcement.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Did Earth stop spinning, or does its spin match its orbit?",
+      "visual_payoff": "A geographical marker faces the Sun during an entire orbit and a matching complete body turn.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 5,
+          "end_s": 11,
+          "shot_type": "Planetary mechanism discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 5,
+                "position": [
+                  5.6,
+                  7.8,
+                  10.6
+                ],
+                "look_at": [
+                  0,
+                  -0.75,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 11,
+                "position": [
+                  5.6,
+                  7.8,
+                  10.6
+                ],
+                "look_at": [
+                  0,
+                  -0.75,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold a readable composition while the event unfolds.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result."
+          },
+          "hud_telemetry": {
+            "timer_label": "SYNCHRONOUS ORBIT",
+            "metric_label": "SPIN / ORBIT",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "turn",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "orbit",
+              "kind": "other",
+              "appearance": "A geographical marker faces the Sun during an entire orbit and a matching complete body turn.",
+              "geometry_and_material": "Registered components with story-local PBR materials and supported Modeling props.",
+              "scale_and_accuracy": "Metres on the ground; explicitly enlarged orbital bodies. No temperature or weather forecast.",
+              "movement": "A geographical marker faces the Sun during an entire orbit and a matching complete body turn.",
+              "asset_hint": "earth-globe-v1"
+            }
+          ],
+          "animation_plan": [
+            "5-11 complete one orbit and exactly one prograde axial turn; the geographical marker and connecting ray stay Sunward.",
+            "The camera holds the entire independently scaled orbit and enlarged bodies; no physical distance is measured."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "once per year",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep time/location changes explicit and preserve the completed action."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "human_impact",
+      "start_s": 11,
+      "end_s": 16.5,
+      "narration": {
+        "text": "You scout a darker home. Now sunset is a place, not a time.",
+        "start_s": 11,
+        "end_s": 16.35,
+        "delivery_note": "Sound tempted by the escape; let a place change the meaning of sunset.",
+        "pacing_energy": "crisp_mechanism",
+        "performance": {
+          "rate": 0.82
+        }
+      },
+      "viewer_question": "Can you reach night by moving instead of waiting?",
+      "visual_payoff": "A moving car approaches a low Sun; changing location lowers it toward the horizon, then the car stops.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11,
+          "end_s": 16.5,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 11,
+                "position": [
+                  2.7,
+                  2.1,
+                  8.0
+                ],
+                "look_at": [
+                  1.7,
+                  1.0,
+                  -5
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 16.5,
+                "position": [
+                  2.7,
+                  2.1,
+                  -16.0
+                ],
+                "look_at": [
+                  1.7,
+                  1.0,
+                  -29
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Follow the car along the road during compressed geographical travel, then hold its finite stop.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 11,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "TRAVEL / NEW LOCATION",
+            "metric_label": "SUN ELEVATION",
+            "start_value": 8,
+            "end_value": 0,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "road",
+              "kind": "other",
+              "appearance": "A moving car approaches a low Sun; changing location lowers it toward the horizon, then the car stops.",
+              "geometry_and_material": "Registered components with story-local PBR materials and supported Modeling props.",
+              "scale_and_accuracy": "Metres on the ground; explicitly enlarged orbital bodies. No temperature or weather forecast.",
+              "movement": "A moving car approaches a low Sun; changing location lowers it toward the horizon, then the car stops.",
+              "asset_hint": "city-street-block-v1; sun-skylight-rig-v1"
+            }
+          ],
+          "animation_plan": [
+            "11-16 a 24-metre visual road dolly represents a compressed geographical journey, not the actual planetary distance.",
+            "Local Sun elevation changes 8 to 0 degrees only because the location changes; follow keyframes retain the full car.",
+            "16-16.5 car holds its completed stop at the new location."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "a place",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep time/location changes explicit and preserve the completed action."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "twist",
+      "start_s": 16.5,
+      "end_s": 23,
+      "narration": {
+        "text": "You reach darkness. But darkness is not automatically frozen: air and oceans can carry heat.",
+        "start_s": 16.5,
+        "end_s": 22.85,
+        "delivery_note": "Correct the frozen-night assumption with restrained surprise; can carry heat stays conditional.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Does darkness really force a frozen wasteland?",
+      "visual_payoff": "Possible atmospheric and oceanic paths cross the actual day-night boundary on a shaded Earth.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 16.5,
+          "end_s": 23,
+          "shot_type": "Planetary mechanism discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 16.5,
+                "position": [
+                  2.4,
+                  1.8,
+                  7.4
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 23,
+                "position": [
+                  2.4,
+                  1.8,
+                  7.4
+                ],
+                "look_at": [
+                  0,
+                  0,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold a readable composition while the event unfolds.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result."
+          },
+          "hud_telemetry": {
+            "timer_label": "NIGHT SIDE / HEAT CAN CROSS",
+            "metric_label": "DAY-NIGHT BOUNDARY",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "transport",
+              "kind": "other",
+              "appearance": "Possible atmospheric and oceanic paths cross the actual day-night boundary on a shaded Earth.",
+              "geometry_and_material": "Registered components with story-local PBR materials and supported Modeling props.",
+              "scale_and_accuracy": "Metres on the ground; explicitly enlarged orbital bodies. No temperature or weather forecast.",
+              "movement": "Possible atmospheric and oceanic paths cross the actual day-night boundary on a shaded Earth.",
+              "asset_hint": "earth-globe-v1"
+            }
+          ],
+          "animation_plan": [
+            "16.5 establish actual day/night shading, with no forecast temperature or ice growth.",
+            "20.56 reveal possible air/ocean transport traces at the measured Air onset, after a 20.26-20.56 bed/SFX silence drop.",
+            "22.5-23 retain the paths long enough to read their possible connection."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "can carry heat",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 20.26,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Duck music and atmosphere before the heat-transport reversal; voice stays clear.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep time/location changes explicit and preserve the completed action."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "second_order_effect",
+      "start_s": 23,
+      "end_s": 28.5,
+      "narration": {
+        "text": "Your solar panels stay dark. This home would need another power source.",
+        "start_s": 23,
+        "end_s": 28.35,
+        "delivery_note": "Let stay dark puncture the plan; another power source is the practical obstacle.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "How will your night-side home get power?",
+      "visual_payoff": "Physical panel cells remain unlit under the deep-night sky; the inverter reads standby while practical lights remain.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 23,
+          "end_s": 28.5,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 52,
+            "keyframes": [
+              {
+                "t_s": 23,
+                "position": [
+                  7.15,
+                  2.7,
+                  3.4
+                ],
+                "look_at": [
+                  7.15,
+                  1.15,
+                  -4
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 28.5,
+                "position": [
+                  7.15,
+                  2.7,
+                  3.4
+                ],
+                "look_at": [
+                  7.15,
+                  1.15,
+                  -4
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold a readable composition while the event unfolds.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 23,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "NIGHT-SIDE HOME",
+            "metric_label": "DIRECT SUN",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "%",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "panels",
+              "kind": "other",
+              "appearance": "Physical panel cells remain unlit under the deep-night sky; the inverter reads standby while practical lights remain.",
+              "geometry_and_material": "Registered components with story-local PBR materials and supported Modeling props.",
+              "scale_and_accuracy": "Metres on the ground; explicitly enlarged orbital bodies. No temperature or weather forecast.",
+              "movement": "Physical panel cells remain unlit under the deep-night sky; the inverter reads standby while practical lights remain.",
+              "asset_hint": "city-street-block-v1; sun-skylight-rig-v1"
+            }
+          ],
+          "animation_plan": [
+            "23-28.5 hold dark-side direct Sun at zero, supported solar racks and a standby inverter.",
+            "Nearby powered practicals keep cells and supports legible; the home needs another power source."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "another power source",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep time/location changes explicit and preserve the completed action."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "escalation",
+      "start_s": 28.5,
+      "end_s": 34.5,
+      "narration": {
+        "text": "You choose a twilight home: light nearby, darkness just down the road.",
+        "start_s": 28.5,
+        "end_s": 34.35,
+        "delivery_note": "A deliberate personal choice on twilight home, with no claim of universal comfort.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 1.03
+        }
+      },
+      "viewer_question": "Which tradeoff would you choose for home?",
+      "visual_payoff": "The car completes a stop beside the chosen house at fixed low Sun elevation; the boundary is a place to choose.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 28.5,
+          "end_s": 34.5,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 52,
+            "keyframes": [
+              {
+                "t_s": 28.5,
+                "position": [
+                  2.7,
+                  2.1,
+                  8.0
+                ],
+                "look_at": [
+                  1.7,
+                  1.0,
+                  -5
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 33.85,
+                "position": [
+                  7.15,
+                  2.7,
+                  3.4
+                ],
+                "look_at": [
+                  7.15,
+                  1.15,
+                  -4
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 34.5,
+                "position": [
+                  7.15,
+                  2.7,
+                  3.4
+                ],
+                "look_at": [
+                  7.15,
+                  1.15,
+                  -4
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Reveal the chosen courtyard and supported panels as the car parks, then settle before the cloud test.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 28.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "TWILIGHT HOME",
+            "metric_label": "SUN ELEVATION",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "twilight",
+              "kind": "other",
+              "appearance": "The car completes a stop beside the chosen house at fixed low Sun elevation; the boundary is a place to choose.",
+              "geometry_and_material": "Registered components with story-local PBR materials and supported Modeling props.",
+              "scale_and_accuracy": "Metres on the ground; explicitly enlarged orbital bodies. No temperature or weather forecast.",
+              "movement": "The car completes a stop beside the chosen house at fixed low Sun elevation; the boundary is a place to choose.",
+              "asset_hint": "city-street-block-v1; sun-skylight-rig-v1"
+            }
+          ],
+          "animation_plan": [
+            "28.5-31.8 car travels seven illustrative local metres, brakes and holds.",
+            "28.5-33.85 camera reveals the supported solar courtyard of the chosen twilight home; 33.85-34.5 hold the result."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "twilight home",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL03",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep time/location changes explicit and preserve the completed action."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "mechanism",
+      "start_s": 34.5,
+      "end_s": 40.5,
+      "narration": {
+        "text": "Then clouds steal your light. Good thing your new home has backup power.",
+        "start_s": 34.5,
+        "end_s": 40.35,
+        "delivery_note": "A short setback on clouds, then relief on backup power; keep the phrase natural.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.95
+        }
+      },
+      "viewer_question": "Does a fixed Sun mean fixed weather?",
+      "visual_payoff": "A visible cloud crosses the fixed Sun; panel glints fade and a practical porch light comes on.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 34.5,
+          "end_s": 40.5,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 52,
+            "keyframes": [
+              {
+                "t_s": 34.5,
+                "position": [
+                  7.15,
+                  2.7,
+                  3.4
+                ],
+                "look_at": [
+                  7.15,
+                  1.15,
+                  -4
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 40.5,
+                "position": [
+                  7.15,
+                  2.7,
+                  3.4
+                ],
+                "look_at": [
+                  7.15,
+                  1.15,
+                  -4
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold a readable composition while the event unfolds.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 34.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "PASSING CLOUD",
+            "metric_label": "SUN ELEVATION",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cloud",
+              "kind": "other",
+              "appearance": "A visible cloud crosses the fixed Sun; panel glints fade and a practical porch light comes on.",
+              "geometry_and_material": "Registered components with story-local PBR materials and supported Modeling props.",
+              "scale_and_accuracy": "Metres on the ground; explicitly enlarged orbital bodies. No temperature or weather forecast.",
+              "movement": "A visible cloud crosses the fixed Sun; panel glints fade and a practical porch light comes on.",
+              "asset_hint": "city-street-block-v1; sun-skylight-rig-v1"
+            }
+          ],
+          "animation_plan": [
+            "34.5-36 the distant cloud approaches the fixed Sun as clouds steal your light is spoken.",
+            "36-39 the broad bank continues across the Sun while direct light stays occluded; the Sun never moves.",
+            "38.35-38.75 the supported porch practical comes fully on and the inverter switches to BACKUP, before the final power word.",
+            "39-40 the cloud clears the line of sight; hold restored sunlight to 40.5."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "backup power",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep time/location changes explicit and preserve the completed action."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "ending",
+      "start_s": 40.5,
+      "end_s": 48,
+      "narration": {
+        "text": "Back home, you make night with blinds. Tomorrow's sunset waits exactly where you left it.",
+        "start_s": 40.5,
+        "end_s": 47.85,
+        "delivery_note": "Ease into making your own night, then deliver the fixed sunset callback without a sign-off.",
+        "pacing_energy": "reflective_payoff",
+        "performance": {
+          "rate": 0.8
+        }
+      },
+      "viewer_question": "Can you control your own night?",
+      "visual_payoff": "The supported blind closes and holds indoors, then the same exterior low Sun persists at the chosen courtyard.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 40.5,
+          "end_s": 45.3,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 40.5,
+                "position": [
+                  0.15,
+                  1.4,
+                  3.0
+                ],
+                "look_at": [
+                  0,
+                  1.35,
+                  -2.6
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 45.3,
+                "position": [
+                  0.15,
+                  1.4,
+                  3.0
+                ],
+                "look_at": [
+                  0,
+                  1.35,
+                  -2.6
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold a readable composition while the event unfolds.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 40.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "MAKE YOUR OWN NIGHT",
+            "metric_label": "SUN ELEVATION",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "bedroom",
+              "kind": "other",
+              "appearance": "A planted hand closes the supported blind; the room becomes dark and the fixed sunset persists through a final narrow view.",
+              "geometry_and_material": "Registered components with story-local PBR materials and supported Modeling props.",
+              "scale_and_accuracy": "Metres on the ground; explicitly enlarged orbital bodies. No temperature or weather forecast.",
+              "movement": "A planted hand closes the supported blind; the room becomes dark and the fixed sunset persists through a final narrow view.",
+              "asset_hint": "room-box-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "40.5 establish the chosen bedroom with a fixed low Sun.",
+            "41-41.9 grounded actor presses and releases the supported motor button.",
+            "41.5-44.8 roller fabric closes over the real aperture; illumination decreases with coverage.",
+            "44.8-45.3 hold the completed dark room before cutting outside to the same sunset."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        },
+        {
+          "id": "SH02",
+          "start_s": 45.3,
+          "end_s": 48,
+          "shot_type": "Ground eye-level discovery",
+          "world": "Local planetary units for orbit/heat-transport views; metre-scale room or street elsewhere. The Sun stays fixed at each geographical location.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 52,
+            "keyframes": [
+              {
+                "t_s": 45.3,
+                "position": [
+                  7.15,
+                  2.7,
+                  3.4
+                ],
+                "look_at": [
+                  7.15,
+                  1.15,
+                  -4
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 48,
+                "position": [
+                  7.15,
+                  2.7,
+                  3.4
+                ],
+                "look_at": [
+                  7.15,
+                  1.15,
+                  -4
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the same courtyard framing used before the cloud passage.",
+            "lens_notes": "Keep the focal action above captions and below HUD, with room for the complete object and its result.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 34.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "OUTSIDE / SAME SUNSET",
+            "metric_label": "SUN ELEVATION",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "°",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "fixed_sunset",
+              "kind": "other",
+              "appearance": "The chosen courtyard and unchanged low Sun after the blind has closed indoors.",
+              "geometry_and_material": "Registered city and SunSkylightRig with supported solar rack.",
+              "scale_and_accuracy": "Metres; 1-degree illustrative local Sun; no climate forecast.",
+              "movement": "Hold the external Sun and parked car while practical home lighting stays on.",
+              "asset_hint": "city-street-block-v1; sun-skylight-rig-v1"
+            }
+          ],
+          "animation_plan": [
+            "At 45.3 cut outside after the closed blind has held for 0.5 seconds.",
+            "Hold the stationary exterior sunset until 48, visibly paying off the next day sunset remaining a place."
+          ],
+          "lighting": "Motivated fixed Sun and sky illumination; warm practicals retain form in darkness. No additional tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded ambient texture; no impact or destruction."
+          ],
+          "composition_notes": "Frame the full focal prop/action at phone size, clear of the fixed HUD and captions."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "blinds",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL07",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Keep time/location changes explicit and preserve the completed action."
+      }
+    }
+  ]
+}

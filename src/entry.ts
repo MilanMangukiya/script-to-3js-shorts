@@ -21,6 +21,8 @@ import { createFilm as skyDisappeared } from './stories/sky-disappeared/film';
 import { createFilm as earthWithoutTilt } from './stories/earth-without-tilt/film';
 import { createFilm as ozoneLayerGoneOvernight } from './stories/ozone-layer-gone-overnight/film';
 import { createFilm as earth1000fFiveSeconds } from './stories/earth-1000f-five-seconds/film';
+import { createFilm as everyVolcanoErupts } from './stories/every-volcano-erupts-at-once/film';
+import { createFilm as sunLockedEarth } from './stories/sun-locked-earth/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -41,6 +43,8 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'earth-without-tilt': earthWithoutTilt,
   'ozone-layer-gone-overnight': ozoneLayerGoneOvernight,
   'earth-1000f-five-seconds': earth1000fFiveSeconds,
+  'every-volcano-erupts-at-once': everyVolcanoErupts,
+  'sun-locked-earth': sunLockedEarth,
 };
 
 async function boot() {
