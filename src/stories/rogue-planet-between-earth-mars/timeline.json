@@ -1,0 +1,235 @@
+{
+  "note": "Absolute film times (s) and story-clock values (hours, past midnight continues as 24+) shared by the stages, film overlay and soundtrack.mjs. Sky: world -Z = east, +X = south; harbour town at 50 N.",
+  "bounds": [
+    0,
+    5.1,
+    10.1,
+    17.0,
+    21.2,
+    25.6,
+    31.4,
+    38.6,
+    44.8,
+    52.0
+  ],
+  "cuts": {
+    "s03": 13.4,
+    "s07": 34.8,
+    "s08": 40.6
+  },
+  "lat": 50,
+  "rogue": {
+    "dec": -10,
+    "culmination": 23.8667,
+    "diamEarly": 2.17,
+    "diamLate": 2.27,
+    "spinHours": 9.9,
+    "radiusKm": 71492
+  },
+  "clock": {
+    "S01": [
+      18.6667,
+      18.9333
+    ],
+    "S02": [
+      18.95,
+      18.95139
+    ],
+    "S03": [
+      19.0167,
+      19.0186
+    ],
+    "S04": [
+      19.1667,
+      22.85
+    ],
+    "S05": [
+      22.9333,
+      24.9333
+    ]
+  },
+  "tide": {
+    "lowRel": -5.6,
+    "highRel": 4.0,
+    "lowClock": 18.9,
+    "riseHours": 5.1,
+    "meanSeaY": -2.2,
+    "quayTop": 0
+  },
+  "over": 20.2,
+  "overClock": 22.5516,
+  "front": {
+    "speed": 52,
+    "surge": 0.55,
+    "surgeLength": 9
+  },
+  "moon": {
+    "transitClock": 24.8333,
+    "speedDegPerHour": 0.7,
+    "dir": [
+      0.82,
+      -0.57
+    ],
+    "offsetDeg": 0.45,
+    "diamTransit": 0.47,
+    "diamEvening": 0.48
+  },
+  "nights": [
+    [
+      2,
+      0.39
+    ],
+    [
+      3,
+      0.33
+    ],
+    [
+      5,
+      0.26
+    ],
+    [
+      10,
+      0.18
+    ],
+    [
+      30,
+      0.085
+    ],
+    [
+      60,
+      0.047
+    ]
+  ],
+  "moonDistanceKm": {
+    "S05": [
+      418000,
+      426000
+    ],
+    "nights": [
+      [
+        2,
+        574000
+      ],
+      [
+        3,
+        632000
+      ],
+      [
+        5,
+        761000
+      ],
+      [
+        10,
+        1093000
+      ],
+      [
+        30,
+        2337000
+      ],
+      [
+        60,
+        4268000
+      ]
+    ]
+  },
+  "boats": {
+    "adrift": [
+      {
+        "id": 6,
+        "hit": 20.32,
+        "hit2": 20.46,
+        "edge": [
+          1.2,
+          -105.7
+        ],
+        "to": [
+          -5.5,
+          -98.0
+        ],
+        "yaw": 0.6
+      }
+    ]
+  },
+  "cars": [
+    {
+      "at": [
+        -4.6,
+        -97.8
+      ],
+      "heading": 1.5,
+      "color": "0x7d2f2a",
+      "lift": 20.62,
+      "drift": [
+        1.8,
+        7.5
+      ],
+      "yaw": 0.8
+    },
+    {
+      "at": [
+        6.0,
+        -99.0
+      ],
+      "heading": -1.55,
+      "color": "0x2e4a63",
+      "lift": 20.86,
+      "drift": [
+        -0.8,
+        6.0
+      ],
+      "yaw": -0.55
+    },
+    {
+      "at": [
+        -16.5,
+        -81.0
+      ],
+      "heading": 1.45,
+      "color": "0x9a9c98",
+      "lift": 21.02,
+      "drift": [
+        1.5,
+        4.0
+      ],
+      "yaw": 0.4
+    }
+  ],
+  "lampsOut": {
+    "first": 20.78,
+    "step": 0.16
+  },
+  "shopsOut": {
+    "first": 20.9,
+    "step": 0.12
+  },
+  "winter": {
+    "clock": 10.5,
+    "sunAz": 141,
+    "sunAlt": 13.5
+  },
+  "orbit": {
+    "earthOld": [
+      1.0,
+      0.0167,
+      102.95
+    ],
+    "earthNew": [
+      1.0335,
+      0.0911,
+      281.2
+    ],
+    "mars": [
+      1.5237,
+      0.0934,
+      336.06
+    ],
+    "moonNew": [
+      1.0963,
+      0.1112,
+      0
+    ]
+  },
+  "thumbnail": {
+    "time_s": 24.8
+  }
+}

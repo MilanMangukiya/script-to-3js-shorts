@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "rogue-planet-between-earth-mars",
+  "topic": "What if a rogue planet passed between Earth and Mars?",
+  "duration_s": 52,
+  "video_file": "output/rogue-planet-between-earth-mars.mp4",
+  "scientific_scope_note": "Hypothetical: a starless gas giant with Jupiter's mass and size falls in from interstellar space at 26 km/s and passes 3.47 million km (9 Moon distances) outside Earth's orbit in late September, on a prograde path between the orbits of Earth and Mars, with the Moon near full on its side. A four-body integration of that geometry gives a peak tidal pull 35 times the Moon's (about 30 times on the night shown), the Moon escaping into its own orbit around the Sun, and Earth's orbit changing to eccentricity 0.091 (Mars: 0.093) with a 384-day year and aphelion in early January, so northern winters (equinox to equinox) last about five weeks longer with about 24% less January sunlight. In about 40% of lunar positions the Moon escapes at this distance; otherwise it is left on a badly stretched orbit. Coastal tide heights depend on local resonance; the 9 m harbour range is illustrative. The harbour town, people, boats and cars are illustrative.",
+  "created_asset_ids": [
+    "gas-giant-v1",
+    "harbour-basin-v1",
+    "orbit-map-v1"
+  ],
+  "reused_asset_ids": [
+    "city-street-block-v1",
+    "village-houses-v1",
+    "ocean-surface-v1",
+    "sailboat-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "moon-body-v1",
+    "earth-globe-v1",
+    "earth-textures-nasa-v1",
+    "rocky-planet-v1",
+    "starfield-v1",
+    "snowfall-v1",
+    "sea-ice-v1",
+    "modeling-helpers-v1",
+    "shader-noise-math-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "overlay-labels-v1",
+    "caption-kinetic-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if a Rogue Planet Passed Between Earth and Mars? Goodbye, Moon",
+      "description": "A planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
+      "tags": [
+        "what if a rogue planet passed earth",
+        "rogue planet",
+        "rogue planet between earth and mars",
+        "rogue planet steals the moon",
+        "free floating planet",
+        "tidal force",
+        "earth orbit change",
+        "astrophysics simulation",
+        "space what if",
+        "physics thought experiment",
+        "3d space simulation"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#RoguePlanet",
+        "#Space",
+        "#Physics",
+        "#Moon",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if a rogue planet passed between earth and mars",
+        "rogue planet",
+        "rogue planet near earth",
+        "what happens to the moon",
+        "free floating planet",
+        "tidal force",
+        "earth orbit change",
+        "astrophysics simulation"
+      ]
+    },
+    "tiktok": {
+      "caption": "A planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
+      "hashtags": [
+        "#WhatIf",
+        "#RoguePlanet",
+        "#SpaceTok",
+        "#Physics",
+        "#Moon",
+        "#ScienceTok"
+      ],
+      "keywords": [
+        "what if a rogue planet passed between earth and mars",
+        "rogue planet",
+        "rogue planet near earth",
+        "what happens to the moon",
+        "free floating planet",
+        "tidal force"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "A planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
+      "hashtags": [
+        "#WhatIf",
+        "#RoguePlanet",
+        "#Space",
+        "#Astronomy",
+        "#Moon",
+        "#ScienceReels",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if a rogue planet passed between earth and mars",
+        "rogue planet",
+        "rogue planet near earth",
+        "what happens to the moon",
+        "free floating planet",
+        "tidal force"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if a Rogue Planet Passed Between Earth and Mars? It Took the Moon",
+      "description": "A planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
+      "hashtags": [
+        "#WhatIf",
+        "#RoguePlanet",
+        "#Space",
+        "#Physics",
+        "#Moon"
+      ],
+      "keywords": [
+        "what if a rogue planet passed between earth and mars",
+        "rogue planet",
+        "rogue planet near earth",
+        "what happens to the moon",
+        "free floating planet",
+        "tidal force"
+      ]
+    },
+    "x_video": {
+      "post": "A planet as heavy as Jupiter misses Earth by nine Moon distances, and still floods the coast, takes the Moon and stretches winter by five weeks. Losing the Moon or five extra weeks of winter: which would hit you harder?",
+      "hashtags": [
+        "#WhatIf",
+        "#RoguePlanet",
+        "#Space",
+        "#Physics",
+        "#Moon"
+      ],
+      "keywords": [
+        "what if a rogue planet passed between earth and mars",
+        "rogue planet",
+        "rogue planet near earth"
+      ]
+    }
+  },
+  "publishing_status": "rendered_not_published",
+  "rendered_at_utc": "2026-10-16T14:19:28Z",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 23,
+    "path_in_repo": "videos/023-rogue-planet-between-earth-mars.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/023-rogue-planet-between-earth-mars.mp4",
+    "sha256": "d74a0c8581d8df43b2a50d8a853966f0c8206baed32c95920777ca20f27a098e",
+    "size_bytes": 30637695,
+    "thumbnail_path_in_repo": "videos/023-rogue-planet-between-earth-mars.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/023-rogue-planet-between-earth-mars.jpg",
+    "thumbnail_sha256": "25c87eaca9b3e538a5b8723e2ed5e6120612fcca8684d9161ea77474d38fe206",
+    "copy_path_in_repo": "videos/023-rogue-planet-between-earth-mars.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/023-rogue-planet-between-earth-mars.md",
+    "copy_sha256": "8fce3dc4b75865d1cce7ad6c375e43de41ee9ad45c91303a17cf37bc818a2758",
+    "uploaded_at_utc": "2026-10-16T14:19:57Z"
+  }
+}

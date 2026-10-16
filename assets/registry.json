@@ -49,6 +49,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code; textures NASA public domain (see earth-textures-nasa-v1)",
@@ -86,6 +87,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "what-if-every-man-disappeared"
       ],
       "license": "public_domain_nasa",
@@ -127,6 +129,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -306,6 +309,7 @@
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -569,6 +573,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -658,6 +663,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -714,6 +720,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -755,6 +762,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -803,6 +811,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -852,6 +861,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -892,6 +902,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -928,6 +939,7 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -1081,7 +1093,8 @@
       "used_in": [
         "air-pressure-doubled",
         "ice-sank-instead-of-floating",
-        "rain-nonstop-everywhere"
+        "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars"
       ],
       "license": "original_procedural",
       "notes": "Move points.position to keep the volume around the camera. Sprite sizes are authored for 1080-wide output. A negative fallSpeed makes particles rise (used as illustrative evaporation over the sea in rain-nonstop-everywhere)."
@@ -1152,7 +1165,8 @@
       "used_in": [
         "earth-ten-percent-closer",
         "earth-without-tilt",
-        "ice-sank-instead-of-floating"
+        "ice-sank-instead-of-floating",
+        "rogue-planet-between-earth-mars"
       ],
       "license": "original_procedural",
       "notes": "Use over ocean-surface-v1. update(time_s, sink) lowers pieces with staggered delays for melting or counterfactual shots."
@@ -1523,6 +1537,7 @@
       "used_in": [
         "air-pressure-doubled",
         "moon-made-of-ice",
+        "rogue-planet-between-earth-mars",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -1619,7 +1634,8 @@
       ],
       "created_for": "moon-made-of-ice",
       "used_in": [
-        "moon-made-of-ice"
+        "moon-made-of-ice",
+        "rogue-planet-between-earth-mars"
       ],
       "license": "original_procedural",
       "notes": "Rock and ice maps are generated from seeded canvas textures; visual geography is illustrative. Use a label when showing a material transformation."
@@ -1989,6 +2005,7 @@
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared"
       ],
       "license": "original_procedural",
@@ -2024,6 +2041,7 @@
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared"
       ],
       "license": "SIL Open Font License 1.1",
@@ -2067,6 +2085,7 @@
         "last-woman-alive",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -2577,6 +2596,7 @@
         "last-man-alive",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -2687,7 +2707,8 @@
       "type": "three_component",
       "created_for": "continents-one-landmass",
       "used_in": [
-        "continents-one-landmass"
+        "continents-one-landmass",
+        "rogue-planet-between-earth-mars"
       ],
       "license": "original_procedural",
       "source_path": "src/library/environment/VillageHouses.ts",
@@ -2951,7 +2972,8 @@
       "type": "three_component",
       "created_for": "earth-core-solid",
       "used_in": [
-        "earth-core-solid"
+        "earth-core-solid",
+        "rogue-planet-between-earth-mars"
       ],
       "license": "original_procedural",
       "source_path": "src/library/planet/RockyPlanet.ts",
@@ -3420,6 +3442,7 @@
         "earth-without-tilt",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
+        "rogue-planet-between-earth-mars",
         "sky-disappeared"
       ],
       "license": "original_code",
@@ -3466,6 +3489,138 @@
       ],
       "license": "original_code",
       "notes": "apply() sets the full lighting state every frame from its arguments; environment bakes are cached by quantised sky/ground/sun-direction keys (oldest disposed), so frames are identical after any seek order. Environment provides both sky fill and ground bounce without occlusion: shaded upward-facing ground goes black when skyAmount is 0, vertical surfaces keep some bounce. The disc billboard sits at discDistance; keep it inside the camera far plane. Low suns produce strong grazing specular glare on rough ground: lower exposure or raise roughness rather than adding light."
+    },
+    {
+      "id": "gas-giant-v1",
+      "name": "Banded gas giant (rogue planet or Jupiter-like world)",
+      "type": "three_component",
+      "source_path": "src/library/planet/GasGiant.ts",
+      "description": "Banded gas-giant sphere: zones and belts of irregular width, sheared domain-warped turbulence, fine streaks along the bands, eddies where zones meet belts, up to four swirling storm ovals carried with their band, hazy poles, limb darkening, a soft terminator and a day-side haze rim, plus an optional additive halo shell. A horizon clip and colour tint let it sit in a terrestrial sky at its true angular size, rising out of a sea and reddened near the horizon.",
+      "tags": [
+        "planet",
+        "gas-giant",
+        "jupiter",
+        "rogue-planet",
+        "space",
+        "sky",
+        "bands",
+        "storms"
+      ],
+      "configurable_parameters": [
+        "radius",
+        "seed",
+        "segments",
+        "zoneColors",
+        "beltColors",
+        "poleColor",
+        "bands",
+        "turbulence",
+        "storms [{lat, lon, size, color, strength, spin}]",
+        "sunDirection",
+        "hazeColor",
+        "hazeStrength",
+        "halo",
+        "exposure",
+        "tint",
+        "ambient",
+        "horizonClip(elevation)",
+        "body (spin-axis tilt)",
+        "update(time_s, rotation)"
+      ],
+      "created_for": "rogue-planet-between-earth-mars",
+      "used_in": [
+        "rogue-planet-between-earth-mars"
+      ],
+      "license": "original_code",
+      "notes": "Radius 1 by default; tilt `body` to orient the spin axis and pass the spin angle to update(). Band flow is linear in time. For a body in a terrestrial sky, place the group far from the camera, scale it to distance x tan(diameter / 2), set horizonClip to the sea-horizon elevation and tint for extinction."
+    },
+    {
+      "id": "harbour-basin-v1",
+      "name": "Stone harbour basin with tide-aware moored boats",
+      "type": "three_component",
+      "source_path": "src/library/environment/HarbourBasin.ts",
+      "description": "Metre-scale stone harbour: ashlar quay walls with tide staining keyed to mean sea level, coping, stone steps, iron ladders, bollards, a railing, granite-paved quays and plaza (with holes for other surfaces such as a street), a mud floor heightfield whose channel shoals before the landward quay, breakwater arms with a red-and-white lighthouse and a soft rotating beam, quay lamps with optional point lights, and moored yachts (sailboat-v1) or fishing boats that float on the current sea level and ground and heel on the mud as it falls.",
+      "tags": [
+        "harbour",
+        "harbor",
+        "port",
+        "tide",
+        "quay",
+        "boats",
+        "lighthouse",
+        "flood",
+        "coast",
+        "town"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "halfWidth",
+        "headZ",
+        "mouthZ",
+        "sideQuayWidth",
+        "mouthHalfWidth",
+        "quayTop",
+        "meanSea",
+        "floorWall",
+        "floorChannel",
+        "lighthouse (1, -1, 0)",
+        "boats [{kind, x, z, heading, length, color, seed, groundHeel}]",
+        "lamps [[x, z]]",
+        "lights",
+        "pavingHoles",
+        "update(time_s, seaLevel, beamAngle)",
+        "floorAt(x, z)",
+        "boatState(boat, time_s, seaLevel)",
+        "setLamps(level(i))",
+        "beamStrength",
+        "lampHeads",
+        "lampLights",
+        "bollards",
+        "lighthouseLamp",
+        "lighthouseTop"
+      ],
+      "created_for": "rogue-planet-between-earth-mars",
+      "used_in": [
+        "rogue-planet-between-earth-mars"
+      ],
+      "license": "original_code",
+      "notes": "The water surface is supplied by the caller (e.g. ocean-surface-v1 at the same level). Defaults: quay top y = 0, mean sea 2.2 m below, floor 4-6 m below mean sea. Boats keep their spec position; override b.g for drifting boats after update(). Static parts are merged by material."
+    },
+    {
+      "id": "orbit-map-v1",
+      "name": "Top-down orbit map with progressive trajectories",
+      "type": "three_component",
+      "source_path": "src/library/diagram/OrbitMap.ts",
+      "description": "Solar-system orbit map at true AU geometry in the XZ plane (ecliptic +y maps to world -Z): Kepler ellipses from (a, e, longitude of perihelion) and sampled trajectories drawn as glowing tubes that draw on progressively and pulse for emphasis, a granulated glowing Sun with a camera-facing corona, and caller-supplied body markers placed from ecliptic coordinates. ellipsePoint() returns a position on an orbit by longitude.",
+      "tags": [
+        "orbit",
+        "solar-system",
+        "diagram",
+        "kepler",
+        "trajectory",
+        "flyby",
+        "space",
+        "map"
+      ],
+      "configurable_parameters": [
+        "unitsPerAu",
+        "sunRadius",
+        "addEllipse(id, a, e, periLonDeg, {color, radius, intensity, opacity, segments, startLonDeg})",
+        "addPath(id, points, style)",
+        "setDraw(id, fraction)",
+        "setGlow(id, k, opacity)",
+        "addBody(id, object)",
+        "setBody(id, x, y, visible)",
+        "toWorld(x, y)",
+        "update(time_s, camera)",
+        "ellipsePoint(a, e, periLonDeg, lonDeg)"
+      ],
+      "created_for": "rogue-planet-between-earth-mars",
+      "used_in": [
+        "rogue-planet-between-earth-mars"
+      ],
+      "license": "original_code",
+      "notes": "Rotate `group` to orient the map in a portrait frame. Markers are enlarged for visibility; orbit lines and tracks keep true AU proportions. Pass the camera to update() so the corona faces it."
     }
   ]
 }
