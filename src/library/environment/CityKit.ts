@@ -5,11 +5,12 @@ import { Building, type BuildingStyle } from './BuildingKit';
 import { BroadleafTree } from './BroadleafTree';
 import { HumanV2, walkPose, idlePose } from '../characters/HumanV2';
 import { LightBeam } from '../fx/LightBeam';
+import { Vehicle, type VehicleKind } from '../vehicles/RoadVehicles';
 
 /**
  * City kit: a street (asphalt road with markings, raised kerbs and paved sidewalks) lined with varied BuildingKit
- * blocks, street lamps that pool warm light on the pavement, trees, clear-coated cars (moving traffic with head/tail
- * lights) and walking HumanV2 pedestrians. Metres; the street runs along Z (toward −Z is "down the street").
+ * blocks, street lamps that pool warm light on the pavement, trees, RoadVehicles traffic (moving cars, taxis, vans
+ * and buses with head/tail lights) and walking HumanV2 pedestrians. Metres; the street runs along Z (toward −Z is "down the street").
  * `setLight(night, zenith, horizon)` switches the whole block between day and night; `update(t)` animates traffic,
  * walkers and window life. Everything is a deterministic function of time.
  */
@@ -21,49 +22,9 @@ export interface CityStreetV2Options {
   pbr: PBRLibrary;
 }
 
-const PAINT = [0x9e1b1b, 0x1d3f72, 0xe8e6e1, 0x1b1d20, 0x5c6670, 0x2f5d3a, 0xc9a227, 0x7a2f55, 0x3a7ca5, 0xb5b8bb];
-/** Polished procedural car: bevelled extruded body with clear-coat paint, glass greenhouse, wheels and lights. */
-export class Car {
-  readonly group = new THREE.Group();
-  readonly lights: THREE.MeshStandardMaterial[] = [];
-  readonly wheels: THREE.Object3D[] = [];
-  constructor(o: { kind?: 'sedan' | 'hatch' | 'suv' | 'van' | 'taxi'; color?: THREE.ColorRepresentation; seed?: number } = {}) {
-    const kind = o.kind ?? 'sedan', r = rng(o.seed ?? 3);
-    const L = { sedan: 4.6, hatch: 4.0, suv: 4.7, van: 5.0, taxi: 4.6 }[kind], Wd = kind === 'van' || kind === 'suv' ? 1.9 : 1.8, Hb = kind === 'van' ? 1.9 : kind === 'suv' ? 1.65 : 1.42;
-    const paint = new THREE.MeshPhysicalMaterial({ color: kind === 'taxi' ? 0xf2c200 : (o.color ?? PAINT[Math.floor(r() * PAINT.length)]), metalness: 0.55, roughness: 0.32, clearcoat: 1, clearcoatRoughness: 0.06 });
-    const glass = new THREE.MeshPhysicalMaterial({ color: 0x0d1418, metalness: 0.2, roughness: 0.05, clearcoat: 1, clearcoatRoughness: 0.02 });
-    const trim = new THREE.MeshStandardMaterial({ color: 0x15171a, roughness: 0.5, metalness: 0.3 });
-    // Side profile (x along the car, y up): bumper, hood, windshield, roof, rear.
-    const s = new THREE.Shape(), h = L / 2, wb = 0.32;
-    s.moveTo(-h, wb); s.lineTo(-h, 0.75); s.quadraticCurveTo(-h + 0.1, 0.92, -h + 0.85, 0.95);
-    if (kind === 'van') { s.lineTo(-h + 1.05, Hb - 0.1); s.quadraticCurveTo(-h + 1.15, Hb, -h + 1.5, Hb); s.lineTo(h - 0.1, Hb); s.quadraticCurveTo(h, Hb, h, Hb - 0.15); }
-    else { const roofF = kind === 'hatch' ? -0.2 : -0.35, roofR = kind === 'hatch' ? h - 0.35 : kind === 'suv' ? h - 0.5 : 0.85;
-      s.lineTo(roofF - 0.55, 1.0); s.quadraticCurveTo(roofF - 0.1, Hb, roofF + 0.25, Hb); s.lineTo(roofR - 0.35, Hb); s.quadraticCurveTo(roofR, Hb, roofR + 0.45, 1.02);
-      if (kind === 'sedan' || kind === 'taxi') s.lineTo(h - 0.15, 0.98); s.quadraticCurveTo(h, 0.96, h, 0.78); }
-    s.lineTo(h, wb); s.lineTo(-h, wb);
-    const body = new THREE.ExtrudeGeometry(s, { depth: Wd - 0.16, bevelEnabled: true, bevelThickness: 0.08, bevelSize: 0.07, bevelSegments: 5, curveSegments: 24 }).translate(0, 0, -(Wd - 0.16) / 2);
-    const bm = new THREE.Mesh(body, paint); bm.castShadow = bm.receiveShadow = true; this.group.add(bm);
-    // Glass band: a slightly narrower copy of the cabin only.
-    const gl = new THREE.Mesh(new THREE.BoxGeometry(kind === 'van' ? L - 1.7 : L * 0.48, Hb - 1.05, Wd - 0.02), glass);
-    gl.position.set(kind === 'van' ? 0.35 : kind === 'hatch' ? 0.25 : 0.05, 1.02 + (Hb - 1.05) / 2 - 0.02, 0); gl.scale.set(1, 0.9, 1); this.group.add(gl);
-    for (const [x, z] of [[-h + 0.85, 1], [-h + 0.85, -1], [h - 0.9, 1], [h - 0.9, -1]]) {
-      const w = new THREE.Group(); w.position.set(x, 0.34, z * (Wd / 2 - 0.12));
-      const tire = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.34, 0.24, 28).rotateX(Math.PI / 2), new THREE.MeshStandardMaterial({ color: 0x141414, roughness: 0.85 }));
-      const rim = new THREE.Mesh(new THREE.CylinderGeometry(0.21, 0.21, 0.25, 16).rotateX(Math.PI / 2), new THREE.MeshStandardMaterial({ color: 0xb9bcc0, roughness: 0.25, metalness: 0.9 }));
-      w.add(tire, rim); tire.castShadow = true; this.group.add(w); this.wheels.push(w);
-    }
-    const head = new THREE.MeshStandardMaterial({ color: 0xfff6e0, emissive: 0xfff1d6, emissiveIntensity: 0.2, roughness: 0.2 });
-    const tail = new THREE.MeshStandardMaterial({ color: 0x6a0d0d, emissive: 0xff2a1a, emissiveIntensity: 0.15, roughness: 0.3 });
-    this.lights.push(head, tail);
-    for (const z of [1, -1]) {
-      const hl = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.12, 0.36), head); hl.position.set(-h - 0.06, 0.78, z * (Wd / 2 - 0.3)); this.group.add(hl);
-      const tl = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.12, 0.42), tail); tl.position.set(h + 0.06, 0.82, z * (Wd / 2 - 0.28)); this.group.add(tl);
-    }
-    const grille = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.22, Wd * 0.45), trim); grille.position.set(-h - 0.05, 0.55, 0); this.group.add(grille);
-    if (kind === 'taxi') { const sign = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.16, 0.22), new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xfff3c0, emissiveIntensity: 0.4 })); sign.position.set(0.0, Hb + 0.1, 0); this.group.add(sign); this.lights.push(sign.material as THREE.MeshStandardMaterial); }
-  }
-  /** Headlights and tail lights on (0..1). */
-  set lit(v: number) { this.lights[0].emissiveIntensity = 0.2 + 6 * v; this.lights[1].emissiveIntensity = 0.15 + 3 * v; if (this.lights[2]) this.lights[2].emissiveIntensity = 0.4 + 2.5 * v; }
+/** Kept for CityStreetV2 and older callers: now a RoadVehicles vehicle (glass greenhouse, spoked wheels, liveries). */
+export class Car extends Vehicle {
+  constructor(o: { kind?: VehicleKind; color?: THREE.ColorRepresentation; seed?: number } = {}) { super(o); }
 }
 
 let _pool: THREE.Texture | undefined;
@@ -134,7 +95,7 @@ export class CityStreetV2 {
       if (o.trees !== false) for (let tz = -2; tz > -L + 12; tz -= 16) { const t = new BroadleafTree({ height: 6 + r() * 2, canopyWidth: 3.6, leafCount: 1600, seed: Math.floor(r() * 999), leafColor: 0x4f7036 }); t.position.set(side * (RW / 2 + 1.6), 0.16, tz); this.group.add(t); }
     }
     // Traffic (two lanes, opposite directions) and pedestrians on both sidewalks.
-    const kinds = ['sedan', 'hatch', 'suv', 'van', 'taxi', 'sedan', 'hatch'] as const;
+    const kinds = ['sedan', 'hatch', 'suv', 'van', 'taxi', 'sedan', 'hatch', 'pickup'] as const;
     for (let i = 0; i < (o.cars ?? 10); i++) { const lane = i % 2 ? 1 : -1, car = new Car({ kind: kinds[Math.floor(r() * kinds.length)], seed: Math.floor(r() * 1e4) });
       car.group.rotation.y = lane > 0 ? Math.PI / 2 : -Math.PI / 2; this.group.add(car.group); this.cars.push({ car, lane, z0: r() * L, v: 6 + r() * 5 }); }
     for (let i = 0; i < (o.pedestrians ?? 16); i++) { const side = i % 2 ? 1 : -1, h = new HumanV2(HumanV2.random(Math.floor(r() * 1e5), { pbr }));

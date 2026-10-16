@@ -15,8 +15,8 @@ const require = createRequire(import.meta.url), ffmpeg = require('ffmpeg-static'
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2), name = args[0];
 const opt = (n, d) => { const i = args.indexOf(`--${n}`); return i >= 0 ? args[i + 1] : d; };
-if (!name) { console.error('Usage: node tools/lookdev.mjs <name> [--frames a,b,c] [--scale s] [--cell 360]'); process.exit(2); }
-const frames = String(opt('frames', '0')).split(',').map(Number), scale = Number(opt('scale', '0.5'));
+if (!name) { console.error('Usage: node tools/lookdev.mjs <name> [--frames a,b,c] [--scale s] [--quality standard|draft|cinematic] [--cell 360]'); process.exit(2); }
+const frames = String(opt('frames', '0')).split(',').map(Number), scale = Number(opt('scale', '0.5')), quality = opt('quality', '');
 const outDir = path.join(ROOT, 'build', 'lookdev', name), webDir = path.join(ROOT, 'build', 'lookdev', 'web');
 fs.mkdirSync(outDir, { recursive: true }); fs.mkdirSync(webDir, { recursive: true });
 await esbuild.build({ entryPoints: [path.join(ROOT, 'src', 'lookdev', 'entry.ts')], bundle: true, format: 'esm', target: 'es2022', outfile: path.join(webDir, 'lookdev.js'), logLevel: 'warning' });
@@ -29,10 +29,10 @@ const server = http.createServer((req, res) => {
 });
 await new Promise((r) => server.listen(0, '127.0.0.1', r));
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--use-angle=d3d11', '--enable-gpu', '--ignore-gpu-blocklist', '--force_high_performance_gpu', '--enable-unsafe-swiftshader'] });
-const page = await browser.newPage({ viewport: { width: 540, height: 960 } });
+const page = await browser.newPage({ viewport: { width: 540, height: 960 } }); page.setDefaultTimeout(180000);
 page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log(`[page ${m.type()}] ${m.text().slice(0, 800)}`); });
 page.on('pageerror', (e) => console.log(`[page error] ${String(e.stack ?? e).slice(0, 1500)}`));
-await page.goto(`http://127.0.0.1:${server.address().port}/build/lookdev/web/index.html?name=${name}&scale=${scale}`);
+await page.goto(`http://127.0.0.1:${server.address().port}/build/lookdev/web/index.html?name=${name}&scale=${scale}${quality ? `&quality=${quality}` : ''}`);
 try { await page.evaluate(() => window.__filmReady); }
 catch (e) { console.error('Lookdev failed:', await page.evaluate(() => window.__filmError).catch(() => String(e))); await browser.close(); server.close(); process.exit(1); }
 const t0 = Date.now(), files = [];
