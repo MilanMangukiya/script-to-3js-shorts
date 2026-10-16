@@ -8,6 +8,7 @@ Generate, voice, score, caption, render, and publish-prepare deterministic 9:16 
 - **Story Writing Skill:** Read `skills/shorts-story-writer/SKILL.md` before drafting or revising hooks, narration, story beats, or publishing copy. Apply its editorial gate before narration and rendering.
 - **Three.js Direction Skill:** Read `skills/threejs-direction/SKILL.md` before staging or revising 3D shots. Analyze, plan, implement, and review a moving excerpt of pivotal changes before proceeding to another area or the final render.
 - **Voice Direction Skill:** Read `skills/voice-direction/SKILL.md` before directing narration or casting voices. Review performance with one fixed voice before comparing candidates; use supported controls and preserve exact speech/caption timing.
+- **Scene Sound Design:** Read `skills/voice-direction/references/sound-design.md` before planning or implementing soundtracks. Include suitable ambience and action Foley; use human vocal reactions selectively, reuse actual audio assets and synchronize sounds to their sources.
 - **Schema Contract:** `storyboard.schema.json` (validate via `python scripts/validate_storyboard.py stories/<slug>.json`).
 - **Asset Library:** `assets/registry.json` (`reuse_before_create` mode). Inspect registered components in `src/library/` before writing new geometry or shaders.
 

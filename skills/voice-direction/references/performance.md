@@ -21,6 +21,10 @@ These are choices, not a mandatory six-step emotional formula. In `delivery_note
 
 Keep text and voice fixed for the first performance comparison. Choose a short interval containing a hook and a turn. Plan only a few decisive pauses, then measure WPM and scene fit rather than assuming the same rate yields the same cadence for every voice.
 
+Separate expressive intonation, non-speech vocal reactions and voice presence in the mix. Rate/gap edits control rhythm; EQ/compression and relative gain affect presence; recorded breaths, gasps or chuckles are separate sound cues. For those cues, follow [scene sound design](sound-design.md). Use contrast at meaningful beats and keep unfamiliar numbers clear; continuous pitch or loudness fluctuation is not the goal.
+
+Give the key beats distinct delivery intentions in existing `delivery_note` fields: an immediate confident hook, clearly separated unfamiliar numbers, room for a reversal to register, and a payoff suited to the story's emotional mode. These are choices rather than a fixed emotion sequence. Check the generated phrasing; when Kokoro cannot provide a requested expression, describe the limitation and evaluate a separate reaction cue or an authorized engine audition instead of claiming that prose directions produced acting.
+
 ## Work
 
 The schema supports optional `narration.performance`:

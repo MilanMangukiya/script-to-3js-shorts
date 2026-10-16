@@ -1,0 +1,1607 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if a penny doubled every day for 30 days?",
+    "title": "What if a penny doubled every day for 30 days?",
+    "slug": "penny-doubled-30-days",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 47,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If you took one penny that doubles every day for 30 days instead of a million dollars, what would you actually end up with?",
+    "viewer_takeaway": "Doubling looks like nothing for weeks, then explodes: a penny doubled daily is still under $82 after two weeks but passes $1 million on day 28 and ends at $5,368,709.12, half of it added on the very last day, and as real pennies it weighs 1,342 tonnes."
+  },
+  "scientific_model": {
+    "baseline_reality": "A US cent weighs 2.5 g and is 19.05 mm across and 1.52 mm thick; $1,000,000 in $100 bills is 10,000 notes of about 1 g each.",
+    "counterfactual_change": "You refuse $1,000,000 and take one cent that doubles at the start of each day for 30 days (day 1 = 1 cent, day n = 2^(n-1) cents), as physical pennies piling up in your house. Nothing else changes.",
+    "assumptions": [
+      "Day 1 holds one cent; each later day doubles it.",
+      "Loose pennies fill about 60% of their heap volume and pile at about 24 degrees.",
+      "The house is a small one-storey home with a timber floor over a crawlspace.",
+      "The kitchen, the table, the house and the street are illustrative."
+    ],
+    "causal_chain": [
+      "One cent doubles daily.",
+      "After two weeks it is only $81.92.",
+      "By day 19 its 655 kg outweighs a horse and breaks the table.",
+      "Day 20 is over a tonne yet worth only $5,242.88.",
+      "Day 23 is 10.5 tonnes, far beyond a floor’s design load, and goes through it.",
+      "Day 28 passes $1,000,000.",
+      "Days 29-30 overfill and burst the house.",
+      "Day 30 alone adds half of the $5,368,709.12 total.",
+      "The refused million would have weighed about 10 kg."
+    ],
+    "uncertainties": [
+      "Exactly when a table or floor fails depends on its build; the film shows plausible failures well past design loads.",
+      "Heap volume depends on how coins pack (about 50-70%); the house fill dates shift by under a day.",
+      "Real pennies of earlier years (pre-1982) weigh 3.11 g."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Starting at one cent and doubling daily gives 2^(n-1) cents on day n: $81.92 on day 14 and $5,368,709.12 on day 30.",
+        "confidence": "derived",
+        "reasoning": "Exact doubling arithmetic.",
+        "presentation_guardrail": "Exact figures on the HUD; \"eighty-one dollars\" spoken."
+      },
+      {
+        "id": "CL02",
+        "statement": "A US cent minted since 1982 weighs 2.5 g and measures 19.05 mm across and 1.52 mm thick.",
+        "confidence": "established",
+        "reasoning": "US Mint coin specifications.",
+        "presentation_guardrail": "True-size coins."
+      },
+      {
+        "id": "CL03",
+        "statement": "Day 19’s 262,144 pennies weigh about 655 kg, more than a typical saddle horse (about 510 kg).",
+        "confidence": "derived",
+        "reasoning": "262,144 x 2.5 g; horse weights from University of Minnesota data and the 1,000 lb rule of thumb.",
+        "presentation_guardrail": "\"Outweighs a horse\" (a typical riding horse, not a draft horse)."
+      },
+      {
+        "id": "CL04",
+        "statement": "A 655 kg pile concentrated on a kitchen tabletop is several times the roughly 1,000 N (about 100 kg) vertical static load used to test domestic tables, so the table would very likely fail.",
+        "confidence": "plausible",
+        "reasoning": "EN 12521 test value from a manufacturer compliance sheet; actual failure load depends on construction.",
+        "presentation_guardrail": "Shown as one illustrative failure."
+      },
+      {
+        "id": "CL05",
+        "statement": "Day 20’s 524,288 pennies weigh 1.31 tonnes but are worth only $5,242.88.",
+        "confidence": "derived",
+        "reasoning": "524,288 pennies at 2.5 g each; 524,288 cents in dollars.",
+        "presentation_guardrail": "\"Over a ton\" and \"five thousand dollars\"."
+      },
+      {
+        "id": "CL06",
+        "statement": "Day 23’s 10.5 tonnes of pennies (about 3 m³ loose) spread over roughly 11 m² is about 900 kg per square metre, and far more under the peak, several times the 40 psf (about 195 kg/m²) design live load for US residential floors, so a timber floor would likely give way.",
+        "confidence": "plausible",
+        "reasoning": "IRC Table R301.5 live loads; heap geometry from the packing and slope assumptions.",
+        "presentation_guardrail": "Illustrative failure of a suspended timber floor."
+      },
+      {
+        "id": "CL07",
+        "statement": "Day 28 is the first day above $1,000,000 ($1,342,177.28); day 27 is $671,088.64.",
+        "confidence": "derived",
+        "reasoning": "2^27 cents and 2^26 cents in dollars.",
+        "presentation_guardrail": "HUD shows the crossing."
+      },
+      {
+        "id": "CL08",
+        "statement": "At about 60% packing, day 28’s pennies take about 97 m³, day 29’s about 194 m³ and day 30’s about 390 m³, so a small one-storey house (about 180 m³ inside, crawlspace included) is full on day 29 and overflowing on day 30.",
+        "confidence": "plausible",
+        "reasoning": "Coin bounding volume 0.433 cm³ divided by the packing fraction; house volume from its dimensions.",
+        "presentation_guardrail": "\"Burst out of your house\" for days 29-30."
+      },
+      {
+        "id": "CL09",
+        "statement": "Each doubling adds as much as everything before it, so day 30 adds $2,684,354.56, half of the final $5,368,709.12.",
+        "confidence": "derived",
+        "reasoning": "2^29 - 2^28 = 2^28 cents.",
+        "presentation_guardrail": "\"Half of it arrived on the last day.\""
+      },
+      {
+        "id": "CL10",
+        "statement": "A US banknote weighs about 1 gram, so $1,000,000 in $100 bills (10,000 notes, 100 bundles) weighs about 10 kg and fits in a briefcase, against 1,342 tonnes of pennies.",
+        "confidence": "established",
+        "reasoning": "US Currency Education Program: about 1 g per note; bundle size 156 × 66 mm.",
+        "presentation_guardrail": "\"Would have fit in a briefcase.\""
+      }
+    ],
+    "sources": [
+      {
+        "name": "US Mint: Coin specifications (one cent: 2.50 g, 0.750 in, 1.52 mm)",
+        "url": "https://www.usmint.gov/learn/coin-and-medal-programs/coin-specifications",
+        "supports_claim_ids": [
+          "CL02",
+          "CL03",
+          "CL05",
+          "CL08"
+        ]
+      },
+      {
+        "name": "US Currency Education Program: Currency facts (a note weighs about 1 gram)",
+        "url": "https://www.uscurrency.gov/currency-facts",
+        "supports_claim_ids": [
+          "CL10"
+        ]
+      },
+      {
+        "name": "PetMD: How much does a horse weigh? (University of Minnesota breed averages)",
+        "url": "https://www.petmd.com/horse/how-much-does-a-horse-weigh",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "TheHorse.com: Weighing in (the 1,000 lb light-horse rule of thumb)",
+        "url": "https://thehorse.com/14015/weighing-in/",
+        "supports_claim_ids": [
+          "CL03"
+        ]
+      },
+      {
+        "name": "Furniture strength test values for domestic tables (EN 12521, 1000 N vertical static load)",
+        "url": "https://archipro.com.au/assets/MemberUploads/421-465-bkdb-v2.pdf",
+        "supports_claim_ids": [
+          "CL04"
+        ]
+      },
+      {
+        "name": "Minnesota Rules 1309.0301 reprinting IRC Table R301.5 (40 psf residential live load)",
+        "url": "https://www.revisor.mn.gov/rules/1309.0301/version/2014-01-18%2000:47:20+00:00",
+        "supports_claim_ids": [
+          "CL06"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "You turn down a million dollars for a penny that doubles every day: for weeks it is pocket change, then it breaks your table, sinks through your floor, passes the million on day 28 and bursts your house, half of it arriving on the very last day.",
+    "visual_identity": "Warm morning kitchen at eye level with an elegant boxless money counter in the top-left; true-size copper coins that hop out of their twins; a heap that cracks the table and the floor; a suburban house bursting with copper; a gold x-ray of the last day.",
+    "palette": [
+      "#C27A4C",
+      "#F59E0B",
+      "#FACC15",
+      "#7F9A8A",
+      "#E8DCC4",
+      "#3F7FD6"
+    ],
+    "lighting": "Morning sun through the kitchen window with a warm pendant lamp; outdoors, morning sun from the front right.",
+    "camera_language": "Eye-level POV that leans in to one penny, pulls back as it multiplies, steps back as furniture and floor fail; across-the-street handheld for the house; a crane over the mound; a tilt from the briefcase to the mound.",
+    "motion_language": "Comic, physical doubling: coins pop out of twins, pours land each day, wood cracks, boards drop, walls fall outward one after another.",
+    "world_scale_policy": "True metre scale throughout; coins at true size; heap volumes from coin counts.",
+    "emotional_arc": [
+      "Disbelief",
+      "Impatience",
+      "Surprise",
+      "Irony",
+      "Alarm",
+      "Vindication",
+      "Chaos",
+      "Insight",
+      "Comic payoff"
+    ],
+    "opening_hook": "You just turned down one million dollars for a single penny.",
+    "mid_video_rehook": "Day 20 is over a tonne of pennies that has already broken your table, yet it is worth only $5,242.88, so the million still looks smarter until the floor goes and day 28 finally passes it.",
+    "ending_payoff": "The million you refused would have fit in a briefcase.",
+    "loop_connection": "The briefcase that leaves in the first seconds returns, open, beside the mound in the last shot.",
+    "asset_policy": "Reuse the room kit, village houses, trees, sky rig and HUD; add a reusable coin-pile-v1 (true-size coins, volume-derived heap, twin hops and pours)."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Original light score: a plucked, curious figure that speeds up with the doubling, a held breath before each failure, a bright chord when the million is passed, a shimmering swell for the x-ray, and a small button at the end.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "Coin clinks that double into a cascade; the briefcase clack; wood cracking; floorboards and joists breaking in sequence; window glass bursting; walls falling one after another; a copper avalanche; silence drops before the table, floor and house fail.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The key consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.8,
+      "narration": {
+        "text": "You just turned down one million dollars for a single penny.",
+        "start_s": 0.04,
+        "end_s": 4.65,
+        "delivery_note": "Matter-of-fact; a small lift on \"a single penny\".",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Why would anyone do that?",
+      "visual_payoff": "The million leaves; one penny stays.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 3.75,
+          "shot_type": "eye-level POV at the kitchen table: the million leaves",
+          "world": "1 unit = 1 m. Your kitchen (room-box-v1 shell, 4.6 × 5.4 m) with a walnut table at the centre, plank floor over a 0.75 m crawlspace, morning sun through the left window, RoomEnvironment reflections for the copper.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0,
+                  1.6,
+                  -1.5
+                ],
+                "look_at": [
+                  0.01,
+                  0.74,
+                  -2.45
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 3.75,
+                "position": [
+                  0,
+                  1.45,
+                  -1.65
+                ],
+                "look_at": [
+                  0.01,
+                  0.74,
+                  -2.5
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Standing at the table, leaning in a little.",
+            "lens_notes": "One penny in front of the open briefcase of cash; the case shuts and slides out of frame right.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "VS $1,000,000 IN CASH",
+            "metric_label": "DAY 1 OF 30",
+            "start_value": 0.01,
+            "end_value": 0.01,
+            "unit": "$",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "briefcase",
+              "kind": "other",
+              "appearance": "A black briefcase holding $1,000,000 in banded $100 bundles.",
+              "geometry_and_material": "Hinged lid; 100 bundles of 100 stylised notes.",
+              "scale_and_accuracy": "46 × 34 × 11 cm; about 10 kg of notes.",
+              "movement": "Open; the lid shuts at 2.55s and the case is lifted away by 3.75s."
+            },
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "One penny on the tabletop."
+            }
+          ],
+          "animation_plan": [
+            "0-2.55s the million behind the penny; 2.55s the lid snaps shut and the case slides away."
+          ],
+          "lighting": "Morning sun through the window; warm pendant lamp.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 3.75,
+          "end_s": 4.8,
+          "shot_type": "close-up: the single penny left on the table",
+          "world": "1 unit = 1 m. Your kitchen (room-box-v1 shell, 4.6 × 5.4 m) with a walnut table at the centre, plank floor over a 0.75 m crawlspace, morning sun through the left window, RoomEnvironment reflections for the copper.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 22,
+            "keyframes": [
+              {
+                "t_s": 3.75,
+                "position": [
+                  0,
+                  1.05,
+                  -2.2
+                ],
+                "look_at": [
+                  0,
+                  0.76,
+                  -2.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 4.8,
+                "position": [
+                  0,
+                  1.02,
+                  -2.24
+                ],
+                "look_at": [
+                  0,
+                  0.76,
+                  -2.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Leaning over the penny.",
+            "lens_notes": "The penny fills the centre of the frame, its rim catching the window light.",
+            "handheld_sway": 0.15
+          },
+          "hud_telemetry": {
+            "timer_label": "1 PENNY, DOUBLING DAILY",
+            "metric_label": "DAY 1 OF 30",
+            "start_value": 0.01,
+            "end_value": 0.01,
+            "unit": "$",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "One penny, alone."
+            }
+          ],
+          "animation_plan": [
+            "3.75s the HUD reads DAY 1, $0.01, 1 penny."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "one million dollars",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 2.55,
+          "duration_s": 0.3,
+          "kind": "impact",
+          "description": "Briefcase lid snaps shut.",
+          "relative_db": -12
+        },
+        {
+          "at_s": 2.95,
+          "duration_s": 0.8,
+          "kind": "whoosh",
+          "description": "The case is carried away.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Same table, days later."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.8,
+      "end_s": 11.2,
+      "narration": {
+        "text": "It doubles every day for thirty days. Two weeks in, you have eighty-one dollars.",
+        "start_s": 4.92,
+        "end_s": 11.05,
+        "delivery_note": "Even; let \"eighty-one dollars\" fall flat.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "How fast does it grow?",
+      "visual_payoff": "Day 14: a plate-sized heap worth $81.92.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.8,
+          "end_s": 11.2,
+          "shot_type": "time-lapse on the tabletop: every penny pops a twin each day",
+          "world": "1 unit = 1 m. Your kitchen (room-box-v1 shell, 4.6 × 5.4 m) with a walnut table at the centre, plank floor over a 0.75 m crawlspace, morning sun through the left window, RoomEnvironment reflections for the copper.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 22,
+            "keyframes": [
+              {
+                "t_s": 4.8,
+                "position": [
+                  0,
+                  1.02,
+                  -2.24
+                ],
+                "look_at": [
+                  0,
+                  0.76,
+                  -2.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 11.2,
+                "position": [
+                  0,
+                  1.95,
+                  -1.05
+                ],
+                "look_at": [
+                  0,
+                  0.8,
+                  -2.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow pull back as the heap grows.",
+            "lens_notes": "Days 2-14: each coin hops out of its twin; by day 14, 8,192 pennies in a heap the size of a dinner plate.",
+            "handheld_sway": 0.15
+          },
+          "hud_telemetry": {
+            "timer_label": "8,192 PENNIES · 20 KG",
+            "metric_label": "DAY 14 OF 30",
+            "start_value": 0.02,
+            "end_value": 81.92,
+            "unit": "$",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "Doubles on every day tick."
+            }
+          ],
+          "animation_plan": [
+            "5.15-7.57s days 2-14 tick faster and faster; each new coin hops out of an existing one."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "eighty-one dollars",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.8,
+          "duration_s": 4,
+          "kind": "texture",
+          "description": "A clink for each doubling, building into a cascade.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Wider, a few days on."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 11.2,
+      "end_s": 16.2,
+      "narration": {
+        "text": "Day nineteen: the pile outweighs a horse, and the table snaps.",
+        "start_s": 11.32,
+        "end_s": 16.05,
+        "delivery_note": "Brisk; snap the last two words.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "What happens to the table?",
+      "visual_payoff": "At 655 kg the table cracks and folds.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.2,
+          "end_s": 16.2,
+          "shot_type": "wider: the heap fills the table until it snaps",
+          "world": "1 unit = 1 m. Your kitchen (room-box-v1 shell, 4.6 × 5.4 m) with a walnut table at the centre, plank floor over a 0.75 m crawlspace, morning sun through the left window, RoomEnvironment reflections for the copper.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 11.2,
+                "position": [
+                  1.25,
+                  1.6,
+                  -0.9
+                ],
+                "look_at": [
+                  0,
+                  0.65,
+                  -2.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 16.2,
+                "position": [
+                  1.35,
+                  1.62,
+                  -0.75
+                ],
+                "look_at": [
+                  0,
+                  0.45,
+                  -2.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld beside the table.",
+            "lens_notes": "Coins pour onto the heap each day; the top sags and cracks in the middle; the heap crashes to the floor.",
+            "handheld_sway": 0.3,
+            "impulse_shake": {
+              "at_s": 15.08,
+              "duration_s": 0.5,
+              "intensity": 0.45
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "262,144 PENNIES · 655 KG",
+            "metric_label": "DAY 19 OF 30",
+            "start_value": 163.84,
+            "end_value": 2621.44,
+            "unit": "$",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "Pours of new coins each day; slumps to the floor."
+            },
+            {
+              "id": "table",
+              "kind": "other",
+              "asset_hint": "room-box-v1",
+              "appearance": "A 2.0 × 1.0 m walnut kitchen table.",
+              "geometry_and_material": "Two half-tops with two legs each, so it can crack in the middle.",
+              "scale_and_accuracy": "Top at 0.76 m.",
+              "movement": "Sags from 13.4s; cracks and folds at 15.08s."
+            }
+          ],
+          "animation_plan": [
+            "10.3-11.6s days 15-19; 15.08s the table snaps and the heap drops to the floor."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "the table snaps",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 14.78,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "The room holds its breath.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 15.08,
+          "duration_s": 1,
+          "kind": "impact",
+          "description": "Wood cracks; coins crash to the floor.",
+          "relative_db": -8
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "The other side of the room."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "twist",
+      "start_s": 16.2,
+      "end_s": 20.6,
+      "narration": {
+        "text": "Day twenty, and it's still only worth five thousand dollars.",
+        "start_s": 16.32,
+        "end_s": 20.45,
+        "delivery_note": "Deadpan.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Is it worth it yet?",
+      "visual_payoff": "A tonne of copper on the floor, worth $5,242.88.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 16.2,
+          "end_s": 20.6,
+          "shot_type": "the heap on the kitchen floor among the broken table",
+          "world": "1 unit = 1 m. Your kitchen (room-box-v1 shell, 4.6 × 5.4 m) with a walnut table at the centre, plank floor over a 0.75 m crawlspace, morning sun through the left window, RoomEnvironment reflections for the copper.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 16.2,
+                "position": [
+                  -1.2,
+                  1.6,
+                  -0.85
+                ],
+                "look_at": [
+                  0,
+                  0.25,
+                  -2.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 20.6,
+                "position": [
+                  -1.25,
+                  1.62,
+                  -0.7
+                ],
+                "look_at": [
+                  0,
+                  0.25,
+                  -2.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld from the other side of the table.",
+            "lens_notes": "A 1.3-tonne copper heap with the table halves sticking out of it.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "524,288 PENNIES · 1.3 TONNES",
+            "metric_label": "DAY 20 OF 30",
+            "start_value": 5242.88,
+            "end_value": 5242.88,
+            "unit": "$",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "Settled on the floor."
+            },
+            {
+              "id": "table",
+              "kind": "other",
+              "asset_hint": "room-box-v1",
+              "appearance": "A 2.0 × 1.0 m walnut kitchen table.",
+              "geometry_and_material": "Two half-tops with two legs each, so it can crack in the middle.",
+              "scale_and_accuracy": "Top at 0.76 m.",
+              "movement": "Broken halves half-buried."
+            }
+          ],
+          "animation_plan": [
+            "16.6s day 20."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "five thousand dollars",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 16.2,
+          "duration_s": 2,
+          "kind": "texture",
+          "description": "Coins settling.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Three days later."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 20.6,
+      "end_s": 25.8,
+      "narration": {
+        "text": "Three days later, ten tons of pennies go through the floor.",
+        "start_s": 20.72,
+        "end_s": 25.65,
+        "delivery_note": "Brisk; land \"through the floor\".",
+        "pacing_energy": "steady_escalation"
+      },
+      "viewer_question": "How long can the house take it?",
+      "visual_payoff": "The floor gives way; the heap drops into the crawlspace.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 20.6,
+          "end_s": 25.8,
+          "shot_type": "the floor gives way under ten tonnes",
+          "world": "1 unit = 1 m. Your kitchen (room-box-v1 shell, 4.6 × 5.4 m) with a walnut table at the centre, plank floor over a 0.75 m crawlspace, morning sun through the left window, RoomEnvironment reflections for the copper.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 20.6,
+                "position": [
+                  0.9,
+                  1.7,
+                  -0.45
+                ],
+                "look_at": [
+                  0,
+                  0.2,
+                  -2.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 25.8,
+                "position": [
+                  0.9,
+                  1.75,
+                  -0.3
+                ],
+                "look_at": [
+                  0,
+                  -0.1,
+                  -2.6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld at the room edge, looking down into the hole.",
+            "lens_notes": "The heap spreads across the room; boards and joists under it drop into the crawlspace and the heap follows.",
+            "handheld_sway": 0.3,
+            "impulse_shake": {
+              "at_s": 24.68,
+              "duration_s": 0.6,
+              "intensity": 0.55
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "10.5 TONNES OF PENNIES",
+            "metric_label": "DAY 23 OF 30",
+            "start_value": 10485.76,
+            "end_value": 41943.04,
+            "unit": "$",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "Grows across the room; drops 0.75 m."
+            },
+            {
+              "id": "floor",
+              "kind": "architecture",
+              "asset_hint": "room-box-v1",
+              "appearance": "Oak plank floor on joists over a crawlspace.",
+              "geometry_and_material": "Instanced 0.11 m boards and 0.6 m joist pieces.",
+              "scale_and_accuracy": "0.75 m crawlspace.",
+              "movement": "Gives way at 24.68s."
+            }
+          ],
+          "animation_plan": [
+            "20.75-22.3s days 21-23; 24.68s the floor breaks; days 24-25 fill the hole."
+          ],
+          "lighting": "Morning sun; dust in the light.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "through the floor",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 24.38,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Boards creak, then nothing.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 24.68,
+          "duration_s": 1.12,
+          "kind": "impact",
+          "description": "Boards and joists give way one after another.",
+          "relative_db": -8
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Outside, days later."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "twist",
+      "start_s": 25.8,
+      "end_s": 30,
+      "narration": {
+        "text": "Day twenty-eight, you finally beat the million.",
+        "start_s": 26.52,
+        "end_s": 29.85,
+        "delivery_note": "A beat of satisfaction on \"finally\".",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 1
+        }
+      },
+      "viewer_question": "When does it beat the million?",
+      "visual_payoff": "The HUD passes $1,000,000 as pennies reach the window sills.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 25.8,
+          "end_s": 30,
+          "shot_type": "across the street: copper rising behind the windows",
+          "world": "1 unit = 1 m. Your one-storey 8 × 7 m house on a suburban street (village-houses-v1 neighbours, broadleaf-tree-v1 trees), sun-skylight-rig-v1 morning light.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 25.8,
+                "position": [
+                  0.4,
+                  1.6,
+                  16.6
+                ],
+                "look_at": [
+                  0.3,
+                  2,
+                  3.5
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 30,
+                "position": [
+                  0.4,
+                  1.6,
+                  15.9
+                ],
+                "look_at": [
+                  0.3,
+                  2,
+                  3.5
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld in the street, facing the front of the house.",
+            "lens_notes": "The quiet house; copper climbs to the window sills by day 28 as the HUD passes $1,000,000.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "336 TONNES OF PENNIES",
+            "metric_label": "DAY 28 OF 30",
+            "start_value": 335544.32,
+            "end_value": 1342177.28,
+            "unit": "$",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "house",
+              "kind": "architecture",
+              "asset_hint": "village-houses-v1",
+              "appearance": "A small cream house with white trim, a green door and a dark roof.",
+              "geometry_and_material": "Walls built around real window and door openings; glass panes; gabled roof group.",
+              "scale_and_accuracy": "8 × 7 m, 2.7 m walls, ridge at 5.2 m.",
+              "movement": "Copper visible inside the windows."
+            },
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "Fills the crawlspace, then the rooms."
+            }
+          ],
+          "animation_plan": [
+            "25.95-26.75s days 26-28; at 26.75s the total passes the million."
+          ],
+          "lighting": "Morning sun from front right.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "beat the million",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 26.75,
+          "duration_s": 1.2,
+          "kind": "music_swell",
+          "description": "Passing the million.",
+          "relative_db": -14
+        }
+      ],
+      "claim_ids": [
+        "CL07",
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Same street."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "escalation",
+      "start_s": 30,
+      "end_s": 35.8,
+      "narration": {
+        "text": "It doubles twice more. Your windows burst, then the walls fall.",
+        "start_s": 30.12,
+        "end_s": 35.65,
+        "delivery_note": "Two clipped beats: the windows, then the walls.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.84
+        }
+      },
+      "viewer_question": "Can the house hold it?",
+      "visual_payoff": "Windows burst on day 29; the walls fall on day 30.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 30,
+          "end_s": 35.8,
+          "shot_type": "the house bursts",
+          "world": "1 unit = 1 m. Your one-storey 8 × 7 m house on a suburban street (village-houses-v1 neighbours, broadleaf-tree-v1 trees), sun-skylight-rig-v1 morning light.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 48,
+            "keyframes": [
+              {
+                "t_s": 30,
+                "position": [
+                  0.4,
+                  1.6,
+                  15.9
+                ],
+                "look_at": [
+                  0.3,
+                  2.1,
+                  3.5
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 35.8,
+                "position": [
+                  0.6,
+                  1.7,
+                  19.5
+                ],
+                "look_at": [
+                  0.2,
+                  2.6,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld, stepping back across the street as the mound grows.",
+            "lens_notes": "Day 29: glass blows out and pennies pour from every window and the door. Day 30: the walls fall outward one by one, the roof settles onto a copper mound 19 m across.",
+            "handheld_sway": 0.3,
+            "impulse_shake": {
+              "at_s": 34.3,
+              "duration_s": 0.8,
+              "intensity": 0.6
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "1,342 TONNES OF PENNIES",
+            "metric_label": "DAY 30 OF 30",
+            "start_value": 2684354.56,
+            "end_value": 5368709.12,
+            "unit": "$",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "house",
+              "kind": "architecture",
+              "asset_hint": "village-houses-v1",
+              "appearance": "A small cream house with white trim, a green door and a dark roof.",
+              "geometry_and_material": "Walls built around real window and door openings; glass panes; gabled roof group.",
+              "scale_and_accuracy": "8 × 7 m, 2.7 m walls, ridge at 5.2 m.",
+              "movement": "Windows burst at 32.42s; walls fall from 34.3s; the roof rides down onto the mound."
+            },
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "Pours from the openings, then a 4.2 m mound."
+            }
+          ],
+          "animation_plan": [
+            "30.35s day 29, the house is full and the windows burst; 33.2s day 30, the walls fall and the mound buries the lot."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "the walls fall",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 32.42,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Windows burst in sequence.",
+          "relative_db": -10
+        },
+        {
+          "at_s": 34,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "A held breath before the walls go.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 34.3,
+          "duration_s": 1.5,
+          "kind": "impact",
+          "description": "Walls fall one after another; a copper avalanche.",
+          "relative_db": -6
+        }
+      ],
+      "claim_ids": [
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Rising above the lot."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "twist",
+      "start_s": 35.8,
+      "end_s": 41.4,
+      "narration": {
+        "text": "Over five million dollars. Half of it arrived on the last day.",
+        "start_s": 35.92,
+        "end_s": 41.25,
+        "delivery_note": "A beat after \"dollars\"; slow down for \"Half of it\".",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.78
+        }
+      },
+      "viewer_question": "Where did all that money come from?",
+      "visual_payoff": "The last day’s layer glows: the same amount as all 29 days before it.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 35.8,
+          "end_s": 41.4,
+          "shot_type": "x-ray of the mound: the last day is half",
+          "world": "1 unit = 1 m. Your one-storey 8 × 7 m house on a suburban street (village-houses-v1 neighbours, broadleaf-tree-v1 trees), sun-skylight-rig-v1 morning light.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 35.8,
+                "position": [
+                  0.6,
+                  1.7,
+                  19.5
+                ],
+                "look_at": [
+                  0.2,
+                  2.6,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 41.4,
+                "position": [
+                  9,
+                  10.5,
+                  22
+                ],
+                "look_at": [
+                  0,
+                  1.8,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Crane up and around the mound.",
+            "lens_notes": "The shell added on day 30 turns translucent gold around the day-29 core, the same amount again.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "ADDED TODAY · HALF THE TOTAL",
+            "metric_label": "DAY 30 OF 30",
+            "start_value": 2684354.56,
+            "end_value": 2684354.56,
+            "unit": "$",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "Outer shell translucent gold; day-29 core inside."
+            }
+          ],
+          "animation_plan": [
+            "38.6s the x-ray look fades in."
+          ],
+          "lighting": "Morning sun; gold glow.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Half of it",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 38.6,
+          "duration_s": 2.8,
+          "kind": "texture",
+          "description": "A shimmering swell as the last layer glows.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to street level."
+      }
+    },
+    {
+      "id": "S09",
+      "beat": "ending",
+      "start_s": 41.4,
+      "end_s": 47,
+      "narration": {
+        "text": "The million would have fit in a briefcase.",
+        "start_s": 41.52,
+        "end_s": 46.85,
+        "delivery_note": "Deadpan; a beat before \"a briefcase\".",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "Was the penny the smart choice?",
+      "visual_payoff": "The 10 kg million beside 1,342 tonnes of pennies.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 41.4,
+          "end_s": 47,
+          "shot_type": "the million beside the mound",
+          "world": "1 unit = 1 m. Your one-storey 8 × 7 m house on a suburban street (village-houses-v1 neighbours, broadleaf-tree-v1 trees), sun-skylight-rig-v1 morning light.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 41.4,
+                "position": [
+                  3.4,
+                  1.3,
+                  12.6
+                ],
+                "look_at": [
+                  2.3,
+                  0.15,
+                  10.55
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 47,
+                "position": [
+                  4.2,
+                  1.5,
+                  15.2
+                ],
+                "look_at": [
+                  1,
+                  1.6,
+                  2
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "From the briefcase on the sidewalk, tilt up to the mound behind it.",
+            "lens_notes": "The open briefcase of cash at the edge of the spill (callout: $1,000,000, 10 kg); the copper-coloured mound with the roof on top fills the frame behind (callout: the penny, 1,342 tonnes).",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "1,342 TONNES OF PENNIES",
+            "metric_label": "DAY 30 OF 30",
+            "start_value": 5368709.12,
+            "end_value": 5368709.12,
+            "unit": "$",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "briefcase",
+              "kind": "other",
+              "appearance": "A black briefcase holding $1,000,000 in banded $100 bundles.",
+              "geometry_and_material": "Hinged lid; 100 bundles of 100 stylised notes.",
+              "scale_and_accuracy": "46 × 34 × 11 cm; about 10 kg of notes.",
+              "movement": "Open on the sidewalk."
+            },
+            {
+              "id": "pennies",
+              "kind": "other",
+              "asset_hint": "coin-pile-v1",
+              "appearance": "Copper-plated US cents: single coins, then a loose heap.",
+              "geometry_and_material": "Instanced 19.05 × 1.52 mm coins with face relief; heightfield heap with a coin-scale copper shader.",
+              "scale_and_accuracy": "True coin size; heap volume = count × coin cylinder ÷ 0.6 packing at a 24 degree slope.",
+              "movement": "The finished mound."
+            }
+          ],
+          "animation_plan": [
+            "43.6s a callout marks the million."
+          ],
+          "lighting": "Morning sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on copper highlights",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large dollar figure, pennies and mass); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "a briefcase",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 41.7,
+          "duration_s": 2,
+          "kind": "music_swell",
+          "description": "A small comic button.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL10"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Final frame on the briefcase and the mound."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json read 2026-10-16.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "room-box-v1",
+        "usage": "The kitchen shell, chairs, plant and mug.",
+        "configuration": "Solid floor replaced by breakable planks over a crawlspace."
+      },
+      {
+        "asset_id": "village-houses-v1",
+        "usage": "Neighbouring houses along and across the street.",
+        "configuration": "Eight sites, low window glow."
+      },
+      {
+        "asset_id": "broadleaf-tree-v1",
+        "usage": "Yard and street trees.",
+        "configuration": "Six trees, 6-7.5 m."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Outdoor morning light.",
+        "configuration": "Sun from front right."
+      },
+      {
+        "asset_id": "eruption-column-v1",
+        "usage": "AshPuffs dust where the table and floor fail.",
+        "configuration": "Pale dust, low opacity."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Kitchen fittings and the house.",
+        "configuration": "box/rod/canvasTexture."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Seeded layouts and heap unevenness.",
+        "configuration": "rng/vnoise2."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Handheld POV and impact shakes.",
+        "configuration": "handheld_sway 0.25-0.3."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic render and grades.",
+        "configuration": "Per-look post."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Editorial money HUD and a callout.",
+        "configuration": "renderEditorialHud at x 90, y 240."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in captions.",
+        "configuration": "72 px, baseline 1320."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and Foley.",
+        "configuration": "Clinks, cracks, glass, avalanche."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Captions and HUD.",
+        "configuration": "Inter 500/600/700."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline.",
+        "configuration": "Anton."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover.",
+        "configuration": "Headline, badge, arrow."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "coin-pile-v1",
+        "description": "True-size coin instances with face relief and per-coin tint, a volume-derived loose heap (count, packing fraction, angle of repose) as a heightfield with a coin-scale copper shader, and helpers for surface coins, twin hops and pours.",
+        "reusable_in": "Money, treasure, recycling and scale-of-numbers stories.",
+        "parameters": [
+          "CoinSpec {diameter, thickness, mass, color}",
+          "pileShape(n, spec, {packing, reposeDeg})",
+          "heapProfile(r, R, H)",
+          "CoinHeap.update(extent, h)",
+          "CoinInstances.place/finish",
+          "heapMaterial(spec)"
+        ],
+        "suggested_path": "src/library/props/CoinPile.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Briefcase with 100 bundles",
+      "Breakable table and plank floor",
+      "Hero house with openings, falling walls and roof"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if a penny doubled every day for 30 days, penny doubled 30 days",
+    "core_keywords": [
+      "penny doubled every day for 30 days",
+      "penny or a million dollars",
+      "how much is a penny doubled for 30 days",
+      "exponential growth explained",
+      "how much do 500 million pennies weigh",
+      "compound growth",
+      "math what if",
+      "physics thought experiment",
+      "threejs 3d documentary",
+      "funny science"
+    ],
+    "distinctive_angle": "Real pennies, real weight: the doubling breaks your table, your floor and your house long before it beats the million, and the million would have fit in a briefcase.",
+    "comment_bait_question": "Which day would you have cashed out?",
+    "seo_integrity_note": "Exact doubling arithmetic; furniture, floor and house failures are plausible illustrations based on design loads and an assumed packing of loose coins."
+  },
+  "delivery": {
+    "video_output": "output/penny-doubled-30-days.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 36.6,
+    "headline": "1 PENNY DID THIS?!",
+    "highlight": [
+      "PENNY"
+    ],
+    "position": "bottom",
+    "badge": "$5,368,709",
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#F59E0B",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#F59E0B"
+    },
+    "grade": "vivid",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

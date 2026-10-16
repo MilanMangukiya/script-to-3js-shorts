@@ -83,6 +83,7 @@ Provide implementation-level technical direction for every shot:
 ---
 
 ## NARRATION, AUDIO & SOUNDTRACK
+- Read `skills/voice-direction/SKILL.md` and its `references/sound-design.md` for scene sound. Plan suitable nature/location ambience and action Foley in existing `audio.sfx_direction` and `scenes[].audio_cues`; use breaths, sneezes, claps, gasps or chuckles only when the pictured action or story calls for them. Reuse actual audio assets, keep narration clear and implement cue playback in the soundtrack. Kokoro delivery notes do not generate human reaction sounds. Review the actual synchronized mix and record listening or missing-asset limitations.
 - Apply the writing skill's spoken-language and editorial rules: concrete actions, varied sentence lengths, earned surprises, and concise qualifications. Cut explanatory repetition before accelerating speech.
 - Target **148–160 WPM** during the opening $25\text{ seconds}$ to hook fast scrollers, moderating to **125–135 WPM** for the final revelation or consequential decision.
 - Insert purposeful $0.25\text{–}0.4\text{s}$ breathing gaps after massive visual reveals.
@@ -135,7 +136,7 @@ Use the repository's deterministic pipeline:
 2. **Narration:** Run `node tools/narrate.mjs stories/<slug>.json` using the local voice and measured starting rates in `config/narration.json`; explicit `audio.voice_id` or CLI `--voice` overrides the default. Calibrate generated cadence for the story. Ensure actual waveform onset is $t \le 0.08\text{ s}$. Unprompted Whisper aligns word timings into `build/<slug>/audio/narration.json`.
 3. **Burned-In Captions:** Drive `caption-kinetic-v1` from real Whisper timestamps. 2–5 word phrases, uppercase impact styling, active-word highlight, safe area baseline $y \approx 1320\text{ px}$.
 4. **Captions & Transcript Exporters:** Export `output/<slug>.srt` and `output/<slug>.txt` matching burned-in phrases.
-5. **Soundtrack:** Write procedural audio in `src/stories/<slug>/soundtrack.mjs` using `audio-synth-kit-v1`. Enforce the silence drop before the primary impact or reveal, and stagger destruction transients when failures are depicted. Mix via `node tools/soundtrack.mjs <slug>` to **-14.0 LUFS** (peak $\le$ -1.0 dBTP).
+5. **Soundtrack:** Write original music and scene sound in `src/stories/<slug>/soundtrack.mjs` using `audio-synth-kit-v1` and actual registered recorded clips where appropriate. Apply the sound-design reference for ambience, action Foley and optional human reactions. Enforce the silence drop before the primary impact or reveal, and stagger destruction transients when failures are depicted. Mix via `node tools/soundtrack.mjs <slug>` to **-14.0 LUFS** (peak $\le$ -1.0 dBTP).
 6. **Smoke Frames & Render:** Render 3 strategic test frames at scale 0.5 (`node tools/render.mjs <slug> --frames a,b,c --scale 0.5`). Verify eye-level framing, telemetry HUD, and caption placement. Review a short moving excerpt of each new or materially changed pivotal sequence using `--preview build/<slug>/direction-review/preview.mp4 --range a-b --clean --scale 0.5`; fix direction failures before final rendering. Then render final video: `node tools/render.mjs <slug> --final --crf 19` $\rightarrow$ `output/<slug>.mp4` + bold cover `output/<slug>.jpg`.
 
 ---

@@ -37,19 +37,29 @@ export function wordAlignment(scriptWords,heard,duration) {
   // Whisper can timestamp a written number as separate punctuation fragments ("8", ".3"
   // or "40", ",000"). Join only adjacent numeric fragments, without consulting the script.
   // The original recognition stays untouched; internal word times are derived across the span.
+  // ASR writes spoken money with a currency sign ("$81", "$5,000", "$1 million"). The sign is the recognized
+  // evidence for "dollars": "$N" reads as "N dollars" and "$N <scale>" as "N <scale> dollars"; that word's
+  // timing is derived from the token span, never measured.
+  const SCALES=new Set(['thousand','million','billion','trillion']);
   const heardUnits=[];
+  let dollarsAfterScale=false;
   for(let index=0;index<heard.length;index++){
     const first=index,h=heard[index];
     let value=h.text.trim(),end=h.end;
     while(index+1<heard.length&&heard[index+1].start-end<=.12){
       const next=heard[index+1].text.trim();
-      const thousands=/^\d{1,3}(?:,\d{3})*$/.test(value)&&/^,\d{3}[.!?;:]?$/.test(next);
-      const decimal=/^\d+(?:,\d{3})*$/.test(value)&&/^\.\d+[%!?;:]?$/.test(next);
+      const thousands=/^\$?\d{1,3}(?:,\d{3})*$/.test(value)&&/^,\d{3}[.!?;:]?$/.test(next);
+      const decimal=/^\$?\d+(?:,\d{3})*$/.test(value)&&/^\.\d+[%!?;:]?$/.test(next);
       if(!thousands&&!decimal)break;
       value+=next;end=heard[++index].end;
     }
     const parts=lexicalParts(value,initials),joined=index!==first;
-    parts.forEach((part,q)=>heardUnits.push({part,index:first,endIndex:index,joined,
+    let currency=false;
+    if(/^\$\d/.test(value)){
+      currency=true;
+      if(SCALES.has(norm(heard[index+1]?.text.trim()??'')))dollarsAfterScale=true;else parts.push('dollars');
+    } else if(dollarsAfterScale&&SCALES.has(norm(value))){currency=true;dollarsAfterScale=false;parts.push('dollars');}
+    parts.forEach((part,q)=>heardUnits.push({part,index:first,endIndex:index,joined,currency,
       start:h.start+(end-h.start)*q/parts.length,end:h.start+(end-h.start)*(q+1)/parts.length}));
   }
   // ASR sometimes joins two adjacent words ("Noon sun" -> "Noonsun"). Accept only an exact
@@ -63,10 +73,19 @@ export function wordAlignment(scriptWords,heard,duration) {
     const right=S[si+1];
     const completePair=right&&right.index===s.index+1&&(si===0||S[si-1].index!==s.index)&&(si+2===S.length||S[si+2].index!==right.index);
     const completeHeard=(hi===0||heardUnits[hi-1].index!==h.index)&&(hi+1===heardUnits.length||heardUnits[hi+1].index!==h.index);
-    if(!completePair||!completeHeard||s.part+right.part!==h.part)break;
-    const boundary=h.start+(h.end-h.start)*s.part.length/(s.part.length+right.part.length);
-    H.push({...h,part:s.part,end:boundary,merged:true},{...h,part:right.part,start:boundary,merged:true});
-    si+=2;hi++;
+    if(completePair&&completeHeard&&s.part+right.part===h.part){
+      const boundary=h.start+(h.end-h.start)*s.part.length/(s.part.length+right.part.length);
+      H.push({...h,part:s.part,end:boundary,merged:true},{...h,part:right.part,start:boundary,merged:true});
+      si+=2;hi++;continue;
+    }
+    // The reverse also happens ("briefcase" -> "brief case"): accept one complete script token that is the exact
+    // character join of two complete, adjacent recognized tokens. Its span is their measured extent.
+    const next=heardUnits[hi+1];
+    const wholeScript=(si===0||S[si-1].index!==s.index)&&(si+1===S.length||S[si+1].index!==s.index);
+    const nextComplete=next&&next.index===h.endIndex+1&&(hi+2===heardUnits.length||heardUnits[hi+2].index!==next.index);
+    if(!wholeScript||!completeHeard||!nextComplete||h.part+next.part!==s.part)break;
+    H.push({...h,part:s.part,end:next.end,endIndex:next.endIndex,merged:true});
+    si++;hi+=2;
   }
   const mismatch=S.findIndex((s,i)=>s.part!==H[i]?.part);
   if(!S.length||mismatch>=0||S.length!==H.length||hi!==heardUnits.length)throw new Error(`Recognition does not match the exact script (expected: ${scriptWords.join(' ')}; heard: ${heard.map(h=>h.text).join(' ')}). Refresh unprompted recognition and review speech; unsupported words cannot be interpolated into verified captions`);
@@ -79,7 +98,7 @@ export function wordAlignment(scriptWords,heard,duration) {
     const oneToOne=left.index===right.index&&(first===0||H[first-1].index!==left.index)&&(last===H.length-1||H[last+1].index!==right.index);
     const exact=oneToOne&&!left.joined&&norm(scriptWords[index])===norm(heard[left.index].text);
     matches.push(exact?left.index:null);
-    evidence.push({heard_start_index:left.index,heard_end_index:right.endIndex??right.index,type:exact?'exact':'normalized',derived:!oneToOne||!!left.joined||!!right.joined,...(left.joined||right.joined?{normalization:'split_numeric'}:left.merged||right.merged?{normalization:'adjacent_merge'}:{})});
+    evidence.push({heard_start_index:left.index,heard_end_index:right.endIndex??right.index,type:exact?'exact':'normalized',derived:!oneToOne||!!left.joined||!!right.joined,...(left.joined||right.joined?{normalization:'split_numeric'}:left.merged||right.merged?{normalization:'adjacent_merge'}:left.currency||right.currency?{normalization:'currency'}:{})});
   }
   return {times,matches,evidence,exact:matches.filter(x=>x!==null).length};
 }

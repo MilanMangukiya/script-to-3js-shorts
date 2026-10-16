@@ -676,6 +676,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "social-media-gone-five-seconds",
@@ -738,6 +739,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "social-media-gone-five-seconds",
@@ -785,6 +787,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "social-media-gone-five-seconds",
@@ -840,6 +843,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "social-media-gone-five-seconds",
@@ -895,6 +899,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "social-media-gone-five-seconds",
@@ -940,6 +945,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "what-if-every-man-disappeared"
@@ -980,6 +986,7 @@
         "mountain-grew-100-km-tall",
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "social-media-gone-five-seconds",
@@ -2052,6 +2059,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "social-media-gone-five-seconds",
@@ -2093,6 +2101,7 @@
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "rain-nonstop-everywhere",
         "sky-disappeared",
         "social-media-gone-five-seconds",
@@ -2400,6 +2409,7 @@
         "last-man-alive",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
         "what-if-every-man-disappeared"
@@ -2522,6 +2532,7 @@
         "earth-without-tilt",
         "every-volcano-erupts-at-once",
         "everyone-farts-at-once",
+        "penny-doubled-30-days",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2663,6 +2674,7 @@
         "last-man-alive",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -2776,7 +2788,8 @@
       "created_for": "continents-one-landmass",
       "used_in": [
         "continents-one-landmass",
-        "every-volcano-erupts-at-once"
+        "every-volcano-erupts-at-once",
+        "penny-doubled-30-days"
       ],
       "license": "original_procedural",
       "source_path": "src/library/environment/VillageHouses.ts",
@@ -3562,6 +3575,7 @@
         "everyone-farts-at-once",
         "everyone-sneezes-at-once",
         "ozone-layer-gone-overnight",
+        "penny-doubled-30-days",
         "sky-disappeared",
         "sun-locked-earth"
       ],
@@ -3610,7 +3624,8 @@
       "used_in": [
         "every-volcano-erupts-at-once",
         "everyone-farts-at-once",
-        "everyone-sneezes-at-once"
+        "everyone-sneezes-at-once",
+        "penny-doubled-30-days"
       ],
       "license": "original_code",
       "notes": "Pass the stage camera to update() every frame: puffs are depth-sorted for it. Puffs are large soft billboards, so give distant columns a lighter hazeDensity than the scene fog to keep them dark and readable. Column motion is real-speed (about 95 s to climb), so a short shot shows billowing rather than visible rise."
@@ -3672,6 +3687,38 @@
       ],
       "license": "original_code",
       "notes": "Static geometry; every setPose call sets the full state. Head yaw turns about the true vertical even when sitting (positive turns toward the dog's left); negative pitch looks up. Scale 1 is about 0.55 m at the shoulder."
+    },
+    {
+      "id": "coin-pile-v1",
+      "name": "Procedural coin pile",
+      "type": "three_component",
+      "source_path": "src/library/props/CoinPile.ts",
+      "description": "True-size coins and the heaps they make. CoinSpec sets a coin (US_CENT: 19.05 mm, 1.52 mm, 2.5 g). pileShape(n) derives a loose heap from the count (coin cylinder volume divided by a packing fraction, poured as a cone at the angle of repose) and heapProfile gives its crowned, flared height. CoinHeap is a polar heightfield mesh rebuilt each frame from any height function (tucks under its support where empty) with a coin-scale copper albedo and normal map; CoinInstances places individual coins with face relief and per-coin tint for twin hops, pours, spills and surface coats.",
+      "tags": [
+        "money",
+        "coin",
+        "penny",
+        "pile",
+        "heap",
+        "scale",
+        "prop"
+      ],
+      "configurable_parameters": [
+        "CoinSpec {diameter, thickness, mass, color}",
+        "pileShape(n, spec, {packing, reposeDeg})",
+        "heapProfile(r, R, H)",
+        "heapMaterial(spec, seed, {metalness, roughness})",
+        "coinMaterial(spec, {metalness, roughness})",
+        "CoinHeap(material, rings, segments, tile).update(extent, h)",
+        "CoinInstances(max, spec, seed).place/hide/finish",
+        "heightNormal(h, x, z)"
+      ],
+      "created_for": "penny-doubled-30-days",
+      "used_in": [
+        "penny-doubled-30-days"
+      ],
+      "license": "original_code",
+      "notes": "Deterministic: every update sets the full surface from absolute time. Indoors use the default mirror-bright copper with a RoomEnvironment; outdoors pass metalness ~0.45 so the sky does not turn the heap blue. Heaps are visual volumes, not a granular solver."
     },
     {
       "id": "swimming-pool-field-v1",

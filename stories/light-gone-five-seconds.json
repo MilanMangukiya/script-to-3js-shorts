@@ -1,0 +1,1489 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if light disappeared for 5 seconds?",
+    "title": "What if light disappeared for 5 seconds?",
+    "slug": "light-gone-five-seconds",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 47,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If every bit of light vanished for just five seconds, how long would it really take for everything to light up again?",
+    "viewer_takeaway": "Light takes time to travel, so after a five-second blackout lamps return instantly, sunlight takes over eight minutes, and the stars stay dark for years: about 4.4 for the southern sky’s Alpha Centauri, 8.6 for Sirius, the first star most northern viewers would see."
+  },
+  "scientific_model": {
+    "baseline_reality": "Light travels at about 300,000 km per second: from a lamp to your eye in nanoseconds, from the Sun in about 499 s, from the nearest star in over four years.",
+    "counterfactual_change": "For five seconds, every photon in the universe vanishes and no light can exist, including light already on its way. After that, everything shines normally again. Nothing else changes.",
+    "assumptions": [
+      "Light in transit is erased, not paused.",
+      "Sources resume immediately after five seconds.",
+      "The street and the people are illustrative; the night sky uses real star positions for a city at 38 degrees south on a mid-February night.",
+      "Daylight, moonlight and planet light are all sunlight, so they return with it; no bright planet is in the parts of the sky the night shots look at."
+    ],
+    "causal_chain": [
+      "All light vanishes for five seconds; you see eigengrau.",
+      "Nearby lamps and screens return within nanoseconds.",
+      "Sunlight is 150 million km away and needs about 8 minutes 19 seconds.",
+      "Until it arrives, noon is lit only by artificial light under a starless black sky.",
+      "Daylight floods back within about two seconds, 8 min 24 s after the dark began.",
+      "That night the Moon is back but no stars.",
+      "Starlight in transit was erased; after the Sun, the nearest naked-eye star (Alpha Centauri, southern sky) is 4.37 light-years away.",
+      "Alpha Centauri returns after about 4.4 years; from mid-northern latitudes the first star is Sirius, after 8.6; others over decades to millennia."
+    ],
+    "uncertainties": [
+      "Exactly how the eye adapts in five seconds varies from person to person.",
+      "City lights would light the clouds and haze above a city, so the noon sky there would not be perfectly black.",
+      "Alpha Centauri never rises north of about 29 degrees north, so there the first star returns after 8.6 years (Sirius), and only in the season when Sirius is up at night.",
+      "Planets reflect sunlight and would be back within hours (Venus and Mars in minutes, Saturn in under three hours); the film does not show one."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "The scenario removes all light for five seconds, including light in transit, then lets sources shine again.",
+        "confidence": "derived",
+        "reasoning": "Stipulated premise.",
+        "presentation_guardrail": "Stated plainly as the premise."
+      },
+      {
+        "id": "CL02",
+        "statement": "With no light at all, people see a dark grey (eigengrau) produced by the visual system’s own noise rather than pure black.",
+        "confidence": "established",
+        "reasoning": "Long-standing description of the intrinsic light of the eye.",
+        "presentation_guardrail": "Shown as a dark grey screen."
+      },
+      {
+        "id": "CL03",
+        "statement": "Light from a phone or lamp a few metres away arrives in nanoseconds, so nearby lights return instantly.",
+        "confidence": "derived",
+        "reasoning": "10 m at 3e8 m/s is about 33 ns.",
+        "presentation_guardrail": "\"Your phone glows again.\""
+      },
+      {
+        "id": "CL04",
+        "statement": "Sunlight takes about 499 seconds (8 minutes 19 seconds) to reach Earth, between about 490 and 507 s over the year.",
+        "confidence": "established",
+        "reasoning": "149.6 million km divided by the speed of light.",
+        "presentation_guardrail": "\"Over eight minutes.\""
+      },
+      {
+        "id": "CL05",
+        "statement": "Until new sunlight arrives the daytime sky stays dark, because daylight is scattered sunlight and the light of the Moon, planets and stars in transit was erased too; only artificial lights shine.",
+        "confidence": "plausible",
+        "reasoning": "Rayleigh scattering needs sunlight; reflected light from the Moon and planets is sunlight.",
+        "presentation_guardrail": "\"Noon looks like midnight.\""
+      },
+      {
+        "id": "CL06",
+        "statement": "The Moon shines by reflected sunlight, so it returns with the Sun, about 1.3 seconds later.",
+        "confidence": "derived",
+        "reasoning": "Earth-Moon light time is about 1.28 s.",
+        "presentation_guardrail": "\"The moon is back.\""
+      },
+      {
+        "id": "CL07",
+        "statement": "After the Sun, the nearest star is Proxima Centauri, about 4.24 light-years away but far too faint to see; the nearest star you can see, Alpha Centauri A and B, is about 4.37 light-years (about 41 trillion km) away and only rises for viewers south of about 29 degrees north.",
+        "confidence": "established",
+        "reasoning": "Parallax distances (NASA, HyperPhysics); declination -60.8 degrees.",
+        "presentation_guardrail": "\"The next closest is four years away, in the southern sky.\""
+      },
+      {
+        "id": "CL08",
+        "statement": "Sirius, 8.6 light-years away, is the nearest naked-eye star seen from mid-northern latitudes; the stars between 4.4 and 8.6 light-years (Barnard’s Star, Wolf 359, Lalande 21185) are too faint to see without a telescope. So up north the first star would return after about 8.6 years.",
+        "confidence": "derived",
+        "reasoning": "Each star returns after its light-travel time; magnitudes from the nearby-star tables.",
+        "presentation_guardrail": "\"Up north, your first star takes nearly nine years.\""
+      },
+      {
+        "id": "CL09",
+        "statement": "Light from the centre of the Sun’s disc arrives about 2.3 s before light from its edge (the Sun’s radius in light-seconds), so daylight would return over about two seconds rather than in one instant, most of it within the first second.",
+        "confidence": "derived",
+        "reasoning": "Solar radius 696,000 km divided by the speed of light; limb darkening weights the centre.",
+        "presentation_guardrail": "\"The sky floods back to blue.\""
+      }
+    ],
+    "sources": [
+      {
+        "name": "Smithsonian National Air and Space Museum: How long does it take light from the Sun to get to Earth?",
+        "url": "https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth",
+        "supports_claim_ids": [
+          "CL04",
+          "CL05",
+          "CL06",
+          "CL09"
+        ]
+      },
+      {
+        "name": "NASA Imagine the Universe: The nearest star",
+        "url": "https://imagine.gsfc.nasa.gov/features/cosmic/nearest_star_info.html",
+        "supports_claim_ids": [
+          "CL07",
+          "CL08"
+        ]
+      },
+      {
+        "name": "EarthSky: Proxima Centauri, our Sun’s nearest neighbor",
+        "url": "https://earthsky.org/astronomy-essentials/proxima-centauri-our-suns-nearest-neighbor/",
+        "supports_claim_ids": [
+          "CL07"
+        ]
+      },
+      {
+        "name": "HyperPhysics: Stellar neighbors of the Sun",
+        "url": "https://hyperphysics.gsu.edu/hbase/starlog/strclos.html",
+        "supports_claim_ids": [
+          "CL07",
+          "CL08"
+        ]
+      },
+      {
+        "name": "Popular Science: Why you see things in the dark (eigengrau)",
+        "url": "https://www.popsci.com/science/why-you-see-things-in-dark/",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "At noon every light in the universe vanishes for five seconds: your phone comes back at once, the Sun takes eight minutes, and the stars take years.",
+    "visual_identity": "A sunny street at eye level with an elegant boxless clock and countdowns in the top-left; eigengrau darkness; a lit city under a black noon sky; a light front crossing the orbits; a starless night; stars returning one by one.",
+    "palette": [
+      "#16161C",
+      "#FACC15",
+      "#3D7AD0",
+      "#F2F6FF",
+      "#C9A227",
+      "#02040A"
+    ],
+    "lighting": "Noon sun; then only lamps, signs, screens and headlights; then moonlight.",
+    "camera_language": "Eye-level POV with your phone in frame; tilts up to the sky; a high orbital diagram; two locked-off sky time-lapses.",
+    "motion_language": "Real-time darkness, then time-compressed waiting: a countdown in minutes, then in years.",
+    "world_scale_policy": "Metre scale on the street; orbits to scale with enlarged bodies; true light-travel times.",
+    "emotional_arc": [
+      "Shock",
+      "Relief, then unease",
+      "Understanding",
+      "Eeriness",
+      "Release",
+      "Surprise",
+      "Awe",
+      "Quiet wonder"
+    ],
+    "opening_hook": "Your phone goes black. So does the sun. For five seconds, there's no light anywhere.",
+    "mid_video_rehook": "Your phone lights up after five seconds, but the noon sky stays black, because the new sunlight needs more than eight minutes to arrive.",
+    "ending_payoff": "Five seconds of darkness: up north, the first star takes nearly nine years to come back.",
+    "loop_connection": "The film opens on a clock in the top-left and ends on a year counter in the same place.",
+    "asset_policy": "Reuse the city street, people, cars, sky rig and Moon; add a reusable distance-star-sky-v1 whose stars return by light-travel time."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Original score: a bright city pulse that cuts dead with the light, a held drone in the dark, a rising tone as sunlight races outward, a release chord when daylight returns, a wide quiet night, and a single chime for the first star.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "Street ambience; a deep drop and gasps when light vanishes; braking cars; lights buzzing back; murmurs and idling engines under the black sky; silence before daylight; a chime for each returning star.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The key consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 6.3,
+      "narration": {
+        "text": "Your phone goes black. So does the sun. For five seconds, there's no light anywhere.",
+        "start_s": 0.04,
+        "end_s": 6.15,
+        "delivery_note": "Matter-of-fact; drop on \"goes black\".",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "What happens without light?",
+      "visual_payoff": "Noon becomes eigengrau; a 5-second countdown.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 6.3,
+          "shot_type": "eye-level POV on a sunny shopping street; every light vanishes",
+          "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  9.2,
+                  1.62,
+                  7
+                ],
+                "look_at": [
+                  7,
+                  1.3,
+                  -8
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 6.3,
+                "position": [
+                  9.2,
+                  1.62,
+                  6.85
+                ],
+                "look_at": [
+                  7,
+                  1.3,
+                  -8
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Standing on the sidewalk, phone in hand.",
+            "lens_notes": "Shoppers, traffic and the bright noon street ahead; your phone low in the lower right of frame; at the dark moment the whole picture becomes eigengrau.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "A CITY STREET · CLEAR SKY",
+            "metric_label": "THE TIME",
+            "start_value": 0,
+            "end_value": 2,
+            "unit": "S",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "phone",
+              "kind": "other",
+              "appearance": "Your phone in your hand, low in the lower right of frame.",
+              "geometry_and_material": "Rounded slab with an unbranded chat screen; stylised hand.",
+              "scale_and_accuracy": "15 × 7 cm.",
+              "movement": "Screen on, then black from 1.24s."
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight shoppers on both sidewalks.",
+              "geometry_and_material": "Registered Humanoid rigs; grounded gait.",
+              "scale_and_accuracy": "1.64-1.80 m adults.",
+              "movement": "Walking; stop within a second of 1.24s and turn to the street."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs with head and tail lights.",
+              "scale_and_accuracy": "4.3 m, about 35 km/h.",
+              "movement": "Brake to a stop from 1.64s."
+            }
+          ],
+          "animation_plan": [
+            "0-1.24s noon; 1.24-6.24s no light anywhere: eigengrau and a 5-second countdown."
+          ],
+          "lighting": "Noon sun due north; then none at all.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "goes black",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 1.24,
+          "duration_s": 1,
+          "kind": "impact",
+          "description": "A deep drop as every light goes out; the street gasps.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Same POV."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "twist",
+      "start_s": 6.3,
+      "end_s": 9.9,
+      "narration": {
+        "text": "Then your phone glows again. The sky doesn't.",
+        "start_s": 6.42,
+        "end_s": 9.75,
+        "delivery_note": "A beat before \"The sky doesn’t.\"",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Is it over?",
+      "visual_payoff": "Every nearby light is back; the noon sky stays black.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 6.3,
+          "end_s": 9.9,
+          "shot_type": "light returns, except the sky",
+          "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 6.3,
+                "position": [
+                  9.2,
+                  1.62,
+                  6.85
+                ],
+                "look_at": [
+                  7,
+                  1.3,
+                  -8
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 8.5,
+                "position": [
+                  9.2,
+                  1.62,
+                  6.8
+                ],
+                "look_at": [
+                  7,
+                  1.4,
+                  -8
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 9.9,
+                "position": [
+                  9.2,
+                  1.62,
+                  6.75
+                ],
+                "look_at": [
+                  4,
+                  9,
+                  -20
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Hold on the lit phone and street, then tilt up to the sky (the phone drops out of frame).",
+            "lens_notes": "Phone, shopfronts, office windows, signals and headlights all shine again under a black noon sky with only a faint glow of city light at the horizon.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "150,000,000 KM AWAY",
+            "metric_label": "SUNLIGHT ARRIVES IN",
+            "start_value": 499,
+            "end_value": 495,
+            "unit": "S",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "phone",
+              "kind": "other",
+              "appearance": "Your phone in your hand, low in the lower right of frame.",
+              "geometry_and_material": "Rounded slab with an unbranded chat screen; stylised hand.",
+              "scale_and_accuracy": "15 × 7 cm.",
+              "movement": "Glows again at 6.24s."
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight shoppers on both sidewalks.",
+              "geometry_and_material": "Registered Humanoid rigs; grounded gait.",
+              "scale_and_accuracy": "1.64-1.80 m adults.",
+              "movement": "Stopped and turned to the street, looking up."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs with head and tail lights.",
+              "scale_and_accuracy": "4.3 m, about 35 km/h.",
+              "movement": "Stopped with headlights on."
+            }
+          ],
+          "animation_plan": [
+            "6.24s every nearby light is back within nanoseconds; street lamps follow on their photocells; 8.5s tilt to the black sky."
+          ],
+          "lighting": "Artificial light only; black sky.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "The sky doesn't.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 6.3,
+          "duration_s": 0.6,
+          "kind": "texture",
+          "description": "Lights buzz back on; a phone chime.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Out to the Sun."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 9.9,
+      "end_s": 15.9,
+      "narration": {
+        "text": "The sun is shining, but its light needs over eight minutes to get here.",
+        "start_s": 10.02,
+        "end_s": 15.75,
+        "delivery_note": "Clear and even.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Why is the sky still black?",
+      "visual_payoff": "The light front crosses the orbits while Earth waits.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 9.9,
+          "end_s": 15.9,
+          "shot_type": "the Sun is shining, but its light is still on its way",
+          "world": "Diagram units: 1 AU = 30 units, Sun and planets enlarged; light travels at its true rate in story time (1 AU in 499 s), shown time-compressed.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 9.9,
+                "position": [
+                  50.47,
+                  48.86,
+                  16.73
+                ],
+                "look_at": [
+                  14.24,
+                  0,
+                  4.72
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 15.9,
+                "position": [
+                  45.8,
+                  42.55,
+                  15.18
+                ],
+                "look_at": [
+                  16.14,
+                  0,
+                  5.35
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "High above the orbits, the Sun at the top of frame and Earth at the bottom; slow push toward Earth.",
+            "lens_notes": "A glowing light front (callout: sunlight, 300,000 km/s) spreads from the Sun; Mercury and then Venus light up as it passes; Earth (callout: you) is still dark.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "150,000,000 KM AWAY",
+            "metric_label": "SUNLIGHT ARRIVES IN",
+            "start_value": 495,
+            "end_value": 119,
+            "unit": "S",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "sun-and-planets",
+              "kind": "sun",
+              "appearance": "The Sun, Mercury, Venus and Earth on faint orbit rings, with a glowing light front.",
+              "geometry_and_material": "Emissive Sun and corona; planets lit only after the front reaches them.",
+              "scale_and_accuracy": "Distances to scale (1 AU = 30 units); bodies enlarged.",
+              "movement": "The light front grows at light speed (time-compressed)."
+            }
+          ],
+          "animation_plan": [
+            "9.9-15.9s story time 4 s to 6 min 20 s: the front passes Mercury (3.2 min) and Venus (6 min)."
+          ],
+          "lighting": "Sunlight only inside the front.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "over eight minutes",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 9.9,
+          "duration_s": 4,
+          "kind": "texture",
+          "description": "A rising tone as the light front races outward.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to the street."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "human_impact",
+      "start_s": 15.9,
+      "end_s": 20.7,
+      "narration": {
+        "text": "Until then, noon looks like midnight. Not a single star.",
+        "start_s": 16.02,
+        "end_s": 20.55,
+        "delivery_note": "Hushed; land \"Not a single star.\"",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "What is it like down here?",
+      "visual_payoff": "Lamps, headlights and torches under an empty black sky.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 15.9,
+          "end_s": 20.7,
+          "shot_type": "noon that looks like midnight",
+          "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 15.9,
+                "position": [
+                  7.4,
+                  1.6,
+                  -1
+                ],
+                "look_at": [
+                  2,
+                  1.5,
+                  -17
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 20.7,
+                "position": [
+                  7.4,
+                  1.6,
+                  -1.3
+                ],
+                "look_at": [
+                  3,
+                  6.5,
+                  -17
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Handheld at the curb, then up at the empty sky.",
+            "lens_notes": "Street lamps, signs, headlights and phone torches light the street; above, a black sky without a single star.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "150,000,000 KM AWAY",
+            "metric_label": "SUNLIGHT ARRIVES IN",
+            "start_value": 119,
+            "end_value": 14,
+            "unit": "S",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight shoppers on both sidewalks.",
+              "geometry_and_material": "Registered Humanoid rigs; grounded gait.",
+              "scale_and_accuracy": "1.64-1.80 m adults.",
+              "movement": "Phone torches raised; heads tipped back."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs with head and tail lights.",
+              "scale_and_accuracy": "4.3 m, about 35 km/h.",
+              "movement": "Waiting with headlights on."
+            }
+          ],
+          "animation_plan": [
+            "15.9-20.7s the countdown runs on; the camera finds the empty sky."
+          ],
+          "lighting": "Lamps, signs, headlights and torches.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Not a single star.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 15.9,
+          "duration_s": 4,
+          "kind": "ambience",
+          "description": "Murmurs, idling engines, a dog barking.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "The last seconds."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "second_order_effect",
+      "start_s": 20.7,
+      "end_s": 26.7,
+      "narration": {
+        "text": "Right on time, the sunlight hits, and the sky floods back to blue.",
+        "start_s": 20.82,
+        "end_s": 26.55,
+        "delivery_note": "Release on \"back to blue\".",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "When does day come back?",
+      "visual_payoff": "Daylight floods back in about two seconds, 8 min 24 s after the dark began.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 20.7,
+          "end_s": 26.7,
+          "shot_type": "the sunlight arrives",
+          "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 20.7,
+                "position": [
+                  8.8,
+                  1.6,
+                  -9
+                ],
+                "look_at": [
+                  4.4,
+                  4.5,
+                  -27
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 26.7,
+                "position": [
+                  8.8,
+                  1.6,
+                  -9.3
+                ],
+                "look_at": [
+                  4.4,
+                  3,
+                  -27
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld, looking up the street at the sky.",
+            "lens_notes": "The countdown hits 0:00 and daylight floods back in about two seconds as the Sun’s disc refills from the centre out; a brief dazzle; traffic moves again.",
+            "handheld_sway": 0.3,
+            "impulse_shake": {
+              "at_s": 22.8,
+              "duration_s": 0.4,
+              "intensity": 0.25
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "THE SUN WAS DARK FOR 5 S",
+            "metric_label": "DAYLIGHT BACK AFTER",
+            "start_value": 504,
+            "end_value": 504,
+            "unit": "S",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight shoppers on both sidewalks.",
+              "geometry_and_material": "Registered Humanoid rigs; grounded gait.",
+              "scale_and_accuracy": "1.64-1.80 m adults.",
+              "movement": "Turn back and walk on."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs with head and tail lights.",
+              "scale_and_accuracy": "4.3 m, about 35 km/h.",
+              "movement": "Pull away."
+            }
+          ],
+          "animation_plan": [
+            "22.8s sunlight arrives; most of it within a second, all of it within 2.3 s."
+          ],
+          "lighting": "Noon sun returns.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "back to blue",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 22.5,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "A held breath before the sunlight hits.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 22.8,
+          "duration_s": 1.2,
+          "kind": "music_swell",
+          "description": "Daylight floods back.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL09"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "That night."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "twist",
+      "start_s": 26.7,
+      "end_s": 31.2,
+      "narration": {
+        "text": "That night, the moon is back. The stars aren't.",
+        "start_s": 26.82,
+        "end_s": 31.05,
+        "delivery_note": "Quiet; a beat between the sentences.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.85
+        }
+      },
+      "viewer_question": "Is everything back?",
+      "visual_payoff": "The Moon returns; the stars do not.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 26.7,
+          "end_s": 31.2,
+          "shot_type": "that night: the Moon, and no stars",
+          "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 26.7,
+                "position": [
+                  8.4,
+                  1.6,
+                  -4
+                ],
+                "look_at": [
+                  7.2,
+                  11.35,
+                  16
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 31.2,
+                "position": [
+                  8.4,
+                  1.6,
+                  -3.8
+                ],
+                "look_at": [
+                  7.2,
+                  11.8,
+                  16
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld on the same sidewalk at night, looking up the street to the NNW.",
+            "lens_notes": "Lit windows and lamps; a waxing gibbous Moon above the street in a sky without stars.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "THE MOON IS BACK",
+            "metric_label": "STARS IN THE SKY",
+            "start_value": 0,
+            "end_value": 0,
+            "unit": "",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "moon",
+              "kind": "moon",
+              "asset_hint": "moon-body-v1",
+              "appearance": "A waxing gibbous Moon above the street.",
+              "geometry_and_material": "Procedural lunar shader lit from the Sun below the western horizon.",
+              "scale_and_accuracy": "Shown about three times its true apparent size.",
+              "movement": "Hangs above the street."
+            },
+            {
+              "id": "night-sky",
+              "kind": "stars",
+              "asset_hint": "distance-star-sky-v1",
+              "appearance": "A night sky whose stars return as their light arrives.",
+              "geometry_and_material": "Point stars with distances in light-years; named stars at their real positions for 38 S, local sidereal time 7.6 h; glints on the brightest.",
+              "scale_and_accuracy": "Alpha Centauri 4.37 ly (SSE, 26 degrees up), Sirius 8.6 ly (NNW, 66 degrees up), 88 degrees apart as in the real sky; background stars beyond 10 ly.",
+              "movement": "No star has returned."
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight shoppers on both sidewalks.",
+              "geometry_and_material": "Registered Humanoid rigs; grounded gait.",
+              "scale_and_accuracy": "1.64-1.80 m adults.",
+              "movement": "A few walk the far sidewalk."
+            }
+          ],
+          "animation_plan": [
+            "26.7-31.2s night; zero stars."
+          ],
+          "lighting": "City lights and moonlight.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "The stars aren't.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 26.7,
+          "duration_s": 3,
+          "kind": "ambience",
+          "description": "A quiet night street.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Turn to the southern sky."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "mechanism",
+      "start_s": 31.2,
+      "end_s": 38.2,
+      "narration": {
+        "text": "Their light was erased too. The next closest is four years away, in the southern sky.",
+        "start_s": 31.32,
+        "end_s": 38.05,
+        "delivery_note": "Even; lean on \"four years away\".",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.9
+        }
+      },
+      "viewer_question": "Where are the stars?",
+      "visual_payoff": "The dark spot where Alpha Centauri should be.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 31.2,
+          "end_s": 38.2,
+          "shot_type": "the southern sky, where the nearest star should be",
+          "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 31.2,
+                "position": [
+                  10.2,
+                  1.6,
+                  12
+                ],
+                "look_at": [
+                  8.6,
+                  4.4,
+                  -8
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 38.2,
+                "position": [
+                  10.2,
+                  1.6,
+                  11.9
+                ],
+                "look_at": [
+                  8.6,
+                  7.7,
+                  -8
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Slow tilt up from the street to the SSE sky.",
+            "lens_notes": "Lit street and lamps below; a black sky above; a dashed marker (callout: Alpha Centauri, 4.4 ly) where the star is still dark.",
+            "handheld_sway": 0.2
+          },
+          "hud_telemetry": {
+            "timer_label": "41 TRILLION KM AWAY",
+            "metric_label": "FIRST STAR BACK IN",
+            "start_value": 4.4,
+            "end_value": 4.4,
+            "unit": "YEARS",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "night-sky",
+              "kind": "stars",
+              "asset_hint": "distance-star-sky-v1",
+              "appearance": "A night sky whose stars return as their light arrives.",
+              "geometry_and_material": "Point stars with distances in light-years; named stars at their real positions for 38 S, local sidereal time 7.6 h; glints on the brightest.",
+              "scale_and_accuracy": "Alpha Centauri 4.37 ly (SSE, 26 degrees up), Sirius 8.6 ly (NNW, 66 degrees up), 88 degrees apart as in the real sky; background stars beyond 10 ly.",
+              "movement": "Empty; Alpha Centauri marked but dark."
+            },
+            {
+              "id": "pedestrians",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Eight shoppers on both sidewalks.",
+              "geometry_and_material": "Registered Humanoid rigs; grounded gait.",
+              "scale_and_accuracy": "1.64-1.80 m adults.",
+              "movement": "A few walk the far sidewalk."
+            },
+            {
+              "id": "cars",
+              "kind": "other",
+              "appearance": "City cars.",
+              "geometry_and_material": "Classic city car rigs with head and tail lights.",
+              "scale_and_accuracy": "4.3 m, about 35 km/h.",
+              "movement": "Night traffic."
+            }
+          ],
+          "animation_plan": [
+            "35.6s the marker appears on \"four years away\"."
+          ],
+          "lighting": "City lights.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "four years away",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 31.2,
+          "duration_s": 4,
+          "kind": "music_swell",
+          "description": "A slow, wide chord.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL07"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Years pass."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "ending",
+      "start_s": 38.2,
+      "end_s": 47,
+      "narration": {
+        "text": "Five seconds of darkness. Up north, your first star takes nearly nine years.",
+        "start_s": 39.32,
+        "end_s": 46.85,
+        "delivery_note": "Slow and plain; land \"nearly nine years\".",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "How long until they return?",
+      "visual_payoff": "Alpha Centauri comes back after 4.4 years; Sirius, the first star for northern skies, after 8.6.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 38.2,
+          "end_s": 41.3,
+          "shot_type": "years pass; the nearest star comes back in the southern sky",
+          "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 38.2,
+                "position": [
+                  10.2,
+                  1.6,
+                  11.9
+                ],
+                "look_at": [
+                  8.6,
+                  7.7,
+                  -8
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 41.3,
+                "position": [
+                  10.2,
+                  1.6,
+                  11.85
+                ],
+                "look_at": [
+                  8.6,
+                  7.9,
+                  -8
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Locked-off time-lapse of the SSE sky.",
+            "lens_notes": "The year counter races; Alpha Centauri appears at 4.4 years (callout).",
+            "handheld_sway": 0.08
+          },
+          "hud_telemetry": {
+            "timer_label": "ALPHA CENTAURI IS BACK",
+            "metric_label": "YEARS SINCE THE DARK",
+            "start_value": 0,
+            "end_value": 6,
+            "unit": "YEARS",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "night-sky",
+              "kind": "stars",
+              "asset_hint": "distance-star-sky-v1",
+              "appearance": "A night sky whose stars return as their light arrives.",
+              "geometry_and_material": "Point stars with distances in light-years; named stars at their real positions for 38 S, local sidereal time 7.6 h; glints on the brightest.",
+              "scale_and_accuracy": "Alpha Centauri 4.37 ly (SSE, 26 degrees up), Sirius 8.6 ly (NNW, 66 degrees up), 88 degrees apart as in the real sky; background stars beyond 10 ly.",
+              "movement": "Alpha Centauri returns at 4.37 years."
+            }
+          ],
+          "animation_plan": [
+            "39.4s year 4.37, Alpha Centauri."
+          ],
+          "lighting": "City lights flickering in time-lapse.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        },
+        {
+          "id": "SH02",
+          "start_s": 41.3,
+          "end_s": 47,
+          "shot_type": "Sirius, the first star for northern skies",
+          "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 46,
+            "keyframes": [
+              {
+                "t_s": 41.3,
+                "position": [
+                  8.4,
+                  1.6,
+                  10
+                ],
+                "look_at": [
+                  7.4,
+                  32.4,
+                  30
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 47,
+                "position": [
+                  8.4,
+                  1.6,
+                  10.1
+                ],
+                "look_at": [
+                  7.4,
+                  33.4,
+                  30
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Looking steeply up between the buildings to the NNW; slow tilt.",
+            "lens_notes": "Sirius appears at 8.6 years (callout); the frame holds on it.",
+            "handheld_sway": 0.08
+          },
+          "hud_telemetry": {
+            "timer_label": "FIRST STAR UP NORTH",
+            "metric_label": "YEARS SINCE THE DARK",
+            "start_value": 6,
+            "end_value": 12,
+            "unit": "YEARS",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "night-sky",
+              "kind": "stars",
+              "asset_hint": "distance-star-sky-v1",
+              "appearance": "A night sky whose stars return as their light arrives.",
+              "geometry_and_material": "Point stars with distances in light-years; named stars at their real positions for 38 S, local sidereal time 7.6 h; glints on the brightest.",
+              "scale_and_accuracy": "Alpha Centauri 4.37 ly (SSE, 26 degrees up), Sirius 8.6 ly (NNW, 66 degrees up), 88 degrees apart as in the real sky; background stars beyond 10 ly.",
+              "movement": "Sirius returns at 8.6 years."
+            }
+          ],
+          "animation_plan": [
+            "44.6s year 8.6, Sirius; hold to the end."
+          ],
+          "lighting": "City lights flickering in time-lapse.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom on lamps and screens",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "Editorial HUD block x90 y240 (letter-spaced label, large clock or countdown, sub-line); captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "nearly nine years",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 39.4,
+          "duration_s": 1.2,
+          "kind": "impact",
+          "description": "A single bright chime as the first star returns.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 44.6,
+          "duration_s": 1.4,
+          "kind": "impact",
+          "description": "A second, lower chime for Sirius.",
+          "relative_db": -14
+        }
+      ],
+      "claim_ids": [
+        "CL07",
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Final frame on Sirius."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json read 2026-10-16.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "The shopping street, lamps, signals and city beyond.",
+        "configuration": "Seed 2468, own traffic, lights stay on."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Shoppers.",
+        "configuration": "Story Person wrapper."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Grounded walking and stopping.",
+        "configuration": "applyGroundedPose."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Noon, black sky and night.",
+        "configuration": "skyAmount 1 / 0 / 0.012."
+      },
+      {
+        "asset_id": "moon-body-v1",
+        "usage": "The Moon at night.",
+        "configuration": "Gibbous, about 1.5x apparent size."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Phone, hand and props.",
+        "configuration": "box/canvasTexture."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Seeded layouts.",
+        "configuration": "rng()."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Handheld POV and tilts.",
+        "configuration": "handheld_sway 0.15-0.3."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic render and time-dependent grades.",
+        "configuration": "Day/dark/night/space looks."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Clock, countdowns and callouts.",
+        "configuration": "renderEditorialHud at x 90, y 240."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in captions.",
+        "configuration": "72 px, baseline 1320."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original score and Foley.",
+        "configuration": "Drops, hums, chimes."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Captions and HUD.",
+        "configuration": "Inter 500/600/700."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline.",
+        "configuration": "Anton."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover.",
+        "configuration": "Headline, badge, arrow."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "distance-star-sky-v1",
+        "description": "Night-sky star shell whose stars each carry a distance in light-years and switch on once setYears() reaches it, with named stars, a Milky Way band that returns over millennia, and star anchors for callouts.",
+        "reusable_in": "Light-travel, astronomy and deep-time stories.",
+        "parameters": [
+          "seed",
+          "count",
+          "radius",
+          "named stars {name, dir, distanceLy, mag, tint}",
+          "nearLy",
+          "farLy",
+          "slope",
+          "minY",
+          "maxSize",
+          "setYears(y)",
+          "setLook(px, gain)",
+          "starWorld(name)"
+        ],
+        "suggested_path": "src/library/space/DistanceStarSky.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "POV phone and hand",
+      "Inner solar system with a light front",
+      "Eigengrau overlay"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if light disappeared for 5 seconds, what if all light vanished",
+    "core_keywords": [
+      "what if light disappeared",
+      "what if the sun went dark for 5 seconds",
+      "how long does sunlight take to reach earth",
+      "speed of light explained",
+      "nearest star light years",
+      "light travel time",
+      "physics thought experiment",
+      "astronomy what if",
+      "threejs 3d documentary",
+      "science simulation"
+    ],
+    "distinctive_angle": "Five seconds without light is not five seconds of darkness: the Sun stays dark for eight minutes and the stars for years, because light takes time to travel.",
+    "comment_bait_question": "Which star comes back first where you live?",
+    "seo_integrity_note": "Light-travel times and star positions are real; the premise erases light in transit; the street is illustrative."
+  },
+  "delivery": {
+    "video_output": "output/light-gone-five-seconds.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 19.5,
+    "headline": "BLACK SKY AT NOON?!",
+    "highlight": [
+      "NOON"
+    ],
+    "position": "bottom",
+    "badge": "8 MIN 19 S",
+    "focus": [
+      0.5,
+      0.45
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FACC15",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FACC15"
+    },
+    "grade": "dramatic",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

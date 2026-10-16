@@ -1,0 +1,99 @@
+{
+  "note": "Absolute film times (s) for staged events; read by stages, film overlay, soundtrack.mjs and the storyboard generator. tauKeys map film time to story seconds since light came back; yearKeys map film time to years since the dark; ghostAt marks the dark Alpha Centauri in S07; s08Cut splits S08 into its two sky views.",
+  "bounds": [
+    0,
+    6.3,
+    9.9,
+    15.9,
+    20.7,
+    26.7,
+    31.2,
+    38.2,
+    47
+  ],
+  "dark0": 1.24,
+  "darkS": 5,
+  "sunTravelS": 499,
+  "sunBack": 22.8,
+  "tauKeys": [
+    [
+      6.24,
+      0
+    ],
+    [
+      9.9,
+      3.7
+    ],
+    [
+      15.9,
+      380
+    ],
+    [
+      20.7,
+      486
+    ],
+    [
+      22.8,
+      499
+    ]
+  ],
+  "lookUp": 8.5,
+  "ghostAt": 35.6,
+  "s08Cut": 41.3,
+  "yearKeys": [
+    [
+      38.25,
+      0
+    ],
+    [
+      39.4,
+      4.37
+    ],
+    [
+      44.6,
+      8.6
+    ],
+    [
+      47,
+      12
+    ]
+  ],
+  "narrDelay": {
+    "S08": 1
+  },
+  "rates": {
+    "S06": 0.85,
+    "S07": 0.9
+  },
+  "pauses": {},
+  "thumbnail": {
+    "time_s": 19.5,
+    "headline": "BLACK SKY AT NOON?!",
+    "highlight": [
+      "NOON"
+    ],
+    "position": "bottom",
+    "badge": "8 MIN 19 S",
+    "focus": [
+      0.5,
+      0.45
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#FACC15",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#FACC15"
+    },
+    "grade": "dramatic",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

@@ -18,6 +18,7 @@ Separate planted acting from locomotion. Specify the supported foot/seat, target
 - Registered `character-motion-v1` supports straight paths with uniform scale and unrotated, unscaled room parents at world Y=0. It levels the existing shoes around their ankle pivots. Apply a `seatedPose` through `applyGroundedPose` after adding upper-body acting so previous ankle compensation resets; bare `setPose` does not own those added transforms.
 - Let attention lead a reach and let the body settle after it. Continuous breathing can remain subtle; repeated head swivels and arm oscillations should not replace a completed action. Offset incidental actors rather than synchronizing them.
 - Derive the full root, pose and interaction state from absolute film time on every update. Hand IK follows the pose reset. Ended actions stay ended on direct or backward seeks.
+- For the later sound pass, record palm contact, foot planting, sneeze recoil and other audible action times in the existing animation plan/audio cues. Keep audio fixed during the isolated character comparison; use [scene sound design](../../voice-direction/references/sound-design.md) when synchronizing Foley in the assembled review.
 
 ## Review
 

@@ -27,6 +27,8 @@ import { createFilm as everyoneSneezesAtOnce } from './stories/everyone-sneezes-
 import { createFilm as sunLockedEarth } from './stories/sun-locked-earth/film';
 import { createFilm as socialMediaGoneFiveSeconds } from './stories/social-media-gone-five-seconds/film';
 import { createFilm as everyoneDrankTheOcean } from './stories/everyone-drank-the-ocean/film';
+import { createFilm as pennyDoubled30Days } from './stories/penny-doubled-30-days/film';
+import { createFilm as lightGoneFiveSeconds } from './stories/light-gone-five-seconds/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -53,6 +55,8 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'sun-locked-earth': sunLockedEarth,
   'social-media-gone-five-seconds': socialMediaGoneFiveSeconds,
   'everyone-drank-the-ocean': everyoneDrankTheOcean,
+  'penny-doubled-30-days': pennyDoubled30Days,
+  'light-gone-five-seconds': lightGoneFiveSeconds,
 };
 
 async function boot() {

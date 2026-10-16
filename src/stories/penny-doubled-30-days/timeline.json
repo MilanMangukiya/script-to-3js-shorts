@@ -1,0 +1,97 @@
+{
+  "note": "Absolute film times (s) for staged events; read by stages, film overlay, soundtrack.mjs and the storyboard generator. days[d-1] is when day d begins (the pile doubles).",
+  "bounds": [
+    0,
+    4.8,
+    11.2,
+    16.2,
+    20.6,
+    25.8,
+    30,
+    35.8,
+    41.4,
+    47
+  ],
+  "caseClose": 2.55,
+  "caseGone": 3.75,
+  "days": [
+    0,
+    5.15,
+    5.48,
+    5.73,
+    5.968,
+    6.194,
+    6.408,
+    6.61,
+    6.8,
+    6.978,
+    7.144,
+    7.298,
+    7.44,
+    7.57,
+    10.3,
+    10.75,
+    11.27,
+    11.44,
+    11.6,
+    16.6,
+    20.75,
+    21.4,
+    22.3,
+    24.9,
+    25.4,
+    25.95,
+    26.3,
+    26.75,
+    30.35,
+    33.2
+  ],
+  "growS": 0.35,
+  "tableCreak": 13.4,
+  "tableSnap": 15.08,
+  "floorBreak": 24.68,
+  "windowsBurst": 32.42,
+  "houseBurst": 34.3,
+  "millionChord": 28.95,
+  "cutaway": 38.6,
+  "caseReveal": 43.6,
+  "rates": {
+    "S06": 1,
+    "S07": 0.84,
+    "S08": 0.78
+  },
+  "pauses": {},
+  "narrDelay": {
+    "S06": 0.6
+  },
+  "thumbnail": {
+    "time_s": 36.6,
+    "headline": "1 PENNY DID THIS?!",
+    "highlight": [
+      "PENNY"
+    ],
+    "position": "bottom",
+    "badge": "$5,368,709",
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#F59E0B",
+      "badge": "#DC2626",
+      "badge_text": "#FFFFFF",
+      "arrow": "#F59E0B"
+    },
+    "grade": "vivid",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

@@ -76,9 +76,13 @@ Read `skills/voice-direction/SKILL.md` and its performance reference. Complete A
 
 ---
 
-## 5. PROCEDURAL SOUNDTRACK & ACOUSTIC STAGGERING (`src/stories/<slug>/soundtrack.mjs`)
+## 5. SOUNDTRACK, AMBIENCE & ACTION SOUNDS (`src/stories/<slug>/soundtrack.mjs`)
 
-1. Author original procedural music and sound design using `audio-synth-kit-v1` (`src/library/audio/synth.mjs`), exporting `buildSoundtrack(duration)`.
+Read `skills/voice-direction/references/sound-design.md`. Full films include suitable environmental ambience and action Foley as part of their sound plan; optional human reactions support specific beats. Silence remains valid when the setting or story calls for it.
+
+1. Author original music and sound design using `audio-synth-kit-v1` (`src/library/audio/synth.mjs`) and actual registered recorded clips where appropriate, exporting `buildSoundtrack(duration)`.
+   - Specify nature/location sounds, human actions such as clapping, breathing or sneezing, and prop contacts in existing `audio.sfx_direction` / `audio_cues`. Match playback to the actual contact/action time and keep important narration clear. Non-silence cues need explicit soundtrack implementation; JSON annotations alone do not play audio. Review source clips and the synchronized mix; report missing assets and listening limitations.
+   - Keep `build/<slug>/audio/sound-plan.md` with actual sources, onset/trim offsets, gain and implementation/review status. Reconcile it with the rendered mix before final encoding; a missing pivotal clip, stylized substitute or intentional silence must be identified accurately.
 2. **Mandatory Acoustic Contrast:**
    - Honor `"silence"` cues in `audio_cues`: duck music and ambient beds by `-24 dB` for `0.25–0.35s` immediately before the primary impact or reveal. Use a sub-bass transient for a physical impact, or sound appropriate to the actual reveal for a story without destruction.
 3. **Staggered Multi-Tap Destruction Transients:**
