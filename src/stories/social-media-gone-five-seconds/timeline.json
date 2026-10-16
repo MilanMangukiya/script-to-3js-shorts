@@ -1,0 +1,23 @@
+{
+  "duration": 48,
+  "outageOn": 1,
+  "restored": 36.7,
+  "cameraOn": 8.54,
+  "smsOn": 9.16,
+  "retry0": 12.6,
+  "retry1": 13.2,
+  "point0": 14.1,
+  "point1": 16.4,
+  "edge": 19,
+  "reach0": 20,
+  "grip": 21,
+  "catch": 23.58,
+  "cupDown": 28.2,
+  "release0": 29,
+  "release1": 29.6,
+  "laugh0": 29.5,
+  "laugh1": 33,
+  "phoneDown0": 41.2,
+  "phoneDown1": 44.4,
+  "phoneRelease": 45.0
+}

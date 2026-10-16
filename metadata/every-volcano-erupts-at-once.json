@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "every-volcano-erupts-at-once",
+  "topic": "What if every active volcano on Earth erupted at once?",
+  "duration_s": 54,
+  "video_file": "output/every-volcano-erupts-at-once.mp4",
+  "scientific_scope_note": "Fictional premise: all of Earth’s roughly 1,350 potentially active volcanoes (USGS count) begin an eruption at the same moment, each one typical of what that volcano does. The city, its volcano and the people are illustrative, as are local HUD readings such as lava and ash-flow speeds, ash depth and air temperatures. About 800 million people live within 100 km of an active volcano (Brown et al. 2015). Ash falls out within hours to days; only large explosive eruptions put sulfur into the stratosphere, where sulfate droplets spread worldwide within weeks, last about a year and reflect sunlight. Tambora (1815, about 55 Mt of SO2) led to snow in New England in June 1816. How much sulfur all eruptions together would inject is uncertain (from about one Pinatubo to several Tamboras), so the cooling, failed summers and harvest losses are possibilities, not predictions; cooling would be global but uneven.",
+  "created_asset_ids": [
+    "eruption-column-v1"
+  ],
+  "reused_asset_ids": [
+    "city-street-block-v1",
+    "volcano-v1",
+    "earth-globe-v1",
+    "sun-skylight-rig-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "grass-field-v1",
+    "broadleaf-tree-v1",
+    "village-houses-v1",
+    "snowfall-v1",
+    "modeling-helpers-v1",
+    "shader-noise-math-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "overlay-labels-v1",
+    "caption-kinetic-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if every active volcano on Earth erupted at once?",
+      "description": "The mountain down your street just exploded, and so did every other volcano that could erupt. In this 54-second 3D science thought experiment, you walk away from slow lava, but avalanches of hot ash outrun cars, and 800 million people live near a volcano.\n\nWithin days the ash is swept up, yet the sun stays dim. The biggest blasts lift sulfur 20 km up, where it hangs for about a year and bounces sunlight back to space. One volcano, Tambora, did this in 1815, and the next June it snowed in New England. All of them together could do more.\n\nWhat's the first thing you'd stock up on before a year without summer?\n\nScope: Fictional premise: all of Earth’s roughly 1,350 potentially active volcanoes (USGS count) begin an eruption at the same moment, each one typical of what that volcano does. The city, its volcano and the people are illustrative, as are local HUD readings such as lava and ash-flow speeds, ash depth and air temperatures. About 800 million people live within 100 km of an active volcano (Brown et al. 2015). Ash falls out within hours to days; only large explosive eruptions put sulfur into the stratosphere, where sulfate droplets spread worldwide within weeks, last about a year and reflect sunlight. Tambora (1815, about 55 Mt of SO2) led to snow in New England in June 1816. How much sulfur all eruptions together would inject is uncertain (from about one Pinatubo to several Tamboras), so the cooling, failed summers and harvest losses are possibilities, not predictions; cooling would be global but uneven.\n\nSources:\n- USGS FAQ: How many active volcanoes are there on Earth?: https://www.usgs.gov/faqs/how-many-active-volcanoes-are-there-earth\n- Brown et al. (2015), Global Volcanic Hazards and Risk (USGS publication record): https://pubs.usgs.gov/publication/70148718\n- USGS: Lava flows, domes and dome collapses: https://www.usgs.gov/volcanoes/long-valley-caldera/lava-flows-domes-and-dome-collapses\n- USGS Volcano Hazards Program: Pyroclastic flows move fast and destroy everything in their path: https://www.usgs.gov/programs/vhp/pyroclastic-flows-move-fast-and-destroy-everything-their-path\n- NOAA Global Monitoring Laboratory: Volcanoes and climate change: https://gml.noaa.gov/outreach/info_activities/pdfs/PSA_volcanoes_and_climate_change.pdf\n- NASA Earth Observatory: Global Effects of Mount Pinatubo: https://earthobservatory.nasa.gov/images/1510\n- Self et al. (2004), Magma volume, volatile emissions, and stratospheric aerosols from the 1815 eruption of Tambora: https://rex.libraries.wsu.edu/esploro/outputs/journalArticle/Magma-volume-volatile-emissions-and-stratospheric/99900548073901842\n- Raible et al. (2016), Tambora 1815 as a test case for high impact volcanic eruptions: Earth system effects: https://boris.unibe.ch/83823/\n- Toohey & Sigl (2017), Volcanic stratospheric sulfur injections 500 BCE to 1900 CE: https://essd.copernicus.org/articles/9/809/2017/\n\nVisuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.",
+      "tags": [
+        "what if every volcano erupted at once",
+        "all volcanoes erupting at the same time",
+        "volcanic winter",
+        "year without a summer",
+        "tambora 1815",
+        "pyroclastic flow vs lava",
+        "volcanic sulfur cooling",
+        "earth science what if",
+        "physics thought experiment",
+        "volcano simulation",
+        "threejs 3d documentary"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Volcano",
+        "#EarthScience",
+        "#VolcanicWinter",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if every volcano erupted at once",
+        "all volcanoes erupting at the same time",
+        "volcanic winter",
+        "year without a summer",
+        "tambora 1815",
+        "pyroclastic flow vs lava"
+      ]
+    },
+    "tiktok": {
+      "caption": "The volcano down your street just erupted, and so did every other one on Earth. You can walk away from the lava, and the ash is gone in days, but the sulfur dims the sun for a year. In 1816 one volcano was enough to bring June snow.\n\nWhat's the first thing you'd stock up on before a year without summer?\n\nA 3D thought experiment; cooling and harvest effects are uncertain estimates.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#Volcano",
+        "#EarthScience",
+        "#VolcanicWinter",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if every volcano erupted at once",
+        "all volcanoes erupting at the same time",
+        "volcanic winter",
+        "year without a summer",
+        "tambora 1815",
+        "pyroclastic flow vs lava"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "You could sweep the ash off your street in days. The haze 20 km above you would stay for a year. If every active volcano erupted at once, the lava would stay near the mountains, but the cold would reach everyone.\n\nWhat's the first thing you'd stock up on before a year without summer?\n\nFictional premise; the sulfur total and the cooling are uncertain.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#Volcano",
+        "#EarthScience",
+        "#VolcanicWinter",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if every volcano erupted at once",
+        "all volcanoes erupting at the same time",
+        "volcanic winter",
+        "year without a summer",
+        "tambora 1815",
+        "pyroclastic flow vs lava"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if every active volcano on Earth erupted at once? The real danger is the cold",
+      "description": "Every active volcano erupts at once. Lava is slow, ash avalanches are deadly near the mountains, and the ash settles within days. The sulfur from the biggest blasts dims the sun for a year, as Tambora did in 1816, the year it snowed in June.\n\nWhat's the first thing you'd stock up on before a year without summer?\n\nFictional premise: all of Earth’s roughly 1,350 potentially active volcanoes (USGS count) begin an eruption at the same moment, each one typical of what that volcano does. The city, its volcano and the people are illustrative, as are local HUD readings such as lava and ash-flow speeds, ash depth and air temperatures. About 800 million people live within 100 km of an active volcano (Brown et al. 2015). Ash falls out within hours to days; only large explosive eruptions put sulfur into the stratosphere, where sulfate droplets spread worldwide within weeks, last about a year and reflect sunlight. Tambora (1815, about 55 Mt of SO2) led to snow in New England in June 1816. How much sulfur all eruptions together would inject is uncertain (from about one Pinatubo to several Tamboras), so the cooling, failed summers and harvest losses are possibilities, not predictions; cooling would be global but uneven.\n\nSources:\n- USGS FAQ: How many active volcanoes are there on Earth?: https://www.usgs.gov/faqs/how-many-active-volcanoes-are-there-earth\n- Brown et al. (2015), Global Volcanic Hazards and Risk (USGS publication record): https://pubs.usgs.gov/publication/70148718\n- USGS: Lava flows, domes and dome collapses: https://www.usgs.gov/volcanoes/long-valley-caldera/lava-flows-domes-and-dome-collapses\n- USGS Volcano Hazards Program: Pyroclastic flows move fast and destroy everything in their path: https://www.usgs.gov/programs/vhp/pyroclastic-flows-move-fast-and-destroy-everything-their-path\n- NOAA Global Monitoring Laboratory: Volcanoes and climate change: https://gml.noaa.gov/outreach/info_activities/pdfs/PSA_volcanoes_and_climate_change.pdf\n- NASA Earth Observatory: Global Effects of Mount Pinatubo: https://earthobservatory.nasa.gov/images/1510\n- Self et al. (2004), Magma volume, volatile emissions, and stratospheric aerosols from the 1815 eruption of Tambora: https://rex.libraries.wsu.edu/esploro/outputs/journalArticle/Magma-volume-volatile-emissions-and-stratospheric/99900548073901842\n- Raible et al. (2016), Tambora 1815 as a test case for high impact volcanic eruptions: Earth system effects: https://boris.unibe.ch/83823/\n- Toohey & Sigl (2017), Volcanic stratospheric sulfur injections 500 BCE to 1900 CE: https://essd.copernicus.org/articles/9/809/2017/",
+      "hashtags": [
+        "#WhatIf",
+        "#Science",
+        "#Volcano",
+        "#EarthScience",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if every volcano erupted at once",
+        "all volcanoes erupting at the same time",
+        "volcanic winter",
+        "year without a summer",
+        "tambora 1815",
+        "pyroclastic flow vs lava"
+      ]
+    },
+    "x_video": {
+      "post": "The volcano down your street just erupted, and so did every other one. The ash is gone in days, but the sulfur dims the sun for a year. What's the first thing you'd stock up on before a year without summer?",
+      "hashtags": [
+        "#WhatIf",
+        "#Volcano",
+        "#EarthScience",
+        "#Science",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if every volcano erupted at once",
+        "all volcanoes erupting at the same time",
+        "volcanic winter"
+      ]
+    }
+  },
+  "publishing_status": "rendered_not_published",
+  "rendered_at_utc": "2026-10-16T01:16:16Z",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 18,
+    "path_in_repo": "videos/018-every-volcano-erupts-at-once.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/018-every-volcano-erupts-at-once.mp4",
+    "sha256": "1ec27ed22cfc39130ed65383f13dc8fdad93103a11d98c2260c38de3bad11942",
+    "size_bytes": 46364378,
+    "thumbnail_path_in_repo": "videos/018-every-volcano-erupts-at-once.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/018-every-volcano-erupts-at-once.jpg",
+    "thumbnail_sha256": "d36b5064833a0b6a5c8f998d72de721332631598bacf8b699209434a68a2de6c",
+    "copy_path_in_repo": "videos/018-every-volcano-erupts-at-once.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/018-every-volcano-erupts-at-once.md",
+    "copy_sha256": "cf3eaf03319e17808f01acc2535177b417af11749078f4392970bcfe5fe62845",
+    "uploaded_at_utc": "2026-10-16T01:16:58Z"
+  }
+}

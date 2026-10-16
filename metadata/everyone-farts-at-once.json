@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "everyone-farts-at-once",
+  "topic": "What if 8.3 billion people farted at once?",
+  "duration_s": 49,
+  "video_file": "output/everyone-farts-at-once.mp4",
+  "scientific_scope_note": "Comic thought experiment with real numbers: everyone passes one ordinary amount of gas (about 60 mL, typical range 35-90 mL) in the same second. Flatus holds about 1.06 µmol/L of hydrogen sulfide (Suarez et al. 1998); in a ~5 m³ elevator six passages give about 2 ppb once mixed, roughly four times the commonly cited 0.47 ppb smell threshold (published thresholds run up to about 8 ppb; unmixed plumes are much stronger). Together it is about 500,000 m³ (roughly 200 Olympic pools), about 0.12 parts per trillion of the atmosphere, with roughly 10-50 t of methane that the world’s cattle burp out in under half a minute (about 2.7 t/s). The yellow-green tint is a visual aid: the gas is colourless. People and places are illustrative.",
+  "created_asset_ids": [
+    "dairy-cow-v1"
+  ],
+  "reused_asset_ids": [
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "city-street-block-v1",
+    "sun-skylight-rig-v1",
+    "earth-globe-v1",
+    "eruption-column-v1",
+    "grass-field-v1",
+    "broadleaf-tree-v1",
+    "modeling-helpers-v1",
+    "shader-noise-math-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "overlay-labels-v1",
+    "caption-kinetic-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if 8.3 billion people farted at once?",
+      "description": "Everyone in your elevator just farted at once, including you. So did everyone else on Earth, in the same second. In this 49-second 3D science thought experiment, the rotten-egg gas in a crowded elevator climbs to several times what noses can detect, while out on the street open air scatters each puff within a few steps.\n\nAdd it all up and you could fill about 200 Olympic swimming pools. Spread through the sky, that's less than one part in five trillion, and the world's cattle burp out the same amount of methane in under half a minute. The planet won't smell a thing. The next person to ride your elevator will.\n\nWhat’s the worst place on Earth to be at that exact second?\n\nScope: Comic thought experiment with real numbers: everyone passes one ordinary amount of gas (about 60 mL, typical range 35-90 mL) in the same second. Flatus holds about 1.06 µmol/L of hydrogen sulfide (Suarez et al. 1998); in a ~5 m³ elevator six passages give about 2 ppb once mixed, roughly four times the commonly cited 0.47 ppb smell threshold (published thresholds run up to about 8 ppb; unmixed plumes are much stronger). Together it is about 500,000 m³ (roughly 200 Olympic pools), about 0.12 parts per trillion of the atmosphere, with roughly 10-50 t of methane that the world’s cattle burp out in under half a minute (about 2.7 t/s). The yellow-green tint is a visual aid: the gas is colourless. People and places are illustrative.\n\nSources:\n- Tomlin, Lowis & Read (1991), Investigation of normal flatus production in healthy volunteers, Gut: https://pubmed.ncbi.nlm.nih.gov/1648028/\n- Suarez, Springfield & Levitt (1998), Identification of gases responsible for the odour of human flatus, Gut: https://pmc.ncbi.nlm.nih.gov/articles/PMC1727181\n- Meta-analysis of the composition of human intestinal gases (2021): https://pubmed.ncbi.nlm.nih.gov/34623578/\n- Hydrogen sulfide odour threshold (Public Lab summary of standard data): https://publiclab.org/wiki/revisions/hydrogen-sulfide/29541\n- FAO: Livestock and enteric methane: https://www.fao.org/in-action/enteric-methane/en\n- Saunois et al. (2020), The global methane budget 2000-2017: https://ntrs.nasa.gov/citations/20220003744\n\nVisuals: original deterministic Three.js animation; NASA Blue Marble/Black Marble Earth imagery. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.",
+      "tags": [
+        "what if everyone farted at once",
+        "everyone farts at the same time",
+        "how much gas do humans fart",
+        "fart science",
+        "cow methane vs human farts",
+        "hydrogen sulfide smell",
+        "funny science",
+        "earth science what if",
+        "physics thought experiment",
+        "science simulation",
+        "threejs 3d documentary"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#FunnyScience",
+        "#Science",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if everyone farted at once",
+        "everyone farts at the same time",
+        "how much gas do humans fart",
+        "fart science",
+        "cow methane vs human farts",
+        "hydrogen sulfide smell"
+      ]
+    },
+    "tiktok": {
+      "caption": "Everyone in your elevator just farted at once, including you. And so did all 8.3 billion people on Earth. Your elevator is in trouble; the planet doesn't even notice, and cows out-burp it in seconds.\n\nWhat’s the worst place on Earth to be at that exact second?\n\nA comic 3D thought experiment with real numbers.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#FunnyScience",
+        "#Science",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if everyone farted at once",
+        "everyone farts at the same time",
+        "how much gas do humans fart",
+        "fart science",
+        "cow methane vs human farts",
+        "hydrogen sulfide smell"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "You and five strangers in an elevator, and all of you just farted at once. So did everyone on Earth. It's about 200 Olympic pools of gas, yet less than one part in five trillion of the sky.\n\nWhat’s the worst place on Earth to be at that exact second?\n\nComic thought experiment; the tint is a visual aid (the gas is colourless).",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceReels",
+        "#FunnyScience",
+        "#Science",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if everyone farted at once",
+        "everyone farts at the same time",
+        "how much gas do humans fart",
+        "fart science",
+        "cow methane vs human farts",
+        "hydrogen sulfide smell"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if 8.3 billion people farted at once? Your elevator vs the planet",
+      "description": "Everyone on Earth passes gas in the same second. In a crowded elevator the rotten-egg gas reaches several times what noses can detect; outside it's gone in a few steps. All of it together would fill about 200 Olympic pools, less than one part in five trillion of the air, and cows burp that much methane in under half a minute.\n\nWhat’s the worst place on Earth to be at that exact second?\n\nComic thought experiment with real numbers: everyone passes one ordinary amount of gas (about 60 mL, typical range 35-90 mL) in the same second. Flatus holds about 1.06 µmol/L of hydrogen sulfide (Suarez et al. 1998); in a ~5 m³ elevator six passages give about 2 ppb once mixed, roughly four times the commonly cited 0.47 ppb smell threshold (published thresholds run up to about 8 ppb; unmixed plumes are much stronger). Together it is about 500,000 m³ (roughly 200 Olympic pools), about 0.12 parts per trillion of the atmosphere, with roughly 10-50 t of methane that the world’s cattle burp out in under half a minute (about 2.7 t/s). The yellow-green tint is a visual aid: the gas is colourless. People and places are illustrative.\n\nSources:\n- Tomlin, Lowis & Read (1991), Investigation of normal flatus production in healthy volunteers, Gut: https://pubmed.ncbi.nlm.nih.gov/1648028/\n- Suarez, Springfield & Levitt (1998), Identification of gases responsible for the odour of human flatus, Gut: https://pmc.ncbi.nlm.nih.gov/articles/PMC1727181\n- Meta-analysis of the composition of human intestinal gases (2021): https://pubmed.ncbi.nlm.nih.gov/34623578/\n- Hydrogen sulfide odour threshold (Public Lab summary of standard data): https://publiclab.org/wiki/revisions/hydrogen-sulfide/29541\n- FAO: Livestock and enteric methane: https://www.fao.org/in-action/enteric-methane/en\n- Saunois et al. (2020), The global methane budget 2000-2017: https://ntrs.nasa.gov/citations/20220003744",
+      "hashtags": [
+        "#WhatIf",
+        "#FunnyScience",
+        "#Science",
+        "#EarthScience",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if everyone farted at once",
+        "everyone farts at the same time",
+        "how much gas do humans fart",
+        "fart science",
+        "cow methane vs human farts",
+        "hydrogen sulfide smell"
+      ]
+    },
+    "x_video": {
+      "post": "Everyone in your elevator just farted at once. So did all 8.3 billion of us. The planet won't smell a thing; your elevator will. What’s the worst place on Earth to be at that exact second?",
+      "hashtags": [
+        "#WhatIf",
+        "#FunnyScience",
+        "#Science",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if everyone farted at once",
+        "everyone farts at the same time",
+        "how much gas do humans fart"
+      ]
+    }
+  },
+  "publishing_status": "rendered_not_published",
+  "rendered_at_utc": "2026-10-16T04:25:30Z",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 21,
+    "path_in_repo": "videos/021-everyone-farts-at-once.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/021-everyone-farts-at-once.mp4",
+    "sha256": "1484e19e710ca85e125829ca5d3e2c2dbff48a64bef3e5eb05d00e7a3ac521a2",
+    "size_bytes": 45501438,
+    "thumbnail_path_in_repo": "videos/021-everyone-farts-at-once.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/021-everyone-farts-at-once.jpg",
+    "thumbnail_sha256": "5cc0561857024ec61102cdb66782e3c49779c8b1aea09c679c65a26eae30ecb3",
+    "copy_path_in_repo": "videos/021-everyone-farts-at-once.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/021-everyone-farts-at-once.md",
+    "copy_sha256": "3f0f9df42eafe3f2ea86d25076ba202ec2ca9559b2f42da8da19da00a53b2e9c",
+    "uploaded_at_utc": "2026-10-16T04:26:00Z"
+  }
+}

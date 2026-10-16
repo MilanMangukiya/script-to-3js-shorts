@@ -22,6 +22,10 @@ import { createFilm as earthWithoutTilt } from './stories/earth-without-tilt/fil
 import { createFilm as ozoneLayerGoneOvernight } from './stories/ozone-layer-gone-overnight/film';
 import { createFilm as earth1000fFiveSeconds } from './stories/earth-1000f-five-seconds/film';
 import { createFilm as roguePlanetBetweenEarthMars } from './stories/rogue-planet-between-earth-mars/film';
+import { createFilm as everyVolcanoErupts } from './stories/every-volcano-erupts-at-once/film';
+import { createFilm as everyoneFartsAtOnce } from './stories/everyone-farts-at-once/film';
+import { createFilm as sunLockedEarth } from './stories/sun-locked-earth/film';
+import { createFilm as socialMediaGoneFiveSeconds } from './stories/social-media-gone-five-seconds/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -43,6 +47,10 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'ozone-layer-gone-overnight': ozoneLayerGoneOvernight,
   'earth-1000f-five-seconds': earth1000fFiveSeconds,
   'rogue-planet-between-earth-mars': roguePlanetBetweenEarthMars,
+  'every-volcano-erupts-at-once': everyVolcanoErupts,
+  'everyone-farts-at-once': everyoneFartsAtOnce,
+  'sun-locked-earth': sunLockedEarth,
+  'social-media-gone-five-seconds': socialMediaGoneFiveSeconds,
 };
 
 async function boot() {

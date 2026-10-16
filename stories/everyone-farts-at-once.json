@@ -1,0 +1,1412 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if 8.3 billion people farted at once?",
+    "title": "What if 8.3 billion people farted at once?",
+    "slug": "everyone-farts-at-once",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 49,
+    "language": "en",
+    "audience": "International, curious nontechnical viewers of science shorts (13+).",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "If everyone on Earth farted in the same second, would anyone outside your elevator even notice?",
+    "viewer_takeaway": "Smell depends on how little air it mixes into: a crowded elevator gets several times the detectable dose, open air erases it in steps, and the whole planet’s output is a speck in the atmosphere whose methane cows match in seconds."
+  },
+  "scientific_model": {
+    "baseline_reality": "People pass gas about 10 times a day, roughly 35-90 mL each time; it is mostly nitrogen, carbon dioxide, hydrogen and some methane, and its smell comes from traces of sulfur gases such as hydrogen sulfide.",
+    "counterfactual_change": "All 8.3 billion people pass one ordinary amount of gas (about 60 mL) in the same second. Nothing else changes. The film follows one crowded elevator, a street outside, the planet, and a cattle pasture.",
+    "assumptions": [
+      "One passage per person of about 60 mL (35-90 mL range).",
+      "Hydrogen sulfide about 1.06 µmol/L of flatus (about 26 ppm); smell threshold taken as 0.47 ppb (published values range to about 8 ppb).",
+      "Six riders in an elevator holding about 5 m³ of air.",
+      "The yellow-green tint is a visual stand-in for colourless gas."
+    ],
+    "causal_chain": [
+      "Everyone passes gas in the same second.",
+      "In a small closed space the sulfur gases reach several times the smell threshold.",
+      "In open air a single passage dilutes below smelling range within about 3 m³ of air, a few steps.",
+      "Together it is about 500,000 m³, roughly 200 Olympic pools.",
+      "Spread through the atmosphere it is about 0.12 parts per trillion.",
+      "Its 10-50 t of methane equals what the world’s cattle burp in under half a minute."
+    ],
+    "uncertainties": [
+      "Volume, methane and sulfur content vary widely between people and diets.",
+      "Air in real elevators exchanges with the shaft, so concentrations fall over minutes.",
+      "Smell thresholds vary greatly between people."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "The scenario has all 8.3 billion people pass gas in the same second.",
+        "confidence": "derived",
+        "reasoning": "Stipulated premise; the population is close to the UN estimate for 2026.",
+        "presentation_guardrail": "The 8.3 billion count is the premise."
+      },
+      {
+        "id": "CL02",
+        "statement": "Flatus contains about 1.06 µmol/L of hydrogen sulfide, the main contributor to its odour, plus smaller amounts of methanethiol and dimethyl sulfide.",
+        "confidence": "established",
+        "reasoning": "Suarez, Springfield & Levitt (1998), Gut.",
+        "presentation_guardrail": "Individual values vary widely."
+      },
+      {
+        "id": "CL03",
+        "statement": "Six passages of about 60 mL in a ~5 m³ elevator raise hydrogen sulfide to about 2 ppb once fully mixed, roughly four times the commonly cited 0.47 ppb smell threshold; before mixing, the plumes around each rider are far stronger.",
+        "confidence": "plausible",
+        "reasoning": "6 x 0.06 L x 26 ppm / 5,000 L = 1.9 ppb. Published H2S odour thresholds span roughly 0.5-8 ppb; against the higher values the mixed level is below detection, but unmixed plumes near each person (a 60 mL puff spread into 0.5 m³ is about 3 ppb) and the lower-threshold methanethiol keep it smellable in the first minute.",
+        "presentation_guardrail": "\"Several times\" refers to the 0.47 ppb threshold; the HUD shows the mixed H2S level."
+      },
+      {
+        "id": "CL04",
+        "statement": "In open air a single passage (about 26 ppm H2S inside the puff) falls below the 0.47 ppb smell threshold once it has mixed into about 3 m³ of air, roughly a 55,000-fold dilution that a breeze achieves within a few seconds.",
+        "confidence": "plausible",
+        "reasoning": "60 mL x 26 ppm / 0.47 ppb = about 3.3 m³; outdoor turbulent mixing over a few metres.",
+        "presentation_guardrail": "One street moment; smell can linger in still air or clothing."
+      },
+      {
+        "id": "CL05",
+        "statement": "All passages together are about 500,000 m³ of gas, roughly 200 Olympic swimming pools (2,500 m³ each).",
+        "confidence": "derived",
+        "reasoning": "8.3e9 x 60 mL; range about 115-300 pools for 35-90 mL.",
+        "presentation_guardrail": "\"About 200\"."
+      },
+      {
+        "id": "CL06",
+        "statement": "Mixed into the whole atmosphere (about 4.2e18 m³ at sea-level density), that is about 0.12 parts per trillion, less than one part in five trillion.",
+        "confidence": "derived",
+        "reasoning": "500,000 / 4.2e18 = 1.2e-13.",
+        "presentation_guardrail": "Even the largest volumes stay below one part in five trillion."
+      },
+      {
+        "id": "CL07",
+        "statement": "Flatus methane averages a few to about 15 percent, so everyone’s passage together holds roughly 10-50 tonnes of methane.",
+        "confidence": "plausible",
+        "reasoning": "Methane share varies (a meta-analysis mean of about 14%; many people produce little); 500,000 m³ x 3-15% x 0.66 kg/m³.",
+        "presentation_guardrail": "A range, not a measurement."
+      },
+      {
+        "id": "CL08",
+        "statement": "The world’s cattle emit roughly 85 Mt of methane a year from digestion, about 2.7 tonnes per second, mostly by burping; they match humanity’s one-second total in under half a minute.",
+        "confidence": "plausible",
+        "reasoning": "Enteric fermentation is about 39% of livestock’s 7.1 Gt CO2-eq (FAO 2013), about 110 Mt CH4/yr, and cattle make about 75% of it.",
+        "presentation_guardrail": "\"Under half a minute\" covers the 4-19 s range."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Tomlin, Lowis & Read (1991), Investigation of normal flatus production in healthy volunteers, Gut",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1648028/",
+        "supports_claim_ids": [
+          "CL05"
+        ]
+      },
+      {
+        "name": "Suarez, Springfield & Levitt (1998), Identification of gases responsible for the odour of human flatus, Gut",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1727181",
+        "supports_claim_ids": [
+          "CL02",
+          "CL03"
+        ]
+      },
+      {
+        "name": "Meta-analysis of the composition of human intestinal gases (2021)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34623578/",
+        "supports_claim_ids": [
+          "CL07"
+        ]
+      },
+      {
+        "name": "Hydrogen sulfide odour threshold (Public Lab summary of standard data)",
+        "url": "https://publiclab.org/wiki/revisions/hydrogen-sulfide/29541",
+        "supports_claim_ids": [
+          "CL03",
+          "CL04"
+        ]
+      },
+      {
+        "name": "FAO: Livestock and enteric methane",
+        "url": "https://www.fao.org/in-action/enteric-methane/en",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      },
+      {
+        "name": "Saunois et al. (2020), The global methane budget 2000-2017",
+        "url": "https://ntrs.nasa.gov/citations/20220003744",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "Everyone on Earth farts in the same second: your elevator is in trouble, the street is fine, the planet shrugs, and cows do it bigger every few seconds.",
+    "visual_identity": "Deadpan comedy staged with grounded 3D: a cramped steel elevator of frozen side-eyes, a sunny street, a swelling bubble over the rooftops, a quiet orbit view and a herd of burping cows; the gas shown as a faint tint.",
+    "palette": [
+      "#C4C8CC",
+      "#BFC76A",
+      "#7D3C98",
+      "#3D7AD0",
+      "#4D6A2C",
+      "#FF8A3D"
+    ],
+    "lighting": "Cool elevator panel light against a warm lobby; bright midday street and pasture; orbit sun from the right.",
+    "camera_language": "Handheld eye-level POV in the elevator and on the street; slow orbit pull-backs for scale.",
+    "motion_language": "Comic timing from stillness: a collective jolt, frozen glances, then small reactions; slow swelling and thinning gas.",
+    "world_scale_policy": "Metre scale on the ground; Earth radius 1 in orbit; the bubble at true size (98 m); the gas tint exaggerated so it can be seen.",
+    "emotional_arc": [
+      "Mortification",
+      "Absurd scale",
+      "Discomfort",
+      "Relief",
+      "Mock alarm",
+      "Deflation",
+      "Perspective",
+      "Comic payoff"
+    ],
+    "opening_hook": "Everyone in your elevator just farted at once. Including you.",
+    "mid_video_rehook": "Outside on the street it is gone within a few steps; even all 8.3 billion together, 200 Olympic pools of gas, is less than one part in five trillion of the air, and cows out-emit its methane in seconds.",
+    "ending_payoff": "The planet will not notice; whoever rides this elevator next definitely will.",
+    "loop_connection": "The film ends where it began, in the same elevator, as its doors open on the next passenger.",
+    "asset_policy": "Reuse humanoids, street, globe, grass, trees, sky rig and the lit puff system; add a reusable dairy-cow-v1."
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 150,
+    "music_direction": "Original playful score: pizzicato and muted brass stings, a tuba comic rumble for the planet, a light bouncy groove outside, a deflating slide for the speck, and a final ding with a button chord.",
+    "music_level_db_below_voice": -17,
+    "sfx_direction": "Elevator hum dropping out for a beat before the moment; a comic low blip; awkward sniff and cough; button clicks; street breeze; balloon stretch; deflating squeak; cow burps; elevator ding.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The punchline of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 4.6,
+      "narration": {
+        "text": "Everyone in your elevator just farted at once. Including you.",
+        "start_s": 0.04,
+        "end_s": 4.45,
+        "delivery_note": "Deadpan; a beat before \"Including you.\"",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Who did it?",
+      "visual_payoff": "Six riders freeze and side-eye each other.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 4.6,
+          "shot_type": "eye-level POV in a crowded elevator at the moment it happens",
+          "world": "1 unit = 1 m. Elevator car 2.0 x 2.2 x 2.4 m (brushed steel, handrails, button panel, floor display) with a lobby beyond its doors; six riders including you (the camera).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 66,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  0.1,
+                  1.62,
+                  0.95
+                ],
+                "look_at": [
+                  -0.02,
+                  1.36,
+                  -1
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 2.7,
+                "position": [
+                  0.1,
+                  1.62,
+                  0.93
+                ],
+                "look_at": [
+                  -0.01,
+                  1.36,
+                  -1
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 4.6,
+                "position": [
+                  0.07,
+                  1.6,
+                  0.6
+                ],
+                "look_at": [
+                  0.04,
+                  1.42,
+                  -1
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "You have turned around to face the others; a small push in on the rider who stares at you.",
+            "lens_notes": "Wide POV: the riders face the doors, so they face you; one in the middle slowly turns to look straight at you.",
+            "handheld_sway": 0.35,
+            "impulse_shake": {
+              "at_s": 1.1,
+              "duration_s": 0.35,
+              "intensity": 0.15
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "12:00:00",
+            "metric_label": "FARTING NOW",
+            "start_value": 6,
+            "end_value": 6,
+            "unit": "",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "riders",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Five strangers in work and casual clothes, facing the doors.",
+              "geometry_and_material": "Registered Humanoid rigs with grounded poses and hand IK.",
+              "scale_and_accuracy": "1.64-1.82 m adults.",
+              "movement": "Idle until 1.1s; all stiffen at once, then side-eye each other; one turns to look at you at 2.8s."
+            }
+          ],
+          "animation_plan": [
+            "1.1s everyone jolts and freezes; 1.6-2s glances; 2.8s a rider looks straight at you."
+          ],
+          "lighting": "Ceiling panel, warm steel reflections.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Including you.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 0.8,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "The elevator hum drops out for a beat.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 1.1,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "A low comic brass blip.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Cut to the planet."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 4.6,
+      "end_s": 11.2,
+      "narration": {
+        "text": "So did everyone else on Earth. More than 8 billion of us, in the same second.",
+        "start_s": 4.72,
+        "end_s": 11.05,
+        "delivery_note": "Wide-eyed matter-of-fact; land \"8.3 billion\".",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "How many?",
+      "visual_payoff": "Puffs bloom over every populated place at once.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 4.6,
+          "end_s": 11.2,
+          "shot_type": "Earth: the same second everywhere people are",
+          "world": "Earth radius = 1 unit (earth-globe-v1); a tinted shell marks where gas is (the gas itself is colourless).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 4.6,
+                "position": [
+                  0,
+                  0.32,
+                  3.25
+                ],
+                "look_at": [
+                  0,
+                  0.08,
+                  0
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 11.2,
+                "position": [
+                  0.18,
+                  0.38,
+                  3
+                ],
+                "look_at": [
+                  0,
+                  0.08,
+                  0
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push in.",
+            "lens_notes": "Americas, Europe and Africa; faint puffs bloom over every lit, populated region at once.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "12:00:00",
+            "metric_label": "FARTING NOW",
+            "start_value": 8300000000,
+            "end_value": 8300000000,
+            "unit": "",
+            "alert_level": "critical"
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "Day and night Earth with city lights.",
+              "geometry_and_material": "NASA maps; a tinted shell for the gas.",
+              "scale_and_accuracy": "Gas tint exaggerated so it can be seen.",
+              "movement": "Puffs appear simultaneously (no travelling wave) over populated areas."
+            }
+          ],
+          "animation_plan": [
+            "4.6s puffs bloom everywhere at once and hold."
+          ],
+          "lighting": "Sun from the right; city lights on the night side.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "8 billion of us",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 4.6,
+          "duration_s": 4,
+          "kind": "texture",
+          "description": "A planet-sized comic rumble.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back inside."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 11.2,
+      "end_s": 19.8,
+      "narration": {
+        "text": "Nobody says a word. But in a box this small, the rotten-egg gas climbs to several times what noses can detect.",
+        "start_s": 11.32,
+        "end_s": 19.65,
+        "delivery_note": "Quiet for \"Nobody says a word\", then crisp on the numbers.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "How bad is it in here?",
+      "visual_payoff": "Hands to noses, button jabbing, a faint haze.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.2,
+          "end_s": 19.8,
+          "shot_type": "the elevator: silence, then the smell arrives",
+          "world": "1 unit = 1 m. Elevator car 2.0 x 2.2 x 2.4 m (brushed steel, handrails, button panel, floor display) with a lobby beyond its doors; six riders including you (the camera).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 66,
+            "keyframes": [
+              {
+                "t_s": 11.2,
+                "position": [
+                  0.55,
+                  1.6,
+                  0.95
+                ],
+                "look_at": [
+                  -0.55,
+                  1.3,
+                  -0.6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 19.8,
+                "position": [
+                  0.52,
+                  1.6,
+                  0.92
+                ],
+                "look_at": [
+                  -0.55,
+                  1.3,
+                  -0.62
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld; you look across the car to the side button panel.",
+            "lens_notes": "One rider covers their nose, one fans the air, one pulls a collar up, one stabs the door-open button.",
+            "handheld_sway": 0.35
+          },
+          "hud_telemetry": {
+            "timer_label": "12:00:09",
+            "metric_label": "H₂S",
+            "start_value": 0,
+            "end_value": 1.9,
+            "unit": "ppb",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "riders",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Five strangers in work and casual clothes, facing the doors.",
+              "geometry_and_material": "Registered Humanoid rigs with grounded poses and hand IK.",
+              "scale_and_accuracy": "1.64-1.82 m adults.",
+              "movement": "Still and silent, then at 15s the reactions."
+            },
+            {
+              "id": "gas",
+              "kind": "particle_system",
+              "asset_hint": "eruption-column-v1",
+              "appearance": "A faint yellow-green haze (a visual stand-in for colourless gas).",
+              "geometry_and_material": "AshPuffs soft lit puffs at low opacity.",
+              "scale_and_accuracy": "Fills the car volume.",
+              "movement": "A faint haze fills the car as the gas mixes."
+            }
+          ],
+          "animation_plan": [
+            "11.2-15s nobody moves; 15s+ hands go to noses, the button is jabbed three times."
+          ],
+          "lighting": "Ceiling panel.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "several times",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 11.2,
+          "duration_s": 3,
+          "kind": "ambience",
+          "description": "Elevator hum, a cough, a sniff.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 15.35,
+          "duration_s": 0.15,
+          "kind": "impact",
+          "description": "Button click.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL02",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Out of the building."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "twist",
+      "start_s": 19.8,
+      "end_s": 25,
+      "narration": {
+        "text": "Outside, it's already gone. Open air scatters each puff within a few steps.",
+        "start_s": 19.92,
+        "end_s": 24.85,
+        "delivery_note": "Relief; \"it’s gone\".",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "And outside?",
+      "visual_payoff": "The haze thins within steps; a deep breath.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 19.8,
+          "end_s": 25,
+          "shot_type": "outside: a passer-by and a few steps of open air",
+          "world": "1 unit = 1 m. A sunny city street (city-street-block-v1) with a far-field skyline; sun-skylight-rig-v1 sky.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 19.8,
+                "position": [
+                  -6.8,
+                  1.6,
+                  8.6
+                ],
+                "look_at": [
+                  -10.4,
+                  1.25,
+                  -1.2
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 25,
+                "position": [
+                  -6.9,
+                  1.6,
+                  8
+                ],
+                "look_at": [
+                  -9.6,
+                  1.35,
+                  1
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld on the sidewalk.",
+            "lens_notes": "A passer-by on the sunny sidewalk walks toward the lens; the faint haze around them drifts off and thins within a few steps; they stop and breathe in.",
+            "handheld_sway": 0.35
+          },
+          "hud_telemetry": {
+            "timer_label": "12:00:05 STREET",
+            "metric_label": "H₂S IN THE PUFF",
+            "start_value": 26000,
+            "end_value": 0.3,
+            "unit": "ppb",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "passerby",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "A passer-by in a purple jacket.",
+              "geometry_and_material": "Humanoid with gait and a deep breath.",
+              "scale_and_accuracy": "1.74 m.",
+              "movement": "Walks toward the lens, stops, breathes in."
+            },
+            {
+              "id": "gas",
+              "kind": "particle_system",
+              "asset_hint": "eruption-column-v1",
+              "appearance": "A faint yellow-green haze (a visual stand-in for colourless gas).",
+              "geometry_and_material": "AshPuffs soft lit puffs at low opacity.",
+              "scale_and_accuracy": "Fills the car volume.",
+              "movement": "Drifts downwind and fades within a few steps."
+            }
+          ],
+          "animation_plan": [
+            "19.8-22.400000000000002s walking; the puff thins below smelling range (HUD 26,000 ppb in the puff to under 0.5 ppb); 22.7s deep breath."
+          ],
+          "lighting": "Midday sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "already gone",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 19.8,
+          "duration_s": 4,
+          "kind": "ambience",
+          "description": "Bright street ambience, a breeze.",
+          "relative_db": -22
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Look up."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 25,
+      "end_s": 30.5,
+      "narration": {
+        "text": "Add it all up, and you could fill about 200 Olympic swimming pools.",
+        "start_s": 25.12,
+        "end_s": 30.35,
+        "delivery_note": "Build to \"pools of fart\".",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "How much is it altogether?",
+      "visual_payoff": "A 98 m bubble over the rooftops.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 25,
+          "end_s": 30.5,
+          "shot_type": "all of it in one bubble over the city",
+          "world": "1 unit = 1 m. A sunny city street (city-street-block-v1) with a far-field skyline; sun-skylight-rig-v1 sky.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 25,
+                "position": [
+                  2,
+                  1.6,
+                  32
+                ],
+                "look_at": [
+                  -4,
+                  58,
+                  -175
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 30.5,
+                "position": [
+                  2,
+                  1.6,
+                  30
+                ],
+                "look_at": [
+                  -4,
+                  60,
+                  -175
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push, looking up.",
+            "lens_notes": "A 98 m translucent bubble swells over the rooftops: everyone’s gas, pooled.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "ALL 8.3 BILLION",
+            "metric_label": "TOTAL GAS",
+            "start_value": 0,
+            "end_value": 500000,
+            "unit": "m³",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "bubble",
+              "kind": "other",
+              "appearance": "Huge tinted bubble.",
+              "geometry_and_material": "Fresnel-rim sphere with slow swirls.",
+              "scale_and_accuracy": "Radius 49 m = about 500,000 m³.",
+              "movement": "Inflates 25.2-27.6s, then wobbles."
+            }
+          ],
+          "animation_plan": [
+            "25.2-27.6s inflates as the counter climbs to 500,000 m³."
+          ],
+          "lighting": "Midday sun.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "200 Olympic swimming pools",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 25.2,
+          "duration_s": 2.5,
+          "kind": "whoosh",
+          "description": "Inflating balloon stretch.",
+          "relative_db": -14
+        }
+      ],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Up to orbit."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "twist",
+      "start_s": 30.5,
+      "end_s": 36.4,
+      "narration": {
+        "text": "Sounds huge. Spread through the sky, it's less than one part in five trillion.",
+        "start_s": 30.62,
+        "end_s": 36.25,
+        "delivery_note": "Dry: \"Sounds huge.\" Beat. Then the tiny number.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.95
+        }
+      },
+      "viewer_question": "Does the planet care?",
+      "visual_payoff": "The bubble is a speck, then nothing.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 30.5,
+          "end_s": 36.4,
+          "shot_type": "from orbit: the bubble is a speck, then nothing",
+          "world": "Earth radius = 1 unit (earth-globe-v1); a tinted shell marks where gas is (the gas itself is colourless).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 34,
+            "keyframes": [
+              {
+                "t_s": 30.5,
+                "position": [
+                  -0.467,
+                  0.354,
+                  1.372
+                ],
+                "look_at": [
+                  -0.386,
+                  0.27,
+                  0.886
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 32,
+                "position": [
+                  -0.523,
+                  0.396,
+                  1.537
+                ],
+                "look_at": [
+                  -0.232,
+                  0.162,
+                  0.532
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 36.4,
+                "position": [
+                  -0.812,
+                  0.888,
+                  3.113
+                ],
+                "look_at": [
+                  0,
+                  0.05,
+                  0
+                ],
+                "ease": "smoothstep"
+              }
+            ],
+            "movement": "Pull back from the speck to the whole planet.",
+            "lens_notes": "A glowing speck over the city with a callout; it spreads into a film around Earth that thins to nothing.",
+            "handheld_sway": 0
+          },
+          "hud_telemetry": {
+            "timer_label": "SPREAD WORLDWIDE",
+            "metric_label": "PARTS PER TRILLION",
+            "start_value": 0.12,
+            "end_value": 0.12,
+            "unit": "",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "earth",
+              "kind": "planet",
+              "asset_hint": "earth-globe-v1",
+              "appearance": "Day and night Earth with city lights.",
+              "geometry_and_material": "NASA maps; a tinted shell for the gas.",
+              "scale_and_accuracy": "Gas tint exaggerated so it can be seen.",
+              "movement": "Speck at the city; 32-35.4s it spreads and fades."
+            }
+          ],
+          "animation_plan": [
+            "30.5-32s speck with callout; 32-35.4s spreads and fades."
+          ],
+          "lighting": "Sun from the right.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "one part in five trillion",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 32,
+          "duration_s": 3,
+          "kind": "texture",
+          "description": "A deflating squeak into silence.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Down to a field."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "escalation",
+      "start_s": 36.4,
+      "end_s": 42.3,
+      "narration": {
+        "text": "And the methane? The world's cattle burp that much in under half a minute.",
+        "start_s": 36.52,
+        "end_s": 42.15,
+        "delivery_note": "Amused; \"cows burp\".",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.8
+        }
+      },
+      "viewer_question": "What about the methane?",
+      "visual_payoff": "Cows burp puffs one after another.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 36.4,
+          "end_s": 42.3,
+          "shot_type": "a herd of cows, burping",
+          "world": "1 unit = 1 m. A sunny pasture with grass-field-v1, broadleaf trees and a rail fence; a herd of dairy-cow-v1 cows.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 36.4,
+                "position": [
+                  2.7,
+                  1.55,
+                  6.2
+                ],
+                "look_at": [
+                  -0.4,
+                  0.95,
+                  -6
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 42.3,
+                "position": [
+                  2.4,
+                  1.55,
+                  5.4
+                ],
+                "look_at": [
+                  -0.4,
+                  0.95,
+                  -6
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Slow push across the pasture.",
+            "lens_notes": "A cow in the foreground lifts its head and burps; others follow across the herd.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "CATTLE, WORLDWIDE",
+            "metric_label": "METHANE BURPED",
+            "start_value": 0,
+            "end_value": 18,
+            "unit": "t",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cows",
+              "kind": "animal",
+              "asset_hint": "dairy-cow-v1",
+              "appearance": "Holstein and brown dairy cows.",
+              "geometry_and_material": "Procedural Cow rigs.",
+              "scale_and_accuracy": "1.45 m at the withers.",
+              "movement": "Grazing; burps at 37.65, 38.9, 40.1, 40.95, 41.6s."
+            },
+            {
+              "id": "gas",
+              "kind": "particle_system",
+              "asset_hint": "eruption-column-v1",
+              "appearance": "A faint yellow-green haze (a visual stand-in for colourless gas).",
+              "geometry_and_material": "AshPuffs soft lit puffs at low opacity.",
+              "scale_and_accuracy": "Fills the car volume.",
+              "movement": "Small puffs roll from the cows’ mouths and fade."
+            }
+          ],
+          "animation_plan": [
+            "36.4-42.3s grazing with staggered burps; the methane counter climbs at 2.7 t/s."
+          ],
+          "lighting": "Sunny afternoon.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "cattle burp",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 37.65,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Cow burp 1.",
+          "relative_db": -14
+        },
+        {
+          "at_s": 38.9,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Cow burp 2.",
+          "relative_db": -15
+        },
+        {
+          "at_s": 40.1,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Cow burp 3.",
+          "relative_db": -16
+        },
+        {
+          "at_s": 40.95,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Cow burp 4.",
+          "relative_db": -17
+        },
+        {
+          "at_s": 41.6,
+          "duration_s": 0.6,
+          "kind": "impact",
+          "description": "Cow burp 5.",
+          "relative_db": -18
+        }
+      ],
+      "claim_ids": [
+        "CL07",
+        "CL08"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Back to the elevator."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "ending",
+      "start_s": 42.3,
+      "end_s": 49,
+      "narration": {
+        "text": "The planet won't smell a thing. The next passenger will.",
+        "start_s": 42.42,
+        "end_s": 48.85,
+        "delivery_note": "Deadpan payoff; land \"definitely will.\"",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "So who notices?",
+      "visual_payoff": "Riders flee; the next passenger recoils.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 42.3,
+          "end_s": 49,
+          "shot_type": "the doors open: everyone files out; the next rider recoils",
+          "world": "1 unit = 1 m. Elevator car 2.0 x 2.2 x 2.4 m (brushed steel, handrails, button panel, floor display) with a lobby beyond its doors; six riders including you (the camera).",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 58,
+            "keyframes": [
+              {
+                "t_s": 42.3,
+                "position": [
+                  0,
+                  1.66,
+                  -1.06
+                ],
+                "look_at": [
+                  0.05,
+                  1.38,
+                  3
+                ],
+                "ease": "linear"
+              },
+              {
+                "t_s": 49,
+                "position": [
+                  0,
+                  1.66,
+                  -1.02
+                ],
+                "look_at": [
+                  0.05,
+                  1.4,
+                  3.2
+                ],
+                "ease": "linear"
+              }
+            ],
+            "movement": "Handheld from the back corner.",
+            "lens_notes": "Doors slide open on the lobby; the riders hurry out; the waiting man steps in, smells it, and backs off.",
+            "handheld_sway": 0.3
+          },
+          "hud_telemetry": {
+            "timer_label": "12:00:58",
+            "metric_label": "H₂S",
+            "start_value": 1.9,
+            "end_value": 1.9,
+            "unit": "ppb",
+            "alert_level": "warning"
+          },
+          "subjects": [
+            {
+              "id": "riders",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "Five strangers in work and casual clothes, facing the doors.",
+              "geometry_and_material": "Registered Humanoid rigs with grounded poses and hand IK.",
+              "scale_and_accuracy": "1.64-1.82 m adults.",
+              "movement": "File out from 43.1s."
+            },
+            {
+              "id": "waiting",
+              "kind": "human",
+              "asset_hint": "humanoid-figure-v1",
+              "appearance": "A man in a blue jacket waiting in the lobby.",
+              "geometry_and_material": "Humanoid with recoil pose and hand to nose.",
+              "scale_and_accuracy": "1.78 m.",
+              "movement": "Steps forward, recoils at 45.5s, backs away."
+            }
+          ],
+          "animation_plan": [
+            "42.6s doors open; riders exit one by one; 45.5s the waiting man recoils and backs off."
+          ],
+          "lighting": "Elevator panel and warm lobby light.",
+          "effects": [
+            "Film-pipeline ACES finish",
+            "restrained bloom",
+            "absolute-time animation only"
+          ],
+          "composition_notes": "HUD x90 y240; captions 72 px baseline 1320; focal action held in y 420-1180."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "The next passenger will.",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 42.6,
+          "duration_s": 0.8,
+          "kind": "impact",
+          "description": "Elevator ding.",
+          "relative_db": -12
+        }
+      ],
+      "claim_ids": [
+        "CL03",
+        "CL06"
+      ],
+      "transition_out": {
+        "type": "none",
+        "duration_s": 0,
+        "motivation": "Final frame on the recoiling passenger."
+      }
+    }
+  ],
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "assets/registry.json read 2026-10-16.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Elevator riders, the waiting passenger and the street walker.",
+        "configuration": "Story Person wrapper with hand IK."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Grounded poses and gait.",
+        "configuration": "applyGroundedPose."
+      },
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "The sunny street and skyline.",
+        "configuration": "farFieldRadius 900, vehicles on."
+      },
+      {
+        "asset_id": "sun-skylight-rig-v1",
+        "usage": "Street and pasture daylight.",
+        "configuration": "Midday sun."
+      },
+      {
+        "asset_id": "earth-globe-v1",
+        "usage": "Orbit shots with a gas shell.",
+        "configuration": "setView(-40, 28)."
+      },
+      {
+        "asset_id": "eruption-column-v1",
+        "usage": "AshPuffs lit puffs for the faint gas haze and burps.",
+        "configuration": "Low-opacity yellow-green puffs."
+      },
+      {
+        "asset_id": "grass-field-v1",
+        "usage": "Pasture grass.",
+        "configuration": "Sunny colours."
+      },
+      {
+        "asset_id": "broadleaf-tree-v1",
+        "usage": "Pasture trees.",
+        "configuration": "Summer leaves."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Elevator car, lobby, fence.",
+        "configuration": "box/solid/surface."
+      },
+      {
+        "asset_id": "shader-noise-math-v1",
+        "usage": "Seeded layouts and noise.",
+        "configuration": "rng()."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Handheld POV and the comic jolt.",
+        "configuration": "handheld_sway 0.3-0.35."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Deterministic render and grades.",
+        "configuration": "Per-stage post."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "HUD and the speck callout.",
+        "configuration": "x 90, y 240."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Burned-in captions.",
+        "configuration": "72 px, baseline 1320."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Original comic score and Foley.",
+        "configuration": "Plucks, brass blips, burps."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Captions and HUD.",
+        "configuration": "Inter 600/700."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Thumbnail headline.",
+        "configuration": "Anton."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Bold cover.",
+        "configuration": "Headline, badge, arrow."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "dairy-cow-v1",
+        "description": "Procedural stylised dairy cow with coat options, grazing head, jaw, tail and ears, and a mouth anchor for breath or burp puffs.",
+        "reusable_in": "Farm, climate, food and countryside stories needing livestock.",
+        "parameters": [
+          "seed",
+          "coat",
+          "scale",
+          "setPose({graze, headYaw, jaw, tail, ears})",
+          "mouthWorld()"
+        ],
+        "suggested_path": "src/library/characters/Cow.ts"
+      }
+    ],
+    "shot_specific_assets": [
+      "Elevator car and lobby",
+      "Gas bubble shader",
+      "Population puff shell"
+    ]
+  },
+  "distribution": {
+    "primary_search_intent": "what if everyone farted at once, what if 8.3 billion people farted at the same time, how big would everyone’s fart be",
+    "core_keywords": [
+      "what if everyone farted at once",
+      "everyone farts at the same time",
+      "how much gas do humans fart",
+      "fart science",
+      "cow methane vs human farts",
+      "hydrogen sulfide smell",
+      "earth science what if",
+      "physics thought experiment",
+      "threejs 3d documentary",
+      "funny science"
+    ],
+    "distinctive_angle": "Where you are decides everything: a crowded elevator gets several times the smellable dose, the street erases it, the planet doesn’t notice, and cows out-emit it in seconds.",
+    "comment_bait_question": "What’s the worst place on Earth to be at that exact second?",
+    "seo_integrity_note": "Comic thought experiment with real numbers: volumes, smell and methane are typical-value estimates; the gas is colourless (the tint is a visual aid)."
+  },
+  "delivery": {
+    "video_output": "output/everyone-farts-at-once.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "thumbnail": {
+    "time_s": 28.6,
+    "headline": "200 POOLS OF FART?!",
+    "highlight": [
+      "FART"
+    ],
+    "position": "bottom",
+    "badge": "8.3 BILLION",
+    "focus": [
+      0.6,
+      0.33
+    ],
+    "zoom": 1.04,
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "palette": {
+      "text": "#FFFFFF",
+      "highlight": "#A3E635",
+      "badge": "#7C3AED",
+      "badge_text": "#FFFFFF",
+      "arrow": "#A3E635"
+    },
+    "grade": "vivid",
+    "tilt": -3,
+    "badge_at": [
+      0.3,
+      0.1
+    ]
+  }
+}

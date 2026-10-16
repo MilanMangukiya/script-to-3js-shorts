@@ -1,0 +1,1375 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if social media didn't exist for 5 seconds in 2026?",
+    "title": "What if social media didn't exist for 5 seconds in 2026?",
+    "slug": "social-media-gone-five-seconds",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 48,
+    "language": "en",
+    "audience": "Curious international viewers; a playful technology thought experiment in one cafe.",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "What do you save when your social audience vanishes for five seconds?",
+    "viewer_takeaway": "A temporary disappearance of social platforms need not disable the internet, SMS or a local camera. In this individual cafe story, a failed tap redirects attention to a real near-miss and an optional post."
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The physical consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "delivery": {
+    "video_output": "output/social-media-gone-five-seconds.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 154,
+    "music_direction": "Original playful micro-thriller: digital plucks drop away, light physical percussion carries the sliding cup, a 0.3-second silence drop precedes the catch, then a warm conversational motif replaces the online pulse.",
+    "music_level_db_below_voice": -18,
+    "sfx_direction": "Physical glass taps, cup skimming wood, a soft ceramic catch and set-down, a restrained return notification and a final phone-case contact. No catastrophe or invented alarm.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1,
+    "voice_id": "am_michael"
+  },
+  "scientific_model": {
+    "baseline_reality": "Social platforms are software services accessed over wider networks. A smartphone also has local functions and carrier SMS. A platform outage is not synonymous with the entire internet disappearing.",
+    "counterfactual_change": "In a chosen ordinary 2026 cafe, every social app, social website, feed, livestream and platform direct-message service temporarily vanishes from use for exactly five seconds. Their saved state returns at second five. This is a stipulated temporary disappearance, not a historical world without social media.",
+    "assumptions": [
+      "Keep electricity, the internet, carrier networks, ordinary SMS, local camera/storage, memories and physical laws unchanged. Platform DMs disappear; ordinary SMS is explicitly separate.",
+      "Accounts and data are preserved, and the unfinished local draft remains. Exact five-second restoration is part of the hypothetical, not a promise about real outage recovery.",
+      "The 48-second film expands a five-second event. One continuous HUD outage clock is derived from the same explicit film-to-story time mapping used by the cup and people; after restoration it stays at 5.00 seconds.",
+      "The user has nudged a partly filled coffee toward a raised table edge while posting. This is one authored cafe accident, not an effect suffered by everyone or a claim that an outage changes gravity.",
+      "The cup stays supported by the table edge and then by a hand. It never hangs in free fall while phone checks occur. The partly filled cup is caught before a spill. Contact animation is illustrative, not a fluid-dynamics forecast.",
+      "The friend is present across the table from the opening. Pointing, laughter, rescue and choosing not to post are individual fictional actions, not a measured psychological or social response.",
+      "Generic original phone UI represents the stipulated functions; no actual 2026 platform inventory, branded interface, notification count or usage statistic is asserted. The camera preview is rendered from the real 3D stage."
+    ],
+    "causal_chain": [
+      "A posting attempt loses all social access while the already nudged cup continues sliding.",
+      "Working camera and SMS distinguish the stipulated platform disappearance from a broken phone or whole-internet blackout.",
+      "A failed repeat tap and the friend pointing redirect attention to the approaching table edge.",
+      "A supported hand catches the cup, preserving the drink; the friend reacts.",
+      "At second five the apps and unfinished draft return, creating a concrete choice.",
+      "The user sets the phone face down and leaves this shared moment unposted."
+    ],
+    "uncertainties": [
+      "No population-wide panic, economic loss, mental-health benefit or habit change is inferred from five seconds.",
+      "Real platform outages have dependency failures and recovery complexity; this fictional restoration removes those uncertainties by stipulation.",
+      "The incident, low-friction slide and performance are authored; exact contact states are checked, but no rigid-body solver or liquid-volume model is claimed."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "Social access disappears for exactly five story seconds and returns with saved state.",
+        "confidence": "derived",
+        "reasoning": "This is the explicit user counterfactual interpreted as temporary loss of social services, with preservation and exact restoration chosen as scenario rules.",
+        "presentation_guardrail": "Do not call this a real 2026 event or erase memories/history. The HUD counts story seconds, not the 48-second film duration."
+      },
+      {
+        "id": "CL02",
+        "statement": "Losing a platform does not inherently mean losing every network or local phone function.",
+        "confidence": "established",
+        "reasoning": "Meta describes how its own backbone and DNS failures disconnected its services from the broader internet. Apple documents the local Camera app; Twilio distinguishes SMS from app messaging. Holding unaffected infrastructure constant defines this scenario.",
+        "presentation_guardrail": "Do not claim every real outage leaves all dependent services unaffected. Social DMs vanish here; carrier SMS and local camera are separately stipulated to survive."
+      },
+      {
+        "id": "CL03",
+        "statement": "An ordinary SMS message and a local camera can remain usable in this chosen social-platform disappearance.",
+        "confidence": "plausible",
+        "reasoning": "Carrier SMS is a separate communication channel and local capture is a device function. The scenario explicitly keeps their networks, hardware and storage intact.",
+        "presentation_guardrail": "Say SMS, not all messages. Do not claim RCS, social login or cloud-dependent services are unaffected. No real messages are sent; the entire scene is CGI."
+      },
+      {
+        "id": "CL04",
+        "statement": "A sliding cup can still reach a table edge while a person is distracted by their phone.",
+        "confidence": "plausible",
+        "reasoning": "Ordinary physical motion is held constant. A partly filled cup has been nudged in this individual authored example. Its support moves from tabletop to edge to the catching hand.",
+        "presentation_guardrail": "No floating free-fall cup, altered gravity, inevitable universal accident or guaranteed spill. Keep contacts and the supported completed state coherent."
+      },
+      {
+        "id": "CL05",
+        "statement": "A friend can point, laugh at the rescue, and share a moment the user chooses not to post.",
+        "confidence": "speculative",
+        "reasoning": "These are illustrative individual character choices used to tell this fictional five-second story; they are not evidence of population behavior.",
+        "presentation_guardrail": "Remove invented habitual flaws and moral claims. Do not describe five seconds as a dopamine reset or social cure."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Meta Engineering: more details about the October 4 outage",
+        "url": "https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "Apple Support: iPhone camera basics",
+        "url": "https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios",
+        "supports_claim_ids": [
+          "CL02",
+          "CL03"
+        ]
+      },
+      {
+        "name": "Twilio: Programmable Messaging and distinct SMS/app channels",
+        "url": "https://www.twilio.com/docs/messaging",
+        "supports_claim_ids": [
+          "CL02",
+          "CL03"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "Your audience vanishes for five seconds. The coffee heading for the table edge does not care.",
+    "visual_identity": "One tactile 3D cafe, a real supported phone with diegetic UI and live rendered camera, an expressive seated friend and a ceramic near-miss.",
+    "palette": [
+      "#254C52",
+      "#DCA96B",
+      "#EAE3D3",
+      "#182A39",
+      "#CF6C48"
+    ],
+    "lighting": "Warm window key and cool plaster bounce with a phone glow kept readable; physical table shadows and controlled highlights. Single pipeline tone mapping.",
+    "camera_language": "Eye-height over-table views, phone closeups, a friend-to-cup eyeline cut and a stable catching view. Return to the opening table for the final deliberate set-down.",
+    "motion_language": "All motion uses absolute film time and the shared five-second story clock. The cup is supported throughout; hands meet physical phone and cup targets, release, and settle.",
+    "world_scale_policy": "Metre-scale cafe and phone. The five-second event is expanded in film time and metered continuously; no world population maps or fabricated social metrics.",
+    "emotional_arc": [
+      "Interrupted post",
+      "Failed habitual tap",
+      "Friend notices danger",
+      "Small rescue",
+      "An optional post"
+    ],
+    "opening_hook": "A posting tap loses its social screen as the nudged coffee visibly slides toward the edge.",
+    "mid_video_rehook": "Before the midpoint, a friend points at the cup: this problem needs a hand rather than followers. The viewer redirects attention from a failed tap to a supported physical rescue.",
+    "ending_payoff": "The apps and unfinished draft return at second five. The user chooses to set the phone face down beside the saved coffee and leave the shared moment unposted.",
+    "loop_connection": "A final physical phone contact answers the opening digital tap. The saved cup occupies the same table as the original near-miss, with no spoken rewind instruction.",
+    "asset_policy": "Reuse the registered room furnishings, mug, Humanoid/CharacterMotion, Modeling helpers and production pipeline. Only a generic phone case/UI and small facial details are story-specific."
+  },
+  "distribution": {
+    "primary_search_intent": "What if social media didn't exist for 5 seconds in 2026?",
+    "core_keywords": [
+      "social media disappears for five seconds",
+      "social media outage thought experiment",
+      "technology simulation",
+      "digital life",
+      "phone camera SMS",
+      "2026 what if"
+    ],
+    "distinctive_angle": "A single cafe near-miss keeps the five-second scale honest and makes the returning draft a choice, without invented global panic or economic losses.",
+    "comment_bait_question": "When the apps returned, would you finish the post or leave the moment offline?",
+    "seo_integrity_note": "Frame this as an illustrated technology thought experiment, not a real outage report or mental-health finding. Retain the distinction between platform DMs and carrier SMS."
+  },
+  "thumbnail": {
+    "time_s": 2.6,
+    "headline": "EVERY FEED VANISHED",
+    "highlight": [
+      "VANISHED"
+    ],
+    "badge": "5 SECONDS",
+    "focus": [
+      0.52,
+      0.49
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "grade": "vivid",
+    "position": "bottom",
+    "zoom": 1.08,
+    "badge_at": [
+      0.75,
+      0.16
+    ],
+    "anchor": [
+      0.52,
+      0.49
+    ],
+    "tilt": -3
+  },
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Read the actual registered room/table/chair/mug, Humanoid and CharacterMotion and inspected existing film phone use. No registered reusable smartphone exists.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "room-box-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Use the actual registered component in the cafe or production pipeline.",
+        "configuration": "Story-local palettes, absolute-time support/contact poses and generic original UI; preserve shared defaults."
+      }
+    ],
+    "new_reusable_asset_candidates": [],
+    "shot_specific_assets": [
+      "A metre-scale beveled smartphone with original UI and a live 3D camera preview.",
+      "Small eyes and smile/open-mouth expressions attached to the existing head joint.",
+      "A low table-edge lip and partly filled cup configured from the registered mug."
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 5.5,
+      "narration": {
+        "text": "You hit post, and every social app disappears. Your coffee keeps sliding.",
+        "start_s": 0,
+        "end_s": 5.35,
+        "delivery_note": "Drop into the failed post; dry surprise, then a practical danger on sliding.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Where did your audience go?",
+      "visual_payoff": "Posting UI vanishes while the coffee moves along the real tabletop.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 3.6,
+          "shot_type": "medium",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  -0.06,
+                  1.42,
+                  -0.42
+                ],
+                "look_at": [
+                  0.11,
+                  1.05,
+                  -1.05
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 3.6,
+                "position": [
+                  -0.06,
+                  1.42,
+                  -0.42
+                ],
+                "look_at": [
+                  0.11,
+                  1.05,
+                  -1.05
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical subject while its state changes.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 0,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "Posting UI vanishes while the coffee moves along the real tabletop.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "Posting UI vanishes while the coffee moves along the real tabletop.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "0.6 the index contacts the physical POST control; 1.0 social UI vanishes.",
+            "3.6 cut to the supported cup sliding along the tabletop; its movement follows the shared expanded story clock."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        },
+        {
+          "id": "SH02",
+          "start_s": 3.6,
+          "end_s": 5.5,
+          "shot_type": "medium",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 3.6,
+                "position": [
+                  1.2,
+                  1.42,
+                  -0.45
+                ],
+                "look_at": [
+                  0.52,
+                  0.88,
+                  -1.35
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 5.5,
+                "position": [
+                  1.2,
+                  1.42,
+                  -0.45
+                ],
+                "look_at": [
+                  0.52,
+                  0.88,
+                  -1.35
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical subject while its state changes.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 0,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "Posting UI vanishes while the coffee moves along the real tabletop.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "Posting UI vanishes while the coffee moves along the real tabletop.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "3.6-5.5 reveal the already nudged cup continuing to slide along the supported tabletop; no airborne fall."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "every social app disappears",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve the exact support state and do not expose a reveal early."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 5.5,
+      "end_s": 11.5,
+      "narration": {
+        "text": "Five seconds without feeds or social messages. Your camera and SMS still work.",
+        "start_s": 5.5,
+        "end_s": 11.35,
+        "delivery_note": "One clear explanation; distinguish social messages from the still working camera and SMS.",
+        "pacing_energy": "crisp_mechanism",
+        "performance": {
+          "rate": 1.16
+        }
+      },
+      "viewer_question": "Did the whole phone stop working?",
+      "visual_payoff": "The local camera renders the actual moving scene, then a carrier SMS screen shows the fictional test message sent.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 5.5,
+          "end_s": 11.5,
+          "shot_type": "close_up",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 33,
+            "keyframes": [
+              {
+                "t_s": 5.5,
+                "position": [
+                  -0.06,
+                  1.42,
+                  -0.42
+                ],
+                "look_at": [
+                  0.11,
+                  1.05,
+                  -1.05
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 11.5,
+                "position": [
+                  -0.06,
+                  1.42,
+                  -0.42
+                ],
+                "look_at": [
+                  0.11,
+                  1.05,
+                  -1.05
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical subject while its state changes.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 5.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "The local camera renders the actual moving scene, then a carrier SMS screen shows the fictional test message sent.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "The local camera renders the actual moving scene, then a carrier SMS screen shows the fictional test message sent.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "Hold empty social slots while the 2026 outage clock advances.",
+            "8.54 show the real rendered local camera view on the spoken word camera; 9.16 a fictional carrier SMS is shown sent on SMS, with no external communication."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "Five seconds",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL02",
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve the exact support state and do not expose a reveal early."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "human_impact",
+      "start_s": 11.5,
+      "end_s": 17,
+      "narration": {
+        "text": "You tap the empty space again. Across the table, your friend points down.",
+        "start_s": 11.5,
+        "end_s": 16.85,
+        "delivery_note": "A failed retry, then redirect attention toward the friend pointing down.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "What is your friend trying to show you?",
+      "visual_payoff": "A finger taps empty social space; the friend then points down toward the cup.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 11.5,
+          "end_s": 14,
+          "shot_type": "medium",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 11.5,
+                "position": [
+                  -0.06,
+                  1.42,
+                  -0.42
+                ],
+                "look_at": [
+                  0.11,
+                  1.05,
+                  -1.05
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 14,
+                "position": [
+                  -0.06,
+                  1.42,
+                  -0.42
+                ],
+                "look_at": [
+                  0.11,
+                  1.05,
+                  -1.05
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical subject while its state changes.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 11.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "A finger taps empty social space; the friend then points down toward the cup.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "A finger taps empty social space; the friend then points down toward the cup.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "12.6-13.2 the fixed-length index taps the empty social tile.",
+            "14-17 a close hand insert shows the seated friend pointing down toward the cup; cut along that cue to the edge."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        },
+        {
+          "id": "SH02",
+          "start_s": 14,
+          "end_s": 17,
+          "shot_type": "medium",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 14,
+                "position": [
+                  0.45,
+                  1.42,
+                  -0.65
+                ],
+                "look_at": [
+                  0.18,
+                  0.98,
+                  -1.72
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 17,
+                "position": [
+                  0.45,
+                  1.42,
+                  -0.65
+                ],
+                "look_at": [
+                  0.18,
+                  0.98,
+                  -1.72
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "A tight warning insert centers the pointing hand, then cuts to the cup at the table edge.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 11.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "A finger taps empty social space; the friend then points down toward the cup.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "A finger taps empty social space; the friend then points down toward the cup.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "14-16.4 friend extends a supported arm and points toward the cup; follow the eyeline into the edge closeup."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "empty space",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve the exact support state and do not expose a reveal early."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "twist",
+      "start_s": 17,
+      "end_s": 23,
+      "narration": {
+        "text": "Your cup reaches the edge. Your next move needs hands, not followers.",
+        "start_s": 17,
+        "end_s": 22.85,
+        "delivery_note": "Change the stakes on edge; hands, not followers is a dry joke, not a moral lecture.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Which problem needs your attention now?",
+      "visual_payoff": "The sliding cup reaches the physical edge lip; the right hand begins a supported rescue.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 17,
+          "end_s": 23,
+          "shot_type": "close_up",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 17,
+                "position": [
+                  1.5,
+                  1.42,
+                  -0.6
+                ],
+                "look_at": [
+                  0.78,
+                  0.83,
+                  -1.35
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 23,
+                "position": [
+                  1.5,
+                  1.42,
+                  -0.6
+                ],
+                "look_at": [
+                  0.78,
+                  0.83,
+                  -1.35
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical subject while its state changes.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 17,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "The sliding cup reaches the physical edge lip; the right hand begins a supported rescue.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "The sliding cup reaches the physical edge lip; the right hand begins a supported rescue.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "17-19 reveal the tabletop edge approaching the cup; at 19 its actual base radius meets the edge lip.",
+            "20-21 the right hand approaches on an arc above the tabletop and grips the handle; the cup stays supported."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "hands, not followers",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve the exact support state and do not expose a reveal early."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "escalation",
+      "start_s": 23,
+      "end_s": 29,
+      "narration": {
+        "text": "You catch it. No spill. Your friend watched that whole ridiculous rescue.",
+        "start_s": 23,
+        "end_s": 28.85,
+        "delivery_note": "Short release on No spill; let ridiculous rescue feel playful.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Can you save the drink?",
+      "visual_payoff": "The right hand catches the handle, rights the cup and returns it to the table without a spill.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 23,
+          "end_s": 29,
+          "shot_type": "close_up",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 23,
+                "position": [
+                  1.5,
+                  1.42,
+                  -0.6
+                ],
+                "look_at": [
+                  0.78,
+                  0.83,
+                  -1.35
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 25.3,
+                "position": [
+                  1.5,
+                  1.42,
+                  -0.6
+                ],
+                "look_at": [
+                  0.78,
+                  0.83,
+                  -1.35
+                ],
+                "ease": "smoothstep"
+              },
+              {
+                "t_s": 28.2,
+                "position": [
+                  1.25,
+                  1.42,
+                  -0.6
+                ],
+                "look_at": [
+                  0.52,
+                  0.84,
+                  -1.35
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 29,
+                "position": [
+                  1.25,
+                  1.42,
+                  -0.6
+                ],
+                "look_at": [
+                  0.52,
+                  0.84,
+                  -1.35
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the catch, then follow the cup back to its supported safe position.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 23,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "The right hand catches the handle, rights the cup and returns it to the table without a spill.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "The right hand catches the handle, rights the cup and returns it to the table without a spill.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "23.58 the hand arrests the maximum tilt on the measured end of catch it, after a 23.28-23.58 bed/SFX drop.",
+            "23.58-28.2 right the cup and follow it back to the supported table inlay.",
+            "28.2-29 retain the no-spill result before the friend reaction."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "No spill",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [
+        {
+          "at_s": 23.28,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Drop the music and ambience immediately before the supported cup catch; retain narration.",
+          "relative_db": -24
+        }
+      ],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve the exact support state and do not expose a reveal early."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "human_impact",
+      "start_s": 29,
+      "end_s": 35,
+      "narration": {
+        "text": "Your friend laughs. You laugh back, with no camera between you.",
+        "start_s": 29,
+        "end_s": 34.85,
+        "delivery_note": "Warm reciprocal reaction without an invented habitual character flaw.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 0.85
+        }
+      },
+      "viewer_question": "What did looking up let you share?",
+      "visual_payoff": "The seated friend reacts with a finite laugh and eye contact; the phone stays below the focal eyeline.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 29,
+          "end_s": 35,
+          "shot_type": "medium",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 33,
+            "keyframes": [
+              {
+                "t_s": 29,
+                "position": [
+                  0.05,
+                  1.45,
+                  -0.65
+                ],
+                "look_at": [
+                  0.1,
+                  1.2,
+                  -2.1
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 35,
+                "position": [
+                  0.05,
+                  1.45,
+                  -0.65
+                ],
+                "look_at": [
+                  0.1,
+                  1.2,
+                  -2.1
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical subject while its state changes.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 29,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "The seated friend reacts with a finite laugh and eye contact; the phone stays below the focal eyeline.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "The seated friend reacts with a finite laugh and eye contact; the phone stays below the focal eyeline.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "29.5-33 a finite grin, squint, head and shoulder response shows the friend laughing; planted feet and seated pelvis remain supported.",
+            "Hold the shared result after the response ends; no frozen rear-facing mannequin."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "laugh back",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve the exact support state and do not expose a reveal early."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "second_order_effect",
+      "start_s": 35,
+      "end_s": 41,
+      "narration": {
+        "text": "At second five, social media returns. Your unfinished post is still waiting.",
+        "start_s": 35,
+        "end_s": 40.85,
+        "delivery_note": "The restored draft is a temptation; let still waiting open a choice.",
+        "pacing_energy": "steady_escalation",
+        "performance": {
+          "rate": 1.02
+        }
+      },
+      "viewer_question": "Will you finish the waiting post?",
+      "visual_payoff": "At the exact five-second story boundary the saved draft returns; the posting hand hovers without publishing.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 35,
+          "end_s": 41,
+          "shot_type": "close_up",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 33,
+            "keyframes": [
+              {
+                "t_s": 35,
+                "position": [
+                  -0.06,
+                  1.42,
+                  -0.42
+                ],
+                "look_at": [
+                  0.11,
+                  1.05,
+                  -1.05
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 41,
+                "position": [
+                  -0.06,
+                  1.42,
+                  -0.42
+                ],
+                "look_at": [
+                  0.11,
+                  1.05,
+                  -1.05
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical subject while its state changes.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 35,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "At the exact five-second story boundary the saved draft returns; the posting hand hovers without publishing.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "At the exact five-second story boundary the saved draft returns; the posting hand hovers without publishing.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "At the measured returns word, the outage clock reaches exactly five story seconds and social UI/draft return.",
+            "38.5-40.6 the index approaches but stops short of POST, then withdraws without publishing."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "second five",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve the exact support state and do not expose a reveal early."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "ending",
+      "start_s": 41,
+      "end_s": 48,
+      "narration": {
+        "text": "Your phone goes face down. The coffee survived. This moment stays off camera.",
+        "start_s": 41,
+        "end_s": 47.85,
+        "delivery_note": "Ease into the deliberate face-down action; finish off camera quietly without a sign-off.",
+        "pacing_energy": "reflective_payoff",
+        "performance": {
+          "rate": 0.87
+        }
+      },
+      "viewer_question": "Must this moment become content?",
+      "visual_payoff": "The left hand turns the phone face down onto the supported tabletop; the rescued cup and friend stay.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 41,
+          "end_s": 48,
+          "shot_type": "medium",
+          "world": "One metre-scale cafe in 2026. The HUD shows one time-expanded five-second social-platform disappearance; normal physical motion continues.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 41,
+                "position": [
+                  -0.1,
+                  1.42,
+                  -0.38
+                ],
+                "look_at": [
+                  0.31,
+                  0.77,
+                  -1.3
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 48,
+                "position": [
+                  -0.1,
+                  1.42,
+                  -0.38
+                ],
+                "look_at": [
+                  0.31,
+                  0.77,
+                  -1.3
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Hold the physical subject while its state changes.",
+            "lens_notes": "Seated human-eye POV at 1.42-1.45 m with a connected-arm view model; keep the physical focal action clear of HUD and captions.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 41,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "2026 / elapsed story seconds",
+            "metric_label": "OUTAGE LIMIT",
+            "start_value": 5,
+            "end_value": 5,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "cafe_action",
+              "kind": "other",
+              "appearance": "The left hand turns the phone face down onto the supported tabletop; the rescued cup and friend stay.",
+              "geometry_and_material": "Registered RoomBox/table/chair/mug and articulated Humanoids, story-local PBR phone and original diegetic UI.",
+              "scale_and_accuracy": "Metres; no enlarged phone in world space. One authored incident, with a shared story-time mapping.",
+              "movement": "The left hand turns the phone face down onto the supported tabletop; the rescued cup and friend stay.",
+              "asset_hint": "room-box-v1; humanoid-figure-v1; character-motion-v1; modeling-helpers-v1"
+            }
+          ],
+          "animation_plan": [
+            "41.2-44.4 the left hand turns the physical phone face down and lowers its actual lowest vertex to the tabletop.",
+            "44.4-45 release with an arc clearing the table edge; 45-48 hold the settled phone and saved coffee."
+          ],
+          "lighting": "Motivated warm window key, cool plaster bounce and controlled glass/ceramic highlights. Single pipeline tone mapping.",
+          "effects": [
+            "Restrained bloom and seeded grain. No invented physical destruction or alarm."
+          ],
+          "composition_notes": "Keep phone, fingertip or cup contact in the central action band; the camera never overrides the storyboard keyframes."
+        }
+      ],
+      "caption_emphasis": [
+        {
+          "phrase": "face down",
+          "treatment": "accent_color"
+        }
+      ],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL04",
+        "CL05"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve the exact support state and do not expose a reveal early."
+      }
+    }
+  ]
+}

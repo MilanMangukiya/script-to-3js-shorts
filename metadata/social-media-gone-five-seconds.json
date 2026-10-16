@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "social-media-gone-five-seconds",
+  "topic": "What if social media didn't exist for 5 seconds in 2026?",
+  "duration_s": 48,
+  "video_file": "output/social-media-gone-five-seconds.mp4",
+  "scientific_scope_note": "A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.",
+  "created_asset_ids": [],
+  "reused_asset_ids": [
+    "room-box-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "modeling-helpers-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "caption-kinetic-v1",
+    "overlay-labels-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if social media didn't exist for 5 seconds in 2026?",
+      "description": "You hit post and every social app disappears, but your coffee keeps sliding. Your camera and SMS still work. Another tap solves nothing; your friend points at the table edge. A quick catch saves the drink. At second five the draft returns, and you choose to leave this moment off camera.\n\nWhen the apps returned, would you finish the post or leave the moment offline?\n\nScope: A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.\n\nSources:\n- Meta Engineering: more details about the October 4 outage: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/\n- Apple Support: iPhone camera basics: https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios\n- Twilio: Programmable Messaging and distinct SMS/app channels: https://www.twilio.com/docs/messaging\n\nOriginal deterministic Three.js animation and original generic phone UI. Narrator: local Kokoro am_michael. Original procedural score and Foley.",
+      "tags": [
+        "what if social media disappeared",
+        "social media gone for 5 seconds",
+        "social media outage thought experiment",
+        "2026 what if",
+        "SMS versus social messages",
+        "technology simulation",
+        "digital life",
+        "3D animation"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Technology",
+        "#ComputerScience",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "tiktok": {
+      "caption": "You hit post. Your social apps vanish, but the coffee sliding toward the table edge does not stop. Five hypothetical seconds turn into one ridiculous cafe rescue.\n\nWhen the apps returned, would you finish the post or leave the moment offline?",
+      "hashtags": [
+        "#ScienceTok",
+        "#WhatIf",
+        "#Technology",
+        "#ComputerScience",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "You hit post. Your social apps vanish, but the coffee sliding toward the table edge does not stop. Five hypothetical seconds turn into one ridiculous cafe rescue.\n\nWhen the apps returned, would you finish the post or leave the moment offline?\n\nA fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.",
+      "hashtags": [
+        "#ScienceReels",
+        "#WhatIf",
+        "#Technology",
+        "#ComputerScience",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if social media didn't exist for 5 seconds in 2026?",
+      "description": "You hit post and every social app disappears, but your coffee keeps sliding. Your camera and SMS still work. Another tap solves nothing; your friend points at the table edge. A quick catch saves the drink. At second five the draft returns, and you choose to leave this moment off camera.\n\nWhen the apps returned, would you finish the post or leave the moment offline?\n\nScope: A fictional temporary disappearance of all social apps, websites, feeds, livestreams and platform DMs for exactly five story seconds in 2026. Electricity, the broader internet, carrier SMS, local camera/storage, memories and physical laws remain. Ordinary SMS is distinct from platform messaging. Preserved accounts and saved state return at second five by stipulation; this does not model real outage recovery. The 48-second film expands those five seconds using one continuous story clock, then resumes ordinary time for the final set-down. The nudged partly filled coffee, friend warning, supported catch, laughter and unposted moment are individual authored actions. No worldwide panic, economic-loss estimate, psychological reset or universal benefit is inferred. The cup stays supported by table/edge/hand and never hangs in free fall. Original generic UI and a live rendered 3D camera represent phone functions; no actual messages are sent or branded 2026 platform inventory asserted. Contact states are checked, but no fluid or rigid-body solver is claimed.\n\nSources:\n- Meta Engineering: more details about the October 4 outage: https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/\n- Apple Support: iPhone camera basics: https://support.apple.com/en-ie/guide/iphone/-iph263472f78/ios\n- Twilio: Programmable Messaging and distinct SMS/app channels: https://www.twilio.com/docs/messaging\n\nOriginal deterministic Three.js animation and original generic phone UI. Narrator: local Kokoro am_michael. Original procedural score and Foley.",
+      "hashtags": [
+        "#WhatIf",
+        "#Technology",
+        "#ComputerScience",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "x_video": {
+      "post": "Your feed vanishes; your coffee keeps sliding. When the apps returned, would you finish the post or leave the moment offline?",
+      "hashtags": [
+        "#WhatIf",
+        "#Technology",
+        "#ComputerScience",
+        "#ThoughtExperiment",
+        "#ScienceSimulation"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-16T04:11:33Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 20,
+    "path_in_repo": "videos/020-social-media-gone-five-seconds.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.mp4",
+    "sha256": "c87360a438f23f2a0d4218c02264dbddbe9c4c74996ea2c64107acc9a66aa156",
+    "size_bytes": 12406459,
+    "thumbnail_path_in_repo": "videos/020-social-media-gone-five-seconds.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.jpg",
+    "thumbnail_sha256": "246ad2c6cb57f74af2e7556c19c27b89f4630c456f625c9826745df9f5bf4205",
+    "copy_path_in_repo": "videos/020-social-media-gone-five-seconds.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/020-social-media-gone-five-seconds.md",
+    "copy_sha256": "34693909e141663381afed74d5c2a37405930733e01a4d5069e618bf70c389bc",
+    "uploaded_at_utc": "2026-10-16T04:12:31Z"
+  }
+}

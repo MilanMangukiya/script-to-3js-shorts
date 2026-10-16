@@ -42,6 +42,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -50,6 +52,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code; textures NASA public domain (see earth-textures-nasa-v1)",
@@ -88,6 +91,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "public_domain_nasa",
@@ -131,6 +135,7 @@
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -263,6 +268,7 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -565,6 +571,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -575,6 +583,8 @@
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -655,6 +665,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -665,6 +677,8 @@
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -712,6 +726,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -722,6 +738,8 @@
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -754,6 +772,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -764,6 +784,8 @@
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -803,6 +825,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -813,6 +837,8 @@
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -853,6 +879,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -863,6 +891,8 @@
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code",
@@ -896,6 +926,8 @@
         "earth-core-solid",
         "earth-ten-percent-closer",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "moon-made-of-ice",
         "mountain-grew-100-km-tall",
@@ -931,6 +963,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ice-sank-instead-of-floating",
         "last-man-alive",
         "last-woman-alive",
@@ -941,6 +975,8 @@
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "SIL Open Font License 1.1",
@@ -1092,6 +1128,7 @@
       "created_for": "ice-sank-instead-of-floating",
       "used_in": [
         "air-pressure-doubled",
+        "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars"
@@ -1499,6 +1536,8 @@
         "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "moon-made-of-ice",
         "rain-nonstop-everywhere",
         "what-if-every-man-disappeared"
@@ -1999,6 +2038,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
@@ -2006,7 +2047,9 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
-        "sky-disappeared"
+        "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth"
       ],
       "license": "original_procedural",
       "notes": "composeBoldThumbnail (default) and drawThumbnailTitle (style \"clean\") in the same module. src/entry.ts renderThumbnail() feeds the storyboard thumbnail block (badge_at -> badgeAt) over FilmPipeline.renderFrame(i, { overlay: false, captions: false }); tools/render.mjs writes output/<slug>.jpg after --final, or alone with --thumbnail. Long sticker text shrinks to about 64% of the width. Bold style needs Inter 900 / 900 italic (font-inter-v1). Style varies per video: font from THUMB_FONTS (font-display-set-v1), colour grade from THUMB_GRADES, palette colours and tilt."
@@ -2035,6 +2078,8 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "last-man-alive",
         "last-woman-alive",
         "moon-made-of-ice",
@@ -2042,7 +2087,9 @@
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
         "rogue-planet-between-earth-mars",
-        "sky-disappeared"
+        "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth"
       ],
       "license": "SIL Open Font License 1.1",
       "notes": "Copied unmodified from the @fontsource/* 5.3.0 npm packages (Playfair Display has a Reserved Font Name, so keep it unmodified). Loaded by src/entry.ts; metrics (tracking, line height, outline) live in THUMB_FONTS in src/library/overlay/Thumbnail.ts."
@@ -2081,12 +2128,15 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "last-man-alive",
         "last-woman-alive",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2342,6 +2392,8 @@
         "last-man-alive",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2459,6 +2511,8 @@
         "earth-1000f-five-seconds",
         "earth-ten-percent-closer",
         "earth-without-tilt",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2593,11 +2647,15 @@
         "earth-ten-percent-closer",
         "earth-without-tilt",
         "every-human-jumped-at-once",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "last-man-alive",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
         "rogue-planet-between-earth-mars",
         "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -2708,6 +2766,7 @@
       "created_for": "continents-one-landmass",
       "used_in": [
         "continents-one-landmass",
+        "every-volcano-erupts-at-once",
         "rogue-planet-between-earth-mars"
       ],
       "license": "original_procedural",
@@ -2927,7 +2986,8 @@
       "type": "three_component",
       "created_for": "earth-core-solid",
       "used_in": [
-        "earth-core-solid"
+        "earth-core-solid",
+        "every-volcano-erupts-at-once"
       ],
       "license": "original_procedural",
       "source_path": "src/library/environment/Volcano.ts",
@@ -2959,6 +3019,7 @@
         "ejecta",
         "puffs",
         "channels [angle, length]",
+        "groundRelief",
         "eruption",
         "lavaGlow",
         "heightAt(x, z)",
@@ -3440,10 +3501,14 @@
       "used_in": [
         "earth-1000f-five-seconds",
         "earth-without-tilt",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
         "rogue-planet-between-earth-mars",
-        "sky-disappeared"
+        "sky-disappeared",
+        "social-media-gone-five-seconds",
+        "sun-locked-earth"
       ],
       "license": "original_code",
       "notes": "Requires the existing Humanoid shoe dimensions, uniform rig scale and unrotated stage parent. Straight-path stance centers stay fixed; opt-in compensation levels the existing shoe mesh and foot anchor around the ankle. These owned transforms reset on every helper call. No full-body dynamics or curved-path foot locking. Stage owns intent, targets and all pose resets; call hand reachArm after posing."
@@ -3484,8 +3549,11 @@
       "used_in": [
         "earth-1000f-five-seconds",
         "earth-without-tilt",
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once",
         "ozone-layer-gone-overnight",
-        "sky-disappeared"
+        "sky-disappeared",
+        "sun-locked-earth"
       ],
       "license": "original_code",
       "notes": "apply() sets the full lighting state every frame from its arguments; environment bakes are cached by quantised sky/ground/sun-direction keys (oldest disposed), so frames are identical after any seek order. Environment provides both sky fill and ground bounce without occlusion: shaded upward-facing ground goes black when skyAmount is 0, vertical surfaces keep some bounce. The disc billboard sits at discDistance; keep it inside the camera far plane. Low suns produce strong grazing specular glare on rough ground: lower exposure or raise roughness rather than adding light."
@@ -3621,6 +3689,80 @@
       ],
       "license": "original_code",
       "notes": "Rotate `group` to orient the map in a portrait frame. Markers are enlarged for visibility; orbit lines and tracks keep true AU proportions. Pass the camera to update() so the corona faces it."
+    },
+    {
+      "id": "eruption-column-v1",
+      "name": "Eruption column, umbrella cloud and pyroclastic flow",
+      "type": "three_component",
+      "source_path": "src/library/fx/AshCloud.ts",
+      "description": "Sunlit volcanic ash drawn as instanced camera-facing puffs whose centres, sizes and opacity are evaluated on the CPU from absolute time, sorted back-to-front and shaded as soft lit spheres (wrap diffuse from the sun direction, sky ambient, incandescent glow, distance haze). EruptionColumn: a Plinian column rising from a vent to its neutral-buoyancy height with entrainment widening and wind drift, spreading into an umbrella cloud of a given radius. PyroclasticFlow: a ground-hugging avalanche whose front advances along a terrain path, billowing and lifting off behind the front.",
+      "tags": [
+        "volcano",
+        "eruption",
+        "ash",
+        "plume",
+        "pyroclastic flow",
+        "smoke",
+        "particles"
+      ],
+      "configurable_parameters": [
+        "vent",
+        "top",
+        "neutral",
+        "ventRadius",
+        "spread",
+        "puffScale",
+        "wind",
+        "columnPuffs",
+        "umbrellaPuffs",
+        "seed",
+        "EruptionColumn.update(time_s,camera,{amount,height,umbrella,glow})",
+        "PyroclasticFlow({path,puffs,width,liftOff})",
+        "PyroclasticFlow.update(time_s,camera,{front,amount,glow})",
+        "pointAt(s)",
+        "ashColor",
+        "ambient",
+        "sunColor",
+        "glowColor",
+        "hazeColor",
+        "hazeDensity",
+        "AshPuffs.setLook({sun,sunColor,ambient,ash,haze,hazeDensity,light})"
+      ],
+      "created_for": "every-volcano-erupts-at-once",
+      "used_in": [
+        "every-volcano-erupts-at-once",
+        "everyone-farts-at-once"
+      ],
+      "license": "original_code",
+      "notes": "Pass the stage camera to update() every frame: puffs are depth-sorted for it. Puffs are large soft billboards, so give distant columns a lighter hazeDensity than the scene fog to keep them dark and readable. Column motion is real-speed (about 95 s to climb), so a short shot shows billowing rather than visible rise."
+    },
+    {
+      "id": "dairy-cow-v1",
+      "name": "Procedural dairy cow",
+      "type": "three_component",
+      "source_path": "src/library/characters/Cow.ts",
+      "description": "Stylised dairy cow in metres facing +Z with feet on y = 0: rounded capsule body, belly and hips, four legs with hooves, udder, neck and head with muzzle, ears, jaw and a tufted tail. Canvas coat: Holstein black-and-white patches (seeded), solid brown or Jersey fawn. setPose() drives grazing, head turn, jaw (chewing or a burp), tail swing and ear flicks; mouthWorld() returns the muzzle tip for breath or burp puffs.",
+      "tags": [
+        "animal",
+        "cow",
+        "cattle",
+        "livestock",
+        "farm",
+        "character"
+      ],
+      "configurable_parameters": [
+        "seed",
+        "coat",
+        "scale",
+        "setPose({graze,headYaw,jaw,tail,ears})",
+        "mouthWorld()"
+      ],
+      "created_for": "everyone-farts-at-once",
+      "used_in": [
+        "everyone-farts-at-once"
+      ],
+      "license": "original_code",
+      "notes": "Static geometry; every setPose call sets the full state. Most cattle methane leaves by the mouth, so burps come from mouthWorld(). Scale 1 is about 1.45 m at the withers and 2.4 m long."
     }
   ]
 }
