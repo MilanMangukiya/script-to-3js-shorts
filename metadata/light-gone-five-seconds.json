@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "light-gone-five-seconds",
+  "topic": "What if light disappeared for 5 seconds?",
+  "duration_s": 47,
+  "video_file": "output/light-gone-five-seconds.mp4",
+  "scientific_scope_note": "Thought experiment: every photon in the universe vanishes for exactly five seconds (light already in transit is erased, not paused), then every source shines again; nothing else changes. Light-travel times are real: about 33 nanoseconds from a lamp 10 m away, 1.3 s from the Moon, 499 s (8 min 19 s) from the Sun at 1 AU, 4.37 years from Alpha Centauri A and B (41 trillion km) and 8.6 years from Sirius. Light from the centre of the Sun's disc arrives about 2.3 s before light from its edge, so daylight floods back over a couple of seconds. With no light at all, people see eigengrau, the eye's own dark grey. Proxima Centauri (4.24 ly) is too faint to see, Alpha Centauri never rises north of about 29 degrees north, and the stars between 4.4 and 8.6 light-years are too faint for the naked eye, so up north the first star back is Sirius. Planets reflect sunlight and would return within hours; none is shown. The night sky uses real star positions for a city at 38 degrees south on a mid-February night; the street and the people are illustrative, and the Moon is drawn about three times its apparent size.",
+  "created_asset_ids": [
+    "distance-star-sky-v1"
+  ],
+  "reused_asset_ids": [
+    "city-street-block-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "sun-skylight-rig-v1",
+    "moon-body-v1",
+    "modeling-helpers-v1",
+    "shader-noise-math-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "overlay-labels-v1",
+    "caption-kinetic-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if light disappeared for 5 seconds?",
+      "description": "Your phone goes black, and so does the sun. In this 47-second 3D science thought experiment, every bit of light in the universe vanishes for five seconds, including the light already on its way. Your phone and the city lights come back instantly, but the noon sky stays black: new sunlight needs 8 minutes 19 seconds to cross 150 million km.\n\nRight on time, the sunlight hits and the sky floods back to blue in about two seconds. That night the Moon is back, but not a single star, because their light was erased too. Alpha Centauri, the nearest star you can see, returns after 4.4 years, but only in southern skies.\n\nAlpha Centauri never rises north of about 29° N, so up north you wait 8.6 years for Sirius. Which star comes back first where you live?\n\nScope: Thought experiment: every photon in the universe vanishes for exactly five seconds (light already in transit is erased, not paused), then every source shines again; nothing else changes. Light-travel times are real: about 33 nanoseconds from a lamp 10 m away, 1.3 s from the Moon, 499 s (8 min 19 s) from the Sun at 1 AU, 4.37 years from Alpha Centauri A and B (41 trillion km) and 8.6 years from Sirius. Light from the centre of the Sun's disc arrives about 2.3 s before light from its edge, so daylight floods back over a couple of seconds. With no light at all, people see eigengrau, the eye's own dark grey. Proxima Centauri (4.24 ly) is too faint to see, Alpha Centauri never rises north of about 29 degrees north, and the stars between 4.4 and 8.6 light-years are too faint for the naked eye, so up north the first star back is Sirius. Planets reflect sunlight and would return within hours; none is shown. The night sky uses real star positions for a city at 38 degrees south on a mid-February night; the street and the people are illustrative, and the Moon is drawn about three times its apparent size.\n\nSources:\n- Smithsonian National Air and Space Museum: How long does it take light from the Sun to get to Earth?: https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth\n- NASA Imagine the Universe: The nearest star: https://imagine.gsfc.nasa.gov/features/cosmic/nearest_star_info.html\n- EarthSky: Proxima Centauri, our Sun’s nearest neighbor: https://earthsky.org/astronomy-essentials/proxima-centauri-our-suns-nearest-neighbor/\n- HyperPhysics: Stellar neighbors of the Sun: https://hyperphysics.gsu.edu/hbase/starlog/strclos.html\n- EarthSky: Alpha Centauri, the star system closest to our sun: https://earthsky.org/brightest-stars/alpha-centauri-is-the-nearest-bright-star\n- NASA JPL Night Sky Network: Taking the Dog Stars for a Springtime Walk: Sirius and Procyon: https://nightsky.jpl.nasa.gov/news/428\n- Popular Science: Why you see things in the dark (eigengrau): https://www.popsci.com/science/why-you-see-things-in-dark/\n\nVisuals: original deterministic Three.js animation. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.",
+      "tags": [
+        "what if light disappeared",
+        "what if the sun went dark for 5 seconds",
+        "how long does sunlight take to reach earth",
+        "speed of light explained",
+        "nearest star light years",
+        "light travel time",
+        "eigengrau",
+        "physics thought experiment",
+        "astronomy what if",
+        "science simulation",
+        "threejs 3d documentary"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Physics",
+        "#SpeedOfLight",
+        "#Astronomy",
+        "#Science",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if light disappeared",
+        "what if the sun went dark for 5 seconds",
+        "how long does sunlight take to reach earth",
+        "speed of light explained",
+        "nearest star light years",
+        "light travel time"
+      ]
+    },
+    "tiktok": {
+      "caption": "What if light disappeared for 5 seconds?\n\nYour phone comes back instantly, but the noon sky stays black for 8 minutes 19 seconds, and the stars stay gone for years.\n\nAlpha Centauri never rises north of about 29° N, so up north you wait 8.6 years for Sirius. Which star comes back first where you live?\n\nReal light-travel times and star positions; the street is illustrative.",
+      "hashtags": [
+        "#WhatIf",
+        "#ScienceTok",
+        "#SpeedOfLight",
+        "#Astronomy",
+        "#Space",
+        "#ScienceSimulation"
+      ],
+      "keywords": [
+        "what if light disappeared",
+        "what if the sun went dark for 5 seconds",
+        "how long does sunlight take to reach earth",
+        "speed of light explained",
+        "nearest star light years",
+        "light travel time"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "What if light disappeared for 5 seconds?\n\nFive seconds of darkness would cost the planet 8 minutes of daylight and every star for years: 4.4 years for Alpha Centauri, 8.6 for Sirius.\n\nAlpha Centauri never rises north of about 29° N, so up north you wait 8.6 years for Sirius. Which star comes back first where you live?\n\nReal light-travel times and star positions; the street is illustrative.",
+      "hashtags": [
+        "#WhatIf",
+        "#Physics",
+        "#SpeedOfLight",
+        "#Astronomy",
+        "#ScienceReels",
+        "#3DAnimation"
+      ],
+      "keywords": [
+        "what if light disappeared",
+        "what if the sun went dark for 5 seconds",
+        "how long does sunlight take to reach earth",
+        "speed of light explained",
+        "nearest star light years",
+        "light travel time"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if light disappeared for 5 seconds?",
+      "description": "Every bit of light vanishes for five seconds. Lamps and screens return in nanoseconds, the Sun's light takes 8 min 19 s, so noon looks like midnight, and that night the Moon is back but no stars: Alpha Centauri returns after 4.4 years in southern skies, Sirius after 8.6.\n\nAlpha Centauri never rises north of about 29° N, so up north you wait 8.6 years for Sirius. Which star comes back first where you live?\n\nThought experiment: every photon in the universe vanishes for exactly five seconds (light already in transit is erased, not paused), then every source shines again; nothing else changes. Light-travel times are real: about 33 nanoseconds from a lamp 10 m away, 1.3 s from the Moon, 499 s (8 min 19 s) from the Sun at 1 AU, 4.37 years from Alpha Centauri A and B (41 trillion km) and 8.6 years from Sirius. Light from the centre of the Sun's disc arrives about 2.3 s before light from its edge, so daylight floods back over a couple of seconds. With no light at all, people see eigengrau, the eye's own dark grey. Proxima Centauri (4.24 ly) is too faint to see, Alpha Centauri never rises north of about 29 degrees north, and the stars between 4.4 and 8.6 light-years are too faint for the naked eye, so up north the first star back is Sirius. Planets reflect sunlight and would return within hours; none is shown. The night sky uses real star positions for a city at 38 degrees south on a mid-February night; the street and the people are illustrative, and the Moon is drawn about three times its apparent size.\n\nSources:\n- Smithsonian National Air and Space Museum: How long does it take light from the Sun to get to Earth?: https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth\n- NASA Imagine the Universe: The nearest star: https://imagine.gsfc.nasa.gov/features/cosmic/nearest_star_info.html\n- EarthSky: Proxima Centauri, our Sun’s nearest neighbor: https://earthsky.org/astronomy-essentials/proxima-centauri-our-suns-nearest-neighbor/\n- HyperPhysics: Stellar neighbors of the Sun: https://hyperphysics.gsu.edu/hbase/starlog/strclos.html\n- EarthSky: Alpha Centauri, the star system closest to our sun: https://earthsky.org/brightest-stars/alpha-centauri-is-the-nearest-bright-star\n- NASA JPL Night Sky Network: Taking the Dog Stars for a Springtime Walk: Sirius and Procyon: https://nightsky.jpl.nasa.gov/news/428\n- Popular Science: Why you see things in the dark (eigengrau): https://www.popsci.com/science/why-you-see-things-in-dark/",
+      "hashtags": [
+        "#WhatIf",
+        "#Physics",
+        "#SpeedOfLight",
+        "#Astronomy",
+        "#Science"
+      ],
+      "keywords": [
+        "what if light disappeared",
+        "what if the sun went dark for 5 seconds",
+        "how long does sunlight take to reach earth",
+        "speed of light explained",
+        "nearest star light years",
+        "light travel time"
+      ]
+    },
+    "x_video": {
+      "post": "What if light disappeared for 5 seconds?\n\nYour phone is back instantly. The sun takes 8 min 19 s. The stars take years: 4.4 for Alpha Centauri, 8.6 for Sirius. Which star comes back first where you live?",
+      "hashtags": [
+        "#WhatIf",
+        "#Physics",
+        "#SpeedOfLight",
+        "#Astronomy",
+        "#Science"
+      ],
+      "keywords": [
+        "what if light disappeared",
+        "what if the sun went dark for 5 seconds",
+        "how long does sunlight take to reach earth"
+      ]
+    }
+  },
+  "publishing_status": "rendered_not_published",
+  "rendered_at_utc": "2026-10-16T21:01:22Z",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 26,
+    "path_in_repo": "videos/026-light-gone-five-seconds.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/026-light-gone-five-seconds.mp4",
+    "sha256": "0555345ec527bfe398da1ebbe0eb3d60199a4d5aafd766de29b303f8a813d1d0",
+    "size_bytes": 22423863,
+    "thumbnail_path_in_repo": "videos/026-light-gone-five-seconds.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/026-light-gone-five-seconds.jpg",
+    "thumbnail_sha256": "20d8cd7779a0c147ebddf1b2fe875030e38f4f38c8196885588abe65aceae82d",
+    "copy_path_in_repo": "videos/026-light-gone-five-seconds.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/026-light-gone-five-seconds.md",
+    "copy_sha256": "e48f13c876f8d0210ad77b9051733a0d01db0bc98def519d9fcf416ab526f1bd",
+    "uploaded_at_utc": "2026-10-16T21:02:07Z"
+  }
+}

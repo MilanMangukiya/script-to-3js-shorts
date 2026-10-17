@@ -146,6 +146,20 @@
         ]
       },
       {
+        "name": "EarthSky: Alpha Centauri, the star system closest to our sun",
+        "url": "https://earthsky.org/brightest-stars/alpha-centauri-is-the-nearest-bright-star",
+        "supports_claim_ids": [
+          "CL07"
+        ]
+      },
+      {
+        "name": "NASA JPL Night Sky Network: Taking the Dog Stars for a Springtime Walk: Sirius and Procyon",
+        "url": "https://nightsky.jpl.nasa.gov/news/428",
+        "supports_claim_ids": [
+          "CL08"
+        ]
+      },
+      {
         "name": "Popular Science: Why you see things in the dark (eigengrau)",
         "url": "https://www.popsci.com/science/why-you-see-things-in-dark/",
         "supports_claim_ids": [
@@ -289,7 +303,7 @@
               "appearance": "Your phone in your hand, low in the lower right of frame.",
               "geometry_and_material": "Rounded slab with an unbranded chat screen; stylised hand.",
               "scale_and_accuracy": "15 × 7 cm.",
-              "movement": "Screen on, then black from 1.24s."
+              "movement": "Screen on, then black from 0.95s."
             },
             {
               "id": "pedestrians",
@@ -298,7 +312,7 @@
               "appearance": "Eight shoppers on both sidewalks.",
               "geometry_and_material": "Registered Humanoid rigs; grounded gait.",
               "scale_and_accuracy": "1.64-1.80 m adults.",
-              "movement": "Walking; stop within a second of 1.24s and turn to the street."
+              "movement": "Walking; stop within a second of 0.95s and turn to the street."
             },
             {
               "id": "cars",
@@ -306,11 +320,11 @@
               "appearance": "City cars.",
               "geometry_and_material": "Classic city car rigs with head and tail lights.",
               "scale_and_accuracy": "4.3 m, about 35 km/h.",
-              "movement": "Brake to a stop from 1.64s."
+              "movement": "Brake to a stop from 1.35s."
             }
           ],
           "animation_plan": [
-            "0-1.24s noon; 1.24-6.24s no light anywhere: eigengrau and a 5-second countdown."
+            "0-0.95s noon; 0.95-5.95s no light anywhere: eigengrau and a 5-second countdown."
           ],
           "lighting": "Noon sun due north; then none at all.",
           "effects": [
@@ -329,7 +343,7 @@
       ],
       "audio_cues": [
         {
-          "at_s": 1.24,
+          "at_s": 0.95,
           "duration_s": 1,
           "kind": "impact",
           "description": "A deep drop as every light goes out; the street gasps.",
@@ -386,7 +400,7 @@
                 "ease": "linear"
               },
               {
-                "t_s": 8.5,
+                "t_s": 8.2,
                 "position": [
                   9.2,
                   1.62,
@@ -433,7 +447,7 @@
               "appearance": "Your phone in your hand, low in the lower right of frame.",
               "geometry_and_material": "Rounded slab with an unbranded chat screen; stylised hand.",
               "scale_and_accuracy": "15 × 7 cm.",
-              "movement": "Glows again at 6.24s."
+              "movement": "Glows again at 5.95s."
             },
             {
               "id": "pedestrians",
@@ -454,7 +468,7 @@
             }
           ],
           "animation_plan": [
-            "6.24s every nearby light is back within nanoseconds; street lamps follow on their photocells; 8.5s tilt to the black sky."
+            "5.95s every nearby light is back within nanoseconds; street lamps follow on their photocells; 8.2s tilt to the black sky."
           ],
           "lighting": "Artificial light only; black sky.",
           "effects": [
@@ -733,7 +747,10 @@
         "start_s": 20.82,
         "end_s": 26.55,
         "delivery_note": "Release on \"back to blue\".",
-        "pacing_energy": "fast_hook"
+        "pacing_energy": "fast_hook",
+        "performance": {
+          "rate": 0.83
+        }
       },
       "viewer_question": "When does day come back?",
       "visual_payoff": "Daylight floods back in about two seconds, 8 min 24 s after the dark began.",
@@ -781,7 +798,7 @@
             "lens_notes": "The countdown hits 0:00 and daylight floods back in about two seconds as the Sun’s disc refills from the centre out; a brief dazzle; traffic moves again.",
             "handheld_sway": 0.3,
             "impulse_shake": {
-              "at_s": 22.8,
+              "at_s": 22.46,
               "duration_s": 0.4,
               "intensity": 0.25
             }
@@ -814,7 +831,7 @@
             }
           ],
           "animation_plan": [
-            "22.8s sunlight arrives; most of it within a second, all of it within 2.3 s."
+            "22.46s sunlight arrives; most of it within a second, all of it within 2.3 s."
           ],
           "lighting": "Noon sun returns.",
           "effects": [
@@ -833,14 +850,14 @@
       ],
       "audio_cues": [
         {
-          "at_s": 22.5,
+          "at_s": 22.16,
           "duration_s": 0.3,
           "kind": "silence",
           "description": "A held breath before the sunlight hits.",
           "relative_db": -24
         },
         {
-          "at_s": 22.8,
+          "at_s": 22.46,
           "duration_s": 1.2,
           "kind": "music_swell",
           "description": "Daylight floods back.",
@@ -869,7 +886,7 @@
         "delivery_note": "Quiet; a beat between the sentences.",
         "pacing_energy": "steady_escalation",
         "performance": {
-          "rate": 0.85
+          "rate": 0.78
         }
       },
       "viewer_question": "Is everything back?",
@@ -1003,7 +1020,7 @@
         "delivery_note": "Even; lean on \"four years away\".",
         "pacing_energy": "steady_escalation",
         "performance": {
-          "rate": 0.9
+          "rate": 0.84
         }
       },
       "viewer_question": "Where are the stars?",
@@ -1089,7 +1106,7 @@
             }
           ],
           "animation_plan": [
-            "35.6s the marker appears on \"four years away\"."
+            "34.8s the marker appears on \"four years away\"."
           ],
           "lighting": "City lights.",
           "effects": [
@@ -1142,7 +1159,7 @@
         {
           "id": "SH01",
           "start_s": 38.2,
-          "end_s": 41.3,
+          "end_s": 41.4,
           "shot_type": "years pass; the nearest star comes back in the southern sky",
           "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
           "camera": {
@@ -1164,7 +1181,7 @@
                 "ease": "linear"
               },
               {
-                "t_s": 41.3,
+                "t_s": 41.4,
                 "position": [
                   10.2,
                   1.6,
@@ -1202,7 +1219,7 @@
             }
           ],
           "animation_plan": [
-            "39.4s year 4.37, Alpha Centauri."
+            "39.1s year 4.37, Alpha Centauri."
           ],
           "lighting": "City lights flickering in time-lapse.",
           "effects": [
@@ -1214,25 +1231,25 @@
         },
         {
           "id": "SH02",
-          "start_s": 41.3,
+          "start_s": 41.4,
           "end_s": 47,
           "shot_type": "Sirius, the first star for northern skies",
           "world": "1 unit = 1 m. A city shopping street at 38 degrees south (city-street-block-v1: road along Z, sidewalks to |x| = 12, -Z pointing SSE) with lit shopfronts, office windows, street lamps and signals; sun-skylight-rig-v1 for noon, a black sky with faint city glow while sunlight is in transit, a real mid-February night sky with the Moon.",
           "camera": {
             "projection": "perspective",
-            "fov_or_scale": 46,
+            "fov_or_scale": 60,
             "keyframes": [
               {
-                "t_s": 41.3,
+                "t_s": 41.4,
                 "position": [
                   8.4,
                   1.6,
-                  10
+                  22
                 ],
                 "look_at": [
-                  7.4,
-                  32.4,
-                  30
+                  11.46,
+                  25.87,
+                  39.36
                 ],
                 "ease": "linear"
               },
@@ -1241,18 +1258,18 @@
                 "position": [
                   8.4,
                   1.6,
-                  10.1
+                  22.1
                 ],
                 "look_at": [
-                  7.4,
-                  33.4,
-                  30
+                  11.39,
+                  26.18,
+                  38.95
                 ],
                 "ease": "linear"
               }
             ],
-            "movement": "Looking steeply up between the buildings to the NNW; slow tilt.",
-            "lens_notes": "Sirius appears at 8.6 years (callout); the frame holds on it.",
+            "movement": "Wider lens up the street to the NNW, the lit city along the bottom of frame; slow tilt.",
+            "lens_notes": "Sirius appears high in the upper right at 8.6 years (callout); the frame holds on it.",
             "handheld_sway": 0.08
           },
           "hud_telemetry": {
@@ -1275,7 +1292,7 @@
             }
           ],
           "animation_plan": [
-            "44.6s year 8.6, Sirius; hold to the end."
+            "45s year 8.6, Sirius; hold to the end."
           ],
           "lighting": "City lights flickering in time-lapse.",
           "effects": [
@@ -1294,14 +1311,14 @@
       ],
       "audio_cues": [
         {
-          "at_s": 39.4,
+          "at_s": 39.1,
           "duration_s": 1.2,
           "kind": "impact",
           "description": "A single bright chime as the first star returns.",
           "relative_db": -14
         },
         {
-          "at_s": 44.6,
+          "at_s": 45,
           "duration_s": 1.4,
           "kind": "impact",
           "description": "A second, lower chime for Sirius.",
@@ -1465,8 +1482,8 @@
     "position": "bottom",
     "badge": "8 MIN 19 S",
     "focus": [
-      0.5,
-      0.45
+      0.8,
+      0.19
     ],
     "zoom": 1.04,
     "arrow": true,
@@ -1483,7 +1500,7 @@
     "tilt": -3,
     "badge_at": [
       0.3,
-      0.1
+      0.08
     ]
   }
 }

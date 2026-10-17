@@ -29,6 +29,7 @@ import { createFilm as socialMediaGoneFiveSeconds } from './stories/social-media
 import { createFilm as everyoneDrankTheOcean } from './stories/everyone-drank-the-ocean/film';
 import { createFilm as pennyDoubled30Days } from './stories/penny-doubled-30-days/film';
 import { createFilm as lightGoneFiveSeconds } from './stories/light-gone-five-seconds/film';
+import { createFilm as everyoneClapsAtOnce } from './stories/everyone-claps-at-once/film';
 
 /** Register each story's film factory here (story compositions stay outside src/library). */
 const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string }) => Promise<FilmDefinition>> = {
@@ -57,6 +58,7 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'everyone-drank-the-ocean': everyoneDrankTheOcean,
   'penny-doubled-30-days': pennyDoubled30Days,
   'light-gone-five-seconds': lightGoneFiveSeconds,
+  'everyone-claps-at-once': everyoneClapsAtOnce,
 };
 
 async function boot() {

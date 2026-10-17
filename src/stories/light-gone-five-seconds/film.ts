@@ -59,12 +59,12 @@ export async function createFilm(ctx: { renderer: THREE.WebGLRenderer; base: str
     if (sc === 'S08') { const y = yearsAt(t); hud = { label: 'YEARS SINCE THE DARK', value: y.toFixed(1), sub: y >= 8.6 ? 'SIRIUS · FIRST STAR UP NORTH' : y >= 4.37 ? 'ALPHA CENTAURI IS BACK' : 'NO STARS YET' }; }
     if (hud) renderEditorialHud(c, { x: 90, y: 240, ...hud, alpha: a, valueSize: hud.value.length > 10 ? 88 : 104 });
     const at = (world: THREE.Vector3 | null) => (world ? projectToScreen(o.stage.camera, world, W, H) : null);
-    const call = (world: THREE.Vector3 | null, label: string, k: number, dx: number, dy: number, value?: string) => {
-      if (k < 0.01) return; const p = at(world); if (p) drawCallout(c, p.x, p.y, label, { value, alpha: a * k, size: 34, dx, dy });
+    const call = (world: THREE.Vector3 | null, label: string, k: number, dx: number, dy: number, value?: string, safeBottom?: number) => {
+      if (k < 0.01) return; const p = at(world); if (p) drawCallout(c, p.x, p.y, label, { value, alpha: a * k, size: 34, dx, dy, ...(safeBottom ? { safeBottom } : {}) });
     };
     if (sc === 'S03') {
       const sp = o.stage as SpaceStage, r = sp.frontRadius(t);
-      call(sp.planet(2), 'EARTH', windowAt(t, shot.start_s + 0.4, shot.start_s + 0.9), 110, -120, 'YOU');
+      call(sp.planet(2), 'EARTH', windowAt(t, shot.start_s + 0.4, shot.start_s + 0.9), 120, 10, 'YOU', 1680);
       call(sp.frontAnchor(t, 2), 'SUNLIGHT', windowAt(r, 4, 6) * (1 - windowAt(r, 26, 28)), -40, 30, '300,000 KM/S');
     }
     if (sc === 'S07') {
@@ -75,7 +75,7 @@ export async function createFilm(ctx: { renderer: THREE.WebGLRenderer; base: str
     if (sc === 'S08') {
       const y = yearsAt(t), st = o.stage as StreetStage;
       if (shot.shotId === 'SH01') call(st.starWorld('ALPHA CENTAURI'), 'ALPHA CENTAURI', clamp01((y - 4.37) / 0.6), -120, 130, '4.4 LY');
-      else call(st.starWorld('SIRIUS'), 'SIRIUS', clamp01((y - 8.6) / 0.5), 110, 120, '8.6 LY');
+      else call(st.starWorld('SIRIUS'), 'SIRIUS', clamp01((y - 8.6) / 0.5), -110, 130, '8.6 LY');
     }
   } };
 }

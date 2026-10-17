@@ -1,0 +1,1771 @@
+{
+  "schema_version": "1.1.0",
+  "project": {
+    "topic": "What if 8.3 billion people on Earth clapped at the same time?",
+    "title": "What if 8.3 billion people on Earth clapped at the same time?",
+    "slug": "everyone-claps-at-once",
+    "format": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 50,
+    "language": "en",
+    "audience": "Curious international viewers who enjoy surprising physical thought experiments.",
+    "platforms": [
+      "youtube_shorts",
+      "tiktok",
+      "instagram_reels",
+      "facebook_reels",
+      "x_video"
+    ],
+    "core_question": "Would one simultaneous worldwide clap reach your ears as one giant bang?",
+    "viewer_takeaway": "8.3 billion people means16.6 billion hands, but sound reaches each listener at different times. At343m/s a1km path takes2.92s; distance and reflections shape local applause."
+  },
+  "captions": {
+    "mode": "burned_in_kinetic",
+    "source": "exact_spoken_narration",
+    "style": "Inter Bold uppercase impact phrases with dark outline and shadow, 2-5 words, max two balanced lines",
+    "font_stack": "Inter, Segoe UI, system-ui, sans-serif",
+    "font_size_px": 72,
+    "max_lines": 2,
+    "max_chars_per_line": 20,
+    "safe_area": {
+      "left_px": 90,
+      "right_px": 90,
+      "top_px": 220,
+      "bottom_px": 420,
+      "caption_baseline_y_px": 1320
+    },
+    "active_word_treatment": "Active word in solar yellow #FACC15 with a subtle scale lift.",
+    "highlights_policy": "The physical consequence of each scene in accent colour; at most two emphasis phrases per scene."
+  },
+  "delivery": {
+    "video_output": "output/everyone-claps-at-once.mp4",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "render_method": "deterministic_frame_by_frame",
+    "captions_burned_in": true,
+    "use_paid_apis": false,
+    "success_reply": "absolute_mp4_path_only"
+  },
+  "audio": {
+    "voice_style": "Crisp, urgent, fascinated adult male; high-tension simulation narrator; brisk opening cadence",
+    "voice_engine_preference": [
+      "kokoro_local"
+    ],
+    "narration_target_wpm": 154,
+    "music_direction": "Original restrained curious plucks; brief acoustic dip before the opening real handclap; ease the score during travel and echo evidence.",
+    "music_level_db_below_voice": -18,
+    "sfx_direction": "Actual recorded CC0 handclaps aligned to palm contact and selected-source arrivals. Quiet recorded park birds. One clap per person, replayed from explicit alternate views; no invented global sonic boom.",
+    "mix_target_lufs": -14,
+    "true_peak_max_dbtp": -1,
+    "voice_id": "am_michael"
+  },
+  "scientific_model": {
+    "baseline_reality": "Handclaps launch transient acoustic pressure disturbances. Sound travels at finite speed; geometric spreading and reflections shape what a listener hears.",
+    "counterfactual_change": "Exactly the stipulated8.3 billion people each clap once at the same global instant.",
+    "assumptions": [
+      "Participant count is stipulated, not a live census claim.",
+      "All participants make one ordinary clap; representative actors do not stand in for a literal rendered global population.",
+      "The film explicitly replays the same event from local perspectives and slow-motion explanation; replays are not additional human claps.",
+      "Still near20C air, modeled sound speed343m/s. Distances are selected examples; weather, barriers and absorption alter real propagation.",
+      "The1km result is travel time, not a guarantee that an individual handclap is audible at1km. Audio demonstrates selected source paths qualitatively, without a calibrated whole-city sound field.",
+      "Six-decibel reduction applies approximately to one ideal isolated free-field source per doubling of distance, with reflections excluded; it is not a measured worldwide level.",
+      "The chosen alley wall is30m from the source/listener, giving approximately60m roundtrip and0.175s reflected delay. Its gain is illustrative.",
+      "No universal peak decibel level, hearing outcome, destructive wave or earth movement is predicted."
+    ],
+    "causal_chain": [
+      "One simultaneous contact per person involves16.6 billion hands.",
+      "Claps create pressure pulses; nearest direct sounds arrive first.",
+      "A selected1km air path takes1000/343=2.915s even though source hands have already separated.",
+      "Listeners at different positions receive different contributions and arrival times.",
+      "Free-field spreading weakens an isolated source about6dB per distance doubling.",
+      "Walls reflect existing sound, producing an encore without another human clap."
+    ],
+    "uncertainties": [
+      "Actual clap spectra and loudness vary with hands and motion.",
+      "Source density, buildings, terrain, weather and background noise prevent one universal local sound level.",
+      "Visible thin acoustic paths/rings illustrate propagation; they are not visible air walls or a solved fluid field."
+    ],
+    "claims": [
+      {
+        "id": "CL01",
+        "statement": "8.3 billion people clapping once use16.6 billion hands; a handclap launches an acoustic pressure pulse.",
+        "confidence": "derived",
+        "reasoning": "2 hands per participant; primary handclap experiments establish acoustic mechanisms.",
+        "presentation_guardrail": "Ordinary clap once, no global sound-energy sum."
+      },
+      {
+        "id": "CL02",
+        "statement": "A1km sound path takes about2.92s at the chosen343m/s.",
+        "confidence": "derived",
+        "reasoning": "t=distance/speed; sound speed follows air temperature.",
+        "presentation_guardrail": "Same-clap replay and local elapsed clock; no promise of distant audibility."
+      },
+      {
+        "id": "CL03",
+        "statement": "Without reflections, an ideal isolated source drops about6dB per distance doubling.",
+        "confidence": "established",
+        "reasoning": "Free-field inverse-square intensity;20log10(2)=6.0206dB.",
+        "presentation_guardrail": "Explicitly exclude reflections; no summed global decibel claim."
+      },
+      {
+        "id": "CL04",
+        "statement": "Nearby walls can return a clap after the hands stop.",
+        "confidence": "established",
+        "reasoning": "Chosen30m wall gives60/343=.174927s roundtrip.",
+        "presentation_guardrail": "Reflection is the same pulse, not a second human clap."
+      }
+    ],
+    "sources": [
+      {
+        "name": "NASA Glenn: sound speed in air",
+        "url": "https://www.grc.nasa.gov/WWW/K-12/BGP/sound.html",
+        "supports_claim_ids": [
+          "CL02"
+        ]
+      },
+      {
+        "name": "OSHA: free-field spreading and reflection",
+        "url": "https://www.osha.gov/otm/section-3-health-hazards/chapter-5",
+        "supports_claim_ids": [
+          "CL03",
+          "CL04"
+        ]
+      },
+      {
+        "name": "Fu et al.2025: handclap acoustics",
+        "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.013259",
+        "supports_claim_ids": [
+          "CL01"
+        ]
+      }
+    ]
+  },
+  "creative_direction": {
+    "logline": "One perfect global clap becomes a different local listening experience, ending with an encore from a wall.",
+    "visual_identity": "Bright textured city and open park; finite hand contact, same-event listening replays and boxless upper-left numerical readouts.",
+    "palette": [
+      "#3c7894",
+      "#d7b67d",
+      "#c7d7d3",
+      "#ea955a",
+      "#f1d34c"
+    ],
+    "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+    "camera_language": "Eye-level palm contact, representative crowd reveal, same-pulse slow-motion and measured street-scale travel, then a grounded wall reflection callback.",
+    "motion_language": "One finite clap per actor in each explicit replay; hands separate and settle. Thin acoustic markers trace selected paths with no destructive motion.",
+    "world_scale_policy": "Metres.1000m selected source path;2m/4m free-field comparison;30m reflection wall. Sound markers are explanatory paths, not visible air shocks.",
+    "emotional_arc": [
+      "Collective action",
+      "Huge count",
+      "Pressure pulse",
+      "Delayed arrival",
+      "Listening discovery",
+      "Spreading limit",
+      "Unasked encore",
+      "Comic wall callback"
+    ],
+    "opening_hook": "You clap once, yet applause keeps arriving after hands stop.",
+    "mid_video_rehook": "A simultaneous source moment does not produce simultaneous arrivals; the selected distant crowd is already resting.",
+    "ending_payoff": "A wall returns an encore even though nobody claps again.",
+    "loop_connection": "Return to the opening character with still hands, looking toward the wall that supplies the last clap.",
+    "asset_policy": "Reuse registered city, sky, Humanoid, grounded motion, sound rings and editorial HUD; add real CC0 clap and park recordings after source inspection."
+  },
+  "distribution": {
+    "primary_search_intent": "What if 8.3 billion people on Earth clapped at the same time?",
+    "core_keywords": [
+      "what if everyone clapped",
+      "8.3 billion people",
+      "sound propagation",
+      "handclap acoustics",
+      "speed of sound",
+      "acoustic reflections"
+    ],
+    "distinctive_angle": "Top-left numbers track worldwide hands and local sound travel, while visibly resting hands expose the delay and a wall supplies the encore.",
+    "comment_bait_question": "Would you hear it from a crowded square or a quiet hillside?",
+    "seo_integrity_note": "Acoustics and physics qualifiers; no global sonic-boom or universal decibel claims."
+  },
+  "thumbnail": {
+    "time_s": 0.9,
+    "headline": "ONE GLOBAL CLAP?!",
+    "highlight": [
+      "CLAP?!"
+    ],
+    "badge": "8.3 BILLION",
+    "focus": [
+      0.52,
+      0.48
+    ],
+    "arrow": true,
+    "style": "bold",
+    "font": "anton",
+    "grade": "vivid",
+    "position": "bottom",
+    "zoom": 1.1,
+    "badge_at": [
+      0.74,
+      0.16
+    ],
+    "anchor": [
+      0.52,
+      0.48
+    ],
+    "tilt": -3
+  },
+  "asset_plan": {
+    "library_mode": "reuse_before_create",
+    "library_snapshot_note": "Inspected actual city, sky, Humanoid/grounded motion, acoustic rings and HUD. No recorded handclap existed; acquired and measured actual CC0 clips.",
+    "existing_assets_to_reuse": [
+      {
+        "asset_id": "city-street-block-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "sky-dome-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "humanoid-figure-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "character-motion-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "sound-rings-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "modeling-helpers-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "camera-keyframe-rig-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "film-pipeline-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "caption-kinetic-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "overlay-labels-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "audio-synth-kit-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "font-inter-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "font-display-set-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      },
+      {
+        "asset_id": "thumbnail-title-card-v1",
+        "usage": "Configure for the one-clap acoustic story.",
+        "configuration": "Story-local absolute-time source, replay and listener states."
+      }
+    ],
+    "new_reusable_asset_candidates": [
+      {
+        "proposed_id": "human-handclap-recordings-v1",
+        "description": "Recorded CC0 human handclaps",
+        "reusable_in": "Scene-matched soundtracks.",
+        "parameters": [
+          "variant",
+          "gain",
+          "trim",
+          "transient offset"
+        ],
+        "suggested_path": "assets/library/audio/clap-owlstorm-a-48k.wav"
+      },
+      {
+        "proposed_id": "park-birds-recording-v1",
+        "description": "Recorded CC0 outdoor park birds",
+        "reusable_in": "Scene-matched soundtracks.",
+        "parameters": [
+          "variant",
+          "gain",
+          "trim",
+          "transient offset"
+        ],
+        "suggested_path": "assets/library/audio/mafon2-park-birds-274175-48k.wav"
+      }
+    ],
+    "shot_specific_assets": [
+      "Finite palm-contact acting",
+      "Selected source/listener locations",
+      "Open free-field comparison",
+      "30m reflection wall and path"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "start_s": 0,
+      "end_s": 3.8,
+      "narration": {
+        "text": "You clap once. The applause keeps arriving.",
+        "start_s": 0,
+        "end_s": 3.65,
+        "delivery_note": "Direct, curious hook; keep the actual clap clear.",
+        "pacing_energy": "fast_hook"
+      },
+      "viewer_question": "Who keeps clapping?",
+      "visual_payoff": "A single palm contact, separation and nearby arriving clap tail.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 0,
+          "end_s": 2.0,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 37,
+            "keyframes": [
+              {
+                "t_s": 0,
+                "position": [
+                  9.3,
+                  1.65,
+                  1.9
+                ],
+                "look_at": [
+                  8.2,
+                  1.25,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 2.0,
+                "position": [
+                  9.3,
+                  1.65,
+                  1.9
+                ],
+                "look_at": [
+                  8.2,
+                  1.25,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 0,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "CLAPS PER PERSON",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "clap",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "A single palm contact, separation and nearby arriving clap tail.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "A single palm contact, separation and nearby arriving clap tail.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "A single palm contact, separation and nearby arriving clap tail.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        },
+        {
+          "id": "SH02",
+          "start_s": 2,
+          "end_s": 3.8,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 2,
+                "position": [
+                  10.5,
+                  1.65,
+                  4
+                ],
+                "look_at": [
+                  8.4,
+                  1.25,
+                  -1
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 3.8,
+                "position": [
+                  10.5,
+                  1.65,
+                  4
+                ],
+                "look_at": [
+                  8.4,
+                  1.25,
+                  -1
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 2,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "CLAPS PER PERSON",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "clap",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "A single palm contact, separation and nearby arriving clap tail.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "A single palm contact, separation and nearby arriving clap tail.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "A single palm contact, separation and nearby arriving clap tail.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [
+        {
+          "at_s": 0.6,
+          "duration_s": 0.3,
+          "kind": "silence",
+          "description": "Music and ambience dip before the actual opening palm-contact crack.",
+          "relative_db": -24
+        },
+        {
+          "at_s": 0.9,
+          "duration_s": 0.34,
+          "kind": "impact",
+          "description": "Recorded human-handclap-recordings-v1 selected-source event; audible attack aligned to palm contact or calculated arrival in the explicit replay.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve source contacts and explicitly marked same-event replay scopes."
+      }
+    },
+    {
+      "id": "S02",
+      "beat": "premise",
+      "start_s": 3.8,
+      "end_s": 10.2,
+      "narration": {
+        "text": "Eight point three billion people. Sixteen point six billion hands. All meeting at once.",
+        "start_s": 3.8,
+        "end_s": 10.05,
+        "delivery_note": "Clearly separate the two enormous counts.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "How many hands meet?",
+      "visual_payoff": "Representative people replay the same single contact as16.6 billion hands is established.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 3.8,
+          "end_s": 6.7,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 3.8,
+                "position": [
+                  10.6,
+                  1.65,
+                  4
+                ],
+                "look_at": [
+                  8.5,
+                  1.2,
+                  -2
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 6.7,
+                "position": [
+                  10.6,
+                  1.65,
+                  4
+                ],
+                "look_at": [
+                  8.5,
+                  1.2,
+                  -2
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 3.8,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "HANDS MEETING",
+            "start_value": 16600000000.0,
+            "end_value": 16600000000.0,
+            "unit": "hands",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "Representative people replay the same single contact as16.6 billion hands is established.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "Representative people replay the same single contact as16.6 billion hands is established.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "Representative people replay the same single contact as16.6 billion hands is established.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        },
+        {
+          "id": "SH02",
+          "start_s": 6.7,
+          "end_s": 10.2,
+          "shot_type": "scale_reveal",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 6.7,
+                "position": [
+                  3,
+                  18,
+                  22
+                ],
+                "look_at": [
+                  8.5,
+                  0,
+                  -4
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 10.2,
+                "position": [
+                  3,
+                  18,
+                  22
+                ],
+                "look_at": [
+                  8.5,
+                  0,
+                  -4
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 6.7,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "HANDS MEETING",
+            "start_value": 16600000000.0,
+            "end_value": 16600000000.0,
+            "unit": "hands",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "Representative people replay the same single contact as16.6 billion hands is established.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "Representative people replay the same single contact as16.6 billion hands is established.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "Representative people replay the same single contact as16.6 billion hands is established.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [
+        {
+          "at_s": 4.6,
+          "duration_s": 0.34,
+          "kind": "impact",
+          "description": "Recorded human-handclap-recordings-v1 selected-source event; audible attack aligned to palm contact or calculated arrival in the explicit replay.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL01"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve source contacts and explicitly marked same-event replay scopes."
+      }
+    },
+    {
+      "id": "S03",
+      "beat": "mechanism",
+      "start_s": 10.2,
+      "end_s": 16.8,
+      "narration": {
+        "text": "Each clap squeezes air into a pulse. Your own clap reaches your ears first.",
+        "start_s": 10.2,
+        "end_s": 16.65,
+        "delivery_note": "Articulate pressure pulse without an academic tone.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "How does the sound leave a clap?",
+      "visual_payoff": "The same clap is inspected in slow motion, then a thin sound path spreads through the street.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 10.2,
+          "end_s": 13.3,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 36,
+            "keyframes": [
+              {
+                "t_s": 10.2,
+                "position": [
+                  9.0,
+                  1.4,
+                  1.25
+                ],
+                "look_at": [
+                  8.3,
+                  1.2,
+                  0.4
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 13.3,
+                "position": [
+                  9.0,
+                  1.4,
+                  1.25
+                ],
+                "look_at": [
+                  8.3,
+                  1.2,
+                  0.4
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 10.2,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "SPEED OF SOUND",
+            "start_value": 343,
+            "end_value": 343,
+            "unit": "m/s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "The same clap is inspected in slow motion, then a thin sound path spreads through the street.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "The same clap is inspected in slow motion, then a thin sound path spreads through the street.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "The same clap is inspected in slow motion, then a thin sound path spreads through the street.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        },
+        {
+          "id": "SH02",
+          "start_s": 13.3,
+          "end_s": 16.8,
+          "shot_type": "scale_reveal",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 13.3,
+                "position": [
+                  110,
+                  155,
+                  150
+                ],
+                "look_at": [
+                  8.3,
+                  0,
+                  -10
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 16.8,
+                "position": [
+                  110,
+                  155,
+                  150
+                ],
+                "look_at": [
+                  8.3,
+                  0,
+                  -10
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 13.3,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "SPEED OF SOUND",
+            "start_value": 343,
+            "end_value": 343,
+            "unit": "m/s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "The same clap is inspected in slow motion, then a thin sound path spreads through the street.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "The same clap is inspected in slow motion, then a thin sound path spreads through the street.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "The same clap is inspected in slow motion, then a thin sound path spreads through the street.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [
+        {
+          "at_s": 12,
+          "duration_s": 0.34,
+          "kind": "impact",
+          "description": "Recorded human-handclap-recordings-v1 selected-source event; audible attack aligned to palm contact or calculated arrival in the explicit replay.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL01",
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve source contacts and explicitly marked same-event replay scopes."
+      }
+    },
+    {
+      "id": "S04",
+      "beat": "twist",
+      "start_s": 16.8,
+      "end_s": 23.5,
+      "narration": {
+        "text": "Follow that same pulse for a kilometer. It takes almost three seconds to get there.",
+        "start_s": 16.8,
+        "end_s": 23.35,
+        "delivery_note": "Let nearly three seconds register; this is a same-pulse example.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Why does a simultaneous clap arrive late?",
+      "visual_payoff": "A selected far source claps; the pulse crosses a physical1km street path in a clearly slowed replay.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 16.8,
+          "end_s": 19.5,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 16.8,
+                "position": [
+                  9.3,
+                  1.65,
+                  -997.5
+                ],
+                "look_at": [
+                  8.3,
+                  1.25,
+                  -1000
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 19.5,
+                "position": [
+                  9.3,
+                  1.65,
+                  -997.5
+                ],
+                "look_at": [
+                  8.3,
+                  1.25,
+                  -1000
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 16.8,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "SELECTED SOUND PATH",
+            "start_value": 1000,
+            "end_value": 1000,
+            "unit": "m",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "A selected far source claps; the pulse crosses a physical1km street path in a clearly slowed replay.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "A selected far source claps; the pulse crosses a physical1km street path in a clearly slowed replay.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "A selected far source claps; the pulse crosses a physical1km street path in a clearly slowed replay.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        },
+        {
+          "id": "SH02",
+          "start_s": 19.5,
+          "end_s": 23.5,
+          "shot_type": "scale_reveal",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 19.5,
+                "position": [
+                  520,
+                  620,
+                  450
+                ],
+                "look_at": [
+                  8.3,
+                  0,
+                  -500
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 23.5,
+                "position": [
+                  520,
+                  620,
+                  450
+                ],
+                "look_at": [
+                  8.3,
+                  0,
+                  -500
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 19.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "SELECTED SOUND PATH",
+            "start_value": 1000,
+            "end_value": 1000,
+            "unit": "m",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "A selected far source claps; the pulse crosses a physical1km street path in a clearly slowed replay.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "A selected far source claps; the pulse crosses a physical1km street path in a clearly slowed replay.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "A selected far source claps; the pulse crosses a physical1km street path in a clearly slowed replay.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [
+        {
+          "at_s": 18.3,
+          "duration_s": 0.34,
+          "kind": "impact",
+          "description": "Recorded human-handclap-recordings-v1 selected-source event; audible attack aligned to palm contact or calculated arrival in the explicit replay.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve source contacts and explicitly marked same-event replay scopes."
+      }
+    },
+    {
+      "id": "S05",
+      "beat": "human_impact",
+      "start_s": 23.5,
+      "end_s": 28.8,
+      "narration": {
+        "text": "Everyone stops together. Where you stand changes what you hear.",
+        "start_s": 23.5,
+        "end_s": 28.65,
+        "delivery_note": "A small listening discovery, with room for the delayed recorded clap.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Who hears the same event differently?",
+      "visual_payoff": "The listener hands are down before the selected far pulse arrives; the listener turns toward its source.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 23.5,
+          "end_s": 28.8,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 38,
+            "keyframes": [
+              {
+                "t_s": 23.5,
+                "position": [
+                  9.3,
+                  1.65,
+                  2.3
+                ],
+                "look_at": [
+                  8.1,
+                  1.35,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 28.8,
+                "position": [
+                  9.3,
+                  1.65,
+                  2.3
+                ],
+                "look_at": [
+                  8.1,
+                  1.35,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 23.5,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "ARRIVAL DELAY",
+            "start_value": 2.915,
+            "end_value": 2.915,
+            "unit": "s",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "The listener hands are down before the selected far pulse arrives; the listener turns toward its source.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "The listener hands are down before the selected far pulse arrives; the listener turns toward its source.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "The listener hands are down before the selected far pulse arrives; the listener turns toward its source.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [
+        {
+          "at_s": 24.130904,
+          "duration_s": 0.34,
+          "kind": "impact",
+          "description": "Recorded human-handclap-recordings-v1 selected-source event; audible attack aligned to palm contact or calculated arrival in the explicit replay.",
+          "relative_db": -20
+        }
+      ],
+      "claim_ids": [
+        "CL02"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve source contacts and explicitly marked same-event replay scopes."
+      }
+    },
+    {
+      "id": "S06",
+      "beat": "escalation",
+      "start_s": 28.8,
+      "end_s": 35.4,
+      "narration": {
+        "text": "Without reflections, doubling the distance drops an isolated clap about six decibels.",
+        "start_s": 28.8,
+        "end_s": 35.25,
+        "delivery_note": "Say without reflections clearly; keep six decibels easy to hear.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Why does distant sound fade?",
+      "visual_payoff": "An isolated open-park source and observers at2m and4m illustrate the free-field comparison.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 28.8,
+          "end_s": 32,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 28.8,
+                "position": [
+                  3.5,
+                  1.65,
+                  6.6
+                ],
+                "look_at": [
+                  1.2,
+                  1.2,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 32,
+                "position": [
+                  3.5,
+                  1.65,
+                  6.6
+                ],
+                "look_at": [
+                  1.2,
+                  1.2,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 28.8,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "DISTANCE DOUBLING",
+            "start_value": 6,
+            "end_value": 6,
+            "unit": "dB",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "An isolated open-park source and observers at2m and4m illustrate the free-field comparison.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "An isolated open-park source and observers at2m and4m illustrate the free-field comparison.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "An isolated open-park source and observers at2m and4m illustrate the free-field comparison.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        },
+        {
+          "id": "SH02",
+          "start_s": 32,
+          "end_s": 35.4,
+          "shot_type": "scale_reveal",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 42,
+            "keyframes": [
+              {
+                "t_s": 32,
+                "position": [
+                  5,
+                  5.3,
+                  8
+                ],
+                "look_at": [
+                  2,
+                  1,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 35.4,
+                "position": [
+                  5,
+                  5.3,
+                  8
+                ],
+                "look_at": [
+                  2,
+                  1,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 32,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "DISTANCE DOUBLING",
+            "start_value": 6,
+            "end_value": 6,
+            "unit": "dB",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "An isolated open-park source and observers at2m and4m illustrate the free-field comparison.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "An isolated open-park source and observers at2m and4m illustrate the free-field comparison.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "An isolated open-park source and observers at2m and4m illustrate the free-field comparison.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [
+        {
+          "at_s": 30.2,
+          "duration_s": 0.34,
+          "kind": "impact",
+          "description": "Recorded human-handclap-recordings-v1 selected-source event; audible attack aligned to palm contact or calculated arrival in the explicit replay.",
+          "relative_db": -10
+        }
+      ],
+      "claim_ids": [
+        "CL03"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve source contacts and explicitly marked same-event replay scopes."
+      }
+    },
+    {
+      "id": "S07",
+      "beat": "twist",
+      "start_s": 35.4,
+      "end_s": 42.4,
+      "narration": {
+        "text": "Nearby walls bounce some sound back. You hear a reply. Nobody clapped again.",
+        "start_s": 35.4,
+        "end_s": 42.25,
+        "delivery_note": "A dry reveal: nobody clapped again.",
+        "pacing_energy": "crisp_mechanism"
+      },
+      "viewer_question": "Who supplied that reply?",
+      "visual_payoff": "A30m wall returns the same clap after60m of travel; all hands stay separated.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 35.4,
+          "end_s": 38.1,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 35.4,
+                "position": [
+                  9.6,
+                  1.65,
+                  3
+                ],
+                "look_at": [
+                  8.3,
+                  1.25,
+                  -1
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 38.1,
+                "position": [
+                  9.6,
+                  1.65,
+                  3
+                ],
+                "look_at": [
+                  8.3,
+                  1.25,
+                  -1
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 35.4,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "REFLECTED PATH",
+            "start_value": 60,
+            "end_value": 60,
+            "unit": "m",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "A30m wall returns the same clap after60m of travel; all hands stay separated.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "A30m wall returns the same clap after60m of travel; all hands stay separated.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "A30m wall returns the same clap after60m of travel; all hands stay separated.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        },
+        {
+          "id": "SH02",
+          "start_s": 38.1,
+          "end_s": 42.4,
+          "shot_type": "scale_reveal",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 43,
+            "keyframes": [
+              {
+                "t_s": 38.1,
+                "position": [
+                  8.3,
+                  12,
+                  16
+                ],
+                "look_at": [
+                  8.3,
+                  1,
+                  -12
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 42.4,
+                "position": [
+                  8.3,
+                  12,
+                  16
+                ],
+                "look_at": [
+                  8.3,
+                  1,
+                  -12
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0,
+            "impulse_shake": {
+              "at_s": 38.1,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "REFLECTED PATH",
+            "start_value": 60,
+            "end_value": 60,
+            "unit": "m",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "A30m wall returns the same clap after60m of travel; all hands stay separated.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "A30m wall returns the same clap after60m of travel; all hands stay separated.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "A30m wall returns the same clap after60m of travel; all hands stay separated.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [
+        {
+          "at_s": 36.4,
+          "duration_s": 0.34,
+          "kind": "impact",
+          "description": "Recorded human-handclap-recordings-v1 selected-source event; audible attack aligned to palm contact or calculated arrival in the explicit replay.",
+          "relative_db": -10
+        },
+        {
+          "at_s": 36.574927,
+          "duration_s": 0.34,
+          "kind": "texture",
+          "description": "Quieter reflection of the same recorded clap from the chosen30m wall; not a new human action.",
+          "relative_db": -16
+        }
+      ],
+      "claim_ids": [
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve source contacts and explicitly marked same-event replay scopes."
+      }
+    },
+    {
+      "id": "S08",
+      "beat": "ending",
+      "start_s": 42.4,
+      "end_s": 50,
+      "narration": {
+        "text": "A global clap becomes local applause. Your encore comes from a wall.",
+        "start_s": 42.4,
+        "end_s": 49.85,
+        "delivery_note": "Relax into the comic wall encore; do not sound like a sign-off.",
+        "pacing_energy": "reflective_payoff"
+      },
+      "viewer_question": "Where does the encore come from?",
+      "visual_payoff": "The original listener looks toward the wall, which supplied the encore.",
+      "shots": [
+        {
+          "id": "SH01",
+          "start_s": 42.4,
+          "end_s": 46,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 40,
+            "keyframes": [
+              {
+                "t_s": 42.4,
+                "position": [
+                  9.4,
+                  1.65,
+                  2.2
+                ],
+                "look_at": [
+                  8.1,
+                  1.4,
+                  0
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 46,
+                "position": [
+                  9.4,
+                  1.65,
+                  2.2
+                ],
+                "look_at": [
+                  8.1,
+                  1.4,
+                  0
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 42.4,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "HUMAN CLAPS EACH",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "clap",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "The original listener looks toward the wall, which supplied the encore.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "The original listener looks toward the wall, which supplied the encore.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "The original listener looks toward the wall, which supplied the encore.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        },
+        {
+          "id": "SH02",
+          "start_s": 46,
+          "end_s": 50,
+          "shot_type": "eye_level_action",
+          "world": "Metre-scale street, open park or selected wall; the same global clap revisited through explicit local replay views.",
+          "camera": {
+            "projection": "perspective",
+            "fov_or_scale": 44,
+            "keyframes": [
+              {
+                "t_s": 46,
+                "position": [
+                  8.9,
+                  1.65,
+                  4.5
+                ],
+                "look_at": [
+                  8.5,
+                  1.3,
+                  -16
+                ],
+                "ease": "hold"
+              },
+              {
+                "t_s": 50,
+                "position": [
+                  8.9,
+                  1.65,
+                  4.5
+                ],
+                "look_at": [
+                  8.5,
+                  1.3,
+                  -16
+                ],
+                "ease": "hold"
+              }
+            ],
+            "movement": "Motivated cut between contact, source, travel and listener evidence.",
+            "lens_notes": "Keep palms/head clear of captions and the reference-like upper-left numeric block.",
+            "handheld_sway": 0.2,
+            "impulse_shake": {
+              "at_s": 46,
+              "duration_s": 0.1,
+              "intensity": 0
+            }
+          },
+          "hud_telemetry": {
+            "timer_label": "SAME GLOBAL CLAP",
+            "metric_label": "HUMAN CLAPS EACH",
+            "start_value": 1,
+            "end_value": 1,
+            "unit": "clap",
+            "alert_level": "normal"
+          },
+          "subjects": [
+            {
+              "id": "clap_evidence",
+              "kind": "human",
+              "appearance": "The original listener looks toward the wall, which supplied the encore.",
+              "geometry_and_material": "Registered clothed Humanoid rigs, city/sky and thin acoustic path markers; recorded human clap sources.",
+              "scale_and_accuracy": "Metres. Sound speed343m/s in chosen near20C still air; paths are guides, not visible destructive air walls.",
+              "movement": "The original listener looks toward the wall, which supplied the encore.",
+              "asset_hint": "city-street-block-v1; humanoid-figure-v1; character-motion-v1; sound-rings-v1"
+            }
+          ],
+          "animation_plan": [
+            "The original listener looks toward the wall, which supplied the encore.",
+            "One event per explicit replay. Contact film times0.9/4.6/12.0/18.3/30.2/36.4. Macro replay0.18x;1km replay0.5x with arrival24.130904; wall echo36.574927 at real time. All poses derive from absolute scene clock; completed hands remain apart."
+          ],
+          "lighting": "Warm directional daylight, blue sky fill, readable palm silhouettes and grounded shadows; quiet sky behind the number block.",
+          "effects": [
+            "Restrained bloom and grain; thin acoustic guides with no physical disturbance."
+          ],
+          "composition_notes": "Top-left number is supporting evidence; subjects and completed actions remain primary."
+        }
+      ],
+      "caption_emphasis": [],
+      "audio_cues": [],
+      "claim_ids": [
+        "CL01",
+        "CL04"
+      ],
+      "transition_out": {
+        "type": "cut",
+        "duration_s": 0,
+        "motivation": "Preserve source contacts and explicitly marked same-event replay scopes."
+      }
+    }
+  ]
+}

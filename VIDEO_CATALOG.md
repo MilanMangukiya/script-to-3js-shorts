@@ -4,6 +4,8 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 
 | Rendered (UTC) | Video | Length | Publishing | Upload metadata |
 |---|---|---:|---|---|
+| 2026-10-16 | `everyone-claps-at-once` | 50s | rendered_not_published | [Copy metadata](metadata/everyone-claps-at-once.md) |
+| 2026-10-16 | `light-gone-five-seconds` | 47s | rendered_not_published | [Copy metadata](metadata/light-gone-five-seconds.md) |
 | 2026-10-16 | `penny-doubled-30-days` | 47s | rendered_not_published | [Copy metadata](metadata/penny-doubled-30-days.md) |
 | 2026-10-16 | `everyone-sneezes-at-once` | 46s | rendered_not_published | [Copy metadata](metadata/everyone-sneezes-at-once.md) |
 | 2026-10-16 | `everyone-drank-the-ocean` | 50s | rendered_not_published | [Copy metadata](metadata/everyone-drank-the-ocean.md) |
@@ -30,6 +32,284 @@ This is a cumulative, **copy-paste upload guide**, generated only for videos wit
 | 2026-10-12 | `air-pressure-doubled` | 74s | rendered_not_published | [Copy metadata](metadata/air-pressure-doubled.md) |
 | 2026-10-12 | `ice-sank-instead-of-floating` | 74s | rendered_not_published | [Copy metadata](metadata/ice-sank-instead-of-floating.md) |
 | 2026-10-12 | `oxygen-gone-five-seconds` | 72s | rendered_not_published | [Copy metadata](metadata/oxygen-gone-five-seconds.md) |
+
+---
+
+## What if 8.3 billion people on Earth clapped at the same time?
+**Video:** `output/everyone-claps-at-once.mp4`\
+**Thumbnail:** `output/everyone-claps-at-once.jpg`\
+**Publishing copy:** `output/everyone-claps-at-once.md`\
+**Hugging Face:** [videos/027-everyone-claps-at-once.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/027-everyone-claps-at-once.mp4) · [videos/027-everyone-claps-at-once.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/027-everyone-claps-at-once.jpg) · [videos/027-everyone-claps-at-once.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/027-everyone-claps-at-once.md)\
+**Slug:** `everyone-claps-at-once` | **Duration:** 50s | **Rendered (UTC):** 2026-10-16T21:30:28Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** The thought experiment stipulates exactly 8.3 billion geographically dispersed participants, two hands each, and one synchronized contact per person. It is not a live population estimate. Travel times use an illustrative still-air speed of 343 m/s near 20 degrees C: a 1 km path takes about 2.92 seconds, without guaranteeing that a lone clap is audible that far away. The approximately 6 dB loss per distance doubling applies to an isolated point source without reflections, not the entire crowd. A chosen 30 m wall distance gives a 60 m echo path, about 0.175 seconds at that speed. Replayed and slowed shots examine the same original clap. No universal received decibel level, destructive global wave, or hearing outcome is predicted.
+**Assets reused:** city-street-block-v1, sky-dome-v1, humanoid-figure-v1, character-motion-v1, sound-rings-v1, modeling-helpers-v1, camera-keyframe-rig-v1, film-pipeline-v1, caption-kinetic-v1, overlay-labels-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** human-handclap-recordings-v1, park-birds-recording-v1
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if 8.3 billion people on Earth clapped at the same time?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You clap once. The applause keeps arriving.
+
+One clap each means 16.6 billion hands, but it does not mean one giant bang at your ears. Sound takes time to travel, grows weaker with distance, and can bounce back from nearby walls. Your location shapes the version you hear; the apparent encore can be an echo.
+
+Would you hear it from a crowded square or a quiet hillside?
+
+Scope: The thought experiment stipulates exactly 8.3 billion geographically dispersed participants, two hands each, and one synchronized contact per person. It is not a live population estimate. Travel times use an illustrative still-air speed of 343 m/s near 20 degrees C: a 1 km path takes about 2.92 seconds, without guaranteeing that a lone clap is audible that far away. The approximately 6 dB loss per distance doubling applies to an isolated point source without reflections, not the entire crowd. A chosen 30 m wall distance gives a 60 m echo path, about 0.175 seconds at that speed. Replayed and slowed shots examine the same original clap. No universal received decibel level, destructive global wave, or hearing outcome is predicted.
+
+Sources:
+- NASA Glenn: speed of sound and temperature dependence: https://www.grc.nasa.gov/WWW/K-12/BGP/sound.html
+- OSHA Technical Manual: point-source spreading and reflected sound: https://www.osha.gov/otm/section-3-health-hazards/chapter-5
+- Fu et al. (2025): experimental human-handclap acoustics: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.013259
+- Repp (1987): variation in the sound of human claps: https://pubmed.ncbi.nlm.nih.gov/3571727/
+
+Recorded audio, CC0: Solo Clap by OwlStorm (Ashe Kirk / Owlish Media), https://freesound.org/people/OwlStorm/sounds/151219/ ; Park ambience - mostly birds by Mafon2, https://freesound.org/people/Mafon2/sounds/274175/ . Original deterministic Three.js animation and procedural score; local Kokoro am_michael narration.
+
+#Shorts #WhatIf #Acoustics #Physics #Sound #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if everyone clapped at the same time, 8.3 billion people clapping, handclap acoustics, speed of sound, echo and reflection, sound propagation physics, physics thought experiment
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+What if 8.3 billion people on Earth clapped at the same time?
+
+You clap once. The applause keeps arriving.
+
+One clap each means 16.6 billion hands, but it does not mean one giant bang at your ears. Sound takes time to travel, grows weaker with distance, and can bounce back from nearby walls. Your location shapes the version you hear; the apparent encore can be an echo.
+
+Would you hear it from a crowded square or a quiet hillside?
+
+Recorded audio, CC0: Solo Clap by OwlStorm (Ashe Kirk / Owlish Media), https://freesound.org/people/OwlStorm/sounds/151219/ ; Park ambience - mostly birds by Mafon2, https://freesound.org/people/Mafon2/sounds/274175/ . Original deterministic Three.js animation and procedural score; local Kokoro am_michael narration.
+
+#ScienceReels #WhatIf #Acoustics #Physics #Sound #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if 8.3 billion people on Earth clapped at the same time?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+You clap once. The applause keeps arriving.
+
+One clap each means 16.6 billion hands, but it does not mean one giant bang at your ears. Sound takes time to travel, grows weaker with distance, and can bounce back from nearby walls. Your location shapes the version you hear; the apparent encore can be an echo.
+
+Would you hear it from a crowded square or a quiet hillside?
+
+Scope: The thought experiment stipulates exactly 8.3 billion geographically dispersed participants, two hands each, and one synchronized contact per person. It is not a live population estimate. Travel times use an illustrative still-air speed of 343 m/s near 20 degrees C: a 1 km path takes about 2.92 seconds, without guaranteeing that a lone clap is audible that far away. The approximately 6 dB loss per distance doubling applies to an isolated point source without reflections, not the entire crowd. A chosen 30 m wall distance gives a 60 m echo path, about 0.175 seconds at that speed. Replayed and slowed shots examine the same original clap. No universal received decibel level, destructive global wave, or hearing outcome is predicted.
+
+Sources:
+- NASA Glenn: speed of sound and temperature dependence: https://www.grc.nasa.gov/WWW/K-12/BGP/sound.html
+- OSHA Technical Manual: point-source spreading and reflected sound: https://www.osha.gov/otm/section-3-health-hazards/chapter-5
+- Fu et al. (2025): experimental human-handclap acoustics: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.013259
+- Repp (1987): variation in the sound of human claps: https://pubmed.ncbi.nlm.nih.gov/3571727/
+
+Recorded audio, CC0: Solo Clap by OwlStorm (Ashe Kirk / Owlish Media), https://freesound.org/people/OwlStorm/sounds/151219/ ; Park ambience - mostly birds by Mafon2, https://freesound.org/people/Mafon2/sounds/274175/ . Original deterministic Three.js animation and procedural score; local Kokoro am_michael narration.
+
+#WhatIf #Acoustics #Physics #Sound #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+What if 8.3 billion people on Earth clapped at the same time?
+
+You clap once. The applause keeps arriving.
+
+One clap each means 16.6 billion hands, but it does not mean one giant bang at your ears. Sound takes time to travel, grows weaker with distance, and can bounce back from nearby walls. Your location shapes the version you hear; the apparent encore can be an echo.
+
+Would you hear it from a crowded square or a quiet hillside?
+
+#ScienceTok #WhatIf #Acoustics #Physics #Sound #ThoughtExperiment #ScienceSimulation #3DAnimation
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+What if 8.3 billion people on Earth clapped at the same time?
+
+You clap once. The applause keeps arriving. Distance adds delay.
+
+Would you hear it from a crowded square or a quiet hillside?
+
+#WhatIf #Acoustics #Physics #Sound #Science
+```
+
+**Target search keywords:**
+
+**Published URL:** Not published
+
+
+---
+
+## What if light disappeared for 5 seconds?
+**Video:** `output/light-gone-five-seconds.mp4`\
+**Thumbnail:** `output/light-gone-five-seconds.jpg`\
+**Publishing copy:** `output/light-gone-five-seconds.md`\
+**Hugging Face:** [videos/026-light-gone-five-seconds.mp4](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/026-light-gone-five-seconds.mp4) · [videos/026-light-gone-five-seconds.jpg](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/026-light-gone-five-seconds.jpg) · [videos/026-light-gone-five-seconds.md](https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/026-light-gone-five-seconds.md)\
+**Slug:** `light-gone-five-seconds` | **Duration:** 47s | **Rendered (UTC):** 2026-10-16T21:01:22Z\
+**Publishing:** rendered_not_published\
+**Scientific accuracy note:** Thought experiment: every photon in the universe vanishes for exactly five seconds (light already in transit is erased, not paused), then every source shines again; nothing else changes. Light-travel times are real: about 33 nanoseconds from a lamp 10 m away, 1.3 s from the Moon, 499 s (8 min 19 s) from the Sun at 1 AU, 4.37 years from Alpha Centauri A and B (41 trillion km) and 8.6 years from Sirius. Light from the centre of the Sun's disc arrives about 2.3 s before light from its edge, so daylight floods back over a couple of seconds. With no light at all, people see eigengrau, the eye's own dark grey. Proxima Centauri (4.24 ly) is too faint to see, Alpha Centauri never rises north of about 29 degrees north, and the stars between 4.4 and 8.6 light-years are too faint for the naked eye, so up north the first star back is Sirius. Planets reflect sunlight and would return within hours; none is shown. The night sky uses real star positions for a city at 38 degrees south on a mid-February night; the street and the people are illustrative, and the Moon is drawn about three times its apparent size.
+**Assets reused:** city-street-block-v1, humanoid-figure-v1, character-motion-v1, sun-skylight-rig-v1, moon-body-v1, modeling-helpers-v1, shader-noise-math-v1, camera-keyframe-rig-v1, film-pipeline-v1, overlay-labels-v1, caption-kinetic-v1, audio-synth-kit-v1, font-inter-v1, font-display-set-v1, thumbnail-title-card-v1\
+**Assets created:** distance-star-sky-v1
+
+### YouTube Shorts
+
+**Title — copy:**
+```text
+What if light disappeared for 5 seconds?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Your phone goes black, and so does the sun. In this 47-second 3D science thought experiment, every bit of light in the universe vanishes for five seconds, including the light already on its way. Your phone and the city lights come back instantly, but the noon sky stays black: new sunlight needs 8 minutes 19 seconds to cross 150 million km.
+
+Right on time, the sunlight hits and the sky floods back to blue in about two seconds. That night the Moon is back, but not a single star, because their light was erased too. Alpha Centauri, the nearest star you can see, returns after 4.4 years, but only in southern skies.
+
+Alpha Centauri never rises north of about 29° N, so up north you wait 8.6 years for Sirius. Which star comes back first where you live?
+
+Scope: Thought experiment: every photon in the universe vanishes for exactly five seconds (light already in transit is erased, not paused), then every source shines again; nothing else changes. Light-travel times are real: about 33 nanoseconds from a lamp 10 m away, 1.3 s from the Moon, 499 s (8 min 19 s) from the Sun at 1 AU, 4.37 years from Alpha Centauri A and B (41 trillion km) and 8.6 years from Sirius. Light from the centre of the Sun's disc arrives about 2.3 s before light from its edge, so daylight floods back over a couple of seconds. With no light at all, people see eigengrau, the eye's own dark grey. Proxima Centauri (4.24 ly) is too faint to see, Alpha Centauri never rises north of about 29 degrees north, and the stars between 4.4 and 8.6 light-years are too faint for the naked eye, so up north the first star back is Sirius. Planets reflect sunlight and would return within hours; none is shown. The night sky uses real star positions for a city at 38 degrees south on a mid-February night; the street and the people are illustrative, and the Moon is drawn about three times its apparent size.
+
+Sources:
+- Smithsonian National Air and Space Museum: How long does it take light from the Sun to get to Earth?: https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth
+- NASA Imagine the Universe: The nearest star: https://imagine.gsfc.nasa.gov/features/cosmic/nearest_star_info.html
+- EarthSky: Proxima Centauri, our Sun’s nearest neighbor: https://earthsky.org/astronomy-essentials/proxima-centauri-our-suns-nearest-neighbor/
+- HyperPhysics: Stellar neighbors of the Sun: https://hyperphysics.gsu.edu/hbase/starlog/strclos.html
+- EarthSky: Alpha Centauri, the star system closest to our sun: https://earthsky.org/brightest-stars/alpha-centauri-is-the-nearest-bright-star
+- NASA JPL Night Sky Network: Taking the Dog Stars for a Springtime Walk: Sirius and Procyon: https://nightsky.jpl.nasa.gov/news/428
+- Popular Science: Why you see things in the dark (eigengrau): https://www.popsci.com/science/why-you-see-things-in-dark/
+
+Visuals: original deterministic Three.js animation. Voice: local Kokoro am_michael. Music and Foley: original procedural synthesis.
+
+#Shorts #WhatIf #Physics #SpeedOfLight #Astronomy #Science #3DAnimation
+```
+
+**Tags — comma-separated, copy:**
+```text
+what if light disappeared, what if the sun went dark for 5 seconds, how long does sunlight take to reach earth, speed of light explained, nearest star light years, light travel time, eigengrau, physics thought experiment, astronomy what if, science simulation, threejs 3d documentary
+```
+
+**Target search keywords:** what if light disappeared, what if the sun went dark for 5 seconds, how long does sunlight take to reach earth, speed of light explained, nearest star light years, light travel time
+
+**Published URL:** Not published
+
+### Instagram Reels
+
+**Description / caption + hashtags — copy:**
+```text
+What if light disappeared for 5 seconds?
+
+Five seconds of darkness would cost the planet 8 minutes of daylight and every star for years: 4.4 years for Alpha Centauri, 8.6 for Sirius.
+
+Alpha Centauri never rises north of about 29° N, so up north you wait 8.6 years for Sirius. Which star comes back first where you live?
+
+Real light-travel times and star positions; the street is illustrative.
+
+#WhatIf #Physics #SpeedOfLight #Astronomy #ScienceReels #3DAnimation
+```
+
+**Target search keywords:** what if light disappeared, what if the sun went dark for 5 seconds, how long does sunlight take to reach earth, speed of light explained, nearest star light years, light travel time
+
+**Published URL:** Not published
+
+### Facebook Reels
+
+**Title — copy:**
+```text
+What if light disappeared for 5 seconds?
+```
+
+**Description / caption + hashtags — copy:**
+```text
+Every bit of light vanishes for five seconds. Lamps and screens return in nanoseconds, the Sun's light takes 8 min 19 s, so noon looks like midnight, and that night the Moon is back but no stars: Alpha Centauri returns after 4.4 years in southern skies, Sirius after 8.6.
+
+Alpha Centauri never rises north of about 29° N, so up north you wait 8.6 years for Sirius. Which star comes back first where you live?
+
+Thought experiment: every photon in the universe vanishes for exactly five seconds (light already in transit is erased, not paused), then every source shines again; nothing else changes. Light-travel times are real: about 33 nanoseconds from a lamp 10 m away, 1.3 s from the Moon, 499 s (8 min 19 s) from the Sun at 1 AU, 4.37 years from Alpha Centauri A and B (41 trillion km) and 8.6 years from Sirius. Light from the centre of the Sun's disc arrives about 2.3 s before light from its edge, so daylight floods back over a couple of seconds. With no light at all, people see eigengrau, the eye's own dark grey. Proxima Centauri (4.24 ly) is too faint to see, Alpha Centauri never rises north of about 29 degrees north, and the stars between 4.4 and 8.6 light-years are too faint for the naked eye, so up north the first star back is Sirius. Planets reflect sunlight and would return within hours; none is shown. The night sky uses real star positions for a city at 38 degrees south on a mid-February night; the street and the people are illustrative, and the Moon is drawn about three times its apparent size.
+
+Sources:
+- Smithsonian National Air and Space Museum: How long does it take light from the Sun to get to Earth?: https://howthingsfly.si.edu/ask-an-explainer/how-long-does-it-take-light-sun-get-earth
+- NASA Imagine the Universe: The nearest star: https://imagine.gsfc.nasa.gov/features/cosmic/nearest_star_info.html
+- EarthSky: Proxima Centauri, our Sun’s nearest neighbor: https://earthsky.org/astronomy-essentials/proxima-centauri-our-suns-nearest-neighbor/
+- HyperPhysics: Stellar neighbors of the Sun: https://hyperphysics.gsu.edu/hbase/starlog/strclos.html
+- EarthSky: Alpha Centauri, the star system closest to our sun: https://earthsky.org/brightest-stars/alpha-centauri-is-the-nearest-bright-star
+- NASA JPL Night Sky Network: Taking the Dog Stars for a Springtime Walk: Sirius and Procyon: https://nightsky.jpl.nasa.gov/news/428
+- Popular Science: Why you see things in the dark (eigengrau): https://www.popsci.com/science/why-you-see-things-in-dark/
+
+#WhatIf #Physics #SpeedOfLight #Astronomy #Science
+```
+
+**Target search keywords:** what if light disappeared, what if the sun went dark for 5 seconds, how long does sunlight take to reach earth, speed of light explained, nearest star light years, light travel time
+
+**Published URL:** Not published
+
+### TikTok
+
+**Description / caption + hashtags — copy:**
+```text
+What if light disappeared for 5 seconds?
+
+Your phone comes back instantly, but the noon sky stays black for 8 minutes 19 seconds, and the stars stay gone for years.
+
+Alpha Centauri never rises north of about 29° N, so up north you wait 8.6 years for Sirius. Which star comes back first where you live?
+
+Real light-travel times and star positions; the street is illustrative.
+
+#WhatIf #ScienceTok #SpeedOfLight #Astronomy #Space #ScienceSimulation
+```
+
+**Target search keywords:** what if light disappeared, what if the sun went dark for 5 seconds, how long does sunlight take to reach earth, speed of light explained, nearest star light years, light travel time
+
+**Published URL:** Not published
+
+### X
+
+**Description / caption + hashtags — copy:**
+```text
+What if light disappeared for 5 seconds?
+
+Your phone is back instantly. The sun takes 8 min 19 s. The stars take years: 4.4 for Alpha Centauri, 8.6 for Sirius. Which star comes back first where you live?
+
+#WhatIf #Physics #SpeedOfLight #Astronomy #Science
+```
+
+**Target search keywords:** what if light disappeared, what if the sun went dark for 5 seconds, how long does sunlight take to reach earth
+
+**Published URL:** Not published
+
 
 ---
 

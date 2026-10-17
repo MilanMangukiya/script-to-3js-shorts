@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "everyone-claps-at-once",
+  "topic": "What if 8.3 billion people on Earth clapped at the same time?",
+  "duration_s": 50,
+  "video_file": "output/everyone-claps-at-once.mp4",
+  "scientific_scope_note": "The thought experiment stipulates exactly 8.3 billion geographically dispersed participants, two hands each, and one synchronized contact per person. It is not a live population estimate. Travel times use an illustrative still-air speed of 343 m/s near 20 degrees C: a 1 km path takes about 2.92 seconds, without guaranteeing that a lone clap is audible that far away. The approximately 6 dB loss per distance doubling applies to an isolated point source without reflections, not the entire crowd. A chosen 30 m wall distance gives a 60 m echo path, about 0.175 seconds at that speed. Replayed and slowed shots examine the same original clap. No universal received decibel level, destructive global wave, or hearing outcome is predicted.",
+  "created_asset_ids": [
+    "human-handclap-recordings-v1",
+    "park-birds-recording-v1"
+  ],
+  "reused_asset_ids": [
+    "city-street-block-v1",
+    "sky-dome-v1",
+    "humanoid-figure-v1",
+    "character-motion-v1",
+    "sound-rings-v1",
+    "modeling-helpers-v1",
+    "camera-keyframe-rig-v1",
+    "film-pipeline-v1",
+    "caption-kinetic-v1",
+    "overlay-labels-v1",
+    "audio-synth-kit-v1",
+    "font-inter-v1",
+    "font-display-set-v1",
+    "thumbnail-title-card-v1"
+  ],
+  "published_urls": {},
+  "platforms": {
+    "youtube_shorts": {
+      "title": "What if 8.3 billion people on Earth clapped at the same time?",
+      "description": "You clap once. The applause keeps arriving.\n\nOne clap each means 16.6 billion hands, but it does not mean one giant bang at your ears. Sound takes time to travel, grows weaker with distance, and can bounce back from nearby walls. Your location shapes the version you hear; the apparent encore can be an echo.\n\nWould you hear it from a crowded square or a quiet hillside?\n\nScope: The thought experiment stipulates exactly 8.3 billion geographically dispersed participants, two hands each, and one synchronized contact per person. It is not a live population estimate. Travel times use an illustrative still-air speed of 343 m/s near 20 degrees C: a 1 km path takes about 2.92 seconds, without guaranteeing that a lone clap is audible that far away. The approximately 6 dB loss per distance doubling applies to an isolated point source without reflections, not the entire crowd. A chosen 30 m wall distance gives a 60 m echo path, about 0.175 seconds at that speed. Replayed and slowed shots examine the same original clap. No universal received decibel level, destructive global wave, or hearing outcome is predicted.\n\nSources:\n- NASA Glenn: speed of sound and temperature dependence: https://www.grc.nasa.gov/WWW/K-12/BGP/sound.html\n- OSHA Technical Manual: point-source spreading and reflected sound: https://www.osha.gov/otm/section-3-health-hazards/chapter-5\n- Fu et al. (2025): experimental human-handclap acoustics: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.013259\n- Repp (1987): variation in the sound of human claps: https://pubmed.ncbi.nlm.nih.gov/3571727/\n\nRecorded audio, CC0: Solo Clap by OwlStorm (Ashe Kirk / Owlish Media), https://freesound.org/people/OwlStorm/sounds/151219/ ; Park ambience - mostly birds by Mafon2, https://freesound.org/people/Mafon2/sounds/274175/ . Original deterministic Three.js animation and procedural score; local Kokoro am_michael narration.",
+      "tags": [
+        "what if everyone clapped at the same time",
+        "8.3 billion people clapping",
+        "handclap acoustics",
+        "speed of sound",
+        "echo and reflection",
+        "sound propagation physics",
+        "physics thought experiment"
+      ],
+      "hashtags": [
+        "#Shorts",
+        "#WhatIf",
+        "#Acoustics",
+        "#Physics",
+        "#Sound",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "tiktok": {
+      "caption": "What if 8.3 billion people on Earth clapped at the same time?\n\nYou clap once. The applause keeps arriving.\n\nOne clap each means 16.6 billion hands, but it does not mean one giant bang at your ears. Sound takes time to travel, grows weaker with distance, and can bounce back from nearby walls. Your location shapes the version you hear; the apparent encore can be an echo.\n\nWould you hear it from a crowded square or a quiet hillside?",
+      "hashtags": [
+        "#ScienceTok",
+        "#WhatIf",
+        "#Acoustics",
+        "#Physics",
+        "#Sound",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "instagram_reels": {
+      "caption": "What if 8.3 billion people on Earth clapped at the same time?\n\nYou clap once. The applause keeps arriving.\n\nOne clap each means 16.6 billion hands, but it does not mean one giant bang at your ears. Sound takes time to travel, grows weaker with distance, and can bounce back from nearby walls. Your location shapes the version you hear; the apparent encore can be an echo.\n\nWould you hear it from a crowded square or a quiet hillside?\n\nRecorded audio, CC0: Solo Clap by OwlStorm (Ashe Kirk / Owlish Media), https://freesound.org/people/OwlStorm/sounds/151219/ ; Park ambience - mostly birds by Mafon2, https://freesound.org/people/Mafon2/sounds/274175/ . Original deterministic Three.js animation and procedural score; local Kokoro am_michael narration.",
+      "hashtags": [
+        "#ScienceReels",
+        "#WhatIf",
+        "#Acoustics",
+        "#Physics",
+        "#Sound",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "facebook_reels": {
+      "title": "What if 8.3 billion people on Earth clapped at the same time?",
+      "description": "You clap once. The applause keeps arriving.\n\nOne clap each means 16.6 billion hands, but it does not mean one giant bang at your ears. Sound takes time to travel, grows weaker with distance, and can bounce back from nearby walls. Your location shapes the version you hear; the apparent encore can be an echo.\n\nWould you hear it from a crowded square or a quiet hillside?\n\nScope: The thought experiment stipulates exactly 8.3 billion geographically dispersed participants, two hands each, and one synchronized contact per person. It is not a live population estimate. Travel times use an illustrative still-air speed of 343 m/s near 20 degrees C: a 1 km path takes about 2.92 seconds, without guaranteeing that a lone clap is audible that far away. The approximately 6 dB loss per distance doubling applies to an isolated point source without reflections, not the entire crowd. A chosen 30 m wall distance gives a 60 m echo path, about 0.175 seconds at that speed. Replayed and slowed shots examine the same original clap. No universal received decibel level, destructive global wave, or hearing outcome is predicted.\n\nSources:\n- NASA Glenn: speed of sound and temperature dependence: https://www.grc.nasa.gov/WWW/K-12/BGP/sound.html\n- OSHA Technical Manual: point-source spreading and reflected sound: https://www.osha.gov/otm/section-3-health-hazards/chapter-5\n- Fu et al. (2025): experimental human-handclap acoustics: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.013259\n- Repp (1987): variation in the sound of human claps: https://pubmed.ncbi.nlm.nih.gov/3571727/\n\nRecorded audio, CC0: Solo Clap by OwlStorm (Ashe Kirk / Owlish Media), https://freesound.org/people/OwlStorm/sounds/151219/ ; Park ambience - mostly birds by Mafon2, https://freesound.org/people/Mafon2/sounds/274175/ . Original deterministic Three.js animation and procedural score; local Kokoro am_michael narration.",
+      "hashtags": [
+        "#WhatIf",
+        "#Acoustics",
+        "#Physics",
+        "#Sound",
+        "#ThoughtExperiment",
+        "#ScienceSimulation",
+        "#3DAnimation"
+      ]
+    },
+    "x_video": {
+      "post": "What if 8.3 billion people on Earth clapped at the same time?\n\nYou clap once. The applause keeps arriving. Distance adds delay.\n\nWould you hear it from a crowded square or a quiet hillside?",
+      "hashtags": [
+        "#WhatIf",
+        "#Acoustics",
+        "#Physics",
+        "#Sound",
+        "#Science"
+      ]
+    }
+  },
+  "rendered_at_utc": "2026-10-16T21:30:28Z",
+  "publishing_status": "rendered_not_published",
+  "huggingface": {
+    "repo_id": "Whatif2203/whatif",
+    "repo_type": "dataset",
+    "number": 27,
+    "path_in_repo": "videos/027-everyone-claps-at-once.mp4",
+    "url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/027-everyone-claps-at-once.mp4",
+    "sha256": "cc91dcc2a716f7c5d7dfba400cb02137aad4fdbba558adfa2e1da226f6f0a3a3",
+    "size_bytes": 18184193,
+    "thumbnail_path_in_repo": "videos/027-everyone-claps-at-once.jpg",
+    "thumbnail_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/027-everyone-claps-at-once.jpg",
+    "thumbnail_sha256": "ed1380d287441d3dded6fd93c81b01cc693dc2d0f559936635b95f7c9d421710",
+    "copy_path_in_repo": "videos/027-everyone-claps-at-once.md",
+    "copy_url": "https://huggingface.co/datasets/Whatif2203/whatif/blob/main/videos/027-everyone-claps-at-once.md",
+    "copy_sha256": "c75482b0de4c8bd0c4d1e77d949f45f1eab114a8f8bb449d0f4b66dbe50c45ff",
+    "uploaded_at_utc": "2026-10-16T22:05:27Z"
+  }
+}

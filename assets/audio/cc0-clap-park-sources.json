@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "title": "Solo Clap",
+      "creator": "OwlStorm (optional credit: Ashe Kirk or Owlish Media)",
+      "source_page": "https://freesound.org/people/OwlStorm/sounds/151219/",
+      "public_media_url": "https://cdn.freesound.org/previews/151/151219_140737-hq.mp3",
+      "license": "CC0 1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_verified_on": "2026-10-16",
+      "source_description": "The sound of two hands clapping.",
+      "reuse_terms": "Source page explicitly declares CC0; copying, modification, redistribution and commercial use permitted; no attribution required.",
+      "download_kind": "Public HQ MP3 preview of the original recorded sound, not the login-only WAV original.",
+      "source_file": "assets/audio/owlstorm-solo-clap-151219-source.mp3",
+      "source_sha256": "a653c0d7ea9929d4ed7a6ef942accbf87d220c3542f071ffb60ca5827bf01442",
+      "full_converted": {
+        "file": "assets/audio/owlstorm-solo-clap-151219-48k.wav",
+        "bytes": 328732,
+        "duration_s": 3.4234791666666666,
+        "sample_rate_hz": 48000,
+        "channels": 1,
+        "pcm_bits": 16,
+        "peak_dbfs": -0.2990548420098609,
+        "rms_dbfs": -34.339343684209986,
+        "sha256": "a8d20d9ddd1eb5fed307b6515e87e1ed32de85811bf564378c2e3fafada25c11"
+      },
+      "clips": [
+        {
+          "file": "assets/audio/clap-owlstorm-a-48k.wav",
+          "duration_s": 0.34,
+          "sample_rate_hz": 48000,
+          "channels": 1,
+          "pcm_bits": 16,
+          "source_trim_start_s": 0.7,
+          "source_trim_end_s": 1.04,
+          "processing": "FFmpeg mono PCM16 resample to48k; -3dB gain; final15ms linear fade",
+          "attack_definition": "first sample exceeding -38dBFS (equivalent to -35dBFS before -3dB gain)",
+          "transient_offset_s": 0.0229375,
+          "peak_offset_s": 0.028645833333333332,
+          "peak_dbfs": -3.2989988766182887,
+          "rms_dbfs": -31.008184865010403,
+          "sha256": "429a2dd90d70874163aaa7e91edf6825d63782eeb96c3c7b93c5297de92dbc1a",
+          "promoted_file": "assets/library/audio/clap-owlstorm-a-48k.wav"
+        },
+        {
+          "file": "assets/audio/clap-owlstorm-b-48k.wav",
+          "duration_s": 0.225,
+          "sample_rate_hz": 48000,
+          "channels": 1,
+          "pcm_bits": 16,
+          "source_trim_start_s": 1.14,
+          "source_trim_end_s": 1.365,
+          "processing": "FFmpeg mono PCM16 resample to48k; -3dB gain; final15ms linear fade",
+          "attack_definition": "first sample exceeding -38dBFS (equivalent to -35dBFS before -3dB gain)",
+          "transient_offset_s": 0.019395833333333334,
+          "peak_offset_s": 0.023541666666666666,
+          "peak_dbfs": -7.830006877557815,
+          "rms_dbfs": -35.145834918110324,
+          "sha256": "ed6cf467ebfbdbfcb1bb0e74b4045c245ec01028330e5ec2522db1afb553585a",
+          "promoted_file": "assets/library/audio/clap-owlstorm-b-48k.wav"
+        },
+        {
+          "file": "assets/audio/clap-owlstorm-c-48k.wav",
+          "duration_s": 0.3,
+          "sample_rate_hz": 48000,
+          "channels": 1,
+          "pcm_bits": 16,
+          "source_trim_start_s": 2.13,
+          "source_trim_end_s": 2.43,
+          "processing": "FFmpeg mono PCM16 resample to48k; -3dB gain; final15ms linear fade",
+          "attack_definition": "first sample exceeding -38dBFS (equivalent to -35dBFS before -3dB gain)",
+          "transient_offset_s": 0.018979166666666665,
+          "peak_offset_s": 0.023604166666666666,
+          "peak_dbfs": -9.7554843810965,
+          "rms_dbfs": -33.91737038299971,
+          "sha256": "af848b50a60d708254d9e38002399a67713ed10b570d631e381fbb33b7f33ca5",
+          "promoted_file": "assets/library/audio/clap-owlstorm-c-48k.wav"
+        }
+      ],
+      "notes": "Full preview contains several distinct handclap attacks. Three clips isolate individual attacks, not one full-file clap. Keep gain bounded; layering these recordings illustrates local crowd arrivals and does not establish global sound pressure."
+    },
+    {
+      "title": "Park ambience - mostly birds",
+      "creator": "Mafon2",
+      "source_page": "https://freesound.org/people/Mafon2/sounds/274175/",
+      "public_media_url": "https://cdn.freesound.org/previews/274/274175_1196472-hq.mp3",
+      "license": "CC0 1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_verified_on": "2026-10-16",
+      "source_description": "Recorded on digital camera, while in the park.",
+      "reuse_terms": "Source page explicitly declares CC0; copying, modification, redistribution and commercial use permitted; no attribution required.",
+      "download_kind": "Public HQ MP3 preview of the original field recording, not the login-only WAV original.",
+      "source_file": "assets/audio/mafon2-park-birds-274175-source.mp3",
+      "source_sha256": "2b43dc90e42f5b5846a2f4afacc2e8127312625abdb1e95765f95c0f0aca36c4",
+      "clip": {
+        "file": "assets/audio/mafon2-park-birds-274175-48k.wav",
+        "bytes": 11964030,
+        "duration_s": 62.31225,
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "pcm_bits": 16,
+        "peak_dbfs": -22.795726419976653,
+        "rms_dbfs": -42.096633670109675,
+        "sha256": "394afd83cdcdb391ccb416731b8ed756e151c9e9fb7a98529a1e1dc9483d4d90",
+        "promoted_file": "assets/library/audio/mafon2-park-birds-274175-48k.wav"
+      },
+      "notes": "Use only where a daylight outdoor setting supports birds; no sound in exterior space. File exceeds film duration so no repeat seam is needed; apply short start/end fades and required reveal duck. Do not describe it as a specific city/plaza recording."
+    }
+  ],
+  "technical_review": {
+    "sample_validity": "finite nonempty PCM16 WAV, 48kHz; unclipped sample peaks measured",
+    "speech_check": "Local cached faster-whisper-small unprompted with VAD produced no speech segments for either full recording. This is evidence of no detected speech, not a listening certification.",
+    "listening": "No subjective listening available in this setup. Naturalness, embedded music, room character and park appropriateness still require listening review when available.",
+    "sync": "For a contact at film time C and source/listener distance d meters, place clip start at C + d/343 - transient_offset_s. A close clap-a offset is0.0229375s; largest sample occurs0.0286458333s into the clip.",
+    "missing": "No crowd speech, gasp or breath recording is claimed. These are optional for this film.",
+    "promoted_assets": "Four production WAVs are byte-identical copies under assets/library/audio/; hashes verified."
+  },
+  "artifacts": {
+    "playable_clap_excerpt": "build/everyone-claps-at-once/audio/recorded-clap-excerpt.wav",
+    "source_page_snapshots": [
+      "build/everyone-claps-at-once/audio/clap-source-page.html",
+      "build/everyone-claps-at-once/audio/park-source-page.html"
+    ],
+    "speech_check": "build/everyone-claps-at-once/audio/source-speech-check.json"
+  }
+}
