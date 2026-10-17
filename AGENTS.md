@@ -27,8 +27,7 @@ Apply the full checklist to requested film builds. For script reviews, prompt/sk
    - Run `node tools/narrate.mjs stories/<slug>.json` and `node tools/transcript.mjs <slug>`.
    - Implement `src/stories/<slug>/soundtrack.mjs` with a $0.3\text{ s}$ silence drop before the primary impact or reveal, and staggered destruction SFX when destruction is depicted; run `node tools/soundtrack.mjs <slug>` (`-14.0 LUFS`, $\le -1.0\text{ dBTP}$).
 4. **Render & Finalize:**
-   - Smoke test 3 frames: `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5` (`--quality draft` for a cinematic film).
-   - New films set `delivery.render_quality: "cinematic"`; check the v1.2 kits (`quadruped-v1`, `road-vehicles-v1`, `nature-kit-v1`, `black-hole-sky-v1`, ...) and preview them with `node tools/lookdev.mjs <scene>`.
+   - Smoke test 3 frames: `node tools/render.mjs <slug> --frames <f1>,<f2>,<f3> --scale 0.5`.
    - Final render: `node tools/render.mjs <slug> --final --crf 19`.
    - Write `metadata/<slug>.json` (every platform's title is `project.title`, a `"What if …?"` question on its own: the YouTube/Facebook `title` and the first line of TikTok/Reels/X copy; then the 2nd-person POV hook + `comment_bait_question`; science-qualified hashtags).
    - Run `node tools/finalize.mjs <slug>` and reply with **only** the absolute path to `output/<slug>.mp4`.

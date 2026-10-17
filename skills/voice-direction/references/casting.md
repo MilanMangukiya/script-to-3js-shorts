@@ -26,6 +26,4 @@ Listen to matched auditions when supported, ideally without seeing the voice nam
 
 If listening is unavailable and no preference arrives, select a provisional technical fit transparently; do not label it the most exciting or natural voice. Explain what objective evidence supports it and what remains a listening judgment. Model-training grades are not perceptual audition scores; see the [official Kokoro voice notes](https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md).
 
-A voice identifier may also be a weighted Kokoro blend (`am_michael*0.7+am_onyx*0.3`, up to four voices; style vectors are averaged). Audition a blend like any other candidate; the text-aware rate model is fitted for `am_michael`, so other voices fall back to `pacing_speed` and calibration.
-
 Persist the chosen default and its measured starting rates, while retaining explicit story/CLI overrides. Starting rates need measurement on new scripts. Confirm that a changed default cannot reuse old-voice clips, existing finished files remain intact, and the narration/word-timing checks still pass after configuration changes.

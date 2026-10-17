@@ -97,21 +97,6 @@ def recognize(file):
     return dict(heardText=' '.join(seg.text.strip() for seg in segments),heard=heard,recognition_version=RECOGNITION_VERSION,
         recognition_provenance=provenance['recognition'], recognition_diagnostics=[dict(start=s.start,end=s.end,avg_logprob=s.avg_logprob,no_speech_prob=s.no_speech_prob) for s in segments])
 
-def voice_style(engine, spec):
-    """A Kokoro voice id, or a weighted blend such as 'am_michael*0.7+am_onyx*0.3': the style vectors are averaged
-    (weights normalised), giving a distinct but stable narrator without a new model. Deterministic for a given spec."""
-    if '+' not in spec and '*' not in spec:
-        return spec
-    names, weights = [], []
-    for part in spec.split('+'):
-        name, _, weight = part.strip().partition('*')
-        names.append(name.strip()); weights.append(float(weight) if weight else 1.0)
-    unknown = [n for n in names if n not in engine.voices]
-    if unknown or any(not np.isfinite(w) or w <= 0 for w in weights) or len(set(names)) != len(names):
-        raise ValueError(f'invalid voice blend {spec!r}: unknown voices {unknown} or non-positive/duplicate weights')
-    total = sum(weights)
-    return sum(engine.get_voice_style(n).astype(np.float64) * (w / total) for n, w in zip(names, weights)).astype(np.float32)
-
 result = dict(slug=slug,engine='kokoro_local',model='Kokoro-82M v1.0 ONNX',voice=args.voice,speed=args.speed,provenance=provenance,aligner='faster-whisper-small int8 local; unprompted beam5 temperature0 PCM',license=f'Kokoro weights: Apache-2.0; voice {args.voice} supplied by Kokoro; Whisper: MIT',scenes=[])
 raw_file = out/'narration-raw.json'
 previous = json.loads(raw_file.read_text(encoding='utf-8')) if args.reuse and raw_file.is_file() else {}
@@ -135,8 +120,7 @@ for sc in scenes:
         continue
     if tts is None:
         tts = Kokoro(args.model,args.voices)
-        style = voice_style(tts,args.voice)
-    samples,sr = tts.create(text,voice=style,speed=speed,lang='en-us')
+    samples,sr = tts.create(text,voice=args.voice,speed=speed,lang='en-us')
     if samples.ndim != 1 or not len(samples) or not np.all(np.isfinite(samples)):
         raise RuntimeError(f'{sc["id"]}: invalid finite mono voice output')
     original_peak = float(np.max(np.abs(samples)))

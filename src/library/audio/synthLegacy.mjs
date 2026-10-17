@@ -130,16 +130,3 @@ export function crackle(dur, rate, rand, { lo = 900, hi = 5200, sr = SR } = {}) 
 }
 /** Peak of a stereo buffer. */
 export const peak = (b) => { let m = 0; for (let i = 0; i < b.L.length; i++) m = Math.max(m, Math.abs(b.L[i]), Math.abs(b.R[i])); return m; };
-
-/** RBJ peaking / shelving EQ: type 'peaking' | 'lowshelf' | 'highshelf', gain in dB (used by the voice finishing chain). */
-export function eq(x, type, freq, gainDb, q = 0.9, sr = SR) {
-  const A = Math.pow(10, gainDb / 40), w = 2 * Math.PI * Math.min(freq, sr * 0.45) / sr, c = Math.cos(w), s = Math.sin(w), al = s / (2 * q);
-  let b0, b1, b2, a0, a1, a2;
-  if (type === 'peaking') { b0 = 1 + al * A; b1 = -2 * c; b2 = 1 - al * A; a0 = 1 + al / A; a1 = -2 * c; a2 = 1 - al / A; }
-  else { const sq = 2 * Math.sqrt(A) * al, k = type === 'lowshelf' ? -1 : 1;   // RBJ cookbook shelves (k = +1 high, −1 low)
-    b0 = A * ((A + 1) + k * (A - 1) * c + sq); b1 = -k * 2 * A * ((A - 1) + k * (A + 1) * c); b2 = A * ((A + 1) + k * (A - 1) * c - sq);
-    a0 = (A + 1) - k * (A - 1) * c + sq; a1 = k * 2 * ((A - 1) - k * (A + 1) * c); a2 = (A + 1) - k * (A - 1) * c - sq; }
-  const y = new Float32Array(x.length); let x1 = 0, x2 = 0, y1 = 0, y2 = 0;
-  for (let i = 0; i < x.length; i++) { const v = (b0 * x[i] + b1 * x1 + b2 * x2 - a1 * y1 - a2 * y2) / a0; x2 = x1; x1 = x[i]; y2 = y1; y1 = v; y[i] = v; }
-  return y;
-}

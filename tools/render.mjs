@@ -4,7 +4,6 @@
 //   node tools/render.mjs <slug> --frames 30,600,1500 [--scale 0.5]     → build/<slug>/frames/f00030.jpg ...
 //   node tools/render.mjs <slug> --final [--crf 19]                      → output/<slug>.mp4 (needs build/<slug>/audio/mix.wav)
 //   node tools/render.mjs <slug> --preview build/<slug>/review.mp4 --range 0-359 --scale 0.5 [--clean]
-//   any mode: --quality standard|cinematic|draft overrides delivery.render_quality (not with --final)
 // Preview-only --storyboard build/<slug>/variant.json overrides pipeline cameras/cuts, not stage construction
 // or production-data overlays. Paired --narration/--audio review isolated timing JSON and a full-timeline WAV.
 // Previews never write final videos or thumbnails.
@@ -25,15 +24,11 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2), slug = args[0];
 const opt = (n, d) => { const i = args.indexOf(`--${n}`); return i >= 0 ? (args[i + 1]?.startsWith('--') || args[i + 1] === undefined ? true : args[i + 1]) : d; };
 const fail = (message) => { console.error(message); process.exit(2); };
-if (!slug) fail('Usage: node tools/render.mjs <slug> (--frames a,b,c | --range a-b | --final | --thumbnail | --preview build/<path>.mp4 --range a-b) [--scale s] [--quality standard|cinematic|draft] [--png] [--clean] [--storyboard build/<path>.json]');
+if (!slug) fail('Usage: node tools/render.mjs <slug> (--frames a,b,c | --range a-b | --final | --thumbnail | --preview build/<path>.mp4 --range a-b) [--scale s] [--png] [--clean] [--storyboard build/<path>.json]');
 const story = JSON.parse(fs.readFileSync(path.join(ROOT, 'stories', `${slug}.json`), 'utf8'));
 const { width: W, height: H, fps, duration_s } = story.project;
 const total = duration_s * fps;
 const scale = Number(opt('scale', '1')), final = !!opt('final', false), png = !!opt('png', false);
-// --quality overrides the storyboard's delivery.render_quality for this run (e.g. 'draft' for fast look reviews).
-const quality = opt('quality', undefined);
-if (quality !== undefined && !['standard', 'cinematic', 'draft'].includes(quality)) fail('--quality must be standard, cinematic or draft');
-if (final && quality !== undefined && quality !== (story.delivery?.render_quality ?? 'standard')) fail('--final renders the storyboard delivery.render_quality; change the storyboard rather than overriding it');
 const buildDir = path.join(ROOT, 'build', slug), webDir = path.join(buildDir, 'web');
 const preview = args.includes('--preview'), clean = args.includes('--clean');
 let previewPath, previewRange, previewStory, previewNarration, previewAudio;
@@ -135,11 +130,11 @@ page.on('console', (m) => {
   if (m.type() === 'error' || m.type() === 'warning') console.log(`[page ${m.type()}] ${m.text().slice(0, 600)}`);
 });
 page.on('pageerror', (e) => { runtimeErrors.push(String(e.stack ?? e)); console.log(`[page error] ${String(e.stack ?? e).slice(0, 1200)}`); });
-await page.goto(`http://127.0.0.1:${port}/build/${slug}/web/index.html?slug=${slug}&scale=${scale}${quality ? `&quality=${quality}` : ''}`);
+await page.goto(`http://127.0.0.1:${port}/build/${slug}/web/index.html?slug=${slug}&scale=${scale}`);
 let info;
 try { info = await page.evaluate(() => window.__filmReady); }
 catch (e) { throw new Error(`Film failed to initialise: ${await page.evaluate(() => window.__filmError).catch(() => String(e))}`); }
-console.log(`ready | ${info.frames} frames @ ${info.fps} fps | quality ${info.quality} | GPU: ${info.gpu}`);
+console.log(`ready | ${info.frames} frames @ ${info.fps} fps | GPU: ${info.gpu}`);
 
 const mime = png ? 'image/png' : 'image/jpeg';
 const grab = async (i) => Buffer.from((await page.evaluate(([f, m, c]) => window.__film.renderFrame(f, m, 0.96, c ? { overlay: false, captions: false } : {}), [i, mime, clean])).split(',')[1], 'base64');

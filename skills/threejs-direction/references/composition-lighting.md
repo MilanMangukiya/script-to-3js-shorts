@@ -23,7 +23,6 @@ Inspect the actual rendering path. This repository applies its own ACES/gamma fi
 - Keep emissive screens and practical lamps readable without making their brightest areas featureless. For an offscreen microscope/instrument view, inspect its own lights and materials as well as the room; the outer scene's exposure may not control its tone-mapped appearance.
 - Protect the focal subject from particles, reflections, captions, and telemetry throughout its action. A rim light that highlights every background edge can compete with the subject.
 - If lights/materials change by shot or absolute time, assign their full state on every update, including backward seeks. A lighting comparison must preserve deterministic frames.
-- Lens and grade tools live in the shot binding's `post` (FilmPipeline): `ao`/`aoRadius` ground objects with contact shadows, `dof` (focus distance, m) separates a subject from a busy background, `shafts` needs the stage's `sunDirection`, `tonemap: "agx"` keeps fire, suns and disks from clipping to flat white, `shadowTint`/`highlightTint` split-tone, `shutter` sets motion-blur length per shot (0 for a crisp freeze). AO, depth of field and shafts need `delivery.render_quality` `cinematic` or `draft`. Exclude geometry whose vertex shader deforms it from depth effects (`userData.noDepthFx`) if it smears.
 
 ## Review
 

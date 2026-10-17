@@ -33,8 +33,7 @@
         "cloudDrift",
         "setView(lon,lat)",
         "time_s",
-        "seaIce",
-        "flattening"
+        "seaIce"
       ],
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
@@ -53,12 +52,11 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
       "license": "original_code; textures NASA public domain (see earth-textures-nasa-v1)",
-      "notes": "Radius 1 unit by default. Load textures once with loadEarthTextures(base). setView(lon, lat) turns a geographic point toward +Z; update(time_s) is linear in time. scatter scales the limb glow (1 = normal air). Added for ice-sank-instead-of-floating: optional seaIce texture (earth-seaice-mask-nasa-v1) and a seaIce 0..1 setter; default 0 leaves earlier videos unchanged. flattening (f = (a−c)/a along the spin axis, volume preserved, default 0) gives a true-scale oblate globe with exact normals; added for earth-six-hour-day, sphere output unchanged."
+      "notes": "Radius 1 unit by default. Load textures once with loadEarthTextures(base). setView(lon, lat) turns a geographic point toward +Z; update(time_s) is linear in time. scatter scales the limb glow (1 = normal air). Added for ice-sank-instead-of-floating: optional seaIce texture (earth-seaice-mask-nasa-v1) and a seaIce 0..1 setter; default 0 leaves earlier videos unchanged."
     },
     {
       "id": "earth-textures-nasa-v1",
@@ -92,7 +90,6 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sun-locked-earth",
         "what-if-every-man-disappeared"
       ],
@@ -135,7 +132,6 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "sun-locked-earth",
         "what-if-every-man-disappeared"
@@ -304,9 +300,7 @@
         "fogDensity",
         "glitter",
         "skyScale",
-        "time_s",
-        "shore",
-        "reflectivity"
+        "time_s"
       ],
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
@@ -321,12 +315,11 @@
         "moon-made-of-ice",
         "oxygen-gone-five-seconds",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
-      "notes": "Keep horizon and zenith colours in step with the scene sky dome. No vertex displacement, so avoid extreme close-ups of the surface. Studio v2: optional shore model (shore.origin/direction/slope/sandColor/absorption/foam) for Beer–Lambert turquoise shallows, caustics and foam lines, and reflectivity (default 1 = unchanged)."
+      "notes": "Keep horizon and zenith colours in step with the scene sky dome. No vertex displacement, so avoid extreme close-ups of the surface."
     },
     {
       "id": "terrain-massif-v1",
@@ -589,7 +582,6 @@
         "oxygen-gone-five-seconds",
         "ozone-layer-gone-overnight",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -686,7 +678,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -700,7 +691,7 @@
       "name": "Deterministic film render pipeline",
       "type": "render_helper",
       "source_path": "src/library/render/FilmPipeline.ts",
-      "description": "Storyboard-driven frame renderer: shot lookup, keyframe cameras, HDR MSAA scene buffer, bloom, ACES grade, vignette, deterministic grain, cross-dissolves, 2D label overlay and caption compositing. renderFrame(i) depends only on i. Quality presets (QUALITY): standard (bit-identical to the original pipeline at full resolution), cinematic (2x supersampling with contrast-adaptive sharpening, GTAO, depth of field, screen-space sun shafts and 3-sample deterministic sub-frame motion blur) and draft; chosen by storyboard delivery.render_quality or tools/render.mjs --quality. Per-shot tonemap aces/agx/neutral, vibrance, split toning, chromatic aberration and shutter. Renders cross_dissolve, whip_pan (directional smear) and light_wipe (warm sweeping light band) transitions.",
+      "description": "Storyboard-driven frame renderer: shot lookup, keyframe cameras, HDR MSAA scene buffer, bloom, ACES grade, vignette, deterministic grain, cross-dissolves, 2D label overlay and caption compositing. renderFrame(i) depends only on i.",
       "tags": [
         "render",
         "pipeline",
@@ -710,38 +701,23 @@
         "deterministic"
       ],
       "configurable_parameters": [
-        "Stage.sunDirection",
-        "bloomRadius",
-        "bloomStrength",
-        "bloomThreshold",
-        "contrast",
-        "duration_s",
-        "exposure",
-        "fps",
-        "grain",
-        "heatHaze",
+        "width",
         "height",
-        "lift",
-        "post.ao",
-        "post.aoRadius",
-        "post.chroma",
-        "post.dof",
-        "post.dofAperture",
-        "post.dofMaxBlur",
-        "post.highlightTint",
-        "post.shadowTint",
-        "post.shafts",
-        "post.sharpen",
-        "post.shutter",
-        "post.tonemap",
-        "post.vibrance",
-        "quality (standard|cinematic|draft or RenderQuality)",
-        "renderFrame(frame, { overlay, captions })",
-        "saturation",
+        "fps",
+        "duration_s",
         "scale",
-        "tint",
+        "exposure",
+        "bloomStrength",
+        "bloomRadius",
+        "bloomThreshold",
         "vignette",
-        "width"
+        "grain",
+        "saturation",
+        "contrast",
+        "lift",
+        "tint",
+        "heatHaze",
+        "renderFrame(frame, { overlay, captions })"
       ],
       "created_for": "oxygen-gone-five-seconds",
       "used_in": [
@@ -765,7 +741,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -814,7 +789,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -871,7 +845,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -928,7 +901,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -975,7 +947,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "what-if-every-man-disappeared"
       ],
@@ -1017,7 +988,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -1174,8 +1144,7 @@
         "air-pressure-doubled",
         "every-volcano-erupts-at-once",
         "ice-sank-instead-of-floating",
-        "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars"
+        "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
       "notes": "Move points.position to keep the volume around the camera. Sprite sizes are authored for 1080-wide output. A negative fallSpeed makes particles rise (used as illustrative evaporation over the sea in rain-nonstop-everywhere)."
@@ -1246,8 +1215,7 @@
       "used_in": [
         "earth-ten-percent-closer",
         "earth-without-tilt",
-        "ice-sank-instead-of-floating",
-        "rogue-planet-between-earth-mars"
+        "ice-sank-instead-of-floating"
       ],
       "license": "original_procedural",
       "notes": "Use over ocean-surface-v1. update(time_s, sink) lowers pieces with staggered delays for melting or counterfactual shots."
@@ -1422,7 +1390,7 @@
         "rain-nonstop-everywhere"
       ],
       "license": "original_procedural",
-      "notes": "value is a plain setter, so drive it from a deterministic function of time. Clockwise = increasing, scale centred on 12 o'clock. The face sits R·0.004 proud of the case cap to avoid z-fighting in close-ups (fixed for earth-six-hour-day; appearance otherwise unchanged)."
+      "notes": "value is a plain setter, so drive it from a deterministic function of time. Clockwise = increasing, scale centred on 12 o'clock."
     },
     {
       "id": "air-molecules-v1",
@@ -1622,7 +1590,6 @@
         "air-pressure-doubled",
         "everyone-drank-the-ocean",
         "moon-made-of-ice",
-        "rogue-planet-between-earth-mars",
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
@@ -1719,8 +1686,7 @@
       ],
       "created_for": "moon-made-of-ice",
       "used_in": [
-        "moon-made-of-ice",
-        "rogue-planet-between-earth-mars"
+        "moon-made-of-ice"
       ],
       "license": "original_procedural",
       "notes": "Rock and ice maps are generated from seeded canvas textures; visual geography is illustrative. Use a label when showing a material transformation."
@@ -2095,7 +2061,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth"
@@ -2138,7 +2103,6 @@
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
         "rain-nonstop-everywhere",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth"
@@ -2187,7 +2151,6 @@
         "last-woman-alive",
         "mountain-grew-100-km-tall",
         "ozone-layer-gone-overnight",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -2438,9 +2401,7 @@
         "depth",
         "wallColor",
         "floorColor",
-        "ceiling",
-        "window{wall,center,sill,width,height,frameColor}",
-        "bed(parent,x,z,{width,length,frameColor,sheetColor,duvetColor})"
+        "ceiling"
       ],
       "created_for": "what-if-every-man-disappeared",
       "used_in": [
@@ -2454,7 +2415,7 @@
         "what-if-every-man-disappeared"
       ],
       "license": "original_procedural",
-      "notes": "Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames. Optional window opening (back/left/right wall, framed, with mullions) and a bed() helper added for earth-six-hour-day; rooms without a window are built exactly as before."
+      "notes": "Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames."
     },
     {
       "id": "right-whale-v1",
@@ -2714,7 +2675,6 @@
         "last-woman-alive",
         "ozone-layer-gone-overnight",
         "penny-doubled-30-days",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth",
@@ -2829,8 +2789,7 @@
       "used_in": [
         "continents-one-landmass",
         "every-volcano-erupts-at-once",
-        "penny-doubled-30-days",
-        "rogue-planet-between-earth-mars"
+        "penny-doubled-30-days"
       ],
       "license": "original_procedural",
       "source_path": "src/library/environment/VillageHouses.ts",
@@ -3096,8 +3055,7 @@
       "type": "three_component",
       "created_for": "earth-core-solid",
       "used_in": [
-        "earth-core-solid",
-        "rogue-planet-between-earth-mars"
+        "earth-core-solid"
       ],
       "license": "original_procedural",
       "source_path": "src/library/planet/RockyPlanet.ts",
@@ -3570,7 +3528,6 @@
         "everyone-sneezes-at-once",
         "last-woman-alive",
         "ozone-layer-gone-overnight",
-        "rogue-planet-between-earth-mars",
         "sky-disappeared",
         "social-media-gone-five-seconds",
         "sun-locked-earth"
@@ -3816,1465 +3773,6 @@
       ],
       "license": "original_procedural",
       "notes": "Absolute fraction controls fill; physical dimensions match capacity. Grounded volume comparison, not a structural-engineering or fluid solver. Moving review required in the creating film."
-    },
-    {
-      "id": "gas-giant-v1",
-      "name": "Banded gas giant (rogue planet or Jupiter-like world)",
-      "type": "three_component",
-      "source_path": "src/library/planet/GasGiant.ts",
-      "description": "Banded gas-giant sphere: zones and belts of irregular width, sheared domain-warped turbulence, fine streaks along the bands, eddies where zones meet belts, up to four swirling storm ovals carried with their band, hazy poles, limb darkening, a soft terminator and a day-side haze rim, plus an optional additive halo shell. A horizon clip and colour tint let it sit in a terrestrial sky at its true angular size, rising out of a sea and reddened near the horizon.",
-      "tags": [
-        "planet",
-        "gas-giant",
-        "jupiter",
-        "rogue-planet",
-        "space",
-        "sky",
-        "bands",
-        "storms"
-      ],
-      "configurable_parameters": [
-        "radius",
-        "seed",
-        "segments",
-        "zoneColors",
-        "beltColors",
-        "poleColor",
-        "bands",
-        "turbulence",
-        "storms [{lat, lon, size, color, strength, spin}]",
-        "sunDirection",
-        "hazeColor",
-        "hazeStrength",
-        "halo",
-        "exposure",
-        "tint",
-        "ambient",
-        "horizonClip(elevation)",
-        "body (spin-axis tilt)",
-        "update(time_s, rotation)"
-      ],
-      "created_for": "rogue-planet-between-earth-mars",
-      "used_in": [
-        "rogue-planet-between-earth-mars"
-      ],
-      "license": "original_code",
-      "notes": "Radius 1 by default; tilt `body` to orient the spin axis and pass the spin angle to update(). Band flow is linear in time. For a body in a terrestrial sky, place the group far from the camera, scale it to distance x tan(diameter / 2), set horizonClip to the sea-horizon elevation and tint for extinction."
-    },
-    {
-      "id": "harbour-basin-v1",
-      "name": "Stone harbour basin with tide-aware moored boats",
-      "type": "three_component",
-      "source_path": "src/library/environment/HarbourBasin.ts",
-      "description": "Metre-scale stone harbour: ashlar quay walls with tide staining keyed to mean sea level, coping, stone steps, iron ladders, bollards, a railing, granite-paved quays and plaza (with holes for other surfaces such as a street), a mud floor heightfield whose channel shoals before the landward quay, breakwater arms with a red-and-white lighthouse and a soft rotating beam, quay lamps with optional point lights, and moored yachts (sailboat-v1) or fishing boats that float on the current sea level and ground and heel on the mud as it falls.",
-      "tags": [
-        "harbour",
-        "harbor",
-        "port",
-        "tide",
-        "quay",
-        "boats",
-        "lighthouse",
-        "flood",
-        "coast",
-        "town"
-      ],
-      "configurable_parameters": [
-        "seed",
-        "halfWidth",
-        "headZ",
-        "mouthZ",
-        "sideQuayWidth",
-        "mouthHalfWidth",
-        "quayTop",
-        "meanSea",
-        "floorWall",
-        "floorChannel",
-        "lighthouse (1, -1, 0)",
-        "boats [{kind, x, z, heading, length, color, seed, groundHeel}]",
-        "lamps [[x, z]]",
-        "lights",
-        "pavingHoles",
-        "update(time_s, seaLevel, beamAngle)",
-        "floorAt(x, z)",
-        "boatState(boat, time_s, seaLevel)",
-        "setLamps(level(i))",
-        "beamStrength",
-        "lampHeads",
-        "lampLights",
-        "bollards",
-        "lighthouseLamp",
-        "lighthouseTop"
-      ],
-      "created_for": "rogue-planet-between-earth-mars",
-      "used_in": [
-        "rogue-planet-between-earth-mars"
-      ],
-      "license": "original_code",
-      "notes": "The water surface is supplied by the caller (e.g. ocean-surface-v1 at the same level). Defaults: quay top y = 0, mean sea 2.2 m below, floor 4-6 m below mean sea. Boats keep their spec position; override b.g for drifting boats after update(). Static parts are merged by material."
-    },
-    {
-      "id": "orbit-map-v1",
-      "name": "Top-down orbit map with progressive trajectories",
-      "type": "three_component",
-      "source_path": "src/library/diagram/OrbitMap.ts",
-      "description": "Solar-system orbit map at true AU geometry in the XZ plane (ecliptic +y maps to world -Z): Kepler ellipses from (a, e, longitude of perihelion) and sampled trajectories drawn as glowing tubes that draw on progressively and pulse for emphasis, a granulated glowing Sun with a camera-facing corona, and caller-supplied body markers placed from ecliptic coordinates. ellipsePoint() returns a position on an orbit by longitude.",
-      "tags": [
-        "orbit",
-        "solar-system",
-        "diagram",
-        "kepler",
-        "trajectory",
-        "flyby",
-        "space",
-        "map"
-      ],
-      "configurable_parameters": [
-        "unitsPerAu",
-        "sunRadius",
-        "addEllipse(id, a, e, periLonDeg, {color, radius, intensity, opacity, segments, startLonDeg})",
-        "addPath(id, points, style)",
-        "setDraw(id, fraction)",
-        "setGlow(id, k, opacity)",
-        "addBody(id, object)",
-        "setBody(id, x, y, visible)",
-        "toWorld(x, y)",
-        "update(time_s, camera)",
-        "ellipsePoint(a, e, periLonDeg, lonDeg)"
-      ],
-      "created_for": "rogue-planet-between-earth-mars",
-      "used_in": [
-        "rogue-planet-between-earth-mars"
-      ],
-      "license": "original_code",
-      "notes": "Rotate `group` to orient the map in a portrait frame. Markers are enlarged for visibility; orbit lines and tracks keep true AU proportions. Pass the camera to update() so the corona faces it."
-    },
-    {
-      "id": "sundial-v1",
-      "name": "Horizontal garden sundial",
-      "type": "three_component",
-      "source_path": "src/library/props/Sundial.ts",
-      "description": "Turned stone pedestal with a bronze horizontal dial: latitude-correct hour lines (tan θ = sin φ · tan H), Roman numerals and a gnomon whose style edge points at the celestial pole, so the renderer's real cast shadow tells solar time.",
-      "tags": [
-        "sundial",
-        "time",
-        "sun",
-        "shadow",
-        "day-length",
-        "latitude",
-        "prop",
-        "garden",
-        "astronomy"
-      ],
-      "configurable_parameters": [
-        "dialRadius",
-        "pedestalHeight",
-        "latitudeDeg",
-        "hoursPerDay",
-        "firstHour",
-        "lastHour",
-        "stoneColor",
-        "metalColor",
-        "seed",
-        "faceY (read-only)",
-        "styleDirection (read-only)",
-        "pbr",
-        "stoneSet"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Local frame: north along −Z, east +X; rotate the group to align north. Static: drive time with the scene's sun direction and enable shadows (gnomon casts, dial receives). Canvas-engraved face with Playfair/Georgia numerals. Studio v2: optional pbr/stoneSet adds photo-scanned stone relief to the pedestal. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "banded-cloud-shell-v1",
-      "name": "Rotation-banded cloud shell",
-      "type": "three_component",
-      "source_path": "src/library/planet/BandedCloudShell.ts",
-      "description": "Transparent planetary cloud layer organised into latitude belts with soft clustered clouds and log-spiral cyclones (counter-clockwise north, clockwise south); belt count and storm size are the knobs for slow versus fast rotation.",
-      "tags": [
-        "clouds",
-        "weather",
-        "storms",
-        "cyclones",
-        "planet",
-        "earth",
-        "exoplanet",
-        "rotation",
-        "coriolis",
-        "illustrative"
-      ],
-      "configurable_parameters": [
-        "radius",
-        "flattening",
-        "bandCount",
-        "stormSize",
-        "stormDensity",
-        "coverage",
-        "color",
-        "shadowColor",
-        "sunDirection",
-        "seed",
-        "spin",
-        "time_s"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Illustrative, not a weather model. Set spin to the planet mesh rotation.y; band shear accumulates with time_s, so pass the time since the layer appeared. Lower the planet's own cloudOpacity underneath. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "horn-coral-v1",
-      "name": "Rugose horn corals",
-      "type": "three_component",
-      "source_path": "src/library/environment/HornCorals.ts",
-      "description": "Instanced solitary rugose (horn) corals of Palaeozoic reefs: curved widening cups with yearly constriction bands, normal-mapped fine growth ridges, radial septa in the calyx and a swaying polyp crown.",
-      "tags": [
-        "coral",
-        "fossil",
-        "devonian",
-        "palaeozoic",
-        "reef",
-        "underwater",
-        "paleontology",
-        "growth-rings",
-        "marine-life"
-      ],
-      "configurable_parameters": [
-        "count",
-        "area",
-        "ground",
-        "reject",
-        "minSize",
-        "maxSize",
-        "bands",
-        "ridgesPerBand",
-        "bodyColor",
-        "polypColor",
-        "seed",
-        "time_s",
-        "items (read-only)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Ridge density is schematic (real daily ridges are about 0.1 mm apart). Seat on Underwater.floorHeight; update(time_s) only sways the crowns. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "bathroom-scale-v1",
-      "name": "Mechanical bathroom scale",
-      "type": "three_component",
-      "source_path": "src/library/props/BathroomScale.ts",
-      "description": "Rounded bathroom scale with a rubber mat, feet and a dial-gauge-v1 face tilted toward its reader; the reading is a plain setter.",
-      "tags": [
-        "scale",
-        "weight",
-        "gravity",
-        "bathroom",
-        "prop",
-        "human",
-        "measurement"
-      ],
-      "configurable_parameters": [
-        "width",
-        "depth",
-        "height",
-        "min",
-        "max",
-        "unit",
-        "marks",
-        "bodyColor",
-        "matColor",
-        "readFrom (user|front)",
-        "value",
-        "topY (read-only)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Origin at floor level; the person on it faces +Z toward the dial. readFrom \"front\" orients the numerals for a camera in front of the scale. A scale shows mass computed from force assuming standard gravity. Studio v2: the dial now sits in a raised housing so the whole bezel clears the platform in close-ups. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "day-cycle-dial-v1",
-      "name": "Day-cycle dial overlay",
-      "type": "overlay_helper",
-      "source_path": "src/library/overlay/DayCycleDial.ts",
-      "description": "2D canvas overlay: a ring of 24 (or any number of) hours split into day/night arcs for a planet of any day length, with a sun at each sunrise, hour ticks, a progress hand and centre labels.",
-      "tags": [
-        "overlay",
-        "day-length",
-        "rotation",
-        "clock",
-        "sunrise",
-        "time-lapse",
-        "diagram",
-        "schematic"
-      ],
-      "configurable_parameters": [
-        "x",
-        "y",
-        "radius",
-        "dayLengthHours",
-        "daylightFraction",
-        "hoursShown",
-        "topHour",
-        "firstSunriseHour",
-        "progress",
-        "alpha",
-        "dayColor",
-        "nightColor",
-        "sunColor",
-        "label",
-        "sublabel"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Pure drawing function drawDayCycleDial(ctx, options); no state. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "physical-sky-v1",
-      "name": "Physical sky with clouds, sun and stars",
-      "type": "three_component",
-      "source_path": "src/library/environment/PhysicalSky.ts",
-      "description": "Preetham-style scattering sky dome with camera-like adaptive exposure, golden-hour colour, extended twilight band, true-size limb-darkened sun, sun-lit self-shadowed 2.5D drifting clouds, night gradient and seeded stars; bakes a PMREM environment for reflections. Optional Milky Way at night (galaxy, galaxyCenter, galaxyAlong) from milky-way-sky-v1.",
-      "tags": [
-        "sky",
-        "atmosphere",
-        "sunrise",
-        "sunset",
-        "twilight",
-        "clouds",
-        "stars",
-        "environment-map",
-        "exterior"
-      ],
-      "configurable_parameters": [
-        "turbidity",
-        "rayleigh",
-        "mieCoefficient",
-        "mieDirectionalG",
-        "goldenSaturation",
-        "goldenExposure",
-        "exposure",
-        "sunIntensity",
-        "sunSize",
-        "cloudCover",
-        "cloudScale",
-        "cloudWind",
-        "cloudColor",
-        "stars",
-        "seed",
-        "nightZenith",
-        "nightHorizon",
-        "setSun(dir)",
-        "update(time_s)",
-        "follow(camera)",
-        "bakeEnvironment(renderer)",
-        "horizonColor()",
-        "zenithColor()",
-        "galaxy",
-        "galaxyCenter",
-        "galaxyAlong"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Call setSun every frame from a computed solar vector, follow(camera) after the camera moves, and re-bake the environment when the Sun has moved a few degrees. Feed horizonColor/zenithColor to OceanSurface and fog so the whole scene shares one sky. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "pbr-materials-v1",
-      "name": "Photo-scanned PBR material library (CC0)",
-      "type": "texture_set",
-      "source_path": "src/library/materials/PBR.ts",
-      "description": "25 photo-scanned Poly Haven material sets (walls, roofs, facades, asphalt, cobbles, sand, turf, rock, gravel, wood, fabrics, leather, bark) as diffuse/normal/ARM maps, served through PBRLibrary.material(id, {tile, tint, roughness, normalScale}) with metre-tiled box-projected UVs (projectUVs).",
-      "tags": [
-        "pbr",
-        "materials",
-        "textures",
-        "photo-scanned",
-        "cc0",
-        "walls",
-        "fabric",
-        "sand",
-        "wood",
-        "stone"
-      ],
-      "configurable_parameters": [
-        "PBRLibrary.load(base, ids)",
-        "material(id)",
-        "tile",
-        "tint",
-        "roughness",
-        "normalScale",
-        "aoIntensity",
-        "metalness",
-        "emissive",
-        "side",
-        "projectUVs(geo, scale, offset)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "CC0 1.0 (Poly Haven textures; provenance lock) + original_code",
-      "notes": "Files in assets/library/textures/pbr/<id>/ fetched by tools/fetch-assets.mjs from assets/library/polyhaven.manifest.json; SHA-256 provenance in assets/library/polyhaven.lock.json. Load only the sets a film uses (one await per film). Tints above 1 (material.color.setRGB) brighten dark albedos, e.g. tropical sand. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "hdri-environments-v1",
-      "name": "HDRI sky environments (CC0)",
-      "type": "texture_set",
-      "source_path": "assets/library/polyhaven.manifest.json",
-      "description": "Five 1k equirectangular HDRIs (partly cloudy noon, sunset, dusk, overcast-bright, night street) for image-based lighting and reflections via loadEnvironment(renderer, base, id).",
-      "tags": [
-        "hdri",
-        "environment",
-        "ibl",
-        "reflections",
-        "night",
-        "sunset",
-        "cc0"
-      ],
-      "configurable_parameters": [
-        "loadEnvironment(renderer, base, id | \"room\")"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "CC0 1.0 (Poly Haven HDRIs; provenance lock)",
-      "notes": "Files in assets/library/hdri/; provenance in assets/library/polyhaven.lock.json. Prefer PhysicalSky.bakeEnvironment when the scene has a moving sun; use HDRIs for static interiors, streets and look development. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "human-figure-v2",
-      "name": "HumanV2 sculpted, skinned people",
-      "type": "three_component",
-      "source_path": "src/library/characters/HumanV2.ts",
-      "description": "Procedurally sculpted, skinned humans: smooth monotone-cubic body/head profiles, faces with lids, irises and brows, ears, hands with fingers, bare feet with toes, 11 hairstyles, tops/bottoms/dresses in photo-scanned fabrics with set-in sleeves, shoes and strappy sandals, glasses and hats; a 17-bone skeleton driven by HumanoidPose (walkPose/idlePose), eyesClosed for sleepers, HumanV2.random(seed) for varied crowds (skin tones, ages, builds, outfits). Skin uses wrap lighting with a warm terminator scatter band (cheap subsurface look); tops drape from the bust and belly instead of shrink-wrapping creases; fabrics tile at real-world scale.",
-      "tags": [
-        "human",
-        "person",
-        "character",
-        "crowd",
-        "walk",
-        "clothing",
-        "skinned",
-        "variety"
-      ],
-      "configurable_parameters": [
-        "height",
-        "sex",
-        "build",
-        "age",
-        "skin",
-        "eyes",
-        "hair.style",
-        "hair.color",
-        "top",
-        "topColor",
-        "bottom",
-        "bottomColor",
-        "shoes",
-        "shoeColor",
-        "glasses",
-        "hat",
-        "hatColor",
-        "beard",
-        "eyesClosed",
-        "pbr",
-        "seed",
-        "setPose(pose)",
-        "HumanV2.random(seed, extra)",
-        "walkPose(phase, amp, base)",
-        "idlePose(t, seed, base)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [
-        "rogue-planet-between-earth-mars"
-      ],
-      "license": "original_procedural",
-      "notes": "Faces +Z, origin at the feet; uses the HumanoidPose type and POSE_STAND from humanoid-figure-v1 (same setPose semantics). Stylised but solid at medium and full-body framing; keep faces at medium distance. Walk phase = t·|v|·4.4 gives a natural stride. Lying sleepers: root.rotation.x = −π/2 and tent the duvet over the upturned feet. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "grass-field-v2",
-      "name": "Lush grass field v2 with wildflowers",
-      "type": "three_component",
-      "source_path": "src/library/environment/LushGrass.ts",
-      "description": "Dense instanced tufts of curved, tapered blades (per-blade lean, curl, height, width) lit by the real scene lights through MeshStandardMaterial (receives sun shadows, lamps, moonlight, sky environment) plus back-lit translucency; per-blade and field-scale colour (lush, bleached, dry straw patches), darker turf base, density highest around a focus point and thinning with distance while far blades widen; optional daisy-like wildflowers on swaying stems; travelling wind gusts.",
-      "tags": [
-        "grass",
-        "meadow",
-        "field",
-        "flowers",
-        "wind",
-        "vegetation",
-        "landscape"
-      ],
-      "configurable_parameters": [
-        "area",
-        "ground(x,z)",
-        "reject(x,z)",
-        "focus",
-        "nearRadius",
-        "falloff",
-        "density",
-        "maxTufts",
-        "blades",
-        "minHeight",
-        "maxHeight",
-        "width",
-        "rootColor",
-        "midColor",
-        "tipColor",
-        "lushColor",
-        "dryColor",
-        "dryness",
-        "patchScale",
-        "translucency",
-        "rootShade",
-        "flowers.count",
-        "flowers.colors",
-        "flowers.size",
-        "seed",
-        "growth",
-        "update(time_s, wind)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Put the focus where the cameras work (130 tufts/m² × 5 blades within ~9 m reads lush); the mesh is excluded from AO/DOF depth passes automatically (userData.noDepthFx). Successor of grass-field-v1 (still available for older films). Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "building-kit-v1",
-      "name": "Building kit with interior-mapped windows",
-      "type": "three_component",
-      "source_path": "src/library/environment/BuildingKit.ts",
-      "description": "Procedural townhouses, apartments, towers, offices, shops and cottages in photo-scanned PBR walls and roofs, with plinths, floor bands, cornices, gables and chimneys, doors with lamps, balconies, shutters, shopfronts with lit signs and awnings, and windows drawn by an anti-aliased interior-mapping shader (rooms with walls, floors, ceiling lamps, furniture, pictures, curtains or blinds, the odd TV glow) plus sky reflections; rooms light up warm or cool at night.",
-      "tags": [
-        "building",
-        "house",
-        "city",
-        "town",
-        "architecture",
-        "windows",
-        "night",
-        "facade"
-      ],
-      "configurable_parameters": [
-        "style",
-        "width",
-        "depth",
-        "floors",
-        "floorHeight",
-        "wall",
-        "wallTint",
-        "trimTint",
-        "roof",
-        "roofSet",
-        "roofTint",
-        "windowsPerFloor",
-        "windowW",
-        "windowH",
-        "balconies",
-        "shutters",
-        "shop.sign",
-        "shop.color",
-        "shop.awning",
-        "litFraction",
-        "seed",
-        "setLight(night, zenith, horizon)",
-        "update(time_s)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Front faces +Z, origin at the footprint centre on the ground. Per-window values reach the fragment shader as flat varyings (hashing an interpolated seed caused per-pixel speckle; fixed). Needs a PBRLibrary with the wall/roof sets loaded. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "city-kit-v1",
-      "name": "City kit: streets, lamps, cars, crowds",
-      "type": "three_component",
-      "source_path": "src/library/environment/CityKit.ts",
-      "description": "CityStreetV2 lays out a street of BuildingKit blocks with asphalt, kerbs, lane markings and crossings, street trees, StreetLamps (soft volumetric cones, light pools, optional real spotlights), clear-coat cars with working head/tail lights, and HumanV2 pedestrians walking both ways — all deterministic. Traffic uses road-vehicles-v1 (CityKit Car extends Vehicle).",
-      "tags": [
-        "city",
-        "street",
-        "traffic",
-        "cars",
-        "pedestrians",
-        "crowd",
-        "street-lamp",
-        "night",
-        "urban"
-      ],
-      "configurable_parameters": [
-        "length",
-        "roadWidth",
-        "sidewalk",
-        "seed",
-        "styles",
-        "floors",
-        "litFraction",
-        "cars",
-        "pedestrians",
-        "trees",
-        "lampSpacing",
-        "pbr",
-        "StreetLamp(height, armDir, color, {light, intensity})",
-        "Car({kind, color, seed})",
-        "setLight(night, zenith, horizon)",
-        "update(time_s)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "StreetLamp {light: true} adds a shadowless SpotLight that stays in the scene at 0 by day (toggling visibility would recompile shaders); use it only for the few lamps near the camera. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "light-beam-v1",
-      "name": "Soft volumetric light beam",
-      "type": "three_component",
-      "source_path": "src/library/fx/LightBeam.ts",
-      "description": "Additive open-cone beam whose brightness falls off toward its silhouette (no hard geometric edges), along its length and near the camera, for lighthouse beams, street-lamp cones, spotlights and searchlights.",
-      "tags": [
-        "light",
-        "beam",
-        "volumetric",
-        "lamp",
-        "lighthouse",
-        "spotlight",
-        "fx",
-        "night"
-      ],
-      "configurable_parameters": [
-        "length",
-        "radius",
-        "color",
-        "intensity",
-        "edge",
-        "falloff",
-        "nearFade",
-        "radialSegments",
-        "level",
-        "beamGeometry()",
-        "beamMaterial()"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Template apex at the origin opening along −Y (rotate the geometry or mesh). Excluded from depth effects automatically. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "lighthouse-v1",
-      "name": "Coastal lighthouse with sweeping beams",
-      "type": "three_component",
-      "source_path": "src/library/environment/Lighthouse.ts",
-      "description": "Tapered banded stone tower, gallery and railing, glazed lantern, keeper's cottage, and at night a glowing lamp with twin rotating soft beams that flare as they sweep across the camera.",
-      "tags": [
-        "lighthouse",
-        "coast",
-        "sea",
-        "night",
-        "beam",
-        "landmark"
-      ],
-      "configurable_parameters": [
-        "height",
-        "bandColor",
-        "rpm",
-        "beamLength",
-        "pbr",
-        "night",
-        "update(time_s, camera)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Pass the camera to update() for the beam flare. Beam angle = time × rpm, deterministic. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "palm-tree-v1",
-      "name": "Coconut palm",
-      "type": "three_component",
-      "source_path": "src/library/environment/PalmTree.ts",
-      "description": "Leaning, curved ringed trunk with photo-scanned bark, a crown of arching pinnate fronds and a coconut cluster; fronds sway deterministically.",
-      "tags": [
-        "palm",
-        "tree",
-        "tropical",
-        "beach",
-        "vegetation",
-        "island"
-      ],
-      "configurable_parameters": [
-        "height",
-        "lean",
-        "leanDir",
-        "fronds",
-        "seed",
-        "leafColor",
-        "pbr",
-        "update(time_s, wind)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Shorter palms (≈5 m) leaning over a low camera frame the sky with fronds. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "beach-set-v1",
-      "name": "Beach set dressing: parasol and towels",
-      "type": "three_component",
-      "source_path": "src/library/props/BeachSet.ts",
-      "description": "Striped beach parasol with scalloped gores sagging between ribs, a scalloped valance and a tilted wooden pole (gentle flutter), and striped towels draped over the sand.",
-      "tags": [
-        "beach",
-        "parasol",
-        "umbrella",
-        "towel",
-        "props",
-        "summer",
-        "holiday"
-      ],
-      "configurable_parameters": [
-        "BeachParasol.radius",
-        "height",
-        "gores",
-        "colors",
-        "tilt",
-        "tiltDir",
-        "update(time_s, wind)",
-        "BeachTowel.width",
-        "length",
-        "colors",
-        "stripes",
-        "ground(x,z)",
-        "position",
-        "yaw",
-        "seed"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Origins on the ground. Towels follow the ground function you pass. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "interior-kit-v1",
-      "name": "Interior dressing kit",
-      "type": "three_component",
-      "source_path": "src/library/environment/InteriorKit.ts",
-      "description": "Pleated curtains on a rod (optional sheer, gentle billow), framed pictures with procedurally painted art (landscape, seascape, abstract, botanical), patterned rugs with fringes (kilim, border, stripes), and a bookshelf filled with varied books.",
-      "tags": [
-        "interior",
-        "room",
-        "curtains",
-        "picture",
-        "art",
-        "rug",
-        "bookshelf",
-        "books",
-        "furniture",
-        "home"
-      ],
-      "configurable_parameters": [
-        "Curtains.width",
-        "height",
-        "color",
-        "openFraction",
-        "pbr",
-        "fabricSet",
-        "sheer",
-        "update(time_s, breeze)",
-        "FramedPicture.width",
-        "height",
-        "art",
-        "frameColor",
-        "mat",
-        "seed",
-        "Rug.width",
-        "length",
-        "colors",
-        "pattern",
-        "seed",
-        "Bookshelf.width",
-        "height",
-        "depth",
-        "shelves",
-        "fill",
-        "seed",
-        "pbr",
-        "woodTint"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Seeded and deterministic; pair with room-box-v1 shells. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "end-card-v1",
-      "name": "End-hook card overlay",
-      "type": "overlay_helper",
-      "source_path": "src/library/overlay/EndCard.ts",
-      "description": "The film's closing question drawn large over the final shot: words rise in one by one (optionally exactly as the voice speaks them), highlight words glow in the accent colour, an accent rule grows beneath and a subline follows; fades before the last frame for clean loops.",
-      "tags": [
-        "end-card",
-        "hook",
-        "outro",
-        "question",
-        "overlay",
-        "typography",
-        "cta"
-      ],
-      "configurable_parameters": [
-        "text",
-        "highlight",
-        "subline",
-        "start",
-        "end",
-        "wordTimes",
-        "x",
-        "y",
-        "maxWidth",
-        "size",
-        "accent",
-        "color",
-        "family"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "src/entry.ts draws it automatically for a storyboard 1.2.0 outro_hook scene with end_card, matches the card to the spoken question and hands over from the captions. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
-    },
-    {
-      "id": "voice-cast-v1",
-      "name": "Voice cast and segment planner",
-      "type": "audio_tool",
-      "source_path": "src/library/audio/cast.mjs",
-      "description": "Default Kokoro voice cast (calm male narrator, warm co-host, character voices) and the rules that turn a storyboard 1.2.0 scene into voiced segments with natural hand-over gaps.",
-      "tags": [
-        "voice",
-        "tts",
-        "kokoro",
-        "narration",
-        "cast",
-        "dialogue"
-      ],
-      "configurable_parameters": [
-        "DEFAULT_CAST",
-        "castOf(story, override)",
-        "sceneSegments(scene, cast)",
-        "SEGMENT_GAP_S"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Used by tools/narrate.mjs; audio.voice_cast in the storyboard overrides voices and speeds. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository. Not wired into the current tools/narrate.mjs (one voice per film; use voice_id blends for a distinct narrator). Kept as the design for a future multi-voice cast."
-    },
-    {
-      "id": "voice-chain-v1",
-      "name": "Voice finishing chain (loudness match, broadcast EQ/de-ess/compression, convolution room)",
-      "type": "audio_tool",
-      "source_path": "src/library/audio/voice.mjs",
-      "description": "Deterministic DSP for synthesized narration, used by tools/narrate.mjs on the whole voice timeline: integratedLoudness() (ITU-R BS.1770-4 K-weighted, gated; within ~0.15 LU of FFmpeg ebur128), levelTo() per-scene loudness matching, voiceChain() (24 dB/oct rumble cut at 72 Hz, -2.2 dB at 290 Hz, +2.4 dB presence at 3.3 kHz, +1 dB air, sibilant-only split-band de-esser, ~4 dB soft-knee compression with 4 ms attack) and addRoom() (FFT overlap-add convolution with a seeded small-room impulse: sparse early reflections and a diffuse tail whose highs decay first). No added latency, so caption timing is unchanged.",
-      "tags": [
-        "voice",
-        "audio",
-        "eq",
-        "compressor",
-        "de-esser",
-        "mix"
-      ],
-      "configurable_parameters": [
-        "VOICE_TARGET_LUFS",
-        "compress({threshold, ratio, knee, attack, release, makeup}, stats)",
-        "deEss({split, threshold, ratio}, stats)",
-        "voiceChain(x, sr, stats)",
-        "addRoom(x, sr, {mix, rt60, predelay, seed})",
-        "convolve(x, h)",
-        "integratedLoudness(x, sr)",
-        "levelTo(x, sr, target, maxDb)"
-      ],
-      "created_for": "earth-six-hour-day",
-      "used_in": [],
-      "license": "original_procedural",
-      "notes": "Thresholds are set for speech leveled to -18 LUFS (levelTo first). narration.json records per-scene measured loudness, gains and the mean de-ess/compression reduction under \"finishing\". A/B samples: build/voice-finish-review/narration-before.wav vs narration-after.wav (local)."
-    },
-    {
-      "id": "quadruped-v1",
-      "name": "Parametric four-legged animals (16 species)",
-      "type": "three_component",
-      "source_path": "src/library/creatures/Quadruped.ts",
-      "description": "One lofted, fur-sheen-shaded generator with presets for dog, shepherd, dalmatian, terrier, cat, horse, zebra, deer, elephant, wolf, fox, bear, sheep, pig, lion and giraffe: painted coats (belly shading, saddles, spots, tabby and zebra stripes, giraffe reticulation, dark points), three-segment legs with hooves or paws, manes, antlers, ossicones, trunk, tusks, wool and snouts. pose(t, {gait}) runs idle breathing, walk (lateral sequence), trot (diagonal pairs) and gallop with a matching speed(gait) for moving the root, plus head look/graze, tail wag and ear flicks.",
-      "tags": [
-        "animal",
-        "quadruped",
-        "dog",
-        "cat",
-        "horse",
-        "zebra",
-        "deer",
-        "elephant",
-        "wolf",
-        "fox",
-        "bear",
-        "sheep",
-        "pig",
-        "lion",
-        "giraffe",
-        "wildlife",
-        "farm",
-        "pet",
-        "gait"
-      ],
-      "configurable_parameters": [
-        "species",
-        "seed",
-        "scale",
-        "coat",
-        "belly",
-        "accent",
-        "antlers",
-        "pose(t, {gait, headYaw, headPitch, graze, tailWag, earFlick, phase})",
-        "speed(gait)",
-        "headWorld()"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Metres, facing +Z, feet on y = 0. Individuals vary slightly by seed. Lookdev: node tools/lookdev.mjs animals. Stylised (lofted, no fur cards); reads best at mid distance."
-    },
-    {
-      "id": "road-vehicles-v1",
-      "name": "Road vehicles: cars, taxi, police, ambulance, van, bus, truck",
-      "type": "three_component",
-      "source_path": "src/library/vehicles/RoadVehicles.ts",
-      "description": "Unbranded procedural vehicles: sedan, hatch, SUV, pickup, taxi, police, ambulance, van, city bus and box truck. Bevelled side-profile bodies with wheel arches, tapered glass greenhouses with painted pillars and roofs, clear-coat paint, lathed tyres with spoked rims, mirrors, door seams, generic plates, head/tail/brake/indicator lamps, taxi sign, police and ambulance livery with flashing light bars.",
-      "tags": [
-        "vehicle",
-        "car",
-        "traffic",
-        "taxi",
-        "police",
-        "ambulance",
-        "bus",
-        "truck",
-        "van",
-        "pickup",
-        "street",
-        "city"
-      ],
-      "configurable_parameters": [
-        "kind",
-        "color",
-        "seed",
-        "plate",
-        "lit",
-        "indicator",
-        "brake",
-        "siren",
-        "update(t, distance)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Length along X, front toward -X, wheels on y = 0; rotate the group for lane direction. CityKit Car extends Vehicle. Lookdev: node tools/lookdev.mjs street."
-    },
-    {
-      "id": "street-furniture-v1",
-      "name": "Street furniture set",
-      "type": "three_component",
-      "source_path": "src/library/props/StreetFurniture.ts",
-      "description": "Generic urban props: traffic signal with a deterministic green/amber/red cycle and pedestrian head, fire hydrant, slatted bench, litter bin, mailbox, bus shelter with a back-lit abstract advert, bollards, traffic cones, parking meter and a manhole cover.",
-      "tags": [
-        "street",
-        "city",
-        "props",
-        "traffic-light",
-        "hydrant",
-        "bench",
-        "bus-stop",
-        "bollard",
-        "cone"
-      ],
-      "configurable_parameters": [
-        "TrafficLight({height, arm}).update(t, force?)",
-        "cycle",
-        "offset",
-        "BusShelter.lit",
-        "FireHydrant(color)",
-        "Bench({length, wood})",
-        "Mailbox(color)",
-        "TrafficCone(height)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Origins at the base, fronts toward +Z."
-    },
-    {
-      "id": "loft-helpers-v1",
-      "name": "Organic loft and limb modeling helpers",
-      "type": "utility",
-      "source_path": "src/library/util/Loft.ts",
-      "description": "loftGeometry() lofts elliptical, smoothly varying cross-sections along a Catmull-Rom spine (optional radial displacement and caps), limbGeometry() makes rounded tapered limbs, paintVertices() writes per-vertex colours from a position/normal function, spotField() gives noise spots.",
-      "tags": [
-        "modeling",
-        "loft",
-        "organic",
-        "helpers"
-      ],
-      "configurable_parameters": [
-        "spine",
-        "rx[]",
-        "ry[]",
-        "radial",
-        "segments",
-        "up",
-        "caps",
-        "displace"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": ""
-    },
-    {
-      "id": "black-hole-sky-v1",
-      "name": "Gravitationally lensing black hole (sky shader)",
-      "type": "shader_component",
-      "source_path": "src/library/space/BlackHole.ts",
-      "description": "Full-sky ray-marched Schwarzschild black hole: each camera ray integrates the photon-orbit equation, so stars are lensed, rays inside the photon sphere fall into a true shadow with a photon ring, and the thin accretion disk appears in front and bent over the top and under the bottom of the hole. Keplerian disk flow with seamless turbulence, Novikov-Thorne-like temperature profile, relativistic Doppler beaming and gravitational redshift; procedural star field, galactic band and nebula.",
-      "tags": [
-        "space",
-        "black-hole",
-        "lensing",
-        "accretion-disk",
-        "relativity",
-        "sky",
-        "interstellar"
-      ],
-      "configurable_parameters": [
-        "position",
-        "rs",
-        "diskInner",
-        "diskOuter",
-        "diskNormal",
-        "diskBrightness",
-        "diskTemperature",
-        "spin",
-        "beaming",
-        "stars",
-        "nebula",
-        "seed",
-        "steps",
-        "update(t)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Use as the stage sky (renderOrder -100, no depth); ships and planets render in front, unlensed. Pair with post.tonemap agx and bloom. About 260 steps per pixel."
-    },
-    {
-      "id": "asteroids-v1",
-      "name": "Asteroids, asteroid fields and comet",
-      "type": "three_component",
-      "source_path": "src/library/space/Asteroids.ts",
-      "description": "rockGeometry() (welded, noise-displaced icosphere with bowl craters and regolith colours), a tumbling hero Asteroid, AsteroidField (thousands of instanced rocks in a Keplerian belt or a drifting box) and Comet (dark nucleus, coma sprite, straight blue ion tail away from the Sun and a broader curved dust tail).",
-      "tags": [
-        "space",
-        "asteroid",
-        "asteroid-belt",
-        "comet",
-        "rock",
-        "debris",
-        "impact"
-      ],
-      "configurable_parameters": [
-        "seed",
-        "detail",
-        "craters",
-        "elongation",
-        "radius",
-        "spin",
-        "count",
-        "shape belt|box",
-        "inner",
-        "outer",
-        "thickness",
-        "drift",
-        "Comet({nucleus, tailLength, activity}).update(t, sunDir)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": ""
-    },
-    {
-      "id": "spacecraft-v1",
-      "name": "Rocket with exhaust plume, satellite, space station",
-      "type": "three_component",
-      "source_path": "src/library/space/Spacecraft.ts",
-      "description": "Generic two-stage Rocket (lathed tanks, fairing, fins, engine bells) with a RocketPlume shader (hot core, Mach shock diamonds, flicker, expansion with altitude), Satellite (gold-foil bus, solar wings, dish, thrusters) and a modular SpaceStation (truss, pressurised modules, radiators, four rotating solar array pairs).",
-      "tags": [
-        "space",
-        "rocket",
-        "launch",
-        "plume",
-        "satellite",
-        "space-station",
-        "orbit"
-      ],
-      "configurable_parameters": [
-        "Rocket({radius, height, engines, livery})",
-        "Rocket.ascent(t)",
-        "update(t, throttle, altitude01)",
-        "Satellite.update(t, wingAngle)",
-        "SpaceStation({scale}).update(t, arrayAngle)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Satellite foil needs scene.environment for reflections. Lookdev: node tools/lookdev.mjs space."
-    },
-    {
-      "id": "nature-kit-v1",
-      "name": "Boulders, rock scatter, shrubs, flowers, cacti",
-      "type": "three_component",
-      "source_path": "src/library/environment/NatureKit.ts",
-      "description": "Weathered Boulder (optional PBR rock_face, moss on top), instanced RockScatter, leafy Shrub with optional blossom, FlowerPatch (instanced daisy, poppy, tulip, lavender and sunflower; stems and heads sway together in model space) and saguaro Cactus.",
-      "tags": [
-        "nature",
-        "rock",
-        "boulder",
-        "shrub",
-        "bush",
-        "flowers",
-        "meadow",
-        "cactus",
-        "desert"
-      ],
-      "configurable_parameters": [
-        "Boulder({size, seed, flatten, color, pbr, mossy})",
-        "RockScatter({area, count, ground, reject})",
-        "Shrub({size, color, flowers}).update(t, wind)",
-        "FlowerPatch({area, kinds, count, ground}).update(t, wind)",
-        "Cactus({height, arms})"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Lookdev: node tools/lookdev.mjs outdoors."
-    },
-    {
-      "id": "energy-kit-v1",
-      "name": "Wind turbines, pylons and power lines",
-      "type": "three_component",
-      "source_path": "src/library/environment/EnergyKit.ts",
-      "description": "WindTurbine (tapered tower, nacelle, spinner, twisted tapering blades turning at rpm, aviation beacon), lattice PowerPylon with insulator strings and PowerLine catenary cables between pylon arms.",
-      "tags": [
-        "energy",
-        "wind-turbine",
-        "wind-farm",
-        "pylon",
-        "power-line",
-        "grid",
-        "infrastructure"
-      ],
-      "configurable_parameters": [
-        "WindTurbine({height, blade, rpm, phase, yaw}).update(t, night)",
-        "PowerPylon({height})",
-        "PowerLine(a, b, {sag, radius})"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": ""
-    },
-    {
-      "id": "insect-swarm-v1",
-      "name": "Butterflies, bees and fireflies",
-      "type": "three_component",
-      "source_path": "src/library/creatures/InsectSwarm.ts",
-      "description": "Instanced insects wandering around a home volume on smooth deterministic paths: butterflies with shader-flapped painted wings (monarch, morpho, cabbage white, swallowtail), striped bees with blurred wings, and blinking firefly glow points.",
-      "tags": [
-        "insect",
-        "butterfly",
-        "bee",
-        "firefly",
-        "meadow",
-        "garden",
-        "night"
-      ],
-      "configurable_parameters": [
-        "kind",
-        "count",
-        "seed",
-        "center",
-        "radius",
-        "height",
-        "size",
-        "patterns",
-        "color",
-        "update(t)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": ""
-    },
-    {
-      "id": "lightning-v1",
-      "name": "Forked lightning with flash",
-      "type": "shader_component",
-      "source_path": "src/library/fx/Lightning.ts",
-      "description": "Seeded fractal cloud-to-ground bolts with forks drawn as camera-facing additive ribbons, a stroke sequence (stepped leader, return stroke, re-strikes) and a flash level for driving lights or sky exposure.",
-      "tags": [
-        "weather",
-        "storm",
-        "lightning",
-        "thunder",
-        "flash"
-      ],
-      "configurable_parameters": [
-        "color",
-        "width",
-        "strike(at_s, from, to, seed)",
-        "update(t)",
-        "flash"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Drive a PointLight (decay 0) with flash x ~6."
-    },
-    {
-      "id": "tornado-v1",
-      "name": "Tornado funnel with debris",
-      "type": "shader_component",
-      "source_path": "src/library/fx/Tornado.ts",
-      "description": "Lathed tornado funnel with rotating, upward-spiralling condensation bands, sinuous meander, sun-lit shading, orbiting instanced debris and a ground dust skirt.",
-      "tags": [
-        "weather",
-        "tornado",
-        "storm",
-        "wind",
-        "debris",
-        "disaster"
-      ],
-      "configurable_parameters": [
-        "height",
-        "base",
-        "top",
-        "sunDirection",
-        "color",
-        "debris",
-        "update(t, density)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": ""
-    },
-    {
-      "id": "explosion-v1",
-      "name": "Explosion fireball, shock shell and dust ring",
-      "type": "shader_component",
-      "source_path": "src/library/fx/Explosion.ts",
-      "description": "Deterministic blast keyed to start_s: cooling, rising incandescent fireball turning to smoke, fast condensation shock shell, ground dust ring and a flash level; radii follow a Sedov-like t^0.4 growth.",
-      "tags": [
-        "explosion",
-        "impact",
-        "blast",
-        "fireball",
-        "shockwave",
-        "disaster"
-      ],
-      "configurable_parameters": [
-        "start_s",
-        "radius",
-        "duration",
-        "shock",
-        "update(t)",
-        "flash"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Use post.tonemap agx so the fireball rolls off instead of clipping."
-    },
-    {
-      "id": "crowd-kit-v1",
-      "name": "Diverse animated crowds (casting, accessories, behaviours)",
-      "type": "three_component",
-      "source_path": "src/library/characters/CrowdKit.ts",
-      "description": "Built on human-figure-v2: diversePerson() casts children, adults and elders across 15 skin tones and eleven hair styles with vibe palettes (everyday, night-out, tourist, business, winter, summer) and accessories (glowing phone, backpack, tote, coffee cup, umbrella, shopping bags, camera). Behaviour poses talk, phone, photo, wave, cheer, beat-locked dance (four styles) and look-up; Crowd runs path walkers with distance-locked strides in both directions plus standing groups facing a target; CrowdImpostors adds hundreds of instanced walking figures for far density.",
-      "tags": [
-        "people",
-        "crowd",
-        "pedestrians",
-        "tourists",
-        "party",
-        "dance",
-        "diversity",
-        "city",
-        "night-life"
-      ],
-      "configurable_parameters": [
-        "diversePerson(seed, {vibe, childShare, elderShare})",
-        "Crowd({walkers:[{path, count, speed, bothWays, phoneShare}], groups:[{center, count, radius, activity, target}], vibe, pbr})",
-        "update(t, night)",
-        "talkPose/phonePose/photoPose/wavePose/cheerPose/dancePose/lookupPose(t, seed)",
-        "CrowdImpostors({lanes, vibe}).update(t)",
-        "attachAccessories(human, accessories, seed)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [
-        "rogue-planet-between-earth-mars"
-      ],
-      "license": "original_code",
-      "notes": "Open walk paths wrap end to start, so keep both ends out of shot (or close the loop). ~80 HumanV2 people plus 300 impostors render comfortably."
-    },
-    {
-      "id": "neon-district-v1",
-      "name": "Times Square-style neon district at night",
-      "type": "three_component",
-      "source_path": "src/library/environment/NeonDistrict.ts",
-      "description": "Entertainment-district avenue: LedScreen billboards (six procedural, unbranded programmes - aurora, pop graphics with headline words, scrolling ticker, concert equaliser and spotlights, kaleidoscope, skyline promo - cycling with wipes, HDR with LED pixel structure up close), NeonSign tubes with buzz and dropouts, Marquee chase lights, glowing red bleacher steps on a plaza island, towers wrapped in screens and tickers, a stacked-screen tower closing the view, keep-right taxi traffic, lamps, signals, steam vents, RectAreaLight spill matched to the big screens and wet asphalt mirroring it through a live cube probe.",
-      "tags": [
-        "city",
-        "times-square",
-        "neon",
-        "billboards",
-        "night",
-        "nightlife",
-        "wet-street",
-        "reflections",
-        "traffic",
-        "urban"
-      ],
-      "configurable_parameters": [
-        "NeonDistrict({pbr, seed, length, traffic, reflections, areaLights, baseEnvironment})",
-        "environment",
-        "update(t, renderer, scene, night, camera)",
-        "LedScreen({width, height, programs, seed, cycle, brightness, pitch, curved}).glow(t)",
-        "NeonSign({text, color, height, script})",
-        "Marquee({width, height})",
-        "glowingSteps()"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Assign scene.environment = district.environment; pass a static baseEnvironment so the probe never samples its own previous frame (order-independent frames). Lookdev: node tools/lookdev.mjs timesquare."
-    },
-    {
-      "id": "nightlife-kit-v1",
-      "name": "String lights, stage beams, LED dance floor, stage",
-      "type": "three_component",
-      "source_path": "src/library/environment/NightlifeKit.ts",
-      "description": "Party dressing: StringLights catenary strands (warm or multicolour bulbs with glow and flicker), StageBeams truss of moving-head volumetric beams with a bpm-synced colour programme, LedDanceFloor tiles playing beat-synced patterns, and a stageDeck with backdrop and DJ table.",
-      "tags": [
-        "party",
-        "nightlife",
-        "rooftop",
-        "concert",
-        "festival",
-        "string-lights",
-        "dance-floor",
-        "stage-lights"
-      ],
-      "configurable_parameters": [
-        "StringLights({anchors, sag, spacing, color, multicolor}).update(t, lit)",
-        "StageBeams({count, span, length, bpm}).update(t, level)",
-        "LedDanceFloor({width, depth, tile, bpm}).update(t)",
-        "stageDeck({width, depth, height})"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [
-        "rogue-planet-between-earth-mars"
-      ],
-      "license": "original_code",
-      "notes": ""
-    },
-    {
-      "id": "fireworks-v1",
-      "name": "GPU fireworks show",
-      "type": "shader_component",
-      "source_path": "src/library/fx/Fireworks.ts",
-      "description": "Deterministic fireworks computed in the vertex shader from absolute time: launch comets, then drag-limited ballistic stars with trails. Shell types peony, chrysanthemum, willow, ring, crossette and palm; Fireworks.show() schedules a seeded show with an optional finale; flash/flashColor for lighting.",
-      "tags": [
-        "fireworks",
-        "celebration",
-        "new-year",
-        "festival",
-        "night",
-        "sky"
-      ],
-      "configurable_parameters": [
-        "new Fireworks(shells, {seed, trail, starSize})",
-        "Fireworks.show({start, end, rate, width, height, seed, finale, types})",
-        "update(t, pixelScale)",
-        "flash",
-        "flashColor"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Start a show before t = 0 (negative start) so bursts are already in the sky in the first frame."
-    },
-    {
-      "id": "milky-way-sky-v1",
-      "name": "Milky Way and deep star field sky",
-      "type": "shader_component",
-      "source_path": "src/library/space/MilkyWay.ts",
-      "description": "HDR night/space sky: five layers of crisp hashed stars (temperature tints, denser in the band), the Milky Way with central bulge, dust lanes and pink/blue nebulae, aimable with center/along. Ground mode adds horizon extinction, airglow, low-altitude twinkle and a light-pollution dome. GLSL_GALAXY is self-contained so other sky shaders can include it (physical-sky-v1 does at night).",
-      "tags": [
-        "sky",
-        "stars",
-        "milky-way",
-        "galaxy",
-        "night",
-        "space",
-        "astronomy",
-        "starry-night"
-      ],
-      "configurable_parameters": [
-        "MilkyWaySky({stars, band, rotation | center + along, seed, ground, lightPollution, pollutionColor})",
-        "update(t, camera, outputHeight)",
-        "GLSL_GALAXY",
-        "galaxyUniforms()",
-        "galaxyBasis(center, along)"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [
-        "rogue-planet-between-earth-mars"
-      ],
-      "license": "original_code",
-      "notes": "Stars are pixel-sized for the output height; pass the camera to update() so they stay sharp when the FOV changes."
-    },
-    {
-      "id": "solar-system-v1",
-      "name": "Sun and planets (cinematic compressed scale)",
-      "type": "three_component",
-      "source_path": "src/library/space/SolarSystem.ts",
-      "description": "Sun with warped granulation, soft intergranular lanes, sunspots, limb darkening and a streaming corona; Mercury, Venus, Earth (NASA textures with its Moon, or a stand-in), Mars, Jupiter (Great Red Spot), Saturn (rings), Uranus (tilted) and Neptune (dark spot) on glowing orbit rings with an asteroid belt; every body is lit from the Sun each frame; orbits follow a visually compressed Kepler law.",
-      "tags": [
-        "space",
-        "solar-system",
-        "sun",
-        "planets",
-        "saturn",
-        "jupiter",
-        "orbits",
-        "astronomy"
-      ],
-      "configurable_parameters": [
-        "SolarSystem({scale, earthTextures, timeScale, orbits, belt})",
-        "update(t, camera)",
-        "planetWorld(name)",
-        "radiusOf(name)",
-        "orbitOpacity",
-        "Sun({radius, brightness})"
-      ],
-      "created_for": "manthan-quality-pass",
-      "used_in": [],
-      "license": "original_code",
-      "notes": "Hide orbit rings for Sun close-ups (they cross the disk). Lookdev: node tools/lookdev.mjs nightsky / showcase."
     }
   ]
 }
