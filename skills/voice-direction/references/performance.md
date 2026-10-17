@@ -33,7 +33,7 @@ The schema supports optional `narration.performance`:
 {"rate": 1.06, "pauses": [{"after_word": 6, "duration_s": 0.30, "mode": "target"}]}
 ```
 
-`rate` is absolute Kokoro speed (0.5-1.2; start near 1 and calibrate from the actual generated cadence). `after_word` is a 1-based token count in the exact text split on whitespace. Place it at a meaningful internal phrase boundary. `duration_s` is the gap after that token (0.05-0.6s); existing silence counts toward it. Default `mode: "minimum"` only extends the gap; `mode: "target"` also removes excessive silence when a sufficiently long continuous quiet region is verified. Indices must be unique and precede another word, with at most 1.2s of requested gaps in one scene.
+`rate` is absolute Kokoro speed (0.5-1.2). Usually leave it unset: `tools/lib/rate-model.mjs` predicts each scene's starting speed from its text (syllables, clause and sentence pauses, digits; about 5 % median error on the studio corpus) and the calibrator measures from there. Converged speeds for am_michael run 0.75–1.2 depending on the text, so a single number per energy is a poor guess. `after_word` is a 1-based token count in the exact text split on whitespace. Place it at a meaningful internal phrase boundary. `duration_s` is the gap after that token (0.05-0.6s); existing silence counts toward it. Default `mode: "minimum"` only extends the gap; `mode: "target"` also removes excessive silence when a sufficiently long continuous quiet region is verified. Indices must be unique and precede another word, with at most 1.2s of requested gaps in one scene.
 
 The tool synthesizes the whole scene to preserve phrasing, then edits only verified quiet boundaries. It writes processed clips separately and regenerates them from original clips on every run. A pause that cannot be placed safely must fail with an actionable message; do not cut a consonant or guess an interpolated boundary. Do not split a normal scene into many tiny TTS utterances just to introduce pauses. First inspect natural gaps: adding a pause to an already hesitant line can make it duller.
 
@@ -44,6 +44,8 @@ Configured rates are starting points. The tool checks actual opening cadence (14
 Calibrate against fresh clips from the same installed engine/model. A cached clip's coarse model label and nominal speed are insufficient evidence of current cadence after engine or model changes. For a rate comparison, generate both rates with the current runner; keep unchanged source clips identical when comparing gap edits.
 
 Keep every spoken word identical to `narration.text`. Preserve exact token order in captions and shift word times with inserted silence. Count pauses in duration; speech must finish within the declared narration end and leave the required scene margin. Correct overruns inside the authorized scope, rather than clipping speech or silently accelerating it. Keep scene timing and final music/mix fixed during a voice-only proof.
+
+Finishing is automatic and timing-neutral: each scene clip is leveled to the same BS.1770 loudness, then the whole timeline gets a rumble cut, presence/air EQ, a sibilant-only de-esser, about 4 dB of soft-knee compression and a seeded small-room convolution (`src/library/audio/voice.mjs`). `narration.json` → `finishing` records the measured loudness and reductions; do not re-master narration elsewhere.
 
 ## Review
 

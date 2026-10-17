@@ -1,6 +1,6 @@
 // Browser entry: loads a storyboard + its narration timings, builds the film and exposes a deterministic
 // frame API on window.__film for tools/render.mjs. Usage: index.html?slug=<slug>&scale=1
-import { FilmPipeline, type FilmDefinition } from './library/render/FilmPipeline';
+import { FilmPipeline, type FilmDefinition, type QualityPreset } from './library/render/FilmPipeline';
 import { KineticCaptions, DEFAULT_CAPTION_STYLE } from './library/captions/KineticCaptions';
 import { drawThumbnailTitle, composeBoldThumbnail, THUMB_FONTS, THUMB_GRADES } from './library/overlay/Thumbnail';
 import type * as THREE from 'three';
@@ -21,6 +21,7 @@ import { createFilm as skyDisappeared } from './stories/sky-disappeared/film';
 import { createFilm as earthWithoutTilt } from './stories/earth-without-tilt/film';
 import { createFilm as ozoneLayerGoneOvernight } from './stories/ozone-layer-gone-overnight/film';
 import { createFilm as earth1000fFiveSeconds } from './stories/earth-1000f-five-seconds/film';
+import { createFilm as roguePlanetBetweenEarthMars } from './stories/rogue-planet-between-earth-mars/film';
 import { createFilm as everyVolcanoErupts } from './stories/every-volcano-erupts-at-once/film';
 import { createFilm as everyoneFartsAtOnce } from './stories/everyone-farts-at-once/film';
 import { createFilm as everyoneSneezesAtOnce } from './stories/everyone-sneezes-at-once/film';
@@ -49,6 +50,7 @@ const FILMS: Record<string, (ctx: { renderer: THREE.WebGLRenderer; base: string 
   'earth-without-tilt': earthWithoutTilt,
   'ozone-layer-gone-overnight': ozoneLayerGoneOvernight,
   'earth-1000f-five-seconds': earth1000fFiveSeconds,
+  'rogue-planet-between-earth-mars': roguePlanetBetweenEarthMars,
   'every-volcano-erupts-at-once': everyVolcanoErupts,
   'everyone-farts-at-once': everyoneFartsAtOnce,
   'everyone-sneezes-at-once': everyoneSneezesAtOnce,
@@ -76,7 +78,9 @@ async function boot() {
     document.fonts.add(await new FontFace(family, `url(${base}assets/library/fonts/display/${file}.woff2)`, { weight: String(weight), style: 'normal' }).load());
   }
   const p = story.project;
-  const pipeline = new FilmPipeline({ width: p.width, height: p.height, fps: p.fps, duration_s: p.duration_s, scenes: story.scenes, scale });
+  // Quality preset: storyboard delivery.render_quality (default standard); tools/render.mjs --quality overrides it for reviews.
+  const quality = (q.get('quality') || story.delivery?.render_quality || 'standard') as QualityPreset;
+  const pipeline = new FilmPipeline({ width: p.width, height: p.height, fps: p.fps, duration_s: p.duration_s, scenes: story.scenes, scale, quality });
   const film = await FILMS[slug]({ renderer: pipeline.renderer, base });
   const cap = story.captions, safe = cap.safe_area;
   const captionAccent = cap.active_word_treatment?.match(/#[0-9a-fA-F]{6}/)?.[0];
@@ -89,7 +93,7 @@ async function boot() {
   const gl = pipeline.renderer.getContext(), dbg = gl.getExtension('WEBGL_debug_renderer_info');
   document.body.appendChild(pipeline.out);
   return {
-    frames: p.duration_s * p.fps, fps: p.fps,
+    frames: p.duration_s * p.fps, fps: p.fps, quality,
     gpu: dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : 'unknown',
     /** Render frame i and return it as a data URL. */
     renderFrame(i: number, mime = 'image/jpeg', quality = 0.95, opts: { overlay?: boolean; captions?: boolean } = {}): string { return pipeline.renderFrame(i, opts).toDataURL(mime, quality); },
@@ -107,5 +111,5 @@ async function boot() {
   };
 }
 
-(window as any).__filmReady = boot().then((api) => { (window as any).__film = api; return { frames: api.frames, fps: api.fps, gpu: api.gpu }; })
+(window as any).__filmReady = boot().then((api) => { (window as any).__film = api; return { frames: api.frames, fps: api.fps, gpu: api.gpu, quality: api.quality }; })
   .catch((e) => { (window as any).__filmError = String(e?.stack ?? e); throw e; });

@@ -79,6 +79,7 @@ export class DialGauge {
     if (o.title) { g.font = `600 40px ${o.fontFamily}`; g.fillText(o.title, 0, -168); }
     const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 16;
     const face = new THREE.Mesh(new THREE.CircleGeometry(R, 96), new THREE.MeshStandardMaterial({ map: tex, roughness: 0.65, metalness: 0 }));
+    face.position.z = R * 0.004;   // just proud of the case cap at z = 0 (coplanar faces z-fight in close-ups)
     face.receiveShadow = true; this.group.add(face);
 
     // Tapered needle with a counterweight tail; hub cap.
