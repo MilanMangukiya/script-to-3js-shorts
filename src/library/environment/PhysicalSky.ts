@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { Starfield } from '../space/Starfield';
+import { GLSL_GALAXY, galaxyUniforms } from '../space/MilkyWay';
 
 /**
  * Physically based sky dome: Preetham/Rayleigh–Mie scattering (after three.js examples/objects/Sky, MIT) re-expressed
@@ -16,6 +17,8 @@ export interface PhysicalSkyOptions {
   exposure?: number; sunIntensity?: number; sunSize?: number;
   /** Clouds: 0 = clear … 1 = overcast; scale (m per noise unit at the cloud plane); wind (m/s on the plane). */
   cloudCover?: number; cloudScale?: number; cloudWind?: [number, number]; cloudColor?: THREE.ColorRepresentation;
+  /** Milky Way brightness at night (0 = off, the default) and its aim (see milky-way-sky-v1). */
+  galaxy?: number; galaxyCenter?: THREE.Vector3; galaxyAlong?: THREE.Vector3;
   /** Stars (count; 0 = none) and seed; night zenith/horizon colours. */
   stars?: number; seed?: number; nightZenith?: THREE.ColorRepresentation; nightHorizon?: THREE.ColorRepresentation;
 }
@@ -23,7 +26,8 @@ export interface PhysicalSkyOptions {
 const VS = /* glsl */ `varying vec3 vDir; void main(){ vDir = position; vec4 p = modelViewMatrix*vec4(position, 0.0); gl_Position = projectionMatrix*vec4(p.xyz, 1.0); gl_Position.z = gl_Position.w; }`;
 const FS = /* glsl */ `
   uniform vec3 uSun; uniform float uTurb, uRay, uMie, uMieG, uExposure, uSunI, uSunSize, uCover, uScale, uTime; uniform vec2 uWind;
-  uniform vec3 uCloud, uNightZ, uNightH; uniform float uGoldSat, uGoldEx; varying vec3 vDir;
+  uniform vec3 uCloud, uNightZ, uNightH; uniform float uGoldSat, uGoldEx, uGalaxy, uGalPx; varying vec3 vDir;
+  ${GLSL_GALAXY}
   const float PI = 3.141592653589793;
   const vec3 lambda = vec3(680E-9, 550E-9, 450E-9), totalRayleigh = vec3(5.804542996261093E-6, 1.3562911419845635E-5, 3.0265902468824876E-5);
   const vec3 MieConst = vec3(1.8399918514433978E14, 2.7798023919660528E14, 4.0790479543861094E14);
@@ -57,6 +61,7 @@ const FS = /* glsl */ `
     vec3 twi = mix(vec3(0.9, 0.42, 0.22), vec3(0.32, 0.22, 0.42), clamp(d.y * 2.5, 0.0, 1.0)) * toward * exp(-max(d.y, 0.0) * 6.0) * 0.55;
     float nightK = smoothstep(0.02, -0.25, alt);
     vec3 col = sky * (1.0 - nightK * 0.96) + night * nightK + twi * tw;
+    if (uGalaxy > 0.0 && d.y > 0.0) col += galaxy(d, uGalPx) * uGalaxy * smoothstep(-0.08, -0.26, alt) * exp(-0.12 / (d.y + 0.02));   // Milky Way after astronomical twilight, dimmed by extinction near the horizon
     // Sun disc: true size, limb darkening, extinction toward the horizon.
     float ang = acos(clamp(dot(d, sun), -1.0, 1.0));
     float disc = smoothstep(uSunSize * 1.08, uSunSize * 0.92, ang), limb = 0.6 + 0.4 * sqrt(max(0.0, 1.0 - pow(ang / uSunSize, 2.0)));
@@ -90,6 +95,7 @@ export class PhysicalSky {
       uSun: { value: new THREE.Vector3(0, 1, 0) }, uTurb: { value: o.turbidity ?? 2.5 }, uRay: { value: o.rayleigh ?? 1.6 }, uMie: { value: o.mieCoefficient ?? 0.005 },
       uMieG: { value: o.mieDirectionalG ?? 0.8 }, uGoldSat: { value: o.goldenSaturation ?? 0.5 }, uGoldEx: { value: o.goldenExposure ?? 0.8 }, uExposure: { value: o.exposure ?? 0.55 }, uSunI: { value: o.sunIntensity ?? 40 }, uSunSize: { value: o.sunSize ?? 0.00465 },
       uCover: { value: o.cloudCover ?? 0.35 }, uScale: { value: o.cloudScale ?? 900 }, uWind: { value: new THREE.Vector2(...(o.cloudWind ?? [6, 2])) }, uTime: { value: 0 },
+      ...galaxyUniforms({ center: o.galaxyCenter, along: o.galaxyAlong }), uGalaxy: { value: o.galaxy ?? 0 }, uGalPx: { value: 0.0006 },
       uCloud: { value: new THREE.Color(o.cloudColor ?? 0xe9edf2) }, uNightZ: { value: new THREE.Color(o.nightZenith ?? 0x020511) }, uNightH: { value: new THREE.Color(o.nightHorizon ?? 0x0b1226) },
     };
     this.mesh = new THREE.Mesh(new THREE.SphereGeometry(1, 64, 32), new THREE.ShaderMaterial({ vertexShader: VS, fragmentShader: FS, uniforms: this.uniforms, side: THREE.BackSide, depthWrite: false, depthTest: false, fog: false }));
@@ -101,7 +107,10 @@ export class PhysicalSky {
   set cloudCover(v: number) { this.uniforms.uCover.value = v; }
   /** Add the dome (and stars) to a scene. */
   addTo(scene: THREE.Scene) { scene.add(this.mesh); if (this.stars) scene.add(this.stars.points); return this; }
-  follow(camera: THREE.Camera) { this.mesh.position.copy(camera.position); this.stars?.follow(camera); }
+  follow(camera: THREE.Camera) {
+    this.mesh.position.copy(camera.position); this.stars?.follow(camera);
+    if (camera instanceof THREE.PerspectiveCamera) this.uniforms.uGalPx.value = THREE.MathUtils.degToRad(camera.fov) / 1920 * 0.9;   // keep Milky Way stars pixel-sharp
+  }
   update(time_s: number) { this.uniforms.uTime.value = time_s; }
   /** Approximate linear sky colour near the horizon facing the sun (for fog/water), and at the zenith. */
   horizonColor(out = new THREE.Color()) { const a = this.sun.y, day = THREE.MathUtils.smoothstep(a, -0.08, 0.25), warm = 1 - THREE.MathUtils.smoothstep(a, 0.02, 0.3);

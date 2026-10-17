@@ -1,17 +1,20 @@
 import * as THREE from 'three';
-import { GLSL_NOISE } from '../util/glsl';
 
 /**
  * milky-way-sky-v1 — a deep, dense night/space sky in HDR: five layers of crisp hashed stars (tinted by temperature,
  * far more numerous inside the galactic band), the Milky Way itself (a bright central bulge, a long luminous band,
  * dark dust lanes, pink H-alpha and blue reflection nebulae) and faint zodiacal glow. `GLSL_GALAXY` exposes the same
- * `galaxy(dir)` function to other sky shaders (PhysicalSky uses it at night). `MilkyWaySky` is a camera-following dome
+ * `galaxy(dir, pixelAngle)` function to other sky shaders (self-contained noise; PhysicalSky uses it at night). `MilkyWaySky` is a camera-following dome
  * for space shots or, with `ground: true`, for a terrestrial night sky with horizon extinction, airglow and an
  * optional light-pollution dome. Deterministic; `update(t)` only drives a subtle twinkle near the horizon.
  */
 export const GLSL_GALAXY = /* glsl */ `
   uniform mat3 uGalRot; uniform float uGalStars, uGalBand, uGalSeed;
   float gHash(vec3 p){ p = fract(p * 0.1031 + uGalSeed * 0.013); p += dot(p, p.zyx + 31.32); return fract((p.x + p.y) * p.z); }
+  float gV3(vec3 p){ vec3 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);
+    return mix(mix(mix(gHash(i), gHash(i + vec3(1, 0, 0)), f.x), mix(gHash(i + vec3(0, 1, 0)), gHash(i + vec3(1, 1, 0)), f.x), f.y),
+               mix(mix(gHash(i + vec3(0, 0, 1)), gHash(i + vec3(1, 0, 1)), f.x), mix(gHash(i + vec3(0, 1, 1)), gHash(i + vec3(1, 1, 1)), f.x), f.y), f.z); }
+  float gFbm(vec3 p){ float a = 0.5, s = 0.0; for (int i = 0; i < 4; i++){ s += a * gV3(p); p = p * 2.03 + vec3(17.1, 9.2, 5.3); a *= 0.5; } return s; }
   vec3 gStars(vec3 d, float bandK, float px){
     vec3 col = vec3(0.0);
     for (int k = 0; k < 5; k++) {
@@ -36,14 +39,14 @@ export const GLSL_GALAXY = /* glsl */ `
     float width = 0.13 + 0.12 * pow(toward, 3.0);
     float band = exp(-pow(lat / width, 2.0)) * (0.35 + 0.65 * pow(toward, 1.5));
     float bulge = exp(-(pow(lat / 0.16, 2.0) + pow(lon / 0.35, 2.0))) * 1.6;
-    float n1 = fbm3(d * 4.0 + uGalSeed), n2 = fbm3(d * 11.0 - uGalSeed * 2.0), n3 = fbm3(d * 26.0 + 3.0);
+    float n1 = gFbm(d * 4.0 + uGalSeed), n2 = gFbm(d * 11.0 - uGalSeed * 2.0), n3 = gFbm(d * 26.0 + 3.0);
     float glow = (band * (0.55 + 0.7 * n1) + bulge) * (0.7 + 0.5 * n2);
     // Dust lanes: dark filaments hugging the plane, strongest toward the centre.
-    float dust = smoothstep(0.42, 0.72, fbm3(d * vec3(7.0, 22.0, 7.0) + 1.7) * 0.7 + n3 * 0.3) * exp(-pow(lat / (width * 0.45), 2.0));
+    float dust = smoothstep(0.42, 0.72, gFbm(d * vec3(7.0, 22.0, 7.0) + 1.7) * 0.7 + n3 * 0.3) * exp(-pow(lat / (width * 0.45), 2.0));
     glow *= 1.0 - 0.85 * dust;
     vec3 col = glow * mix(vec3(0.62, 0.66, 0.85), vec3(1.0, 0.86, 0.68), smoothstep(0.2, 1.4, bulge + band * toward)) * 0.11 * uGalBand;
     // Emission (H-alpha pink) and reflection (blue) nebulae scattered along the band.
-    float em = smoothstep(0.62, 0.85, fbm3(d * 9.0 + 7.3)) * band, rf = smoothstep(0.66, 0.9, fbm3(d * 13.0 - 4.1)) * band * 0.7;
+    float em = smoothstep(0.62, 0.85, gFbm(d * 9.0 + 7.3)) * band, rf = smoothstep(0.66, 0.9, gFbm(d * 13.0 - 4.1)) * band * 0.7;
     col += (vec3(0.95, 0.25, 0.45) * em * 0.09 + vec3(0.25, 0.45, 1.0) * rf * 0.07) * uGalBand * (1.0 - 0.6 * dust);
     col += gStars(dir, band + bulge * 0.5, px);
     return col;
@@ -60,7 +63,6 @@ export interface MilkyWayOptions {
 const VS = /* glsl */ `varying vec3 vDir; void main(){ vDir = position; vec4 p = projectionMatrix * viewMatrix * vec4(cameraPosition + position, 1.0); gl_Position = p.xyww; }`;
 const FS = /* glsl */ `
   uniform float uGround, uPollution, uTime, uPx; uniform vec3 uPollColor; varying vec3 vDir;
-  ${GLSL_NOISE}
   ${GLSL_GALAXY}
   void main(){
     vec3 d = normalize(vDir);

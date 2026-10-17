@@ -3972,7 +3972,7 @@
       "name": "Physical sky with clouds, sun and stars",
       "type": "three_component",
       "source_path": "src/library/environment/PhysicalSky.ts",
-      "description": "Preetham-style scattering sky dome with camera-like adaptive exposure, golden-hour colour, extended twilight band, true-size limb-darkened sun, sun-lit self-shadowed 2.5D drifting clouds, night gradient and seeded stars; bakes a PMREM environment for reflections.",
+      "description": "Preetham-style scattering sky dome with camera-like adaptive exposure, golden-hour colour, extended twilight band, true-size limb-darkened sun, sun-lit self-shadowed 2.5D drifting clouds, night gradient and seeded stars; bakes a PMREM environment for reflections. Optional Milky Way at night (galaxy, galaxyCenter, galaxyAlong) from milky-way-sky-v1.",
       "tags": [
         "sky",
         "atmosphere",
@@ -4007,7 +4007,10 @@
         "follow(camera)",
         "bakeEnvironment(renderer)",
         "horizonColor()",
-        "zenithColor()"
+        "zenithColor()",
+        "galaxy",
+        "galaxyCenter",
+        "galaxyAlong"
       ],
       "created_for": "earth-six-hour-day",
       "used_in": [],
@@ -4927,6 +4930,177 @@
       "used_in": [],
       "license": "original_code",
       "notes": "Use post.tonemap agx so the fireball rolls off instead of clipping."
+    },
+    {
+      "id": "crowd-kit-v1",
+      "name": "Diverse animated crowds (casting, accessories, behaviours)",
+      "type": "three_component",
+      "source_path": "src/library/characters/CrowdKit.ts",
+      "description": "Built on human-figure-v2: diversePerson() casts children, adults and elders across 15 skin tones and eleven hair styles with vibe palettes (everyday, night-out, tourist, business, winter, summer) and accessories (glowing phone, backpack, tote, coffee cup, umbrella, shopping bags, camera). Behaviour poses talk, phone, photo, wave, cheer, beat-locked dance (four styles) and look-up; Crowd runs path walkers with distance-locked strides in both directions plus standing groups facing a target; CrowdImpostors adds hundreds of instanced walking figures for far density.",
+      "tags": [
+        "people",
+        "crowd",
+        "pedestrians",
+        "tourists",
+        "party",
+        "dance",
+        "diversity",
+        "city",
+        "night-life"
+      ],
+      "configurable_parameters": [
+        "diversePerson(seed, {vibe, childShare, elderShare})",
+        "Crowd({walkers:[{path, count, speed, bothWays, phoneShare}], groups:[{center, count, radius, activity, target}], vibe, pbr})",
+        "update(t, night)",
+        "talkPose/phonePose/photoPose/wavePose/cheerPose/dancePose/lookupPose(t, seed)",
+        "CrowdImpostors({lanes, vibe}).update(t)"
+      ],
+      "created_for": "manthan-quality-pass",
+      "used_in": [],
+      "license": "original_code",
+      "notes": "Open walk paths wrap end to start, so keep both ends out of shot (or close the loop). ~80 HumanV2 people plus 300 impostors render comfortably."
+    },
+    {
+      "id": "neon-district-v1",
+      "name": "Times Square-style neon district at night",
+      "type": "three_component",
+      "source_path": "src/library/environment/NeonDistrict.ts",
+      "description": "Entertainment-district avenue: LedScreen billboards (six procedural, unbranded programmes - aurora, pop graphics with headline words, scrolling ticker, concert equaliser and spotlights, kaleidoscope, skyline promo - cycling with wipes, HDR with LED pixel structure up close), NeonSign tubes with buzz and dropouts, Marquee chase lights, glowing red bleacher steps on a plaza island, towers wrapped in screens and tickers, a stacked-screen tower closing the view, keep-right taxi traffic, lamps, signals, steam vents, RectAreaLight spill matched to the big screens and wet asphalt mirroring it through a live cube probe.",
+      "tags": [
+        "city",
+        "times-square",
+        "neon",
+        "billboards",
+        "night",
+        "nightlife",
+        "wet-street",
+        "reflections",
+        "traffic",
+        "urban"
+      ],
+      "configurable_parameters": [
+        "NeonDistrict({pbr, seed, length, traffic, reflections, areaLights, baseEnvironment})",
+        "environment",
+        "update(t, renderer, scene, night, camera)",
+        "LedScreen({width, height, programs, seed, cycle, brightness, pitch, curved}).glow(t)",
+        "NeonSign({text, color, height, script})",
+        "Marquee({width, height})",
+        "glowingSteps()"
+      ],
+      "created_for": "manthan-quality-pass",
+      "used_in": [],
+      "license": "original_code",
+      "notes": "Assign scene.environment = district.environment; pass a static baseEnvironment so the probe never samples its own previous frame (order-independent frames). Lookdev: node tools/lookdev.mjs timesquare."
+    },
+    {
+      "id": "nightlife-kit-v1",
+      "name": "String lights, stage beams, LED dance floor, stage",
+      "type": "three_component",
+      "source_path": "src/library/environment/NightlifeKit.ts",
+      "description": "Party dressing: StringLights catenary strands (warm or multicolour bulbs with glow and flicker), StageBeams truss of moving-head volumetric beams with a bpm-synced colour programme, LedDanceFloor tiles playing beat-synced patterns, and a stageDeck with backdrop and DJ table.",
+      "tags": [
+        "party",
+        "nightlife",
+        "rooftop",
+        "concert",
+        "festival",
+        "string-lights",
+        "dance-floor",
+        "stage-lights"
+      ],
+      "configurable_parameters": [
+        "StringLights({anchors, sag, spacing, color, multicolor}).update(t, lit)",
+        "StageBeams({count, span, length, bpm}).update(t, level)",
+        "LedDanceFloor({width, depth, tile, bpm}).update(t)",
+        "stageDeck({width, depth, height})"
+      ],
+      "created_for": "manthan-quality-pass",
+      "used_in": [],
+      "license": "original_code",
+      "notes": ""
+    },
+    {
+      "id": "fireworks-v1",
+      "name": "GPU fireworks show",
+      "type": "shader_component",
+      "source_path": "src/library/fx/Fireworks.ts",
+      "description": "Deterministic fireworks computed in the vertex shader from absolute time: launch comets, then drag-limited ballistic stars with trails. Shell types peony, chrysanthemum, willow, ring, crossette and palm; Fireworks.show() schedules a seeded show with an optional finale; flash/flashColor for lighting.",
+      "tags": [
+        "fireworks",
+        "celebration",
+        "new-year",
+        "festival",
+        "night",
+        "sky"
+      ],
+      "configurable_parameters": [
+        "new Fireworks(shells, {seed, trail, starSize})",
+        "Fireworks.show({start, end, rate, width, height, seed, finale, types})",
+        "update(t, pixelScale)",
+        "flash",
+        "flashColor"
+      ],
+      "created_for": "manthan-quality-pass",
+      "used_in": [],
+      "license": "original_code",
+      "notes": "Start a show before t = 0 (negative start) so bursts are already in the sky in the first frame."
+    },
+    {
+      "id": "milky-way-sky-v1",
+      "name": "Milky Way and deep star field sky",
+      "type": "shader_component",
+      "source_path": "src/library/space/MilkyWay.ts",
+      "description": "HDR night/space sky: five layers of crisp hashed stars (temperature tints, denser in the band), the Milky Way with central bulge, dust lanes and pink/blue nebulae, aimable with center/along. Ground mode adds horizon extinction, airglow, low-altitude twinkle and a light-pollution dome. GLSL_GALAXY is self-contained so other sky shaders can include it (physical-sky-v1 does at night).",
+      "tags": [
+        "sky",
+        "stars",
+        "milky-way",
+        "galaxy",
+        "night",
+        "space",
+        "astronomy",
+        "starry-night"
+      ],
+      "configurable_parameters": [
+        "MilkyWaySky({stars, band, rotation | center + along, seed, ground, lightPollution, pollutionColor})",
+        "update(t, camera, outputHeight)",
+        "GLSL_GALAXY",
+        "galaxyUniforms()",
+        "galaxyBasis(center, along)"
+      ],
+      "created_for": "manthan-quality-pass",
+      "used_in": [],
+      "license": "original_code",
+      "notes": "Stars are pixel-sized for the output height; pass the camera to update() so they stay sharp when the FOV changes."
+    },
+    {
+      "id": "solar-system-v1",
+      "name": "Sun and planets (cinematic compressed scale)",
+      "type": "three_component",
+      "source_path": "src/library/space/SolarSystem.ts",
+      "description": "Sun with warped granulation, soft intergranular lanes, sunspots, limb darkening and a streaming corona; Mercury, Venus, Earth (NASA textures with its Moon, or a stand-in), Mars, Jupiter (Great Red Spot), Saturn (rings), Uranus (tilted) and Neptune (dark spot) on glowing orbit rings with an asteroid belt; every body is lit from the Sun each frame; orbits follow a visually compressed Kepler law.",
+      "tags": [
+        "space",
+        "solar-system",
+        "sun",
+        "planets",
+        "saturn",
+        "jupiter",
+        "orbits",
+        "astronomy"
+      ],
+      "configurable_parameters": [
+        "SolarSystem({scale, earthTextures, timeScale, orbits, belt})",
+        "update(t, camera)",
+        "planetWorld(name)",
+        "radiusOf(name)",
+        "orbitOpacity",
+        "Sun({radius, brightness})"
+      ],
+      "created_for": "manthan-quality-pass",
+      "used_in": [],
+      "license": "original_code",
+      "notes": "Hide orbit rings for Sun close-ups (they cross the disk). Lookdev: node tools/lookdev.mjs nightsky / showcase."
     }
   ]
 }

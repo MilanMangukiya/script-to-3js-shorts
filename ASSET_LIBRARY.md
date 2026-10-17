@@ -37,6 +37,7 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 | `cooking-pot-v1` | Cooking pot with boiling water | `src/library/props/CookingPot.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `coral-mounds-v1` | Procedural coral heads | `src/library/environment/CoralMounds.ts` | `continents-one-landmass` | `continents-one-landmass` | original_procedural |
 | `crowd-field-v1` | Crowd Field | `src/library/characters/CrowdField.ts` | `every-human-jumped-at-once` | `every-human-jumped-at-once` | original_procedural |
+| `crowd-kit-v1` | Diverse animated crowds (casting, accessories, behaviours) | `src/library/characters/CrowdKit.ts` | `manthan-quality-pass` |  | original_code |
 | `dairy-cow-v1` | Procedural dairy cow | `src/library/characters/Cow.ts` | `everyone-farts-at-once` | `everyone-farts-at-once` | original_code |
 | `day-cycle-dial-v1` | Day-cycle dial overlay | `src/library/overlay/DayCycleDial.ts` | `earth-six-hour-day` |  | original_procedural |
 | `dial-gauge-v1` | Analog dial gauge | `src/library/props/DialGauge.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `continents-one-landmass`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `moon-made-of-ice`, `ozone-layer-gone-overnight`, `rain-nonstop-everywhere` | original_procedural |
@@ -51,6 +52,7 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 | `eruption-column-v1` | Eruption column, umbrella cloud and pyroclastic flow | `src/library/fx/AshCloud.ts` | `every-volcano-erupts-at-once` | `every-volcano-erupts-at-once`, `everyone-farts-at-once` | original_code |
 | `explosion-v1` | Explosion fireball, shock shell and dust ring | `src/library/fx/Explosion.ts` | `manthan-quality-pass` |  | original_code |
 | `film-pipeline-v1` | Deterministic film render pipeline | `src/library/render/FilmPipeline.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-1000f-five-seconds`, `earth-core-solid`, `earth-ten-percent-closer`, `earth-without-tilt`, `every-human-jumped-at-once`, `every-volcano-erupts-at-once`, `everyone-farts-at-once`, `ice-sank-instead-of-floating`, `last-man-alive`, `last-woman-alive`, `moon-made-of-ice`, `mountain-grew-100-km-tall`, `oxygen-gone-five-seconds`, `ozone-layer-gone-overnight`, `rain-nonstop-everywhere`, `rogue-planet-between-earth-mars`, `sky-disappeared`, `social-media-gone-five-seconds`, `sun-locked-earth`, `what-if-every-man-disappeared` | original_code |
+| `fireworks-v1` | GPU fireworks show | `src/library/fx/Fireworks.ts` | `manthan-quality-pass` |  | original_code |
 | `fish-school-v1` | Instanced fish school | `src/library/creatures/FishSchool.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `ice-sank-instead-of-floating`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
 | `flame-v1` | Procedural flame billboard | `src/library/fx/Flame.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `earth-1000f-five-seconds`, `earth-without-tilt`, `oxygen-gone-five-seconds`, `what-if-every-man-disappeared` | original_procedural |
 | `font-display-set-v1` | Display fonts for thumbnails | `assets/library/fonts/display/FONTS.md` | `rain-nonstop-everywhere` | `continents-one-landmass`, `earth-1000f-five-seconds`, `earth-core-solid`, `earth-ten-percent-closer`, `earth-without-tilt`, `every-human-jumped-at-once`, `every-volcano-erupts-at-once`, `everyone-farts-at-once`, `last-man-alive`, `last-woman-alive`, `moon-made-of-ice`, `mountain-grew-100-km-tall`, `ozone-layer-gone-overnight`, `rain-nonstop-everywhere`, `rogue-planet-between-earth-mars`, `sky-disappeared`, `social-media-gone-five-seconds`, `sun-locked-earth` | SIL Open Font License 1.1 |
@@ -76,10 +78,13 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 | `loft-helpers-v1` | Organic loft and limb modeling helpers | `src/library/util/Loft.ts` | `manthan-quality-pass` |  | original_code |
 | `magnetic-field-lines-v1` | Dipole magnetic field lines | `src/library/space/MagneticFieldLines.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
 | `meteor-streaks-v1` | Meteor streaks with ionisation trains | `src/library/fx/MeteorStreaks.ts` | `mountain-grew-100-km-tall` | `mountain-grew-100-km-tall` | original_procedural |
+| `milky-way-sky-v1` | Milky Way and deep star field sky | `src/library/space/MilkyWay.ts` | `manthan-quality-pass` |  | original_code |
 | `modeling-helpers-v1` | Procedural modeling helpers | `src/library/util/Modeling.ts` | `what-if-every-man-disappeared` | `earth-1000f-five-seconds`, `earth-ten-percent-closer`, `earth-without-tilt`, `every-human-jumped-at-once`, `every-volcano-erupts-at-once`, `everyone-farts-at-once`, `last-man-alive`, `last-woman-alive`, `ozone-layer-gone-overnight`, `rogue-planet-between-earth-mars`, `sky-disappeared`, `social-media-gone-five-seconds`, `sun-locked-earth`, `what-if-every-man-disappeared` | original_procedural |
 | `moon-body-v1` | Procedural rocky and icy Moon | `src/library/planet/Moon.ts` | `moon-made-of-ice` | `moon-made-of-ice`, `rogue-planet-between-earth-mars` | original_procedural |
 | `nature-kit-v1` | Boulders, rock scatter, shrubs, flowers, cacti | `src/library/environment/NatureKit.ts` | `manthan-quality-pass` |  | original_code |
+| `neon-district-v1` | Times Square-style neon district at night | `src/library/environment/NeonDistrict.ts` | `manthan-quality-pass` |  | original_code |
 | `newborn-hand-v1` | Articulated newborn hand | `src/library/characters/NewbornHand.ts` | `what-if-every-man-disappeared` | `last-man-alive`, `last-woman-alive`, `what-if-every-man-disappeared` | original_procedural |
+| `nightlife-kit-v1` | String lights, stage beams, LED dance floor, stage | `src/library/environment/NightlifeKit.ts` | `manthan-quality-pass` |  | original_code |
 | `ocean-cross-section-v1` | Deep ocean cross-section | `src/library/diagram/OceanCrossSection.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
 | `ocean-surface-v1` | Open-water ocean surface | `src/library/environment/OceanSurface.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `earth-without-tilt`, `ice-sank-instead-of-floating`, `last-man-alive`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `rogue-planet-between-earth-mars`, `sky-disappeared`, `what-if-every-man-disappeared` | original_procedural |
 | `orbit-map-v1` | Top-down orbit map with progressive trajectories | `src/library/diagram/OrbitMap.ts` | `rogue-planet-between-earth-mars` | `rogue-planet-between-earth-mars` | original_code |
@@ -113,6 +118,7 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 | `snowfall-v1` | Wrapped particle fall (snow or sinking crystals) | `src/library/fx/Snowfall.ts` | `ice-sank-instead-of-floating` | `air-pressure-doubled`, `every-volcano-erupts-at-once`, `ice-sank-instead-of-floating`, `rain-nonstop-everywhere`, `rogue-planet-between-earth-mars` | original_procedural |
 | `solar-orbit-diagram-v1` | Solar orbital geometry and Kepler race | `src/library/diagram/SolarOrbitDiagram.ts` | `earth-ten-percent-closer` | `earth-ten-percent-closer` | original_procedural |
 | `solar-panel-array-v1` | Ground-mounted solar panel array | `src/library/props/SolarPanelArray.ts` | `rain-nonstop-everywhere` | `earth-ten-percent-closer`, `rain-nonstop-everywhere` | original_procedural |
+| `solar-system-v1` | Sun and planets (cinematic compressed scale) | `src/library/space/SolarSystem.ts` | `manthan-quality-pass` |  | original_code |
 | `solar-wind-stream-v1` | Solar-wind particle stream | `src/library/space/SolarWind.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
 | `songbird-v1` | White-crowned sparrow | `src/library/creatures/Songbird.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `sound-rings-v1` | Schematic sound rings | `src/library/diagram/SoundRings.ts` | `what-if-every-man-disappeared` | `every-human-jumped-at-once`, `what-if-every-man-disappeared` | original_procedural |
@@ -397,6 +403,14 @@ Seeded instanced clothed human silhouettes for dense mid-distance and aerial cro
 **Parameters:** seed, width, depth, spacing, height, density, jumpHeight, time_s
 **Notes:** Original parameterised Three.js code validated in Chrome WebGL storyboard frame captures. All motion is evaluated from caller time. Crowd silhouettes are for mid-distance/aerial use. Recoil display displacement is independently exaggerated and requires a schematic label; mass ratio is used only for the physical displacement calculation.
 
+### `crowd-kit-v1` — Diverse animated crowds (casting, accessories, behaviours)
+
+Built on human-figure-v2: diversePerson() casts children, adults and elders across 15 skin tones and eleven hair styles with vibe palettes (everyday, night-out, tourist, business, winter, summer) and accessories (glowing phone, backpack, tote, coffee cup, umbrella, shopping bags, camera). Behaviour poses talk, phone, photo, wave, cheer, beat-locked dance (four styles) and look-up; Crowd runs path walkers with distance-locked strides in both directions plus standing groups facing a target; CrowdImpostors adds hundreds of instanced walking figures for far density.
+
+**Tags:** people, crowd, pedestrians, tourists, party, dance, diversity, city, night-life
+**Parameters:** diversePerson(seed, {vibe, childShare, elderShare}), Crowd({walkers:[{path, count, speed, bothWays, phoneShare}], groups:[{center, count, radius, activity, target}], vibe, pbr}), update(t, night), talkPose/phonePose/photoPose/wavePose/cheerPose/dancePose/lookupPose(t, seed), CrowdImpostors({lanes, vibe}).update(t)
+**Notes:** Open walk paths wrap end to start, so keep both ends out of shot (or close the loop). ~80 HumanV2 people plus 300 impostors render comfortably.
+
 ### `dairy-cow-v1` — Procedural dairy cow
 
 Stylised dairy cow in metres facing +Z with feet on y = 0: rounded capsule body, belly and hips, four legs with hooves, udder, neck and head with muzzle, ears, jaw and a tufted tail. Canvas coat: Holstein black-and-white patches (seeded), solid brown or Jersey fawn. setPose() drives grazing, head turn, jaw (chewing or a burp), tail swing and ear flicks; mouthWorld() returns the muzzle tip for breath or burp puffs.
@@ -508,6 +522,14 @@ Storyboard-driven frame renderer: shot lookup, keyframe cameras, HDR MSAA scene 
 **Tags:** render, pipeline, post-processing, bloom, transition, deterministic
 **Parameters:** Stage.sunDirection, bloomRadius, bloomStrength, bloomThreshold, contrast, duration_s, exposure, fps, grain, heatHaze, height, lift, post.ao, post.aoRadius, post.chroma, post.dof, post.dofAperture, post.dofMaxBlur, post.highlightTint, post.shadowTint, post.shafts, post.sharpen, post.shutter, post.tonemap, post.vibrance, quality (standard|cinematic|draft or RenderQuality), renderFrame(frame, { overlay, captions }), saturation, scale, tint, vignette, width
 **Notes:** Workflow for a new story: add src/stories/<slug>/film.ts (createFilm) and register it in src/entry.ts; then run node tools/narrate.mjs stories/<slug>.json, node tools/soundtrack.mjs <slug>, node tools/render.mjs <slug> --frames a,b,c for smoke frames and --final for the MP4. ffmpeg and ffprobe come from the ffmpeg-static and ffprobe-static npm packages. air-pressure-doubled added a sanitize pass before bloom that zeroes NaN/Inf scene pixels so a single bad pixel cannot bloom into a black block; valid pixels are unchanged. renderFrame(i, { overlay: false, captions: false }) renders a clean still (used for thumbnails); defaults keep normal rendering unchanged.
+
+### `fireworks-v1` — GPU fireworks show
+
+Deterministic fireworks computed in the vertex shader from absolute time: launch comets, then drag-limited ballistic stars with trails. Shell types peony, chrysanthemum, willow, ring, crossette and palm; Fireworks.show() schedules a seeded show with an optional finale; flash/flashColor for lighting.
+
+**Tags:** fireworks, celebration, new-year, festival, night, sky
+**Parameters:** new Fireworks(shells, {seed, trail, starSize}), Fireworks.show({start, end, rate, width, height, seed, finale, types}), update(t, pixelScale), flash, flashColor
+**Notes:** Start a show before t = 0 (negative start) so bursts are already in the sky in the first frame.
 
 ### `fish-school-v1` — Instanced fish school
 
@@ -709,6 +731,14 @@ Deterministic meteors as instanced camera-facing ribbons: a hot white-green head
 **Parameters:** meteors [{at_s, life_s, start, velocity, trail, width, brightness}], count, seed, window, box, velocity, speedJitter, trail, width, life, gain
 **Notes:** Units are the stage's world units (km in the 80 km shot: trails 7-12 km, widths 35-70 m, ~37 km/s). Spawn in the camera's own frame and in open air: meteors placed inside terrain are depth-hidden.
 
+### `milky-way-sky-v1` — Milky Way and deep star field sky
+
+HDR night/space sky: five layers of crisp hashed stars (temperature tints, denser in the band), the Milky Way with central bulge, dust lanes and pink/blue nebulae, aimable with center/along. Ground mode adds horizon extinction, airglow, low-altitude twinkle and a light-pollution dome. GLSL_GALAXY is self-contained so other sky shaders can include it (physical-sky-v1 does at night).
+
+**Tags:** sky, stars, milky-way, galaxy, night, space, astronomy, starry-night
+**Parameters:** MilkyWaySky({stars, band, rotation | center + along, seed, ground, lightPollution, pollutionColor}), update(t, camera, outputHeight), GLSL_GALAXY, galaxyUniforms(), galaxyBasis(center, along)
+**Notes:** Stars are pixel-sized for the output height; pass the camera to update() so they stay sharp when the FOV changes.
+
 ### `modeling-helpers-v1` — Procedural modeling helpers
 
 Reusable geometry, rod, material and CanvasTexture helpers for architecture and props.
@@ -733,6 +763,14 @@ Weathered Boulder (optional PBR rock_face, moss on top), instanced RockScatter, 
 **Parameters:** Boulder({size, seed, flatten, color, pbr, mossy}), RockScatter({area, count, ground, reject}), Shrub({size, color, flowers}).update(t, wind), FlowerPatch({area, kinds, count, ground}).update(t, wind), Cactus({height, arms})
 **Notes:** Lookdev: node tools/lookdev.mjs outdoors.
 
+### `neon-district-v1` — Times Square-style neon district at night
+
+Entertainment-district avenue: LedScreen billboards (six procedural, unbranded programmes - aurora, pop graphics with headline words, scrolling ticker, concert equaliser and spotlights, kaleidoscope, skyline promo - cycling with wipes, HDR with LED pixel structure up close), NeonSign tubes with buzz and dropouts, Marquee chase lights, glowing red bleacher steps on a plaza island, towers wrapped in screens and tickers, a stacked-screen tower closing the view, keep-right taxi traffic, lamps, signals, steam vents, RectAreaLight spill matched to the big screens and wet asphalt mirroring it through a live cube probe.
+
+**Tags:** city, times-square, neon, billboards, night, nightlife, wet-street, reflections, traffic, urban
+**Parameters:** NeonDistrict({pbr, seed, length, traffic, reflections, areaLights, baseEnvironment}), environment, update(t, renderer, scene, night, camera), LedScreen({width, height, programs, seed, cycle, brightness, pitch, curved}).glow(t), NeonSign({text, color, height, script}), Marquee({width, height}), glowingSteps()
+**Notes:** Assign scene.environment = district.environment; pass a static baseEnvironment so the probe never samples its own previous frame (order-independent frames). Lookdev: node tools/lookdev.mjs timesquare.
+
 ### `newborn-hand-v1` — Articulated newborn hand
 
 Close-view articulated newborn palm and digits with soft skin and nail details.
@@ -740,6 +778,14 @@ Close-view articulated newborn palm and digits with soft skin and nail details.
 **Tags:** newborn, hand, human
 **Parameters:** skinColor, scale, roughness, time_s, grasp
 **Notes:** Original procedural code. Rendered in the 75-second Three.js film and inspected in representative WebGL frames.
+
+### `nightlife-kit-v1` — String lights, stage beams, LED dance floor, stage
+
+Party dressing: StringLights catenary strands (warm or multicolour bulbs with glow and flicker), StageBeams truss of moving-head volumetric beams with a bpm-synced colour programme, LedDanceFloor tiles playing beat-synced patterns, and a stageDeck with backdrop and DJ table.
+
+**Tags:** party, nightlife, rooftop, concert, festival, string-lights, dance-floor, stage-lights
+**Parameters:** StringLights({anchors, sag, spacing, color, multicolor}).update(t, lit), StageBeams({count, span, length, bpm}).update(t, level), LedDanceFloor({width, depth, tile, bpm}).update(t), stageDeck({width, depth, height})
+**Notes:** 
 
 ### `ocean-cross-section-v1` — Deep ocean cross-section
 
@@ -815,10 +861,10 @@ Instanced vertex-coloured emperor penguins (adults with yellow ear patches, grey
 
 ### `physical-sky-v1` — Physical sky with clouds, sun and stars
 
-Preetham-style scattering sky dome with camera-like adaptive exposure, golden-hour colour, extended twilight band, true-size limb-darkened sun, sun-lit self-shadowed 2.5D drifting clouds, night gradient and seeded stars; bakes a PMREM environment for reflections.
+Preetham-style scattering sky dome with camera-like adaptive exposure, golden-hour colour, extended twilight band, true-size limb-darkened sun, sun-lit self-shadowed 2.5D drifting clouds, night gradient and seeded stars; bakes a PMREM environment for reflections. Optional Milky Way at night (galaxy, galaxyCenter, galaxyAlong) from milky-way-sky-v1.
 
 **Tags:** sky, atmosphere, sunrise, sunset, twilight, clouds, stars, environment-map, exterior
-**Parameters:** turbidity, rayleigh, mieCoefficient, mieDirectionalG, goldenSaturation, goldenExposure, exposure, sunIntensity, sunSize, cloudCover, cloudScale, cloudWind, cloudColor, stars, seed, nightZenith, nightHorizon, setSun(dir), update(time_s), follow(camera), bakeEnvironment(renderer), horizonColor(), zenithColor()
+**Parameters:** turbidity, rayleigh, mieCoefficient, mieDirectionalG, goldenSaturation, goldenExposure, exposure, sunIntensity, sunSize, cloudCover, cloudScale, cloudWind, cloudColor, stars, seed, nightZenith, nightHorizon, setSun(dir), update(time_s), follow(camera), bakeEnvironment(renderer), horizonColor(), zenithColor(), galaxy, galaxyCenter, galaxyAlong
 **Notes:** Call setSun every frame from a computed solar vector, follow(camera) after the camera moves, and re-bake the environment when the Sun has moved a few degrees. Feed horizonColor/zenithColor to OceanSurface and fog so the whole scene shares one sky. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository.
 
 ### `planet-cutaway-v1` — Planet cutaway (layered interior)
@@ -1004,6 +1050,14 @@ Rows of tilted photovoltaic panels with a canvas-drawn cell grid (silver busbars
 **Tags:** solar, energy, panels, electricity, infrastructure, prop
 **Parameters:** rows, cols, panelSize, tilt, rowSpacing, gap, clearance, cellColor, frameColor, wetness
 **Notes:** The group origin is the centre of the array on the ground and panels face +Z. Give the scene an environment map (for example SkyDome.toEnvironment) for convincing reflections.
+
+### `solar-system-v1` — Sun and planets (cinematic compressed scale)
+
+Sun with warped granulation, soft intergranular lanes, sunspots, limb darkening and a streaming corona; Mercury, Venus, Earth (NASA textures with its Moon, or a stand-in), Mars, Jupiter (Great Red Spot), Saturn (rings), Uranus (tilted) and Neptune (dark spot) on glowing orbit rings with an asteroid belt; every body is lit from the Sun each frame; orbits follow a visually compressed Kepler law.
+
+**Tags:** space, solar-system, sun, planets, saturn, jupiter, orbits, astronomy
+**Parameters:** SolarSystem({scale, earthTextures, timeScale, orbits, belt}), update(t, camera), planetWorld(name), radiusOf(name), orbitOpacity, Sun({radius, brightness})
+**Notes:** Hide orbit rings for Sun close-ups (they cross the disk). Lookdev: node tools/lookdev.mjs nightsky / showcase.
 
 ### `solar-wind-stream-v1` — Solar-wind particle stream
 

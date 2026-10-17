@@ -12,7 +12,7 @@ export const spec = { duration_s: 8, quality: 'cinematic' as const,
 const ALT = [-18, -6, -1, 4, 20, 55, 15, 2, -3, -9];
 class SkyStage implements Stage {
   scene = new THREE.Scene(); camera = new THREE.PerspectiveCamera(55, 9 / 16, 0.1, 3000);
-  sky = new PhysicalSky({ cloudCover: 0.42, stars: 2500 }); key = new THREE.DirectionalLight(0xffffff, 2.5); hemi = new THREE.HemisphereLight(0xbcd2ff, 0x3a3328, 0.5);
+  sky = new PhysicalSky({ cloudCover: 0.42, stars: 2500, galaxy: 0.7, galaxyCenter: new THREE.Vector3(0.2, 0.35, -1), galaxyAlong: new THREE.Vector3(0.5, 1, -0.2) }); key = new THREE.DirectionalLight(0xffffff, 2.5); hemi = new THREE.HemisphereLight(0xbcd2ff, 0x3a3328, 0.5);
   sunDirection = new THREE.Vector3();
   constructor(pbr: PBRLibrary) {
     this.sky.addTo(this.scene);

@@ -12,7 +12,8 @@
 - **Picture:** `delivery.render_quality: "cinematic"` (2x supersampling + CAS sharpening, deterministic 3-sample motion blur, per-shot GTAO, depth of field, sun shafts, AgX/Neutral tone mapping, split toning). `standard` stays bit-identical to the previous pipeline. `whip_pan` and `light_wipe` now render.
 - **Voice:** per-scene loudness matching, broadcast finishing chain and convolution room; Kokoro voice blends; a text-aware starting-rate model (fewer calibration passes); starting rates re-measured on a 327-clip corpus.
 - **Models:** 16-species quadrupeds, road vehicles, street furniture, PBR city/building/interior kits with CC0 textures and HDRIs, physical sky, nature and energy kits, insects, a lensing black hole, asteroids/comets, spacecraft, lightning, tornadoes and explosions, plus subsurface-style skin and draped clothing for `human-figure-v2`.
-- **Tools:** `node tools/lookdev.mjs <scene>` renders library look-dev scenes; `npm run typecheck` type-checks the library; `node tools/fetch-assets.mjs` re-fetches the CC0 Poly Haven set recorded in `assets/library/polyhaven.lock.json`.
+- **Crowds and nights:** varied, animated crowds (`crowd-kit-v1`), a Times Square-style neon district with animated billboards and wet reflections, rooftop night life with fireworks, a Milky Way sky and a solar system; `node tools/lookdev.mjs showcase --video build/lookdev/showcase.mp4 --scale 1` renders a 36 s reel of them.
+- **Tools:** `node tools/lookdev.mjs <scene>` renders library look-dev scenes (stills, or `--video` for motion); `npm run typecheck` type-checks the library; `node tools/fetch-assets.mjs` re-fetches the CC0 Poly Haven set recorded in `assets/library/polyhaven.lock.json`.
 
 ## Key files
 
