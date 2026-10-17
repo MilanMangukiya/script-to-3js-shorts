@@ -8,9 +8,13 @@ import { GasGiant } from '../../../library/planet/GasGiant';
 import { Moon } from '../../../library/planet/Moon';
 import { SeaIce } from '../../../library/environment/SeaIce';
 import { Snowfall } from '../../../library/fx/Snowfall';
+import { StringLights } from '../../../library/environment/NightlifeKit';
+import { GLSL_GALAXY, galaxyUniforms } from '../../../library/space/MilkyWay';
+import { photoPose, lookupPose, talkPose, phonePose } from '../../../library/characters/CrowdKit';
 import { box, surface } from '../../../library/util/Modeling';
 import type { ShotInfo, Stage } from '../../../library/render/FilmPipeline';
 import { type HumanoidPose } from '../../../library/characters/Humanoid';
+import type { Top, Bottom } from '../../../library/characters/HumanV2';
 import { Person, carRig, setCarLights, type CarRig } from './common';
 import { T, B, DEG, clockAt, seaY, rogueAltAz, rogueDiam, sunAltAz, moonOffset, floodFront, nightAt, skyDir, windowAt, ease, clamp01 } from '../timeline';
 
@@ -33,14 +37,18 @@ class SkyShell {
       uSunDir: { value: new THREE.Vector3(0, -1, 0) }, uTwi: { value: new THREE.Color() }, uShadow: { value: new THREE.Color() }, uTwilight: { value: 0 },
       uRogueDir: { value: new THREE.Vector3(0, 1, 0) }, uRogueGlow: { value: new THREE.Color() }, uMoonDir: { value: new THREE.Vector3(0, 1, 0) }, uMoonGlow: { value: new THREE.Color() },
       uSunGlow: { value: new THREE.Color() }, uSunDisc: { value: 0 }, uExposure: { value: 1 },
+      // Autumn evening at 50 N: the galactic centre setting in the south-west, the band arching overhead to the north-east,
+      // so the east-south-east views here see the dense star field without the band itself.
+      ...galaxyUniforms({ center: skyDir(232, 4), along: skyDir(300, 78), stars: 1.25 }), uGalaxy: { value: 0 }, uGalPx: { value: 0.0006 },
     };
     const mat = new THREE.ShaderMaterial({
       side: THREE.BackSide, depthWrite: false, depthTest: false, uniforms: this.u,
       vertexShader: `varying vec3 vDir; void main(){ vDir = normalize(position); vec4 p = modelViewMatrix * vec4(position, 0.0); gl_Position = projectionMatrix * vec4(p.xyz, 1.0); gl_Position.z = gl_Position.w; }`,
       fragmentShader: `
         uniform vec3 uZenith, uHorizon, uGround, uSunDir, uTwi, uShadow, uRogueDir, uRogueGlow, uMoonDir, uMoonGlow, uSunGlow;
-        uniform float uCurve, uTwilight, uSunDisc, uExposure;
+        uniform float uCurve, uTwilight, uSunDisc, uExposure, uGalaxy, uGalPx;
         varying vec3 vDir;
+        ${GLSL_GALAXY}
         void main(){
           vec3 d = normalize(vDir); float h = d.y;
           vec3 col = mix(uHorizon, uZenith, pow(clamp(h, 0.0, 1.0), uCurve));
@@ -57,6 +65,7 @@ class SkyShell {
           float sc = max(dot(d, uSunDir), 0.0);
           col += uSunGlow * (pow(sc, 6.0) * 0.25 + pow(sc, 90.0) * 0.9);
           col += vec3(4.0, 3.7, 3.2) * uSunDisc * smoothstep(0.99996, 0.99998, sc) * step(0.0, h);
+          if (uGalaxy > 0.0 && h > 0.0) col += galaxy(d, uGalPx) * uGalaxy * exp(-0.12 / (h + 0.02));   // stars, dimmed by extinction near the horizon
           col = mix(col, uGround, smoothstep(0.0, -0.06, h));
           gl_FragColor = vec4(col * uExposure, 1.0);
         }`,
@@ -144,10 +153,34 @@ const SIDE_LAMPS: [number, number][] = [[-62, -168], [-62, -128], [62, -128], [-
 /** Basin lamp order: the first five carry point lights (the two nearest the flood view and three on the side quays). */
 const LAMPS: [number, number][] = [...HEAD_LAMPS.slice(0, 2), ...SIDE_LAMPS.slice(0, 3), ...HEAD_LAMPS.slice(2), ...SIDE_LAMPS.slice(3)];
 /** Flood outage time per basin lamp: head-quay lamps from the middle outward, then the side quays as the water spreads along them. */
+/** Festival string lights on the head-quay lamp posts (x of consecutive posts), each strand fed from the lamps at its ends. */
+const STRAND_POSTS = [-41, -21, -4, 3, 23, 43];
 const LAMP_OUT = (() => {
   const head = LAMPS.map((l, i) => ({ i, head: l[1] > -102, d: Math.abs(l[0]) })).filter((l) => l.head).sort((a, b) => a.d - b.d);
   return LAMPS.map((l, i) => { const r = head.findIndex((h) => h.i === i); return r >= 0 ? T.lampsOut.first + r * T.lampsOut.step : T.lampsOut.first + 0.6 + (-104 - l[1]) / 260; });
 })();
+
+type Act = 'photo' | 'lookup' | 'talk' | 'phone';
+/** Onlookers at the head-quay railing (rail at z -101.8). `flee`: [turn time, run heading, speed] in S04; the others stay out of that shot. */
+const ONLOOKERS: { id: string; seed: number; at: [number, number]; heading: number; act: Act; top: Top; bottom?: Bottom; child?: boolean; flee?: [number, number, number] }[] = [
+  // In the S02 telephoto window beside the two arriving walkers.
+  { id: 'o1', seed: 201, at: [-21.4, -101.2], heading: Math.PI - 0.12, act: 'photo', top: 'jacket' },
+  { id: 'o2', seed: 202, at: [-17.5, -101.35], heading: Math.PI + 0.05, act: 'lookup', top: 'coat', bottom: 'trousers' },
+  { id: 'o3', seed: 203, at: [-13.9, -100.9], heading: Math.PI + 0.9, act: 'talk', top: 'hoodie' },
+  { id: 'o4', seed: 204, at: [-23.6, -101.0], heading: Math.PI - 0.5, act: 'talk', top: 'longsleeve', bottom: 'skirt' },
+  { id: 'o5', seed: 205, at: [-16.7, -100.7], heading: Math.PI, act: 'lookup', top: 'hoodie', child: true },
+  // Between the parked cars in the S04 flood view: they flee left, straight back and right.
+  { id: 'o6', seed: 206, at: [-4.3, -101.4], heading: Math.PI, act: 'lookup', top: 'coat', flee: [19.3, -1.15, 3.4] },
+  { id: 'o7', seed: 207, at: [0.3, -101.3], heading: Math.PI + 0.1, act: 'photo', top: 'jacket', bottom: 'trousers', flee: [18.9, 0.08, 3.5] },
+  { id: 'o8', seed: 208, at: [3.3, -101.3], heading: Math.PI - 0.1, act: 'phone', top: 'longsleeve', flee: [19.55, 1.35, 3.2] },
+];
+function actPose(a: Act, t: number, seed: number, base: HumanoidPose): HumanoidPose {
+  // Phones and pointing are aimed at the planet, low over the sea: heads stay near level rather than craned up.
+  if (a === 'photo') { const p = photoPose(t, seed); return { ...p, headPitch: -0.04 + 0.03 * Math.sin(t * 0.7 + seed) }; }
+  if (a === 'lookup') { const p = lookupPose(t, seed); return { ...p, headPitch: -0.12 + 0.04 * Math.sin(t * 0.5 + seed) }; }
+  if (a === 'phone') return phonePose(t, seed);
+  return talkPose(t, seed, base);
+}
 
 export class HarbourStage implements Stage {
   readonly scene = new THREE.Scene();
@@ -163,8 +196,10 @@ export class HarbourStage implements Stage {
   private key = new THREE.DirectionalLight(0xc9d6ea, 1);
   private hemi = new THREE.HemisphereLight(0x223450, 0x0c0e10, 0.3);
   private people: Record<string, Person> = {};
+  private strands: { s: StringLights; lamps: [number, number] }[] = [];
   private cars: CarRig[] = [];
   private snowU: THREE.IUniform = { value: 0 };
+  private tNow = 0;
   private ice = new SeaIce({ seed: 5, floeCount: 70, area: [-52, 52, -284, -112], minRadius: 1.2, maxRadius: 4.2, thickness: 0.35,
     avoid: BOATS.map((b) => [b.x, b.z, 6] as [number, number, number]) });
   private snowfall = new Snowfall({ count: 3500, seed: 9, box: [40, 22, 40], fallSpeed: 0.85, drift: 0.6, brightness: 0.8 });
@@ -226,14 +261,24 @@ export class HarbourStage implements Stage {
     }
 
     // People and cars.
-    const P = (k: string, o: ConstructorParameters<typeof Person>[1]) => (this.people[k] = new Person(this.scene, o));
-    P('a', { height: 1.70, coat: 0x3f5a73, trousers: 0x23272e, skin: 0xc68c6a });
-    P('b', { height: 1.78, coat: 0x8a5a2b, trousers: 0x2b2f36, skin: 0x7d5238, hair: 0x15100c });
-    P('c', { height: 1.66, coat: 0x6b2f3a, trousers: 0x1f2329, skin: 0xe0b48f, hair: 0x5a3a22 });
-    P('d', { height: 1.82, coat: 0x2f4a3a, trousers: 0x30343a, skin: 0x9a6a4a });
-    P('w1', { height: 1.72, coat: 0x2b3a55, trousers: 0x202428, skin: 0xd2a07c, hat: true, scarf: 0xb03a2e, coatStyle: 'long' });
-    P('w2', { height: 1.64, coat: 0x7a2e2e, trousers: 0x25282d, skin: 0x8b5a3c, hat: true, scarf: 0xe0d6c4, coatStyle: 'long' });
-    P('w3', { height: 1.80, coat: 0x4a4f56, trousers: 0x1d2024, skin: 0xe6c2a0, hat: true, scarf: 0x2f6a8a, coatStyle: 'long' });
+    // Townspeople (crowd-kit-v1 casting on human-figure-v2): an autumn night out on the quay, then a hard winter.
+    // Saturated mid-tone tops (burgundy, navy, mustard, forest, rust, teal, plum...) so nobody reads as a pale mannequin under the planet light.
+    const TOPS: Record<string, number> = { a: 0x7a1f2b, b: 0x1f3a5f, c: 0xc8942a, d: 0x2f5d3a, o1: 0xb3542d, o2: 0x1f6f6b, o3: 0x5b2a5e, o4: 0x3b5f8a, o5: 0xd9692a,
+      o6: 0x8a2f4c, o7: 0x2f6a4a, o8: 0xb88a2a, w1: 0x7a1f2b, w2: 0x2f4f6f, w3: 0x3d5a3c, w4: 0xb3542d, w5: 0x4a3b5c, w6: 0xd9692a };
+    const P = (k: string, o: ConstructorParameters<typeof Person>[1]) => (this.people[k] = new Person(this.scene, { ...o, extra: { ...o.extra, topColor: TOPS[k] } }));
+    const autumn = (top: Top, bottom: Bottom = 'jeans') => ({ top, bottom, hat: null });
+    P('a', { seed: 11, extra: autumn('jacket') }); P('b', { seed: 26, accessories: ['phone'], extra: autumn('hoodie', 'trousers') });
+    P('c', { seed: 37, extra: autumn('coat') }); P('d', { seed: 44, extra: autumn('jacket', 'trousers') });
+    for (const o of ONLOOKERS) P(o.id, { seed: o.seed, accessories: o.act === 'photo' || o.act === 'phone' ? ['phone'] : [],
+      extra: { ...autumn(o.top, o.bottom), ...(o.child ? { age: 'child' as const, height: 1.22, build: 'slim' as const } : {}) } });
+    const winter = (seed: number, acc: ('umbrella' | 'backpack' | 'tote')[] = [], child = false) => ({ seed, vibe: 'winter' as const, accessories: acc,
+      extra: { top: 'coat' as const, bottom: 'trousers' as const, hat: 'beanie' as const, ...(child ? { age: 'child' as const, height: 1.18, build: 'slim' as const } : {}) } });
+    P('w1', winter(52)); P('w2', winter(63, ['tote'])); P('w3', winter(71));
+    P('w4', winter(84, ['tote'])); P('w5', winter(95, ['backpack'])); P('w6', winter(106, [], true));
+    STRAND_POSTS.slice(0, -1).forEach((x0, i) => {
+      const x1 = STRAND_POSTS[i + 1], s = new StringLights({ anchors: [new THREE.Vector3(x0, 4.3, -100.6), new THREE.Vector3(x1, 4.3, -100.6)], sag: 0.05, spacing: 0.55, multicolor: true, seed: 60 + i });
+      this.strands.push({ s, lamps: [LAMPS.findIndex((l) => l[0] === x0 && l[1] === -100.6), LAMPS.findIndex((l) => l[0] === x1 && l[1] === -100.6)] }); this.scene.add(s.group);
+    });
     for (const c of T.cars) { const r = carRig(this.scene, Number(c.color)); setCarLights(r, 0, 0); this.cars.push(r); }
 
     // Snow cover on everything static (not people, water, sky bodies).
@@ -272,6 +317,7 @@ export class HarbourStage implements Stage {
     this.sky.mesh.position.copy(this.camera.position);
     this.stars.follow(this.camera);
     const su = this.sky.u, ou = this.ocean.uniforms;
+    su.uGalPx.value = this.camera.fov * DEG / 1920 * 0.9;
 
     // ---- water level, flood front and boats
     const water = night ? seaY(t) : nights ? MEAN_SEA + 0.25 : MEAN_SEA;
@@ -334,6 +380,7 @@ export class HarbourStage implements Stage {
       su.uSunGlow.value.setRGB(0, 0, 0); su.uSunDisc.value = 0; su.uCurve.value = 0.55;
       su.uRogueDir.value.copy(rogueDir); su.uMoonDir.value.copy(moonDir); su.uSunDir.value.copy(sunDir);
       this.stars.brightness = 0.22 + 0.12 * dusk;
+      su.uGalaxy.value = 0.22 + 0.18 * dusk;              // the planet- and moonlit sky hides the fainter stars
       // Planet-light: cool silver, orange and weak while it is low.
       const k = 0.15 + 1.0 * clamp01((ralt + 0.5) / 10);
       this.key.color.setRGB(0.78, 0.84, 0.95).multiply(tint).multiplyScalar(1 / Math.max(0.35, tint.r));
@@ -349,6 +396,7 @@ export class HarbourStage implements Stage {
       su.uRogueGlow.value.setRGB(0, 0, 0); su.uMoonGlow.value.setRGB(0.2, 0.17, 0.14).multiply(extinction(mAlt)); su.uMoonDir.value.copy(moonDir);
       su.uSunGlow.value.setRGB(0, 0, 0); su.uSunDisc.value = 0; su.uCurve.value = 0.5;
       this.stars.brightness = 1.0;
+      su.uGalaxy.value = 2.6;                             // weeks later: a dark sky full of stars (low here, so extinction dims them)
       this.key.color.setRGB(0.75, 0.8, 0.95); this.key.intensity = 0.06;
       this.hemi.color.setRGB(0.07, 0.10, 0.17); this.hemi.groundColor.setRGB(0.03, 0.03, 0.035); this.hemi.intensity = 0.4;
       ou.uHorizon.value.copy(su.uHorizon.value); ou.uZenith.value.copy(su.uZenith.value);
@@ -360,6 +408,7 @@ export class HarbourStage implements Stage {
       su.uRogueGlow.value.setRGB(0, 0, 0); su.uMoonGlow.value.setRGB(0, 0, 0);
       su.uSunDir.value.copy(sunDir); su.uSunGlow.value.setRGB(0.55, 0.5, 0.42); su.uSunDisc.value = 0.75;
       this.stars.brightness = 0;
+      su.uGalaxy.value = 0;
       this.key.color.setRGB(1.0, 0.9, 0.78); this.key.intensity = 1.35;
       this.hemi.color.setRGB(0.50, 0.58, 0.70); this.hemi.groundColor.setRGB(0.32, 0.33, 0.36); this.hemi.intensity = 0.55;
       ou.uHorizon.value.copy(su.uHorizon.value); ou.uZenith.value.copy(su.uZenith.value);
@@ -383,6 +432,9 @@ export class HarbourStage implements Stage {
       return t > out - 0.12 ? (Math.sin(t * 157) > 0 ? 1 : 0.15) : 1;
     };
     this.basin.setLamps(lampOn);
+    // Festival strands share their posts' supply: they flicker and die with the lamps as the flood comes over.
+    for (const { s, lamps } of this.strands) s.update(t, winter ? 0 : Math.min(lampOn(lamps[0]), lampOn(lamps[1])));
+    for (const p of Object.values(this.people)) p.screenGlow = winter ? 0.4 : 2.4;
     // Street lamps short out as the flood front reaches them, nearest the quay first.
     this.city.lampHeads.forEach((m, i) => {
       const z = (i % 7) * 25 - 81, reach = T.over + (z - HEAD_Z) / T.front.speed + 0.1;
@@ -405,6 +457,8 @@ export class HarbourStage implements Stage {
 
     // ---- cars and people
     this.placeCars(t, sc, water);
+    this.tNow = t;
+    if (sc >= 'S02' && sc <= 'S04') this.stageOnlookers(t, sc);
     if (sc === 'S02') this.stageRailing(t);
     if (sc === 'S04') this.stageRunners(t);
     if (winter) this.stageWinter(t);
@@ -463,18 +517,35 @@ export class HarbourStage implements Stage {
     this.people.d.walk(t, { start: [-62.5, -150], heading: 0.05, t0, speed: [[t0, 1.3]] });
   }
 
+  /** Townspeople who came out to see the planet: filming, pointing and talking at the head-quay railing (S02-S04). */
+  private stageOnlookers(t: number, sc: string) {
+    for (const o of ONLOOKERS) {
+      const p = this.people[o.id];
+      if (sc === 'S04' && !o.flee) { p.hide(); continue; }   // the S02 group stood further along the quay, outside this view
+      if (sc === 'S04' && o.flee) { this.flee(p, o.at, o.flee[0], o.flee[1], o.flee[2], (b) => actPose(o.act, t, o.seed, b)); continue; }
+      p.stand(o.at, o.heading, (b) => actPose(o.act, t, o.seed, b), 0, t);
+    }
+  }
+
+  /** Watch the water from the railing (acting until the turn), turn the short way round and run inland. */
+  private flee(p: Person, at: [number, number], turnAt: number, heading: number, v: number, act: (b: HumanoidPose) => HumanoidPose) {
+    const t = this.tNow, go = turnAt + 0.38;
+    if (t < go) {
+      const turn = ease((t - turnAt) / 0.38), look = windowAt(t, turnAt - 0.5, turnAt - 0.1), dh = Math.atan2(Math.sin(heading - Math.PI), Math.cos(heading - Math.PI));
+      p.stand(at, Math.PI + dh * turn, (b) => {
+        const q = act(b);
+        return { ...q, headPitch: q.headPitch * (1 - look) - 0.18 * look, headYaw: q.headYaw * (1 - turn) - 0.5 * look * (1 - turn), lean: q.lean * (1 - turn),
+          armL: [q.armL[0] * (1 - turn), q.armL[1], q.armL[2] * (1 - turn) + 0.5 * turn], armR: [q.armR[0] * (1 - turn), q.armR[1], q.armR[2] * (1 - turn) + 0.5 * turn] };
+      }, 0, t);
+    } else p.walk(t, { start: at, heading, t0: go, speed: [[go, 0.8], [go + 0.45, v]], run: 1 });
+  }
+
   private stageRunners(t: number) {
     // Two onlookers watch the water climb from the railing, then turn and run inland toward you as it comes over.
     const watch: Partial<HumanoidPose> = { headPitch: 0.42, lean: 0.12, armL: [-0.35, 0.1, 0.5], armR: [-0.35, 0.1, 0.5] };
-    const runner = (p: Person, at: [number, number], turnAt: number, heading: number, v: number) => {
-      const go = turnAt + 0.38;
-      if (t < go) {
-        const turn = ease((t - turnAt) / 0.38), look = windowAt(t, turnAt - 0.5, turnAt - 0.1);
-        p.stand(at, Math.PI + (heading - Math.PI) * turn, { ...watch, headPitch: 0.42 - 0.6 * look, headYaw: -0.5 * look * (1 - turn), lean: 0.12 * (1 - turn) });
-      } else p.walk(t, { start: at, heading, t0: go, speed: [[go, 0.8], [go + 0.45, v]], run: 1 });
-    };
-    runner(this.people.a, [-1.4, -101.0], 19.95, -0.25, 3.6);
-    runner(this.people.c, [2.0, -100.9], 20.1, 0.3, 3.3);
+    const watching = (b: HumanoidPose): HumanoidPose => ({ ...b, ...watch, headYaw: b.headYaw * 0.5, headPitch: watch.headPitch! + 0.04 * Math.sin(t * 0.9) });
+    this.flee(this.people.a, [-1.4, -101.0], 19.75, -0.25, 3.6, watching);
+    this.flee(this.people.c, [2.0, -100.9], 19.95, 0.3, 3.3, watching);
   }
 
   private stageWinter(t: number) {
@@ -484,5 +555,9 @@ export class HarbourStage implements Stage {
     this.people.w2.walk(t, { start: [-2, -95.5], heading: -Math.PI / 2, t0, speed: [[t0, 0.95]] }, { pose: hunch, w: 0.8 });
     this.people.w3.walk(t, { start: [-61, -124], heading: Math.PI, t0, speed: [[t0, 1.0], [33.6, 1.0], [34.3, 0]] },
       { pose: { ...hunch, headYaw: 0.9, headPitch: 0.35 }, w: windowAt(t, 33.8, 34.5) });
+    // Across the frozen plaza past the stranded yacht: one carrying a bag, a parent and child heading the other way.
+    this.people.w4.walk(t, { start: [-6.5, -94.0], heading: -Math.PI / 2, t0, speed: [[t0, 1.0]] }, { pose: hunch, w: 0.8 });
+    this.people.w5.walk(t, { start: [-17.4, -90.2], heading: Math.PI / 2 - 0.1, t0, speed: [[t0, 0.85]] }, { pose: hunch, w: 0.7 });
+    this.people.w6.walk(t, { start: [-17.2, -89.1], heading: Math.PI / 2 - 0.1, t0, speed: [[t0, 0.85]], step: 0.5 }, { pose: { ...hunch, headYaw: 0.35 }, w: 0.6 });
   }
 }

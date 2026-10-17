@@ -72,7 +72,8 @@ const accMats = () => ({
   dark: new THREE.MeshStandardMaterial({ color: 0x1b1d22, roughness: 0.4, metalness: 0.3 }),
   screen: new THREE.MeshStandardMaterial({ color: 0x0c1830, emissive: 0x7fb4ff, emissiveIntensity: 1.6, roughness: 0.2 }),
 });
-function attachAccessories(h: HumanV2, list: Accessory[], seed: number) {
+/** Attach accessory props to a HumanV2's hand, back and chest anchors; returns the phone group and its glowing screen material. */
+export function attachAccessories(h: HumanV2, list: Accessory[], seed: number) {
   const r = rng(seed + 31), m = accMats(), cloth = (c: number) => new THREE.MeshStandardMaterial({ color: c, roughness: 0.8 });
   const add = (parent: THREE.Object3D, geo: THREE.BufferGeometry, mat: THREE.Material, p: [number, number, number], rot: [number, number, number] = [0, 0, 0]) => {
     const mesh = new THREE.Mesh(geo, mat); mesh.position.set(...p); mesh.rotation.set(...rot); mesh.castShadow = true; parent.add(mesh); return mesh; };

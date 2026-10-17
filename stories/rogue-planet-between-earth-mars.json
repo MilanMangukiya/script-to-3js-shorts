@@ -2132,6 +2132,7 @@
     "audio_codec": "aac",
     "audio_sample_rate_hz": 48000,
     "render_method": "deterministic_frame_by_frame",
+    "render_quality": "cinematic",
     "captions_burned_in": true,
     "use_paid_apis": false,
     "success_reply": "absolute_mp4_path_only"

@@ -37,7 +37,7 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 | `cooking-pot-v1` | Cooking pot with boiling water | `src/library/props/CookingPot.ts` | `air-pressure-doubled` | `air-pressure-doubled` | original_procedural |
 | `coral-mounds-v1` | Procedural coral heads | `src/library/environment/CoralMounds.ts` | `continents-one-landmass` | `continents-one-landmass` | original_procedural |
 | `crowd-field-v1` | Crowd Field | `src/library/characters/CrowdField.ts` | `every-human-jumped-at-once` | `every-human-jumped-at-once` | original_procedural |
-| `crowd-kit-v1` | Diverse animated crowds (casting, accessories, behaviours) | `src/library/characters/CrowdKit.ts` | `manthan-quality-pass` |  | original_code |
+| `crowd-kit-v1` | Diverse animated crowds (casting, accessories, behaviours) | `src/library/characters/CrowdKit.ts` | `manthan-quality-pass` | `rogue-planet-between-earth-mars` | original_code |
 | `dairy-cow-v1` | Procedural dairy cow | `src/library/characters/Cow.ts` | `everyone-farts-at-once` | `everyone-farts-at-once` | original_code |
 | `day-cycle-dial-v1` | Day-cycle dial overlay | `src/library/overlay/DayCycleDial.ts` | `earth-six-hour-day` |  | original_procedural |
 | `dial-gauge-v1` | Analog dial gauge | `src/library/props/DialGauge.ts` | `air-pressure-doubled` | `air-pressure-doubled`, `continents-one-landmass`, `earth-ten-percent-closer`, `every-human-jumped-at-once`, `moon-made-of-ice`, `ozone-layer-gone-overnight`, `rain-nonstop-everywhere` | original_procedural |
@@ -67,7 +67,7 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 | `hdri-environments-v1` | HDRI sky environments (CC0) | `assets/library/polyhaven.manifest.json` | `earth-six-hour-day` |  | CC0 1.0 (Poly Haven HDRIs; provenance lock) |
 | `history-ribbon-v1` | Historical data ribbon | `src/library/diagram/HistoryRibbon.ts` | `what-if-every-man-disappeared` | `what-if-every-man-disappeared` | original_procedural |
 | `horn-coral-v1` | Rugose horn corals | `src/library/environment/HornCorals.ts` | `earth-six-hour-day` |  | original_procedural |
-| `human-figure-v2` | HumanV2 sculpted, skinned people | `src/library/characters/HumanV2.ts` | `earth-six-hour-day` |  | original_procedural |
+| `human-figure-v2` | HumanV2 sculpted, skinned people | `src/library/characters/HumanV2.ts` | `earth-six-hour-day` | `rogue-planet-between-earth-mars` | original_procedural |
 | `humanoid-figure-v1` | Procedural articulated human figure | `src/library/characters/Humanoid.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-1000f-five-seconds`, `earth-ten-percent-closer`, `earth-without-tilt`, `every-human-jumped-at-once`, `every-volcano-erupts-at-once`, `everyone-farts-at-once`, `ice-sank-instead-of-floating`, `last-man-alive`, `last-woman-alive`, `moon-made-of-ice`, `mountain-grew-100-km-tall`, `oxygen-gone-five-seconds`, `ozone-layer-gone-overnight`, `rain-nonstop-everywhere`, `rogue-planet-between-earth-mars`, `sky-disappeared`, `social-media-gone-five-seconds`, `sun-locked-earth`, `what-if-every-man-disappeared` | original_procedural |
 | `ice-sheet-v1` | Floating ice sheet (top and underside) | `src/library/environment/IceSheet.ts` | `ice-sank-instead-of-floating` | `ice-sank-instead-of-floating` | original_procedural |
 | `insect-swarm-v1` | Butterflies, bees and fireflies | `src/library/creatures/InsectSwarm.ts` | `manthan-quality-pass` |  | original_code |
@@ -78,13 +78,13 @@ Coding agents should search IDs/tags here **before** creating new geometry, shad
 | `loft-helpers-v1` | Organic loft and limb modeling helpers | `src/library/util/Loft.ts` | `manthan-quality-pass` |  | original_code |
 | `magnetic-field-lines-v1` | Dipole magnetic field lines | `src/library/space/MagneticFieldLines.ts` | `earth-core-solid` | `earth-core-solid` | original_procedural |
 | `meteor-streaks-v1` | Meteor streaks with ionisation trains | `src/library/fx/MeteorStreaks.ts` | `mountain-grew-100-km-tall` | `mountain-grew-100-km-tall` | original_procedural |
-| `milky-way-sky-v1` | Milky Way and deep star field sky | `src/library/space/MilkyWay.ts` | `manthan-quality-pass` |  | original_code |
+| `milky-way-sky-v1` | Milky Way and deep star field sky | `src/library/space/MilkyWay.ts` | `manthan-quality-pass` | `rogue-planet-between-earth-mars` | original_code |
 | `modeling-helpers-v1` | Procedural modeling helpers | `src/library/util/Modeling.ts` | `what-if-every-man-disappeared` | `earth-1000f-five-seconds`, `earth-ten-percent-closer`, `earth-without-tilt`, `every-human-jumped-at-once`, `every-volcano-erupts-at-once`, `everyone-farts-at-once`, `last-man-alive`, `last-woman-alive`, `ozone-layer-gone-overnight`, `rogue-planet-between-earth-mars`, `sky-disappeared`, `social-media-gone-five-seconds`, `sun-locked-earth`, `what-if-every-man-disappeared` | original_procedural |
 | `moon-body-v1` | Procedural rocky and icy Moon | `src/library/planet/Moon.ts` | `moon-made-of-ice` | `moon-made-of-ice`, `rogue-planet-between-earth-mars` | original_procedural |
 | `nature-kit-v1` | Boulders, rock scatter, shrubs, flowers, cacti | `src/library/environment/NatureKit.ts` | `manthan-quality-pass` |  | original_code |
 | `neon-district-v1` | Times Square-style neon district at night | `src/library/environment/NeonDistrict.ts` | `manthan-quality-pass` |  | original_code |
 | `newborn-hand-v1` | Articulated newborn hand | `src/library/characters/NewbornHand.ts` | `what-if-every-man-disappeared` | `last-man-alive`, `last-woman-alive`, `what-if-every-man-disappeared` | original_procedural |
-| `nightlife-kit-v1` | String lights, stage beams, LED dance floor, stage | `src/library/environment/NightlifeKit.ts` | `manthan-quality-pass` |  | original_code |
+| `nightlife-kit-v1` | String lights, stage beams, LED dance floor, stage | `src/library/environment/NightlifeKit.ts` | `manthan-quality-pass` | `rogue-planet-between-earth-mars` | original_code |
 | `ocean-cross-section-v1` | Deep ocean cross-section | `src/library/diagram/OceanCrossSection.ts` | `moon-made-of-ice` | `moon-made-of-ice` | original_procedural |
 | `ocean-surface-v1` | Open-water ocean surface | `src/library/environment/OceanSurface.ts` | `oxygen-gone-five-seconds` | `air-pressure-doubled`, `continents-one-landmass`, `earth-core-solid`, `earth-ten-percent-closer`, `earth-without-tilt`, `ice-sank-instead-of-floating`, `last-man-alive`, `moon-made-of-ice`, `oxygen-gone-five-seconds`, `rain-nonstop-everywhere`, `rogue-planet-between-earth-mars`, `sky-disappeared`, `what-if-every-man-disappeared` | original_procedural |
 | `orbit-map-v1` | Top-down orbit map with progressive trajectories | `src/library/diagram/OrbitMap.ts` | `rogue-planet-between-earth-mars` | `rogue-planet-between-earth-mars` | original_code |
@@ -408,7 +408,7 @@ Seeded instanced clothed human silhouettes for dense mid-distance and aerial cro
 Built on human-figure-v2: diversePerson() casts children, adults and elders across 15 skin tones and eleven hair styles with vibe palettes (everyday, night-out, tourist, business, winter, summer) and accessories (glowing phone, backpack, tote, coffee cup, umbrella, shopping bags, camera). Behaviour poses talk, phone, photo, wave, cheer, beat-locked dance (four styles) and look-up; Crowd runs path walkers with distance-locked strides in both directions plus standing groups facing a target; CrowdImpostors adds hundreds of instanced walking figures for far density.
 
 **Tags:** people, crowd, pedestrians, tourists, party, dance, diversity, city, night-life
-**Parameters:** diversePerson(seed, {vibe, childShare, elderShare}), Crowd({walkers:[{path, count, speed, bothWays, phoneShare}], groups:[{center, count, radius, activity, target}], vibe, pbr}), update(t, night), talkPose/phonePose/photoPose/wavePose/cheerPose/dancePose/lookupPose(t, seed), CrowdImpostors({lanes, vibe}).update(t)
+**Parameters:** diversePerson(seed, {vibe, childShare, elderShare}), Crowd({walkers:[{path, count, speed, bothWays, phoneShare}], groups:[{center, count, radius, activity, target}], vibe, pbr}), update(t, night), talkPose/phonePose/photoPose/wavePose/cheerPose/dancePose/lookupPose(t, seed), CrowdImpostors({lanes, vibe}).update(t), attachAccessories(human, accessories, seed)
 **Notes:** Open walk paths wrap end to start, so keep both ends out of shot (or close the loop). ~80 HumanV2 people plus 300 impostors render comfortably.
 
 ### `dairy-cow-v1` — Procedural dairy cow

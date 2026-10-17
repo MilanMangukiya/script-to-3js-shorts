@@ -4120,7 +4120,9 @@
         "idlePose(t, seed, base)"
       ],
       "created_for": "earth-six-hour-day",
-      "used_in": [],
+      "used_in": [
+        "rogue-planet-between-earth-mars"
+      ],
       "license": "original_procedural",
       "notes": "Faces +Z, origin at the feet; uses the HumanoidPose type and POSE_STAND from humanoid-figure-v1 (same setPose semantics). Stylised but solid at medium and full-body framing; keep faces at medium distance. Walk phase = t·|v|·4.4 gives a natural stride. Lying sleepers: root.rotation.x = −π/2 and tent the duvet over the upturned feet. Restored on branch manthan from the 2026-10-15 studio-v2 stash; its film (earth-six-hour-day) is not in this repository."
     },
@@ -4953,10 +4955,13 @@
         "Crowd({walkers:[{path, count, speed, bothWays, phoneShare}], groups:[{center, count, radius, activity, target}], vibe, pbr})",
         "update(t, night)",
         "talkPose/phonePose/photoPose/wavePose/cheerPose/dancePose/lookupPose(t, seed)",
-        "CrowdImpostors({lanes, vibe}).update(t)"
+        "CrowdImpostors({lanes, vibe}).update(t)",
+        "attachAccessories(human, accessories, seed)"
       ],
       "created_for": "manthan-quality-pass",
-      "used_in": [],
+      "used_in": [
+        "rogue-planet-between-earth-mars"
+      ],
       "license": "original_code",
       "notes": "Open walk paths wrap end to start, so keep both ends out of shot (or close the loop). ~80 HumanV2 people plus 300 impostors render comfortably."
     },
@@ -5015,7 +5020,9 @@
         "stageDeck({width, depth, height})"
       ],
       "created_for": "manthan-quality-pass",
-      "used_in": [],
+      "used_in": [
+        "rogue-planet-between-earth-mars"
+      ],
       "license": "original_code",
       "notes": ""
     },
@@ -5069,7 +5076,9 @@
         "galaxyBasis(center, along)"
       ],
       "created_for": "manthan-quality-pass",
-      "used_in": [],
+      "used_in": [
+        "rogue-planet-between-earth-mars"
+      ],
       "license": "original_code",
       "notes": "Stars are pixel-sized for the output height; pass the camera to update() so they stay sharp when the FOV changes."
     },

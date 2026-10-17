@@ -5,6 +5,7 @@ import { GasGiant } from '../../../library/planet/GasGiant';
 import { RockyPlanet } from '../../../library/planet/RockyPlanet';
 import { Moon } from '../../../library/planet/Moon';
 import { Starfield } from '../../../library/space/Starfield';
+import { MilkyWaySky } from '../../../library/space/MilkyWay';
 import type { ShotInfo, Stage } from '../../../library/render/FilmPipeline';
 import ORB from '../orbits.json';
 import { T, B, ease, windowAt } from '../timeline';
@@ -30,6 +31,8 @@ export class OrbitStage implements Stage {
   readonly camera = new THREE.PerspectiveCamera(38, 9 / 16, 0.01, 2000);
   readonly map = new OrbitMap({ unitsPerAu: 1, sunRadius: 0.07 });
   private stars = new Starfield({ seed: 19, count: 5000, radius: 900, maxSize: 3.0, minY: -1 });
+  /** The faint outer Milky Way (the view looks away from the galactic centre) behind the map, below the orbit lines. */
+  private galaxy = new MilkyWaySky({ band: 0.8, stars: 0.9, center: new THREE.Vector3(0.15, 1, 0.35), along: new THREE.Vector3(1, -0.1, 0.5), seed: 2.6 });
   private earth: Earth;
   private rogue = new GasGiant({ radius: 0.055, seed: 11, bands: 7, turbulence: 0.6, zoneColors: [0xe8e0cc, 0xc9d6df], beltColors: [0x667790, 0x9b6c55], segments: 48 });
   private mars = new RockyPlanet({ radius: 0.032, seed: 4 });
@@ -40,6 +43,7 @@ export class OrbitStage implements Stage {
   constructor(tex: EarthTextures) {
     this.earth = new Earth(tex, { radius: 0.04, segments: 48 });
     this.map.group.rotation.y = MAP_ROT;
+    this.galaxy.addTo(this.scene);
     this.scene.add(this.map.group, this.stars.points);
     const O = T.orbit;
     this.map.addEllipse('earthOld', O.earthOld[0], O.earthOld[1], O.earthOld[2], { color: 0x5fa8ff, radius: 0.004, intensity: 0.8, opacity: 0.55 });
@@ -68,7 +72,8 @@ export class OrbitStage implements Stage {
   update(t: number, _shot: ShotInfo) {
     const m = this.map, s08 = T.cuts.s08, day = this.dayAt(t);
     m.update(t, this.camera);
-    this.stars.follow(this.camera); this.stars.brightness = 0.9;
+    this.stars.follow(this.camera); this.stars.brightness = 0.5;
+    this.galaxy.update(t, this.camera);
     m.setDraw('earthOld', 1); m.setDraw('mars', 1);
     // The rogue's path draws up to its current position.
     const ri = TR.findIndex((k) => k.t >= day), rf = (ri < 0 ? TR.length : ri) / TR.length;
