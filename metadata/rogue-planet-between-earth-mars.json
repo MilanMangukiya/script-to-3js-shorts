@@ -16,7 +16,6 @@
     "ocean-surface-v1",
     "sailboat-v1",
     "humanoid-figure-v1",
-    "character-motion-v1",
     "moon-body-v1",
     "earth-globe-v1",
     "earth-textures-nasa-v1",
@@ -33,12 +32,16 @@
     "audio-synth-kit-v1",
     "font-inter-v1",
     "font-display-set-v1",
-    "thumbnail-title-card-v1"
+    "thumbnail-title-card-v1",
+    "human-figure-v2",
+    "crowd-kit-v1",
+    "nightlife-kit-v1",
+    "milky-way-sky-v1"
   ],
   "published_urls": {},
   "platforms": {
     "youtube_shorts": {
-      "title": "What if a Rogue Planet Passed Between Earth and Mars? Goodbye, Moon",
+      "title": "What if a Rogue Planet Passed Between Earth and Mars?",
       "description": "A planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
       "tags": [
         "what if a rogue planet passed earth",
@@ -74,7 +77,7 @@
       ]
     },
     "tiktok": {
-      "caption": "A planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
+      "caption": "What if a Rogue Planet Passed Between Earth and Mars?\n\nA planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
       "hashtags": [
         "#WhatIf",
         "#RoguePlanet",
@@ -93,7 +96,7 @@
       ]
     },
     "instagram_reels": {
-      "caption": "A planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
+      "caption": "What if a Rogue Planet Passed Between Earth and Mars?\n\nA planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
       "hashtags": [
         "#WhatIf",
         "#RoguePlanet",
@@ -113,7 +116,7 @@
       ]
     },
     "facebook_reels": {
-      "title": "What if a Rogue Planet Passed Between Earth and Mars? It Took the Moon",
+      "title": "What if a Rogue Planet Passed Between Earth and Mars?",
       "description": "A planet as heavy as Jupiter rises over your harbor, and the sea drains away. It misses Earth by nine Moon distances, yet it floods your coast, takes the Moon and stretches your winters by five weeks.\n\nLosing the Moon or five extra weeks of winter: which would hit you harder? 👇",
       "hashtags": [
         "#WhatIf",
@@ -132,7 +135,7 @@
       ]
     },
     "x_video": {
-      "post": "A planet as heavy as Jupiter misses Earth by nine Moon distances, and still floods the coast, takes the Moon and stretches winter by five weeks. Losing the Moon or five extra weeks of winter: which would hit you harder?",
+      "post": "What if a Rogue Planet Passed Between Earth and Mars?\n\nA Jupiter-mass planet misses Earth by nine Moon distances, yet floods the coast, takes the Moon and stretches winter by five weeks. Which loss would hit you harder?",
       "hashtags": [
         "#WhatIf",
         "#RoguePlanet",
