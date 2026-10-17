@@ -11,13 +11,16 @@ import * as animals from './animals';
 import * as street from './street';
 import * as space from './space';
 import * as outdoors from './outdoors';
+import * as timesquare from './timesquare';
+import * as nightsky from './nightsky';
+import * as showcase from './showcase';
 
 export interface LookdevModule {
   /** Pseudo-storyboard: duration and scenes with shots and cameras (same shape as storyboard scenes). */
   spec: { duration_s: number; quality?: 'standard' | 'cinematic'; scenes: any[] };
   createFilm(ctx: { renderer: THREE.WebGLRenderer; base: string }): Promise<FilmDefinition>;
 }
-const MODULES: Record<string, LookdevModule> = { humans, buildings, sky, nature, interior, animals, street, space, outdoors };
+const MODULES: Record<string, LookdevModule> = { humans, buildings, sky, nature, interior, animals, street, space, outdoors, timesquare, nightsky, showcase };
 
 async function boot() {
   const q = new URLSearchParams(location.search), name = q.get('name')!, scale = Number(q.get('scale') ?? '1'), base = '/';

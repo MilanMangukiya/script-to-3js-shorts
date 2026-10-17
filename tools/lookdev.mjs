@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 // Render frames of a look-development scene (src/lookdev/<name>.ts) through the real pipeline, for building and
 // checking library assets without a storyboard.   node tools/lookdev.mjs <name> [--frames 0,30,60] [--scale 0.5]
+//   moving review: node tools/lookdev.mjs <name> --video build/lookdev/<name>.mp4 [--range 0-299]
 // → build/lookdev/<name>/f00000.jpg ... (plus a contact sheet sheet.jpg when several frames are rendered)
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import esbuild from 'esbuild';
@@ -15,13 +16,13 @@ const require = createRequire(import.meta.url), ffmpeg = require('ffmpeg-static'
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2), name = args[0];
 const opt = (n, d) => { const i = args.indexOf(`--${n}`); return i >= 0 ? args[i + 1] : d; };
-if (!name) { console.error('Usage: node tools/lookdev.mjs <name> [--frames a,b,c] [--scale s] [--quality standard|draft|cinematic] [--cell 360]'); process.exit(2); }
+if (!name) { console.error('Usage: node tools/lookdev.mjs <name> [--frames a,b,c | --video build/<path>.mp4 [--range a-b] [--crf 19]] [--scale s] [--quality standard|draft|cinematic] [--cell 360]'); process.exit(2); }
 const frames = String(opt('frames', '0')).split(',').map(Number), scale = Number(opt('scale', '0.5')), quality = opt('quality', '');
 const outDir = path.join(ROOT, 'build', 'lookdev', name), webDir = path.join(ROOT, 'build', 'lookdev', 'web');
 fs.mkdirSync(outDir, { recursive: true }); fs.mkdirSync(webDir, { recursive: true });
 await esbuild.build({ entryPoints: [path.join(ROOT, 'src', 'lookdev', 'entry.ts')], bundle: true, format: 'esm', target: 'es2022', outfile: path.join(webDir, 'lookdev.js'), logLevel: 'warning' });
 fs.writeFileSync(path.join(webDir, 'index.html'), `<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#000}</style><body><script type="module" src="lookdev.js"></script></body>`);
-const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2' };
+const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2', '.hdr': 'application/octet-stream' };
 const server = http.createServer((req, res) => {
   const p = path.normalize(path.join(ROOT, decodeURIComponent(new URL(req.url, 'http://x').pathname)));
   if (!p.startsWith(ROOT) || !fs.existsSync(p) || fs.statSync(p).isDirectory()) { res.writeHead(404); res.end(); return; }
@@ -36,11 +37,27 @@ await page.goto(`http://127.0.0.1:${server.address().port}/build/lookdev/web/ind
 try { await page.evaluate(() => window.__filmReady); }
 catch (e) { console.error('Lookdev failed:', await page.evaluate(() => window.__filmError).catch(() => String(e))); await browser.close(); server.close(); process.exit(1); }
 const t0 = Date.now(), files = [];
-for (const i of frames) {
+const video = opt('video', '');
+if (video) {
+  // Moving review: encode an inclusive frame range straight to H.264 (no audio), e.g. --video build/lookdev/x.mp4 --range 0-299.
+  const [a, b] = String(opt('range', `0-${(await page.evaluate(() => window.__film.frames)) - 1}`)).split('-').map(Number);
+  const out = path.resolve(ROOT, video); fs.mkdirSync(path.dirname(out), { recursive: true });
+  const ff = spawn(ffmpeg, ['-y', '-hide_banner', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', '30', '-c:v', 'mjpeg', '-i', 'pipe:0', '-vf', 'scale=in_range=full:out_range=tv:out_color_matrix=bt709,format=yuv420p',
+    '-c:v', 'libx264', '-preset', 'medium', '-crf', String(opt('crf', '19')), '-pix_fmt', 'yuv420p', '-r', '30', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-movflags', '+faststart', out], { stdio: ['pipe', 'inherit', 'inherit'] });
+  const done = new Promise((res, rej) => ff.on('close', (c) => (c === 0 ? res() : rej(new Error(`ffmpeg exited ${c}`)))));
+  for (let i = a; i <= b; i++) {
+    const url = await page.evaluate((f) => window.__film.renderFrame(f, 'image/jpeg', 0.94), i);
+    if (!ff.stdin.write(Buffer.from(url.split(',')[1], 'base64'))) await new Promise((r) => ff.stdin.once('drain', r));
+    if ((i - a) % 150 === 0) console.log(`frame ${i}/${b} (${((Date.now() - t0) / 1000).toFixed(0)}s)`);
+  }
+  ff.stdin.end(); await done;
+  console.log(`encoded ${path.relative(ROOT, out)} | frames ${a}-${b} in ${((Date.now() - t0) / 1000).toFixed(0)}s`);
+} else for (const i of frames) {
   const url = await page.evaluate((f) => window.__film.renderFrame(f, 'image/jpeg', 0.95), i);
   const file = path.join(outDir, `f${String(i).padStart(5, '0')}.jpg`); fs.writeFileSync(file, Buffer.from(url.split(',')[1], 'base64')); files.push(file);
 }
 await browser.close(); server.close();
+if (video) process.exit(0);
 if (files.length > 1) {
   const cw = opt('cell', '360'), inputs = files.flatMap((f) => ['-i', f]);
   const filter = files.map((_, i) => `[${i}:v]scale=${cw}:-2[v${i}]`).join(';') + ';' + files.map((_, i) => `[v${i}]`).join('') + `hstack=inputs=${files.length}[o]`;
